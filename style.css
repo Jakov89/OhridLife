@@ -1,0 +1,1883 @@
+:root {
+    /* Dark Theme based on new image */
+    --background: hsl(220, 30%, 8%); 
+    --foreground: hsl(0, 0%, 100%); 
+
+    --card: hsl(220, 30%, 12%);       
+    --card-foreground: hsl(0, 0%, 100%); 
+
+    --popover: hsl(220, 30%, 12%); 
+    --popover-foreground: hsl(0, 0%, 100%);
+
+    --primary: hsl(30, 90%, 60%);  /* Muted Orange/Amber */
+    --primary-foreground: hsl(220, 30%, 8%); /* Dark text for on-primary */
+
+    --secondary: hsl(200, 80%, 65%); /* Light Blue */
+    --secondary-foreground: hsl(0, 0%, 100%); 
+
+    --muted: hsl(220, 25%, 18%);    
+    --muted-foreground: hsl(210, 15%, 70%); 
+
+    --accent: hsl(30, 90%, 60%);   /* Using primary as main accent for now */
+    --accent-foreground: hsl(220, 30%, 8%);    
+
+    --destructive: hsl(0, 70%, 50%); 
+    --destructive-foreground: hsl(0, 0%, 100%); 
+
+    --border: hsl(220, 25%, 25%);   
+    --input: hsl(220, 25%, 15%);    
+    --ring: hsl(200, 80%, 70%);     /* Light blue for focus */
+
+    --radius: 0.5rem; 
+
+    /* HSL components for script-generated hover/active states if needed */
+    --primary-hsl-h: 30;
+    --primary-hsl-s: 90%;
+    --primary-hsl-l: 60%;
+
+    --secondary-hsl-h: 200;
+    --secondary-hsl-s: 80%;
+    --secondary-hsl-l: 65%;
+    
+    --muted-hsl-h: 220;
+    --muted-hsl-s: 25%;
+    --muted-hsl-l: 18%;
+
+    /* The JS handling --background-rgb should still work for the new dark background */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-color: var(--border); 
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Navbar */
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--background); /* Dark navbar background */
+    border-bottom: 1px solid var(--border);
+}
+
+#navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem; /* Reduced from 1rem */
+    padding-bottom: 0.5rem; /* Reduced from 1rem */
+}
+
+.nav-logo {
+    font-size: 1.1rem; /* Reduced from 1.25rem */
+    font-weight: 700; /* font-bold */
+    cursor: pointer; /* Indicate it's clickable */
+}
+
+.nav-logo .logo-main {
+    color: var(--foreground); /* White "Ohrid" */
+}
+
+.nav-logo .logo-secondary {
+    color: var(--primary); /* Orange/Amber "Life" */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 1rem; /* Adjusted gap, can be fine-tuned */
+    margin-left: auto; /* Add this to push the ul to the right */
+}
+
+/* Styles for .nav-links li a to match .ask-lychnidos-button */
+.nav-links li a {
+    padding: 0.3rem 0.6rem; /* Further reduced padding */
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.85em; /* Reduced font size */
+    font-weight: 500;
+    border-radius: var(--radius);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.1s ease;
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+    /* No margin-left here, spacing handled by nav-links gap */
+}
+
+.nav-links li a:hover {
+    background-color: hsl(var(--secondary-hsl-h), var(--secondary-hsl-s), calc(var(--secondary-hsl-l) * 0.9));
+    color: var(--secondary-foreground);
+    transform: translateY(-1px);
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+.nav-links li a.active {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    font-weight: 600;
+    box-shadow: 0 0 0 2px var(--background), 0 0 0 4px var(--primary);
+    text-decoration: none; /* Ensure no underline when active */
+}
+
+/* Styling for the moved "Learn about Ohrid" link - REMOVED AS IT'S NOW PART OF .nav-links */
+
+/* Keep .ask-lychnidos-button styles as they were, ensuring it looks like a button */
+.ask-lychnidos-button {
+    padding: 0.3rem 0.6rem; /* Further reduced padding */
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.85em; /* Reduced font size */
+    font-weight: 500;
+    border-radius: var(--radius);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.1s ease;
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+    /* margin-left: 1rem; /* This can be adjusted or removed if .nav-links gap is enough */
+    /* Removing margin-left as it might be redundant if both items are styled as buttons and use gap */
+}
+
+.ask-lychnidos-button:hover {
+    background-color: hsl(var(--secondary-hsl-h), var(--secondary-hsl-s), calc(var(--secondary-hsl-l) * 0.9));
+    color: var(--secondary-foreground);
+    transform: translateY(-1px);
+}
+
+.ask-lychnidos-button.active {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    font-weight: 600;
+    box-shadow: 0 0 0 2px var(--background), 0 0 0 4px var(--primary);
+}
+
+/* Remove the shared rule if it causes issues, or ensure it only contains truly common properties */
+/* Shared properties like cursor, font-family, font-size might still be okay in a combined rule if precise enough */
+
+.nav-select-wrapper {
+    display: block; /* Shown by default, hidden for md and up */
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+    .nav-select-wrapper {
+        display: none;
+    }
+}
+
+.nav-select {
+    background-color: var(--primary); /* Make select more button-like */
+    color: var(--primary-foreground);
+    /* padding, border-radius, font-weight are inherited from .nav-links button, .nav-select */
+    border: 1px solid var(--border); /* Add a border for better definition */
+}
+
+.nav-select option {
+    background-color: var(--muted);
+    color: var(--foreground);
+    font-weight: 400; /* Reset font-weight for options if 700 is too much */
+}
+
+.nav-select:focus {
+    outline: none;
+    border: 1px solid var(--ring);
+    box-shadow: 0 0 0 2px hsla(var(--ring-raw-rgb, 200,80%,70%), 0.5); /* Assuming ring has raw rgb vars */
+}
+
+
+/* Hero Section */
+#hero-section {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.hero-background-image {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.hero-background-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, var(--background) 0%, hsla(220, 30%, 8%, 0.85) 40%, hsla(220, 30%, 8%, 0.5) 70%, transparent 100%);
+}
+
+
+.hero-content-container {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 4rem; /* pb-16 */
+    position: relative;
+    z-index: 10;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.hero-text-content {
+    max-width: 600px;
+}
+
+#hero-title {
+    font-size: 2rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+    margin-bottom: 1rem; /* mb-4 */
+    color: var(--foreground);
+}
+@media (min-width: 768px) {
+    #hero-title {
+        font-size: 3rem; /* text-5xl */
+    }
+}
+
+#hero-description {
+    font-size: 1rem; /* text-base */
+    margin-bottom: 1.5rem; /* mb-6 */
+    color: var(--muted-foreground);
+    max-width: 500px;
+}
+@media (min-width: 768px) {
+    #hero-description {
+        font-size: 1.125rem; /* text-lg */
+    }
+}
+
+.hero-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* gap-4 */
+}
+
+#hero-date {
+    font-weight: 500;
+    color: var(--foreground);
+}
+
+#hero-book-button {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    padding: 0.5rem 1.5rem; /* py-2 px-6 */
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+    border: none;
+}
+#hero-book-button:hover {
+    background-color: hsl(var(--primary-hsl-h), var(--primary-hsl-s), calc(var(--primary-hsl-l) * 0.9));
+}
+
+.hero-indicators {
+    position: absolute;
+    bottom: 2rem; /* pb-8 */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem; /* gap-2 */
+}
+
+.hero-indicator-button {
+    width: 0.75rem; /* w-3 */
+    height: 0.75rem; /* h-3 */
+    border-radius: 9999px; /* rounded-full */
+    background-color: var(--muted-foreground);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.hero-indicator-button:hover {
+    background-color: var(--foreground);
+}
+
+.hero-indicator-button.active {
+    background-color: var(--primary);
+}
+
+
+/* Main Content Sections */
+main {
+    flex-grow: 1; /* Ensure main content pushes footer down */
+}
+
+
+/* Shared heading styles for sections */
+#explore-section h2, #popular-section h2 {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+    margin-bottom: 1.5rem; /* mb-6 */
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    #explore-section h2, #popular-section h2 {
+        font-size: 2.25rem; /* text-4xl */
+    }
+}
+
+
+/* Category Filters */
+.category-filters,
+.main-category-filters,
+.sub-category-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.main-category-filters {
+    margin-bottom: 1rem; /* Smaller bottom margin */
+}
+
+.category-filter-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background-color: transparent;
+    color: var(--muted-foreground);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.category-filter-button.active {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border-color: var(--primary);
+}
+
+.category-filter-button:not(.active) {
+    background-color: var(--card); /* Example: Use card background for inactive */
+    border-color: var(--border);
+}
+
+.category-filter-button:not(.active):hover {
+    background-color: var(--muted);
+    border-color: var(--ring);
+    color: var(--foreground);
+}
+
+/* Recommendation Cards - Scroll Container */
+.recommendation-scroll-container {
+    position: relative;
+}
+#popular-section .recommendation-scroll-container {
+    margin-top: 2rem; /* Add some space above the popular list */
+}
+
+.recommendation-scroll-header h2 {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 600; /* font-semibold */
+    margin-bottom: 1rem;
+}
+
+.recommendation-scroll-controls {
+    position: relative;
+    /* This wrapper will contain the list and the arrows */
+    display: flex; /* Helps align arrows vertically if needed */
+    align-items: center; /* Center arrows with the list */
+}
+
+.recommendation-list {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 1.5rem; /* Add padding for scrollbar to not overlap content */
+    /* Hiding the scrollbar visually */
+    scrollbar-width: none; /* For Firefox */
+}
+
+.recommendation-list::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+
+.recommendation-list-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: hsla(var(--background-raw-rgb, 220, 30%, 8%), 0.7); /* Translucent background */
+    border: 1px solid var(--border);
+    color: var(--foreground);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.recommendation-list-arrow:hover {
+    background-color: var(--muted);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.recommendation-list-arrow.left {
+    left: -1.25rem; /* Position outside the container */
+}
+.recommendation-list-arrow.right {
+    right: -1.25rem; /* Position outside the container */
+}
+
+.recommendation-list-arrow .lucide-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.recommendation-card {
+    flex: 0 0 240px; /* Do not grow, do not shrink, base width 240px */
+    width: 240px; /* Explicit width */
+    background-color: var(--card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px hsla(var(--background-raw-rgb, 0,0%,0%), 0.25);
+}
+
+.recommendation-card-image-wrapper {
+    width: 100%;
+    padding-top: 66.66%; /* 3:2 aspect ratio */
+    position: relative;
+}
+
+.recommendation-card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.recommendation-card:hover .recommendation-card-image {
+    transform: scale(1.05);
+}
+
+.recommendation-card-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allows footer content to be pushed down */
+}
+
+.recommendation-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.recommendation-card-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--card-foreground);
+    margin-bottom: 0.5rem; /* Add space below name before details */
+}
+
+.recommendation-card-type {
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+    background-color: var(--muted);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius);
+    text-transform: uppercase;
+}
+
+.recommendation-card-description {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    flex-grow: 1; /* Pushes footer down */
+}
+
+.recommendation-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; /* Push to bottom */
+}
+
+.recommendation-card-rating {
+    display: flex;
+    align-items: center;
+}
+
+.recommendation-card-rating .star {
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.recommendation-card-rating .rating-value {
+    margin-left: 0.25rem;
+    font-weight: 500;
+    color: var(--card-foreground);
+}
+
+.recommendation-card-price {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+
+/* Message for when no venues are found */
+.no-venues-message {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--card);
+    border-radius: var(--radius);
+}
+
+.no-venues-message p {
+    color: var(--muted-foreground);
+    font-style: italic;
+}
+
+
+/* Footer */
+#page-footer {
+    background-color: var(--background);
+    border-top: 1px solid var(--border);
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+#page-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    text-align: center;
+}
+.footer-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: default;
+}
+.footer-logo-main {
+    color: var(--foreground);
+}
+.footer-logo-secondary {
+    color: var(--primary);
+}
+
+.footer-content p {
+    color: var(--muted-foreground);
+    margin-top: 0.5rem;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.footer-socials a {
+    color: var(--muted-foreground);
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-socials a:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 1rem;
+    flex-grow: 1;
+    color: var(--muted-foreground);
+    font-size: 0.875rem;
+}
+
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slide-in-right {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
+}
+
+/* Example usage of slide-in for cards if needed */
+/* .recommendation-card { animation: slide-in-right 0.5s ease-out forwards; } */
+
+
+/* Lucide icon placeholders - replace with actual SVGs or font icon */
+.arrow-left-icon::before { content: "<"; /* Basic placeholder */ }
+.arrow-right-icon::before { content: ">"; /* Basic placeholder */ }
+
+
+/* Generic Modal Styles */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: hsla(var(--background-raw-rgb, 0, 0%, 0%), 0.7);
+    display: grid;
+    place-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+.modal-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s;
+}
+
+.modal-content {
+    background-color: var(--card);
+    border-radius: var(--radius);
+    padding: 0; /* Padding will be inside specific modal content areas */
+    max-width: 90vw;
+    width: 700px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.visible .modal-content {
+    transform: scale(1);
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: var(--muted-foreground);
+    cursor: pointer;
+    line-height: 1;
+    z-index: 1010;
+    padding: 0.25rem;
+    transition: color 0.2s ease;
+}
+.modal-close-button:hover {
+    color: var(--foreground);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Venue Modal Specifics */
+#modal-venue-events-section h4 {
+    color: var(--foreground);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.modal-event-item {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modal-event-item:last-child {
+    border-bottom: none;
+}
+
+
+.modal-content .modal-event-info {
+    /* This class seems to not be in use, but if it were, here's a style. */
+    /* If you meant to style the parent of name/time, apply to .modal-event-item */
+    flex-grow: 1;
+}
+
+.modal-event-name {
+    font-weight: 500;
+    color: var(--foreground);
+}
+
+.modal-event-time-day {
+    color: var(--muted-foreground);
+    font-size: 0.9rem;
+    margin-left: 0.5rem; /* Add some space between name and time */
+}
+
+.modal-event-book-button {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--border);
+    background-color: var(--muted);
+    color: var(--muted-foreground);
+    cursor: pointer;
+    border-radius: var(--radius);
+    white-space: nowrap; /* Prevent button text from wrapping */
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.modal-event-book-button:hover:not([disabled]) {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+}
+
+.modal-event-book-button[disabled] {
+    background-color: hsl(var(--muted-hsl-h), var(--muted-hsl-s), calc(var(--muted-hsl-l) * 0.8));
+    color: hsla(var(--muted-foreground-hsl-h), var(--muted-foreground-hsl-s), calc(var(--muted-foreground-hsl-l) * 0.7));
+    cursor: not-allowed;
+    border-color: transparent;
+}
+
+
+/* Event List Section on main page */
+#event-list-section {
+    background-color: var(--background);
+}
+
+#event-list-section h2 {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+    margin-bottom: 1.5rem; /* mb-6 */
+    /* color: var(--foreground); */
+    text-align: left; /* Aligned left now */
+}
+
+#event-list-items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.event-list-item {
+    display: flex;
+    gap: 1rem;
+    background-color: var(--card);
+    padding: 1rem;
+    border-radius: var(--radius);
+    align-items: center; /* Vertically align items */
+    transition: background-color 0.2s ease;
+}
+.event-info {
+    display: flex;
+    flex-grow: 1;
+    align-items: baseline; /* Align text baselines */
+    gap: 0.75rem;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+@media (min-width: 500px) { /* Adjust breakpoint as needed */
+    .event-info {
+        flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+    }
+}
+
+
+.event-venue-name {
+    font-weight: 500;
+    color: var(--muted-foreground);
+}
+.event-name {
+    font-weight: 600;
+    color: var(--foreground);
+}
+.event-time-day {
+    color: var(--muted-foreground);
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.event-book-button {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--border);
+    background-color: var(--muted);
+    color: var(--muted-foreground);
+    cursor: pointer;
+    border-radius: var(--radius);
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+.event-book-button:hover:not([disabled]) {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+}
+.event-book-button[disabled] {
+    background-color: hsl(var(--muted-hsl-h), var(--muted-hsl-s), calc(var(--muted-hsl-l) * 0.8));
+    color: hsla(var(--muted-foreground-hsl-h), var(--muted-foreground-hsl-s), calc(var(--muted-foreground-hsl-l) * 0.7));
+    cursor: not-allowed;
+    border-color: transparent;
+}
+
+
+/* Styling for "Learn Ohrid" Page */
+body.ohrid-page {
+    /* This provides a scoped background color for the Learn Ohrid page. */
+    /* If the content is injected into a div on the main page, this might not be necessary. */
+    /* Instead, we can apply a background color to the #learn-ohrid-content container directly. */
+    background-color: var(--background); /* Same dark background */
+}
+
+/* Assuming the navbar is the same, we might need to adjust link styles if they differ. */
+.ohrid-page header nav ul {
+    /* If nav is different for this page, style it here */
+}
+
+/* Example: Making nav links on this page look different */
+.ohrid-page header nav ul li a {
+    color: var(--secondary); /* Example: Different link color */
+    border-bottom: 2px solid transparent; /* Prepare for hover effect */
+}
+
+.ohrid-page header nav ul li a:hover,
+.ohrid-page header nav ul li a.active {
+    border-bottom-color: var(--secondary);
+    color: var(--foreground);
+}
+
+/* Main content styling for Learn Ohrid page */
+.ohrid-page main {
+    padding: 2rem 0;
+    /* other styles */
+}
+
+.ohrid-page main h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.ohrid-page main p {
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.ohrid-page main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Footer styling for Learn Ohrid page (if different) */
+.ohrid-page footer {
+    /* Specific footer styles */
+}
+/* General navigation styling adjustments */
+#navbar {
+    border-bottom: 1px solid var(--border);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; /* Consistent max-width */
+    margin: 0 auto;
+}
+
+/* Logo styling */
+.nav-logo-container {
+    /* Container for logo if needed for layout */
+}
+.nav-logo-link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.nav-logo-ohrid {
+    color: var(--foreground);
+}
+
+.nav-logo-life {
+    color: var(--primary);
+    font-weight: 700;
+    /* Any other specific styles for the "Life" part */
+}
+
+
+/* Default body font and color */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+
+/* Learn Ohrid Page Content Specific Styles */
+.ohrid-content-wrapper {
+    max-width: 800px; /* Constrain text width for readability */
+    margin: 0 auto;
+    padding: 2rem;
+}
+.ohrid-content-wrapper h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.ohrid-content-wrapper h2 {
+    font-size: 1.75rem;
+    color: var(--foreground);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.5rem;
+}
+.ohrid-content-wrapper p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: var(--muted-foreground);
+}
+.ohrid-content-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 15px hsla(var(--background-raw-rgb), 0.2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ohrid-page-footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted-foreground);
+}
+
+/* Language Switcher Styles */
+.language-switcher {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.lang-button {
+    background-color: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted-foreground);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.lang-button:hover {
+    background-color: var(--muted);
+    color: var(--foreground);
+    border-color: var(--ring);
+}
+
+.lang-button.active {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border-color: var(--primary);
+    font-weight: 600;
+}
+/* Learn Ohrid Page Content Specific Styles */
+.ohrid-content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.ohrid-content-wrapper h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.ohrid-content-wrapper h2 {
+    font-size: 1.75rem;
+    color: var(--foreground);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.5rem;
+}
+.ohrid-content-wrapper p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+.ohrid-page-footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted-foreground);
+}
+
+/* Slideshow specific to Learn Ohrid page */
+.ohrid-image-slideshow-container {
+    margin-top: 2rem;
+}
+.slideshow-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--foreground);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.slideshow-scroll-content {
+    position: relative;
+    padding: 0 3rem; /* Space for arrows */
+}
+.slideshow-image-list {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.slideshow-image-list::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+.slideshow-image-wrapper {
+    flex: 0 0 200px; /* Adjust size of thumbnails */
+    border-radius: var(--radius);
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease;
+}
+.slideshow-image-wrapper:hover {
+    border-color: var(--primary);
+}
+.slideshow-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slideshow-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: hsla(var(--background-raw-rgb, 0, 0%, 0%), 0.5);
+    border: 1px solid var(--border);
+    color: var(--foreground);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.2s ease;
+}
+.slideshow-arrow:hover {
+    background-color: var(--muted);
+}
+.slideshow-arrow.left {
+    left: 0;
+}
+.slideshow-arrow.right {
+    right: 0;
+}
+.slideshow-arrow svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.slideshow-arrow-learn-ohrid:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    background-color: transparent;
+}
+
+.event-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    gap: 1rem;
+    margin-bottom: 1rem; /* Add some space below the header */
+}
+
+.event-filter-controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.event-filter-controls label[for="event-date-picker"] {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+}
+
+.form-input.event-date-picker-input {
+    background-color: var(--input);
+    color: var(--foreground);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input.event-date-picker-input:focus {
+    outline: none;
+    border-color: var(--ring);
+    box-shadow: 0 0 0 2px hsla(var(--ring-hsl-h), var(--ring-hsl-s), var(--ring-hsl-l), 0.4);
+}
+/* Style the calendar icon */
+.form-input.event-date-picker-input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+#clear-event-filter-button.btn.btn-secondary {
+    background-color: var(--muted);
+    color: var(--muted-foreground);
+    border: 1px solid var(--border);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#clear-event-filter-button.btn.btn-secondary:hover {
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+    border-color: var(--secondary);
+}
+
+/* Learn Ohrid page: Clickable images in text */
+.ohrid-content-wrapper img {
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+}
+.ohrid-content-wrapper img:hover {
+    opacity: 0.85;
+}
+
+.language-buttons-learn-ohrid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+/* New Slideshow for Learn Ohrid Section */
+#ohrid-image-slideshow {
+    margin-top: 2rem;
+}
+
+.slideshow-container-learn-ohrid {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    background-color: var(--card);
+    border-radius: var(--radius);
+    padding: 1rem;
+}
+
+.slideshow-main-image-learn-ohrid {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: var(--radius);
+}
+
+.slideshow-arrow-learn-ohrid {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: hsla(var(--background-raw-rgb, 0, 0%, 0%), 0.5);
+    border: 1px solid var(--border);
+    color: var(--foreground);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.2s ease;
+}
+
+.slideshow-arrow-learn-ohrid:hover {
+    background-color: var(--muted);
+}
+.slideshow-arrow-learn-ohrid.left {
+    left: -3rem;
+}
+.slideshow-arrow-learn-ohrid.right {
+    right: -3rem;
+}
+.slideshow-arrow-learn-ohrid svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.slideshow-arrow-learn-ohrid:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    background-color: transparent;
+}
+
+.event-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    gap: 1rem;
+    margin-bottom: 1rem; /* Add some space below the header */
+}
+
+.event-filter-controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.event-filter-controls label[for="event-date-picker"] {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+}
+
+.form-input.event-date-picker-input {
+    background-color: var(--input);
+    color: var(--foreground);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.form-input.event-date-picker-input:focus {
+    outline: none;
+    border-color: var(--ring);
+    box-shadow: 0 0 0 2px hsla(var(--ring-hsl-h), var(--ring-hsl-s), var(--ring-hsl-l), 0.4);
+}
+
+.form-input.event-date-picker-input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+#clear-event-filter-button.btn.btn-secondary {
+    background-color: var(--muted);
+    color: var(--muted-foreground);
+    border: 1px solid var(--border);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+#clear-event-filter-button.btn.btn-secondary:hover {
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+    border-color: var(--secondary);
+}
+
+/* Day Planner Section */
+#day-planner-section {
+    background-color: var(--background); /* Use the main background */
+}
+
+#day-planner-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.25rem;
+    color: var(--primary);
+}
+.day-plan-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.day-plan-item {
+    background-color: var(--card);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid var(--secondary); /* Accent border */
+    transition: background-color 0.2s ease;
+}
+.day-plan-item:last-child {
+    border-bottom: none;
+}
+.day-plan-item-details {
+    font-style: italic;
+    color: var(--muted-foreground);
+    font-size: 0.9em;
+    margin-left: 0.5em; /* Space between main text and notes */
+}
+
+#add-sample-item-to-plan-btn {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: var(--muted);
+    color: var(--muted-foreground);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+#add-sample-item-to-plan-btn:hover {
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+    border-style: solid;
+}
+
+.day-planner-form {
+    background-color: var(--card);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    margin-bottom: 2rem; /* Space between form and suggestions */
+}
+.day-planner-form .form-group {
+    margin-bottom: 1rem;
+}
+.day-planner-form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--muted-foreground);
+}
+.day-planner-form input[type="text"],
+.day-planner-form input[type="date"],
+.day-planner-form input[type="time"],
+.day-planner-form select,
+.day-planner-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--input);
+    color: var(--foreground);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.day-planner-form select {
+    /* Style for custom dropdown arrow might be needed */
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+}
+
+.day-planner-form input[type="text"]:focus,
+.day-planner-form input[type="date"]:focus,
+.day-planner-form input[type="time"]:focus,
+.day-planner-form select:focus,
+.day-planner-form textarea:focus {
+    outline: none;
+    border-color: var(--ring);
+    box-shadow: 0 0 0 2px hsla(var(--ring-hsl-h), var(--ring-hsl-s), var(--ring-hsl-l), 0.4);
+}
+
+.day-planner-form input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.8); /* Make calendar icon visible on dark input */
+}
+.day-planner-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.day-planner-form .btn.btn-primary {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.day-planner-form .btn.btn-primary:hover {
+    background-color: hsl(var(--primary-hsl-h), var(--primary-hsl-s), calc(var(--primary-hsl-l) * 0.9));
+}
+
+.day-plan-item-remove-btn {
+    background-color: transparent;
+    border: 1px solid var(--destructive);
+    color: var(--destructive);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+.day-plan-item-remove-btn:hover {
+    background-color: hsla(0, 70%, 50%, 0.1);
+    border-color: var(--destructive);
+}
+
+.event-suggestions-container {
+    background-color: var(--card);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    border-top: 2px solid var(--secondary);
+}
+.event-suggestions-container h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--foreground);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.75rem;
+}
+#event-suggestions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.event-suggestion-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    gap: 1rem;
+}
+.event-suggestion-item-info {
+    flex-grow: 1;
+}
+.event-suggestion-item-name {
+    font-weight: 500;
+    color: var(--foreground);
+}
+.event-suggestion-item-date {
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+    margin-left: 0.5rem;
+}
+.add-suggestion-to-plan-btn {
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+.add-suggestion-to-plan-btn:hover {
+    background-color: hsl(var(--secondary-hsl-h), var(--secondary-hsl-s), calc(var(--secondary-hsl-l) * 0.9));
+}
+.day-plan-item.dragging {
+    opacity: 0.5;
+    background-color: var(--muted);
+}
+/* Visual placeholder for where the item will be dropped */
+.drag-over-placeholder {
+    height: 3rem; /* Height of a typical item */
+    background-color: var(--muted);
+    border: 2px dashed var(--primary);
+    border-radius: var(--radius);
+    margin: 0.375rem 0; /* half of the gap */
+}
+
+/* KULTURNO LETO STYLES */
+.kulturno-leto-events-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.kulturno-leto-events-list-container .kulturno-leto-event-item {
+    background-color: var(--card);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    border-left: 4px solid var(--primary);
+}
+.kulturno-leto-events-list-container .event-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+}
+.kulturno-leto-events-list-container .kulturno-leto-event-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--foreground);
+}
+.kulturno-leto-events-list-container .kulturno-leto-event-date {
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+    font-style: italic;
+    white-space: nowrap;
+    margin-left: 1rem;
+}
+.kulturno-leto-events-list-container .kulturno-leto-event-description {
+    color: var(--muted-foreground);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.kulturno-leto-events-list-container .kulturno-leto-event-category {
+    font-size: 0.8rem;
+    color: var(--muted-foreground);
+    text-transform: uppercase;
+}
+.kulturno-leto-events-list-container .kulturno-leto-event-category span {
+    font-weight: 500;
+    color: var(--foreground);
+}
+.kulturno-leto-events-list-container .btn-view-map {
+    background: var(--muted);
+    color: var(--muted-foreground);
+    border: 1px solid var(--border);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+}
+.kulturno-leto-events-list-container .btn-view-map:hover {
+    background: var(--secondary);
+    color: var(--secondary-foreground);
+    border-color: var(--secondary);
+}
+
+/* Simple Map Modal */
+.simple-map-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: hsla(var(--background-raw-rgb, 0, 0%, 0%), 0.7);
+    display: grid;
+    place-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+.simple-map-modal-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s;
+}
+
+.simple-map-modal-content {
+    background-color: var(--card);
+    border-radius: var(--radius);
+    padding: 1rem;
+    max-width: 90vw;
+    width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.simple-map-modal-overlay.visible .simple-map-modal-content {
+    transform: scale(1);
+}
+
+.simple-map-close-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: var(--muted-foreground);
+    cursor: pointer;
+    line-height: 1;
+    z-index: 1010;
+    padding: 0.25rem;
+    transition: color 0.2s ease;
+}
+.simple-map-close-button:hover {
+    color: var(--foreground);
+}
+.language-buttons-kulturno-leto {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Mobile navigation */
+.mobile-nav-toggle {
+    display: none; /* Hidden on desktop */
+    position: absolute;
+    z-index: 9999;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+    cursor: pointer;
+    top: 0.5rem;
+    right: 1rem;
+}
+.mobile-nav-toggle .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.mobile-nav-toggle::before,
+.mobile-nav-toggle::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--foreground);
+    border-radius: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.mobile-nav-toggle::before {
+    transform: translateY(-5px);
+}
+.mobile-nav-toggle::after {
+    transform: translateY(5px);
+}
+
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    html {
+        font-size: 14px; /* Reduces base font size, affects rem units */
+    }
+
+    #hero-title { font-size: 2rem; }
+    #hero-description { font-size: 1rem; }
+
+    #explore-section h2, #popular-section h2, #event-list-section h2 { font-size: 1.75rem; }
+
+    .main-category-filters, .sub-category-filters {
+        gap: 0.5rem;
+    }
+    .category-filter-button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    .recommendation-card {
+        flex: 0 0 200px; /* Smaller cards on mobile */
+        width: 200px;
+    }
+    .recommendation-card-name { font-size: 1rem; }
+
+    .mobile-nav-toggle {
+        display: block;
+    }
+    .nav-links {
+        position: fixed;
+        inset: 0 0 0 30%; /* From top 0, right 0, bottom 0, left 30% */
+        flex-direction: column;
+        padding: min(20vh, 10rem) 2em;
+        gap: 2em;
+        background: hsla(var(--background-raw-rgb, 0,0%,0%), 0.9);
+        backdrop-filter: blur(1rem);
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+    .nav-links a {
+        font-size: 1.2rem;
+    }
+
+    #navbar.nav-open .nav-links {
+        transform: translateX(0%);
+    }
+
+    #navbar.nav-open .mobile-nav-toggle::before {
+        transform: translateY(calc(0.5rem - 6px)) rotate(45deg);
+    }
+    #navbar.nav-open .mobile-nav-toggle::after {
+        transform: translateY(calc(-0.5rem + 1px)) rotate(-45deg);
+    }
+    
+    /* Added media query for hero section mobile responsiveness */
+    #hero-section {
+        height: 50vh; /* Reduce height on mobile */
+    }
+}
+
+/* General Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius);
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+}
+
+.btn-primary:hover {
+    background-color: hsl(var(--primary-hsl-h), var(--primary-hsl-s), calc(var(--primary-hsl-l) * 0.9));
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+}
+.btn-secondary:hover {
+     background-color: hsl(var(--secondary-hsl-h), var(--secondary-hsl-s), calc(var(--secondary-hsl-l) * 0.9));
+}
+
+
+.btn-destructive {
+    background-color: var(--destructive);
+    color: var(--destructive-foreground);
+}
+.btn-destructive:hover {
+    background-color: hsl(0, 70%, 40%);
+}
+
+.btn-destructive-modern {
+    background-color: transparent;
+    color: var(--destructive);
+    border: 1px solid var(--destructive);
+}
+
+.btn-destructive-modern:hover {
+    background-color: hsla(0, 70%, 50%, 0.1);
+    color: hsl(0, 70%, 60%);
+    border-color: hsl(0, 70%, 60%);
+}
+
+#clear-selected-date-plan-button-container {
+    display: flex;
+    justify-content: flex-end; /* Align button to the right */
+    margin-top: 1rem;
+}
+
+.planner-event-search-container {
+    background-color: var(--card);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    margin-top: 2rem;
+}
+
+.planner-event-search-container .event-filter-controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#planner-event-search-results .event-list-item {
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 0;
+}
+
+#planner-event-search-results .event-list-item:last-child {
+    border-bottom: none;
+}
+#planner-event-search-results .add-to-plan-btn {
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#planner-event-search-results .add-to-plan-btn:hover {
+    background-color: hsl(var(--secondary-hsl-h), var(--secondary-hsl-s), calc(var(--secondary-hsl-l) * 0.9));
+}
+
+#planner-event-search-results .add-to-plan-btn[disabled] {
+    background-color: var(--muted);
+    color: var(--muted-foreground);
+    cursor: not-allowed;
+}

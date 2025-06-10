@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "title": "Културолошко Лето",
+        "description": "Culture awakeners, found where art and life meet.",
+        "date": "05.07",
+        "imageUrl": "/main_event/kulturoloska2025_hero.jpg",
+        "imageUrlMobile": "main_event/kulturoloska_port.jpg",
+        "specialLink": "#kulturno-leto"
+    },
+    {
+        "id": 3,
+        "title": "Ohrid Wine Fest",
+        "description": "Ohrid Wine Fest: The region's best wines, food, and music.",
+        "date": "Coming Soon",
+        "imageUrl": "main_event/ohridwine_fest_hero.jpg",
+        "specialLink": "#ohrid-wine-fest"
+    }
+] 
