@@ -1,0 +1,1088 @@
+/* =============== ROOT VARIABLES =============== */
+:root {
+    --background: hsl(210, 40%, 98%); /* Almost white with a blue tint */
+    --foreground: hsl(215, 25%, 27%); /* Dark grayish blue for text */
+    --card: hsl(0, 0%, 100%);
+    --card-foreground: hsl(215, 25%, 27%);
+    --popover: hsl(0, 0%, 100%);
+    --popover-foreground: hsl(215, 25%, 27%);
+    --primary: hsl(204, 90%, 53%); /* Bright blue */
+    --primary-foreground: hsl(210, 40%, 98%);
+    --secondary: hsl(210, 40%, 96.1%);
+    --secondary-foreground: hsl(215, 28%, 17%);
+    --muted: hsl(210, 40%, 96.1%);
+    --muted-foreground: hsl(215, 20%, 65%);
+    --accent: hsl(210, 40%, 96.1%);
+    --accent-foreground: hsl(215, 28%, 17%);
+    --destructive: hsl(0, 84%, 60%);
+    --destructive-foreground: hsl(210, 40%, 98%);
+    --border: hsl(214, 32%, 91%);
+    --input: hsl(214, 32%, 91%);
+    --ring: hsl(204, 90%, 53%);
+    --radius: 0.5rem;
+    --radius-full: 9999px;
+}
+
+/* =============== GENERAL & RESET STYLES =============== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-color: var(--border);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto; /* Let it grow */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* =============== BUTTONS =============== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px; /* Pill shape */
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary);
+}
+
+
+/* =============== NAVBAR =============== */
+#navbar {
+    background-color: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hamburger Menu */
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    #navbar .container {
+        justify-content: space-between;
+    }
+
+    /* Animate Hamburger */
+}
+
+
+/* =============== HERO SECTION =============== */
+.hero {
+    text-align: center;
+    padding: 4rem 1rem 2rem;
+    background-color: hsl(210, 70%, 97%); /* Lighter blue, closer to image */
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.125rem;
+    color: var(--muted-foreground);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+
+/* Hero Slider */
+#hero-slider-container {
+    margin-top: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    position: relative;
+}
+
+/* =============== STATS SECTION =============== */
+.stats-section {
+    background-color: hsl(210, 70%, 97%); /* Match hero background */
+    padding: 3rem 1rem 4rem;
+    border-top: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+    .stats-section {
+        padding: 2rem 1rem;
+    }
+    .stats-grid {
+        gap: 1.5rem;
+    }
+    .stat-item h3 {
+        font-size: 2rem;
+    }
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 1rem;
+    color: var(--primary); /* Use theme color */
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+}
+
+.stat-item p {
+    color: var(--muted-foreground);
+    font-size: 0.9rem;
+}
+
+.stat-icon-container {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+}
+
+/* =============== PLAN YOUR VISIT SECTION =============== */
+#plan-your-visit {
+    background-color: var(--background);
+    padding: 4rem 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#plan-your-visit .text-center h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+}
+
+#plan-your-visit .text-center p {
+    color: var(--muted-foreground);
+    max-width: 600px;
+    margin: 1rem auto 2.5rem;
+}
+
+.light-card {
+    background-color: var(--card);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    height: 100%;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--foreground);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.card-header svg {
+    color: var(--primary);
+}
+
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.gap-8 { gap: 2rem; }
+.w-full { width: 100%; }
+
+#calendar-container {
+   /* No background needed, handled by .light-card */
+}
+
+#daily-events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* New, comprehensive Flatpickr theme */
+
+/* =============== DAILY EVENT CARD =============== */
+
+/* =============== EVENT MODAL =============== */
+.event-modal-content {
+    padding: 1.5rem;
+}
+
+.modal-event-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    margin-bottom: 1.5rem;
+    display: none; /* Hidden by default, shown by JS */
+}
+
+.modal-event-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+    line-height: 1.2;
+}
+
+.modal-event-meta {
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+    margin-bottom: 1.5rem;
+}
+
+.modal-event-description {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    white-space: pre-wrap; /* To respect newlines from JSON */
+}
+
+.modal-event-map-container {
+    margin-bottom: 1.5rem;
+    display: none; /* Hidden by default */
+}
+
+.modal-event-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.modal-event-category {
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+}
+
+.modal-event-category span {
+    font-weight: 500;
+    color: var(--foreground);
+    background-color: var(--muted);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius);
+}
+
+/* =============== DISCOVER PLACES & RECOMMENDATIONS SECTION =============== */
+
+/* New Venue Card Styles */
+
+/* Venue Filter Styles */
+
+/* Hide old sections */
+ #day-planner-section,
+#kulturno-leto-content, #ohrid-wine-fest-content, #ohridsko-leto-content,
+#events, #venues {
+    display: none;
+}
+
+
+/* =============== FOOTER =============== */
+#page-footer {
+    background-color: var(--card);
+    border-top: 1px solid var(--border);
+    padding: 3rem 0;
+    text-align: center;
+    flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+#page-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: default;
+}
+.footer-logo-main {
+    color: var(--foreground);
+}
+.footer-logo-secondary {
+    color: var(--primary);
+}
+
+.footer-content p {
+    color: var(--muted-foreground);
+    margin-top: 0.5rem;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.footer-socials a {
+    color: var(--muted-foreground);
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-socials a:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.copyright {
+    padding-top: 1rem;
+    color: var(--muted-foreground);
+    font-size: 0.875rem;
+}
+
+/* =============== MODAL STYLES =============== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.modal-overlay:not(.hidden) {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: var(--background);
+    color: var(--foreground);
+    border-radius: var(--radius-lg);
+    width: 90%;
+    max-width: 650px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+    border: 1px solid var(--border);
+}
+
+.modal-overlay:not(.hidden) .modal-content {
+    transform: scale(1);
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.5rem;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    z-index: 10;
+}
+
+.modal-close-button:hover {
+    background: rgba(0,0,0,0.6);
+}
+
+#modal-venue-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--border);
+}
+
+.modal-info-section {
+    padding: 1.5rem 2rem;
+}
+
+#modal-venue-description {
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.modal-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .modal-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+#modal-gallery-container {
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    margin-top: 1rem;
+}
+
+.modal-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 0.75rem;
+}
+
+#modal-map-container {
+    height: 300px;
+    margin-top: 1.5rem;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+/* =============== IMAGE MODAL =============== */
+.image-modal {
+    position: fixed;
+    z-index: 1001; /* Higher than venue/event modal */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.3s ease;
+}
+
+.image-modal.hidden {
+    display: none;
+}
+
+.image-modal-content {
+    max-width: 90vw;
+    max-height: 90vh;
+    animation: zoomIn 0.3s ease;
+}
+
+#image-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#image-modal-close:hover,
+#image-modal-close:focus {
+    color: #bbb;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}
+
+/* Learn Ohrid Page Styles */
+.learn-ohrid-page {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.language-switcher {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.ohrid-content-wrapper {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.ohrid-content-wrapper h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.ohrid-content-wrapper h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.ohrid-content-wrapper p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.image-gallery .gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery .gallery-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .ohrid-content-wrapper h1 {
+        font-size: 2rem;
+    }
+    .ohrid-content-wrapper h2 {
+        font-size: 1.75rem;
+    }
+    .ohrid-content-wrapper p {
+        font-size: 1rem;
+    }
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* On larger screens, add more padding */
+@media (min-width: 768px) {
+    .planner-layout {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.recommendations-highlight {
+    background: linear-gradient(to bottom, hsl(210, 40%, 98%), white);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+}
+
+/* General Section Styling */
+.section-title-with-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #0077b6; /* A nice blue color */
+}
+
+.title-icon {
+    margin-right: 0.75rem;
+    font-size: 2rem;
+}
+
+/* Make Recommendations Section "More Important" */
+.recommendations-highlight {
+    background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-radius: 1.5rem;
+    padding: 3rem 0; /* Use vertical padding and let container handle horizontal */
+    margin: 3rem auto;
+    max-width: 1200px;
+    border: 1px solid #cce7f5;
+    box-shadow: 0 8px 32px rgba(0, 119, 182, 0.1);
+}
+
+.recommendations-highlight .container {
+    position: relative;
+}
+
+#recommendations-slider-container {
+    overflow: hidden; /* This is the key fix */
+}
+
+/* Overriding and defining new card styles only within the recommendations section */
+
+
+/* Generic Slider Styling */
+.keen-slider {
+  overflow: visible !important; /* Allow card box-shadow to be visible */
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    border: 1px solid #eee;
+    z-index: 10;
+    transition: all 0.2s ease-in-out;
+}
+
+.slider-arrow:hover {
+    background-color: #f8f8f8;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.slider-arrow.left {
+    left: 20px; /* Bring arrows inside the container */
+}
+
+.slider-arrow.right {
+    right: 20px; /* Position inside the container */
+}
+
+.slider-arrow svg {
+    width: 24px;
+    height: 24px;
+}
+
+#all-venues-slider > p {
+    width: 100%;
+    text-align: center;
+    color: var(--muted-foreground);
+    padding: 2rem;
+}
+
+#all-venues-slider-container {
+    position: relative;
+    overflow: hidden; /* This acts as a barrier */
+}
+
+#all-venues-slider-container .slider-arrow.left {
+    left: -20px;
+}
+
+#all-venues-slider-container .slider-arrow.right {
+    right: 0px;
+}
+
+/* =================================== */
+/* == NEW VENUE FILTER STYLES START == */
+/* =================================== */
+
+#explore-all-venues .main-categories-container {
+    margin-bottom: 1.5rem;
+}
+
+#explore-all-venues .main-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem; /* 12px */
+}
+
+@media (max-width: 768px) {
+    #explore-all-venues .main-categories {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 0.5rem 0;
+        /* Hide scrollbar for a cleaner look */
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    #explore-all-venues .main-categories::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, and Opera */
+    }
+}
+
+#sub-categories-container {
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+    max-height: 0;
+    background-color: var(--secondary);
+    border-radius: var(--radius);
+    padding: 0 1.5rem;
+    margin-top: 0;
+}
+
+#sub-categories-container:not(.hidden) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    border: 1px solid var(--border);
+}
+
+#sub-categories-container .sub-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+/* ================================= */
+/* == NEW VENUE FILTER STYLES END == */
+/* ================================= */
+
+/* =============== DAY PLANNER PAGE =============== */
+.day-planner-page-container {
+    padding: 2rem 0;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.page-subtitle {
+    text-align: center;
+    color: var(--muted-foreground);
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.planner-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+@media (min-width: 1024px) {
+    .planner-layout {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+}
+
+.day-planner-form-container {
+    margin-top: 2rem;
+}
+
+#selected-date-plan-details .light-card,
+.day-planner-form-container.light-card {
+    padding: 1.5rem;
+}
+
+.form-title, .plan-header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background-color: var(--background);
+    color: var(--foreground);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px hsla(204, 90%, 53%, 0.15);
+}
+
+/* Custom Select (Dropdown) Styles */
+select.form-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 2.5rem; /* Make space for arrow */
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="hsl(215, 20%, 65%)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1em;
+}
+
+.day-planner-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.plan-item-time {
+    font-weight: 600;
+    color: var(--primary);
+    width: 80px;
+    flex-shrink: 0;
+    font-size: 0.9rem;
+    padding-top: 2px;
+}
+
+.plan-item-notes {
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+    white-space: pre-wrap;
+}
+
+.empty-plan-message {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--muted-foreground);
+    border: 2px dashed var(--border);
+    border-radius: var(--radius);
+}
+
+#clear-plan-btn {
+    margin-top: 1rem;
+}
+
+.btn-destructive-modern {
+    background-color: transparent;
+    border: 1px solid var(--destructive);
+    color: var(--destructive);
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+.btn-destructive-modern:hover {
+    background-color: var(--destructive);
+    color: var(--primary-foreground);
+}
+
+#daily-events-suggestion-container {
+    margin-top: 2rem;
+}
+
+.planner-column-left,
+.planner-column-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#daily-events-suggestion-container {
+    /* Spacing is now handled by the parent column's gap property */
+}
+
+/* Calendar Event Indicator */
+
+/* Ensure the dot is visible on selected/today dates */
+
+.modal-rating-container {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.modal-gallery-container {
+    margin-top: 1.5rem;
+}
+
+/* --- AI Planner Styles --- */
+
+#ai-planner-container .card-header {
+    margin-bottom: 0.5rem;
+}
+
+#ai-planner-container .ai-planner-description {
+    color: var(--muted-foreground);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.modal-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.modal-subtitle {
+    font-size: 1rem;
+    color: var(--muted-foreground);
+    text-align: center;
+    margin-top: 0.25rem;
+    margin-bottom: 2rem;
+}
+
+.ai-question {
+    margin-bottom: 1.5rem;
+}
+
+.ai-question label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.ai-choices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.75rem;
+}
+
+#generate-plan-btn {
+    margin-top: 2rem;
+}
+
+#ai-plan-suggestions {
+    margin-top: 2rem;
+}
+
+.suggestions-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#ai-suggestions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.suggestions-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: var(--primary);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* --- Weather Widget Styles --- */
+
+.weather-widget-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #f0f4f8; /* Light blue-gray background */
+    border-bottom: 1px solid #dcdcdc;
+}
+

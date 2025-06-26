@@ -1,102 +1,100 @@
-# OhridLife - Your Guide to Life in Ohrid
+# OhridHub - Your Ultimate Guide to Life in Ohrid
 
-Welcome to OhridLife, a dynamic web application designed to be your ultimate guide to the vibrant life and culture of Ohrid, North Macedonia. Discover upcoming events, explore popular venues, learn about the city's rich history, and plan your perfect day with our integrated Day Planner.
+Welcome to OhridHub, your all-in-one guide to the vibrant culture, events, and attractions of Ohrid, North Macedonia. Whether you're a local or a visitor, our platform helps you discover upcoming events, explore top-rated venues, learn about the city's rich history, and build your perfect day with our interactive Day Planner.
 
 ## Table of Contents
-* [Features](#features)
-* [Technologies Used](#technologies-used)
-* [Project Structure](#project-structure)
-* [Setup and Installation](#setup-and-installation)
-* [Usage](#usage)
-* [Data Sources](#data-sources)
-* [Future Enhancements](#future-enhancements)
-* [Conclusion](#conclusion)
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+- [Key Scripts and Functionality](#key-scripts-and-functionality)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Features
 
-- **Event Listings:** Browse a filterable list of upcoming events. Users can filter events by a specific date using a Flatpickr date picker.
-- **Venue Recommendations:** Explore various venues categorized by type (e.g., 'Food & Drinks', 'Beach Life', 'Adventure/Sport').
-- **Popular Venues:** A dedicated section showcasing top-rated venues.
-- **Detailed Venue & Event Modals:** Click on a venue or event to see detailed information, including descriptions, images, ratings, working hours, and a location map.
-- **Learn About Ohrid:** A dedicated page with rich text and a photo slideshow providing historical and cultural information about Ohrid, with language support for both Macedonian and English.
-- **Day Planner:** An interactive tool allowing users to build a personalized daily itinerary. 
-  - Add custom activities through a dedicated form.
-  - Dynamically search and add any event from the main event list directly to the plan for the selected date.
-  - Organize items with drag-and-drop functionality.
-  - Plans are saved to the browser's local storage.
-- **Social & Contact Links:** Easy access to Instagram and email contact information in the site footer.
-- **Multi-language Support:** The "Learn about Ohrid" and "Културолошко лето" sections support both Macedonian and English content.
-- **Responsive Design:** A mobile-first design that adapts to various screen sizes, featuring a modern slide-in navigation menu for mobile devices.
+- **Event Calendar**: A dynamic calendar showcasing daily events.
+- **Venue Discovery**: Filterable list of venues (restaurants, cafes, adventure sports, etc.).
+- **Interactive Day Planner**: Users can create and save a personalized itinerary.
+- **Learn About Ohrid**: A dedicated section with historical and cultural information.
+- **Featured Events Slider**: Highlights major upcoming events.
+- **Responsive Design**: Fully functional on both desktop and mobile devices.
+- **Modular Code**: Uses JavaScript modules for better organization and maintenance.
 
 ## Technologies Used
 
-- **HTML5:** For the basic structure of the web pages.
-- **CSS3:** For styling, including the use of modern features like Flexbox, Grid, custom properties (variables), and responsive media queries.
-- **JavaScript (ES6+):** For all dynamic functionality, including data fetching, DOM manipulation, event handling, and managing application state.
-- **JSON:** As the format for storing all data (venues, events, text content).
-- **Flatpickr:** A lightweight and powerful date picker library used for filtering events and planning.
+- **Frontend**: HTML5, CSS3, JavaScript (ES6 Modules)
+- **Libraries**:
+  - `flatpickr.js`: For the interactive calendar.
+  - `keen-slider.js`: For touch-friendly sliders.
+- **Backend (for potential future expansion)**: Node.js with Express is set up for serving files, but core logic is client-side.
+- **Development Tools**: Visual Studio Code, Git & GitHub.
 
 ## Project Structure
-```
-.
-├── data/
-│   ├── events.json             # Data for individual events, linked to venues
-│   ├── learn_ohrid_text.json   # Text content & image paths for the "Learn about Ohrid" page (MK & EN)
-│   └── venues.json             # Comprehensive data for all venues
-├── images_venue/               # Local images for venue cards (e.g., kadmo_bar_card.jpeg)
-├── images_ohrid/               # Local images for the "Learn About Ohrid" page slideshow
-├── main_event/                 # Local images for hero section events (e.g., kulturoloska2025_hero.jpg)
-├── index.html                  # Main HTML structure of the application
-├── script.js                   # Core JavaScript for all dynamic functionality, data fetching, rendering
-├── style.css                   # CSS for styling the application
-└── README.md                   # This file
-```
+
+The project is organized into logical folders and files:
+
+- `index.html`: The main landing page.
+- `day-planner.html`: The page for the day planner feature.
+- `learn.html`: The page for learning about Ohrid.
+- `style.css`: Main stylesheet for the entire application.
+- `learn.css`: Additional styles for the "Learn About Ohrid" page.
+- `common.js`: Contains shared JavaScript functions, such as rendering the navbar and footer.
+- `index.js`, `day-planner.js`, `learn.js`: Page-specific JavaScript modules.
+- `data/`: Contains JSON files (`events.json`, `venues.json`, etc.) that act as a database.
+- `images_ohrid/`, `images_venue/`, `main_event/`: Contain all image assets.
+- `server.js`: A simple Express server for local development.
 
 ## Setup and Installation
 
-1.  **Clone the repository:**
-    ```bash
-    git clone <repository-url>
-    ```
-2.  **Navigate to the project directory:**
-    ```bash
-    cd OhridLife
-    ```
-3.  **Run a local server:**
-    Since the application uses `fetch()` to load local JSON files, you need to run it through a local web server to avoid CORS errors. A simple way is to use Python's built-in HTTP server.
+To run this project locally, follow these steps:
 
-    If you have Python 3 installed:
+1.  **Clone the repository**:
     ```bash
-    python -m http.server
+    git clone https://github.com/Jakov89/OhridHub.git
     ```
-    If you have Python 2 installed:
+2.  **Navigate to the project directory**:
     ```bash
-    python -m SimpleHTTPServer
+    cd OhridHub
     ```
-    Alternatively, you can use other tools like the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension for VS Code.
-
-4.  **Open in your browser:**
-    Navigate to `http://localhost:8000` (or the port specified by your server).
+3.  **Install dependencies**:
+    If you have Node.js and npm installed, you can install the required packages (like `express` for the server).
+    ```bash
+    npm install
+    ```
+4.  **Run the local server**:
+    ```bash
+    node server.js
+    ```
+5.  **Open in your browser**:
+    Navigate to `http://localhost:3000` to see the application in action.
 
 ## Usage
 
-Navigate through the different sections using the navigation bar. Explore events, venues, and cultural pages. Use the Day Planner to create and manage your personal schedule for your visit to Ohrid.
+Once the application is running, you can:
+- Browse the home page to see featured events and venue recommendations.
+- Click on "Events" in the navigation to jump to the calendar section.
+- Use the calendar to select a date and see what's happening.
+- Filter venues by category and sub-category to find places that interest you.
+- Visit the "Day Planner" page to build your own schedule.
+- Explore the "Learn About Ohrid" page for cultural insights.
 
-## Data Sources
+## Key Scripts and Functionality
 
-All data for the application is stored in JSON files within the `/data` directory. This makes it easy to update content without touching the core HTML, CSS, or JavaScript files.
-- `venues.json`: Contains a list of all venues with details like name, type, rating, location, etc.
-- `events.json`: Lists all individual events, which can be linked to specific venues.
-- `learn_ohrid_text.json`: Contains the language-specific text and image paths for the "Learn about Ohrid" page.
+- `common.js`: Dynamically creates the navbar and footer on every page. This ensures consistency and makes it easy to update navigation links site-wide.
+- `index.js`: Manages the home page, including fetching all data, populating sliders, handling event calendar interactions, and managing the venue filtering system.
+- `day-planner.js`: Contains all logic for the day planner, including saving plans to `localStorage`, populating form dropdowns, and rendering the user's schedule.
 
-## Future Enhancements
+## Contributing
 
-- **More Categories:** Expand venue categories to include hospitality (hotels, apartments), car rentals, and shopping.
-- **Advanced Filtering:** Add more complex filtering options for venues, such as by price, rating, or specific amenities.
-- **User Accounts:** Allow users to create accounts to save their day plans and favorite venues permanently.
-- **Booking Integration:** Integrate with booking platforms to allow direct reservations from the app.
-- **CMS Integration:** Connect the application to a headless CMS to allow for easier content management by non-developers.
+Contributions are welcome! If you have ideas for new features or improvements, feel free to fork the repository and submit a pull request.
 
-## Conclusion
+## License
 
-This README provides an overview of the OhridLife web application. Explore the code to understand the implementation details further. 
+This project is open-source and available for anyone to use.
+
+---
+
+This README provides an overview of the OhridHub web application. Explore the code to understand the implementation details further. 

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Planner - OhridHub</title>
+    <meta name="description" content="Plan your perfect day in Ohrid with the OhridHub Day Planner. Create a custom itinerary, discover events, and explore venues.">
+    <link rel="canonical" href="https://www.ohridhub.com/day-planner" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#FFFFFF">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ohridhub.com/day-planner">
+    <meta property="og:title" content="Day Planner - OhridHub">
+    <meta property="og:description" content="Plan your perfect day in Ohrid with the OhridHub Day Planner. Create a custom itinerary, discover events, and explore venues.">
+    <meta property="og:image" content="https://www.ohridhub.com/images_ohrid/photo2.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.ohridhub.com/day-planner">
+    <meta property="twitter:title" content="Day Planner - OhridHub">
+    <meta property="twitter:description" content="Plan your perfect day in Ohrid with the OhridHub Day Planner. Create a custom itinerary, discover events, and explore venues.">
+    <meta property="twitter:image" content="https://www.ohridhub.com/images_ohrid/photo2.jpg">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="navbar">
+        <div class="container">
+            <!-- The navbar will be populated by common.js -->
+        </div>
+    </header>
+
+    <main class="day-planner-page-container">
+        <div class="container">
+            <h1 class="page-title">My Day Planner</h1>
+            <p class="page-subtitle">Select a day from the calendar to view or edit your plan. Your itinerary is saved automatically in your browser.</p>
+            
+            <div class="planner-layout">
+
+                <!-- Left Column: The Plan & Form -->
+                <div class="planner-column-left">
+                    <div id="ai-planner-container" class="light-card">
+                        <h3 class="card-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3.5 18.5 4 4 4-4"/><path d="m7.5 22.5 4-4 4 4"/><path d="M14 22.5V8.5c0-1.1.9-2 2-2h4v10c0 1.1-.9 2-2 2h-4"/><path d="M18 2.5v-1"/><path d="M20 4.5h-4"/></svg>
+                            <span>Need Inspiration?</span>
+                        </h3>
+                        <p class="ai-planner-description">Let our assistant build a personalized itinerary for you based on your interests.</p>
+                        <button id="show-ai-planner-btn" class="btn btn-primary w-full">Build My Perfect Day</button>
+                    </div>
+
+                    <div class="light-card">
+                        <h3 class="card-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            <span>Select Date</span>
+                        </h3>
+                        <div id="planner-calendar-container">
+                            <!-- Calendar will be injected here -->
+                        </div>
+                    </div>
+
+                    <div class="day-planner-form-container light-card">
+                        <h3 class="form-title">Or, Add an Item Manually</h3>
+                        <form id="add-plan-item-form" class="day-planner-form">
+                            <div class="form-group">
+                                <label for="plan-day-night-type">Time of Day</label>
+                                <select id="plan-day-night-type" class="form-input" required>
+                                    <option value="" disabled selected>Select...</option>
+                                    <option value="Daytime">Daytime</option>
+                                    <option value="Nighttime">Nighttime</option>
+                                </select>
+                            </div>
+                             
+                             <div class="form-group">
+                                <label for="plan-activity-type">Activity Type</label>
+                                <select id="plan-activity-type" class="form-input" required>
+                                    <option value="" disabled selected>Select time of day first...</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group" id="plan-item-venue-group" style="display: none;">
+                                <label for="plan-item-venue-select">Select Venue</label>
+                                <select id="plan-item-venue-select" class="form-input">
+                                     <option value="" disabled selected>Select a venue...</option>
+                                </select>
+                            </div>
+                             
+                             <div class="form-group">
+                                <label for="plan-item-time">Time</label>
+                                <select id="plan-item-time" class="form-input">
+                                     <option value="Any time" selected>Any time</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="plan-item-notes">Notes (optional)</label>
+                                <textarea id="plan-item-notes" class="form-input" rows="2" placeholder="e.g., reservation details"></textarea>
+                            </div>
+                            
+                            <button type="submit" id="add-to-plan-btn" class="btn btn-primary w-full">Add to Plan</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right Column: Plan Display -->
+                <div class="planner-column-right">
+                    <div id="daily-events-suggestion-container" class="light-card hidden">
+                        <h3 class="card-header">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><path d="M21 17V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"></path><path d="M3 10h18"></path><path d="m16 22 5-5-1.5-1.5L16 19l-2-2-1.5 1.5L16 22Z"></path></svg>
+                            <span>Events on this Day</span>
+                        </h3>
+                        <div id="daily-events-suggestion-list">
+                            <!-- Suggested events will be populated here -->
+                        </div>
+                    </div>
+
+                    <div id="selected-date-plan-details" class="light-card">
+                        <div class="plan-header">
+                            <h3 class="text-xl font-semibold">Plan for <span id="currently-viewing-date">Selected Date</span></h3>
+                            <button id="share-plan-btn" class="btn btn-secondary btn-small">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                                    <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                                </svg>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                        <div id="currentPlanDisplay">
+                            <p class="empty-plan-message">Select a date to see your plan.</p>
+                        </div>
+                        <div id="clear-selected-date-plan-button-container">
+                             <button id="clear-plan-btn" class="btn btn-destructive-modern">Clear Plan for <span id="clear-button-date-text">Selected Date</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- AI Planner Modal -->
+    <div id="ai-planner-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button id="ai-modal-close-btn" class="modal-close-button">&times;</button>
+            <h2 class="modal-title">Build Your Perfect Day</h2>
+            <p class="modal-subtitle">Answer a few questions and we'll generate a personalized plan for you.</p>
+
+            <div id="ai-planner-questions">
+                <div class="ai-question">
+                    <label>1. What are you in the mood for? (Select up to 3)</label>
+                    <div id="ai-interest-choices" class="ai-choices-grid">
+                        <!-- Interest options will be populated by JS -->
+                    </div>
+                </div>
+                <div class="ai-question">
+                    <label>2. Who are you planning for?</label>
+                    <div id="ai-company-choices" class="ai-choices-grid">
+                        <!-- Company options will be populated by JS -->
+                    </div>
+                </div>
+                <div class="ai-question">
+                    <label>3. What time of day is this for?</label>
+                    <div id="ai-time-choices" class="ai-choices-grid">
+                        <!-- Time options will be populated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <button id="generate-plan-btn" class="btn btn-primary w-full">Generate My Itinerary</button>
+
+            <div id="ai-plan-suggestions" class="hidden">
+                <h3 class="suggestions-title">Here's a plan we've prepared for you:</h3>
+                <div id="ai-suggestions-list">
+                    <!-- Suggested plan items will be injected here -->
+                </div>
+                <div class="suggestions-footer">
+                    <button id="start-over-ai-plan-btn" class="btn btn-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 2v6h6"/><path d="M21.5 22v-6h-6"/><path d="M22 11.5A10 10 0 0 0 3.2 7.2M2 12.5a10 10 0 0 0 18.8 4.2"/></svg>
+                        <span>Start Over</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="page-footer">
+        <!-- The footer will be populated by common.js -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="common.js"></script>
+    <script src="day-planner.js" type="module"></script>
+</body>
+</html> 

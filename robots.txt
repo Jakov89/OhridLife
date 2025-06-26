@@ -1,0 +1,12 @@
+# Allow all friendly crawlers to access the site.
+User-agent: *
+Allow: /
+
+# Disallow crawlers from accessing specific admin or temp folders if you have them.
+# For example:
+# Disallow: /admin/
+# Disallow: /tmp/
+
+# Provide the location of the sitemap.
+# You should generate a sitemap.xml file for better indexing.
+Sitemap: https://www.ohridhub.com/sitemap.xml 

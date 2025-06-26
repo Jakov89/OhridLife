@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "title": "Културолошко Лето",
+        "description": "Get ready! It's the 7th time culture comes alive this summer!",
+        "date": "05.07 - 12.07",
+        "imageUrl": "/main_event/kulturoloska2025_hero.jpg",
+        "imageUrlMobile": "main_event/kulturoloska_port.jpg",
+        "specialLink": "#kulturno-leto",
+        "gallery": [            
+            "/main_event/free_spirit.jpg",
+            "/main_event/drivecinema.jpg" ,
+            "/main_event/museum.jpg",
+            "/main_event/wake.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Ohrid Water Festival",
+        "description": "Experience sports, nature, and pure fun!",
+        "longDescription": "Dive into the Ohrid Water Festival: Where Sports Meet Nature!\\n\\nThe Ohrid Water Festival isn't just an event it's a project that beautifully blends the thrill of water sports with Ohrid's incredible natural beauty, all while nurturing the growth of our local community.\\n\\nOur dream and our drive? To unite all of Ohrid's vibrant water sports and their activities under one exciting, sports-tourism BRAND: the Ohrid Water Festival.\\n\\nOhrid and North Macedonia truly deserve a modern, strategic project that celebrates our iconic Lake Ohrid. The Ohrid Water Festival, with its dynamic concept, is exactly what Ohrid needs to offer the wider domestic and international sports and tourism communities.\\n\\nWe see immense potential for this festival! With the support of our partners, we're confident we can elevate both Ohrid and the festival to the ranks of the world's most sought-after destinations and sports-tourism activities for everyone who loves water, water sports, and a great time.\\n\\nOur Focus: Lake, Sports, and Community\\n\\nOur strategic focus is crystal clear: the lake, its protection, water sports, the clubs and associations connected to the water, and especially the dedicated sports professionals who pour their hearts into the lake every day. These are all reasons why we're committing ourselves fully to creating a new sporting tradition. This tradition will undoubtedly elevate Ohrid's active tourism and the city itself to the European pedestal of sports-tourism cities.\\n\\nThe Ohrid Water Festival introduces a fresh and unique concept for a sports festival centered around water and water-based activities. It's designed to offer a fantastic array of activities for all ages and all water enthusiasts. These activities will be thoughtfully divided into three categories: sports, socio-educational, and promotional.\\n\\nWhat to Expect: Nine Days of Non-Stop Fun!\\n\\nGet ready for nine days of non-stop excitement, from August 19th to August 27th. Each day will offer a dynamic mix of activities spread throughout. We've planned over 30 activities across these ten days! The highlight will be the traditional Ohrid Swimming Marathon, stretching from St. Naum to Ohrid, scheduled for August 26th.\\n\\nBeyond the thrilling sports and recreational activities, the festival will feature plenty of social gatherings, music, educational sessions, and promotions. There will also be panel discussions, exhibitions, and presentations on healthy eating.\\n\\nOlympic and Eco-Friendly!\\n\\nIt's important to us to highlight that all sports featured in the festival are Olympic sports, and, crucially, they are eco-friendly. This commitment gives us even more motivation and a sense of purpose to make this festival a resounding success.",
+        "date": "16-30 August, 2025",
+        "imageUrl": "/main_event/water_festival.jpg",
+        "imagePosition": "left",
+        "specialLink": "#ohrid-wine-fest"
+    }
+] 

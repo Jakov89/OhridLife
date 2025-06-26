@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization - OhridHub</title>
+    <meta name="description" content="Learn more about the organizations and cultural institutions in Ohrid.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ohridhub.com/organization">
+    <meta property="og:title" content="Organization - OhridHub">
+    <meta property="og:description" content="Learn more about the organizations and cultural institutions in Ohrid.">
+    <meta property="og:image" content="https://www.ohridhub.com/images_ohrid/photo4.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.ohridhub.com/organization">
+    <meta property="twitter:title" content="Organization - OhridHub">
+    <meta property="twitter:description" content="Learn more about the organizations and cultural institutions in Ohrid.">
+    <meta property="twitter:image" content="https://www.ohridhub.com/images_ohrid/photo4.jpg">
+    
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/learn.css"> <!-- Re-use some styles for consistency -->
+</head>
+<body>
+    <header id="navbar">
+        <div class="container">
+            <!-- The navbar will be populated by common.js -->
+        </div>
+    </header>
+
+    <main class="organization-page-container">
+        <div class="container">
+            <div id="organization-page" class="learn-ohrid-page">
+                <div class="ohrid-content-wrapper">
+                    <h1 id="org-name"></h1>
+                    <div id="org-image-gallery">
+                        <img id="org-main-image" src="" alt="Main image for organization" class="gallery-image" loading="lazy">
+                    </div>
+                    <p id="org-description"></p>
+                    
+                    <h2 id="org-gallery-title">Gallery</h2>
+                    <div id="org-gallery" class="gallery-grid">
+                        <!-- Gallery images will be inserted here by JavaScript -->
+                    </div>
+
+                    <h2 id="associated-events-title" style="display: none;">Events</h2>
+                    <div id="associated-events-container" class="associated-events-grid">
+                        <!-- Associated event cards will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="page-footer">
+        <!-- Footer will be rendered by common.js -->
+    </footer>
+
+    <script src="/common.js"></script>
+    <script src="/organization.js"></script>
+</body>
+</html> 

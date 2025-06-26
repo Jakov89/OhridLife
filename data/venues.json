@@ -2,15 +2,37 @@
   {
     "id": 1,
     "name": "Kadmo Bar",
-    "description": "Enjoy stunning lakeside views at Kadmo Bar, your go-to spot for daytime coffee, cocktails, and meals. By night, it transforms into a vibrant venue hosting live music bands and exciting events.",
-    "type": ["coffee", "restaurant"],
-    "imageUrl": "images_venue/kadmo_bar_card.jpeg",
-    "rating": 4.2,
+    "description": "Kadmo Bar perches right on the lakefront with sweeping views of Old Town Ohrid—perfect for sunset drinks. From casual beers and wines to live music nights, it gives off that effortlessly cool lounge vibe. It's ideal for laid‑back evenings when you just want to soak in the lakefront buzz.",
+    "type": [
+      "coffee",
+      "restaurant"
+    ],
+    "tags": [
+      "popular",
+      "nightlife",
+      "scenic",
+      "romantic"
+    ],
+    "imageUrl": "images_venue/kadmo_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/kadmo_bar/photo1.jpg",
+        "alt": "Soaking up the sun by Lake Ohrid with a delightful lemon sorbet, complete with chocolate chips and a little treat on the side – a perfect moment of sweet bliss."
+      },
+      {
+        "url": "venue_gallery/kadmo_bar/photo2.jpg",
+        "alt": "Pure relaxation by Lake Ohrid! Enjoying a creamy cappuccino and a scoop of ice cream with chocolate sauce, all while taking in the stunning lake views under a beautiful blue sky."
+      },
+      {
+        "url": "venue_gallery/kadmo_bar/photo3.jpg",
+        "alt": "What a lovely spot to unwind! Sipping on a delicious drink (looks like a coffee or a sweet treat!) at Kadmo Lounge Bar, right by the water's edge, surrounded by good company and beautiful lake scenery."
+      }
+    ],
     "priceLevel": 3,
     "location": {
-        "address": "Kosta Abrash, Ohrid",
-        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kadmo+Lounge+Bar,Kosta+Abrash,Ohrid",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.035415523309!2d20.796792600000003!3d41.1119176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca527527cbf%3A0xc117df555899d00e!2sKadmo%20Lounge%20Bar!5e0!3m2!1sen!2smk!4v1748537148170!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Kosta Abrash, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kadmo+Lounge+Bar,Kosta+Abrash,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.035415523309!2d20.796792600000003!3d41.1119176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca527527cbf%3A0xc117df555899d00e!2sKadmo%20Lounge%20Bar!5e0!3m2!1sen!2smk!4v1748537148170!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
     "phone": "070 293 888",
     "workingHours": "Mon-Sun: 08:00-00:00 (Summer Hours: 08:00-02:00)",
@@ -18,35 +40,75 @@
     "events": []
   },
   {
-    "id": 5,
+    "id": 2,
     "name": "Jazz Inn",
-    "description": "Jazz Inn offers an intimate and cozy atmosphere, primarily known for its jazz music. It frequently hosts live music sessions and occasionally organizes stand-up comedy shows.",
+    "description": "Ohrid's legendary Jazz Inn is much more than a bar—it's an intimate musical experience since 1989. Tucked in Old Town, it feels like a cozy living room where locals and tourists sip whisky while soaking in smooth jazz sets. Charming, relaxed, and beautifully authentic; perfect for anyone craving a cultural, after-dinner ambience with soul.",
     "type": "club",
+    "tags": [
+      "nightlife",
+      "music",
+      "cozy",
+      "romantic"
+    ],
     "imageUrl": "images_venue/jazz_in_card.jpg",
-    "rating": 4.7,
+    "gallery": [
+      {
+        "url": "venue_gallery/jazz_in/photo1.jpg",
+        "alt": "A cozy evening unwind at Jazz Inn, with a perfectly poured drink catching the warm glow of the bar. Looks like the start of a great night!"
+      },
+      {
+        "url": "venue_gallery/jazz_in/photo2.jpg",
+        "alt": "Settling in for a relaxed evening at Jazz Inn in Ohrid. This cozy bar just radiates a welcoming, laid-back vibe, perfect for unwinding after a day of exploring."
+      },
+      {
+        "url": "venue_gallery/jazz_in/photo3.jpg",
+        "alt": "Stepping into the timeless atmosphere of Jazz Inn, captured in classic black and white. It feels like a moment frozen in time, inviting quiet reflection."
+      }
+    ],
     "priceLevel": 1,
     "location": {
-        "address": "Ohrid",
-        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=41.11202390863104,20.794302869655294",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.97108961541426!2d20.79483075241209!3d41.11180561039946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbad9f657b9%3A0xe46164dac671a55b!2sJazz%20Inn!5e0!3m2!1sen!2smk!4v1748537193910!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=41.11202390863104,20.794302869655294",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.97108961541426!2d20.79483075241209!3d41.11180561039946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbad9f657b9%3A0xe46164dac671a55b!2sJazz%20Inn!5e0!3m2!1sen!2smk!4v1748537193910!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
     "phone": "078 201 491",
-    "workingHours": "Daily: 18:00-00:00 (Summer Hours: 18:00-02:00)",
+    "workingHours": "Daily: 10:00-01:00 (Summer Hours: 10:00-02:00)",
     "bookingUrl": "#",
     "events": []
   },
   {
-    "id": 9,
+    "id": 3,
     "name": "Liquid Cafe Bar",
-    "description": "Liquid Cafe Bar offers a stunning lakeside view, perfect for enjoying coffee during the day. As evening approaches, it transforms into a lively spot often featuring DJs or live bands, making it a popular nightlife destination.",
-    "type": ["club", "coffee"],
+    "description": "Right by the lake, Liquid Cafe Bar is the perfect haven for both coffee lovers and cocktail seekers. It's modern and laid‑back, serving everything from robust espresso to lakefront mojitos. . Day or night, it's a great stop for  conversation, or an Instagram-worthy sunset moment.",
+    "type": [
+      "club",
+      "coffee"
+    ],
+    "tags": [
+      "popular",
+      "nightlife",
+      "scenic"
+    ],
     "imageUrl": "images_venue/liquid_card.jpg",
-    "rating": 4.4,
+    "gallery": [
+      {
+        "url": "venue_gallery/liquid/photo1.jpg",
+        "alt": "Pure bliss by Lake Ohrid! Enjoying a refreshing coffee (or two!) with a glass of water, soaking in the gorgeous sunny sky and the calm lake. This is what vacation dreams are made of."
+      },
+      {
+        "url": "venue_gallery/liquid/photo2.jpg",
+        "alt": "Stepping inside 'Liquid Ohrid,' a bright and inviting cafe right on the lake. The open design brings the stunning views indoors, making it a wonderful place to enjoy a drink and the fresh air."
+      },
+      {
+        "url": "venue_gallery/liquid/photo3.jpg",
+        "alt": "Relaxing by the beautiful Lake Ohrid at 'Liquid Ohrid,' with a lovely outdoor seating area perfect for enjoying the water views and the gentle breeze. It's an ideal spot to unwind!"
+      }
+    ],
     "priceLevel": 2,
     "location": {
-        "address": "Ohrid",
-        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=41.11179766030246,20.795047212859384",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.96999952323426!2d20.796350681289486!3d41.11203210785903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca52629cca1%3A0xf2b6822b86dafab2!2sLiquid!5e0!3m2!1sen!2smk!4v1748537215411!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=41.11179766030246,20.795047212859384",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.96999952323426!2d20.796350681289486!3d41.11203210785903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca52629cca1%3A0xf2b6822b86dafab2!2sLiquid!5e0!3m2!1sen!2smk!4v1748537215411!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
     "phone": "+389 46 258 552",
     "workingHours": "Daily: 09:00-00:00 (Summer Hours: 09:00-02:00)",
@@ -54,17 +116,28 @@
     "events": []
   },
   {
-    "id": 10,
+    "id": 4,
     "name": "Irish Pub Five",
-    "description": "Irish Pub Five captures the authentic atmosphere of a traditional Irish pub. It's a cozy spot offering solid pub fare, including burgers, and boasts a selection of various beers, featuring different types of Macedonian craft beers.",
+    "description": "Irish Pub Five brings a friendly, upbeat bar vibe paired with hearty pub food. Their burgers are famously massive and tasty, and the beer list caters to both locals and craft-beer fans.With TVs for sports nights and occasional live music, it's a comfortable spot for a casual dinner or a fun night out.",
     "type": "pub",
+    "tags": [
+      "pub",
+      "foodie",
+      "cozy",
+      "friends"
+    ],
     "imageUrl": "images_venue/pub_five_card.jpg",
-    "rating": 4.6,
+    "gallery": [
+      {
+        "url": "venue_gallery/pub_five/photo1.jpg",
+        "alt": "Stepping into the vibrant energy of the Irish Pub Five! The bar glows with a cool green light, hinting at lively evenings and good times ahead in Ohrid."
+      }
+    ],
     "priceLevel": 1,
     "location": {
-        "address": "Ohrid",
-        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=41.11487931285327,20.79814417644796",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.4802732442341!2d20.799777163693015!3d41.11441434209235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddc6712cf77b%3A0xd287b2c00c2e9c58!2sIrish%20Pub%20Five!5e0!3m2!1sen!2smk!4v1748537237423!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=41.11487931285327,20.79814417644796",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.4802732442341!2d20.799777163693015!3d41.11441434209235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddc6712cf77b%3A0xd287b2c00c2e9c58!2sIrish%20Pub%20Five!5e0!3m2!1sen!2smk!4v1748537237423!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
     "phone": "076 625 083",
     "workingHours": "Daily: 08:00-00:00 (Summer Hours: 08:00-01:00)",
@@ -72,17 +145,28 @@
     "events": []
   },
   {
-    "id": 11,
+    "id": 5,
     "name": "Omnia Night Club",
     "type": "club",
+    "tags": [
+      "popular",
+      "nightlife",
+      "party",
+      "friends"
+    ],
     "imageUrl": "images_venue/omnia_card.jpg",
-    "description": "Omnia Night Club, situated in the heart of Ohrid, frequently hosts Macedonian DJs and occasionally features international artists, offering a vibrant nightlife experience.",
-    "rating": 4.1,
+    "gallery": [
+      {
+        "url": "venue_gallery/omnia/photo1.jpg",
+        "alt": "Stepping into the electrifying atmosphere of 'Omnia Nightclub' in Ohrid! The cutting-edge red lit bar with its cool geometric pattern sets the stage for an unforgettable night of music and energy."
+      }
+    ],
+    "description": "As one of Ohrid's top nightlife venues, Omnia exudes high energy with a state‑of‑the‑art sound system, polished lights, and headline DJs. Located in the town center, it's where party-goers dance late into the night—especially during themed nights and DJ shows . If you're in the mood for an electric club atmosphere, this is your go-to venue.",
     "priceLevel": 2,
     "location": {
-        "address": "Цар Самоил 30, Ohrid 6000",
-        "googleMapsUrl": "https://www.google.com/maps/place/Omnia+Night+Club/@41.1131001,20.7998957,19z/data=!3m1!4b1!4m6!3m5!1s0x1350dd7a9302f453:0xd39672b71f9f0769!8m2!3d41.1131001!4d20.8005394!16s%2Fg%2F11c6p35rgy?entry=ttu",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Цар Самоил 30, Ohrid 6000",
+      "googleMapsUrl": "https://www.google.com/maps/place/Omnia+Night+Club/@41.1131001,20.7998957,19z/data=!3m1!4b1!4m6!3m5!1s0x1350dd7a9302f453:0xd39672b71f9f0769!8m2!3d41.1131001!4d20.8005394!16s%2Fg%2F11c6p35rgy?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
     "phone": "078586699",
     "workingHours": "Working Hours: 22:00-05:00 (Fri-Sat)<br>Summer working hours 22:00-05:00",
@@ -90,17 +174,32 @@
     "events": []
   },
   {
-    "id": 12,
+    "id": 6,
     "name": "Alomos Night Club",
     "description": "Alomos Night Club offers a lively atmosphere with live music, primarily featuring Serbian artists and bands.",
     "type": "club",
+    "tags": [
+      "nightlife",
+      "music",
+      "party",
+      "friends"
+    ],
     "imageUrl": "images_venue/alomos_card.jpg",
-    "rating": 4.1,
+    "gallery": [
+      {
+        "url": "venue_gallery/alomos/photo2.jpg",
+        "alt": "The sophisticated and modern interior of Alomos Night Club, showcasing sleek lines of light and inviting seating areas. It's perfectly set up for an unforgettable night out in Ohrid."
+      },
+      {
+        "url": "venue_gallery/alomos/photo3.jpg",
+        "alt": "Stepping into the vibrant heart of Alomos Night Club in Ohrid! The mesmerizing blue lighting and cool geometric neon accents create an electric atmosphere perfect for dancing the night away."
+      }
+    ],
     "priceLevel": 2,
     "location": {
-        "address": "BP Petrol, E65, Ohrid 6000",
-        "googleMapsUrl": "https://www.google.com/maps/place/Alomos+Night+Club/@41.1051875,20.8130278,19z/data=!4m6!3m5!1s0x1350dba7c151e09d:0xb7ef8f995010ac8d!8m2!3d41.1051875!4d20.8136133!16s%2Fg%2F11hjg_rd5g?entry=ttu",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d634.5585995556619!2d20.81361332453349!3d41.105187569283856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dba7c151e09d%3A0xb7ef8f995010ac8d!2z0Igu0J8uINCR0LjQu9GY0LDQvdC40L3QuCDQmNC30LLQvtGA0Lg!5e1!3m2!1sen!2smk!4v1748255004872!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "BP Petrol, E65, Ohrid 6000",
+      "googleMapsUrl": "https://www.google.com/maps/place/Alomos+Night+Club/@41.1051875,20.8130278,19z/data=!4m6!3m5!1s0x1350dba7c151e09d:0xb7ef8f995010ac8d!8m2!3d41.1051875!4d20.8136133!16s%2Fg%2F11hjg_rd5g?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d634.5585995556619!2d20.81361332453349!3d41.105187569283856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dba7c151e09d%3A0xb7ef8f995010ac8d!2z0Igu0J8uINCR0LjQu9GY0LDQvdC40L3QuCDQmNC30LLQvtGA0Lg!5e1!3m2!1sen!2smk!4v1748255004872!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
     "phone": "072 238 888",
     "workingHours": "Working Hours: 22:00 - 04:00 (Fri-Sat)<br>Summer working hours 22:00 - 04:00",
@@ -108,17 +207,40 @@
     "events": []
   },
   {
-    "id": 13,
+    "id": 7,
     "name": "Rebel",
-    "description": "Rebel is a new hotspot in Ohrid, renowned for hosting international DJs with high reputations. The venue alternates between exhilarating house music and driving techno nights.",
+    "description": "Rebel is Ohrid's house & techno hotspot. With a strong calendar of themed nights and guest DJs, it's ideal for late-night dance seekers. Expect pulsing rhythm, vibrant crowd, and a seriously cool club energy. A must for electronic music fans.",
     "type": "club",
+    "tags": [
+      "nightlife",
+      "party",
+      "music",
+      "friends"
+    ],
     "imageUrl": "images_venue/rebel_card.jpg",
-    "rating": 4.5,
+    "gallery": [
+      {
+        "url": "venue_gallery/rebel/photo1.jpg",
+        "alt": "The dance floor is absolutely packed and buzzing with energy at a lively night out in Ohrid! Disco balls gleam, lights flash, and everyone is having an amazing time."
+      },
+      {
+        "url": "venue_gallery/rebel/photo2.jpg",
+        "alt": "A fantastic black and white shot capturing a live band rocking the stage at Rebel, with the crowd grooving along. The energy is palpable, and those disco balls are working their magic!"
+      },
+      {
+        "url": "venue_gallery/rebel/photo3.jpg",
+        "alt": "The club is lit up with vibrant blues and oranges, creating an exhilarating atmosphere for a memorable night out in Ohrid. Lasers cut through the haze, and the crowd is completely immersed in the music."
+      },
+      {
+        "url": "venue_gallery/rebel/photo4.jpg",
+        "alt": "A sophisticated bar at a lively spot in Ohrid, beautifully lit with warm, inviting tones. The shelves are fully stocked, ready to craft the perfect drink for a night of fun and good company."
+      }
+    ],
     "priceLevel": 3,
     "location": {
-        "address": "Партизанска бб, Ohrid 6000",
-        "googleMapsUrl": "https://www.google.com/maps/place/Rebel+Ohrid/@41.1053125,20.8117375,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dbb5377ef5c3:0xf12be018ed556603!8m2!3d41.1053125!4d20.8143125!16s%2Fg%2F11r_xpjf9h?entry=ttu",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.5986812961733!2d20.8143125!3d41.1053125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbb5377ef5c3%3A0xf12be018ed556603!2sRebel%20Ohrid!5e1!3m2!1sen!2smk!4v1748257098398!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Партизанска бб, Ohrid 6000",
+      "googleMapsUrl": "https://www.google.com/maps/place/Rebel+Ohrid/@41.1053125,20.8117375,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dbb5377ef5c3:0xf12be018ed556603!8m2!3d41.1053125!4d20.8143125!16s%2Fg%2F11r_xpjf9h?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.5986812961733!2d20.8143125!3d41.1053125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbb5377ef5c3%3A0xf12be018ed556603!2sRebel%20Ohrid!5e1!3m2!1sen!2smk!4v1748257098398!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
     "phone": "078858499",
     "workingHours": "Working Hours: 00:00-05:00 (Sat)<br>Summer Hours: 00:00-05:00 (Mon-Sun)",
@@ -126,251 +248,423 @@
     "events": []
   },
   {
-     "id": 14,
-     "name": "Cuba Libre Beach & Bar",
-     "description": "A premier summer destination located perfectly on the lakeside. By day, it's a relaxing beach spot, and by night, it hosts the popular 'Cubalcanica' event with Cuban dancers, live DJs, great food, and cocktails.",
-     "type": ["coffee", "beach"],
-     "imageUrl": "images_venue/cuba_card.jpg",
-     "rating": 4.5,
-     "priceLevel": 2,
-     "location": {
-         "address": "Cuba Libre Beach & Bar, Ohrid",
-         "googleMapsUrl": "https://www.google.com/maps/place/Cuba+Libre+Beach+%26+Bar/@41.1009742,20.8026467,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dcaa42cfea41:0x3769611e40472486!8m2!3d41.1009742!4d20.8052217!16s%2Fg%2F11c5s1bvf0?entry=ttu",
-         "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.634108049442!2d20.805221669664988!3d41.100974198208625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcaa42cfea41%3A0x3769611e40472486!2sCuba%20Libre%20Beach%20%26%20Bar!5e0!3m2!1sen!2smk!4v1748343855467!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-     },
-     "phone": "075357545",
-     "workingHours": "Mon-Thu: 09:00-01:00<br>Fri-Sat: 09:00-02:00",
-     "bookingUrl": "#",
-     "events": []
-   },
-   {
-     "id": 15,
-     "name": "Kadmo Beach Restaurant",
-     "description": "Restaurant with a perfect lake view, offering a nice warm atmosphere and great food. Occasional nighttime events.",
-     "type": ["restaurant", "beach"],
-     "imageUrl": "images_venue/kadmo_beach_restaurant.jpg",
-     "rating": 3.7,
-     "priceLevel": 3,
-     "location": {
-         "address": "Kadmo Beach Restaurant, Ohrid",
-         "googleMapsUrl": "https://www.google.com/maps/place/Kadmo+Beach+Restaurant/@41.0999426,20.8017792,17z/data=!3m1!4b1!4m6!3m5!1s0x1350ddbb20778c5f:0xa0d1083080e0acfa!8m2!3d41.0999426!4d20.8043542!16s%2Fg%2F11h2r6_ffy?entry=ttu",
-         "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.6459139510407!2d20.80435416966498!3d41.099942598208614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddbb20778c5f%3A0xa0d1083080e0acfa!2sKadmo%20Beach%20Restaurant!5e0!3m2!1sen!2smk!4v1748344350409!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-     },
-     "phone": "071348701",
-     "workingHours": "Mon-Thu: 09:00-00:00<br>Fri-Sat: 09:00-01:00",
-     "bookingUrl": "#",
-     "events": []
-   },
-   {
-     "id": 16,
-     "name": "Despina Event Venue & Lounge",
-     "description": "Primarily a venue for weddings and private events, Despina also boasts a perfect lakeside location that's accessible at other times.",
-     "type": "restaurant",
-     "imageUrl": "images_venue/despina_card.jpg",
-     "rating": 4.4,
-     "priceLevel": 3,
-     "location": {
-         "address": "Despina Event Venue & Lounge, Ohrid",
-         "googleMapsUrl": "https://www.google.com/maps/place/%E2%80%9CDespina%E2%80%9D+Event+Venue+%26+Lounge+-+Lake+Ohrid/@41.0983923,20.800800,17z/data=!3m1!4b1!4m6!3m5!1s0x1350c30005cd6371:0x19abdc8186c32683!8m2!3d41.0983923!4d20.803375!16s%2Fg%2F11v01_w2jy?entry=ttu",
-         "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.3273110841012!2d20.803374571244373!3d41.09839229746663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c30005cd6371%3A0x19abdc8186c32683!2s%E2%80%9CDespina%E2%80%9D%20Event%20Venue%20%26%20Lounge%20-%20Lake%20Ohrid!5e0!3m2!1sen!2smk!4v1748344649835!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-     },
-     "phone": "074244159",
-     "workingHours": "Mon-Sun: 09:00-00:00",
-     "bookingUrl": "#",
-     "events": []
-   },
-   {
-     "id": 17,
-     "name": "Egoist Beach Bar & Restaurant",
-     "description": "A luxury-style nighttime destination that also serves as a beach with perfect food during summer days. Hosts events with popular Macedonian and international singers at night.",
-     "type": ["restaurant", "club", "beach"],
-     "imageUrl": "images_venue/egoist_card.jpg",
-     "rating": 3.6,
-     "priceLevel": 3,
-     "location": {
-         "address": "Egoist Beach Bar & Restaurant, Ohrid",
-         "googleMapsUrl": "https://www.google.com/maps/place/Egoist+Beach+Bar+%26+Restaurant/@41.0900729,20.7945097,17z/data=!3m1!4b1!4m6!3m5!1s0x1350c3b276941b7d:0x3d68010177ac4eff!8m2!3d41.0900729!4d20.7970847!16s%2Fg%2F11pvq1qdrk?entry=ttu",
-         "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.5177061080271!2d20.7970847444275!3d41.0900729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c3b276941b7d%3A0x3d68010177ac4eff!2sEgoist%20Beach%20Bar%20%26%20Restaurant!5e0!3m2!1sen!2smk!4v1748345174884!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-     },
-     "phone": "070495592",
-     "workingHours": "Mon-Sun: 08:00-01:00",
-     "bookingUrl": "#",
-     "events": []
-   },
-   {
-     "id": 18,
-     "name": "Stazione",
-     "description": "A perfect spot for Italian-style food like pizza, pasta, and sandwiches, complete with a lake view. It offers a calm and quiet atmosphere, ideal for lunch.",
-     "type": "restaurant",
-     "imageUrl": "images_venue/stazione_card.jpg",
-     "rating": 4.3,
-     "priceLevel": 2,
-     "location": {
-         "address": "Stazione, Ohrid",
-         "googleMapsUrl": "https://www.google.com/maps/place/Stazione/@41.1069473,20.8042528,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dca802b9675f:0xbb6422b111078e8e!8m2!3d41.1069473!4d20.8068278!16s%2Fg%2F11d_pcj42v?entry=ttu",
-         "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5657455330526!2d20.806827769664995!3d41.10694729820856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca802b9675f%3A0xbb6422b111078e8e!2sStazione!5e0!3m2!1sen!2smk!4v1748345496156!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-     },
-     "phone": "046260406",
-     "workingHours": "Mon-Sun: 09:00-00:00",
-     "bookingUrl": "#",
-     "events": []
-   },
-   {
-     "id": 19,
-     "name": "Most Bar",
-     "description": "A perfect location surrounded by natural beauty, with trees and the lake nearby. Ideal for enjoying your coffee or cocktail.",
-     "type": "coffee",
-     "imageUrl": "images_venue/most_card.jpg",
-     "rating": 4.2,
-     "priceLevel": 2,
-     "location": {
-         "address": "Most Bar, Ohrid",
-         "googleMapsUrl": "https://www.google.com/maps/place/Most+Bar/@41.1041965,20.8046353,17z/data=!3m1!4b1!4m6!3m5!1s0x1350db090aae08fb:0x2d78ac4c21707f7a!8m2!3d41.1041965!4d20.8072103!16s%2Fg%2F11b74g7j7p?entry=ttu",
-         "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5972296319234!2d20.807210269665!3d41.10419649820859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db090aae08fb%3A0x2d78ac4c21707f7a!2sMost%20Bar!5e0!3m2!1sen!2smk!4v1748345818174!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-     },
-     "phone": "077833622",
-     "workingHours": "Mon-Sun: 08:00-00:00",
-     "bookingUrl": "#",
-     "events": []
-   },
-   {
-     "id": 20,
-     "name": "Su Rooftop Restaurant",
-     "description": "A perfect location for breakfast, known for its excellent coffee made by the owners. Offers a rooftop setting with a view of the whole lake, ideal for lunch.",
-     "type": "restaurant",
-     "imageUrl": "images_venue/su_card.jpg",
-     "rating": 4.6,
-     "priceLevel": 2,
-     "location": {
-         "address": "Su rooftop restaurant, Ohrid",
-         "googleMapsUrl": "https://www.google.com/maps/place/Su+rooftop+restaurant/@41.1074216,20.8039943,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dca806d5d649:0x7940caea2e819cce!8m2!3d41.1074216!4d20.8065693!16s%2Fg%2F11c5ryx99d?entry=ttu",
-         "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.560316788772!2d20.806569269665008!3d41.10742159820856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca806d5d649%3A0x7940caea2e819cce!2sSu%20rooftop%20restaurant!5e0!3m2!1sen!2smk!4v1748346244001!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-     },
-     "phone": "046258684",
-     "workingHours": "Mon-Sun: 07:00-01:00",
-     "bookingUrl": "#",
-     "events": []
-   },
-   {
-     "id": 21,
-     "name": "Liquid Boutique Bar & Kitchen",
-     "description": "A perfect place for daytime coffee, featuring their own brand. Transforms at night with events, typically hosting Macedonian bands and live music. It's located on the bottom floor of SU Hotel.",
-     "type": ["coffee", "club"],
-     "imageUrl": "images_venue/su_card.jpg",
-     "rating": 4.5,
-     "priceLevel": 2,
-     "location": {
-         "address": "Liquid Boutique Bar & Kitchen, Ohrid (Located at SU Hotel)",
-         "googleMapsUrl": "https://www.google.com/maps/place/Su+rooftop+restaurant/@41.1074216,20.8039943,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dca806d5d649:0x7940caea2e819cce!8m2!3d41.1074216!4d20.8065693!16s%2Fg%2F11c5ryx99d?entry=ttu",
-         "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.560316788772!2d20.806569269646076!3d41.10742159820856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca806d5d649%3A0x7940caea2e819cce!2sSu%20rooftop%20restaurant!5e0!3m2!1sen!2smk!4v1748346725087!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-     },
-     "phone": "046258684",
-     "workingHours": "Mon-Sun: 08:00-01:00",
-     "bookingUrl": "#",
-     "events": []
-   },
-   {
-     "id": 22,
-     "name": "The Lion Ohrid",
-     "description": "A restaurant offering new-style cuisine, distinct from traditional Macedonian food. It's located close to the lake with a nice view, providing a quiet dining experience.",
-     "type": "restaurant",
-     "imageUrl": "images_venue/lion_card.jpg",
-     "rating": 4.5,
-     "priceLevel": 2,
-     "location": {
-         "address": "The Lion Ohrid, Ohrid",
-         "googleMapsUrl": "https://www.google.com/maps/place/The+Lion+Ohrid/@41.108013,20.8030464,17z/data=!3m1!4b1!4m6!3m5!1s0x1350ddc725d6a22f:0x8f8ed244ccd3c171!8m2!3d41.108013!4d20.8056214!16s%2Fg%2F11c1y2j9h_?entry=ttu",
-         "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5535481204525!2d20.80562140792608!3d41.10801295875222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddc725d6a22f%3A0x8f8ed244ccd3c171!2sThe%20Lion%20Ohrid!5e0!3m2!1sen!2smk!4v1748347905795!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-     },
-     "phone": "046262002",
-     "workingHours": "Mon-Sun: 09:00-00:00",
-     "bookingUrl": "#",
-     "events": []
-   },
-   {
-     "id": 23,
-     "name": "Pier 82 Cafe & Restaurant",
-     "description": "A new and quiet place to start your day, offering a nice view of the lake and serving perfect food.",
-     "type": ["coffee", "restaurant"],
-     "imageUrl": "images_venue/pier82_card.jpg",
-     "rating": 4.9,
-     "priceLevel": 2,
-     "location": {
-         "address": "Pier 82 Cafe & Restaurant, Ohrid",
-         "googleMapsUrl": "https://www.google.com/maps/place/Pier+82+Cafe+%26+Restaurant/@41.1079685,20.8034482,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dd516c16b1d3:0x594da6a576f392e3!8m2!3d41.1079685!4d20.8060232!16s%2Fg%2F11hjgjmy_x?entry=ttu",
-         "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5540570151909!2d20.806023210770554!3d41.10796849821597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd516c16b1d3%3A0x594da6a576f392e3!2sPier%2082%20Cafe%20%26%20Restaurant!5e0!3m2!1sen!2smk!4v1748348416503!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-     },
-     "phone": "075864984",
-     "workingHours": "Mon-Sun: 08:00-00:00",
-     "bookingUrl": "#",
-     "events": []
-   },
-   {
-     "id": 24,
-     "name": "Restaurant Tino",
-     "description": "One of the most popular places in Ohrid, Tino restaurant offers perfect food with a view of the lake. It features traditional Macedonian food and hosts night events with live bands playing Macedonian songs and old Ohrid songs.",
-     "type": "restaurant",
-     "imageUrl": "images_venue/tino_restaurant_card.jpg",
-     "rating": 4.3,
-     "priceLevel": 3,
-     "location": {
-         "address": "Restaurant Tino, Ohrid",
-         "googleMapsUrl": "https://www.google.com/maps/place/Restaurant+Tino/@41.1088989,20.8030271,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dd32394806e1:0x86365cdfa0da4638!8m2!3d41.1088989!4d20.8056021!16s%2Fg%2F1tdhzs_h?entry=ttu",
-         "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187.88585181305478!2d20.80560208616738!3d41.1088989263413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd32394806e1%3A0x86365cdfa0da4638!2sRestaurant%20Tino!5e0!3m2!1sen!2smk!4v1748348902896!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-     },
-     "phone": "046230450",
-     "workingHours": "Mon-Sun: 07:00-01:00",
-     "bookingUrl": "#",
-     "events": []
-   },
-   {
-     "id": 25,
-     "name": "Tino's Pub & Bar",
-     "description": "Located next to their restaurant, Tino's Pub & Bar offers a different type of service with food options more suited for a pub, like burgers, chicken fingers, and chicken wings. They also feature Macedonian craft beer. At night, they host DJs or local bands for live events.",
-     "type": ["pub", "coffee"],
-     "imageUrl": "images_venue/tino_pub_card.jpg",
-     "rating": 4.5,
-     "priceLevel": 2,
-     "location": {
-         "address": "Tino's Pub & Bar, Ohrid",
-         "googleMapsUrl": "https://www.google.com/maps/place/Tino%27s+Pub+%26+Bar/@41.1090238,20.8028928,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dd31c22464af:0xf903361d023a5c1b!8m2!3d41.1090238!4d20.8054678!16s%2Fg%2F11f3y3mp55?entry=ttu",
-         "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187.88549448053615!2d20.80546776805344!3d41.1090238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd31c22464af%3A0xf903361d023a5c1b!2sTino%27s%20Pub%20%26%20Bar!5e0!3m2!1sen!2smk!4v1748349271953!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-     },
-     "phone": "071263444",
-     "workingHours": "Mon-Sun: 08:00-00:00",
-     "bookingUrl": "#",
-     "events": []
-   },
-   {
-     "id": 26,
-     "name": "Dublin Irish Pub",
-     "description": "An Irish-style pub located near the lake, offering food suited for pubs and craft beers. Features live rock bands at night.",
-     "type": "pub",
-     "imageUrl": "images_venue/dublin_card.jpg",
-     "rating": 4.4,
-     "priceLevel": 2,
-     "location": {
-         "address": "Dublin Irish Pub, Ohrid",
-         "googleMapsUrl": "https://www.google.com/maps/place/Irish+Pub+Dublin/@41.1090767,20.8029125,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dca7c7015f6b:0x13717f0588503ae!8m2!3d41.1090767!4d20.8054875!16s%2Fg%2F1pty_0j9m?entry=ttu",
-         "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187.8853431041448!2d20.80548746805345!3d41.10907669999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca7c7015f6b%3A0x13717f0588503ae!2sIrish%20Pub%20Dublin!5e0!3m2!1sen!2smk!4v1748350592576!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-     },
-     "phone": "046200040",
-     "workingHours": "Mon-Sun: 08:00-01:00",
-     "bookingUrl": "#",
-     "events": []
-   },
-   {
-    "id": 27,
-    "name": "Octava Lounge Bar",
-    "description": "Situated near the lake, Octava Lounge Bar serves as a relaxing spot for a coffee break during the day. In the evenings, it comes alive with live performances from local bands.",
-    "type": ["coffee", "club"],
-    "imageUrl": "images_venue/octava_card.jpg",
-    "rating": 4.5,
+    "id": 8,
+    "name": "Cuba Libre Beach & Bar",
+    "description": "Cuba Libre takes the party outdoors—on a lakeside beach! This seasonal hotspot morphs into a tropical-style lounge with cocktails, snacks, sunbeds, and loud, fun music. In summer, grab a mojito by the water; off-season, the indoor bar keeps the relaxed party vibe alive.",
+    "type": [
+      "coffee",
+      "beach"
+    ],
+    "tags": [
+      "popular",
+      "beach",
+      "nightlife",
+      "romantic",
+      "scenic",
+      "family-friendly"
+    ],
+    "imageUrl": "images_venue/cuba_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/cuba_libre/photo1.jpg",
+        "alt": "The dance floor at 'Reconnecting Cuba Libre' is absolutely electrifying, with vibrant performers bringing a taste of Havana to Ohrid. The crowd is clearly having an incredible, energetic night!"
+      },
+      {
+        "url": "venue_gallery/cuba_libre/photo2.jpg",
+        "alt": "A lively evening scene at 'Reconnecting Cuba Libre' in Ohrid, with a fantastic crowd enjoying the vibrant atmosphere, delicious drinks, and great music under a beautifully lit ceiling. Looks like a perfect summer night!"
+      },
+      {
+        "url": "venue_gallery/cuba_libre/photo3.jpg",
+        "alt": "Pure relaxation by the shimmering waters of Lake Ohrid! Enjoying a peaceful day at the beach club, with sun umbrellas providing shade and the stunning lake stretching out to the horizon. This is pure bliss."
+      }
+    ],
     "priceLevel": 2,
     "location": {
-        "address": "Petar Pop Arsov, Ohrid 6000",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5122478725796!2d20.801634362570667!3d41.11162110000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd66a9968849%3A0xb827cb595d1b7e7b!2sOctava%20Lounge%20Bar!5e0!3m2!1sen!2smk!4v1748364388329!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Octava+Lounge+Bar+Ohrid"
+      "address": "Cuba Libre Beach & Bar, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Cuba+Libre+Beach+%26+Bar/@41.1009742,20.8026467,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dcaa42cfea41:0x3769611e40472486!8m2!3d41.1009742!4d20.8052217!16s%2Fg%2F11c5s1bvf0?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.634108049442!2d20.805221669664988!3d41.100974198208625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcaa42cfea41%3A0x3769611e40472486!2sCuba%20Libre%20Beach%20%26%20Bar!5e0!3m2!1sen!2smk!4v1748343855467!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075357545",
+    "workingHours": "Mon-Thu: 09:00-01:00<br>Fri-Sat: 09:00-02:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 9,
+    "name": "Kadmo Beach Restaurant",
+    "description": "The lakefront restaurant, Kadmo Beach Restaurant offers the full dining experience with pasta, burgers, seafood, and even pizza—all with stunning lake views. With its charming sunset setting, this is more of a full‑meal, relaxed-elegance spot than just a drink destination.",
+    "type": [
+      "restaurant",
+      "beach"
+    ],
+    "tags": [
+      "popular",
+      "beach",
+      "restaurant",
+      "romantic",
+      "scenic",
+      "family-friendly"
+    ],
+    "imageUrl": "images_venue/kadmo_beach_restaurant.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/kadmo_beach/photo1.jpg",
+        "alt": "Step into the chic and inviting ambiance of Kadmo Lounge Bar! With its warm lighting, hanging greenery, and stylish decor, it's clear this is a fantastic spot to relax and enjoy the evening by the lake."
+      },
+      {
+        "url": "venue_gallery/kadmo_beach/photo2.jpg",
+        "alt": "Pure bliss by Lake Ohrid! Enjoying a delicious meal, possibly a vibrant soup and fresh bread with dips, right at the water's edge at Kadmo Restaurant. The view is simply breathtaking."
+      },
+      {
+        "url": "venue_gallery/kadmo_beach/photo3.jpg",
+        "alt": "Soaking in the golden hour glow at Kadmo Restaurant, with a beautifully presented dish and the stunning Lake Ohrid backdrop. It's the perfect setting for a memorable dining experience."
+      }
+    ],
+    "priceLevel": 3,
+    "location": {
+      "address": "Kadmo Beach Restaurant, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Kadmo+Beach+Restaurant/@41.0999426,20.8017792,17z/data=!3m1!4b1!4m6!3m5!1s0x1350ddbb20778c5f:0xa0d1083080e0acfa!8m2!3d41.0999426!4d20.8043542!16s%2Fg%2F11h2r6_ffy?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.6459139510407!2d20.80435416966498!3d41.099942598208614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddbb20778c5f%3A0xa0d1083080e0acfa!2sKadmo%20Beach%20Restaurant!5e0!3m2!1sen!2smk!4v1748344350409!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "071348701",
+    "workingHours": "Mon-Thu: 09:00-00:00<br>Fri-Sat: 09:00-01:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 10,
+    "name": "Despina Event Venue & Lounge",
+    "description": "Primarily a venue for weddings and private events, Despina also boasts a perfect lakeside location that's accessible at other times.",
+    "type": "restaurant",
+    "tags": [
+      "restaurant",
+      "scenic",
+      "romantic",
+      "event"
+    ],
+    "imageUrl": "images_venue/despina_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/despina/photo1.jpg",
+        "alt": "The epitome of elegance at Despina Event Venue & Lounge! This close-up captures beautifully decorated tables with stunning floral arrangements and sparkling details, all against the serene backdrop of Lake Ohrid – ready for your special day."
+      },
+      {
+        "url": "venue_gallery/despina/photo2.jpg",
+        "alt": "Stepping inside Despina Event Venue & Lounge, you're greeted by a grand, elegantly draped space with expansive windows offering breathtaking views of Lake Ohrid. It's perfectly set for a luxurious indoor event with that outdoor feel."
+      },
+      {
+        "url": "venue_gallery/despina/photo3.jpg",
+        "alt": "Imagine your dream event come to life! This stunning shot of Despina Event Venue & Lounge shows elegant seating and floral arches set right on the shimmering shores of Lake Ohrid, promising unforgettable celebrations by the water."
+      }
+    ],
+    "priceLevel": 3,
+    "location": {
+      "address": "Despina Event Venue & Lounge, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/%E2%80%9CDespina%E2%80%9D+Event+Venue+%26+Lounge+-+Lake+Ohrid/@41.0983923,20.800800,17z/data=!3m1!4b1!4m6!3m5!1s0x1350c30005cd6371:0x19abdc8186c32683!8m2!3d41.0983923!4d20.803375!16s%2Fg%2F11v01_w2jy?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.3273110841012!2d20.803374571244373!3d41.09839229746663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c30005cd6371%3A0x19abdc8186c32683!2s%E2%80%9CDespina%E2%80%9D%20Event%20Venue%20%26%20Lounge%20-%20Lake%20Ohrid!5e0!3m2!1sen!2smk!4v1748344649835!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "074244159",
+    "workingHours": "Mon-Sun: 09:00-00:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 11,
+    "name": "Egoist Beach Bar & Restaurant",
+    "description": "A luxury-style nighttime destination that also serves as a beach with perfect food during summer days. Hosts events with popular Macedonian and international singers at night.",
+    "type": [
+      "restaurant",
+      "club",
+      "beach"
+    ],
+    "tags": [
+      "popular",
+      "beach",
+      "restaurant",
+      "nightlife",
+      "scenic",
+      "romantic"
+    ],
+    "imageUrl": "images_venue/egoist_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/egoist/photo1.jpg",
+        "alt": "Cheers to a magical sunset over Lake Ohrid! A delightful array of colorful cocktails, each looking perfectly refreshing, set against the stunning backdrop of the evening sky. Absolutely breathtaking!"
+      },
+      {
+        "url": "venue_gallery/egoist/photo2.jpg",
+        "alt": "Relaxing by the water in Ohrid with a vibrant green cocktail in hand, soaking up the sunshine. The perfect way to cool off and enjoy the lake views from a comfortable lounge chair."
+      },
+      {
+        "url": "venue_gallery/egoist/photo3.jpg",
+        "alt": "Two refreshing cocktails, complete with unique garnishes, ready to be enjoyed by the serene Lake Ohrid. It's the perfect way to unwind and enjoy the beautiful scenery from the lakeside lounge."
+      }
+    ],
+    "priceLevel": 2,
+    "location": {
+      "address": "Naum Ohridski, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Egoist+Beach+Bar+%26+Restaurant,Naum+Ohridski,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.031841687123!2d20.796537776447035!3d41.0901509143788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c3b276941b7d%3A0x3d68010177ac4eff!2sEgoist%20Beach%20Bar%20%26%20Restaurant!5e0!3m2!1sen!2smk!4v1750871816386!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070 495 592",
+    "workingHours": "Daily: 08:00-01:00 (Summer Hours: 08:00-02:00)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 12,
+    "name": "The Harbour",
+    "description": "An elegant venue by the lake, perfect for a refined meal or drinks. Offers a beautiful view.",
+    "type": "restaurant",
+    "tags": [
+      "restaurant",
+      "scenic",
+      "romantic",
+      "foodie"
+    ],
+    "imageUrl": "images_venue/harbour_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/harbour/photo1.jpg",
+        "alt": "The elegant facade of The Harbour in Ohrid, standing proudly under a soft evening sky. Its classic architecture invites you into a world of refined tastes and beautiful moments by the lake."
+      },
+      {
+        "url": "venue_gallery/harbour/photo2.jpg",
+        "alt": "A tantalizing dish from The Harbour's menu – beautifully presented sushi rolls, perhaps, paired perfectly with a glass of sparkling wine. It's a taste of the exquisite culinary experience awaiting you in Ohrid."
+      },
+      {
+        "url": "venue_gallery/harbour/photo3.jpg",
+        "alt": "An incredible aerial view of The Harbour in Ohrid, showcasing its vibrant multi-level dining areas buzzing with happy guests. From the lively terraces to the elegant indoor spaces, it's clearly a popular spot to enjoy the evening atmosphere."
+      }
+    ],
+    "priceLevel": 2,
+    "location": {
+      "address": "Kosta Abrash, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Harbour,Kosta+Abrash,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.002607916984!2d20.797629676447897!3d41.11263411299204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1750871932284!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "071 725 760",
+    "workingHours": "Daily: 10:00-01:00 (Summer Hours: 10:00-02:00)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 13,
+    "name": "Dublin Irish Pub",
+    "description": "A pub with an authentic vibe, offering great beer and tasty food. Known for its cozy and welcoming atmosphere.",
+    "type": "pub",
+    "tags": [
+      "pub",
+      "foodie",
+      "cozy",
+      "friends"
+    ],
+    "imageUrl": "images_venue/dublin_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/dublin/photo1.jpg",
+        "alt": "The lively atmosphere outside Dublin Irish Pub in Ohrid on a buzzing evening. Locals and visitors gather, enjoying drinks and conversation under the bright green signage, a quintessential spot for good times."
+      },
+      {
+        "url": "venue_gallery/dublin/photo2.jpg",
+        "alt": "A cozy and inviting scene in an Ohrid eatery, with two glasses of white wine accompanying a delicious baked dish and crispy breadsticks. The framed art on the deep green wall adds to the charming ambiance."
+      },
+      {
+        "url": "venue_gallery/dublin/photo3.jpg",
+        "alt": "A satisfying meal featuring flavorful shawarmas with golden fries, accompanied by a fresh salad and a refreshing shot. It's the perfect casual meal to enjoy in Ohrid, with a comfortable green chair inviting you to relax."
+      }
+    ],
+    "priceLevel": 2,
+    "location": {
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dublin+Irish+Pub,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.165544003359!2d20.803172576447803!3d41.10907551321152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca7c7015f6b%3A0x13717f0588503ae!2sIrish%20Pub%20Dublin!5e0!3m2!1sen!2smk!4v1750872036349!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046 200 040",
+    "workingHours": "Daily: 08:00-01:00 (Summer Hours: 08:00-02:00)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 14,
+    "name": "Stazione",
+    "description": "A modern and stylish cafe in the heart of Ohrid, perfect for coffee and light bites.",
+    "type": "restaurant",
+    "tags": [
+      "foodie",
+      "italian",
+      "cozy"
+    ],
+    "imageUrl": "images_venue/stazione_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/stazione/photo1.jpg",
+        "alt": "A mouth-watering pizza, generously topped with savory prosciutto and sprinkled with sesame seeds, ready to be enjoyed in Ohrid. A perfect choice for a delicious meal!"
+      },
+      {
+        "url": "venue_gallery/stazione/photo2.jpg",
+        "alt": "A classic and comforting plate of spaghetti carbonara, beautifully presented with a fresh basil garnish. It looks absolutely delicious and ready to be savored in Ohrid."
+      },
+      {
+        "url": "venue_gallery/stazione/photo3.jpg",
+        "alt": "A tranquil outdoor dining area in Ohrid, offering lovely views of Lake Ohrid through the shade of a large tree. The clean white tables and chairs invite you to relax and enjoy the lakeside ambiance."
+      }
+    ],
+    "priceLevel": 2,
+    "location": {
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Stazione,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.262801690459!2d20.80260058958505!3d41.10695123944805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca802b9675f%3A0xbb6422b111078e8e!2sStazione!5e0!3m2!1sen!2smk!4v1750872425787!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046260406",
+    "workingHours": "Mon-Sun: 08:00-00:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 15,
+    "name": "Tino Restaurant",
+    "description": "Tucked along the shimmering edge of Lake Ohrid, Tino Restaurant  feels like a warm invitation to indulge in modern Macedonian cuisine with a side of stunning lake views. The dining room and summer terrace,buzz with a lively yet refined atmosphere, often serenaded by live music on weekends. Their menu is a mix of local classics—like Ohrid trout stuffed with thinly sliced vegetables—and international dishes with an Italian twist. The buffet breakfast is a generous spread, perfect for fueling a day of exploring Ohrid, while dinner feels special with show cooking and thoughtful wine pairings.",
+    "type": "restaurant",
+    "tags": [
+      "restaurant",
+      "foodie",
+      "scenic",
+      "romantic",
+      "traditional"
+    ],
+    "imageUrl": "images_venue/tino_restaurant_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/tino/photo1.jpg",
+        "alt": "Step into the bright and inviting restaurant at Hotel & Spa Tino in Ohrid, where every table offers a lovely view of Lake Ohrid. It's the perfect spot for a relaxed meal with a beautiful backdrop."
+      },
+      {
+        "url": "venue_gallery/tino/photo2.jpg",
+        "alt": "Indulge in a delightful spread of local delicacies and fine wine on the terrace of Hotel & Spa Tino, with the stunning blue waters of Lake Ohrid glistening in the sunshine. A true taste of Ohrid's charm!"
+      },
+      {
+        "url": "venue_gallery/tino/photo3.jpg",
+        "alt": "Hotel & Spa Tino in Ohrid shines brightly at night, its welcoming lights inviting guests to a comfortable and elegant stay. The restaurant below glows, promising delicious experiences after a day exploring the city."
+      }
+    ],
+    "priceLevel": 3,
+    "location": {
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tino+Restaurant,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.167727943966!2d20.80317447644784!3d41.10902781321446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd31c22464af%3A0xf903361d023a5c1b!2sTino's%20Pub%20%26%20Bar!5e0!3m2!1sen!2smk!4v1750872851291!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046 230 450",
+    "workingHours": "Daily: 10:00-01:00 (Summer Hours: 10:00-02:00)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 16,
+    "name": "Tino Pub",
+    "description": "This cozy pub with a lakefront terrace pours Macedonian beers and serves burgers, moussaka, and cold cuts. It's a casual, Irish-style hangout for drinks or a quick bite, with affordable prices and lovely lake views.",
+    "type": "pub",
+    "tags": [
+      "pub",
+      "foodie",
+      "scenic",
+      "cozy"
+    ],
+    "imageUrl": "images_venue/tino_pub_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/tino_pub/photo1.jpg",
+        "alt": "The inviting and cozy interior of Tino Pub in Ohrid, with its warm wooden accents and comfortable seating, looks like a perfect spot to relax and enjoy a drink."
+      },
+      {
+        "url": "venue_gallery/tino_pub/photo2.jpg",
+        "alt": "Welcoming signs for Paulaner beer outside Tino Pub & Bar in Ohrid, suggesting a friendly atmosphere and a great place to enjoy a refreshing German brew."
+      },
+      {
+        "url": "venue_gallery/tino_pub/photo3.jpg",
+        "alt": "A peek inside Tino Pub in Ohrid, offering a glimpse of its comfortable seating and the relaxed ambiance. You can even see a hint of the outside world, promising a lively yet cozy experience."
+      }
+    ],
+    "priceLevel": 2,
+    "location": {
+      "address": "Kosta Abrash, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tino+Pub,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.167727943966!2d20.80317447644784!3d41.10902781321446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd31c22464af%3A0xf903361d023a5c1b!2sTino's%20Pub%20%26%20Bar!5e0!3m2!1sen!2smk!4v1750872851291!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046 250 250",
+    "workingHours": "Daily: 10:00-01:00 (Summer Hours: 10:00-02:00)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 17,
+    "name": "SU Rooftop",
+    "description": "Perched above the city, this intimate spot dishes up burgers, stroganoff, and cocktails with breathtaking Lake Ohrid views. It's a romantic choice for breakfast or dinner, with a cozy, elegant vibe.",
+    "type": "coffee",
+    "tags": [
+      "rooftop",
+      "scenic",
+      "romantic",
+      "foodie",
+      "cocktails"
+    ],
+    "imageUrl": "images_venue/su_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/su_rooftop/photo1.jpg",
+        "alt": "The vibrant and enticing entrance to SU Rooftop in Ohrid, glowing with a purple light that hints at lively evenings and unforgettable experiences high above the city."
+      },
+      {
+        "url": "venue_gallery/su_rooftop/photo2.jpg",
+        "alt": "Soaking in the incredible panoramic views from SU Rooftop in Ohrid! Guests are enjoying drinks and conversation in the stylish outdoor seating area, with the city lights twinkling below and the sky stretching out beautifully."
+      },
+      {
+        "url": "venue_gallery/su_rooftop/photo3.jpg",
+        "alt": "Looking out from the elegant SU Rooftop, with the enchanting lights of Ohrid sparkling below. The outdoor seating, complete with cozy fire pit tables, creates a magical ambiance perfect for a sophisticated night out."
+      }
+    ],
+    "priceLevel": 3,
+    "location": {
+      "address": "Kosta Abrash, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Su+rooftop+restaurant,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.24108332982!2d20.804638076447734!3d41.10742561331329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca806d5d649%3A0x7940caea2e819cce!2sSu%20rooftop%20restaurant!5e0!3m2!1sen!2smk!4v1750872886213!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046258684",
+    "workingHours": "Mon-Sun: 18:00-01:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 18,
+    "name": "Octava",
+    "description": "A modern and vibrant spot in Ohrid, offering a great atmosphere for coffee and drinks.",
+    "type": "coffee",
+    "tags": [
+      "coffee",
+      "modern",
+      "vibrant",
+      "friends"
+    ],
+    "imageUrl": "images_venue/octava_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/octava/photo1.jpg",
+        "alt": "The inviting outdoor terrace of Octava Lounge Bar in Ohrid, bustling with guests enjoying the beautiful weather and relaxed atmosphere under a retractable awning. It's the perfect spot for a leisurely coffee or drink."
+      },
+      {
+        "url": "venue_gallery/octava/photo2.jpg",
+        "alt": "Step inside the elegant and modern interior of Octava Lounge Bar in Ohrid. Plush yellow bench seating and comfortable chairs create a sophisticated and cozy setting, perfect for intimate conversations or relaxing evenings."
+      },
+      {
+        "url": "venue_gallery/octava/photo3.jpg",
+        "alt": "The artistic and stylish walls of Octava Lounge Bar, adorned with vibrant framed artwork that adds a unique touch to the sophisticated ambiance. The warm lighting creates a welcoming and engaging atmosphere."
+      }
+    ],
+    "priceLevel": 2,
+    "location": {
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Octava+Lounge+Bar,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0488077434948!2d20.799729276447934!3d41.111625113054295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd66a9968849%3A0xb827cb595d1b7e7b!2sOctava%20Lounge%20Bar!5e0!3m2!1sen!2smk!4v1750873328387!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
     "phone": "070388888",
     "workingHours": "Mon-Sun: 08:00-00:00",
@@ -378,181 +672,690 @@
     "events": []
   },
   {
-    "id": 28,
-    "name": "The HarbouR Club",
-    "description": "The Harbour Club offers a luxurious dining experience with a diverse menu featuring Asian and Italian cuisine. During the day, it provides a serene atmosphere perfect for lunch. As night falls, it can transform into a sophisticated multi-level venue, potentially hosting a DJ on one floor and a live band on another, while maintaining its classic and elegant style.",
-    "type": ["restaurant", "club"],
-    "imageUrl": "images_venue/harbour_card.jpg",
-    "rating": 4.5,
+    "id": 19,
+    "name": "Sokak",
+    "description": "Nestled in the old town's alleys, this rustic tavern serves Macedonian beers, sausages, and baked beans. The local, homey feel is perfect for cheap, hearty drinks and bites.",
+    "type": "restaurant",
+    "tags": [
+      "foodie",
+      "traditional",
+      "cozy"
+    ],
+    "imageUrl": "images_venue/sokak_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/sokak/photo1.jpg",
+        "alt": "The welcoming exterior of Pivnica Sokak in Ohrid, with its rustic charm and inviting outdoor seating. Blackboards announce burgers, pizza, and various beer types, promising a delicious and relaxed pub experience."
+      },
+      {
+        "url": "venue_gallery/sokak/photo2.jpg",
+        "alt": "A mouth-watering burger and crispy fries, beautifully presented on a wooden board at Pivnica Sokak in Ohrid. It's the perfect hearty meal to enjoy at this cozy pub."
+      },
+      {
+        "url": "venue_gallery/sokak/photo3.jpg",
+        "alt": "A delicious spread of grilled sausages and golden fries, perfectly paired with three Paulaner beers at Pivnica Sokak. It looks like the ultimate comfort food experience in Ohrid!"
+      }
+    ],
+    "priceLevel": 2,
+    "location": {
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pub+%26+Pivnica+Sokak,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.981833716928!2d20.79628917644787!3d41.11308781296401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd9002867889%3A0x5a9516769f99ed09!2sPub%20%26%20Pivnica%20Sokak!5e0!3m2!1sen!2smk!4v1750873529343!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "077961611",
+    "workingHours": "Mon-Sun: 08:00-00:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 20,
+    "name": "Kaneo Beach Bar",
+    "description": "Imagine yourself unwinding at Kaneo Beach Bar, where the gentle lapping of Lake Ohrid's waves provides the perfect soundtrack to your day. It's a spot where every sip tastes better with the stunning views, and the laid-back vibe makes you feel instantly at home. Whether you're soaking up the sun or enjoying a cool drink as the day fades, Kaneo offers that perfect blend of relaxation and pure lakeside magic.",
+    "type": [
+      "beach",
+      "restaurant"
+    ],
+    "tags": [
+      "popular",
+      "foodie",
+      "traditional",
+      "scenic",
+      "romantic"
+    ],
+    "imageUrl": "images_venue/kaneo_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/kaneo_plaza/photo1.jpg",
+        "alt": "The inviting outdoor seating at Kaneo Beach Bar, with comfortable chairs and tables perfectly positioned to enjoy the stunning, calm waters of Lake Ohrid. It's an ideal spot for a relaxing day by the water."
+      },
+      {
+        "url": "venue_gallery/kaneo_plaza/photo2.jpg",
+        "alt": "A mesmerizing view of the vibrant blue waters of Lake Ohrid from Kaneo Beach Bar, with sleek wooden platforms extending out. Guests are enjoying the sun on lounge chairs, making it a perfect lakeside escape."
+      },
+      {
+        "url": "venue_gallery/kaneo_plaza/photo3.jpg",
+        "alt": "A refreshing drink, possibly a classic cocktail, with a lime garnish, perfectly poised to be enjoyed at Kaneo Beach Bar in Ohrid. The beautiful lake glistens in the background, making it an idyllic setting for a sip."
+      }
+    ],
     "priceLevel": 3,
     "location": {
-      "address": "Kosta Abrash, Ohrid 6000",
-      "googleMapsUrl": "https://maps.app.goo.gl/KPau8bRQdnUssNfm9",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5076138528532!2d20.79988260443786!3d41.112025928726986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1748366417222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Kaneo, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kaneo+Beach+Bar,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d187.87944487023455!2d20.78947716749206!3d41.11113785349086!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcb9fee39833%3A0x5c92145749aebd9e!2sKaneo!5e0!3m2!1sen!2smk!4v1750698672269!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "078331488",
+    "phone": "076 201 042",
+    "workingHours": "Mon-Sun: 09:00-00:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 21,
+    "name": "Lion",
+    "description": "A popular spot in Ohrid known for its lively atmosphere and great music.",
+    "type": "club",
+    "tags": [
+      "club",
+      "nightlife",
+      "music",
+      "party"
+    ],
+    "imageUrl": "images_venue/lion_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/lion/photo1.jpg",
+        "alt": "Step into the rustic charm of Lion Pub in Ohrid! The cozy stone walls, wooden beams, and warm lighting create an inviting atmosphere, perfect for a relaxed evening with friends."
+      },
+      {
+        "url": "venue_gallery/lion/photo2.jpg",
+        "alt": "The heart of Lion Pub, where a vibrant crowd gathers around the bar, enjoying drinks and lively conversation. The warm, amber glow from the lights sets a fantastic mood for a fun night out in Ohrid."
+      },
+      {
+        "url": "venue_gallery/lion/photo3.jpg",
+        "alt": "A cozy nook at Lion Pub in Ohrid, featuring comfortable wooden tables and chairs. It's an ideal spot for a more intimate chat or enjoying a delicious meal in a relaxed, traditional setting."
+      }
+    ],
+    "priceLevel": 2,
+    "location": {
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Lion+Ohrid,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.21260008603!2d20.801784289585317!3d41.10804773938014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddc725d6a22f%3A0x8f8ed244ccd3c171!2sThe%20Lion%20Ohrid!5e0!3m2!1sen!2smk!4v1750873923016!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046262002",
+    "workingHours": "09:00 - 00:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 22,
+    "name": "Pier 82",
+    "description": "A modern bar with a great view of the lake, perfect for a relaxing drink.",
+    "type": "coffee",
+    "tags": [
+      "coffee",
+      "modern",
+      "scenic",
+      "relaxing"
+    ],
+    "imageUrl": "images_venue/pier82_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/pier82/photo1.jpg",
+        "alt": "Soak up the sun and the incredible views from the vibrant outdoor terrace of Pier82 in Ohrid! The white lounge seating and blue accents invite you to relax and enjoy the lakeside ambiance."
+      },
+      {
+        "url": "venue_gallery/pier82/photo2.jpg",
+        "alt": "The modern and inviting entrance to Pier82 in Ohrid, beautifully lit with soft, warm tones that beckon you inside for a delightful experience by the lake."
+      },
+      {
+        "url": "venue_gallery/pier82/photo3.jpg",
+        "alt": "Pier82 in Ohrid truly comes alive at night! The exterior glows with inviting lights, highlighting its stylish design and welcoming atmosphere for an unforgettable evening by the water."
+      }
+    ],
+    "priceLevel": 2,
+    "location": {
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pier+82+Cafe+%26+Restaurant,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.216044235366!2d20.804090676447714!3d41.107972513279606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd516c16b1d3%3A0x594da6a576f392e3!2sPier%2082%20Cafe%20%26%20Restaurant!5e0!3m2!1sen!2smk!4v1750874142536!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075864984",
+    "workingHours": "08:00 - 00:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 23,
+    "name": "Anxiety Cafe",
+    "description": "A unique cafe with a quirky and artistic vibe, perfect for those looking for a different kind of coffee experience.",
+    "type": "coffee",
+    "tags": [
+      "coffee",
+      "artistic",
+      "quirky",
+      "unique"
+    ],
+    "imageUrl": "images_venue/anxiety_card.jpg",
+    "priceLevel": 1,
+    "location": {
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Anxiety+Stop%26Go,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0118891660813!2d20.795364876447966!3d41.11243141300447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddc62a32d7e9%3A0xdba90f600357bd20!2sAnxiety%20Stop%26Go!5e0!3m2!1sen!2smk!4v1750874383678!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "078 247 786",
     "workingHours": "09:00-00:00",
     "bookingUrl": "#",
     "events": []
   },
   {
-    "id": 30,
-    "name": "SUP Club Ohrid",
-    "description": "Discover the beauty of Lake Ohrid from a new perspective with SUP Club Ohrid. We offer stand-up paddleboard rentals and guided tours for all skill levels. Enjoy a peaceful workout on the water.",
-    "type": "sup",
-    "imageUrl": "images_venue/adventure_sport/sup_club_card.jpg",
-    "rating": 4.5,
+    "id": 24,
+    "name": "Bros Burger",
+    "description": "A popular spot for delicious and juicy burgers, perfect for a quick and satisfying meal.",
+    "type": [
+      "fast-food",
+      "restaurant"
+    ],
+    "imageUrl": "images_venue/fast_food/bros_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/bro_burger/photo1.jpg",
+        "alt": "A truly mouth-watering burger from Bros Burger, loaded with fresh ingredients and served with a side of crispy golden fries and a refreshing beer. It looks like the perfect satisfying meal in Ohrid!"
+      },
+      {
+        "url": "venue_gallery/bro_burger/photo2.jpg",
+        "alt": "The enticing menu board at Bros Burger in Ohrid, showcasing a delicious selection of burgers, hot dogs, chicken, and more. It's clearly the place to go for comfort food cravings!"
+      },
+      {
+        "url": "venue_gallery/bro_burger/photo3.jpg",
+        "alt": "A perfect shot of the iconic Bros Burger sign in Ohrid, highlighting their signature 'B' logo against a sleek, modern exterior. It's an inviting visual that promises delicious eats inside!"
+      }
+    ],
     "priceLevel": 1,
-    "priceDetails": "Rentals from 10 EUR/hour",
-    "duration": "1-hour rentals, 2-hour tours",
-    "requirements": [
-       "All are welcome, no experience needed",
-       "Basic swimming ability recommended"
-    ],
-    "includes": [ 
-       "SUP board and paddle",
-       "Life vest (optional)",
-       "Quick tutorial"
-    ],
     "location": {
-        "address": "SUP Club Ohrid, Kaneo Beach area",
-        "googleMapsUrl": "https://www.google.com/maps/place/Lake+Ohrid/@41.1109491,20.7882893,17z/data=!3m1!4b1!4m6!3m5!1s0x1350c20207e43fcb:0xc4d008c074af01c2",
-        "mapIframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.519940004418!2d20.78828930854798!3d41.11094910685921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c20207e43fcb%3A0xc4d008c074af01c2!2sLake%20Ohrid!5e0!3m2!1sen!2smk!4v1749235085091!5m2!1sen!2smk' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bro's+Burger+Station,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0136474251126!2d20.795785576447834!3d41.11239301300688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dde81f0f8353%3A0xfaabbe5670c0615a!2sBro&#39;s%20Burger%20Station!5e0!3m2!1sen!2smk!4v1750874632065!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "078 609 698",
-    "workingHours": "07:00 - 22:00",
+    "phone": "075661664",
+    "workingHours": "12:00 - 22:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 25,
+    "name": "Pink Panter",
+    "description": "A well-known fast-food spot in Ohrid, famous for its tasty burgers and quick service.",
+    "type": "fast-food",
+    "tags": [
+      "fast-food",
+      "foodie",
+      "casual",
+      "popular"
+    ],
+    "imageUrl": "images_venue/fast_food/pink_panter_card.jpg",
+    "priceLevel": 1,
+    "location": {
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pink+Panter,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.9656382267763!2d20.79748757644797!3d41.11344151294223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca474a4ae1b%3A0x3c9cee0713042617!2sPink%20Panter!5e0!3m2!1sen!2smk!4v1750874774227!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "078313114",
+    "workingHours": "09:00 - 02:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 26,
+    "name": "Pinokio",
+    "description": "A charming and popular fast-food spot, perfect for a quick and delicious bite.",
+    "type": "fast-food",
+    "tags": [
+      "fast-food",
+      "foodie",
+      "casual",
+      "bakery"
+    ],
+    "imageUrl": "images_venue/fast_food/pinokio_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/pinokio/photo1.jpg",
+        "alt": "The enticing display case at Pinokio, loaded with a tempting variety of freshly baked pastries and sweets. It's impossible to resist these delicious treats in Ohrid!"
+      },
+      {
+        "url": "venue_gallery/pinokio/photo2.jpg",
+        "alt": "A cozy and inviting corner at Pinokio in Ohrid, perfect for enjoying a warm drink and a sweet treat. The comfortable seating and relaxed ambiance make it an ideal spot to unwind."
+      },
+      {
+        "url": "venue_gallery/pinokio/photo3.jpg",
+        "alt": "A close-up of a delightful cake, possibly from Pinokio's selection, showcasing its intricate details and delicious-looking layers. It's a sweet masterpiece waiting to be enjoyed!"
+      }
+    ],
+    "priceLevel": 1,
+    "location": {
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sandwich+Shop+Pinokio,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.9546671709168!2d20.80472187644802!3d41.11368111292731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca09f38fb25%3A0xd8b8d61f26161e9e!2sSandwich%20Shop%20Pinokio!5e0!3m2!1sen!2smk!4v1750875223470!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "071888844",
+    "workingHours": "Mon-Sat: 08:00-20:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 27,
+    "name": "Simple",
+    "description": "A modern fast-food spot offering simple and delicious meals.",
+    "type": "fast-food",
+    "tags": [
+      "fast-food",
+      "foodie",
+      "casual",
+      "modern"
+    ],
+    "imageUrl": "images_venue/fast_food/simple_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/simple/photo1.jpg",
+        "alt": "A close-up of a delightful pizza from Simple Restaurant, showcasing its perfectly golden crust and inviting toppings. It looks ready to be enjoyed as a classic, satisfying meal in Ohrid!"
+      },
+      {
+        "url": "venue_gallery/simple/photo2.jpg",
+        "alt": "A comforting plate of pasta from Simple Restaurant, perhaps a rich bolognese, beautifully presented and ready to be savored. It promises a delicious and heartwarming dining experience in Ohrid."
+      },
+      {
+        "url": "venue_gallery/simple/photo3.jpg",
+        "alt": "A vibrant, refreshing salad from Simple Restaurant, bursting with fresh greens, colorful vegetables, and a delicious dressing. It's the perfect light and healthy option to enjoy in Ohrid."
+      }
+    ],
+    "priceLevel": 1,
+    "location": {
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Simple+Burgers,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.008162018771!2d20.799618776447918!3d41.11251281299944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd302208a925%3A0x5445099e7bf42704!2sSimple%20Burgers!5e0!3m2!1sen!2smk!4v1750875739561!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070328637",
+    "workingHours": "Mon-Sat: 10:00-22:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 28,
+    "name": "ATV Adventure Ohrid",
+    "description": "Explore the stunning landscapes around Ohrid with an exciting ATV adventure.",
+    "type": "atv",
+    "tags": [
+      "atv",
+      "adventure",
+      "outdoors",
+      "scenic"
+    ],
+    "imageUrl": "images_venue/adventure_sport/atv_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/atv_adventure/photo1.jpg",
+        "alt": "Get ready for an exhilarating ride! A powerful ATV parked on a dusty trail, perfectly poised for an off-road adventure through the stunning natural landscapes surrounding Ohrid."
+      },
+      {
+        "url": "venue_gallery/atv_adventure/photo2.jpg",
+        "alt": "Embrace the thrill! Riders on ATVs navigate a winding dirt road, kicking up dust as they explore the rugged terrain. It looks like an exciting way to experience the wild beauty near Ohrid."
+      },
+      {
+        "url": "venue_gallery/atv_adventure/photo3.jpg",
+        "alt": "Two adventurous riders on ATVs making their way along a scenic, unpaved road. The natural beauty of the area unfolds around them, hinting at an unforgettable journey through Ohrid's diverse landscapes."
+      }
+    ],
+    "priceLevel": 3,
+    "location": {
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ATV+Adventure+Ohrid,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.309391187105!2d20.811604376447665!3d41.105933613405455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db2b892b07ff%3A0x8f0ffe6a090a0fd!2sATV%20Adventure%20Ohrid!5e0!3m2!1sen!2smk!4v1750875868138!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "078278797",
+    "workingHours": "Mon-Sun: 08:00-20:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 29,
+    "name": "ATV Adrenaline",
+    "description": "Experience an adrenaline rush with our powerful ATVs and challenging trails.",
+    "type": "atv",
+    "tags": [
+      "atv",
+      "adventure",
+      "outdoors",
+      "adrenaline"
+    ],
+    "imageUrl": "images_venue/adventure_sport/atv_adrenaline_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/atv_adrenaline/photo1.jpg",
+        "alt": "Gear up for an adventure! A powerful ATV, ready for action, is parked on a rugged, winding dirt path, promising an exciting off-road journey through the stunning landscapes of Ohrid."
+      },
+      {
+        "url": "venue_gallery/atv_adrenaline/photo2.jpg",
+        "alt": "Experience the thrill of the ride! Riders on ATVs navigate a dusty trail, kicking up dirt as they explore the scenic, untamed terrain around Ohrid. It's an exhilarating way to connect with nature."
+      },
+      {
+        "url": "venue_gallery/atv_adrenaline/photo3.jpg",
+        "alt": "Two adventurous ATVs parked side-by-side, perfectly positioned for a thrilling ride through the picturesque, unpaved roads of Ohrid's beautiful countryside. Get ready to explore!"
+      }
+    ],
+    "priceLevel": 3,
+    "location": {
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ATV+Adrenaline,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.761943609313!2d20.809686976445544!3d41.05233471671032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c576702c42a7%3A0x96325c4070454af!2sATV%20Adrenaline!5e0!3m2!1sen!2smk!4v1750876021389!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "077882882",
+    "workingHours": "Mon-Sun: 09:00-19:30",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 30,
+    "name": "Amfora Diving Center",
+    "description": "Your go-to for exploring Lake Ohrid's underwater world. They offer everything from beginner 'try dives' to full certification courses, always prioritizing safety. Get ready for incredible submerged views!",
+    "type": "diving",
+    "tags": [
+      "diving",
+      "adventure",
+      "outdoors",
+      "water-sports"
+    ],
+    "imageUrl": "images_venue/adventure_sport/amfora_diving_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/amfora_diving/photo1.jpg",
+        "alt": "The team at Amfora Diving Center, looking ready for an exciting day of underwater exploration! Divers are geared up and preparing to discover the hidden wonders of Lake Ohrid."
+      },
+      {
+        "url": "venue_gallery/amfora_diving/photo2.jpg",
+        "alt": "Dive into adventure with Amfora Diving Center! Divers explore the fascinating underwater world of Lake Ohrid, with the clear blue water revealing intriguing rock formations and perhaps ancient secrets."
+      },
+      {
+        "url": "venue_gallery/amfora_diving/photo3.jpg",
+        "alt": "A diver with Amfora Diving Center surfaces from the crystal-clear waters of Lake Ohrid, surrounded by the stunning natural beauty of the area. It looks like a refreshing and unforgettable experience!"
+      }
+    ],
+    "priceLevel": 3,
+    "location": {
+      "address": "Pestani, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Amfora+Diving+Center+Pestani",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47959.20817024765!2d20.7845328!3d41.0267072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db014792b0d7%3A0x4a4f48b0b5e2d6b3!2sAmfora%20Diving%20Center!5e0!3m2!1sen!2smk!4v1748350033181!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "071359810",
+    "workingHours": "Mon-Sun: 09:00-18:00",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 31,
-    "name": "Amfora Diving Center",
-    "description": "Explore the underwater museum and rich aquatic life of Lake Ohrid with Amfora, a certified PADI 5-star diving center. Offering courses for all levels, from beginners to advanced divers.",
-    "type": "diving",
-    "imageUrl": "images_venue/adventure_sport/amfora_diving_card.jpg",
-    "rating": 4.8,
-    "priceLevel": 2,
-    "requirements": [
-      "Various courses for different skill levels",
-      "All equipment can be rented"
+    "name": "Exodus",
+    "description": "Exodus Gym in Ohrid is a modern fitness facility designed for champions. Featuring a professional boxing ring, a well-equipped strength training area, and a variety of functional fitness options, it's the perfect place to push your limits and achieve your fitness goals.",
+    "type": "gym",
+    "tags": [
+      "gym",
+      "fitness",
+      "boxing",
+      "workout"
     ],
-    "includes": [
-      "Certified instructors",
-      "Boat trips to dive sites",
-      "PADI certification on course completion"
+    "imageUrl": "images_venue/adventure_sport/exodus_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/exodus/photo1.jpg",
+        "alt": "Step into the focused energy of Exodus Gym in Ohrid, featuring a professional boxing ring with the inspiring message 'TRAIN LIKE A CHAMPION' boldly displayed. It's a space built for dedication and pushing your limits."
+      },
+      {
+        "url": "venue_gallery/exodus/photo2.jpg",
+        "alt": "The well-equipped strength training area at Exodus Gym in Ohrid, showcasing a variety of machines, free weights, and a full-length mirror. The modern design and ample equipment create an environment ready for serious workouts."
+      },
+      {
+        "url": "venue_gallery/exodus/photo3.jpg",
+        "alt": "A glimpse into the diverse training options at Exodus Gym in Ohrid, with a focus on functional fitness. Weight plates, suspension rings, and battle ropes highlight the variety of ways to challenge yourself and reach your fitness goals."
+      }
     ],
+    "priceLevel": 3,
     "location": {
-        "address": "Diving Center Amfora, Pestani",
-        "googleMapsUrl": "https://www.google.com/maps/place/Diving+Center+Amfora/@40.9945921,20.7959269,17z/data=!3m1!4b1!4m6!3m5!1s0x1350c13046ae4077:0xc9d9953f57124a2",
-        "mapIframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.4011551561894!2d20.79592692644329!3d40.99459212026683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c13046ae4077%3A0xc9d9953f57124a2!2sDiving%20Center%20Amfora!5e0!3m2!1sen!2smk!4v1749286794611!5m2!1sen!2smk' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Exodus+Gym,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.403688651352!2d20.812360076448485!3d41.12571261218493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db24d4070f01%3A0x36a490eb44a431e3!2sExodus%20Gym!5e0!3m2!1sen!2smk!4v1750876759877!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "071 359 810",
-    "workingHours": "09:00 - 18:00",
+    "phone": "078269199",
+    "workingHours": "Mon-Sat: 07:30-22:00",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 32,
-    "name": "Adventure Ohrid",
-    "description": "Your hub for outdoor activities in Ohrid. We offer guided kayak tours on the lake and thrilling hiking trips through Galicica National Park. Experience the natural beauty of the region with our expert guides.",
-    "type": ["kayaking", "hiking"],
-    "imageUrl": "images_venue/adventure_sport/adventure_card.jpg",
-    "rating": 5,
+    "name": "SUP Club Ohrid",
+    "description": "Glide across Lake Ohrid on a stand-up paddleboard! They offer guided tours, perfect for all levels, allowing you to peacefully explore hidden coves and enjoy unparalleled lake views from the water.",
+    "type": "sup",
+    "tags": [
+      "sup",
+      "adventure",
+      "outdoors",
+      "water-sports"
+    ],
+    "imageUrl": "images_venue/adventure_sport/sup_club_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/sup_club/photo1.jpg",
+        "alt": "Embrace the tranquility of Lake Ohrid with Sup Up Club! A group of paddlers are gracefully gliding across the calm, blue waters on stand-up paddleboards, enjoying the serene beauty of the lake."
+      },
+      {
+        "url": "venue_gallery/sup_club/photo2.jpg",
+        "alt": "The perfect morning on Lake Ohrid with Sup Up Club! Paddleboarders are enjoying the peaceful sunrise or sunset on the water, with the sun casting a warm glow and the mountains silhouetted in the distance."
+      },
+      {
+        "url": "venue_gallery/sup_club/photo3.jpg",
+        "alt": "Get ready for a unique adventure on Lake Ohrid with Sup Up Club! A paddleboard is launched from a sunny, rocky shore into the inviting blue water, ready for a serene exploration of the lake's beauty."
+      }
+    ],
     "priceLevel": 2,
     "location": {
-      "address": "Adventure Ohrid, Pestani",
-      "googleMapsUrl": "https://www.google.com/maps/place/Adventure+Ohrid/@41.0127305,20.8063871,17z/data=!3m1!4b1!4m6!3m5!1s0x1350c11298c19119:0xc289a9ec3bff9b46",
-      "mapIframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d752.6431105832158!2d20.806387069655056!3d41.012730510158555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c11298c19119%3A0xc289a9ec3bff9b46!2sAdventure%20Ohrid!5e0!3m2!1sen!2smk!4v1749287382671!5m2!1sen!2smk' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=SUP+Club+Ohrid,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0777405396916!2d20.787355676447856!3d41.11099321309334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd67d7844179%3A0x235561da99ac6b43!2sSUP%20Club%20Ohrid!5e0!3m2!1sen!2smk!4v1750876990258!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "070771193",
-    "workingHours": "09:00 - 20:00",
+    "phone": "078609698",
+    "workingHours": "Tue-Sun: 10:00-18:00",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 33,
-    "name": "ATV Adrenaline",
-    "description": "Get your heart racing with an off-road ATV tour through the stunning landscapes surrounding Ohrid. Our guided tours take you on thrilling trails with breathtaking views. No experience necessary!",
-    "type": "atv",
-    "imageUrl": "images_venue/adventure_sport/atv_adrenaline_card.jpg",
-    "rating": 4.4,
+    "name": "Kliment Koleski",
+    "description": "The Kliment Koleski Sporting Complex in Ohrid is a modern, large-scale facility that serves as a hub for athletic excellence and community events. It features an indoor track and other amenities for various sports.",
+    "type": "sports",
+    "tags": [
+      "sports",
+      "fitness",
+      "community",
+      "events"
+    ],
+    "imageUrl": "images_venue/adventure_sport/koleski_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/kliment_koleski/photo1.jpg",
+        "alt": "The impressive facade of the Kliment Koleski Sporting Complex in Ohrid, bathed in the warm glow of evening lights. Its modern design and grand scale suggest a hub for athletic excellence and community events."
+      },
+      {
+        "url": "venue_gallery/kliment_koleski/photo2.jpg",
+        "alt": "A dynamic action shot of athletes competing on the indoor track at the Kliment Koleski Sporting Complex. The vibrant blue track and focused expressions highlight the energy and dedication found within this premier sporting facility in Ohrid."
+      }
+    ],
     "priceLevel": 2,
     "location": {
-      "address": "ATV Adrenaline, Velestovo area",
-      "googleMapsUrl": "https://www.google.com/maps/place/ATV+Adrenaline/@41.0523307,20.8114964,17z/data=!3m1!4b1!4m6!3m5!1s0x1350c576702c42a7:0x96325c4070454af",
-      "mapIframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1504.3810637105983!2d20.811496371244203!3d41.052330697467184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c576702c42a7%3A0x96325c4070454af!2sATV%20Adrenaline!5e0!3m2!1sen!2smk!4v1749288110680!5m2!1sen!2smk' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kliment+Koleski+Sports+Complex,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.936337697784!2d20.80381397644804!3d41.11408141290265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca0938b04d1%3A0x729c8b0ae68fb148!2sKliment%20Koleski%20Sports%20Complex!5e0!3m2!1sen!2smk!4v1750877189418!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "077882882",
-    "workingHours": "09:00 - 19:30",
+    "phone": "078665667",
+    "workingHours": "Mon-Sat: 08:00-02:00",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 34,
-    "name": "ATV Adventure",
-    "description": "Embark on an unforgettable journey with ATV Adventure Ohrid. We offer a range of guided tours that explore the mountains and forests, providing an exciting way to see the region's natural beauty.",
-    "type": "atv",
-    "imageUrl": "images_venue/adventure_sport/atv_card.jpg",
-    "rating": 4.7,
-    "priceLevel": 2,
+    "name": "Adventure Ohrid",
+    "description": "For thrill-seekers! Adventure organizes custom, action-packed tours, from paragliding over the lake to off-road safaris in Galichica National Park. Many activities offer incredible, unique lake views.",
+    "type": [
+      "sports",
+      "kayaking",
+      "sup",
+      "hiking"
+    ],
+    "tags": [
+      "outdoors",
+      "adventure",
+      "kayaking",
+      "sup",
+      "hiking"
+    ],
+    "imageUrl": "images_venue/adventure_sport/adventure_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/adventure/photo1.jpg",
+        "alt": "Three vibrant water sports gear items rest on a pebbled shore near Lake Ohrid: a sleek gray-and-yellow paddleboard, a bold yellow surfboard with swirling designs, and two bright orange kayaks. In the background, a shady tree, parked cars, and a cozy house with a floral tablecloth hint at a lively summer day by the water, inviting adventure seekers to explore."
+      },
+      {
+        "url": "venue_gallery/adventure/photo2.jpg",
+        "alt": "Two friends enjoy a sunny kayaking adventure on the crystal-clear waters of Lake Ohrid, paddling an orange kayak with lush green cliffs and forested shores in the background. The serene blue sky and gentle ripples reflect the natural beauty of this Macedonian gem, perfect for a day of outdoor fun."
+      },
+      {
+        "url": "venue_gallery/adventure/photo3.jpg",
+        "alt": "Two hikers stand proudly on a rocky trail overlooking the stunning landscapes of Ohrid, with rolling green hills stretching toward the shimmering lake in the distance. Dressed in colorful activewear and holding trekking poles, they soak in the panoramic view under a bright blue sky, showcasing the region's hiking allure."
+      }
+    ],
+    "priceLevel": 3,
     "location": {
-      "address": "ATV Adventure Ohrid",
-      "googleMapsUrl": "https://www.google.com/maps/place/ATV+Adventure+Ohrid/@41.1059296,20.8135356,17z/data=!3m1!4b1!4m6!3m5!1s0x1350db2b892b07ff:0x8f0ffe6a090a0fd",
-      "mapIframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5773937527765!2d20.81353556966499!3d41.10592959820856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db2b892b07ff%3A0x8f0ffe6a090a0fd!2sATV%20Adventure%20Ohrid!5e0!3m2!1sen!2smk!4v1749288891337!5m2!1sen!2smk' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Adventure+Ohrid,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.5723048320306!2d20.804455876444095!3d41.01273351914984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c11298c19119%3A0xc289a9ec3bff9b46!2sAdventure%20Ohrid!5e0!3m2!1sen!2smk!4v1750877413312!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "078278797",
-    "workingHours": "08:00 - 20:00",
+    "phone": "070771193",
+    "workingHours": "Mon-Sun: 09:00-20:00",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 35,
-    "name": "Exodus Gym",
-    "description": "A fully-equipped, modern fitness center to help you stay on track with your workout goals while in Ohrid. Offering daily passes and a wide range of strength and cardio equipment.",
-    "type": "gym",
-    "imageUrl": "images_venue/adventure_sport/exodus_card.jpg",
-    "rating": 5.0,
+    "name": "Ljubanishta Beach & Camping",
+    "description": "Ljubanishta Beach & Camping is a vibrant destination on the shores of Lake Ohrid, offering more than just a place to pitch a tent. With a beautiful beach, a welcoming restaurant, sports facilities, and an adventure park with a ropes course, it's the perfect spot for family fun, relaxation, and outdoor adventure.",
+    "type": [
+      "camping",
+      "beach",
+      "restaurant",
+      "sports"
+    ],
+    "tags": [
+      "family-friendly",
+      "outdoors",
+      "adventure",
+      "beach",
+      "restaurant"
+    ],
+    "imageUrl": "images_venue/adventure_sport/ljubanishta_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/ljubanishta/photo1.jpg",
+        "alt": "A warm, inviting restaurant pavilion in Ohrid features wooden ceilings and large windows framing a stunning view of Lake Ohrid. Elegant tables with white chairs and floral centerpieces are set for a special occasion, blending indoor comfort with the serene outdoor beauty of the lake and distant trees."
+      },
+      {
+        "url": "venue_gallery/ljubanishta/photo2.jpg",
+        "alt": "A lively beach along Lake Ohrid glows at sunset, with colorful umbrellas dotting the sandy shore and people swimming and boating in the calm waters. The backdrop of rolling hills under a pink and orange sky captures the vibrant energy of a summer day by the lake, perfect for visitors seeking fun."
+      },
+      {
+        "url": "venue_gallery/ljubanishta/photo3.jpg",
+        "alt": "A peaceful autumn scene at Lake Ohrid showcases a pebbled shore meeting crystal-clear water, reflecting the golden-orange hues of trees and hills. The tranquil landscape under a soft morning sky invites quiet reflection and nature lovers to explore this picturesque Macedonian spot."
+      },
+      {
+        "url": "venue_gallery/ljubanishta/photo4.jpg",
+        "alt": "A blue sports court nestled near Lake Ohrid features a basketball hoop and soccer goal, surrounded by lush green hills under a bright blue sky. The serene setting with a lens flare from the sun suggests a perfect spot for outdoor games and family fun in this scenic region."
+      },
+      {
+        "url": "venue_gallery/ljubanishta/photo5.jpg",
+        "alt": "An adventurous soul navigates a rope course in Ohrid, balancing on wooden platforms between sturdy wooden poles with rope ladders, set against a backdrop of vibrant green and golden hills. Wearing a helmet and harness, they embody the thrill of outdoor exploration in this natural playground."
+      }
+    ],
     "priceLevel": 1,
     "location": {
-      "address": "Exodus Gym, Ohrid",
-      "googleMapsUrl": "https://www.google.com/maps/place/Exodus+Gym/@41.1257106,20.8136475,17z/data=!3m1!4b1!4m6!3m5!1s0x1350db24d4070f01:0x36a490eb44a431e3",
-      "mapIframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.7018901012768!2d20.813647538910715!3d41.12571061325788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db24d4070f01%3A0x36a490eb44a431e3!2sExodus%20Gym!5e0!3m2!1sen!2smk!4v1749289920153!5m2!1sen!2smk' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+      "address": "Ljubanishta, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Car+Camp+Ljubanishta,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.5888078684347!2d20.771507076440823!3d40.92476092456278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350bf118dae57bb%3A0x16cd69106ec5a888!2sCar%20Camp%20Ljubanishta!5e0!3m2!1sen!2smk!4v1750877591498!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "078269199",
-    "workingHours": "07:30 - 22:00",
+    "phone": "046283011",
+    "workingHours": "Open 24/7 during summer season",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 36,
-    "name": "Fit Box",
-    "description": "A premier fitness and training center offering a variety of classes and state-of-the-art equipment. Join us for a great workout in a motivating environment.",
+    "name": "IB Fitness",
+    "description": "A modern fitness center in Ohrid with high-quality equipment for strength and cardio. It's a great place to work out with professional machines and amenities, but it's an indoor facility.",
     "type": "gym",
-    "imageUrl": "images_venue/adventure_sport/fitbox_card.jpg",
-    "rating": 5,
-    "priceLevel": 1,
+    "tags": [
+      "gym",
+      "fitness",
+      "workout",
+      "modern"
+    ],
+    "imageUrl": "images_venue/adventure_sport/ib_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/ib/photo1.jpg",
+        "alt": "A lively group of fitness enthusiasts moves in sync during a workout session in a spacious Ohrid gym, stepping and stretching on a polished red court under bright lights. With colorful activewear and a basketball hoop overhead, the scene radiates energy and community, inviting visitors to join the fun."
+      },
+      {
+        "url": "venue_gallery/ib/photo2.jpg",
+        "alt": "Friends and players enjoy a friendly table tennis match in a bright Ohrid indoor court, with blue tables set against green netting and a basketball hoop in the background. The casual vibe, with some holding paddles and others watching, promises a great time for sports lovers of all ages."
+      },
+      {
+        "url": "venue_gallery/ib/photo3.jpg",
+        "alt": "A modern gym in Ohrid features sleek Star Trac treadmills lined up by large windows, offering views of a pool and green trees outside. The inviting setup with cutting-edge equipment under natural light beckons fitness enthusiasts to start their workout with a scenic backdrop."
+      }
+    ],
+    "priceLevel": 2,
     "location": {
-      "address": "Fit Box, Ohrid",
-      "googleMapsUrl": "https://www.google.com/maps/place/Fit+Box/@41.1238429,20.8067133,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dd00139d8a5f:0x3452d6c08c1989ec",
-      "mapIframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d631.8262991720657!2d20.806713348172135!3d41.12384286754505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd00139d8a5f%3A0x3452d6c08c1989ec!2sFit%20Box!5e0!3m2!1sen!2smk!4v1749290892177!5m2!1sen!2smk' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Info+Biro+Fitnes",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1263.6043922144163!2d20.8167992881574!3d41.126346254450624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db006529a37b%3A0xd9c654acdca7c2bc!2sInfo%20Biro%20Fitnes!5e0!3m2!1sen!2smk!4v1750878054518!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "076601501",
-    "workingHours": "Mon-Fri: 06:30-22:00<br>Sat: 08:00-22:00<br>Sun: 10:00-22:00",
+    "phone": "",
+    "workingHours": "Mon-Sat: 08:00-22:00",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 37,
-    "name": "Fit Form",
-    "description": "A well-equipped gym to help you achieve your fitness goals. Offering a friendly atmosphere and a range of equipment.",
+    "name": "FitForm",
+    "description": "A friendly and welcoming gym with a focus on functional fitness and personal training.",
     "type": "gym",
+    "tags": [
+      "gym",
+      "fitness",
+      "workout",
+      "personal-training"
+    ],
     "imageUrl": "images_venue/adventure_sport/fitform_card.jpg",
-    "rating": 4.6,
-    "priceLevel": 1,
+    "gallery": [
+      {
+        "url": "venue_gallery/fitform/photo1.jpg",
+        "alt": "Sunlit cardio gym room with treadmills, exercise bikes, and elliptical machines—ideal fitness center for morning workouts and heart health training."
+      },
+      {
+        "url": "venue_gallery/fitform/photo2.jpg",
+        "alt": "Strength training gym area with weight benches, barbells, and resistance machines—perfect for bodybuilding, powerlifting, and muscle gain."
+      },
+      {
+        "url": "venue_gallery/fitform/photo3.jpg",
+        "alt": "Fully equipped weightlifting gym with squat racks, benches, and free weights—top gym for serious lifters and personal fitness goals."
+      }
+    ],
+    "priceLevel": 2,
     "location": {
-      "address": "Fit Form, Ohrid",
-      "googleMapsUrl": "https://www.google.com/maps/place/Fit+Form/@41.1052904,20.8125705,17z/data=!3m1!4b1!4m6!3m5!1s0x1350db50b44c62f7:0x9faa829ebe2850bb",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.169419472891!2d20.812570490476684!3d41.10529039323654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b44c62f7%3A0x9faa829ebe2850bb!2sFit%20Form!5e0!3m2!1sen!2smk!4v1749291961528!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=FitForm+Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.1694193180701!2d20.81181845156832!3d41.10529040000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b44c62f7%3A0x9faa829ebe2850bb!2sFit%20Form!5e0!3m2!1sen!2smk!4v1750878270759!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
     "phone": "070533497",
     "workingHours": "Mon-Sat: 09:00-22:00",
@@ -561,221 +1364,1033 @@
   },
   {
     "id": 38,
-    "name": "IB Fitness",
-    "description": "A fitness center to help you achieve your goals.",
-    "type": ["gym", "fitness"],
-    "imageUrl": "images_venue/adventure_sport/ib_card.jpg",
-    "rating": 4.3,
-    "priceLevel": 1,
+    "name": "FitBox",
+    "description": "A specialized fitness studio focusing on high-intensity interval training and boxing workouts.",
+    "type": "gym",
+    "tags": [
+      "gym",
+      "fitness",
+      "boxing",
+      "hiit"
+    ],
+    "imageUrl": "images_venue/adventure_sport/fitbox_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/fitbox/photo1.jpg",
+        "alt": "Elegant gym mirror wall with motivational quote 'Attitude is Everything', surrounded by lush green indoor plants and sleek gym equipment in the background."
+      },
+      {
+        "url": "venue_gallery/fitbox/photo2.jpg",
+        "alt": "Spacious, high-end gym interior featuring advanced strength machines, stylish lighting, and rubber flooring—designed for safe and effective full-body workouts."
+      },
+      {
+        "url": "venue_gallery/fitbox/photo3.jpg",
+        "alt": "Luxury fitness area with free weights, benches, and cable machines under designer lighting—ideal gym for bodybuilding, personal training, and muscle building."
+      }
+    ],
+    "priceLevel": 2,
     "location": {
-      "address": "Info Biro Fitnes, Ohrid",
-      "googleMapsUrl": "https://www.google.com/maps/place/Info+Biro+Fitnes/@41.1272474,20.8154792,17z/data=!3m1!4b1!4m6!3m5!1s0x1350db006529a37b:0xd9c654acdca7c2bc",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.333393466979!2d20.815479176448537!3d41.12724741209026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db006529a37b%3A0xd9c654acdca7c2bc!2sInfo%20Biro%20Fitnes!5e0!3m2!1sen!2smk!4v1749292854658!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=FitBox+Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.47916031868!2d20.802575789589792!3d41.12406473838604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd00139d8a5f%3A0x3452d6c08c1989ec!2sFit%20Box!5e0!3m2!1sen!2smk!4v1750926818625!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "072 227 922",
-    "workingHours": "09:00-22:00",
+    "phone": "076601501",
+    "workingHours": "Mon-Sat: 06:30-22:00",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 39,
-    "name": "Jovanovic Sup & Kayak",
-    "description": "Enjoy the serene waters of Lake Ohrid with high-quality SUP and Kayak rentals.",
-    "type": ["sup", "kayaking"],
-    "imageUrl": "images_venue/adventure_sport/jovanovic_sup_card.jpg",
-    "rating": 4.9,
+    "name": "GoGo - Rent a Car",
+    "description": "GoGo - Rent a Car in Ohrid, North Macedonia, provides a personalized and professional rental experience for cars, bicycles, and e-bikes. They focus on offering a well-maintained, high-quality fleet to ensure a safe and reliable journey through the beautiful Ohrid region, with family-friendly options like child safety booster seats available. Prioritizing transparent pricing and excellent customer service, GoGo aims to make your exploration of Ohrid as smooth and enjoyable as possible.",
+    "type": [
+      "rent-a-car",
+      "rent-a-bike",
+      "rent-a-scooter"
+    ],
+    "tags": [
+      "rent-a-car",
+      "rent-a-bike",
+      "rent-a-scooter",
+      "rental",
+      "transport",
+      "family-friendly"
+    ],
+    "imageUrl": "images_venue/rent/gogo_card.jpg",
+    "gallery": [],
+    "rating": 5,
     "priceLevel": 2,
     "location": {
-      "address": "Kayak & SUP Ohrid (Jovanovic), Ohrid",
-      "googleMapsUrl": "https://www.google.com/maps/place/Kayak+%26+SUP+Ohrid+(Jovanovic)/@41.1122907,20.7939376,17z",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5045830520884!2d20.793937569665026!3d41.1122906982085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd2ee667cfdb%3A0x7ba7933f84901eb8!2sKayak%20%26%20SUP%20Ohrid%20(Jovanovic)!5e0!3m2!1sen!2smk!4v1749293830978!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Rent a Car GoGo Ohrid, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rent+a+Car+GoGo+Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.4238131268492!2d20.797395069655327!3d41.11934620851825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd4c58cbd15b%3A0x34c5c369dd12e278!2sRent%20a%20Car%20GoGo%20Ohrid!5e0!3m2!1sen!2smk!4v1749887830392!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "070589218",
-    "workingHours": "10:00-19:00",
+    "phone": "072609019",
+    "workingHours": "00:00 - 24:00",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 40,
-    "name": "Kliment Koleski Sports Complex",
-    "description": "A versatile sports complex offering facilities for various activities, including soccer.",
-    "type": "sports",
-    "imageUrl": "images_venue/adventure_sport/koleski_card.jpg",
-    "rating": 4.4,
+    "name": "Escape",
+    "description": "Escape Rent a Car in Ohrid provides reliable and flexible vehicle rental solutions for exploring the stunning North Macedonian landscape. They focus on offering a diverse and well-maintained fleet to ensure you find the perfect car for your journey, whether it's a compact for city driving or something larger for scenic routes. Committed to customer satisfaction and a straightforward rental process, Escape Rent a Car aims to help you discover Ohrid and beyond with ease and comfort.",
+    "type": [
+      "rent-a-car",
+      "rent-a-scooter"
+    ],
+    "tags": [
+      "rent-a-car",
+      "rent-a-scooter",
+      "rental",
+      "transport"
+    ],
+    "imageUrl": "images_venue/rent/escape_card.jpg",
+    "gallery": [],
+    "rating": 4.9,
     "priceLevel": 1,
     "location": {
-      "address": "Kliment Koleski Sports Complex, Ohrid",
-      "googleMapsUrl": "https://www.google.com/maps/place/Kliment+Koleski+Sports+Complex/@41.1140605,20.8043946,17z",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.6818976872623!2d20.804394556259844!3d41.11406045842344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca0938b04d1%3A0x729c8b0ae68fb148!2sKliment%20Koleski%20Sports%20Complex!5e0!3m2!1sen!2smk!4v1749294327200!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Ohrid Rent A Car & Scooters-Escape, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ohrid+Rent+A+Car+%26+Scooters-Escape",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0098521939094!2d20.800171705984837!3d41.11247590000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca6bb771b9b%3A0xdcecb9e3d20458f7!2sOhrid%20Rent%20A%20Car%20%26%20Scooters-Escape!5e0!3m2!1sen!2smk!4v1749888720612!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "078665667",
-    "workingHours": "08:00-02:00",
+    "phone": "070232915",
+    "workingHours": "08:00-13:00<br>16:00 - 19:00",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 41,
-    "name": "Ljubanishta Camping",
-    "description": "A beautiful campsite offering a great escape into nature, right by the lake.",
-    "type": "camping",
-    "imageUrl": "images_venue/adventure_sport/ljubanishta_card.jpg",
-    "rating": 4.3,
+    "name": "Pegasus",
+    "description": "Pegasus Rent a Car in Ohrid stands out by offering a highly convenient and customer-focused rental experience. They provide a diverse fleet of well-maintained vehicles suitable for any journey, complemented by services like free car delivery to various locations in the region, including the airport and city center. With a commitment to 24/7 technical support and road assistance, Pegasus Rent a Car ensures peace of mind and aims to deliver the best cars at competitive prices for a smooth exploration of Ohrid and its surroundings.",
+    "type": [
+      "rent-a-car"
+    ],
+    "tags": [
+      "rent-a-car",
+      "rental",
+      "transport"
+    ],
+    "imageUrl": "images_venue/rent/pegasus_card.jpg",
+    "gallery": [],
+    "rating": 4.9,
     "priceLevel": 2,
     "location": {
-      "address": "Car Camp Ljubanishta, Ljubaništa",
-      "googleMapsUrl": "https://www.google.com/maps/place/Car+Camp+Ljubanishta/@40.9247569,20.7715071,17z",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.5889927589137!2d20.77150707659553!3d40.92475687136227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350bf118dae57bb%3A0x16cd69106ec5a888!2sCar%20Camp%20Ljubanishta!5e0!3m2!1sen!2smk!4v1749295300112!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Pegasus Rent A Car Ohrid, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pegasus+Rent+A+Car+Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1227.8770945796266!2d20.801720673149536!3d41.11324588016163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd0ddb9e76e1%3A0xdd583e86a60d3ba3!2sPegasus%20Rent%20A%20Car%20Ohrid!5e0!3m2!1sen!2smk!4v1750927752116!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "046283011",
-    "workingHours": "00:00-24:00",
+    "phone": "078 252 651",
+    "workingHours": "08:00 - 21:00",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 42,
-    "name": "My Way",
-    "description": "Enjoy a day on the water with My Way kayak rentals.",
-    "type": "kayaking",
-    "imageUrl": "images_venue/adventure_sport/my_way_card.jpg",
-    "rating": 4.5,
+    "name": "IGo Transport and Rental agency",
+    "description": "iGo Rent a Car in Ohrid aims to provide a convenient and straightforward car rental experience for travelers. They distinguish themselves with a focus on offering new and clean vehicles across various categories, from economy to more spacious options. With services like free car delivery to your chosen location in Ohrid, iGo Rent a Car strives to make exploring the region easy and enjoyable, emphasizing quick reservations and customer satisfaction.",
+    "type": [
+      "rent-a-car"
+    ],
+    "tags": [
+      "rent-a-car",
+      "rental",
+      "transport"
+    ],
+    "imageUrl": "images_venue/rent/igo_card.jpg",
+    "gallery": [],
+    "rating": 3.9,
     "priceLevel": 2,
     "location": {
-      "address": "My Way, Ohrid",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=My+Way,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.4856943939099!2d20.80153381909421!3d41.11394077185774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca3e6914d8f%3A0x67d21e883000d3ed!2sMy%20Way!5e0!3m2!1sen!2smk!4v1749305359649!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Rent a Car Ohrid - iGo Transport and Rental agency, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rent+a+Car+Ohrid+-+iGo+Transport+and+Rental+agency",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.9390142704697!2d20.8003488389484!3d41.11535481357702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dde1aa344401%3A0x2ff89cd07da8937e!2sRent%20a%20Car%20Ohrid%20-%20iGo%20Transport%20and%20Rental%20agency!5e0!3m2!1sen!2smk!4v1749889941186!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "077485812",
-    "workingHours": "08:00-20:00(Mon-Sat)",
+    "phone": "078 453 969",
+    "workingHours": "Mon-Fri: 07:00-22:00<br>Sat: 09:00-22:00<br>Sun: 10:00-20:00",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 43,
-    "name": "The Pearl Cruises",
-    "description": "Experience the beauty of Lake Ohrid with a scenic cruise.",
-    "type": "cruises",
-    "imageUrl": "images_venue/adventure_sport/Pearl_card.jpg",
-    "rating": 4.2,
-    "priceLevel": 1,
+    "name": "Rent a Car Kiko",
+    "description": "Rent a Car Kiko in Ohrid is committed to offering a convenient and reliable car rental service. They aim to provide a well-maintained fleet of vehicles to cater to various travel needs, ensuring a smooth and comfortable journey as you explore Ohrid and its beautiful surroundings. Kiko focuses on delivering a hassle-free experience with a dedication to customer satisfaction.",
+    "type": [
+      "rent-a-car"
+    ],
+    "tags": [
+      "rent-a-car",
+      "rental",
+      "transport"
+    ],
+    "imageUrl": "images_venue/rent/kiko_card.jpg",
+    "gallery": [],
+    "rating": 5,
+    "priceLevel": 2,
     "location": {
-      "address": "The Pearl Cruises, Ohrid",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Pearl+Cruises,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5114945725684!2d20.80001936965529!3d41.11168690863622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddeb98c05459%3A0xdcb230bcead0829!2sThe%20Pearl%20Cruises%20Ohrid!5e0!3m2!1sen!2smk!4v1749305926696!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Rent a Car Kiko Ohrid, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rent+a+Car+Kiko+Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12025.277661259339!2d20.797834771026267!3d41.10571465977158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c5ef7f1ba4b3%3A0x7149a7a1b7b7e5a9!2sRent%20a%20Car%20Kiko%20Ohrid!5e0!3m2!1sen!2smk!4v1749890072788!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "077485812",
-    "workingHours": "08:00-21:30",
+    "phone": "078384988",
+    "workingHours": "00:00 - 24:00",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 44,
-    "name": "Anxiety",
-    "description": "Anxiety is a charming to-go bar located at the entrance of Ohrid's old town. It's the perfect spot to grab freshly squeezed juices, expertly crafted cocktails, or a quality coffee while you explore the city.",
-    "type": ["to-go", "coffee"],
-    "imageUrl": "images_venue/anxiety_card.jpg",
-    "rating": 4.3,
-    "priceLevel": 2,
+    "name": "General Hospital of Ohrid",
+    "description": "The General Hospital of Ohrid is a key public health institution serving the Ohrid region, providing a wide array of general medical and specialized care. It offers comprehensive inpatient and outpatient services, emergency care, and diagnostic capabilities, catering to both local residents and the numerous tourists visiting the city. The hospital is continuously engaged in efforts to modernize its facilities and equipment to enhance patient outcomes, and includes departments such as infectious diseases. It forms an integral part of the regional healthcare network, often collaborating with other specialized medical centers in Ohrid, such as the Orthopedics and Traumatology Hospital \"St. Erazmo\" and the Institute for Cardiovascular Diseases.",
+    "type": [
+      "hospital"
+    ],
+    "tags": [
+      "hospital",
+      "health",
+      "medical",
+      "emergency"
+    ],
+    "imageUrl": "images_venue/health/opsta_card.jpg",
+    "gallery": [],
+    "rating": 5,
+    "priceLevel": 0,
     "location": {
-      "address": "Tsar Samoil 23, Ohrid 6000",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Anxiety,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5030066826654!2d20.797296069655317!3d41.11242840862481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4f0210d7d%3A0x7f3999d75e2b9d76!2sTsar%20Samoil%2023%2C%20Ohrid%206000!5e0!3m2!1sen!2smk!4v1749307673075!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Sirma Vojvoda 1, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=General+Hospital+of+Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.9066604002937!2d20.81637903891061!3d41.11676791353352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db67be84e5e3%3A0x8c83d2aabf35886d!2sGeneral%20Hospital%20of%20Ohrid!5e0!3m2!1sen!2smk!4v1749890936722!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "+38978247786",
-    "workingHours": "10:00-00:00",
+    "phone": "",
+    "workingHours": "00:00 - 24:00",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 45,
-    "name": "Bi Vi Burgers",
-    "description": "A popular spot for delicious and convenient fast food, Bi Vi Burgers is known for its satisfying burgers, perfect for a quick bite.",
-    "type": ["fast-food"],
-    "imageUrl": "images_venue/fast_food/bivi_card.jpg",
-    "rating": 4.2,
-    "priceLevel": 1,
+    "name": "Ambulance",
+    "description": "Ambulance Ohrid represents the critical frontline of emergency medical services (EMS) for the city and surrounding region. As the primary provider of pre-hospital care, their teams respond to a wide range of medical emergencies and accidents, often providing initial stabilization and life-saving interventions on-site. They function as the essential link to further medical treatment, transporting patients to the General Hospital of Ohrid or other specialized facilities for comprehensive Emergency Room (ER) care.",
+    "type": [
+      "hospital"
+    ],
+    "tags": [
+      "hospital",
+      "health",
+      "medical",
+      "emergency"
+    ],
+    "imageUrl": "images_venue/health/ambulance_card.jpg",
+    "gallery": [],
+    "rating": 5,
+    "priceLevel": 0,
     "location": {
-      "address": "Marko Cepenkov 9-5, Ohrid 6000",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bi+Vi+Burgers,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.888380093817!2d20.814298138910573!3d41.11756631350891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db671a5df7cb%3A0x5d6c7660a90f9a3a!2sMarko%20Cepenkov%209-5%2C%20Ohrid%206000!5e0!3m2!1sen!2smk!4v1749312846780!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Ambulance Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ambulance+Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.0279363400675!2d20.804980688948373!3d41.1114708136967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca0ae3fffff%3A0x574eebf15322871d!2sAmbulance!5e0!3m2!1sen!2smk!4v1750929307304!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "076847472",
-    "workingHours": "Mon-Sat: 09:00-00:00<br>Sun: 10:00-00:00",
+    "phone": "194",
+    "workingHours": "00:00 - 24:00",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 46,
-    "name": "Bro's Burger Station",
-    "description": "A local favorite for high-quality fast food, Bro's Burger Station serves up delicious burgers in a friendly, casual setting.",
-    "type": ["fast-food"],
-    "imageUrl": "images_venue/fast_food/bros_card.jpg",
-    "rating": 4.5,
-    "priceLevel": 2,
+    "name": "Malaricna",
+    "description": "\"Маларична Охрид\" is a historically significant Health Center in Ohrid, North Macedonia, named for its pivotal role in the region's fight against malaria a century ago. Today, it continues to serve as a primary healthcare hub, offering general medical services and diagnostics to the community. The site is currently at the center of a public debate regarding proposals to replace the recently renovated building with a new multi-story residential complex, raising concerns among citizens and heritage advocates about urban planning and the preservation of public spaces in this UNESCO World Heritage city.",
+    "type": [
+      "hospital"
+    ],
+    "tags": [
+      "hospital",
+      "health",
+      "medical",
+      "clinic"
+    ],
+    "imageUrl": "images_venue/health/malaricna_card.jpg",
+    "gallery": [],
+    "rating": 5,
+    "priceLevel": 0,
     "location": {
-      "address": "Bro's Burger Station, Ohrid",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bro's+Burger+Station,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1687.0397133458985!2d20.795754079196083!3d41.113499244758955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dde81f0f8353%3A0xfaabbe5670c0615a!2sBro's%20Burger%20Station!5e0!3m2!1sen!2smk!4v1749313416901!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Malaricna, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Malaricna+Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5011577333072!2d20.80663179517375!3d41.11258993093062!2m3!1f0!2f0!3f0!3m2!i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca0ad94ebfb%3A0x193e27fedd1a5672!2z0JzQsNC70LDRgNC40YfQvdCw!5e0!3m2!1sen!2smk!4v1749893502215!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "075661664",
-    "workingHours": "Mon-Sun: 12:00 - 19:00<br>Tuesday: Closed",
+    "phone": "046268269",
+    "workingHours": "Mon-Fri: 07:00-20:00",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 47,
-    "name": "Pink Panther",
-    "description": "A well-known spot for a quick and tasty meal, Pink Panther offers a variety of fast food options, perfect for any time of the day or night.",
-    "type": ["fast-food"],
-    "imageUrl": "images_venue/fast_food/pink_panter_card.jpg",
-    "rating": 4,
-    "priceLevel": 2,
+    "name": "St Erasmus",
+    "description": "The Special Hospital for Orthopaedic Surgery and Traumatology \"St. Erazmo\" in Ohrid is a leading public medical institution dedicated to the comprehensive care of the locomotory system. It provides advanced services for orthopedic diseases, acute trauma, and reconstructive surgery, alongside neurosurgery, urology, and rehabilitation. Located on the shores of Lake Ohrid, it serves as a vital specialized healthcare center for the region, continually modernizing its facilities and techniques for advanced patient outcomes.",
+    "type": [
+      "hospital"
+    ],
+    "tags": [
+      "hospital",
+      "health",
+      "medical",
+      "orthopedics",
+      "rehabilitation"
+    ],
+    "imageUrl": "images_venue/health/erazmo_card.png",
+    "gallery": [],
+    "rating": 4.1,
+    "priceLevel": 0,
     "location": {
-      "address": "Pink Panther, Ohrid",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pink+Panther,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223.41992876021922!2d20.800024689084!3d41.11338392641536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca474a4ae1b%3A0x3c9cee0713042617!2sPink%20Panter!5e0!3m2!1sen!2smk!4v1749313963000!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "St. Erasmus Hospital, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=St.+Erasmus+Hospital",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.851756206181!2d20.759751081597962!3d41.135615559356296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dce2ce86c2b7%3A0xd813779730d4ff6!2sSt.%20Erasmus%20Hospital!5e0!3m2!1sen!2smk!4v1749894034416!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "078313114",
-    "workingHours": "09:00-02:00",
+    "phone": "046272700",
+    "workingHours": "Mon-Fri: 08:00-15:30<br>Sat: 08:00-20:00<br>Sun: 00:00-24:00",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 48,
-    "name": "Pinokio",
-    "description": "A popular sandwich shop offering a variety of fresh and delicious fast food options, perfect for a quick and satisfying meal.",
-    "type": ["fast-food"],
-    "imageUrl": "images_venue/fast_food/pinokio_card.jpg",
-    "rating": 4.2,
-    "priceLevel": 1,
+    "name": "Cardiology center St. Stephen",
+    "description": "The Institute for Prevention, Treatment, and Rehabilitation of Cardiovascular Diseases – Ohrid, often referred to as \"Cardio Ohrid,\" is a highly specialized public health institution dedicated to comprehensive cardiac care. It focuses on the prevention, diagnosis, treatment, and rehabilitation of cardiovascular diseases, playing a crucial role in managing heart health for the region. As a specialized center, it aims to provide advanced and focused care for patients with heart-related issues.",
+    "type": [
+      "hospital"
+    ],
+    "tags": [
+      "hospital",
+      "health",
+      "medical",
+      "cardiology"
+    ],
+    "imageUrl": "images_venue/health/kardioloski_card.jpg",
+    "gallery": [],
+    "rating": 4.5,
+    "priceLevel": 0,
     "location": {
-      "address": "Sandwich Shop Pinokio, Ohrid",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sandwich+Shop+Pinokio,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.4887011840707!2d20.80665306965532!3d41.11367810860556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca09f38fb25%3A0xd8b8d61f26161e9e!2sSandwich%20Shop%20Pinokio!5e0!3m2!1sen!2smk!4v1749316008417!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Cardiology center St. Stephen, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cardiology+center+Saint+Stephen",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.78642440687!2d20.80072560269898!3d41.07366092818815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c363ecbdf9a5%3A0xfdc7bb0bf9dae396!2sCardiology%20center%20%E2%80%9ESaint%20Stephen%E2%80%9C!5e0!3m2!1sen!2smk!4v1749894977858!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "071888844",
-    "workingHours": "Mon-Fri: 08:00-19:00<br>Sat: 09:00-18:00<br>Sun: Closed",
+    "phone": "046 277 700",
+    "workingHours": "00:00-24:00",
     "bookingUrl": "#",
     "events": []
   },
   {
     "id": 49,
-    "name": "Simple Burgers",
-    "description": "Serving delicious and straightforward burgers, Simple Burgers is a great choice for a quick, no-fuss meal.",
-    "type": ["fast-food"],
-    "imageUrl": "images_venue/fast_food/simple_card.jpg",
+    "name": "Merifarm",
+    "description": "A reliable pharmacy providing prescription medications, over-the-counter drugs, and health products. Merifarm is committed to serving the community's healthcare needs with professional advice and a wide range of medical supplies.",
+    "type": [
+      "pharmacy"
+    ],
+    "tags": [
+      "pharmacy",
+      "health",
+      "medical"
+    ],
+    "imageUrl": "images_venue/health/merifarm_card.jpg",
+    "gallery": [],
+    "rating": 4.8,
+    "priceLevel": 1,
+    "location": {
+      "address": "Apteka Merifarm, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Apteka+Merifarm",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.884706660162!2d20.792959893101024!3d41.1139500370049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddeb25faa0fb%3A0x30cd8f8a2804b626!2sApteka%20Merifarm!5e0!3m2!1sen!2smk!4v1749918478641!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "071260060",
+    "workingHours": "07:30-22:30",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 50,
+    "name": "Zegin No.1",
+    "description": "Zegin Pharmacy is a trusted local pharmacy offering a comprehensive selection of prescription medications, over-the-counter remedies, vitamins, and personal care products. Their knowledgeable pharmacists are available to provide professional advice and support for all your health and wellness needs.",
+    "type": [
+      "pharmacy"
+    ],
+    "tags": [
+      "pharmacy",
+      "health",
+      "medical"
+    ],
+    "imageUrl": "images_venue/health/zegin_card.jpg",
+    "gallery": [],
     "rating": 4.1,
     "priceLevel": 1,
     "location": {
-      "address": "Simple Burgers, Ohrid",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Simple+Burgers,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.7280046306905!2d20.799555141208636!3d41.112862992794476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd302208a925%3A0x5445099e7bf42704!2sSimple%20Burgers!5e0!3m2!1sen!2smk!4v1749316591037!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "address": "Zegin Apteka Ohrid 1, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Zegin+Apteka+Ohrid+1",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.884706660162!2d20.792959893101024!3d41.1139500370049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca2689e2cdf%3A0xbd2d8ddf132f24d4!2sZegin%20Apteka%20Ohrid%201!5e0!3m2!1sen!2smk!4v1749918905863!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "070328637",
-    "workingHours": "Mon-Sat: 10:00-22:00<br>Sun: Closed",
+    "phone": "046261430",
+    "workingHours": "Mon-Fri: 07:00-22:00<br>Sat: 08:00-22:00<br>Sun: 08:00-21:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 51,
+    "name": "Pasholi Pharmacy",
+    "description": "Pasholi Pharmacy offers a wide range of pharmaceutical products, medical supplies, and health consultations. Committed to providing excellent customer service, their team of professional pharmacists is ready to assist with your healthcare needs.",
+    "type": [
+      "pharmacy"
+    ],
+    "tags": [
+      "pharmacy",
+      "health",
+      "medical"
+    ],
+    "imageUrl": "images_venue/health/pasholi_card.jpg",
+    "gallery": [],
+    "rating": 4.5,
+    "priceLevel": 1,
+    "location": {
+      "address": "Pasholi Pharmacy, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pasholi+Pharmacy",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.884706660162!2d20.792959893101024!3d41.1139500370049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca2fb13f7fb%3A0x7209538accf14d64!2sPasholi%20Pharmacy!5e0!3m2!1sen!2smk!4v1749919145285!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046255070",
+    "workingHours": "Mon-Sat: 08:00-21:00<br>Sun: Closed",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 52,
+    "name": "Pharmacy Planta",
+    "description": "Pharmacy Planta provides a wide selection of medications, health supplements, and personal care items. With a focus on patient well-being, their professional staff offers expert advice and friendly service.",
+    "type": [
+      "pharmacy"
+    ],
+    "tags": [
+      "pharmacy",
+      "health",
+      "medical"
+    ],
+    "imageUrl": "images_venue/health/planta.jpg",
+    "gallery": [],
+    "rating": 5,
+    "priceLevel": 1,
+    "location": {
+      "address": "Pharmacy Planta, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pharmacy+Planta",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.884706660162!2d20.792959893101024!3d41.1139500370049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dde6be4fac81%3A0x56267ed5897aabca!2sPharmacy%20Planta!5e0!3m2!1sen!2smk!4v1749919618433!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046250533",
+    "workingHours": "Mon-Sat: 08:00-21:00<br>Sun: Closed",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 53,
+    "name": "Zegin No. 2",
+    "description": "Zegin Pharmacy is a trusted local pharmacy offering a comprehensive selection of prescription medications, over-the-counter remedies, vitamins, and personal care products. Their knowledgeable pharmacists are available to provide professional advice and support for all your health and wellness needs.",
+    "type": [
+      "pharmacy"
+    ],
+    "tags": [
+      "pharmacy",
+      "health",
+      "medical"
+    ],
+    "imageUrl": "images_venue/health/zegin_card.jpg",
+    "gallery": [],
+    "rating": 4.4,
+    "priceLevel": 1,
+    "location": {
+      "address": "Zegin Apteka Ohrid 2, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Zegin+Apteka+Ohrid+2",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.97622798845!2d20.799998089586783!3d41.11321023905961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca0d422d209%3A0xfe1981c5dc830d3c!2sZegin%20Apteka%20Ohrid%202!5e0!3m2!1sen!2smk!4v1750932039714!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046200366",
+    "workingHours": "Mon-Fri: 07:00-22:00<br>Sat: 08:00-22:00<br>Sun: 08:00-21:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 54,
+    "name": "Via Farm - 2",
+    "description": "Via Farm is a well-stocked pharmacy providing a range of prescription and over-the-counter medications, health products, and professional advice from qualified pharmacists to meet your healthcare needs.",
+    "type": [
+      "pharmacy"
+    ],
+    "tags": [
+      "pharmacy",
+      "health",
+      "medical"
+    ],
+    "imageUrl": "images_venue/health/via_farm.jpg",
+    "gallery": [],
+    "rating": 4.7,
+    "priceLevel": 1,
+    "location": {
+      "address": "Pharmacy \"Via Farm\" - 2, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pharmacy+Via+Farm+-+2",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.698325055785!2d20.799944193579105!3d41.11598519999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db6152f920fb%3A0x8cbc3799607eddf8!2zUGhhcm1hY3kg4oCeVmlhIEZhcm3igJwgLSAy!5e0!3m2!1sen!2smk!4v1749920255089!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046230078",
+    "workingHours": "Mon-Sat: 08:30-21:30<br>Sun: Closed",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 55,
+    "name": "Zegin No.4",
+    "description": "Zegin Pharmacy is a trusted local pharmacy offering a comprehensive selection of prescription medications, over-the-counter remedies, vitamins, and personal care products. Their knowledgeable pharmacists are available to provide professional advice and support for all your health and wellness needs.",
+    "type": [
+      "pharmacy"
+    ],
+    "tags": [
+      "pharmacy",
+      "health",
+      "medical"
+    ],
+    "imageUrl": "images_venue/health/zegin_card.jpg",
+    "gallery": [],
+    "rating": 4.4,
+    "priceLevel": 1,
+    "location": {
+      "address": "Zegin Apteka Ohrid 4, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Zegin+Apteka+Ohrid+4",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.292275866452!2d20.80386759357911!3d41.1204187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbb730beea79%3A0xf34f34c35539e9ed!2sZegin%20Apteka%20Ohrid%204!5e0!3m2!1sen!2smk!4v1749920974926!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046203311",
+    "workingHours": "08:00 - 21:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 56,
+    "name": "Via Farm",
+    "description": "Via Farm is a well-stocked pharmacy providing a range of prescription and over-the-counter medications, health products, and professional advice from qualified pharmacists to meet your healthcare needs.",
+    "type": [
+      "pharmacy"
+    ],
+    "tags": [
+      "pharmacy",
+      "health",
+      "medical"
+    ],
+    "imageUrl": "images_venue/health/via_farm.jpg",
+    "gallery": [],
+    "rating": 3.7,
+    "priceLevel": 1,
+    "location": {
+      "address": "Apteka Via Farm, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Apteka+Via+Farm",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.311051913046!2d20.786390993579104!3d41.1202137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd4a24e8d73d%3A0xd52af82aec4da18f!2sApteka%20Via%20Farm!5e0!3m2!1sen!2smk!4v1749921164096!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "",
+    "workingHours": "Mon-Sat: 08:00-22:00<br>Sun: Closed",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 57,
+    "name": "Zegin No. 5",
+    "description": "Zegin Pharmacy is a trusted local pharmacy offering a comprehensive selection of prescription medications, over-the-counter remedies, vitamins, and personal care products. Their knowledgeable pharmacists are available to provide professional advice and support for all your health and wellness needs.",
+    "type": [
+      "pharmacy"
+    ],
+    "tags": [
+      "pharmacy",
+      "health",
+      "medical"
+    ],
+    "imageUrl": "images_venue/health/zegin_card.jpg",
+    "gallery": [],
+    "rating": 5,
+    "priceLevel": 1,
+    "location": {
+      "address": "Zegin Apteka Ohrid 5, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Zegin+Apteka+Ohrid+5",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6012.054677172034!2d20.8005374935791!3d41.112094!2m3!1f0!2f0!3f0!3m2!i1024!2i768!4f13.1!3m3!1m2!1s0x1350db4419f44709%3A0xb93fc653259a8fdd!2sZegin%20Apteka%20Ohrid%205!5e0!3m2!1sen!2smk!4v1749922069774!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046253907",
+    "workingHours": "Mon-Sat: 08:00-22:00<br>Sun: 09:00-17:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 58,
+    "name": "Zegin No. 3",
+    "description": "Zegin Pharmacy is a trusted local pharmacy offering a comprehensive selection of prescription medications, over-the-counter remedies, vitamins, and personal care products. Their knowledgeable pharmacists are available to provide professional advice and support for all your health and wellness needs.",
+    "type": [
+      "pharmacy"
+    ],
+    "tags": [
+      "pharmacy",
+      "health",
+      "medical"
+    ],
+    "imageUrl": "images_venue/health/zegin_card.jpg",
+    "gallery": [],
+    "rating": 4.3,
+    "priceLevel": 1,
+    "location": {
+      "address": "Zegin Apteka Ohrid 3, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Zegin+Apteka+Ohrid+3",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.405498839785!2d20.804218193579107!3d41.1191825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db80dd9a59a1%3A0xd6b1a2d25228bf44!2sZegin%20Apteka%20Ohrid%203!5e0!3m2!1sen!2smk!4v1749922238111!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046230220",
+    "workingHours": "Mon-Fri: 07:00-22:00<br>Sat-Sun: 08:00-21:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 59,
+    "name": "Via Farm - 13",
+    "description": "Via Farm is a well-stocked pharmacy providing a range of prescription and over-the-counter medications, health products, and professional advice from qualified pharmacists to meet your healthcare needs.",
+    "type": [
+      "pharmacy"
+    ],
+    "tags": [
+      "pharmacy",
+      "health",
+      "medical"
+    ],
+    "imageUrl": "images_venue/health/via_farm.jpg",
+    "gallery": [],
+    "rating": 4.6,
+    "priceLevel": 1,
+    "location": {
+      "address": "Via Farm 13, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Via+Farm+13",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.464965638707!2d20.811915827864603!3d41.10950753129881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db8a190807a1%3A0x56badba8ecbda44a!2sVia%20Farm%2013!5e0!3m2!1sen!2smk!4v1749922360774!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070358673",
+    "workingHours": "08:00 - 21:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 60,
+    "name": "Dr. Batkoski - Dental Center",
+    "description": "Dr. Batkoski – Dental Center in Ohrid is a modern dental clinic renowned for providing high-quality, comprehensive dental services to both local patients and a significant number of international dental tourists. With over 25 years of experience, they offer a wide range of treatments, from general dentistry and cosmetic procedures like veneers and teeth whitening to specialized services such as dental implants, orthodontics (including Invisalign), and oral surgery. The clinic is known for its expert team, modern equipment (including 3D scanning), affordable prices, and commitment to patient satisfaction, often exceeding EU regulations and offering free consultations.",
+    "type": [
+      "dentist"
+    ],
+    "tags": [
+      "dentist",
+      "health",
+      "medical",
+      "cosmetic"
+    ],
+    "imageUrl": "images_venue/health/batkoski_card.png",
+    "gallery": [],
+    "rating": 4.9,
+    "priceLevel": 3,
+    "location": {
+      "address": "Dental Center D-r Batkoski, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dental+Center+D-r+Batkoski",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.6383664526443!2d20.808657096789556!3d41.12058839999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db61536534b1%3A0x24e0fb4c09ebe6cb!2sDental%20Center%20D-r%20Batkoski!5e0!3m2!1sen!2smk!4v1749925957425!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046230079",
+    "workingHours": "Mon-Fri: 08:00-20:00<br>Sat: 08:00-15:00<br>Sun: Closed",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 61,
+    "name": "Dentoria Dental",
+    "description": "Dentoria Dental in Ohrid is a modern dental clinic offering a wide array of high-quality dental services. They specialize in areas like general dentistry, oral surgery, prosthetics (including various types of crowns), and dental implantology, often utilizing the latest technology. Dentoria is committed to providing excellent customer service and patient satisfaction at competitive prices, serving both local residents and international dental tourists.",
+    "type": [
+      "dentist"
+    ],
+    "tags": [
+      "dentist",
+      "health",
+      "medical",
+      "surgery"
+    ],
+    "imageUrl": "images_venue/health/dentoria_card.jpg",
+    "gallery": [],
+    "rating": 5,
+    "priceLevel": 3,
+    "location": {
+      "address": "Dentoria Dental Office, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dentoria+Dental+Office",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.6394838622004!2d20.79063539678956!3d41.120564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dc97f49484ff%3A0xbf71c7ecd7b47fd1!2sDentoria%20Dental%20Office!5e0!3m2!1sen!2smk!4v1749926266970!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "078232262",
+    "workingHours": "Mon, Wed, Thu: 10:00-17:00<br>Tue, Fri: 13:00-20:00<br>Sat: 09:00-14:00<br>Sun: Closed",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 62,
+    "name": "Tilevi Dental",
+    "description": "Tilevi Dental in Ohrid is a local dental office committed to providing general dental care for the community. Located at Car Samoil 8, they offer essential services like check-ups, cleanings, and common restorative treatments in a patient-focused setting. With regular operating hours from Monday to Saturday, Tilevi Dental aims to provide accessible and reliable dental services to ensure the oral health of its patients.",
+    "type": [
+      "dentist"
+    ],
+    "tags": [
+      "dentist",
+      "health",
+      "medical"
+    ],
+    "imageUrl": "images_venue/health/tilevi_card.jpg",
+    "gallery": [],
+    "rating": 4.8,
+    "priceLevel": 2,
+    "location": {
+      "address": "Tilevi Dental, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tilevi+Dental",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.996431675131!2d20.79364709678954!3d41.112769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4f45f2dab%3A0xf956dd4e5f36e420!2sTilevi%20Dental!5e0!3m2!1sen!2smk!4v1749926931987!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046264455",
+    "workingHours": "Mon-Fri: 08:30-20:00<br>Sat: 09:00-13:00<br>Sun: Closed",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 63,
+    "name": "Lasovski Dental Office",
+    "description": "Lasovski Dental Office in Ohrid is a well-established dental center founded in April 1993, with over 30 years of experience. Led by Dr. Bebi Lasovski and more recently joined by Dr. Hristijan Lasovski, they provide a comprehensive range of professional dental services. Their offerings include restorative, reconstructive, and cosmetic dentistry, along with specialized treatments such as dental implants, root canal treatment, pediatric dentistry, and aesthetic procedures like hyaluronic acid fillers. They are known for their commitment to excellence, patient comfort, and continuously integrating new knowledge and techniques.",
+    "type": [
+      "dentist"
+    ],
+    "tags": [
+      "dentist",
+      "health",
+      "medical",
+      "cosmetic"
+    ],
+    "imageUrl": "images_venue/health/lasovski_card.jpg",
+    "gallery": [],
+    "rating": 5,
+    "priceLevel": 2,
+    "location": {
+      "address": "Lasovski Dental Office, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lasovski+Dental+Office",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.7573262943497!2d20.79681749678955!3d41.117990699999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd11beb20a3b%3A0x2b31356385293a96!2sLasovski%20Dental%20Office!5e0!3m2!1sen!2smk!4v1749927341198!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075792470",
+    "workingHours": "Mon, Wed, Fri: 08:00-16:00<br>Tue, Thu: 08:00-13:30, 17:30-20:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 64,
+    "name": "Dr. Elena Dental Clinic",
+    "description": "Dr. Elena Dental Clinic in Ohrid is a welcoming private practice dedicated to providing essential and reliable general dental care. Focused on the oral health of the local community, the clinic offers a range of services from routine check-ups and cleanings to restorative treatments. Situated on Bul. Turistichka 40, Dr. Elena Dental Clinic aims to deliver accessible, high-quality care in a comfortable setting, helping patients maintain healthy smiles.",
+    "type": [
+      "dentist"
+    ],
+    "tags": [
+      "dentist",
+      "health",
+      "medical"
+    ],
+    "imageUrl": "images_venue/health/elena_card.jpg",
+    "gallery": [],
+    "rating": 5,
+    "priceLevel": 2,
+    "location": {
+      "address": "Dr. Elena Dental Clinic, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dr.+Elena+Dental+Clinic",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.7573262943497!2d20.79681749678955!3d41.117990699999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd0b746d7a3b%3A0xe1d479a214f4d7eb!2sDr.%20Elena%20Dental%20Clinic!5e0!3m2!1sen!2smk!4v1749927773358!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070328483",
+    "workingHours": "Mon, Wed, Fri: 09:00-17:00<br>Tue, Thu: 11:00-19:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 65,
+    "name": "PZO Dr. Jolevski",
+    "description": "PZO \"D-r Jolevski\" in Ohrid is a dental clinic known for providing a wide range of services, including general dentistry and specialized treatments like orthodontics. Led by dentists such as Dr. Mirko Jolevski, Dr. Ljubo Jolevski, and Dr. Mersiha Eminovic Ljato, the clinic offers various procedures including braces, X-rays, laser dentistry, dentures, and consultations. They operate throughout the week, with private patients welcome, focusing on comprehensive dental care in Ohrid.",
+    "type": [
+      "dentist"
+    ],
+    "tags": [
+      "dentist",
+      "health",
+      "medical",
+      "orthodontics"
+    ],
+    "imageUrl": "images_venue/health/jolevski_card.jpg",
+    "gallery": [],
+    "rating": 5,
+    "priceLevel": 2,
+    "location": {
+      "address": "PZO D-r Jolevski, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=PZO+D-r+Jolevski",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.9899709333336!2d20.80049969678955!3d41.112910099999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dda0ff0e2d95%3A0x6f8b5e7c7a7231b9!2sPZO%20D-r%20Jolevski!5e0!3m2!1sen!2smk!4v1749928065095!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046251700",
+    "workingHours": "Mon-Fri: 08:00-20:00<br>Sat: 09:00-13:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 66,
+    "name": "Dr. Mojsoska Dental & Aesthetic center",
+    "description": "D-R Mojsoska Dental Centar in Ohrid is a specialized center for dental and aesthetic medicine, evolved from a general dentistry practice established in 2004. They offer a comprehensive range of services, excelling in Orthodontics and Implantology for advanced dental solutions, alongside facial aesthetic treatments like hyaluronic fillers and botulinum toxin. The clinic is committed to providing high-quality care with an expert team, addressing both routine and complex cases to help patients achieve their ideal smile.",
+    "type": [
+      "dentist"
+    ],
+    "tags": [
+      "dentist",
+      "health",
+      "medical",
+      "aesthetic"
+    ],
+    "imageUrl": "images_venue/health/mojsoska_card.jpg",
+    "gallery": [],
+    "rating": 5,
+    "priceLevel": 2,
+    "location": {
+      "address": "D-r Mojsoska Dental & Aesthetic center, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=D-r+Mojsoska+Dental+%26+Aesthetic+center",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.962708325289!2d20.798834096789545!3d41.11350550000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb664f8b909%3A0x2cc4402b09d80737!2sD-r%20Mojsoska%20Dental%20%26%20Aesthetic%20center!5e0!3m2!1sen!2smk!4v1749928444579!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075298358",
+    "workingHours": "Mon - Fri: 08:00 - 16:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 67,
+    "name": "Pivnica Sokak",
+    "description": "Pub & Pivnica Sokak in Ohrid is much more than just a pub. It's a popular gathering spot where friends connect. Known for its inviting, brand-new ambiance and fresh offerings, it's a hidden gem that promises to become your new favorite local spot. Expect a friendly atmosphere perfect for enjoying a great selection of drinks,including a variety of Macedonian draft beers.",
+    "type": [
+      "pub",
+      "fast-food"
+    ],
+    "tags": [
+      "pub",
+      "foodie",
+      "casual",
+      "local"
+    ],
+    "imageUrl": "images_venue/sokak_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/sokak/photo1.jpg",
+        "alt": ""
+      },
+      {
+        "url": "venue_gallery/sokak/photo2.jpg",
+        "alt": ""
+      },
+      {
+        "url": "venue_gallery/sokak/photo3.jpg",
+        "alt": ""
+      }
+    ],
+    "rating": 4.6,
+    "priceLevel": 2,
+    "location": {
+      "address": "Pub & Pivnica Sokak, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pub+%26+Pivnica+Sokak,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.981833716928!2d20.79628917644787!3d41.11308781296401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd9002867889%3A0x5a9516769f99ed09!2sPub%20%26%20Pivnica%20Sokak!5e0!3m2!1sen!2smk!4v1750873529343!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "077961611",
+    "workingHours": "09:00 - 01:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 68,
+    "name": "Ohrid Lake Cruises",
+    "description": "Ohrid Lake Cruises \"Mato Catamaran\" offers a range of unforgettable experiences on Lake Ohrid. You can embark on full-day tours to historical and natural sites like the Monastery of St. Naum, enjoying the stunning coastal villages and breathtaking sunsets. They also provide romantic night cruises, allowing you to experience Ohrid's unique evening atmosphere with comfortable, luxurious boats and cold drinks. For special occasions, Mato Catamaran offers private parties, making it an ideal choice for birthdays, weddings, or corporate events. Their tours aim to provide a unique perspective of Ohrid, showcasing its city and surrounding beauties from the tranquil waters of the lake, often including free Wi-Fi and complimentary drinks on board.",
+    "type": [
+      "cruises"
+    ],
+    "tags": [
+      "cruises",
+      "adventure",
+      "outdoors",
+      "scenic",
+      "romantic"
+    ],
+    "imageUrl": "images_venue/adventure_sport/mato_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/mato/photo1.jpg",
+        "alt": ""
+      },
+      {
+        "url": "venue_gallery/mato/photo2.jpg",
+        "alt": ""
+      },
+      {
+        "url": "venue_gallery/mato/photo3.jpg",
+        "alt": ""
+      }
+    ],
+    "rating": 4.5,
+    "ratingCount": 1,
+    "priceLevel": 2,
+    "location": {
+      "address": "Ohrid Lake Cruises (Mato Catamarans Excursions), Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ohrid+Lake+Cruises+(Mato+Catamarans+Excursions),Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.0208873889258!2d20.79853603891054!3d41.11177871368723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dddb7dcd0b39%3A0x411daf89c1db77de!2sOhrid%20Lake%20Cruises%20(Mato%20Catamarans%20Excursions)!5e0!3m2!1sen!2smk!4v1750414863080!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "078339377",
+    "workingHours": "08:00 - 19:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 69,
+    "name": "Veterinarna Ambulanta Toni",
+    "description": "Veterinarian Ambulance Dr. Toni, also known as Toni Vet, is a highly-rated clinic in Ohrid dedicated to the health and well-being of your beloved pets. They offer comprehensive general veterinary care, ensuring your animals receive compassionate and professional attention.",
+    "type": [
+      "vet"
+    ],
+    "tags": [
+      "vet",
+      "pets",
+      "health",
+      "medical"
+    ],
+    "imageUrl": "images_venue/pet/toni_card.png",
+    "gallery": [],
+    "rating": 4.8,
+    "ratingCount": 1,
+    "priceLevel": 1,
+    "location": {
+      "address": "Veterinarian Ambulance Dr. Toni, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Veterinarian+Ambulance+Dr.+Toni,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.4206075136013!2d20.801600069655336!3d41.119626208513964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dc9f37134c5d%3A0xbb6f0d886213ae11!2sVeterinarian%20Ambulance%20Dr.%20Toni!5e0!3m2!1sen!2smk!4v1750418714524!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070 575 881",
+    "workingHours": "08:00 - 20:00 (Mon - Thu)<br>08:00 - 19:00 (Fri,Sat)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 70,
+    "name": "K9 Grooming",
+    "description": "K-9 Grooming Salon in Ohrid, located at Dimitar Vlahov br. 20A, offers professional and comprehensive grooming services to keep your dog looking and feeling their best. With a high rating, they provide essential care including bathing, brushing, hair trimming, and nail clipping for a happy and healthy canine companion.",
+    "type": [
+      "grooming"
+    ],
+    "tags": [
+      "grooming",
+      "pets",
+      "dogs"
+    ],
+    "imageUrl": "images_venue/pet/k9_card.jpg",
+    "gallery": [],
+    "rating": 4.8,
+    "ratingCount": 1,
+    "priceLevel": 1,
+    "location": {
+      "address": "K9 Grooming Salon, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=K9+Grooming+Salon,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.9614164988967!2d20.802343677154685!3d41.1138154379072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd6868fa84ef%3A0xb2b9a382dad1733c!2sK9%20Grooming%20Salon!5e0!3m2!1sen!2smk!4v1750418996731!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "076 350 215",
+    "workingHours": "08:00 - 16:00 (Mon - Fri)<br>08:00 - 13:00 (Sat)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 71,
+    "name": "Vet Spirit",
+    "description": "Vet Spirit Ohrid is a veterinary clinic dedicated to providing comprehensive care for pets. They offer a wide range of services, including preventive examinations, various treatments, surgery, dentistry, and biochemical and blood analysis, all aimed at ensuring the health and well-being of your animal companions. They are known for their commitment to attentive service for domestic animals.",
+    "type": [
+      "vet"
+    ],
+    "tags": [
+      "vet",
+      "pets",
+      "health",
+      "medical"
+    ],
+    "imageUrl": "images_venue/pet/vetspirit_card.jpg",
+    "gallery": [],
+    "rating": 4.8,
+    "ratingCount": 1,
+    "priceLevel": 1,
+    "location": {
+      "address": "Vet Spirit, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Vet+Spirit,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5281998374514!2d20.806219969655313!3d41.110227508658674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca776cb35c5%3A0x1b4113ac0a758a37!2sVet%20Spirit!5e0!3m2!1sen!2smk!4v1750419420841!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075 261 879",
+    "workingHours": "08:30 - 13:30, 18:00 - 20:00 (Mon - Fri)<br>08:00 - 12:00 (Sat)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 72,
+    "name": "GoodFellas GroomingSalon",
+    "description": "GoodFellas GroomingSalon in Ohrid is where your canine companions get top-notch care. Passionate about dogs, they provide professional grooming to ensure your furry friends always look and feel their absolute best.",
+    "type": [
+      "grooming"
+    ],
+    "tags": [
+      "grooming",
+      "pets",
+      "dogs"
+    ],
+    "imageUrl": "images_venue/pet/goodfellas_card.jpg",
+    "gallery": [],
+    "rating": 4.6,
+    "ratingCount": 1,
+    "priceLevel": 1,
+    "location": {
+      "address": "GoodFellas GroomingSalon, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=GoodFellas+GroomingSalon,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.75230042869634!2d20.8090879533283!3d41.11228914274869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db47f276da37%3A0x1c8a9b186cbab62a!2sGoodFellas%20GroomingSalon!5e0!3m2!1sen!2smk!4v1750420135044!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "078 249 689",
+    "workingHours": "09:00 - 12:00,  17:00 - 21:00 (Mon - Sat)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 73,
+    "name": "Fauna Pet Shop",
+    "description": "Fauna Pet Shop is a well-equipped destination for pet owners, offering a wide array of products essential for the well-being and happiness of various pets. You can find a comprehensive selection of high-quality food, equipment, vitamins, minerals, and cosmetics for dogs, cats, birds, rodents, and fish. They also stock treats, leashes, collars, flea and tick prevention, cat litter, and even pet clothing, ensuring you can find everything needed for proper care and enrichment.",
+    "type": [
+      "pet-shop"
+    ],
+    "tags": [
+      "pet-shop",
+      "pets",
+      "food",
+      "supplies"
+    ],
+    "imageUrl": "images_venue/pet/fauna_card.jpg",
+    "gallery": [],
+    "rating": 4.8,
+    "ratingCount": 85,
+    "priceLevel": 2,
+    "location": {
+      "address": "Pet Shop Fauna Centar Ohrid, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pet+Shop+Fauna+Centar+Ohrid,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.3947364130258!2d20.80915726965534!3d41.12188590847914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbdceac08201%3A0xbc2dff9bb0890db5!2sPet%20Shop%20Fauna%20Centar%20Ohrid!5e0!3m2!1sen!2smk!4v1750420436968!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "071 285 997",
+    "workingHours": "11:00 - 18:00 (Mon - Fri)<br>10:00 - 15:00 (Sat)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 74,
+    "name": "Vet-Medika",
+    "description": "Veterinarna Ambulanta Vet-Medika, widely known as Vet Medika Ohrid, is a place where your beloved animal companions receive caring and professional attention. They understand that your pet is family, and their team is dedicated to providing a warm, reassuring environment for both you and your furry, scaled, or feathered friend.\n\nAt Vet Medika Ohrid, you can expect comprehensive general veterinary care. This typically includes everything from essential routine check-ups and vaccinations to the diagnosis and treatment of various illnesses. They're there for those unexpected minor injuries and also offer valuable advice on preventative care, nutrition, and overall wellness.",
+    "type": [
+      "vet"
+    ],
+    "tags": [
+      "vet",
+      "pets",
+      "health",
+      "medical"
+    ],
+    "imageUrl": "images_venue/pet/vetmedika_card.jpg",
+    "gallery": [],
+    "rating": 4.4,
+    "priceLevel": 1,
+    "location": {
+      "address": "Veterinarna Ambulanta Vet-Medika, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Veterinarna+Ambulanta+Vet-Medika,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12022.311620219205!2d20.799501270992486!3d41.12190863058979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd58d3c8919d%3A0x3657404670027cb7!2sVeterinarna%20Ambulanta%20Vet-Medika!5e0!3m2!1sen!2smk!4v1750932779559!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070720552",
+    "workingHours": "Mon - Sat 08:00 - 20:00",
     "bookingUrl": "#",
     "events": []
   }
 ]
-
-
-
