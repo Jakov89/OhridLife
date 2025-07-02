@@ -2612,3 +2612,653 @@ select.form-input {
     }
 }
 
+/* =============== MOBILE RESPONSIVE FIXES FOR CALENDAR AND RECOMMENDATIONS =============== */
+
+/* Mobile Calendar Fixes - Comprehensive flatpickr fixes */
+@media (max-width: 768px) {
+    /* Fix calendar container width and layout */
+    #calendar-container,
+    #planner-calendar-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+    
+    /* Target the actual flatpickr calendar container */
+    .flatpickr-calendar {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    .flatpickr-innerContainer {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .flatpickr-rContainer {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    /* Fix day container grid layout */
+    .dayContainer {
+        display: grid !important;
+        grid-template-columns: repeat(7, 1fr) !important;
+        gap: 1px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* Fix individual day cells */
+    .flatpickr-day {
+        width: 100% !important;
+        height: 32px !important;
+        line-height: 32px !important;
+        margin: 0 !important;
+        font-size: 0.8rem !important;
+        border-radius: 4px !important;
+        padding: 0 !important;
+        max-width: none !important;
+        min-width: auto !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* Fix weekday headers */
+    .flatpickr-weekdays {
+        display: grid !important;
+        grid-template-columns: repeat(7, 1fr) !important;
+        gap: 1px !important;
+        padding: 0.5rem 0 !important;
+        margin-bottom: 0.5rem !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+    
+    span.flatpickr-weekday {
+        font-size: 0.7rem !important;
+        font-weight: 600 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-align: center !important;
+        width: 100% !important;
+        height: 28px !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        color: var(--muted-foreground) !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.3px !important;
+        flex: 1 !important;
+    }
+    
+    /* Fix calendar header */
+    .flatpickr-months {
+        padding: 0.5rem 0 !important;
+        width: 100% !important;
+    }
+    
+    .flatpickr-current-month {
+        font-size: 0.9rem !important;
+    }
+    
+    /* Fix navigation arrows */
+    .flatpickr-prev-month, 
+    .flatpickr-next-month {
+        padding: 0.25rem !important;
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+
+/* Mobile fixes for Plan Your Visit section */
+@media (max-width: 768px) {
+    #plan-your-visit {
+        padding: 2rem 1rem;
+    }
+    
+    #plan-your-visit .text-center h2 {
+        font-size: 2rem;
+    }
+    
+    #plan-your-visit .text-center p {
+        font-size: 0.9rem;
+    }
+    
+    .light-card {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    /* Specific fixes for calendar container */
+    .light-card #calendar-container,
+    .light-card #planner-calendar-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+    }
+    
+    .card-header {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.75rem;
+    }
+}
+
+/* Mobile fixes for Recommendations section */
+@media (max-width: 768px) {
+    .recommendations-highlight {
+        margin: 1.5rem 0;
+        padding: 2rem 0;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+    
+    .recommendations-highlight .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .section-title-with-icon {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .title-icon {
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    /* Fix slider container overflow */
+    #recommendations-slider-container {
+        overflow: visible;
+        margin: 0 -1rem;
+        padding: 0 1rem;
+    }
+    
+    /* Fix slider arrows positioning on mobile */
+    #recommendations-slider-container .slider-arrow {
+        display: none; /* Hide arrows on mobile for cleaner look */
+    }
+    
+    /* Fix venue cards in recommendations */
+    .recommendations-highlight .venue-card {
+        margin: 0 0.25rem;
+    }
+    
+    .recommendations-highlight .venue-card-image-container {
+        height: 140px;
+    }
+    
+    .recommendations-highlight .venue-card-content {
+        padding: 0.75rem;
+    }
+    
+    .recommendations-highlight .venue-card-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .recommendations-highlight .venue-card-description {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* Extra small mobile screens */
+@media (max-width: 480px) {
+    /* Ultra-compact calendar for very small screens */
+    .flatpickr-calendar {
+        width: 100% !important;
+        min-width: 280px !important;
+        max-width: 100% !important;
+    }
+    
+    .flatpickr-day {
+        height: 28px !important;
+        line-height: 28px !important;
+        font-size: 0.75rem !important;
+    }
+    
+    .dayContainer {
+        gap: 0.5px !important;
+    }
+    
+    span.flatpickr-weekday {
+        font-size: 0.65rem !important;
+        height: 24px !important;
+        line-height: 24px !important;
+    }
+    
+    .flatpickr-months {
+        padding: 0.25rem 0 !important;
+    }
+    
+    .flatpickr-current-month {
+        font-size: 0.85rem !important;
+    }
+    
+    /* Very small screen recommendations */
+    .recommendations-highlight {
+        padding: 1.5rem 0;
+    }
+    
+    .section-title-with-icon {
+        font-size: 1.5rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .title-icon {
+        margin-right: 0;
+    }
+    
+    .recommendations-highlight .venue-card-image-container {
+        height: 120px;
+    }
+}
+
+/* =============== MAXIMUM PRIORITY CALENDAR FIXES =============== */
+/* These rules use maximum specificity to override any flatpickr defaults */
+
+@media (max-width: 768px) {
+    /* Force all flatpickr elements to respect container width */
+    .light-card .flatpickr-calendar,
+    #calendar-container .flatpickr-calendar,
+    #planner-calendar-container .flatpickr-calendar,
+    .flatpickr-calendar.open {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: auto !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+    
+    /* Force all container elements */
+    .light-card .flatpickr-innerContainer,
+    .light-card .flatpickr-rContainer,
+    #calendar-container .flatpickr-innerContainer,
+    #calendar-container .flatpickr-rContainer,
+    #planner-calendar-container .flatpickr-innerContainer,
+    #planner-calendar-container .flatpickr-rContainer {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* Force day container grid */
+    .light-card .dayContainer,
+    #calendar-container .dayContainer,
+    #planner-calendar-container .dayContainer {
+        display: grid !important;
+        grid-template-columns: repeat(7, 1fr) !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        gap: 1px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        justify-content: stretch !important;
+    }
+    
+    /* Force day cells */
+    .light-card .flatpickr-day,
+    #calendar-container .flatpickr-day,
+    #planner-calendar-container .flatpickr-day {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: auto !important;
+        height: 32px !important;
+        line-height: 32px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 0.8rem !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+    }
+    
+    /* Force weekday headers */
+    .light-card .flatpickr-weekdays,
+    #calendar-container .flatpickr-weekdays,
+    #planner-calendar-container .flatpickr-weekdays {
+        display: grid !important;
+        grid-template-columns: repeat(7, 1fr) !important;
+        width: 100% !important;
+        gap: 1px !important;
+        padding: 0.5rem 0 !important;
+        margin-bottom: 0.5rem !important;
+        box-sizing: border-box !important;
+        border-bottom: 1px solid var(--border) !important;
+    }
+    
+    .light-card span.flatpickr-weekday,
+    #calendar-container span.flatpickr-weekday,
+    #planner-calendar-container span.flatpickr-weekday {
+        width: 100% !important;
+        height: 28px !important;
+        font-size: 0.7rem !important;
+        font-weight: 600 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        color: var(--muted-foreground) !important;
+        background: transparent !important;
+        border: none !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+    }
+}
+
+/* =============== CRITICAL WEEKDAY HEADER FIXES =============== */
+/* Force proper weekday header distribution */
+
+@media (max-width: 768px) {
+    /* Complete override of flatpickr weekday container */
+    .flatpickr-weekdays {
+        display: flex !important;
+        width: 100% !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 0.5rem 0 !important;
+        margin-bottom: 0.5rem !important;
+        border-bottom: 1px solid var(--border) !important;
+    }
+    
+    /* Force individual weekday headers to distribute evenly */
+    .flatpickr-weekday {
+        flex: 1 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        font-size: 0.7rem !important;
+        font-weight: 600 !important;
+        color: var(--muted-foreground) !important;
+        padding: 4px 0 !important;
+        margin: 0 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.3px !important;
+        width: auto !important;
+        min-width: 0 !important;
+        height: 24px !important;
+    }
+    
+    /* Alternative approach - use CSS Grid with specific targeting */
+    .light-card .flatpickr-weekdays,
+    #calendar-container .flatpickr-weekdays,
+    #planner-calendar-container .flatpickr-weekdays {
+        display: grid !important;
+        grid-template-columns: repeat(7, 1fr) !important;
+        width: 100% !important;
+        gap: 0 !important;
+    }
+    
+    .light-card .flatpickr-weekday,
+    #calendar-container .flatpickr-weekday,
+    #planner-calendar-container .flatpickr-weekday {
+        grid-column: auto !important;
+        width: 100% !important;
+        text-align: center !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
+
+/* =============== ULTIMATE WEEKDAY DISTRIBUTION FIX =============== */
+/* Force proper weekday spacing using maximum specificity */
+
+@media (max-width: 768px) {
+    /* Force weekdays container to use flexbox */
+    .flatpickr-calendar .flatpickr-weekdays,
+    .light-card .flatpickr-calendar .flatpickr-weekdays,
+    #calendar-container .flatpickr-calendar .flatpickr-weekdays,
+    #planner-calendar-container .flatpickr-calendar .flatpickr-weekdays {
+        display: flex !important;
+        width: 100% !important;
+        justify-content: space-around !important;
+        align-items: center !important;
+        padding: 0.5rem 0 !important;
+        margin: 0 !important;
+        border-bottom: 1px solid var(--border) !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* Force each weekday to take equal space */
+    .flatpickr-calendar .flatpickr-weekday,
+    .light-card .flatpickr-calendar .flatpickr-weekday,
+    #calendar-container .flatpickr-calendar .flatpickr-weekday,
+    #planner-calendar-container .flatpickr-calendar .flatpickr-weekday {
+        flex: 1 1 14.28% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        font-size: 0.7rem !important;
+        font-weight: 600 !important;
+        color: var(--muted-foreground) !important;
+        padding: 4px 2px !important;
+        margin: 0 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.2px !important;
+        height: 24px !important;
+        width: auto !important;
+        min-width: 0 !important;
+        max-width: none !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* Event contact styling for compact cards */
+
+/* =============== UTILITY CLASSES =============== */
+
+/* Screen reader only text */
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* Skip link for keyboard navigation */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--primary);
+    color: var(--primary-foreground);
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
+/* Focus styles */
+*:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+button:focus,
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Loading states */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+    position: relative;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid var(--primary);
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error states */
+.error {
+    border-color: var(--destructive) !important;
+    color: var(--destructive) !important;
+}
+
+.error-message {
+    color: var(--destructive);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Success states */
+.success {
+    border-color: #22c55e !important;
+    color: #22c55e !important;
+}
+
+.success-message {
+    color: #22c55e;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --background: #ffffff;
+        --foreground: #000000;
+        --primary: #0000ff;
+        --border: #000000;
+    }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Error message banner */
+.error-message-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--destructive);
+    color: white;
+    z-index: 1000;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.error-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.error-icon {
+    font-size: 1.2rem;
+}
+
+.error-text {
+    flex: 1;
+    text-align: center;
+}
+
+.error-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.error-close:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Error fallback content */
+.error-fallback {
+    text-align: center;
+    padding: 3rem 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.error-fallback h2 {
+    color: var(--destructive);
+    margin-bottom: 1rem;
+}
+
+.error-fallback ul {
+    text-align: left;
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.error-fallback li {
+    margin-bottom: 0.5rem;
+}
+
+/* Event contact styling for compact cards */
+

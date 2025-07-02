@@ -59,12 +59,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // --- DATA FETCHING ---
 async function fetchAllData() {
+    // Add loading state
+    const mainContent = document.getElementById('main-page-content');
+    if (mainContent) {
+        mainContent.classList.add('loading');
+    }
+
     try {
+        const [venuesResponse, eventsResponse, organizationsResponse, learnOhridResponse] = await Promise.all([
+            fetch('/api/venues'),
+            fetch('/api/events'),
+            fetch('/api/organizations'),
+            fetch('/api/learn-ohrid-texts')
+        ]);
+
+        // Check response status
+        if (!venuesResponse.ok) throw new Error(`Venues API error: ${venuesResponse.status}`);
+        if (!eventsResponse.ok) throw new Error(`Events API error: ${eventsResponse.status}`);
+        if (!organizationsResponse.ok) throw new Error(`Organizations API error: ${organizationsResponse.status}`);
+        if (!learnOhridResponse.ok) throw new Error(`Learn API error: ${learnOhridResponse.status}`);
+
         const [venues, events, organizations, learnOhrid] = await Promise.all([
-            fetch('/api/venues').then(res => res.json()),
-            fetch('/api/events').then(res => res.json()),
-            fetch('/api/organizations').then(res => res.json()),
-            fetch('/api/learn-ohrid-texts').then(res => res.json())
+            venuesResponse.json(),
+            eventsResponse.json(),
+            organizationsResponse.json(),
+            learnOhridResponse.json()
         ]);
 
         venuesData = venues.map(normalizeVenueDataItem);
@@ -72,15 +91,66 @@ async function fetchAllData() {
         featuredEventsData = organizations;
         learnOhridTexts = learnOhrid;
 
+        // Remove loading state
+        if (mainContent) {
+            mainContent.classList.remove('loading');
+        }
+
         initializeApp();
 
     } catch (error) {
         console.error("Fatal Error: Could not fetch initial data.", error);
-        const mainContent = document.getElementById('main-page-content');
+        
+        // Remove loading state
         if (mainContent) {
-            mainContent.innerHTML = '<p style="color: red; text-align: center; padding: 2rem;">Could not load page content. Please try again later.</p>';
+            mainContent.classList.remove('loading');
+        }
+        
+        // Show user-friendly error message
+        showErrorMessage('Unable to load content. Please check your internet connection and refresh the page.');
+        
+        // Fallback content
+        if (mainContent) {
+            mainContent.innerHTML = `
+                <div class="error-fallback">
+                    <h2>Content Unavailable</h2>
+                    <p>We're having trouble loading the page content. Please try:</p>
+                    <ul>
+                        <li>Refreshing the page</li>
+                        <li>Checking your internet connection</li>
+                        <li>Trying again in a few moments</li>
+                    </ul>
+                    <button onclick="location.reload()" class="btn btn-primary">Refresh Page</button>
+                </div>
+            `;
         }
     }
+}
+
+// --- ERROR HANDLING ---
+function showErrorMessage(message) {
+    const existingError = document.querySelector('.error-message-banner');
+    if (existingError) {
+        existingError.remove();
+    }
+
+    const errorDiv = document.createElement('div');
+    errorDiv.className = 'error-message-banner';
+    errorDiv.innerHTML = `
+        <div class="error-content">
+            <span class="error-icon" aria-hidden="true">⚠️</span>
+            <span class="error-text">${message}</span>
+            <button class="error-close" onclick="this.parentElement.parentElement.remove()" aria-label="Close error message" type="button">×</button>
+        </div>
+    `;
+    document.body.insertBefore(errorDiv, document.body.firstChild);
+    
+    // Auto-remove after 10 seconds
+    setTimeout(() => {
+        if (errorDiv.parentNode) {
+            errorDiv.remove();
+        }
+    }, 10000);
 }
 
 // --- DATA NORMALIZATION ---
@@ -103,7 +173,7 @@ function initializeApp() {
     setupEventListeners();
     initializeLazyObserver();
     venueRatings = JSON.parse(localStorage.getItem('ohridHubVenueRatings')) || {}; // Load ratings
-    updateStats(); // Calculate and display stats
+    // updateStats(); // Removed - statistics section deleted
     renderHeroSlider();
     populateRecommendations();
     populateVenueFilters();
@@ -111,7 +181,7 @@ function initializeApp() {
     initializeCalendar();
     fetchWeather();
     initializePlannerLogic();
-    animateStatsOnScroll();
+    // animateStatsOnScroll(); // Removed - statistics section deleted
     document.getElementById('main-page-content')?.classList.remove('hidden');
     setupImageModalClosers();
 }
@@ -486,9 +556,10 @@ function populateRecommendations() {
 
     createSlider('#recommendations-slider', {
         loop: true,
-        slides: { perView: 1.2, spacing: 15 },
+        slides: { perView: 1.1, spacing: 10 },
         breakpoints: {
-            '(min-width: 520px)': { slides: { perView: 2.2, spacing: 20 } },
+            '(min-width: 480px)': { slides: { perView: 1.3, spacing: 12 } },
+            '(min-width: 640px)': { slides: { perView: 2.1, spacing: 15 } },
             '(min-width: 768px)': { slides: { perView: 2.5, spacing: 20 } },
             '(min-width: 1024px)': { slides: { perView: 3.5, spacing: 25 } },
             '(min-width: 1200px)': { slides: { perView: 4, spacing: 25 } },

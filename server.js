@@ -3,25 +3,61 @@ const path = require('path');
 const fs = require('fs');
 const { SitemapStream, streamToPromise } = require('sitemap');
 const { Readable } = require('stream');
+const compression = require('compression');
+const helmet = require('helmet');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Configure MIME types for static files
-app.use(express.static(path.join(__dirname), {
-    setHeaders: (res, path) => {
-        if (path.endsWith('.js')) {
+// Security and Performance Middleware
+app.use(helmet({
+    contentSecurityPolicy: {
+        directives: {
+            defaultSrc: ["'self'"],
+            styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://cdn.jsdelivr.net"],
+            fontSrc: ["'self'", "https://fonts.gstatic.com"],
+            scriptSrc: ["'self'", "'unsafe-inline'", "https://cdn.jsdelivr.net"],
+            imgSrc: ["'self'", "data:", "https:", "http:"],
+            connectSrc: ["'self'", "https://api.openweathermap.org"],
+            frameSrc: ["'self'", "https://www.google.com"]
+        }
+    }
+}));
+
+// Enable compression
+app.use(compression());
+
+// Static file serving with better caching and MIME types
+app.use(express.static('.', {
+    maxAge: '1y', // Cache static assets for 1 year
+    etag: true,
+    lastModified: true,
+    setHeaders: (res, filePath) => {
+        const ext = path.extname(filePath).toLowerCase();
+        
+        // Set proper MIME types
+        if (ext === '.js') {
             res.setHeader('Content-Type', 'application/javascript; charset=UTF-8');
-        } else if (path.endsWith('.css')) {
+        } else if (ext === '.css') {
             res.setHeader('Content-Type', 'text/css; charset=UTF-8');
-        } else if (path.endsWith('.json')) {
+        } else if (ext === '.json') {
             res.setHeader('Content-Type', 'application/json; charset=UTF-8');
+        }
+        
+        // Set different cache times for different file types
+        if (ext === '.html') {
+            res.setHeader('Cache-Control', 'public, max-age=3600'); // 1 hour for HTML
+        } else if (['.js', '.css'].includes(ext)) {
+            res.setHeader('Cache-Control', 'public, max-age=31536000, immutable'); // 1 year for JS/CSS
+        } else if (['.jpg', '.jpeg', '.png', '.webp', '.svg', '.ico'].includes(ext)) {
+            res.setHeader('Cache-Control', 'public, max-age=2592000'); // 30 days for images
         }
     }
 }));
 
 // API endpoint to get venues
 app.get('/api/venues', (req, res) => {
+    res.setHeader('Cache-Control', 'public, max-age=3600'); // Cache API responses for 1 hour
     const venuesPath = path.join(__dirname, 'data', 'venues.json');
     fs.readFile(venuesPath, 'utf8', (err, data) => {
         if (err) {
@@ -34,6 +70,7 @@ app.get('/api/venues', (req, res) => {
 
 // API endpoint to get events
 app.get('/api/events', (req, res) => {
+    res.setHeader('Cache-Control', 'public, max-age=3600'); // Cache API responses for 1 hour
     const eventsPath = path.join(__dirname, 'data', 'events.json');
     fs.readFile(eventsPath, 'utf8', (err, data) => {
         if (err) {
@@ -58,6 +95,7 @@ app.get('/api/featured-events', (req, res) => {
 
 // API endpoint to get organizations
 app.get('/api/organizations', (req, res) => {
+    res.setHeader('Cache-Control', 'public, max-age=3600');
     const orgsPath = path.join(__dirname, 'data', 'organizations.json');
     fs.readFile(orgsPath, 'utf8', (err, data) => {
         if (err) {
@@ -70,6 +108,7 @@ app.get('/api/organizations', (req, res) => {
 
 // API endpoint to get learn ohrid texts
 app.get('/api/learn-ohrid-texts', (req, res) => {
+    res.setHeader('Cache-Control', 'public, max-age=7200'); // Cache for 2 hours (text changes less frequently)
     const learnOhridPath = path.join(__dirname, 'data', 'learn_ohrid_text.json');
     fs.readFile(learnOhridPath, 'utf8', (err, data) => {
         if (err) {

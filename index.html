@@ -33,6 +33,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -41,8 +42,8 @@
       "url": "https://www.ohridhub.com",
       "logo": "https://www.ohridhub.com/images/logo.png",
       "sameAs": [
-        "https://www.facebook.com/OhridHubOfficial",
-        "https://www.instagram.com/OhridHubOfficial"
+        "https://www.facebook.com/profile.php?id=61577806165599",
+        "https://www.instagram.com/ohridhub/"
       ]
     }
     </script>
@@ -70,6 +71,7 @@
         <!-- Weather widget will be injected here -->
     </div>
 
+    <main id="main-content">
     <div id="main-page-content">
         <!-- New Hero Section -->
         <section class="hero">
@@ -86,59 +88,80 @@
             </div>
         </section>
 
-        <!-- New Stats Section -->
-        <section class="stats-section">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-icon-container">
-                            <img src="./images_ohrid/icons/calendar.svg" alt="Calendar Icon" class="stat-icon" loading="lazy">
-                        </div>
-                        <h3 id="stats-events-count">50+</h3>
-                        <p>Events This Month</p>
+        <!-- "Our Recommendations" Section -->
+        <section id="discover-places" class="recommendations-highlight" aria-labelledby="recommendations-heading">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-8">
+                    <h2 id="recommendations-heading" class="text-3xl font-bold section-title-with-icon">
+                        <span class="title-icon" aria-hidden="true">🧡</span>
+                        Our Recommendations
+                    </h2>
+                    <p class="text-muted-foreground mt-2">Handpicked venues that showcase the best of Ohrid's charm and hospitality</p>
+                </div>
+                <div id="recommendations-slider-container" class="relative" role="region" aria-label="Recommended venues">
+                    <div id="recommendations-slider" class="keen-slider">
+                        <!-- Random recommended venues will be injected here -->
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-icon-container">
-                            <img src="./images_ohrid/icons/venue.svg" alt="Venue Icon" class="stat-icon" loading="lazy">
-                        </div>
-                        <h3 id="stats-venues-count">200+</h3>
-                        <p>Amazing Venues</p>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-icon-container">
-                             <img src="./images_ohrid/icons/visitors.svg" alt="Visitors Icon" class="stat-icon" loading="lazy">
-                        </div>
-                        <h3 id="stats-visitors-count">10k+</h3>
-                        <p>Happy Visitors</p>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-icon-container">
-                            <img src="./images_ohrid/icons/rating.svg" alt="Rating Icon" class="stat-icon" loading="lazy">
-                        </div>
-                        <h3 id="stats-average-rating">4.9</h3>
-                        <p>Average Rating</p>
-                    </div>
+                    <button aria-label="Previous recommended venue" class="slider-arrow left" id="recommendations-arrow-left" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button aria-label="Next recommended venue" class="slider-arrow right" id="recommendations-arrow-right" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
                 </div>
             </div>
         </section>
 
-        <!-- New Plan Your Visit Section -->
-        <section id="plan-your-visit" class="py-8 md:py-12 bg-muted">
+        <!-- "Explore All Venues" Section -->
+        <section id="explore-all-venues" class="py-8 md:py-12" aria-labelledby="venues-heading">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold">Plan Your Visit</h2>
+                    <h2 id="venues-heading" class="text-3xl font-bold">Explore All Venues</h2>
+                     <p class="text-muted-foreground mt-2">From lakeside restaurants to adventure sports, explore the best venues Ohrid has to offer.</p>
+                </div>
+                <div class="main-categories-container">
+                    <div class="main-categories flex flex-wrap justify-center gap-2 mb-4" role="group" aria-label="Venue categories">
+                        <!-- Main category filters will be injected here by JS -->
+                    </div>
+                </div>
+                <div id="sub-categories-container" class="sub-categories-container hidden">
+                    <div class="sub-categories flex flex-wrap justify-center gap-2 mb-8" role="group" aria-label="Venue subcategories">
+                        <!-- Sub-category filters will be injected here by JS -->
+                    </div>
+                </div>
+
+                <div id="all-venues-slider-container" class="relative" role="region" aria-label="All venues">
+                    <div id="all-venues-slider" class="keen-slider">
+                        <!-- Filtered venues will be injected here by JS -->
+                    </div>
+                    <button aria-label="Previous venue" class="slider-arrow left" id="all-venues-arrow-left" style="display: none;" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button aria-label="Next venue" class="slider-arrow right" id="all-venues-arrow-right" style="display: none;" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- "Plan Your Visit" Section -->
+        <section id="plan-your-visit" class="py-8 md:py-12 bg-muted" aria-labelledby="plan-heading">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-8">
+                    <h2 id="plan-heading" class="text-3xl font-bold">Plan Your Visit</h2>
                     <p class="text-muted-foreground mt-2">Choose your dates and discover what's happening in Ohrid. From cultural festivals to<br>outdoor adventures, there's always something exciting to experience.</p>
                 </div>
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="w-full md:w-1/2">
                         <div class="light-card">
-                            <h3 class="card-header">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            <div class="card-header" id="calendar-heading">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
                                 <span>Select Date</span>
-                            </h3>
-                            <div id="calendar-container">
+                            </div>
+                            <div id="calendar-container" role="application" aria-labelledby="calendar-heading" aria-describedby="calendar-desc">
                                 <!-- Calendar will be injected here -->
                             </div>
+                            <div id="calendar-desc" class="sr-only">Use arrow keys to navigate calendar. Press Enter to select a date.</div>
                         </div>
                     </div>
                     <div class="w-full md:w-1/2">
@@ -146,15 +169,15 @@
                              <div id="daily-events-header">
                                 <!-- Header will be injected by JS -->
                             </div>
-                            <div id="daily-events-slider-container" class="relative">
+                            <div id="daily-events-slider-container" class="relative" role="region" aria-label="Events for selected date">
                                 <div id="daily-events-list">
                                     <!-- Events for selected date will be injected here -->
                                 </div>
-                                <button aria-label="Previous event" class="slider-arrow up" id="daily-events-arrow-up" style="display: none;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+                                <button aria-label="Previous event" class="slider-arrow up" id="daily-events-arrow-up" style="display: none;" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
                                 </button>
-                                <button aria-label="Next event" class="slider-arrow down" id="daily-events-arrow-down" style="display: none;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                                <button aria-label="Next event" class="slider-arrow down" id="daily-events-arrow-down" style="display: none;" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
                                 </button>
                             </div>
                         </div>
@@ -163,63 +186,8 @@
             </div>
         </section>
 
-        <!-- "Our Recommendations" Section -->
-        <section id="recommendations-section" class="recommendations-highlight">
-            <div class="container mx-auto px-4">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold section-title-with-icon">
-                        <span class="title-icon">🧡</span>
-                        Our Recommendations
-                    </h2>
-                    <p class="text-muted-foreground mt-2">Handpicked venues that showcase the best of Ohrid's charm and hospitality</p>
-                </div>
-                <div id="recommendations-slider-container" class="relative">
-                    <div id="recommendations-slider" class="keen-slider">
-                        <!-- Random recommended venues will be injected here -->
-                    </div>
-                    <button aria-label="Previous slide" class="slider-arrow left" id="recommendations-arrow-left">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-                    </button>
-                    <button aria-label="Next slide" class="slider-arrow right" id="recommendations-arrow-right">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- "Explore All Venues" Section -->
-        <section id="explore-all-venues" class="py-8 md:py-12">
-            <div class="container mx-auto px-4">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold">Explore All Venues</h2>
-                     <p class="text-muted-foreground mt-2">From lakeside restaurants to adventure sports, explore the best venues Ohrid has to offer.</p>
-                </div>
-                <div class="main-categories-container">
-                    <div class="main-categories flex flex-wrap justify-center gap-2 mb-4">
-                        <!-- Main category filters will be injected here by JS -->
-                    </div>
-                </div>
-                <div id="sub-categories-container" class="sub-categories-container hidden">
-                    <div class="sub-categories flex flex-wrap justify-center gap-2 mb-8">
-                        <!-- Sub-category filters will be injected here by JS -->
-                    </div>
-                </div>
-
-                <div id="all-venues-slider-container" class="relative">
-                    <div id="all-venues-slider" class="keen-slider">
-                        <!-- Filtered venues will be injected here by JS -->
-                    </div>
-                    <button aria-label="Previous slide" class="slider-arrow left" id="all-venues-arrow-left" style="display: none;">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-                    </button>
-                    <button aria-label="Next slide" class="slider-arrow right" id="all-venues-arrow-right" style="display: none;">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-                    </button>
-                </div>
-            </div>
-        </section>
-
     </div> <!-- End of main-page-content -->
+    </main> <!-- End of main-content -->
 
     <section id="kulturno-leto-content" class="hidden py-8 md:py-12 lg:py-16">
         <!-- Content for Kulturno Leto will be injected by script.js -->
@@ -319,8 +287,11 @@
                 <p>Your guide to the best of Ohrid</p>
             </div>
              <div class="footer-socials">
-                <a href="https://instagram.com" target="_blank" aria-label="Visit our Instagram page">
+                <a href="https://www.instagram.com/ohridhub/" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61577806165599" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
                 </a>
                 <a href="mailto:contact@ohridlife.com" aria-label="Contact us via email">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
