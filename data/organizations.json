@@ -3,6 +3,7 @@
         "id": 1,
         "title": "Културолошко Лето",
         "description": "Get ready! It's the 7th time culture comes alive this summer!",
+        "longDescription": "They're not myths, though they feel like legends. They don't carry weapons, but voice, color, sound, and movement. Their mission isn't to save, but to awaken. Each one carries a different energy and you'll find them wherever culture is born: on stage, on canvas, in the streets, in conversation, among the people. Their aim is not only to celebrate culture, but to protect the spaces where it grows — streets, squares, conversations, stages, and everyday moments. You'll see them soon. And you'll know when you meet them.",
         "date": "05.07 - 12.07",
         "imageUrl": "/main_event/kulturoloska2025_hero.jpg",
         "imageUrlMobile": "main_event/kulturoloska_port.jpg",
@@ -11,6 +12,7 @@
             "/main_event/free_spirit.jpg",
             "/main_event/drivecinema.jpg" ,
             "/main_event/museum.jpg",
+            "/main_event/ojljubov.jpg",
             "/main_event/wake.jpg"
         ]
     },

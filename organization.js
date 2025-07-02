@@ -11,7 +11,7 @@ async function initializeOrganizationPage() {
 
     try {
         // Fetch the specific event by its ID
-        const response = await fetch(`/api/events/${orgId}`);
+        const response = await fetch(`/api/organizations/${orgId}`);
         if (!response.ok) {
              if (response.status === 404) {
                 displayError(`Organization with ID ${orgId} not found.`);
@@ -45,24 +45,25 @@ function getOrganizationIdFromUrl() {
 }
 
 function renderOrganizationDetails(org) {
-    const name = org.name?.en || org.title || org.eventName || 'Unnamed Organization';
-    document.title = `${name} - OhridHub`;
-
-    document.getElementById('org-name').textContent = name;
-    const description = org.longDescription || org.description?.en || org.description || '';
+    document.title = `${org.title} - OhridHub`;
+    document.getElementById('org-name').textContent = org.title;
+    
+    // Use longDescription if available, otherwise use the regular description.
+    const description = org.longDescription || org.description || '';
     document.getElementById('org-description').innerHTML = description.replace(/\\n/g, '<br>');
     
     const mainImage = document.getElementById('org-main-image');
     mainImage.src = org.imageUrl || '/images_ohrid/placeholder.jpg';
-    mainImage.alt = `Main image for ${name}`;
+    mainImage.alt = `Main image for ${org.title}`;
 
     const galleryContainer = document.getElementById('org-gallery');
     if (org.gallery && org.gallery.length > 0) {
+        galleryContainer.innerHTML = ''; // Clear existing content
         org.gallery.forEach(imgSrc => {
             const imgContainer = document.createElement('div');
             imgContainer.className = 'gallery-image-container';
             imgContainer.innerHTML = `
-                <img src="${imgSrc}" alt="Gallery image for ${name}" class="gallery-image" loading="lazy">
+                <img src="${imgSrc}" alt="Gallery image for ${org.title}" class="gallery-image" loading="lazy">
             `;
             galleryContainer.appendChild(imgContainer);
         });
@@ -84,6 +85,10 @@ async function fetchAndRenderAssociatedEvents(orgId) {
         if (events.length > 0) {
             document.getElementById('associated-events-title').style.display = 'block';
             container.innerHTML = '';
+            
+            // Sort events by date to ensure they appear in chronological order
+            events.sort((a, b) => new Date(a.isoDate) - new Date(b.isoDate));
+
             events.forEach(event => {
                 const eventCard = createAssociatedEventCard(event);
                 container.appendChild(eventCard);

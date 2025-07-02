@@ -110,7 +110,7 @@
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=41.11179766030246,20.795047212859384",
       "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.96999952323426!2d20.796350681289486!3d41.11203210785903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca52629cca1%3A0xf2b6822b86dafab2!2sLiquid!5e0!3m2!1sen!2smk!4v1748537215411!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
-    "phone": "+389 46 258 552",
+    "phone": "+389 70 878 984",
     "workingHours": "Daily: 09:00-00:00 (Summer Hours: 09:00-02:00)",
     "bookingUrl": "#",
     "events": []
@@ -670,43 +670,7 @@
     "workingHours": "Mon-Sun: 08:00-00:00",
     "bookingUrl": "#",
     "events": []
-  },
-  {
-    "id": 19,
-    "name": "Sokak",
-    "description": "Nestled in the old town's alleys, this rustic tavern serves Macedonian beers, sausages, and baked beans. The local, homey feel is perfect for cheap, hearty drinks and bites.",
-    "type": "restaurant",
-    "tags": [
-      "foodie",
-      "traditional",
-      "cozy"
-    ],
-    "imageUrl": "images_venue/sokak_card.jpg",
-    "gallery": [
-      {
-        "url": "venue_gallery/sokak/photo1.jpg",
-        "alt": "The welcoming exterior of Pivnica Sokak in Ohrid, with its rustic charm and inviting outdoor seating. Blackboards announce burgers, pizza, and various beer types, promising a delicious and relaxed pub experience."
-      },
-      {
-        "url": "venue_gallery/sokak/photo2.jpg",
-        "alt": "A mouth-watering burger and crispy fries, beautifully presented on a wooden board at Pivnica Sokak in Ohrid. It's the perfect hearty meal to enjoy at this cozy pub."
-      },
-      {
-        "url": "venue_gallery/sokak/photo3.jpg",
-        "alt": "A delicious spread of grilled sausages and golden fries, perfectly paired with three Paulaner beers at Pivnica Sokak. It looks like the ultimate comfort food experience in Ohrid!"
-      }
-    ],
-    "priceLevel": 2,
-    "location": {
-      "address": "Ohrid",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pub+%26+Pivnica+Sokak,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.981833716928!2d20.79628917644787!3d41.11308781296401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd9002867889%3A0x5a9516769f99ed09!2sPub%20%26%20Pivnica%20Sokak!5e0!3m2!1sen!2smk!4v1750873529343!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-    },
-    "phone": "077961611",
-    "workingHours": "Mon-Sun: 08:00-00:00",
-    "bookingUrl": "#",
-    "events": []
-  },
+  },  
   {
     "id": 20,
     "name": "Kaneo Beach Bar",
@@ -2390,6 +2354,385 @@
     },
     "phone": "070720552",
     "workingHours": "Mon - Sat 08:00 - 20:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 75,
+    "name": "Le Petit Bistro Lihnidos",
+    "description": "Step into a little piece of charm at Le Petit Bistro Lihnidos! Tucked away in beautiful Ohrid, this spot is all about bringing you a cozy, warm, and inviting experience. Imagine savoring delicious bites and refreshing sips in an atmosphere that feels just like home, but with that lovely lakeside touch. It's the perfect place to unwind, share a laugh with friends, or simply watch the world go by. Come and discover your new favorite corner in Ohrid!",
+    "type": ["restaurant", "coffee", "club"],
+    "tags": [],
+    "imageUrl": "images_venue/lapetit_card.jpg",
+    "gallery": [],
+    "priceLevel": 3,
+    "rating": 4.2,
+    "location": {
+      "address": "Le Petit Bistro Lihnidos, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le+Petit+Bistro+Lihnidos,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.0042165136758!2d20.797858478682038!3d41.11250689424211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca458b1aa21%3A0xd3267f5310ee9315!2sLe%20Petit%20Bistro%20Lihnidos!5e0!3m2!1sen!2smk!4v1751305628056!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075249132",
+    "workingHours": "09:00 - 01:00 (Mon - Tue)<br>09:00 - 02:00 (Fri - Sat)<br>09:00 - 01:00 (Sun)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 76,
+    "name": "INclusive",
+    "description": "Tired of the same old night out? Get ready for a breath of fresh air at Inclusive Disco in Ohrid! This isn't just another club; it's a place where you can genuinely let loose and enjoy yourself. They've crafted a truly modern and vibrant space with fantastic lighting and sound, making every beat feel incredible.\n\nWhat really sets them apart? They're all about quality music, great drinks, and unforgettable parties. Whether you're into soulful ballads or high-energy dance tracks, their diverse music program has something for everyone. You can expect top-notch local and international artists and DJs to keep the rhythm going, ensuring every night is a good one.\n\nMore than anything, Inclusive Disco promises a night of guaranteed comfort and safety, with impeccable service in an atmosphere that's designed to impress. It's a spot where you can truly feel at home while experiencing the best of Ohrid's nightlife. Come on down and be part of the story – you're guaranteed a fantastic time!",
+    "type": "club",
+    "tags": [
+      "nightlife",
+      "party",
+      "music",
+      "friends",
+      "popular"
+    ],
+    "imageUrl": "images_venue/inclusive_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/inclusive/photo1.jpg",
+        "alt": "A packed crowd lights up the dance floor at Inclusive Club, with disco balls glittering overhead and people raising drinks and heart-shaped balloons. Everyone's lost in the moment — singing, dancing, and celebrating under the colorful club lights"
+      },
+      {
+        "url": "venue_gallery/inclusive/photo2.jpg",
+        "alt": "From the DJ's point of view, a sea of people moves to the beat under green and blue lasers at Inclusive. The DJ booth glows with rhythm as the crowd stretches all the way to the bar, dancing with full energy late into the night."
+      },
+      {
+        "url": "venue_gallery/inclusive/photo3.jpg",
+        "alt": "Two performers hype up a lively crowd at Inclusive Disco, with the stage bathed in light and excitement. Phones are out, people are singing along, and the atmosphere is pure Saturday-night electricity"
+      }
+    ],
+    "rating": 4,
+    "priceLevel": 2,
+    "location": {
+      "address": "INclusive, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=INclusive,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2251.491368773509!2d20.807618663394248!3d41.12622131914956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db21c01f6a8b%3A0xd07d14cd731e512d!2sINclusive!5e0!3m2!1sen!2smk!4v1751447318600!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "071 232 808",
+    "workingHours": "23:30 - 05:00 (When there is an Event)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 77,
+    "name": "Armada Boat",
+    "description": "Ready to experience the magic of Lake Ohrid in a truly special way? Boat Armada is here to make your lake adventures unforgettable! They're all about giving you a fantastic time out on the water, whether you're looking for a relaxing cruise, an exciting exploration of hidden coves, or a fun day soaking up the sun.\n\nWith Boat Armada, you can expect a seamless and enjoyable experience. They offer comfortable boats and a friendly crew dedicated to showing you the very best of our stunning lake. It's the perfect way to create lasting memories with family and friends, all while surrounded by Ohrid's breathtaking natural beauty. Come on board and let the good times sail!",
+    "type": "cruises",
+    "tags": [
+      "adventure",
+      "water",
+      "scenic",
+      "family",
+      "popular"
+    ],
+    "imageUrl": "images_venue/adventure_sport/armada_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/armada/photo1.jpg",
+        "alt": "The impressive Boat Armada vessel docked at a stone pier in Lake Ohrid, with calm blue waters and green mountains in the background under a partly cloudy sky. The boat has multiple decks and a classic, dark hull."
+      },
+      {
+        "url": "venue_gallery/armada/photo2.jpg",
+        "alt": "Passengers relaxing and enjoying a beautiful sunset cruise on the top deck of the Boat Armada, with the golden sun setting over the calm waters of Lake Ohrid and mountains in the distance. People are seated comfortably in lounge chairs and sofas, enjoying drinks."
+      },
+      {
+        "url": "venue_gallery/armada/photo3.jpg",
+        "alt": "The Boat Armada on Lake Ohrid, showcasing a large inflatable slide extending from the upper deck into the clear blue water, with several people swimming nearby and others relaxing on board. The scenic Ohrid coastline with houses and trees is visible in the background."
+      }
+    ],
+    "rating": 4.7,
+    "priceLevel": 2,
+    "location": {
+      "address": "Boat Armada, Lake Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Boat+Armada,Lake+Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1339.0412493242752!2d20.798014114330574!3d41.11168760784191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddbd98ad2e25%3A0x892364b7e73a16f0!2sBoat%20Armada!5e0!3m2!1sen!2smk!4v1751450027204!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075 420 401",
+    "workingHours": "10:00 - 00:00 (Mon - Thu), 10:00 - 01:00 (Fri - Sat)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 78,
+    "name": "Terasa Utarna",
+    "description": "Step onto Utarna Terrace and feel that wonderful Ohrid vibe instantly! This isn't just a place to sit it's where you can truly soak in the beauty around you. Imagine relaxing with your favorite drink, maybe a delicious bite, while enjoying those stunning views and the fresh air.\n\nWhether you're starting your day with a peaceful coffee, meeting friends for a casual lunch, or unwinding as the sun sets, Utarna Terrace offers that perfect, easygoing atmosphere. It's simply a lovely spot to slow down, connect, and enjoy the best of Ohrid. We think you'll love it here!",
+    "type": "restaurant",
+    "tags": [
+      "restaurant",
+      "scenic",
+      "traditional",
+      "family",
+      "cozy"
+    ],
+    "imageUrl": "images_venue/utarna_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/utarna/photo1.jpg",
+        "alt": "A beautiful outdoor dining terrace at Utarna Terrace, offering breathtaking panoramic views of Lake Ohrid and the surrounding mountains. Wooden tables with red and white checkered tablecloths are set, inviting guests to enjoy the stunning scenery."
+      },
+      {
+        "url": "venue_gallery/utarna/photo2.jpg",
+        "alt": "A delicious traditional Balkan platter served on a wooden board, featuring freshly baked pastries, two kinds of spreads (ajvar and something similar to pindjur), crumbled cheese, and yellow cornmeal, all garnished with fresh lettuce. It looks absolutely inviting and perfect for sharing"
+      },
+      {
+        "url": "venue_gallery/utarna/photo3.jpg",
+        "alt": "The cozy and rustic indoor dining area at Utarna Terrace, featuring wooden tables and benches with red and white checkered tablecloths. Large windows offer glimpses of the greenery outside, and the wooden beams and traditional decor create a warm, inviting atmosphere."
+      }
+    ],
+    "rating": 4.9,
+    "priceLevel": 1,
+    "location": {
+      "address": "Utarna Terrace, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Utarna+Terrace,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.6634052495638!2d20.810127176445697!3d41.05448931657743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c47ebc16a373%3A0x5f2b8be3cd3f2988!2sUtarna%20Terrace!5e0!3m2!1sen!2smk!4v1751450914473!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "076 621 843",
+    "workingHours": "10:00 - 21:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 79,
+    "name": "Meana Lagadin",
+    "description": "Step inside Meana Lagadin and instantly feel like you've found a warm, inviting home away from home. With its beautiful exposed brick, rustic wooden touches, and that lovely, cozy lighting, it just feels like the perfect place to gather.\n\nThey're passionate about bringing you delicious, traditional flavors that truly hit the spot, all served in an atmosphere that's genuinely relaxed and friendly. Whether you're sharing a meal with loved ones or just unwinding, Meana Lagadin promises a comfortable setting where you can simply enjoy good food and great company. It's a place where you can taste tradition and feel truly welcome.",
+    "type": "restaurant",
+    "tags": [
+      "restaurant",
+      "traditional",
+      "cozy",
+      "family",
+      "rustic"
+    ],
+    "imageUrl": "images_venue/meana_lagadin_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/meana_lagadin/photo1.jpg",
+        "alt": "A chef proudly presents an incredibly long, rustic wooden platter laden with a variety of beautifully arranged dishes, including roasted meats or fish, pasta, fresh salads with sliced onions and tomatoes, and citrus garnishes. The vibrant spread is set against the warm, inviting brick interior of the restaurant, promising a feast."
+      },
+      {
+        "url": "venue_gallery/meana_lagadin/photo2.jpg",
+        "alt": "The charming main dining area of the restaurant, featuring striking brick archways that lead to another section with a visible pizza oven or traditional hearth. Wooden tables are neatly set with place settings and small floral arrangements, inviting guests into a cozy yet elegant atmosphere with traditional decor."
+      },
+      {
+        "url": "venue_gallery/meana_lagadin/photo3.jpg",
+        "alt": "A spacious and warmly lit dining room with impressive exposed brick walls featuring arched decorative alcoves that glow with soft light. Wooden tables and chairs are artfully arranged for various seating options, including comfortable banquettes along the wall, creating an inviting and refined ambiance perfect for a relaxed meal."
+      }
+    ],
+    "rating": 4.6,
+    "priceLevel": 2,
+    "location": {
+      "address": "Meana Lagadin, Lagadin",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Meana+Lagadin,Lagadin",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d752.2814084397162!2d20.804094269655145!3d41.044381609671966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c32361e3014d%3A0x30b15c78b42552eb!2sMeana%20Lagadin!5e0!3m2!1sen!2smk!4v1751451611210!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "072543400",
+    "workingHours": "09:00 - 00:00 (Sun - Fri)<br>09:00 - 01:00 (Sat)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 80,
+    "name": "Pizza Via Sacra",
+    "description": "Craving authentic, delicious pizza in the heart of Ohrid? Look no further than Pizza Via Sacra! This cozy spot is all about serving up perfectly crafted pizzas with that irresistible combination of crispy crust, fresh toppings, and melted cheese that hits just right.\n\nWhether you're looking for a quick bite, a casual dinner with friends, or a late-night treat, Pizza Via Sacra delivers exactly what you're craving. With their warm, welcoming atmosphere and commitment to quality ingredients, it's the perfect place to satisfy your pizza desires. Come hungry and leave happy!",
+    "type": "restaurant",
+    "tags": [
+      "restaurant",
+      "pizza",
+      "casual",
+      "family",
+      "late-night"
+    ],
+    "imageUrl": "images_venue/viasacra_card.jpg",
+    "gallery": [],
+    "rating": 4.6,
+    "priceLevel": 2,
+    "location": {
+      "address": "Pizza Via Sacra, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Pizza+Via+Sacra/@41.11246,20.79344,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dcbae02d19e3:0xd84d88b760b606c7!8m2!3d41.11246!4d20.79344!16s%2Fg%2F11y3p8qr9x?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5026140503232!2d20.793441169655285!3d41.11246270862423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbae02d19e3%3A0xd84d88b760b606c7!2sPizza%20Via%20Sacra!5e0!3m2!1sen!2smk!4v1751456287922!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075 440 654",
+    "workingHours": "10:00 - 00:30",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 81,
+    "name": "Shilla Coffee & Bar",
+    "description": "Step into Shilla, and you'll immediately feel that special something! This isn't just a place to grab a coffee or a drink; it's a wonderfully vibrant spot where art, comfort, and good vibes all come together.\n\nWhether you're starting your day with a delicious breakfast, settling in for a cozy afternoon chat amidst their unique decor, or enjoying the sunshine under their bright yellow umbrellas, Shilla offers a truly refreshing experience. It's the perfect place in Ohrid to unwind, get inspired, and just enjoy being yourself. Come discover your new favorite spot!",
+    "type": [
+      "coffee",
+      "bar"
+    ],
+    "tags": [
+      "coffee",
+      "bar",
+      "breakfast",
+      "art",
+      "cozy",
+      "outdoor",
+      "creative"
+    ],
+    "imageUrl": "images_venue/shilla_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/shilla/photo1.jpg",
+        "alt": "The wonderfully quirky and artistic interior of Shilla, featuring a captivating ceiling adorned with book pages and graphic illustrations like a motorcycle. White brick walls display an array of colorful modern art, while plants and cozy seating areas invite guests to relax and enjoy the unique atmosphere"
+      },
+      {
+        "url": "venue_gallery/shilla/photo2.jpg",
+        "alt": "A delicious and inviting breakfast plate on a wooden table, featuring a perfectly cooked omelette, slices of fresh tomatoes and cucumbers, a dollop of yogurt or sour cream, and two pieces of toast. A cup of espresso and a glass of orange juice complete this fresh morning spread."
+      },
+      {
+        "url": "venue_gallery/shilla/photo3.jpg",
+        "alt": "The bright and welcoming exterior of Shilla Concept Bar, with its prominent white sign against a blue sky with wispy clouds. Four cheerful yellow umbrellas provide shade over an outdoor seating area, making it look like a perfect spot to enjoy a sunny day"
+      }
+    ],
+    "rating": 4.6,
+    "priceLevel": 1,
+    "location": {
+      "address": "Shilla Coffee & Bar, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Shilla+Coffee+%26+Bar/@41.11497,20.79861,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dca47138be81:0x5a0dcea842324f72!8m2!3d41.11497!4d20.79861!16s%2Fg%2F11y3p8qr9x?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.6469772364585!2d20.79860866207191!3d41.11496737518343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca47138be81%3A0x5a0dcea842324f72!2sShilla%20Coffee%20%26%20Bar!5e0!3m2!1sen!2smk!4v1751457329536!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "078 262 361",
+    "workingHours": "08:00 - 01:00 (Sun - Thu)<br>08:00 - 02:00 (Fri - Sat)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 82,
+    "name": "Coffee & Bar La Fabrique",
+    "description": "Step into Coffee & Bar La Fabrique and discover your new favorite cozy spot in Ohrid! Whether you're looking for that perfect morning coffee, a comforting hot chocolate on a chilly evening, or a relaxed drink with friends, this is the place.\n\nWith its warm, inviting ambiance and a fantastic selection of beverages, La Fabrique is designed for those moments when you just want to unwind and feel at home. It's truly a lovely place to relax, connect, and enjoy the good things in life, day or night. We think you'll feel right at home here!",
+    "type": [
+      "coffee",
+      "bar",
+      "fast food"
+    ],
+    "tags": [
+      "coffee",
+      "bar",
+      "fast food",
+      "cozy",
+      "evening",
+      "friends",
+      "comfortable"
+    ],
+    "imageUrl": "images_venue/lafabrik_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/lafabrique/photo1.jpg",
+        "alt": "A delicious-looking hot chocolate or rich cocoa served in a clear mug, beautifully garnished with a coconut-rimmed edge and topped with a white chocolate truffle or coconut bonbon. It's perfectly placed next to a small green plant, promising a cozy treat."
+      },
+      {
+        "url": "venue_gallery/lafabrique/photo2.jpg",
+        "alt": "A warm and inviting evening scene inside a cafe, featuring three traditional small glasses of dark tea, a crystal sugar bowl, and a stack of biscuits on a dark table. The background shows the softly lit interior of the cafe, with comfortable seating, suggesting a relaxing night."
+      },
+      {
+        "url": "venue_gallery/lafabrique/photo3.jpg",
+        "alt": "The glowing exterior of a modern cafe at night, with large glass windows revealing the warm interior lights. Overhead string lights and wall sconces cast a welcoming glow onto the brick sidewalk, making the cafe look like an inviting spot to step in from the evening."
+      }
+    ],
+    "rating": 4.4,
+    "priceLevel": 1,
+    "location": {
+      "address": "Coffee & Bar La Fabrique, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Food+%26+Bar+LaFabrique/@41.11395,20.80106,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dd095055920b:0xa061864e724d9e90!8m2!3d41.11395!4d20.80106!16s%2Fg%2F11y3p8qr9x?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.9424819488027!2d20.801061147615343!3d41.113947228086246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd095055920b%3A0xa061864e724d9e90!2sFood%20%26%20Bar%20LaFabrique!5e0!3m2!1sen!2smk!4v1751458452302!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070 416 868",
+    "workingHours": "08:00 - 00:00 (Sun - Thu)<br>08:00 - 01:00 (Fri - Sat)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 83,
+    "name": "Cosa Nostra Pizza",
+    "description": "Craving authentic flavors in Ohrid? Pizzeria Cosa Nostra offers a delightful menu of pizzas, pasta, and more, served in a relaxed and welcoming setting. Perfect for a casual lunch or a delightful dinner out",
+    "type": [
+      "restaurant",
+      "pizza"
+    ],
+    "tags": [
+      "restaurant",
+      "pizza",
+      "pasta",
+      "casual",
+      "family",
+      "authentic",
+      "relaxed"
+    ],
+    "imageUrl": "images_venue/cosanostra_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/cosanostra/photo1.jpg",
+        "alt": "A charming street view of 'Cosa Nostra Pizzeria' featuring a stone facade, a lively outdoor patio with dark wooden tables, and blooming flower boxes adding a touch of color."
+      },
+      {
+        "url": "venue_gallery/cosanostra/photo2.jpg",
+        "alt": "The cozy and well-appointed interior of the restaurant, showcasing comfortable cream-colored chairs, dark wood tables, and a warm, inviting atmosphere for dining with friends or family."
+      },
+      {
+        "url": "venue_gallery/cosanostra/photo3.jpg",
+        "alt": "A delicious spread from 'Cosa Nostra' featuring a fresh pizza loaded with tomatoes and olives, a hearty burger, and a tempting plate of pasta, all looking ready to be enjoyed."
+      }
+    ],
+    "rating": 4.4,
+    "priceLevel": 2,
+    "location": {
+      "address": "Cosa Nostra Pizza, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Pizzeria+Cosa+Nostra/@41.11210,20.79619,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dca4dec037c1:0x6edfcf037f60ee48!8m2!3d41.11210!4d20.79619!16s%2Fg%2F11y3p8qr9x?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5067177890543!2d20.79619286963638!3d41.11210420862982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4dec037c1%3A0x6edfcf037f60ee48!2sPizzeria%20Cosa%20Nostra!5e0!3m2!1sen!2smk!4v1751460243356!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "071 255 872",
+    "workingHours": "08:00 - 00:00 (Mon - Fri)<br>08:00 - 01:00 (Sat - Sun)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 84,
+    "name": "Leonardo Pizza",
+    "description": "Leonardo in Ohrid is your go-to spot for great food and a fantastic vibe. Come savor our delicious pizzas and more in a setting that's always ready to welcome you, whether for a casual bite or a festive gathering.",
+    "type": [
+      "restaurant",
+      "pizza"
+    ],
+    "tags": [
+      "restaurant",
+      "pizza",
+      "casual",
+      "family",
+      "festive",
+      "welcoming",
+      "entertainment"
+    ],
+    "imageUrl": "images_venue/leonardo_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/leonardo/photo1.jpg",
+        "alt": "A cozy corner inside Leonardo restaurant, featuring a rustic brick wall, comfortable teal and yellow chairs, and a TV for entertainment. The warm lighting creates a relaxed atmosphere."
+      },
+      {
+        "url": "venue_gallery/leonardo/photo2.jpg",
+        "alt": "Leonardo restaurant decorated for a special occasion, likely Valentine's Day, with bright red heart-shaped balloons floating above the light wooden tables and red-accented chairs. The space looks ready for a romantic celebration"
+      },
+      {
+        "url": "venue_gallery/leonardo/photo3.jpg",
+        "alt": "A close-up shot of a perfectly baked, cheesy pizza from Leonardo, with a golden crust and a generous topping of melted cheese and herbs, looking incredibly appetizing and ready to be enjoyed"
+      }
+    ],
+    "rating": 4.4,
+    "priceLevel": 2,
+    "location": {
+      "address": "Leonardo Pizza, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Leonardo+Pizza/@41.11234,20.79648,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dca4efca0fc7:0x523966718f805437!8m2!3d41.11234!4d20.79648!16s%2Fg%2F11y3p8qr9x?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5039969463246!2d20.79648347578415!3d41.11234190000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4efca0fc7%3A0x523966718f805437!2sLeonardo%20Pizza!5e0!3m2!1sen!2smk!4v1751461630810!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046 260 359",
+    "workingHours": "09:00 - 00:00",
     "bookingUrl": "#",
     "events": []
   }

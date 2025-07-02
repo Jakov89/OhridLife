@@ -94,28 +94,28 @@
                         <div class="stat-icon-container">
                             <img src="./images_ohrid/icons/calendar.svg" alt="Calendar Icon" class="stat-icon" loading="lazy">
                         </div>
-                        <h3>50+</h3>
+                        <h3 id="stats-events-count">50+</h3>
                         <p>Events This Month</p>
                     </div>
                     <div class="stat-item">
                         <div class="stat-icon-container">
                             <img src="./images_ohrid/icons/venue.svg" alt="Venue Icon" class="stat-icon" loading="lazy">
                         </div>
-                        <h3>200+</h3>
+                        <h3 id="stats-venues-count">200+</h3>
                         <p>Amazing Venues</p>
                     </div>
                     <div class="stat-item">
                         <div class="stat-icon-container">
                              <img src="./images_ohrid/icons/visitors.svg" alt="Visitors Icon" class="stat-icon" loading="lazy">
                         </div>
-                        <h3>10k+</h3>
+                        <h3 id="stats-visitors-count">10k+</h3>
                         <p>Happy Visitors</p>
                     </div>
                     <div class="stat-item">
                         <div class="stat-icon-container">
                             <img src="./images_ohrid/icons/rating.svg" alt="Rating Icon" class="stat-icon" loading="lazy">
                         </div>
-                        <h3>4.9</h3>
+                        <h3 id="stats-average-rating">4.9</h3>
                         <p>Average Rating</p>
                     </div>
                 </div>
@@ -377,7 +377,20 @@
                 <img id="modal-event-image" src="" alt="Event image" class="modal-event-image" loading="lazy">
                 <div class="modal-body">
                   <h2 id="modal-event-name" class="modal-event-title">Event Name</h2>
-                  <p id="modal-event-date-time" class="modal-event-meta">Date and Time</p>
+                  <div class="modal-event-meta">
+                    <div class="modal-info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <span id="modal-event-date-time"></span>
+                    </div>
+                    <div id="modal-event-contact" class="modal-info-item" style="display: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                        <span id="modal-event-contact-phone"></span>
+                    </div>
+                  </div>
                   <div class="mt-4">
                     <span id="modal-event-category" class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full"></span>
                   </div>
@@ -402,5 +415,11 @@
     
     <script src="common.js"></script>
     <script src="index.js"></script>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="image-modal hidden">
+      <span id="image-modal-close" class="image-modal-close">&times;</span>
+      <img class="image-modal-content" id="modal-image-content">
+    </div>
 </body>
 </html> 

@@ -155,6 +155,28 @@ app.get('/api/organizations/:id/events', (req, res) => {
     });
 });
 
+// API endpoint to get a single organization by ID
+app.get('/api/organizations/:id', (req, res) => {
+    const orgId = parseInt(req.params.id, 10);
+    const orgsPath = path.join(__dirname, 'data', 'organizations.json');
+
+    fs.readFile(orgsPath, 'utf8', (err, data) => {
+        if (err) {
+            console.error("Error reading organizations.json:", err);
+            return res.status(500).json({ error: 'Failed to load organization data.' });
+        }
+        
+        const organizations = JSON.parse(data);
+        const organization = organizations.find(o => o.id === orgId);
+
+        if (organization) {
+            res.json(organization);
+        } else {
+            res.status(404).json({ error: 'Organization not found.' });
+        }
+    });
+});
+
 // Serve day-planner.html for the /day-planner URL
 app.get('/day-planner', (req, res) => {
     res.sendFile(path.join(__dirname, 'day-planner.html'));

@@ -103,6 +103,7 @@ function initializeApp() {
     setupEventListeners();
     initializeLazyObserver();
     venueRatings = JSON.parse(localStorage.getItem('ohridHubVenueRatings')) || {}; // Load ratings
+    updateStats(); // Calculate and display stats
     renderHeroSlider();
     populateRecommendations();
     populateVenueFilters();
@@ -112,6 +113,39 @@ function initializeApp() {
     initializePlannerLogic();
     animateStatsOnScroll();
     document.getElementById('main-page-content')?.classList.remove('hidden');
+    setupImageModalClosers();
+}
+
+// --- UI & STATS UPDATES ---
+function updateStats() {
+    // 1. Update Events Count
+    const eventsCount = eventsListData.length;
+    document.getElementById('stats-events-count').textContent = eventsCount;
+
+    // 2. Update Venues Count
+    const venuesCount = venuesData.length;
+    document.getElementById('stats-venues-count').textContent = venuesCount;
+
+    // 3. Update Average Rating
+    const ratedVenues = venuesData.filter(v => v.rating);
+    if (ratedVenues.length > 0) {
+        const totalRating = ratedVenues.reduce((sum, v) => sum + v.rating, 0);
+        const avgRating = (totalRating / ratedVenues.length).toFixed(1);
+        document.getElementById('stats-average-rating').textContent = avgRating;
+    } else {
+        document.getElementById('stats-average-rating').textContent = 'N/A';
+    }
+
+    // 4. Happy Visitors (using a static value as it's not in the data)
+    // The animation script will handle the 'k' and '+' symbols if they are present in the HTML
+    // We will set a plain number here so it can be animated.
+    const visitorsEl = document.getElementById('stats-visitors-count');
+    if (visitorsEl) {
+        // We'll just use the number from the HTML, but remove k/+ for animation
+        const originalText = visitorsEl.textContent || "10000";
+        let targetValue = originalText.toLowerCase().replace('k', '000').replace('+', '');
+        visitorsEl.textContent = parseFloat(targetValue);
+    }
 }
 
 // --- EVENT LISTENERS ---
@@ -872,8 +906,21 @@ function openEventModal(eventId) {
         eventImageEl.src = event.imageUrl;
         eventImageEl.alt = event.eventName;
         eventImageEl.style.display = 'block';
+        eventImageEl.style.cursor = 'pointer';
+
+        // Add the click listener here, right after setting the src, to open the existing image modal
+        eventImageEl.onclick = () => {
+             const imageModal = document.getElementById('image-modal');
+             const modalImageContent = document.getElementById('image-modal-img'); // Use the correct ID
+             if (imageModal && modalImageContent) {
+                modalImageContent.src = eventImageEl.src;
+                imageModal.classList.remove('hidden');
+             }
+        };
+
     } else {
         eventImageEl.style.display = 'none';
+        eventImageEl.onclick = null; // Remove listener if there's no image
     }
     
     modal.querySelector('#modal-event-category').textContent = event.category;
@@ -911,6 +958,15 @@ function openEventModal(eventId) {
         const date = new Date(event.isoDate);
         const day = date.toLocaleDateString('en-US', { weekday: 'long' });
         dateTimeEl.textContent = `${day}, ${date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} at ${event.startTime}`;
+    }
+
+    const contactEl = modal.querySelector('#modal-event-contact');
+    const contactPhoneEl = modal.querySelector('#modal-event-contact-phone');
+    if (event.eventContact && contactEl && contactPhoneEl) {
+        contactPhoneEl.textContent = event.eventContact;
+        contactEl.style.display = 'flex';
+    } else if (contactEl) {
+        contactEl.style.display = 'none';
     }
 
     modal.classList.remove('hidden');
@@ -1276,28 +1332,44 @@ function renderEventsForDate(dateStr) {
 
     const eventsForDate = eventsListData.filter(event => event.isoDate === dateStr);
 
-    listElement.innerHTML = ''; // Clear previous events
+    // Sort events by their start time to ensure they are listed chronologically
+    eventsForDate.sort((a, b) => (a.startTime || '00:00').localeCompare(b.startTime || '00:00'));
 
-    // Destroy previous slider if it exists
+    // Clean up: remove any slider classes and destroy sliders
+    listElement.classList.remove('keen-slider');
     if (sliders.dailyEvents) {
         sliders.dailyEvents.destroy();
         delete sliders.dailyEvents;
     }
-    // Make sure the list is not a slider by default
-    listElement.classList.remove('keen-slider');
 
+    // Hide slider arrows (we're not using them anymore)
+    const upArrow = document.getElementById('daily-events-arrow-up');
+    const downArrow = document.getElementById('daily-events-arrow-down');
+    upArrow.style.display = 'none';
+    downArrow.style.display = 'none';
 
     if (eventsForDate.length === 0) {
         listElement.innerHTML = '<p class="no-events-message">No events scheduled for this day. Please select another date.</p>';
         return;
     }
     
-    listElement.innerHTML = eventsForDate.map(event => {
+    // Create container for events and show more button
+    const eventsHTML = eventsForDate.map((event, index) => {
         const venue = venuesData.find(v => v.id === event.venueId);
         const venueName = venue?.name?.en || event.locationName || 'To be announced';
+        const contactInfo = event.eventContact ? `
+            <div class="event-meta-item event-contact">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+                <span>${event.eventContact}</span>
+            </div>
+        ` : '';
+
+        const isHidden = index >= 3 ? 'style="display: none;"' : '';
 
         return `
-            <div class="daily-event-card detailed keen-slider__slide" data-event-id="${event.id}">
+            <div class="daily-event-card detailed" data-event-id="${event.id}" ${isHidden}>
                 ${event.imageUrl ? `<img src="${event.imageUrl}" alt="${event.eventName}" class="daily-event-image">` : ''}
                 <div class="event-info">
                     <span class="event-title">${event.eventName}</span>
@@ -1310,6 +1382,7 @@ function renderEventsForDate(dateStr) {
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                             <span>${venueName}</span>
                         </div>
+                        ${contactInfo}
                     </div>
                     <div class="event-footer">
                         <span class="event-category">${event.category}</span>
@@ -1319,32 +1392,61 @@ function renderEventsForDate(dateStr) {
         `;
     }).join('');
 
+    // Add show more button if there are more than 3 events
+    const showMoreButton = eventsForDate.length > 3 ? `
+        <div class="show-more-events-container">
+            <button class="show-more-events-btn" id="show-more-events-btn">
+                <span class="show-more-text">Show ${eventsForDate.length - 3} More Events</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 9l6 6 6-6"/>
+                </svg>
+            </button>
+        </div>
+    ` : '';
+
+    listElement.innerHTML = eventsHTML + showMoreButton;
+
+    // Add click listeners to event cards
     listElement.querySelectorAll('.daily-event-card').forEach(card => {
         card.addEventListener('click', () => openEventModal(card.dataset.eventId));
     });
 
-    const upArrow = document.getElementById('daily-events-arrow-up');
-    const downArrow = document.getElementById('daily-events-arrow-down');
-
-    if (eventsForDate.length > 3) {
-        listElement.classList.add('keen-slider');
-        const dailySlider = createSlider(listElement, {
-            vertical: true,
-            loop: false,
-            slides: {
-                perView: 3,
-                spacing: 15
+    // Add show more functionality
+    const showMoreBtn = document.getElementById('show-more-events-btn');
+    if (showMoreBtn) {
+        showMoreBtn.addEventListener('click', () => {
+            const hiddenEvents = listElement.querySelectorAll('.daily-event-card[style*="display: none"]');
+            const isExpanded = hiddenEvents.length === 0;
+            
+            if (isExpanded) {
+                // Collapse: hide events beyond first 3
+                const allEvents = listElement.querySelectorAll('.daily-event-card');
+                allEvents.forEach((event, index) => {
+                    if (index >= 3) {
+                        event.style.opacity = '0';
+                        event.style.transform = 'translateY(-10px)';
+                        setTimeout(() => {
+                            event.style.display = 'none';
+                        }, 200);
+                    }
+                });
+                showMoreBtn.querySelector('.show-more-text').textContent = `Show ${eventsForDate.length - 3} More Events`;
+                showMoreBtn.querySelector('svg').style.transform = 'rotate(0deg)';
+            } else {
+                // Expand: show all events
+                hiddenEvents.forEach((event, index) => {
+                    event.style.display = 'flex';
+                    event.style.opacity = '0';
+                    event.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        event.style.opacity = '1';
+                        event.style.transform = 'translateY(0)';
+                    }, index * 100 + 50);
+                });
+                showMoreBtn.querySelector('.show-more-text').textContent = 'Show Less';
+                showMoreBtn.querySelector('svg').style.transform = 'rotate(180deg)';
             }
-        }, 'dailyEvents');
-
-        upArrow.style.display = 'flex';
-        downArrow.style.display = 'flex';
-        upArrow.addEventListener('click', () => dailySlider?.prev());
-        downArrow.addEventListener('click', () => dailySlider?.next());
-
-    } else {
-        upArrow.style.display = 'none';
-        downArrow.style.display = 'none';
+        });
     }
 }
 
@@ -1498,4 +1600,35 @@ function getWeatherDescription(code) {
 function getWeatherIcon(code) {
     // Using calendar.svg as a placeholder for all weather conditions
     return 'images_ohrid/icons/calendar.svg';
-} 
+}
+
+// Function to set up the image modal
+function setupImageModalClosers() {
+    const imageModal = document.getElementById('image-modal');
+    const closeImageModal = document.getElementById('image-modal-close');
+
+    if (!imageModal || !closeImageModal) return;
+
+    // When the user clicks on <span> (x), close the modal
+    closeImageModal.onclick = function() {
+        imageModal.classList.add('hidden');
+    }
+
+    // Also close if the user clicks outside the image
+    imageModal.onclick = function(e) {
+        if (e.target === imageModal) {
+            imageModal.classList.add('hidden');
+        }
+    }
+}
+
+// MAIN INITIALIZATION
+async function init() {
+    fetchAllData();
+    initializePlannerLogic();
+    animateStatsOnScroll();
+    document.getElementById('main-page-content')?.classList.remove('hidden');
+    setupImageModalClosers();
+}
+
+init(); 
