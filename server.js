@@ -7,8 +7,18 @@ const { Readable } = require('stream');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Serve static files from the root directory
-app.use(express.static(path.join(__dirname)));
+// Configure MIME types for static files
+app.use(express.static(path.join(__dirname), {
+    setHeaders: (res, path) => {
+        if (path.endsWith('.js')) {
+            res.setHeader('Content-Type', 'application/javascript; charset=UTF-8');
+        } else if (path.endsWith('.css')) {
+            res.setHeader('Content-Type', 'text/css; charset=UTF-8');
+        } else if (path.endsWith('.json')) {
+            res.setHeader('Content-Type', 'application/json; charset=UTF-8');
+        }
+    }
+}));
 
 // API endpoint to get venues
 app.get('/api/venues', (req, res) => {
