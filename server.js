@@ -19,7 +19,7 @@ app.use(helmet({
             scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", "https://cdn.jsdelivr.net"],
             scriptSrcAttr: ["'unsafe-inline'"], // Allow inline event handlers like onclick
             imgSrc: ["'self'", "data:", "https:", "http:", "blob:"],
-            connectSrc: ["'self'", "https://api.openweathermap.org", "https://api.openweathermap.org"],
+            connectSrc: ["'self'", "https://api.open-meteo.com"],
             frameSrc: ["'self'", "https://www.google.com", "https://maps.google.com"],
             objectSrc: ["'none'"],
             baseUri: ["'self'"],
