@@ -290,7 +290,7 @@ app.post('/api/venues/:id/rate', express.json(), (req, res) => {
     });
 });
 
-// Serve index.html for the root URL
+// Serve index.html for the root URL to verify
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
