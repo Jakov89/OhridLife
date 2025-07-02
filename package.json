@@ -2,8 +2,9 @@
   "name": "ohridhub",
   "version": "1.0.0",
   "description": "Welcome to OhridHub, a dynamic web application designed to be your ultimate guide to the vibrant life and culture of Ohrid, North Macedonia. Discover upcoming events, explore popular venues, learn about the city, and soon explore hospitality, car rentals, and more. Everything you need for your Ohrid experience.",
-  "main": "script.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
