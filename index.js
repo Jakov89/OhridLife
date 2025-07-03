@@ -645,6 +645,151 @@ function populateSubFilters(mainCategory) {
     });
 }
 
+// --- SMART ROTATION LOGIC ---
+function getSmartCategoryOrder() {
+    const now = new Date();
+    const hour = now.getHours();
+    const dayOfWeek = now.getDay(); // 0 = Sunday, 1 = Monday, etc.
+    
+    // Define category priorities based on time and day
+    const timeBasedPriorities = {
+        morning: ['coffee-cafes', 'food-dining', 'health-medical', 'services', 'adventure-sports', 'nightlife-entertainment', 'recreation-tours'],
+        lunch: ['food-dining', 'coffee-cafes', 'recreation-tours', 'adventure-sports', 'services', 'health-medical', 'nightlife-entertainment'],
+        afternoon: ['adventure-sports', 'recreation-tours', 'coffee-cafes', 'food-dining', 'services', 'health-medical', 'nightlife-entertainment'],
+        evening: ['nightlife-entertainment', 'food-dining', 'coffee-cafes', 'recreation-tours', 'adventure-sports', 'services', 'health-medical'],
+        lateNight: ['nightlife-entertainment', 'food-dining', 'adventure-sports', 'coffee-cafes', 'recreation-tours', 'services', 'health-medical']
+    };
+    
+    const weekendAdjustments = {
+        'recreation-tours': 2, // Boost recreation on weekends
+        'adventure-sports': 1, // Boost adventure on weekends
+        'nightlife-entertainment': 1, // Boost nightlife on weekends
+        'services': -2, // Lower services on weekends
+        'health-medical': -1 // Lower medical on weekends
+    };
+    
+    // Determine time period
+    let timePeriod;
+    if (hour >= 6 && hour < 11) {
+        timePeriod = 'morning';
+    } else if (hour >= 11 && hour < 14) {
+        timePeriod = 'lunch';
+    } else if (hour >= 14 && hour < 18) {
+        timePeriod = 'afternoon';
+    } else if (hour >= 18 && hour < 23) {
+        timePeriod = 'evening';
+    } else {
+        timePeriod = 'lateNight';
+    }
+    
+    let categoryOrder = [...timeBasedPriorities[timePeriod]];
+    
+    // Apply weekend adjustments (Friday, Saturday, Sunday)
+    if (dayOfWeek === 0 || dayOfWeek === 5 || dayOfWeek === 6) {
+        const categoryScores = {};
+        categoryOrder.forEach((category, index) => {
+            categoryScores[category] = categoryOrder.length - index + (weekendAdjustments[category] || 0);
+        });
+        
+        categoryOrder = Object.keys(categoryScores).sort((a, b) => categoryScores[b] - categoryScores[a]);
+    }
+    
+    return categoryOrder;
+}
+
+function categorizeVenueForRotation(venue) {
+    const types = Array.isArray(venue.type?.en) ? venue.type.en : [venue.type?.en];
+    
+    // Check for services (including pet services) - HIGHER PRIORITY
+    if (types.some(type => ['rent-a-car', 'rent-a-scooter', 'rent-a-bike', 'rent', 'pet-shop', 'grooming', 'vet'].includes(type))) {
+        return 'services';
+    }
+    
+    // Check for health & medical (human health only)
+    if (types.some(type => ['hospital', 'medical', 'dental', 'dentist', 'pharmacy'].includes(type))) {
+        return 'health-medical';
+    }
+    
+    // Check for adventure & sports
+    if (types.some(type => ['atv', 'diving', 'sup', 'sports', 'gym', 'kayaking', 'hiking', 'camping'].includes(type))) {
+        return 'adventure-sports';
+    }
+    
+    // Check for recreation & tours
+    if (types.some(type => ['cruises', 'beach'].includes(type))) {
+        return 'recreation-tours';
+    }
+    
+    // Check for nightlife & entertainment (including mixed venues with club/pub/bar)
+    if (types.some(type => ['pub', 'club', 'bar'].includes(type))) {
+        return 'nightlife-entertainment';
+    }
+    
+    // Check for coffee & cafés (pure coffee shops, not mixed with nightlife)
+    if (types.includes('coffee') && !types.some(type => ['club', 'pub', 'bar'].includes(type))) {
+        return 'coffee-cafes';
+    }
+    
+    // Check for food & dining
+    if (types.some(type => ['restaurant', 'pizza', 'fast-food'].includes(type))) {
+        return 'food-dining';
+    }
+    
+    // Mixed categories - classify by primary type
+    if (types.includes('restaurant') || types.includes('pizza') || types.includes('fast-food')) {
+        return 'food-dining';
+    }
+    if (types.includes('coffee')) {
+        return 'coffee-cafes';
+    }
+    if (types.includes('club') || types.includes('pub') || types.includes('bar')) {
+        return 'nightlife-entertainment';
+    }
+    
+    // Default fallback
+    return 'food-dining';
+}
+
+function applySmartRotationToVenues(venues) {
+    const categoryOrder = getSmartCategoryOrder();
+    const categorizedVenues = {};
+    
+    // Categorize all venues
+    venues.forEach(venue => {
+        const category = categorizeVenueForRotation(venue);
+        if (!categorizedVenues[category]) {
+            categorizedVenues[category] = [];
+        }
+        categorizedVenues[category].push(venue);
+    });
+    
+    // Sort venues within each category alphabetically
+    Object.keys(categorizedVenues).forEach(category => {
+        categorizedVenues[category].sort((a, b) => {
+            const nameA = a.name?.en || 'Unnamed Venue';
+            const nameB = b.name?.en || 'Unnamed Venue';
+            return nameA.localeCompare(nameB);
+        });
+    });
+    
+    // Rebuild venues array based on smart category order
+    const rotatedVenues = [];
+    categoryOrder.forEach(category => {
+        if (categorizedVenues[category]) {
+            rotatedVenues.push(...categorizedVenues[category]);
+        }
+    });
+    
+    // Add any remaining categories not in the order
+    Object.keys(categorizedVenues).forEach(category => {
+        if (!categoryOrder.includes(category)) {
+            rotatedVenues.push(...categorizedVenues[category]);
+        }
+    });
+    
+    return rotatedVenues;
+}
+
 function filterAndDisplayVenues() {
     const activeMainCategory = document.querySelector('.category-btn.active')?.dataset.category || 'All';
     const activeSubCategory = document.querySelector('.subcategory-btn.active')?.dataset.subcategory;
@@ -694,7 +839,20 @@ function filterAndDisplayVenues() {
         }
     }
     
-    populateAllVenuesSlider(filteredVenues);
+    // Apply smart rotation only when showing "All" venues
+    if (activeMainCategory === 'All' && !activeSubCategory) {
+        const rotatedVenues = applySmartRotationToVenues(filteredVenues);
+        populateAllVenuesSlider(rotatedVenues);
+        
+        // Log current time-based ordering for debugging
+        console.log('Smart Rotation Applied:', {
+            time: new Date().toLocaleTimeString(),
+            categoryOrder: getSmartCategoryOrder()
+        });
+    } else {
+        // Use original ordering for specific categories
+        populateAllVenuesSlider(filteredVenues);
+    }
 }
 
 function populateAllVenuesSlider(venues) {
