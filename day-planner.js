@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // DOM Elements
     const calendarContainer = document.getElementById('planner-calendar-container');
-    const timeOfDaySelect = document.getElementById('plan-day-night-type');
-    const activityTypeSelect = document.getElementById('plan-activity-type');
-    const venueSelectGroup = document.getElementById('plan-item-venue-group');
-    const venueSelect = document.getElementById('plan-item-venue-select');
-    const timeSelect = document.getElementById('plan-item-time');
-    const notesInput = document.getElementById('plan-item-notes');
-    const form = document.getElementById('add-plan-item-form');
+    const timeOfDaySelect = document.getElementById('day-planner-time-of-day');
+    const activityTypeSelect = document.getElementById('day-planner-activity-type');
+    const venueSelectGroup = document.getElementById('day-planner-venue-group');
+    const venueSelect = document.getElementById('day-planner-venue-select');
+    const timeSelect = document.getElementById('day-planner-time');
+    const notesInput = document.getElementById('day-planner-notes');
+    const form = document.getElementById('day-planner-form');
     const planDisplay = document.getElementById('currentPlanDisplay');
     const currentlyViewingDateEl = document.getElementById('currently-viewing-date');
     const clearPlanBtn = document.getElementById('clear-plan-btn');
@@ -147,12 +147,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function setupEventListeners() {
-        timeOfDaySelect.addEventListener('change', populateActivityTypes);
-        activityTypeSelect.addEventListener('change', handleActivityChange);
-        form.addEventListener('submit', handleFormSubmit);
-        clearPlanBtn.addEventListener('click', handleClearPlan);
-        planDisplay.addEventListener('click', handlePlanItemDelete);
-        dailyEventsSuggestionList.addEventListener('click', handleQuickAdd);
+        timeOfDaySelect?.addEventListener('change', populateActivityTypes);
+        activityTypeSelect?.addEventListener('change', handleActivityChange);
+        form?.addEventListener('submit', handleFormSubmit);
+        clearPlanBtn?.addEventListener('click', handleClearPlan);
+        planDisplay?.addEventListener('click', handlePlanItemDelete);
+        dailyEventsSuggestionList?.addEventListener('click', handleQuickAdd);
     }
 
     function initializeSortable() {
@@ -523,10 +523,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // --- ITEM DOESN'T EXIST, ADD IT ---
             const newItem = {
                 id: Date.now() + Math.random(),
-                activityType: activityType.charAt(0).toUpperCase() + activityType.slice(1),
+                timeOfDay: time && (time.startsWith('2') || time.startsWith('0') || time.startsWith('1')) ? 'Nighttime' : 'Daytime',
+                activityType: activityType === 'venue' ? 'Activity' : activityType.charAt(0).toUpperCase() + activityType.slice(1),
                 venueId: venueId,
-                notes: notes,
-                time: time
+                time: time || 'Any time',
+                notes: notes
             };
             planForDate.push(newItem);
             
@@ -727,8 +728,8 @@ document.addEventListener('DOMContentLoaded', () => {
             listHtml += `
               <div class="suggestion-card ${isAlreadyAdded ? 'added' : ''}" 
                    data-venue-id="${item.venueId || ''}" 
-                   data-activity-type="${item.type}"
-                   data-text="${item.text}"
+                   data-activity="${item.type}"
+                   data-notes="${item.text}"
                    data-time="${item.time || 'Any time'}">
 
                 <div class="suggestion-card-content">

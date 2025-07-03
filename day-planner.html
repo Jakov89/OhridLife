@@ -68,10 +68,10 @@
 
                     <div class="day-planner-form-container light-card">
                         <h3 class="form-title">Or, Add an Item Manually</h3>
-                        <form id="add-plan-item-form" class="day-planner-form">
+                        <form id="day-planner-form" class="day-planner-form">
                             <div class="form-group">
-                                <label for="plan-day-night-type">Time of Day</label>
-                                <select id="plan-day-night-type" class="form-input" required>
+                                <label for="day-planner-time-of-day">Time of Day</label>
+                                <select id="day-planner-time-of-day" class="form-input" required>
                                     <option value="" disabled selected>Select...</option>
                                     <option value="Daytime">Daytime</option>
                                     <option value="Nighttime">Nighttime</option>
@@ -79,29 +79,29 @@
                             </div>
                              
                              <div class="form-group">
-                                <label for="plan-activity-type">Activity Type</label>
-                                <select id="plan-activity-type" class="form-input" required>
+                                <label for="day-planner-activity-type">Activity Type</label>
+                                <select id="day-planner-activity-type" class="form-input" required>
                                     <option value="" disabled selected>Select time of day first...</option>
                                 </select>
                             </div>
                             
-                            <div class="form-group" id="plan-item-venue-group" style="display: none;">
-                                <label for="plan-item-venue-select">Select Venue</label>
-                                <select id="plan-item-venue-select" class="form-input">
+                            <div class="form-group" id="day-planner-venue-group" style="display: none;">
+                                <label for="day-planner-venue-select">Select Venue</label>
+                                <select id="day-planner-venue-select" class="form-input">
                                      <option value="" disabled selected>Select a venue...</option>
                                 </select>
                             </div>
                              
                              <div class="form-group">
-                                <label for="plan-item-time">Time</label>
-                                <select id="plan-item-time" class="form-input">
+                                <label for="day-planner-time">Time</label>
+                                <select id="day-planner-time" class="form-input">
                                      <option value="Any time" selected>Any time</option>
                                 </select>
                             </div>
                             
                             <div class="form-group">
-                                <label for="plan-item-notes">Notes (optional)</label>
-                                <textarea id="plan-item-notes" class="form-input" rows="2" placeholder="e.g., reservation details"></textarea>
+                                <label for="day-planner-notes">Notes (optional)</label>
+                                <textarea id="day-planner-notes" class="form-input" rows="2" placeholder="e.g., reservation details"></textarea>
                             </div>
                             
                             <button type="submit" id="add-to-plan-btn" class="btn btn-primary w-full">Add to Plan</button>
