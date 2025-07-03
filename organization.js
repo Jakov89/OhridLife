@@ -63,13 +63,21 @@ function renderOrganizationDetails(org) {
     if (org.gallery && org.gallery.length > 0) {
         galleryContainer.innerHTML = ''; // Clear existing content
         org.gallery.forEach(imgSrc => {
+            const slide = document.createElement('div');
+            slide.className = 'keen-slider__slide';
+            
             const imgContainer = document.createElement('div');
             imgContainer.className = 'gallery-image-container';
             imgContainer.innerHTML = `
                 <img src="${imgSrc}" alt="Gallery image for ${org.title}" class="gallery-image" loading="lazy">
             `;
-            galleryContainer.appendChild(imgContainer);
+            
+            slide.appendChild(imgContainer);
+            galleryContainer.appendChild(slide);
         });
+        
+        // Initialize the slider after DOM is ready
+        initializeGallerySlider();
     } else {
         document.getElementById('org-gallery-title').style.display = 'none';
         galleryContainer.style.display = 'none';
@@ -254,4 +262,50 @@ function closeEventModal() {
         modal.classList.add('hidden');
         document.body.style.overflow = '';
     }
+}
+
+// Initialize gallery slider
+function initializeGallerySlider() {
+    const galleryContainer = document.getElementById('org-gallery');
+    if (!galleryContainer || typeof KeenSlider === 'undefined') return;
+    
+    const slider = new KeenSlider('#org-gallery', {
+        loop: true,
+        slides: { 
+            perView: 3,
+            spacing: 16
+        },
+        breakpoints: {
+            '(max-width: 768px)': {
+                slides: { perView: 2, spacing: 12 }
+            },
+            '(max-width: 480px)': {
+                slides: { perView: 1.5, spacing: 8 }
+            }
+        },
+        created(s) {
+            // Setup navigation arrows
+            const leftArrow = document.getElementById('org-gallery-arrow-left');
+            const rightArrow = document.getElementById('org-gallery-arrow-right');
+            
+            if (leftArrow && rightArrow) {
+                leftArrow.addEventListener('click', () => s.prev());
+                rightArrow.addEventListener('click', () => s.next());
+            }
+            
+            // Add click functionality to images for fullscreen view
+            const images = galleryContainer.querySelectorAll('.gallery-image');
+            images.forEach(img => {
+                img.addEventListener('click', () => {
+                    const imageModal = document.getElementById('image-modal');
+                    const modalImage = document.getElementById('modal-image-content');
+                    if (imageModal && modalImage) {
+                        modalImage.src = img.src;
+                        modalImage.alt = img.alt;
+                        imageModal.classList.remove('hidden');
+                    }
+                });
+            });
+        }
+    });
 } 

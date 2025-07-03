@@ -22,6 +22,7 @@
     
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/learn.css"> <!-- Re-use some styles for consistency -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.css" />
 </head>
 <body>
     <header id="navbar">
@@ -41,8 +42,20 @@
                     <p id="org-description"></p>
                     
                     <h2 id="org-gallery-title">Gallery</h2>
-                    <div id="org-gallery" class="gallery-grid">
-                        <!-- Gallery images will be inserted here by JavaScript -->
+                    <div id="org-gallery-container" class="gallery-slider-container">
+                        <div id="org-gallery" class="keen-slider">
+                            <!-- Gallery images will be inserted here by JavaScript -->
+                        </div>
+                        <button class="gallery-arrow gallery-arrow--left" id="org-gallery-arrow-left" aria-label="Previous image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="gallery-arrow gallery-arrow--right" id="org-gallery-arrow-right" aria-label="Next image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
                     </div>
 
                     <h2 id="associated-events-title" style="display: none;">Events</h2>
@@ -104,6 +117,7 @@
       <img class="image-modal-content" id="modal-image-content">
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.js"></script>
     <script src="/common.js"></script>
     <script src="/organization.js"></script>
 </body>
