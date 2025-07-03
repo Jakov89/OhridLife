@@ -1040,6 +1040,8 @@ function openEventModal(eventId) {
         contactEl.style.display = 'none';
     }
 
+
+
     modal.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
 }
