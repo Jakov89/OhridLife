@@ -280,7 +280,7 @@ function initializeGallerySlider() {
                 slides: { perView: 2, spacing: 12 }
             },
             '(max-width: 480px)': {
-                slides: { perView: 1.5, spacing: 8 }
+                slides: { perView: 1, spacing: 8 }
             }
         },
         created(s) {

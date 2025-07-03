@@ -2532,6 +2532,37 @@ select.form-input {
     }
 }
 
+@media (max-width: 480px) {
+    .gallery-slider-container {
+        padding: 0 35px;
+    }
+    
+    #org-gallery .keen-slider__slide {
+        min-height: 180px;
+        max-height: 180px;
+        margin: 0 4px;
+        width: 100%;
+    }
+    
+    .gallery-arrow {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .gallery-arrow--left {
+        left: 5px;
+    }
+    
+    .gallery-arrow--right {
+        right: 5px;
+    }
+    
+    .gallery-arrow svg {
+        width: 14px;
+        height: 14px;
+    }
+}
+
 /* =============== SHOW MORE EVENTS BUTTON =============== */
 .show-more-events-container {
     display: flex;
