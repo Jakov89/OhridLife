@@ -270,7 +270,7 @@ function initializeGallerySlider() {
     if (!galleryContainer || typeof KeenSlider === 'undefined') return;
     
     const slider = new KeenSlider('#org-gallery', {
-        loop: true,
+        loop: false,
         slides: { 
             perView: 3,
             spacing: 16
@@ -284,28 +284,47 @@ function initializeGallerySlider() {
             }
         },
         created(s) {
-            // Setup navigation arrows
-            const leftArrow = document.getElementById('org-gallery-arrow-left');
-            const rightArrow = document.getElementById('org-gallery-arrow-right');
-            
-            if (leftArrow && rightArrow) {
-                leftArrow.addEventListener('click', () => s.prev());
-                rightArrow.addEventListener('click', () => s.next());
-            }
-            
-            // Add click functionality to images for fullscreen view
-            const images = galleryContainer.querySelectorAll('.gallery-image');
-            images.forEach(img => {
-                img.addEventListener('click', () => {
-                    const imageModal = document.getElementById('image-modal');
-                    const modalImage = document.getElementById('modal-image-content');
-                    if (imageModal && modalImage) {
-                        modalImage.src = img.src;
-                        modalImage.alt = img.alt;
-                        imageModal.classList.remove('hidden');
-                    }
-                });
-            });
+            updateArrows(s);
+        },
+        slideChanged(s) {
+            updateArrows(s);
         }
+    });
+    
+    function updateArrows(s) {
+        const leftArrow = document.getElementById('org-gallery-arrow-left');
+        const rightArrow = document.getElementById('org-gallery-arrow-right');
+        
+        if (leftArrow && rightArrow) {
+            // Show/hide arrows based on current position
+            leftArrow.style.opacity = s.track.details.rel === 0 ? '0.3' : '1';
+            rightArrow.style.opacity = s.track.details.rel === s.track.details.slides.length - s.options.slides.perView ? '0.3' : '1';
+            
+            leftArrow.style.pointerEvents = s.track.details.rel === 0 ? 'none' : 'auto';
+            rightArrow.style.pointerEvents = s.track.details.rel === s.track.details.slides.length - s.options.slides.perView ? 'none' : 'auto';
+        }
+    }
+    
+    // Setup navigation arrows
+    const leftArrow = document.getElementById('org-gallery-arrow-left');
+    const rightArrow = document.getElementById('org-gallery-arrow-right');
+    
+    if (leftArrow && rightArrow) {
+        leftArrow.addEventListener('click', () => slider.prev());
+        rightArrow.addEventListener('click', () => slider.next());
+    }
+    
+    // Add click functionality to images for fullscreen view
+    const images = galleryContainer.querySelectorAll('.gallery-image');
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+            const imageModal = document.getElementById('image-modal');
+            const modalImage = document.getElementById('modal-image-content');
+            if (imageModal && modalImage) {
+                modalImage.src = img.src;
+                modalImage.alt = img.alt;
+                imageModal.classList.remove('hidden');
+            }
+        });
     });
 } 

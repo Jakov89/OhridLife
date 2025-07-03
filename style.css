@@ -2434,6 +2434,8 @@ select.form-input {
     margin: 0 8px; /* Space between slides */
     border-radius: var(--radius);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevent slides from shrinking */
+    z-index: 1; /* Ensure proper stacking */
 }
 
 #org-gallery .gallery-image {
