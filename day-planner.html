@@ -62,7 +62,25 @@
                             <span>Select Date</span>
                         </h3>
                         <div id="planner-calendar-container">
-                            <!-- Calendar will be injected here -->
+                            <div id="planner-simple-calendar">
+                                <div class="calendar-header">
+                                    <button id="planner-prev-month" class="calendar-nav-btn">‹</button>
+                                    <h3 id="planner-current-month-year"></h3>
+                                    <button id="planner-next-month" class="calendar-nav-btn">›</button>
+                                </div>
+                                <div class="calendar-weekdays">
+                                    <div class="weekday">Sun</div>
+                                    <div class="weekday">Mon</div>
+                                    <div class="weekday">Tue</div>
+                                    <div class="weekday">Wed</div>
+                                    <div class="weekday">Thu</div>
+                                    <div class="weekday">Fri</div>
+                                    <div class="weekday">Sat</div>
+                                </div>
+                                <div id="planner-calendar-days" class="calendar-days">
+                                    <!-- Days will be generated here -->
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -111,6 +129,36 @@
 
                 <!-- Right Column: Plan Display -->
                 <div class="planner-column-right">
+                    <div id="weather-widget-container" class="light-card">
+                        <h3 class="card-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 21H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path></svg>
+                            <span>Weather in Ohrid</span>
+                        </h3>
+                        <div id="weather-display">
+                            <div class="weather-loading">Loading weather...</div>
+                        </div>
+                    </div>
+
+                    <div id="budget-tracker-container" class="light-card hidden">
+                        <h3 class="card-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M16 8l-4 4-4-4"></path></svg>
+                            <span>Budget Tracker</span>
+                        </h3>
+                        <div id="budget-display">
+                            <!-- Budget information will be populated here -->
+                        </div>
+                    </div>
+
+                    <div id="seasonal-widget-container" class="light-card">
+                        <h3 class="card-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                            <span>Seasonal Highlights</span>
+                        </h3>
+                        <div id="seasonal-display">
+                            <!-- Seasonal information will be populated here -->
+                        </div>
+                    </div>
+
                     <div id="daily-events-suggestion-container" class="light-card hidden">
                         <h3 class="card-header">
                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><path d="M21 17V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"></path><path d="M3 10h18"></path><path d="m16 22 5-5-1.5-1.5L16 19l-2-2-1.5 1.5L16 22Z"></path></svg>
@@ -153,9 +201,9 @@
 
             <div id="ai-planner-questions">
                 <div class="ai-question">
-                    <label>1. What are you in the mood for? (Select up to 3)</label>
-                    <div id="ai-interest-choices" class="ai-choices-grid">
-                        <!-- Interest options will be populated by JS -->
+                    <label>1. What's your mood today? (Select up to 2)</label>
+                    <div id="ai-mood-choices" class="ai-choices-grid">
+                        <!-- Mood options will be populated by JS -->
                     </div>
                 </div>
                 <div class="ai-question">
@@ -165,7 +213,13 @@
                     </div>
                 </div>
                 <div class="ai-question">
-                    <label>3. What time of day is this for?</label>
+                    <label>3. What's your budget for today?</label>
+                    <div id="ai-budget-choices" class="ai-choices-grid">
+                        <!-- Budget options will be populated by JS -->
+                    </div>
+                </div>
+                <div class="ai-question">
+                    <label>4. What time of day is this for?</label>
                     <div id="ai-time-choices" class="ai-choices-grid">
                         <!-- Time options will be populated by JS -->
                     </div>

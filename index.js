@@ -1511,39 +1511,112 @@ function initializeCalendar() {
     if (!calendarContainer) return;
 
     const eventDates = new Set(eventsListData.map(e => e.isoDate));
+    let currentDate = new Date();
+    let selectedDate = new Date();
 
-    const fp = flatpickr(calendarContainer, {
-        inline: true,
-        utc: true,
-        dateFormat: "Y-m-d",
-        defaultDate: "today",
-        onChange: (selectedDates, dateStr) => {
-            renderEventsForDate(dateStr);
-            // Also update the planner's selected date
-            plannerSelectedDate = dateStr;
-            renderPlanForDate(dateStr);
-        },
-        onDayCreate: (dObj, dStr, fp, dayElem) => {
-            // Re-format the date from the day element to match the 'YYYY-MM-DD' format
-            // of our event data, avoiding timezone issues.
-            const year = dayElem.dateObj.getFullYear();
-            const month = String(dayElem.dateObj.getMonth() + 1).padStart(2, '0');
-            const day = String(dayElem.dateObj.getDate()).padStart(2, '0');
-            const date = `${year}-${month}-${day}`;
-
-            if (eventDates.has(date)) {
-                dayElem.classList.add('has-events');
-            }
-            if (plannerData[date] && plannerData[date].length > 0) {
-                 dayElem.classList.add('has-plan');
-            }
-        },
-        onReady: (selectedDates, dateStr, instance) => {
-            const todayStr = instance.now.toISOString().split('T')[0];
-            renderEventsForDate(todayStr);
-            renderPlanForDate(todayStr);
-        }
+    // Initialize the calendar
+    renderCalendar();
+    
+    // Set up event listeners
+    document.getElementById('prev-month').addEventListener('click', () => {
+        currentDate.setMonth(currentDate.getMonth() - 1);
+        renderCalendar();
     });
+    
+    document.getElementById('next-month').addEventListener('click', () => {
+        currentDate.setMonth(currentDate.getMonth() + 1);
+        renderCalendar();
+    });
+
+    function renderCalendar() {
+        const year = currentDate.getFullYear();
+        const month = currentDate.getMonth();
+        
+        // Update month/year display
+        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'];
+        document.getElementById('current-month-year').textContent = `${monthNames[month]} ${year}`;
+        
+        // Clear previous days
+        const calendarDays = document.getElementById('calendar-days');
+        calendarDays.innerHTML = '';
+        
+        // Get first day of month and number of days
+        const firstDay = new Date(year, month, 1);
+        const lastDay = new Date(year, month + 1, 0);
+        const startDate = new Date(firstDay);
+        startDate.setDate(startDate.getDate() - firstDay.getDay());
+        
+        // Generate 6 weeks of days
+        for (let i = 0; i < 42; i++) {
+            const date = new Date(startDate);
+            date.setDate(startDate.getDate() + i);
+            
+            const dayElement = document.createElement('div');
+            dayElement.classList.add('calendar-day');
+            dayElement.textContent = date.getDate();
+            
+            const dateStr = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+            
+            // Add classes based on date status
+            if (date.getMonth() !== month) {
+                dayElement.classList.add('other-month');
+            }
+            
+            if (isToday(date)) {
+                dayElement.classList.add('today');
+            }
+            
+            if (isSameDate(date, selectedDate)) {
+                dayElement.classList.add('selected');
+            }
+            
+            if (eventDates.has(dateStr)) {
+                dayElement.classList.add('has-events');
+            }
+            
+            if (plannerData[dateStr] && plannerData[dateStr].length > 0) {
+                dayElement.classList.add('has-plan');
+            }
+            
+            // Add click handler
+            dayElement.addEventListener('click', () => {
+                // Remove previous selection
+                document.querySelectorAll('.calendar-day.selected').forEach(el => {
+                    el.classList.remove('selected');
+                });
+                
+                // Add selection to clicked day
+                dayElement.classList.add('selected');
+                selectedDate = new Date(date);
+                
+                // Update events and planner
+                renderEventsForDate(dateStr);
+                plannerSelectedDate = dateStr;
+                renderPlanForDate(dateStr);
+            });
+            
+            calendarDays.appendChild(dayElement);
+        }
+    }
+    
+    function isToday(date) {
+        const today = new Date();
+        return date.getDate() === today.getDate() &&
+               date.getMonth() === today.getMonth() &&
+               date.getFullYear() === today.getFullYear();
+    }
+    
+    function isSameDate(date1, date2) {
+        return date1.getDate() === date2.getDate() &&
+               date1.getMonth() === date2.getMonth() &&
+               date1.getFullYear() === date2.getFullYear();
+    }
+    
+    // Initialize with today's events
+    const todayStr = new Date().toISOString().split('T')[0];
+    renderEventsForDate(todayStr);
+    renderPlanForDate(todayStr);
 }
 
 function renderEventsForDate(dateStr) {

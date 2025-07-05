@@ -62,10 +62,10 @@ app.use(express.static('.', {
 // API endpoint to get venues
 app.get('/api/venues', (req, res) => {
     res.setHeader('Cache-Control', 'public, max-age=3600'); // Cache API responses for 1 hour
-    const venuesPath = path.join(__dirname, 'data', 'venues.json');
+    const venuesPath = path.join(__dirname, 'data', 'venues_reorganized.json');
     fs.readFile(venuesPath, 'utf8', (err, data) => {
         if (err) {
-            console.error("Error reading venues.json:", err);
+            console.error("Error reading venues_reorganized.json:", err);
             return res.status(500).json({ error: 'Failed to load venue data.' });
         }
         res.json(JSON.parse(data));
@@ -138,7 +138,7 @@ app.get('/sitemap.xml', async (req, res) => {
         links.forEach(link => stream.write(link));
 
         // Add dynamic venue pages
-        const venuesPath = path.join(__dirname, 'data', 'venues.json');
+        const venuesPath = path.join(__dirname, 'data', 'venues_reorganized.json');
         const venuesData = fs.readFileSync(venuesPath, 'utf8');
         const venues = JSON.parse(venuesData);
         venues.forEach(venue => {

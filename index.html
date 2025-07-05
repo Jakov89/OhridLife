@@ -159,7 +159,25 @@
                                 <span>Select Date</span>
                             </div>
                             <div id="calendar-container" role="application" aria-labelledby="calendar-heading" aria-describedby="calendar-desc">
-                                <!-- Calendar will be injected here -->
+                                <div id="simple-calendar">
+                                    <div class="calendar-header">
+                                        <button id="prev-month" class="calendar-nav-btn">‹</button>
+                                        <h3 id="current-month-year"></h3>
+                                        <button id="next-month" class="calendar-nav-btn">›</button>
+                                    </div>
+                                    <div class="calendar-weekdays">
+                                        <div class="weekday">Sun</div>
+                                        <div class="weekday">Mon</div>
+                                        <div class="weekday">Tue</div>
+                                        <div class="weekday">Wed</div>
+                                        <div class="weekday">Thu</div>
+                                        <div class="weekday">Fri</div>
+                                        <div class="weekday">Sat</div>
+                                    </div>
+                                    <div id="calendar-days" class="calendar-days">
+                                        <!-- Days will be generated here -->
+                                    </div>
+                                </div>
                             </div>
                             <div id="calendar-desc" class="sr-only">Use arrow keys to navigate calendar. Press Enter to select a date.</div>
                         </div>
