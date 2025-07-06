@@ -98,6 +98,9 @@ async function fetchAllData() {
 
         initializeApp();
         
+        // Handle URL parameters after data is loaded
+        handleUrlParameters();
+        
         // Initialize calendar after data is loaded
         initializeCalendar();
 
@@ -170,6 +173,44 @@ function normalizeVenueDataItem(venue) {
     }
     return newVenue;
 }
+
+// --- URL PARAMETER HANDLING ---
+function handleUrlParameters() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const venueId = urlParams.get('venue');
+    
+    if (venueId) {
+        const venue = venuesData.find(v => v.id == venueId);
+        if (venue) {
+            openVenueModal(venueId);
+        } else {
+            console.warn('Venue not found for ID:', venueId);
+            // Clean up invalid venue parameter
+            const url = new URL(window.location);
+            url.searchParams.delete('venue');
+            window.history.replaceState({}, document.title, url);
+        }
+    }
+}
+
+// Handle browser back/forward buttons
+window.addEventListener('popstate', (event) => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const venueId = urlParams.get('venue');
+    
+    if (venueId) {
+        const venue = venuesData.find(v => v.id == venueId);
+        if (venue) {
+            openVenueModal(venueId);
+        }
+    } else {
+        // Close modal if no venue parameter
+        const modal = document.getElementById('venue-modal');
+        if (modal && !modal.classList.contains('hidden')) {
+            closeVenueModal();
+        }
+    }
+});
 
 // --- INITIALIZATION ---
 function initializeApp() {
@@ -1109,6 +1150,11 @@ function closeVenueModal() {
         if (venueSchema) {
             venueSchema.remove();
         }
+        
+        // Clean up URL parameters
+        const url = new URL(window.location);
+        url.searchParams.delete('venue');
+        window.history.pushState({}, document.title, url);
     }
 }
 

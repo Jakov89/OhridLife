@@ -702,6 +702,328 @@ document.addEventListener('DOMContentLoaded', () => {
         return 'winter';
     }
 
+    // --- DAILY REMINDER NOTIFICATION SYSTEM ---
+    
+    // Schedule daily reminders for planned activities
+    function scheduleDailyReminders() {
+        // Clear existing reminders
+        clearDailyReminders();
+        
+        // Get all dates with planned activities
+        const plannedDates = Object.keys(plannerData).filter(date => {
+            return plannerData[date] && plannerData[date].length > 0;
+        });
+        
+        plannedDates.forEach(dateStr => {
+            const planDate = new Date(dateStr + 'T00:00:00');
+            const today = new Date();
+            
+            // Only schedule for future dates or today
+            if (planDate >= today.setHours(0, 0, 0, 0)) {
+                scheduleReminderForDate(dateStr, plannerData[dateStr]);
+            }
+        });
+    }
+    
+    // Schedule reminder for a specific date
+    function scheduleReminderForDate(dateStr, planItems) {
+        const planDate = new Date(dateStr + 'T09:00:00'); // 9 AM reminder
+        const now = new Date();
+        
+        // Calculate time until reminder
+        const timeUntilReminder = planDate.getTime() - now.getTime();
+        
+        // Only schedule if it's in the future
+        if (timeUntilReminder > 0) {
+            const timeoutId = setTimeout(() => {
+                showDailyReminder(dateStr, planItems);
+            }, timeUntilReminder);
+            
+            // Store timeout ID for later clearing
+            const reminders = JSON.parse(localStorage.getItem('ohridHubReminders') || '{}');
+            reminders[dateStr] = timeoutId;
+            localStorage.setItem('ohridHubReminders', JSON.stringify(reminders));
+        }
+    }
+    
+    // Show daily reminder notification
+    function showDailyReminder(dateStr, planItems) {
+        const date = new Date(dateStr + 'T12:00:00');
+        const dateDisplay = date.toLocaleDateString('en-US', { 
+            weekday: 'long', 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        });
+        
+        const itemCount = planItems.length;
+        const firstItem = planItems[0];
+        let message = '';
+        
+        if (itemCount === 1) {
+            const venue = firstItem.venueId ? venuesData.find(v => v.id === firstItem.venueId) : null;
+            if (venue) {
+                message = `Today: ${firstItem.activityType} at ${venue.name.en}`;
+            } else {
+                message = `Today: ${firstItem.activityType}`;
+            }
+        } else {
+            message = `Today: You have ${itemCount} planned activities`;
+        }
+        
+        // Show browser notification
+        if ('Notification' in window && Notification.permission === 'granted') {
+            const notification = new Notification('🗓️ OhridHub Day Planner Reminder', {
+                body: message,
+                icon: '/favicon.ico',
+                tag: 'daily-reminder-' + dateStr,
+                requireInteraction: true
+            });
+            
+            notification.onclick = () => {
+                window.focus();
+                // Open day planner page if not already there
+                if (!window.location.pathname.includes('day-planner')) {
+                    window.location.href = '/day-planner.html';
+                }
+                notification.close();
+            };
+        }
+        
+        // Also show visual notification if user is on the site
+        if (document.visibilityState === 'visible') {
+            showVisualReminder(dateStr, planItems, message);
+        }
+        
+        // Clean up the reminder from storage
+        const reminders = JSON.parse(localStorage.getItem('ohridHubReminders') || '{}');
+        delete reminders[dateStr];
+        localStorage.setItem('ohridHubReminders', JSON.stringify(reminders));
+    }
+    
+    // Show visual reminder notification
+    function showVisualReminder(dateStr, planItems, message) {
+        const notification = document.createElement('div');
+        notification.className = 'daily-reminder-notification';
+        notification.innerHTML = `
+            <div class="reminder-content">
+                <div class="reminder-header">
+                    <span class="reminder-icon">🗓️</span>
+                    <span class="reminder-title">Today's Plan</span>
+                    <button class="reminder-close" onclick="this.parentElement.parentElement.parentElement.remove()">×</button>
+                </div>
+                <div class="reminder-message">${message}</div>
+                <div class="reminder-actions">
+                    <button class="btn btn-primary btn-small" onclick="viewTodaysPlan('${dateStr}')">View Details</button>
+                    <button class="btn btn-secondary btn-small" onclick="this.parentElement.parentElement.parentElement.remove()">Dismiss</button>
+                </div>
+            </div>
+        `;
+        
+        // Add to notification container
+        let container = document.getElementById('notification-container');
+        if (!container) {
+            container = document.createElement('div');
+            container.id = 'notification-container';
+            container.className = 'notification-container';
+            document.body.appendChild(container);
+        }
+        
+        container.appendChild(notification);
+        
+        // Animate in
+        setTimeout(() => {
+            notification.classList.add('show');
+        }, 100);
+        
+        // Auto-dismiss after 30 seconds
+        setTimeout(() => {
+            if (notification.parentNode) {
+                notification.classList.remove('show');
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.parentNode.removeChild(notification);
+                    }
+                }, 300);
+            }
+        }, 30000);
+    }
+    
+    // View today's plan function (global)
+    window.viewTodaysPlan = function(dateStr) {
+        if (window.location.pathname.includes('day-planner')) {
+            // Already on day planner page, just select the date
+            currentlySelectedDate = dateStr;
+            renderPlanForDate(dateStr);
+            renderEventSuggestionsForDate(dateStr);
+            
+            // Update calendar selection
+            document.querySelectorAll('#planner-calendar-days .calendar-day.selected').forEach(el => {
+                el.classList.remove('selected');
+            });
+            
+            // Find and select the correct day
+            const targetDate = new Date(dateStr + 'T12:00:00');
+            document.querySelectorAll('#planner-calendar-days .calendar-day').forEach(dayEl => {
+                const dayNum = parseInt(dayEl.textContent);
+                if (dayNum === targetDate.getDate()) {
+                    dayEl.classList.add('selected');
+                }
+            });
+        } else {
+            // Navigate to day planner page
+            window.location.href = '/day-planner.html';
+        }
+        
+        // Remove the notification
+        document.querySelectorAll('.daily-reminder-notification').forEach(el => el.remove());
+    };
+    
+    // Clear all scheduled reminders
+    function clearDailyReminders() {
+        const reminders = JSON.parse(localStorage.getItem('ohridHubReminders') || '{}');
+        Object.values(reminders).forEach(timeoutId => {
+            clearTimeout(timeoutId);
+        });
+        localStorage.removeItem('ohridHubReminders');
+    }
+    
+    // Check for reminders on page load (in case user missed them)
+    function checkMissedReminders() {
+        const today = new Date().toISOString().split('T')[0];
+        const todaysPlan = plannerData[today];
+        
+        if (todaysPlan && todaysPlan.length > 0) {
+            // Check if we already showed reminder today
+            const lastReminderDate = localStorage.getItem('ohridHubLastReminder');
+            if (lastReminderDate !== today) {
+                // Show reminder after a short delay
+                setTimeout(() => {
+                    showDailyReminder(today, todaysPlan);
+                    localStorage.setItem('ohridHubLastReminder', today);
+                }, 3000);
+            }
+        }
+    }
+    
+    // Request notification permission with better messaging
+    function requestNotificationPermission() {
+        if ('Notification' in window && Notification.permission === 'default') {
+            // Show a custom modal explaining the feature
+            const modal = document.createElement('div');
+            modal.className = 'notification-permission-modal';
+            modal.innerHTML = `
+                <div class="modal-content">
+                    <h3>🔔 Enable Daily Reminders</h3>
+                    <p>Get notified at 9 AM on days when you have planned activities so you never miss out!</p>
+                    <div class="modal-actions">
+                        <button class="btn btn-primary" onclick="enableNotifications()">Enable Reminders</button>
+                        <button class="btn btn-secondary" onclick="dismissNotificationModal()">Maybe Later</button>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+            
+            // Global functions for modal
+            window.enableNotifications = function() {
+                Notification.requestPermission().then(permission => {
+                    if (permission === 'granted') {
+                        scheduleDailyReminders();
+                        showSuccessMessage('Daily reminders enabled! You\'ll be notified at 9 AM on days with planned activities.');
+                    }
+                    dismissNotificationModal();
+                });
+            };
+            
+            window.dismissNotificationModal = function() {
+                modal.remove();
+            };
+            
+            // Auto-dismiss after 10 seconds
+            setTimeout(() => {
+                if (modal.parentNode) {
+                    modal.remove();
+                }
+            }, 10000);
+        }
+    }
+    
+    // Show success message
+    function showSuccessMessage(message) {
+        const notification = document.createElement('div');
+        notification.className = 'success-notification';
+        notification.innerHTML = `
+            <div class="notification-content">
+                <span class="notification-icon">✅</span>
+                <span class="notification-message">${message}</span>
+            </div>
+        `;
+        
+        let container = document.getElementById('notification-container');
+        if (!container) {
+            container = document.createElement('div');
+            container.id = 'notification-container';
+            container.className = 'notification-container';
+            document.body.appendChild(container);
+        }
+        
+        container.appendChild(notification);
+        
+        setTimeout(() => {
+            notification.classList.add('show');
+        }, 100);
+        
+        setTimeout(() => {
+            notification.classList.remove('show');
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.parentNode.removeChild(notification);
+                }
+            }, 300);
+        }, 5000);
+    }
+    
+    // --- TESTING FUNCTIONS ---
+    
+    // Test reminder for current date (for testing purposes)
+    window.testDailyReminder = function(dateStr = null) {
+        const targetDate = dateStr || currentlySelectedDate;
+        const planItems = plannerData[targetDate];
+        
+        if (planItems && planItems.length > 0) {
+            console.log('Testing reminder for date:', targetDate);
+            showDailyReminder(targetDate, planItems);
+        } else {
+            console.log('No planned activities for date:', targetDate);
+            showSuccessMessage('No planned activities found for ' + targetDate + '. Add some activities first!');
+        }
+    };
+    
+    // Test reminder for today specifically
+    window.testTodayReminder = function() {
+        const today = new Date().toISOString().split('T')[0];
+        testDailyReminder(today);
+    };
+    
+    // Test reminder for any date with activities
+    window.testAnyReminder = function() {
+        const datesWithPlans = Object.keys(plannerData).filter(date => 
+            plannerData[date] && plannerData[date].length > 0
+        );
+        
+        if (datesWithPlans.length > 0) {
+            const testDate = datesWithPlans[0];
+            console.log('Testing reminder for first available date:', testDate);
+            testDailyReminder(testDate);
+        } else {
+            console.log('No planned activities found in any date');
+            showSuccessMessage('No planned activities found. Add some activities to test reminders!');
+        }
+    };
+    
+
+
     // --- INITIALIZATION ---
     async function initializePlanner() {
         await Promise.all([fetchVenues(), fetchEvents(), fetchWeather()]);
@@ -732,6 +1054,17 @@ document.addEventListener('DOMContentLoaded', () => {
         initializeSortable();
         dailyEventsSuggestionList.addEventListener('click', handleQuickAdd);
         sharePlanBtn.addEventListener('click', handleSharePlan);
+        
+        // Initialize reminder system
+        checkMissedReminders();
+        scheduleDailyReminders();
+        
+        // Request notification permission after a short delay
+        setTimeout(() => {
+            if ('Notification' in window && Notification.permission === 'default') {
+                requestNotificationPermission();
+            }
+        }, 5000);
     }
 
     function initializeCalendar() {
@@ -1044,36 +1377,64 @@ document.addEventListener('DOMContentLoaded', () => {
             const event = eventsData.find(ev => ev.id == eventId);
             if (!event) return;
 
-            // Pre-fill the form
-            timeOfDaySelect.value = event.startTime.startsWith('2') || event.startTime.startsWith('00') || event.startTime.startsWith('01') ? 'Nighttime' : 'Daytime';
-            populateActivityTypes(); // update activities based on time of day
-            
-            activityTypeSelect.value = 'Event';
-            handleActivityChange();
-            
-            // Set time - find closest match in dropdown
+            // Determine time of day based on event start time
+            const timeOfDay = event.startTime.startsWith('2') || event.startTime.startsWith('00') || event.startTime.startsWith('01') ? 'Nighttime' : 'Daytime';
             const eventTime = event.startTime.substring(0, 5); // HH:MM
-            let bestMatch = 'Any time';
-            let found = false;
-            for (let option of timeSelect.options) {
-                if(option.value === eventTime) {
-                    bestMatch = eventTime;
-                    found = true;
-                    break;
-                }
+            
+            // Create new plan item directly
+            const newPlanItem = {
+                id: Date.now(),
+                timeOfDay: timeOfDay,
+                activityType: 'Event',
+                venueId: null, // Events don't have venue IDs in this context
+                time: eventTime,
+                notes: event.eventName
+            };
+
+            // Add to planner data
+            if (!plannerData[currentlySelectedDate]) {
+                plannerData[currentlySelectedDate] = [];
             }
-            timeSelect.value = bestMatch;
+            
+            // Check if this event is already added
+            const existingEvent = plannerData[currentlySelectedDate].find(item => 
+                item.notes === event.eventName && item.time === eventTime
+            );
+            
+            if (existingEvent) {
+                // Event already exists, show message
+                showSuccessMessage(`"${event.eventName}" is already in your plan for this day!`);
+                return;
+            }
+            
+            // Add the new item
+            plannerData[currentlySelectedDate].push(newPlanItem);
+            
+            // Sort by time
+            plannerData[currentlySelectedDate].sort((a, b) => {
+                const timeA = a.time === 'Any time' ? '99:99' : a.time;
+                const timeB = b.time === 'Any time' ? '99:99' : b.time;
+                return timeA.localeCompare(timeB);
+            });
 
-            notesInput.value = event.eventName;
-
-            // Scroll to the form and maybe highlight it
-            const formContainer = document.querySelector('.day-planner-form-container');
-            formContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            formContainer.style.transition = 'all 0.3s ease-in-out';
-            formContainer.style.boxShadow = '0 0 20px var(--primary)';
+            // Save and update display
+            savePlannerData();
+            renderPlanForDate(currentlySelectedDate);
+            
+            // Show success message
+            showSuccessMessage(`Added "${event.eventName}" to your plan!`);
+            
+            // Update button state to show it's been added
+            e.target.textContent = 'Added ✓';
+            e.target.disabled = true;
+            e.target.classList.add('btn-success');
+            
+            // Reset button after 2 seconds
             setTimeout(() => {
-                formContainer.style.boxShadow = '';
-            }, 1500);
+                e.target.textContent = 'Quick Add';
+                e.target.disabled = false;
+                e.target.classList.remove('btn-success');
+            }, 2000);
         }
     }
 
@@ -1140,6 +1501,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // We'll dispatch a custom event that the calendar can listen for
             const calendarUpdateEvent = new CustomEvent('plannerDataUpdated');
             document.dispatchEvent(calendarUpdateEvent);
+            
+            // Reschedule reminders when plans change
+            if ('Notification' in window && Notification.permission === 'granted') {
+                scheduleDailyReminders();
+            }
             
         } catch (error) {
             console.error('Failed to save planner data to localStorage:', error);
