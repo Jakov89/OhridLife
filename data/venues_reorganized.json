@@ -985,7 +985,7 @@
     "description": "As one of Ohrid's top nightlife venues, Omnia exudes high energy with a state‑of‑the‑art sound system, polished lights, and headline DJs. Located in the town center, it's where party-goers dance late into the night—especially during themed nights and DJ shows . If you're in the mood for an electric club atmosphere, this is your go-to venue.",
     "priceLevel": 2,
     "location": {
-      "address": "Цар Самоил 30, Ohrid 6000",
+      "address": "Partizanska 2, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Omnia+Night+Club/@41.1131001,20.7998957,19z/data=!3m1!4b1!4m6!3m5!1s0x1350dd7a9302f453:0xd39672b71f9f0769!8m2!3d41.1131001!4d20.8005394!16s%2Fg%2F11c6p35rgy?entry=ttu",
       "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
@@ -2738,6 +2738,53 @@
     },
     "phone": "078339377",
     "workingHours": "08:00 - 19:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 85,
+    "name": "Taboo Billiards & Bar",
+    "description": "Step into Taboo Billiards & Bar in Ohrid, and you'll find a place that's both stylish and incredibly welcoming. Imagine sinking into a plush armchair on a striking red carpet, cueing up for a game of pool on a vibrant blue table, all while surrounded by warm, inviting lighting. Whether you're unwinding at the beautifully lit bar with a drink in hand or enjoying some friendly competition, Taboo feels like your go-to spot for a relaxed yet lively evening out. It's got that perfect blend of classic charm and modern comfort, making every visit feel just right.",
+    "type": [
+      "pub",
+      "coffee"
+    ],
+    "tags": [
+      "pub",
+      "coffee",
+      "entertainment",
+      "billiards",
+      "social"
+    ],
+    "imageUrl": "images_venue/taboo_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/taboo/photo1.jpg",
+        "alt": "A wide shot of a lively entertainment space, dominated by a brilliant blue billiard table set against a bold red carpet. To the left, a cozy seating area with tables and chairs invites conversation, while to the right, plush, dark green armchairs offer a more relaxed vibe. In the background, a beautifully lit bar is visible, making this feel like the perfect spot for a fun-filled evening with friends."
+      },
+      {
+        "url": "venue_gallery/taboo/photo2.jpg",
+        "alt": "A closer look at a stylish bar area, showcasing the rich, dark wood of the bar counter and the subtle warm lighting beneath it. The exposed brick wall behind is lined with shelves holding various bottles, all bathed in a soft, inviting glow. A coffee machine sits on the counter, suggesting this place serves more than just evening drinks. It feels sophisticated and welcoming."
+      },
+      {
+        "url": "venue_gallery/taboo/photo3.jpg",
+        "alt": "A warm and inviting bar scene, dimly lit with amber glow. The long wooden bar stretches across, with a row of plush, high-backed stools waiting for patrons. Behind the bar, shelves stocked with bottles are softly illuminated, and a well-lit fridge on the right promises cold drinks. It looks like a cozy spot for a night out."
+      },
+      {
+        "url": "venue_gallery/taboo/photo4.jpg",
+        "alt": "A vibrant and playful view of a recreation area with a bright blue billiard table taking center stage on a striking red carpet. In the background, there's a glimpse of a well-stocked bar, and a 'Red Bull Open' sign adds a splash of neon. An arched doorway in the brick wall leads to what looks like another part of the venue, hinting at more fun to be had."
+      }
+    ],
+    "rating": 4.4,
+    "ratingCount": 1,
+    "priceLevel": 1,
+    "location": {
+      "address": "Taboo - Billiards & Bar, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Taboo+-+Billiards+%26+Bar/@41.11534689194039,20.800175381482767,17z/data=!3m1!4b1!4m6!3m5!1s0x1350db7e2b2c4a81:0xe1ff5903190a4a8c!8m2!3d41.11534689194039!4d20.800175381482767!16s%2Fg%2F11c5s1bvf0?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d531.3692484737195!2d20.800175381482767!3d41.11534689194039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db7e2b2c4a81%3A0xe1ff5903190a4a8c!2sTaboo%20-%20Billiards%20%26%20Bar!5e0!3m2!1sen!2smk!4v1751809282854!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070 361 002",
+    "workingHours": "09:00 - 01:00",
     "bookingUrl": "#",
     "events": []
   }

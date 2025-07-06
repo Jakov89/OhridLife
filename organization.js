@@ -250,6 +250,15 @@ function openEventModal(eventId) {
         contactEl.style.display = 'none';
     }
 
+    const ticketEl = modal.querySelector('#modal-event-ticket');
+    const ticketPriceEl = modal.querySelector('#modal-event-ticket-price');
+    if (event.ticketPrice && ticketEl && ticketPriceEl) {
+        ticketPriceEl.textContent = event.ticketPrice;
+        ticketEl.style.display = 'flex';
+    } else if (ticketEl) {
+        ticketEl.style.display = 'none';
+    }
+
 
 
     modal.classList.remove('hidden');

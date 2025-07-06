@@ -1199,6 +1199,15 @@ function openEventModal(eventId) {
         contactEl.style.display = 'none';
     }
 
+    const ticketEl = modal.querySelector('#modal-event-ticket');
+    const ticketPriceEl = modal.querySelector('#modal-event-ticket-price');
+    if (event.ticketPrice && ticketEl && ticketPriceEl) {
+        ticketPriceEl.textContent = event.ticketPrice;
+        ticketEl.style.display = 'flex';
+    } else if (ticketEl) {
+        ticketEl.style.display = 'none';
+    }
+
 
 
     modal.classList.remove('hidden');
@@ -1403,6 +1412,15 @@ function renderEventsForDate(dateStr) {
             </div>
         ` : '';
 
+        const ticketInfo = event.ticketPrice ? `
+            <div class="event-meta-item event-ticket">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M3 0a1 1 0 0 0-1 1v6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3A.5.5 0 0 0 2 11v4a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-4a.5.5 0 0 0-.5-.5 1.5 1.5 0 1 1 0-3A.5.5 0 0 0 14 7V1a1 1 0 0 0-1-1H3z"/>
+                </svg>
+                <span>${event.ticketPrice}</span>
+            </div>
+        ` : '';
+
         const isHidden = index >= 3 ? 'style="display: none;"' : '';
 
         return `
@@ -1420,6 +1438,7 @@ function renderEventsForDate(dateStr) {
                             <span>${venueName}</span>
                         </div>
                         ${contactInfo}
+                        ${ticketInfo}
                     </div>
                     <div class="event-footer">
                         <span class="event-category">${event.category}</span>
