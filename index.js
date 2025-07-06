@@ -97,6 +97,9 @@ async function fetchAllData() {
         }
 
         initializeApp();
+        
+        // Initialize calendar after data is loaded
+        initializeCalendar();
 
     } catch (error) {
         console.error("Fatal Error: Could not fetch initial data.", error);
@@ -178,9 +181,7 @@ function initializeApp() {
     populateRecommendations();
     populateVenueFilters();
     filterAndDisplayVenues();
-    initializeCalendar();
     fetchWeather();
-    initializePlannerLogic();
     // animateStatsOnScroll(); // Removed - statistics section deleted
     document.getElementById('main-page-content')?.classList.remove('hidden');
     setupImageModalClosers();
@@ -1219,289 +1220,17 @@ function closeEventModal() {
 }
 
 // ================================================================================================
-// --- DAY PLANNER LOGIC (INTEGRATED FROM day-planner.js) ---
+// --- SHARED PLANNER DATA ACCESS ---
 // ================================================================================================
 
-let plannerData = {};
-let plannerSelectedDate = new Date().toISOString().split('T')[0];
-
-function initializePlannerLogic() {
-    // Re-assign plannerData from localStorage
-    plannerData = JSON.parse(localStorage.getItem('ohridHubPlanner')) || {};
-
-    // Setup planner-specific event listeners
-    document.getElementById('plan-day-night-type')?.addEventListener('change', populateActivityTypes);
-    document.getElementById('plan-activity-type')?.addEventListener('change', handleActivityChange);
-    document.getElementById('add-plan-item-form')?.addEventListener('submit', handleFormSubmit);
-    document.getElementById('clear-plan-btn')?.addEventListener('click', handleClearPlan);
-    document.getElementById('currentPlanDisplay')?.addEventListener('click', handlePlanItemDelete);
-    document.getElementById('planner-event-search-results')?.addEventListener('click', handlePlannerQuickAddEvent);
-
-
-    populateActivityTypes();
-    renderPlanForDate(plannerSelectedDate);
-    // The calendar initialization for the planner will be merged into the main calendar function
+// Simple function to get planner data for calendar display
+function getPlannerData() {
+    return JSON.parse(localStorage.getItem('ohridHubPlanner')) || {};
 }
 
-
-// --- PLANNER POPULATION FUNCTIONS ---
-const dayActivities = ['Breakfast', 'Lunch', 'Dinner', 'Coffee', 'Beach', 'Activity', 'Shopping', 'Custom'];
-const nightActivities = ['Dinner', 'Club', 'Pub', 'Event', 'Custom'];
-
-const activityToVenueTypeMap = {
-    'Breakfast': ['restaurant'],
-    'Lunch': ['restaurant'],
-    'Dinner': ['restaurant'],
-    'Coffee': ['coffee', 'cafe'],
-    'Beach': ['beach'],
-    'Club': ['club'],
-    'Pub': ['pub'],
-    'Shopping': ['market', 'souvenir', 'boutique'],
-    'Activity': ['kayaking', 'sup', 'diving', 'cruises', 'hiking', 'atv', 'sports', 'camping']
-};
-
-
-function updateAndPopulateTimeSelect() {
-    const timeOfDaySelect = document.getElementById('plan-day-night-type');
-    const timeSelect = document.getElementById('plan-item-time');
-    if (!timeOfDaySelect || !timeSelect) return;
-
-    const timeOfDay = timeOfDaySelect.value;
-    let timeOptionsHtml = `<option value="Any time">Any time</option>`;
-
-    if (timeOfDay === 'Daytime') {
-        const dayTimes = [];
-        for (let h = 7; h <= 18; h++) {
-            dayTimes.push(`${String(h).padStart(2, '0')}:00`);
-            if (h < 18) {
-                dayTimes.push(`${String(h).padStart(2, '0')}:30`);
-            }
-        }
-        timeOptionsHtml += dayTimes.map(t => `<option value="${t}">${t}</option>`).join('');
-
-    } else if (timeOfDay === 'Nighttime') {
-        const nightTimes = [];
-        for (let h = 19; h <= 23; h++) {
-            nightTimes.push(`${String(h).padStart(2, '0')}:00`);
-            nightTimes.push(`${String(h).padStart(2, '0')}:30`);
-        }
-        nightTimes.push('00:00');
-        nightTimes.push('00:30');
-        nightTimes.push('01:00');
-        timeOptionsHtml += nightTimes.map(t => `<option value="${t}">${t}</option>`).join('');
-    }
-    timeSelect.innerHTML = timeOptionsHtml;
-}
-
-function populateActivityTypes() {
-    const timeOfDaySelect = document.getElementById('plan-day-night-type');
-    const activityTypeSelect = document.getElementById('plan-activity-type');
-    if (!timeOfDaySelect || !activityTypeSelect) return;
-
-    const timeOfDay = timeOfDaySelect.value;
-    const activities = timeOfDay === 'Daytime' ? dayActivities : nightActivities;
-    activityTypeSelect.innerHTML = `<option value="" disabled selected>Select activity...</option>` +
-        activities.map(act => `<option value="${act}">${act}</option>`).join('');
-
-    updateAndPopulateTimeSelect();
-    handleActivityChange();
-}
-
-function populateVenueSelect(activityType) {
-    const venueSelect = document.getElementById('plan-item-venue-select');
-    if (!venueSelect) return;
-
-    let filteredVenues = venuesData;
-    const venueTypesToMatch = activityToVenueTypeMap[activityType];
-
-    if (venueTypesToMatch && venueTypesToMatch.length > 0) {
-        filteredVenues = venuesData.filter(venue => {
-            const venueTypeList = Array.isArray(venue.type.en) ? venue.type.en : [venue.type.en];
-            return venueTypeList.some(t => venueTypesToMatch.includes(t.toLowerCase()));
-        });
-    }
-
-    if (filteredVenues.length > 0) {
-        venueSelect.innerHTML = `<option value="" disabled selected>Select a venue...</option>` +
-            filteredVenues
-                .sort((a, b) => (a.name?.en || '').localeCompare(b.name?.en || ''))
-                .map(v => `<option value="${v.id}">${v.name.en}</option>`)
-                .join('');
-    } else {
-        venueSelect.innerHTML = `<option value="" disabled selected>No venues for this activity</option>`;
-    }
-}
-
-
-// --- PLANNER EVENT HANDLERS ---
-function handleActivityChange() {
-    const activityTypeSelect = document.getElementById('plan-activity-type');
-    const venueSelectGroup = document.getElementById('plan-item-venue-group');
-    if (!activityTypeSelect || !venueSelectGroup) return;
-
-    const activity = activityTypeSelect.value;
-    const venueActivities = ['Breakfast', 'Lunch', 'Dinner', 'Coffee', 'Club', 'Pub', 'Beach', 'Shopping', 'Activity'];
-    const shouldShowVenues = venueActivities.includes(activity);
-
-    venueSelectGroup.style.display = shouldShowVenues ? 'block' : 'none';
-
-    if (shouldShowVenues) {
-        populateVenueSelect(activity);
-    }
-}
-
-function handleFormSubmit(e) {
-    e.preventDefault();
-    const timeOfDaySelect = document.getElementById('plan-day-night-type');
-    const activityTypeSelect = document.getElementById('plan-activity-type');
-    const venueSelectGroup = document.getElementById('plan-item-venue-group');
-    const venueSelect = document.getElementById('plan-item-venue-select');
-    const timeSelect = document.getElementById('plan-item-time');
-    const notesInput = document.getElementById('plan-item-notes');
-    const form = document.getElementById('add-plan-item-form');
-    
-    const newPlanItem = {
-        id: Date.now(),
-        timeOfDay: timeOfDaySelect.value,
-        activityType: activityTypeSelect.value,
-        venueId: venueSelectGroup.style.display === 'none' || !venueSelect.value ? null : parseInt(venueSelect.value),
-        time: timeSelect.value,
-        notes: notesInput.value.trim()
-    };
-
-    if (!plannerData[plannerSelectedDate]) {
-        plannerData[plannerSelectedDate] = [];
-    }
-    plannerData[plannerSelectedDate].push(newPlanItem);
-    plannerData[plannerSelectedDate].sort((a, b) => a.time.localeCompare(b.time));
-
-    savePlannerData();
-    renderPlanForDate(plannerSelectedDate);
-    form.reset();
-    populateActivityTypes();
-}
-
-function handleClearPlan() {
-    if (plannerData[plannerSelectedDate]) {
-        delete plannerData[plannerSelectedDate];
-        savePlannerData();
-        renderPlanForDate(plannerSelectedDate);
-    }
-}
-
-function handlePlanItemDelete(e) {
-    if (e.target.classList.contains('delete-plan-item-btn')) {
-        const itemId = parseInt(e.target.dataset.id);
-        plannerData[plannerSelectedDate] = plannerData[plannerSelectedDate].filter(item => item.id !== itemId);
-        if (plannerData[plannerSelectedDate].length === 0) {
-            delete plannerData[plannerSelectedDate];
-        }
-        savePlannerData();
-        renderPlanForDate(plannerSelectedDate);
-    }
-}
-
-function handlePlannerQuickAddEvent(e) {
-    const button = e.target.closest('.add-event-to-plan-btn');
-    if (!button) return;
-
-    const eventId = parseInt(button.dataset.eventId);
-    const event = eventsListData.find(e => e.id === eventId);
-    if (!event) return;
-
-    const newPlanItem = {
-        id: Date.now(),
-        timeOfDay: 'Event',
-        activityType: 'Event',
-        eventId: event.id,
-        time: event.time.split(' - ')[0], // Use start time
-        notes: ''
-    };
-    
-    if (!plannerData[plannerSelectedDate]) {
-        plannerData[plannerSelectedDate] = [];
-    }
-    plannerData[plannerSelectedDate].push(newPlanItem);
-    plannerData[plannerSelectedDate].sort((a, b) => a.time.localeCompare(b.time));
-
-    savePlannerData();
-    renderPlanForDate(plannerSelectedDate);
-    alert(`'${event.name.en}' added to your plan for ${plannerSelectedDate}!`);
-}
-
-
-// --- PLANNER RENDERING & SAVING ---
-function renderPlanForDate(dateStr) {
-    const planDisplay = document.getElementById('currentPlanDisplay');
-    const currentlyViewingDateEl = document.getElementById('currently-viewing-date');
-    const clearPlanBtnContainer = document.getElementById('clear-selected-date-plan-button-container');
-    const clearButtonDateText = document.getElementById('clear-button-date-text');
-    const planDetailsContainer = document.getElementById('selected-date-plan-details');
-
-    if (!planDisplay || !currentlyViewingDateEl || !clearPlanBtnContainer || !clearButtonDateText || !planDetailsContainer) return;
-    
-    planDetailsContainer.classList.remove('hidden');
-    currentlyViewingDateEl.textContent = dateStr;
-    clearButtonDateText.textContent = dateStr;
-
-    const items = plannerData[dateStr];
-
-    if (!items || items.length === 0) {
-        planDisplay.innerHTML = '<p class="text-muted-foreground italic">No plans for this day. Add items using the form or by selecting an event.</p>';
-        clearPlanBtnContainer.classList.add('hidden');
-        return;
-    }
-    
-    clearPlanBtnContainer.classList.remove('hidden');
-
-    planDisplay.innerHTML = items.map(item => {
-        let title = item.activityType;
-        let details = '';
-        let icon = '📝'; // Default icon
-
-        if (item.eventId) {
-            const event = eventsListData.find(e => e.id === item.eventId);
-            if (event) {
-                title = event.name.en;
-                icon = '🗓️';
-                details = `<p class="plan-item-location">${event.location || 'Event Location'}</p>`;
-            }
-        } else if (item.venueId) {
-            const venue = venuesData.find(v => v.id === item.venueId);
-            if (venue) {
-                title = venue.name.en;
-                icon = '📍';
-                details = `<p class="plan-item-location">${venue.location.address}</p>`;
-            }
-        }
-
-        if (item.notes) {
-            details += `<p class="plan-item-notes">Notes: ${item.notes}</p>`;
-        }
-        
-        return `
-            <div class="plan-item">
-                <div class="plan-item-icon">${icon}</div>
-                <div class="plan-item-content">
-                    <div class="plan-item-header">
-                        <h5 class="plan-item-title">${title}</h5>
-                        <span class="plan-item-time">${item.time}</span>
-                    </div>
-                    <div class="plan-item-details">${details}</div>
-                </div>
-                <button class="delete-plan-item-btn" data-id="${item.id}">&times;</button>
-            </div>
-        `;
-    }).join('');
-}
-
-
-function savePlannerData() {
-    localStorage.setItem('ohridHubPlanner', JSON.stringify(plannerData));
-}
 
 // ================================================================================================
-// --- END OF DAY PLANNER LOGIC ---
+// --- END OF SHARED PLANNER DATA ACCESS ---
 // ================================================================================================
 
 
@@ -1509,6 +1238,12 @@ function savePlannerData() {
 function initializeCalendar() {
     const calendarContainer = document.getElementById('calendar-container');
     if (!calendarContainer) return;
+
+    // Safety check: ensure eventsListData is loaded
+    if (!eventsListData || eventsListData.length === 0) {
+        console.log('Events data not loaded yet, calendar will initialize when data is available');
+        return;
+    }
 
     const eventDates = new Set(eventsListData.map(e => e.isoDate));
     let currentDate = new Date();
@@ -1575,6 +1310,7 @@ function initializeCalendar() {
                 dayElement.classList.add('has-events');
             }
             
+            const plannerData = getPlannerData();
             if (plannerData[dateStr] && plannerData[dateStr].length > 0) {
                 dayElement.classList.add('has-plan');
             }
@@ -1590,10 +1326,8 @@ function initializeCalendar() {
                 dayElement.classList.add('selected');
                 selectedDate = new Date(date);
                 
-                // Update events and planner
+                // Update events for selected date
                 renderEventsForDate(dateStr);
-                plannerSelectedDate = dateStr;
-                renderPlanForDate(dateStr);
             });
             
             calendarDays.appendChild(dayElement);
@@ -1616,7 +1350,6 @@ function initializeCalendar() {
     // Initialize with today's events
     const todayStr = new Date().toISOString().split('T')[0];
     renderEventsForDate(todayStr);
-    renderPlanForDate(todayStr);
 }
 
 function renderEventsForDate(dateStr) {
@@ -1929,8 +1662,6 @@ function setupImageModalClosers() {
 // MAIN INITIALIZATION
 async function init() {
     fetchAllData();
-    initializePlannerLogic();
-    animateStatsOnScroll();
     document.getElementById('main-page-content')?.classList.remove('hidden');
     setupImageModalClosers();
 }

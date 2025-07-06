@@ -577,6 +577,15 @@ a.hero-slide,
     background-color: var(--secondary);
 }
 
+.calendar-day.has-plan:hover {
+    background-color: #059669;
+}
+
+.calendar-day.has-events:hover {
+    background-color: #2563EB;
+    color: white;
+}
+
 .calendar-day.selected {
     background-color: var(--primary);
     color: var(--primary-foreground);
@@ -603,6 +612,23 @@ a.hero-slide,
 
 .calendar-day.has-events.selected {
     color: var(--primary-foreground);
+}
+
+.calendar-day.has-plan {
+    background-color: #10B981;
+    color: white;
+    font-weight: 600;
+}
+
+.calendar-day.has-plan.selected {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+}
+
+.calendar-day.has-events.has-plan {
+    background: linear-gradient(45deg, #3B82F6 50%, #10B981 50%);
+    color: white;
+    font-weight: 600;
 }
 
 @media (max-width: 768px) {

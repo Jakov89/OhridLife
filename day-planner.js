@@ -1,5 +1,3 @@
-import Sortable from 'https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/modular/sortable.esm.js';
-
 document.addEventListener('DOMContentLoaded', () => {
     // Check if we're on the day planner page
     if (!document.getElementById('planner-calendar-container')) {
@@ -868,6 +866,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function initializeSortable() {
         const planDisplayEl = document.getElementById('currentPlanDisplay');
         if (!planDisplayEl) return;
+
+        // Check if SortableJS is available
+        if (typeof Sortable === 'undefined') {
+            console.log('SortableJS not loaded, drag-and-drop functionality will be disabled');
+            return;
+        }
 
         new Sortable(planDisplayEl, {
             animation: 150,
