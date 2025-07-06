@@ -2536,7 +2536,8 @@
     "description": "Cuba Libre takes the party outdoors—on a lakeside beach! This seasonal hotspot morphs into a tropical-style lounge with cocktails, snacks, sunbeds, and loud, fun music. In summer, grab a mojito by the water; off-season, the indoor bar keeps the relaxed party vibe alive.",
     "type": [
       "coffee",
-      "beach"
+      "beach",
+      "club"
     ],
     "tags": [
       "popular",
