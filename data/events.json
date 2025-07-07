@@ -2699,6 +2699,22 @@
         "ticketPrice": "Free entry",
         "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
         "locationName": "Omnia Night Club"
+    },
+    {
+        "id": 179,
+        "venueId": 67,
+        "eventName": "Vis Biljana",
+        "isoDate": "2025-07-11",
+        "startTime": "21:00",
+        "day": "Fri.",
+        "description": "Join us for an unforgettable evening as we welcome Vis Biljana to the intimate and vibrant atmosphere of Pivnica Sokak. Prepare to be captivated by a night of exceptional music, where Vis Biljana will transport you with their unique sound and compelling performance.\n\nPivnica Sokak provides the perfect setting for this exclusive event, offering its renowned selection of beverages and a cozy ambiance that complements the artistry of Vis Biljana. Whether you're a long-time fan or new to their captivating artistry, this is an opportunity to experience their talent up close in one of Ohrid's most cherished venues.\n\nDon't miss out on what promises to be a highlight of the season! Space is limited, so we encourage early arrival to secure your spot for an evening of remarkable music and great company.",
+        "category": "Music",
+        "imageUrl": "images_venue/sokak_card.jpg",
+        "eventBookingUrl": "#",
+        "eventContact": "077961611",
+        "ticketPrice": "Free Entry",
+        "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.981833716928!2d20.79628917644787!3d41.11308781296401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd9002867889%3A0x5a9516769f99ed09!2sPub%20%26%20Pivnica%20Sokak!5e0!3m2!1sen!2smk!4v1750873529343!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+        "locationName": "Pivnica Sokak"
     }
 ]
 
