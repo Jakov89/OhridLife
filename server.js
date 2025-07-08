@@ -16,10 +16,10 @@ app.use(helmet({
             defaultSrc: ["'self'"],
             styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://cdn.jsdelivr.net"],
             fontSrc: ["'self'", "https://fonts.gstatic.com"],
-            scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", "https://cdn.jsdelivr.net"],
+            scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", "https://cdn.jsdelivr.net", "https://connect.facebook.net"],
             scriptSrcAttr: ["'unsafe-inline'"], // Allow inline event handlers like onclick
             imgSrc: ["'self'", "data:", "https:", "http:", "blob:"],
-            connectSrc: ["'self'", "https://api.open-meteo.com"],
+            connectSrc: ["'self'", "https://api.open-meteo.com", "https://connect.facebook.net"],
             frameSrc: ["'self'", "https://www.google.com", "https://maps.google.com"],
             objectSrc: ["'none'"],
             baseUri: ["'self'"],
@@ -46,6 +46,8 @@ app.use(express.static('.', {
             res.setHeader('Content-Type', 'text/css; charset=UTF-8');
         } else if (ext === '.json') {
             res.setHeader('Content-Type', 'application/json; charset=UTF-8');
+        } else if (ext === '.html') {
+            res.setHeader('Content-Type', 'text/html; charset=UTF-8');
         }
         
         // Set different cache times for different file types
@@ -62,13 +64,37 @@ app.use(express.static('.', {
 // API endpoint to get venues
 app.get('/api/venues', (req, res) => {
     res.setHeader('Cache-Control', 'public, max-age=3600'); // Cache API responses for 1 hour
-    const venuesPath = path.join(__dirname, 'data', 'venues_reorganized.json');
-    fs.readFile(venuesPath, 'utf8', (err, data) => {
+    
+    // Try venues_reorganized.json first, fallback to venues.json
+    const venuesReorganizedPath = path.join(__dirname, 'data', 'venues_reorganized.json');
+    const venuesPath = path.join(__dirname, 'data', 'venues.json');
+    
+    fs.readFile(venuesReorganizedPath, 'utf8', (err, data) => {
         if (err) {
-            console.error("Error reading venues_reorganized.json:", err);
-            return res.status(500).json({ error: 'Failed to load venue data.' });
+            console.warn("venues_reorganized.json not found, trying venues.json:", err.message);
+            // Fallback to original venues.json
+            fs.readFile(venuesPath, 'utf8', (fallbackErr, fallbackData) => {
+                if (fallbackErr) {
+                    console.error("Error reading both venue files:", fallbackErr);
+                    return res.status(500).json({ error: 'Failed to load venue data.' });
+                }
+                try {
+                    const venues = JSON.parse(fallbackData);
+                    res.json(venues);
+                } catch (parseErr) {
+                    console.error("Error parsing venues.json:", parseErr);
+                    return res.status(500).json({ error: 'Failed to parse venue data.' });
+                }
+            });
+        } else {
+            try {
+                const venues = JSON.parse(data);
+                res.json(venues);
+            } catch (parseErr) {
+                console.error("Error parsing venues_reorganized.json:", parseErr);
+                return res.status(500).json({ error: 'Failed to parse venue data.' });
+            }
         }
-        res.json(JSON.parse(data));
     });
 });
 
@@ -81,7 +107,13 @@ app.get('/api/events', (req, res) => {
             console.error("Error reading events.json:", err);
             return res.status(500).json({ error: 'Failed to load event data.' });
         }
-        res.json(JSON.parse(data));
+        try {
+            const events = JSON.parse(data);
+            res.json(events);
+        } catch (parseErr) {
+            console.error("Error parsing events.json:", parseErr);
+            return res.status(500).json({ error: 'Failed to parse event data.' });
+        }
     });
 });
 
@@ -174,6 +206,12 @@ app.get('/learn-ohrid', (req, res) => {
 // Serve event-detail.html for /events/:id
 app.get('/events/:id', (req, res) => {
     const eventId = parseInt(req.params.id, 10);
+    
+    // Validate event ID
+    if (isNaN(eventId) || eventId <= 0) {
+        return res.status(400).send('Invalid event ID.');
+    }
+    
     const eventsPath = path.join(__dirname, 'data', 'events.json');
     const venuesPath = path.join(__dirname, 'data', 'venues.json');
     
@@ -181,14 +219,30 @@ app.get('/events/:id', (req, res) => {
     Promise.all([
         new Promise((resolve, reject) => {
             fs.readFile(eventsPath, 'utf8', (err, data) => {
-                if (err) reject(err);
-                else resolve(JSON.parse(data));
+                if (err) {
+                    reject(err);
+                } else {
+                    try {
+                        resolve(JSON.parse(data));
+                    } catch (parseErr) {
+                        reject(parseErr);
+                    }
+                }
             });
         }),
         new Promise((resolve, reject) => {
             fs.readFile(venuesPath, 'utf8', (err, data) => {
-                if (err) reject(err);
-                else resolve(JSON.parse(data));
+                if (err) {
+                    console.warn('venues.json not found, using empty venues array');
+                    resolve([]); // Don't fail completely if venues.json doesn't exist
+                } else {
+                    try {
+                        resolve(JSON.parse(data));
+                    } catch (parseErr) {
+                        console.warn('Error parsing venues.json, using empty venues array');
+                        resolve([]);
+                    }
+                }
             });
         })
     ]).then(([events, venues]) => {
@@ -272,20 +326,34 @@ app.get('/events/:id', (req, res) => {
 // API endpoint to get a single event by ID
 app.get('/api/events/:id', (req, res) => {
     const eventId = parseInt(req.params.id, 10);
+    
+    // Validate event ID
+    if (isNaN(eventId) || eventId <= 0) {
+        return res.status(400).json({ error: 'Invalid event ID.' });
+    }
+    
     const eventsPath = path.join(__dirname, 'data', 'events.json');
 
     fs.readFile(eventsPath, 'utf8', (err, eventsData) => {
         if (err) {
+            console.error('Error reading events.json for individual event:', err);
             return res.status(500).json({ error: 'Failed to load event data.' });
         }
         
-        const allEvents = JSON.parse(eventsData);
-        let event = allEvents.find(e => e.id === eventId);
+        try {
+            const allEvents = JSON.parse(eventsData);
+            const event = allEvents.find(e => e.id === eventId);
 
-        if (event) {
-            return res.json(event);
-        } else {
-            return res.status(404).json({ error: 'Event not found.' });
+            if (event) {
+                // Set cache headers for individual events
+                res.setHeader('Cache-Control', 'public, max-age=1800'); // 30 minutes
+                return res.json(event);
+            } else {
+                return res.status(404).json({ error: 'Event not found.' });
+            }
+        } catch (parseErr) {
+            console.error('Error parsing events.json for individual event:', parseErr);
+            return res.status(500).json({ error: 'Failed to parse event data.' });
         }
     });
 });

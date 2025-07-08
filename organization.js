@@ -290,31 +290,23 @@ function shareCurrentEvent() {
     
     const eventUrl = `${window.location.origin}/events/${eventId}`;
     const eventTitle = event.eventName;
-    const eventText = `Check out this event: ${eventTitle}`;
+    const shareBtn = document.getElementById('modal-event-share-btn');
     
-    if (navigator.share) {
-        // Use native share API if available
-        navigator.share({
-            title: eventTitle,
-            text: eventText,
-            url: eventUrl
-        }).catch(err => {
-            console.log('Error sharing:', err);
-            fallbackShareEvent(eventUrl, eventText);
-        });
-    } else {
-        fallbackShareEvent(eventUrl, eventText);
-    }
-}
-
-function fallbackShareEvent(url, text) {
-    // Copy to clipboard
-    navigator.clipboard.writeText(url).then(() => {
+    // Always copy to clipboard directly - no native share dialog
+    navigator.clipboard.writeText(eventUrl).then(() => {
         showEventNotification('Event link copied to clipboard!');
+        
+        // Add visual feedback
+        if (shareBtn) {
+            shareBtn.classList.add('copied');
+            setTimeout(() => {
+                shareBtn.classList.remove('copied');
+            }, 2000);
+        }
     }).catch(err => {
         console.error('Failed to copy:', err);
         // Fallback to showing the URL
-        prompt('Copy this link to share:', url);
+        prompt('Copy this link to share:', eventUrl);
     });
 }
 
