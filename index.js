@@ -1957,6 +1957,35 @@ function downloadStoryImage() {
     
     console.log('Starting story image download for event:', currentEventForStory.eventName);
     
+    // Use html2canvas to capture the preview element directly
+    const previewElement = document.getElementById('story-card-preview');
+    if (!previewElement) {
+        console.error('Preview element not found');
+        return;
+    }
+    
+    // If html2canvas is not available, use manual canvas drawing
+    if (typeof html2canvas === 'undefined') {
+        downloadStoryImageManual();
+        return;
+    }
+    
+    // Capture the preview element as canvas
+    html2canvas(previewElement, {
+        width: 1080,
+        height: 1920,
+        scale: 5.4, // Scale up to Instagram story resolution (1080x1920)
+        backgroundColor: null,
+        logging: false
+    }).then(canvas => {
+        downloadCanvas(canvas);
+    }).catch(error => {
+        console.error('html2canvas failed, falling back to manual drawing:', error);
+        downloadStoryImageManual();
+    });
+}
+
+function downloadStoryImageManual() {
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
     
@@ -1964,8 +1993,17 @@ function downloadStoryImage() {
     canvas.width = 1080;
     canvas.height = 1920;
     
-    // Get gradient
+    // Get gradient - match exactly what's in the preview
     const gradients = {
+        'gradient-1': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        'gradient-2': 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+        'gradient-3': 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+        'gradient-4': 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
+        'gradient-5': 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+    };
+    
+    // Parse gradient colors for canvas
+    const gradientColors = {
         'gradient-1': ['#667eea', '#764ba2'],
         'gradient-2': ['#f093fb', '#f5576c'],
         'gradient-3': ['#4facfe', '#00f2fe'],
@@ -1973,9 +2011,9 @@ function downloadStoryImage() {
         'gradient-5': ['#fa709a', '#fee140']
     };
     
-    const [color1, color2] = gradients[selectedTemplate];
+    const [color1, color2] = gradientColors[selectedTemplate] || gradientColors['gradient-1'];
     
-    // Create gradient
+    // Create gradient to match CSS (135deg)
     const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
     gradient.addColorStop(0, color1);
     gradient.addColorStop(1, color2);
@@ -1984,11 +2022,16 @@ function downloadStoryImage() {
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
-    // Add overlay
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.3)';
+    // Add subtle overlay for better text readability
+    ctx.fillStyle = 'linear-gradient(45deg, rgba(0,0,0,0.3), transparent)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
-    // Set text color
+    // Layout to match the preview exactly
+    const headerY = 150;
+    const imageY = 600;
+    const footerY = 1500;
+    
+    // Header section (top)
     ctx.fillStyle = 'white';
     ctx.textAlign = 'center';
     
@@ -1998,63 +2041,92 @@ function downloadStoryImage() {
         month: 'short',
         day: 'numeric',
         year: 'numeric'
-    }).toUpperCase();
+    });
     
-    ctx.font = 'bold 32px Arial';
-    ctx.fillText(formattedDate, canvas.width / 2, 200);
+    ctx.font = 'normal 28px Arial';
+    ctx.globalAlpha = 0.9;
+    ctx.fillText(formattedDate, canvas.width / 2, headerY);
+    ctx.globalAlpha = 1;
     
-    // Event title
-    ctx.font = 'bold 56px Arial';
+    // Event title (allow for multiple lines)
+    ctx.font = 'bold 48px Arial';
     const title = currentEventForStory.eventName || 'Event';
-    wrapText(ctx, title, canvas.width / 2, 300, canvas.width - 200, 80);
+    wrapText(ctx, title, canvas.width / 2, headerY + 60, canvas.width - 100, 60);
     
     // Category badge
-    ctx.font = '28px Arial';
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
     const category = currentEventForStory.category || 'Event';
-    const categoryWidth = ctx.measureText(category).width + 40;
-    const categoryX = (canvas.width - categoryWidth) / 2;
-    ctx.fillRect(categoryX, 420, categoryWidth, 60);
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
-    ctx.fillText(category, canvas.width / 2, 460);
+    ctx.font = 'normal 24px Arial';
+    const categoryMetrics = ctx.measureText(category);
+    const badgeWidth = categoryMetrics.width + 30;
+    const badgeHeight = 32;
+    const badgeX = (canvas.width - badgeWidth) / 2;
+    const badgeY = headerY + 160;
     
-    // Venue and time
+    // Draw badge background
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+    ctx.fillRect(badgeX, badgeY, badgeWidth, badgeHeight);
+    
+    // Draw badge text
     ctx.fillStyle = 'white';
-    ctx.font = '36px Arial';
-    ctx.fillText(`📍 ${currentEventForStory.locationName || 'Ohrid'}`, canvas.width / 2, 1650);
-    ctx.fillText(`🕐 ${currentEventForStory.startTime || '20:00'}`, canvas.width / 2, 1720);
+    ctx.fillText(category, canvas.width / 2, badgeY + 22);
     
-    // Branding
-    ctx.font = 'bold 32px Arial';
-    ctx.fillText('OHRIDHUB', canvas.width / 2, 1800);
-    
-    // Load and draw event image if available
+    // Event image (circular, centered)
     if (currentEventForStory.imageUrl) {
         const img = new Image();
         img.crossOrigin = 'anonymous';
         img.onload = function() {
-            // Draw circular image
+            // Draw circular image in the center
+            const imageSize = 240;
+            const imageX = canvas.width / 2;
+            const centerY = imageY + 200;
+            
             ctx.save();
             ctx.beginPath();
-            ctx.arc(canvas.width / 2, 950, 200, 0, 2 * Math.PI);
+            ctx.arc(imageX, centerY, imageSize / 2, 0, 2 * Math.PI);
             ctx.clip();
-            ctx.drawImage(img, canvas.width / 2 - 200, 750, 400, 400);
+            
+            // Draw image to fill the circle
+            ctx.drawImage(img, imageX - imageSize / 2, centerY - imageSize / 2, imageSize, imageSize);
             ctx.restore();
             
-            // Add border
+            // Add subtle border
             ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
-            ctx.lineWidth = 6;
+            ctx.lineWidth = 4;
             ctx.beginPath();
-            ctx.arc(canvas.width / 2, 950, 200, 0, 2 * Math.PI);
+            ctx.arc(imageX, centerY, imageSize / 2, 0, 2 * Math.PI);
             ctx.stroke();
             
-            downloadCanvas(canvas);
+            finishCanvasDrawing();
         };
         img.onerror = function() {
-            downloadCanvas(canvas);
+            finishCanvasDrawing();
         };
         img.src = currentEventForStory.imageUrl;
     } else {
+        finishCanvasDrawing();
+    }
+    
+    function finishCanvasDrawing() {
+        // Footer section (bottom)
+        ctx.fillStyle = 'white';
+        ctx.textAlign = 'center';
+        
+        // Venue
+        ctx.font = 'normal 32px Arial';
+        ctx.globalAlpha = 0.9;
+        ctx.fillText(`📍 ${currentEventForStory.locationName || 'Ohrid'}`, canvas.width / 2, footerY);
+        
+        // Time
+        ctx.font = '600 36px Arial';
+        ctx.globalAlpha = 1;
+        ctx.fillText(`🕐 ${currentEventForStory.startTime || '20:00'}`, canvas.width / 2, footerY + 60);
+        
+        // Branding
+        ctx.font = '500 28px Arial';
+        ctx.globalAlpha = 0.8;
+        ctx.fillText('OHRIDHUB', canvas.width / 2, footerY + 120);
+        ctx.globalAlpha = 1;
+        
         downloadCanvas(canvas);
     }
 }
