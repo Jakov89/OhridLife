@@ -212,6 +212,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Share event button
         document.getElementById('share-event-btn').addEventListener('click', shareEvent);
         
+        // Instagram Story button
+        document.getElementById('instagram-story-btn').addEventListener('click', openInstagramStoryModal);
+        
         // Add to planner button
         document.getElementById('add-to-planner-btn').addEventListener('click', addToPlanner);
         
@@ -222,6 +225,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 openImageModal(eventImage.src);
             }
         });
+        
+        // Instagram Story modal listeners
+        setupInstagramStoryModalListeners();
     }
     
     function shareEvent() {
@@ -360,5 +366,238 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show modal with image
         document.getElementById('modal-image-content').src = imageSrc;
         imageModal.classList.remove('hidden');
+    }
+    
+    // Instagram Story functionality
+    let selectedTemplate = 'gradient-1';
+    
+    function setupInstagramStoryModalListeners() {
+        // Modal close
+        document.getElementById('instagram-story-modal-close').addEventListener('click', closeInstagramStoryModal);
+        document.getElementById('instagram-story-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'instagram-story-modal') {
+                closeInstagramStoryModal();
+            }
+        });
+        
+        // Template selection
+        const templateOptions = document.querySelectorAll('.template-option');
+        templateOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                templateOptions.forEach(opt => opt.classList.remove('selected'));
+                option.classList.add('selected');
+                selectedTemplate = option.dataset.template;
+                updateStoryCardPreview();
+            });
+        });
+        
+        // Download button
+        document.getElementById('download-story-btn').addEventListener('click', downloadStoryImage);
+        
+        // Open Instagram button
+        document.getElementById('open-instagram-btn').addEventListener('click', openInstagramApp);
+    }
+    
+    function openInstagramStoryModal() {
+        if (!eventData) return;
+        
+        const modal = document.getElementById('instagram-story-modal');
+        updateStoryCardPreview();
+        modal.classList.add('visible');
+    }
+    
+    function closeInstagramStoryModal() {
+        const modal = document.getElementById('instagram-story-modal');
+        modal.classList.remove('visible');
+    }
+    
+    function updateStoryCardPreview() {
+        if (!eventData) return;
+        
+        const preview = document.getElementById('story-card-preview');
+        const gradients = {
+            'gradient-1': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+            'gradient-2': 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+            'gradient-3': 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+            'gradient-4': 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
+            'gradient-5': 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+        };
+        
+        preview.style.background = gradients[selectedTemplate];
+        
+        // Update content
+        const eventDate = new Date(eventData.isoDate);
+        const formattedDate = eventDate.toLocaleDateString('en-US', {
+            month: 'short',
+            day: 'numeric',
+            year: 'numeric'
+        });
+        
+        document.getElementById('story-card-date').textContent = formattedDate;
+        document.getElementById('story-card-title').textContent = eventData.eventName || 'Event';
+        document.getElementById('story-card-category').textContent = eventData.category || 'Event';
+        document.getElementById('story-card-venue').textContent = `📍 ${eventData.locationName || 'Ohrid'}`;
+        document.getElementById('story-card-time').textContent = `🕐 ${eventData.startTime || '20:00'}`;
+        
+        // Update image
+        const storyImage = document.getElementById('story-card-image');
+        if (eventData.imageUrl) {
+            storyImage.src = eventData.imageUrl;
+            storyImage.style.display = 'block';
+        } else {
+            storyImage.style.display = 'none';
+        }
+    }
+    
+    function downloadStoryImage() {
+        if (!eventData) return;
+        
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Instagram Story dimensions (9:16 aspect ratio)
+        canvas.width = 1080;
+        canvas.height = 1920;
+        
+        // Get gradient
+        const gradients = {
+            'gradient-1': ['#667eea', '#764ba2'],
+            'gradient-2': ['#f093fb', '#f5576c'],
+            'gradient-3': ['#4facfe', '#00f2fe'],
+            'gradient-4': ['#43e97b', '#38f9d7'],
+            'gradient-5': ['#fa709a', '#fee140']
+        };
+        
+        const [color1, color2] = gradients[selectedTemplate];
+        
+        // Create gradient
+        const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+        gradient.addColorStop(0, color1);
+        gradient.addColorStop(1, color2);
+        
+        // Fill background
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        // Add overlay
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.3)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        // Set text color
+        ctx.fillStyle = 'white';
+        ctx.textAlign = 'center';
+        
+        // Date
+        const eventDate = new Date(eventData.isoDate);
+        const formattedDate = eventDate.toLocaleDateString('en-US', {
+            month: 'short',
+            day: 'numeric',
+            year: 'numeric'
+        }).toUpperCase();
+        
+        ctx.font = 'bold 32px Arial';
+        ctx.fillText(formattedDate, canvas.width / 2, 200);
+        
+        // Event title
+        ctx.font = 'bold 56px Arial';
+        const title = eventData.eventName || 'Event';
+        wrapText(ctx, title, canvas.width / 2, 300, canvas.width - 200, 80);
+        
+        // Category badge
+        ctx.font = '28px Arial';
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+        const category = eventData.category || 'Event';
+        const categoryWidth = ctx.measureText(category).width + 40;
+        const categoryX = (canvas.width - categoryWidth) / 2;
+        ctx.fillRect(categoryX, 420, categoryWidth, 60);
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
+        ctx.fillText(category, canvas.width / 2, 460);
+        
+        // Venue and time
+        ctx.fillStyle = 'white';
+        ctx.font = '36px Arial';
+        ctx.fillText(`📍 ${eventData.locationName || 'Ohrid'}`, canvas.width / 2, 1650);
+        ctx.fillText(`🕐 ${eventData.startTime || '20:00'}`, canvas.width / 2, 1720);
+        
+        // Branding
+        ctx.font = 'bold 32px Arial';
+        ctx.fillText('OHRIDHUB', canvas.width / 2, 1800);
+        
+        // Load and draw event image if available
+        if (eventData.imageUrl) {
+            const img = new Image();
+            img.crossOrigin = 'anonymous';
+            img.onload = function() {
+                // Draw circular image
+                ctx.save();
+                ctx.beginPath();
+                ctx.arc(canvas.width / 2, 950, 200, 0, 2 * Math.PI);
+                ctx.clip();
+                ctx.drawImage(img, canvas.width / 2 - 200, 750, 400, 400);
+                ctx.restore();
+                
+                // Add border
+                ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
+                ctx.lineWidth = 6;
+                ctx.beginPath();
+                ctx.arc(canvas.width / 2, 950, 200, 0, 2 * Math.PI);
+                ctx.stroke();
+                
+                downloadCanvas(canvas);
+            };
+            img.onerror = function() {
+                downloadCanvas(canvas);
+            };
+            img.src = eventData.imageUrl;
+        } else {
+            downloadCanvas(canvas);
+        }
+    }
+    
+    function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
+        const words = text.split(' ');
+        let line = '';
+        let currentY = y;
+        
+        for (let n = 0; n < words.length; n++) {
+            const testLine = line + words[n] + ' ';
+            const metrics = ctx.measureText(testLine);
+            const testWidth = metrics.width;
+            
+            if (testWidth > maxWidth && n > 0) {
+                ctx.fillText(line, x, currentY);
+                line = words[n] + ' ';
+                currentY += lineHeight;
+            } else {
+                line = testLine;
+            }
+        }
+        ctx.fillText(line, x, currentY);
+    }
+    
+    function downloadCanvas(canvas) {
+        const link = document.createElement('a');
+        link.download = `${eventData.eventName || 'event'}-instagram-story.png`;
+        link.href = canvas.toDataURL();
+        link.click();
+    }
+    
+    function openInstagramApp() {
+        // Check if it's a mobile device
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        
+        if (isMobile) {
+            // Try to open Instagram app
+            const instagramURL = 'instagram://camera';
+            window.location.href = instagramURL;
+            
+            // Fallback to Instagram web after a short delay
+            setTimeout(() => {
+                window.open('https://www.instagram.com/', '_blank');
+            }, 1000);
+        } else {
+            // On desktop, open Instagram web
+            window.open('https://www.instagram.com/', '_blank');
+        }
     }
 }); 

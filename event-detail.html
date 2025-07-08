@@ -70,14 +70,23 @@
                     Back
                 </button>
                 <div class="event-detail-actions">
-                    <button class="share-event-btn" id="share-event-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
-                            <polyline points="16 6 12 2 8 6"></polyline>
-                            <line x1="12" y1="2" x2="12" y2="15"></line>
-                        </svg>
-                        Share Event
-                    </button>
+                    <div class="share-options">
+                        <button class="share-event-btn" id="share-event-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                <polyline points="16 6 12 2 8 6"></polyline>
+                                <line x1="12" y1="2" x2="12" y2="15"></line>
+                            </svg>
+                            Share Link
+                        </button>
+                        <button class="share-option-btn instagram" id="instagram-story-btn" title="Share to Instagram Story">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
             
@@ -164,6 +173,66 @@
             <!-- Footer content will be injected by common.js -->
         </div>
     </footer>
+
+    <!-- Instagram Story Modal -->
+    <div id="instagram-story-modal" class="instagram-story-modal">
+        <div class="instagram-story-modal-content">
+            <div class="instagram-story-modal-header">
+                <h3>Share to Instagram Story</h3>
+                <button class="instagram-story-modal-close" id="instagram-story-modal-close">&times;</button>
+            </div>
+            
+            <div class="story-template-selector">
+                <h4>Choose a template:</h4>
+                <div class="template-options">
+                    <div class="template-option gradient-1 selected" data-template="gradient-1"></div>
+                    <div class="template-option gradient-2" data-template="gradient-2"></div>
+                    <div class="template-option gradient-3" data-template="gradient-3"></div>
+                    <div class="template-option gradient-4" data-template="gradient-4"></div>
+                    <div class="template-option gradient-5" data-template="gradient-5"></div>
+                </div>
+            </div>
+            
+            <div class="story-card-preview" id="story-card-preview">
+                <div class="story-card-content">
+                    <div class="story-card-header">
+                        <div class="story-card-date" id="story-card-date">July 15, 2025</div>
+                        <div class="story-card-title" id="story-card-title">Event Title</div>
+                        <div class="story-card-category" id="story-card-category">Music</div>
+                    </div>
+                    
+                    <div class="story-card-image-container">
+                        <img class="story-card-image" id="story-card-image" src="" alt="Event image">
+                    </div>
+                    
+                    <div class="story-card-footer">
+                        <div class="story-card-venue" id="story-card-venue">📍 Venue Name</div>
+                        <div class="story-card-time" id="story-card-time">🕐 20:00</div>
+                        <div class="story-card-branding">OhridHub</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="instagram-story-actions">
+                <button class="instagram-story-btn secondary" id="download-story-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download Image
+                </button>
+                <button class="instagram-story-btn primary" id="open-instagram-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    Open Instagram
+                </button>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="/common.js"></script>
