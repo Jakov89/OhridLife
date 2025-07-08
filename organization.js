@@ -165,32 +165,187 @@ function downloadStoryImage() {
     
     console.log('Starting story image download for event:', currentEventForStory.eventName);
     
-    // Use html2canvas to capture the preview element directly
-    const previewElement = document.getElementById('story-card-preview');
-    if (!previewElement) {
-        console.error('Preview element not found');
-        return;
-    }
+    // Create a high-resolution temporary preview element
+    const tempPreview = createHighResolutionPreview();
     
-    // If html2canvas is not available, use manual canvas drawing
-    if (typeof html2canvas === 'undefined') {
+    // Use html2canvas to capture the high-resolution preview
+    if (typeof html2canvas !== 'undefined') {
+        html2canvas(tempPreview, {
+            width: 1080,
+            height: 1920,
+            scale: 1, // No scaling needed as we're already at target resolution
+            backgroundColor: null,
+            logging: false,
+            allowTaint: true,
+            useCORS: true
+        }).then(canvas => {
+            // Clean up the temporary element
+            document.body.removeChild(tempPreview);
+            downloadCanvas(canvas);
+        }).catch(error => {
+            console.error('html2canvas failed, falling back to manual drawing:', error);
+            document.body.removeChild(tempPreview);
+            downloadStoryImageManual();
+        });
+    } else {
+        document.body.removeChild(tempPreview);
         downloadStoryImageManual();
-        return;
     }
+}
+
+function createHighResolutionPreview() {
+    const tempPreview = document.createElement('div');
+    tempPreview.className = 'story-card-preview';
+    tempPreview.id = 'temp-story-card-preview';
     
-    // Capture the preview element as canvas
-    html2canvas(previewElement, {
-        width: 1080,
-        height: 1920,
-        scale: 5.4, // Scale up to Instagram story resolution (1080x1920)
-        backgroundColor: null,
-        logging: false
-    }).then(canvas => {
-        downloadCanvas(canvas);
-    }).catch(error => {
-        console.error('html2canvas failed, falling back to manual drawing:', error);
-        downloadStoryImageManual();
+    // Set to Instagram Story resolution
+    tempPreview.style.width = '1080px';
+    tempPreview.style.height = '1920px';
+    tempPreview.style.position = 'absolute';
+    tempPreview.style.left = '-9999px'; // Hide off-screen
+    tempPreview.style.top = '-9999px';
+    
+    // Apply the same gradient background
+    const gradients = {
+        'gradient-1': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        'gradient-2': 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+        'gradient-3': 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+        'gradient-4': 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
+        'gradient-5': 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+    };
+    
+    tempPreview.style.background = gradients[selectedTemplate] || gradients['gradient-1'];
+    tempPreview.style.borderRadius = '2rem';
+    tempPreview.style.overflow = 'hidden';
+    
+    // Create content structure with proper sizing for high resolution
+    const content = document.createElement('div');
+    content.className = 'story-card-content';
+    content.style.width = '100%';
+    content.style.height = '100%';
+    content.style.display = 'flex';
+    content.style.flexDirection = 'column';
+    content.style.justifyContent = 'space-between';
+    content.style.padding = '120px 80px';
+    content.style.color = 'white';
+    content.style.textAlign = 'center';
+    content.style.position = 'relative';
+    
+    // Add overlay
+    const overlay = document.createElement('div');
+    overlay.style.position = 'absolute';
+    overlay.style.top = '0';
+    overlay.style.left = '0';
+    overlay.style.right = '0';
+    overlay.style.bottom = '0';
+    overlay.style.background = 'linear-gradient(45deg, rgba(0,0,0,0.3), transparent)';
+    overlay.style.zIndex = '1';
+    content.appendChild(overlay);
+    
+    // Header section
+    const header = document.createElement('div');
+    header.style.position = 'relative';
+    header.style.zIndex = '2';
+    header.style.textAlign = 'center';
+    
+    const eventDate = new Date(currentEventForStory.isoDate);
+    const formattedDate = eventDate.toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
     });
+    
+    const dateElement = document.createElement('div');
+    dateElement.textContent = formattedDate;
+    dateElement.style.fontSize = '48px';
+    dateElement.style.opacity = '0.9';
+    dateElement.style.marginBottom = '40px';
+    dateElement.style.textTransform = 'uppercase';
+    dateElement.style.letterSpacing = '4px';
+    dateElement.style.fontWeight = '600';
+    header.appendChild(dateElement);
+    
+    const titleElement = document.createElement('div');
+    titleElement.textContent = currentEventForStory.eventName || 'Event';
+    titleElement.style.fontSize = '80px';
+    titleElement.style.fontWeight = '700';
+    titleElement.style.marginBottom = '40px';
+    titleElement.style.lineHeight = '1.2';
+    titleElement.style.wordWrap = 'break-word';
+    header.appendChild(titleElement);
+    
+    const categoryElement = document.createElement('div');
+    categoryElement.textContent = currentEventForStory.category || 'Event';
+    categoryElement.style.fontSize = '36px';
+    categoryElement.style.background = 'rgba(255, 255, 255, 0.2)';
+    categoryElement.style.padding = '16px 48px';
+    categoryElement.style.borderRadius = '50px';
+    categoryElement.style.display = 'inline-block';
+    categoryElement.style.backdropFilter = 'blur(10px)';
+    categoryElement.style.fontWeight = '500';
+    header.appendChild(categoryElement);
+    
+    // Image section
+    const imageContainer = document.createElement('div');
+    imageContainer.style.position = 'relative';
+    imageContainer.style.zIndex = '2';
+    imageContainer.style.display = 'flex';
+    imageContainer.style.justifyContent = 'center';
+    imageContainer.style.alignItems = 'center';
+    imageContainer.style.minHeight = '600px';
+    
+    if (currentEventForStory.imageUrl) {
+        const img = document.createElement('img');
+        img.src = currentEventForStory.imageUrl;
+        img.style.width = '480px';
+        img.style.height = '480px';
+        img.style.borderRadius = '50%';
+        img.style.objectFit = 'cover';
+        img.style.border = '12px solid rgba(255, 255, 255, 0.3)';
+        img.style.boxShadow = '0 16px 60px rgba(0, 0, 0, 0.3)';
+        imageContainer.appendChild(img);
+    }
+    
+    // Footer section
+    const footer = document.createElement('div');
+    footer.style.position = 'relative';
+    footer.style.zIndex = '2';
+    footer.style.textAlign = 'center';
+    
+    const venueElement = document.createElement('div');
+    venueElement.textContent = `📍 ${currentEventForStory.locationName || 'Ohrid'}`;
+    venueElement.style.fontSize = '52px';
+    venueElement.style.opacity = '0.9';
+    venueElement.style.marginBottom = '32px';
+    venueElement.style.fontWeight = '500';
+    footer.appendChild(venueElement);
+    
+    const timeElement = document.createElement('div');
+    timeElement.textContent = `🕐 ${currentEventForStory.startTime || '20:00'}`;
+    timeElement.style.fontSize = '64px';
+    timeElement.style.fontWeight = '600';
+    timeElement.style.marginBottom = '40px';
+    footer.appendChild(timeElement);
+    
+    const brandingElement = document.createElement('div');
+    brandingElement.textContent = 'OHRIDHUB';
+    brandingElement.style.fontSize = '44px';
+    brandingElement.style.opacity = '0.8';
+    brandingElement.style.fontWeight = '500';
+    brandingElement.style.textTransform = 'uppercase';
+    brandingElement.style.letterSpacing = '4px';
+    footer.appendChild(brandingElement);
+    
+    // Assemble the structure
+    content.appendChild(header);
+    content.appendChild(imageContainer);
+    content.appendChild(footer);
+    tempPreview.appendChild(content);
+    
+    // Add to DOM temporarily
+    document.body.appendChild(tempPreview);
+    
+    return tempPreview;
 }
 
 function downloadStoryImageManual() {
