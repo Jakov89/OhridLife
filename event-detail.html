@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event - OhridHub</title>
+    <meta name="description" content="Discover amazing events in Ohrid, North Macedonia">
+    <meta name="keywords" content="Ohrid, events, North Macedonia, entertainment, nightlife, culture">
+    <meta name="author" content="OhridHub">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ohridhub.com/">
+    <meta property="og:title" content="Event - OhridHub">
+    <meta property="og:description" content="Discover amazing events in Ohrid, North Macedonia">
+    <meta property="og:image" content="https://www.ohridhub.com/images_ohrid/photo1.jpg">
+    <meta property="og:site_name" content="OhridHub">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="ohridhub.com">
+    <meta property="twitter:url" content="https://www.ohridhub.com/">
+    <meta name="twitter:title" content="Event - OhridHub">
+    <meta name="twitter:description" content="Discover amazing events in Ohrid, North Macedonia">
+    <meta name="twitter:image" content="https://www.ohridhub.com/images_ohrid/photo1.jpg">
+    
+    <!-- Facebook Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1739179403354905');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1739179403354905&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Meta Pixel Code -->
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://www.ohridhub.com/">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="/" class="brand-link">
+                    <h1 class="brand-text">OhridHub</h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/day-planner">Day Planner</a></li>
+                <li><a href="/learn-ohrid">Learn Ohrid</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-page-content">
+        <div class="event-detail-container">
+            <div class="event-detail-header">
+                <button class="back-button" onclick="window.history.back()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5"></path>
+                        <path d="M12 19l-7-7 7-7"></path>
+                    </svg>
+                    Back
+                </button>
+                <div class="event-detail-actions">
+                    <button class="share-event-btn" id="share-event-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                            <polyline points="16 6 12 2 8 6"></polyline>
+                            <line x1="12" y1="2" x2="12" y2="15"></line>
+                        </svg>
+                        Share Event
+                    </button>
+                </div>
+            </div>
+            
+            <div class="event-detail-content">
+                <div class="event-loading" id="event-loading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading event details...</p>
+                </div>
+                
+                <div class="event-detail-card" id="event-detail-card" style="display: none;">
+                    <div class="event-image-container">
+                        <img id="event-image" src="" alt="Event Image" class="event-detail-image">
+                    </div>
+                    
+                    <div class="event-info-container">
+                        <div class="event-header">
+                            <h1 id="event-title" class="event-title"></h1>
+                            <span id="event-category" class="event-category-badge"></span>
+                        </div>
+                        
+                        <div class="event-meta-info">
+                            <div class="event-meta-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <span id="event-date-time"></span>
+                            </div>
+                            
+                            <div class="event-meta-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span id="event-location"></span>
+                            </div>
+                            
+                            <div class="event-meta-item" id="event-contact-info" style="display: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <span id="event-contact"></span>
+                            </div>
+                            
+                            <div class="event-meta-item" id="event-price-info" style="display: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                                <span id="event-price"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="event-description">
+                            <h2>About This Event</h2>
+                            <div id="event-description-content"></div>
+                        </div>
+                        
+                        <div class="event-actions">
+                            <a href="#" id="event-booking-btn" class="btn btn-primary" style="display: none;">
+                                Book Now
+                            </a>
+                            <button class="btn btn-secondary" id="add-to-planner-btn">
+                                Add to Day Planner
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="event-location-map" id="event-location-map" style="display: none;">
+                    <h2>Location</h2>
+                    <div id="event-map-container"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>OhridHub</h3>
+                <p>Your ultimate guide to Ohrid's experiences</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/day-planner">Day Planner</a></li>
+                    <li><a href="/learn-ohrid">Learn Ohrid</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Discover the best of Ohrid</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 OhridHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="common.js"></script>
+    <script src="event-detail.js"></script>
+</body>
+</html> 

@@ -171,6 +171,104 @@ app.get('/learn-ohrid', (req, res) => {
     res.sendFile(path.join(__dirname, 'learn.html'));
 });
 
+// Serve event-detail.html for /events/:id
+app.get('/events/:id', (req, res) => {
+    const eventId = parseInt(req.params.id, 10);
+    const eventsPath = path.join(__dirname, 'data', 'events.json');
+    const venuesPath = path.join(__dirname, 'data', 'venues.json');
+    
+    // Read event and venue data
+    Promise.all([
+        new Promise((resolve, reject) => {
+            fs.readFile(eventsPath, 'utf8', (err, data) => {
+                if (err) reject(err);
+                else resolve(JSON.parse(data));
+            });
+        }),
+        new Promise((resolve, reject) => {
+            fs.readFile(venuesPath, 'utf8', (err, data) => {
+                if (err) reject(err);
+                else resolve(JSON.parse(data));
+            });
+        })
+    ]).then(([events, venues]) => {
+        const event = events.find(e => e.id === eventId);
+        
+        if (!event) {
+            return res.status(404).send('Event not found.');
+        }
+        
+        const venue = venues.find(v => v.id === event.venueId);
+        const templatePath = path.join(__dirname, 'event-detail.html');
+        
+        fs.readFile(templatePath, 'utf8', (err, htmlData) => {
+            if (err) {
+                return res.status(500).send('Error loading page template.');
+            }
+            
+            // Prepare event data for SEO
+            const title = `${event.eventName} - OhridHub`;
+            const description = event.description ? event.description.substring(0, 160) : `Join us for ${event.eventName} in Ohrid.`;
+            const imageUrl = `https://www.ohridhub.com/${event.imageUrl || 'images_ohrid/photo1.jpg'}`;
+            const pageUrl = `https://www.ohridhub.com/events/${event.id}`;
+            const venueName = venue ? (venue.name || event.locationName) : event.locationName;
+            
+            // Create event schema markup
+            const eventDate = new Date(event.isoDate);
+            const startDateTime = `${event.isoDate}T${event.startTime || '20:00'}:00`;
+            
+            const schema = {
+                "@context": "https://schema.org",
+                "@type": "Event",
+                "name": event.eventName,
+                "description": event.description || `Join us for ${event.eventName} in Ohrid.`,
+                "image": imageUrl,
+                "startDate": startDateTime,
+                "eventStatus": "https://schema.org/EventScheduled",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "location": {
+                    "@type": "Place",
+                    "name": venueName,
+                    "address": venue?.location?.address || "Ohrid, North Macedonia"
+                },
+                "organizer": {
+                    "@type": "Organization",
+                    "name": "OhridHub",
+                    "url": "https://www.ohridhub.com"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "price": event.ticketPrice === "Free entry" || event.ticketPrice === "Free Entry" ? "0" : "TBA",
+                    "priceCurrency": "MKD",
+                    "availability": "https://schema.org/InStock"
+                }
+            };
+            
+            // Replace meta tags and inject schema
+            let finalHtml = htmlData
+                .replace(/<title>.*<\/title>/, `<title>${title}</title>`)
+                .replace(/<meta name="description" content=".*">/, `<meta name="description" content="${description}">`)
+                .replace(/<meta property="og:url" content=".*">/, `<meta property="og:url" content="${pageUrl}">`)
+                .replace(/<meta property="og:title" content=".*">/, `<meta property="og:title" content="${title}">`)
+                .replace(/<meta property="og:description" content=".*">/, `<meta property="og:description" content="${description}">`)
+                .replace(/<meta property="og:image" content=".*">/, `<meta property="og:image" content="${imageUrl}">`)
+                .replace(/<meta property="twitter:url" content=".*">/, `<meta property="twitter:url" content="${pageUrl}">`)
+                .replace(/<meta property="twitter:title" content=".*">/, `<meta property="twitter:title" content="${title}">`)
+                .replace(/<meta property="twitter:description" content=".*">/, `<meta property="twitter:description" content="${description}">`)
+                .replace(/<meta property="twitter:image" content=".*">/, `<meta property="twitter:image" content="${imageUrl}">`);
+            
+            // Inject schema markup
+            const schemaScript = `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
+            finalHtml = finalHtml.replace('</head>', `${schemaScript}</head>`);
+            
+            res.send(finalHtml);
+        });
+    }).catch(err => {
+        console.error('Error loading event data:', err);
+        res.status(500).send('Error loading event data.');
+    });
+});
+
 // API endpoint to get a single event by ID
 app.get('/api/events/:id', (req, res) => {
     const eventId = parseInt(req.params.id, 10);

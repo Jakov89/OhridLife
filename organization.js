@@ -153,6 +153,9 @@ function setupEventModalListeners() {
     eventModal?.addEventListener('click', (e) => {
         if (e.target === eventModal) closeEventModal();
     });
+    
+    // Share event button
+    document.getElementById('modal-event-share-btn')?.addEventListener('click', shareCurrentEvent);
 
     const imageModal = document.getElementById('image-modal');
     const imageModalClose = document.getElementById('image-modal-close');
@@ -174,6 +177,9 @@ function openEventModal(eventId) {
 
     const modal = document.getElementById('event-detail-modal');
     if (!modal) return;
+
+    // Store current event ID for sharing
+    modal.dataset.eventId = eventId;
 
     modal.querySelector('#modal-event-name').textContent = event.eventName;
 
@@ -271,6 +277,65 @@ function closeEventModal() {
         modal.classList.add('hidden');
         document.body.style.overflow = '';
     }
+}
+
+function shareCurrentEvent() {
+    const modal = document.getElementById('event-detail-modal');
+    const eventId = modal?.dataset.eventId;
+    
+    if (!eventId) return;
+    
+    const event = eventsListData.find(e => e.id == eventId);
+    if (!event) return;
+    
+    const eventUrl = `${window.location.origin}/events/${eventId}`;
+    const eventTitle = event.eventName;
+    const eventText = `Check out this event: ${eventTitle}`;
+    
+    if (navigator.share) {
+        // Use native share API if available
+        navigator.share({
+            title: eventTitle,
+            text: eventText,
+            url: eventUrl
+        }).catch(err => {
+            console.log('Error sharing:', err);
+            fallbackShareEvent(eventUrl, eventText);
+        });
+    } else {
+        fallbackShareEvent(eventUrl, eventText);
+    }
+}
+
+function fallbackShareEvent(url, text) {
+    // Copy to clipboard
+    navigator.clipboard.writeText(url).then(() => {
+        showEventNotification('Event link copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy:', err);
+        // Fallback to showing the URL
+        prompt('Copy this link to share:', url);
+    });
+}
+
+function showEventNotification(message) {
+    const notification = document.createElement('div');
+    notification.className = 'notification success';
+    notification.textContent = message;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.classList.add('show');
+    }, 100);
+    
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => {
+            if (document.body.contains(notification)) {
+                document.body.removeChild(notification);
+            }
+        }, 300);
+    }, 3000);
 }
 
 // Initialize gallery slider
