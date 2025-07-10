@@ -2923,6 +2923,20 @@
         "isKulturnoLetoEvent": true,
         "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187.88168493449186!2d20.801681353828084!3d41.110355067098986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca6762de8ff%3A0x7211a175c9a90fa!2sOld%20Swimming%20Court!5e0!3m2!1sen!2smk!4v1749324071898!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
         "locationName": "Old Swimming Court"
+    },
+    {
+        "id": 193,
+        "venueId": null,
+        "eventName": "Analogno Pod Murenkana",
+        "isoDate": "2025-07-11",
+        "startTime": "18:00",
+        "day": "Fri.",
+        "description": "Party with records and thick shade!\n\nThis Friday marks the end of the working week under the Murenka with a pleasant breeze, music played on records and sunset! From 18h we will fill the space with quality energy and crispy sound of fresh extanine and cleaned records from the cellar!\n\n📍Location: cafe \"pod Murenkana\", square, Ohrid\n🗓 Date: 11.07.2025 (Friday)\n⏰️Time: 18:00-21:00",
+        "category": "Music",
+        "imageUrl": "events_image/podmurenka/analogno.jpg",
+        "eventBookingUrl": "#",
+        "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.4998263787522!2d20.79826309209592!3d41.112706236366044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddf33f004b8b%3A0x3a3c071af81981e0!2sPod%20Murenka!5e0!3m2!1sen!2smk!4v1752147241867!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+        "locationName": "Cafe Pod Murenkana"
     }
 ]
 
