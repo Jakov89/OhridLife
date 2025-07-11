@@ -3180,5 +3180,62 @@
     "workingHours": "09:00 - 00:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 95,
+    "name": "Kaneo Letna Bavcha",
+    "description": "Kaneo Letna Bavcha, often simply known as Kaneo Restaurant & Summer Garden, isn't just one of Ohrid's most popular venues it's practically a postcard brought to life. Perched right on the serene shores of Lake Ohrid, with the iconic Church of St. John at Kaneo seemingly rising out of the water beside it, this spot offers a truly magical ambiance that's hard to beat.\n\nImagine savoring exquisite Macedonian cuisine, from their renowned Ohrid lake fish to fresh seafood, all while the gentle lapping of the waves provides a natural soundtrack. Whether you're enjoying a sun-drenched lunch on their expansive terrace or a romantic dinner as the sun dips below the horizon, painting the sky in fiery hues, every meal here feels like an occasion. It's a place where the stunning views compete only with the delicious flavors on your plate, creating an unforgettable sensory experience. The friendly service and the palpable sense of history in the air simply add to its charm, making Kaneo Letna Bavcha a beloved gem in the heart of Ohrid.",
+    "type": [
+      "restaurant"
+    ],
+    "tags": [
+      "restaurant",
+      "lakeside",
+      "scenic",
+      "romantic",
+      "traditional",
+      "macedonian-cuisine",
+      "seafood",
+      "historic",
+      "terrace"
+    ],
+    "imageUrl": "images_venue/kaneolb_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/kaneolb/photo1.jpg",
+        "alt": "An outdoor restaurant patio with numerous tables set with wine glasses, overlooking a lake and a rocky cliff with lush greenery under a warm, late afternoon sky."
+      },
+      {
+        "url": "venue_gallery/kaneolb/photo2.jpg",
+        "alt": "An indoor restaurant dining area with many tables set with tablecloths and wine glasses, and a waiter standing in the background, with large windows offering a view of the lake and distant mountains."
+      },
+      {
+        "url": "venue_gallery/kaneolb/photo3.jpg",
+        "alt": "An elegant outdoor dining area with tables set on either side of a wooden pier extending into a vast lake with mountains in the background under a blue sky."
+      },
+      {
+        "url": "venue_gallery/kaneolb/photo4.jpg",
+        "alt": "A rectangular white platter featuring a variety of sushi rolls, spring rolls, fried seafood, and dipping sauces, garnished with cherry blossoms and bamboo branches, alongside a glass of white wine and a bamboo mat."
+      },
+      {
+        "url": "venue_gallery/kaneolb/photo5.jpg",
+        "alt": "A slice of cheesecake with a blueberry compote base and a fresh mint leaf and blueberries on top, served on a white plate."
+      },
+      {
+        "url": "venue_gallery/kaneolb/photo6.jpg",
+        "alt": "A bowl of creamy orange soup garnished with a dark green swirl and black sesame seeds, with decorative small pumpkins in the blurred background."
+      }
+    ],
+    "rating": 4.8,
+    "priceLevel": 3,
+    "location": {
+      "address": "Kaneo Restaurant & Letna Bavcha, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Kaneo+Restaurant+%26+Letna+Bavcha/@41.1110359,20.7891204,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dcba06d5fc33%3A0x56f715fef32e4b51!8m2!3d41.1110359!4d20.7891204!16s%2Fg%2F11y3p8qr9x?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.0378908647608!2d20.789120378682092!3d41.111035994280236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcba06d5fc33%3A0x56f715fef32e4b51!2sKaneo%20Restaurant%20%26%20Letna%20Bavcha!5e0!3m2!1sen!2smk!4v1752262151372!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070 776 837",
+    "workingHours": "09:00 - 22:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
