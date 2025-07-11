@@ -87,7 +87,7 @@ function renderFooter() {
                     <h4>About Ohrid</h4>
                     <ul>
                         <li><a href="/learn">History & Culture</a></li>
-                        <li><a href="/learn">UNESCO Heritage</a></li>
+                        <li><a href="https://whc.unesco.org/en/list/99/" target="_blank" rel="noopener noreferrer">UNESCO Heritage</a></li>
                         <li><a href="/learn">Local Traditions</a></li>
                         <li><a href="/learn">Travel Tips</a></li>
                     </ul>
@@ -99,7 +99,6 @@ function renderFooter() {
                         <li><a href="mailto:contact@ohridlife.com">Get in Touch</a></li>
                         <li><a href="mailto:events@ohridlife.com">Submit Event</a></li>
                         <li><a href="mailto:venues@ohridlife.com">Add Your Venue</a></li>
-                        <li><a href="/day-planner">Plan Your Visit</a></li>
                     </ul>
                 </div>
             </div>
