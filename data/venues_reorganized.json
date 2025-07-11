@@ -3155,5 +3155,57 @@
     "workingHours": "08:00 - 00:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 94,
+    "name": "Kaj Mestono",
+    "description": "Kaj Mestono, nestled in the serene village of Peshtani, offers a truly enchanting escape from the bustling city crowds of Ohrid. This remarkable venue boasts an unparalleled, sweeping panorama of the entire Lake Ohrid, a view so perfect it feels hand-painted.\n\nImagine stepping onto a terrace where the turquoise waters stretch endlessly before you, meeting the distant mountains in a hazy embrace. From sunrise's gentle glow to the breathtaking hues of sunset painting the sky over the tranquil lake, every moment here is a masterpiece. Kaj Mestono isn't just a place it's an experience, a tranquil haven where the beauty of nature takes center stage, allowing you to unwind, connect, and savor the peace that only such an incredible vista can offer. It's the ideal spot for those seeking serenity, unforgettable moments, and a visual feast for the soul, far removed from the everyday.",
+    "type": [
+      "restaurant"
+    ],
+    "tags": [
+      "restaurant",
+      "scenic",
+      "panoramic",
+      "serene",
+      "lakeside",
+      "tranquil",
+      "nature",
+      "village"
+    ],
+    "imageUrl": "images_venue/mestono_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/mestono/photo1.jpg",
+        "alt": "Outdoor restaurant patio with elegantly set tables and chairs right by a calm lake, mountains in the distance under a partly cloudy sky."
+      },
+      {
+        "url": "venue_gallery/mestono/photo2.jpg",
+        "alt": "A bowl of yellowish soup with a lemon wedge and a side of toast with dips, on a table overlooking a lake with seagulls flying in the blue sky and colorful flowers in foreground planters"
+      },
+      {
+        "url": "venue_gallery/mestono/photo3.jpg",
+        "alt": "A spacious outdoor tiled patio with various potted plants and seating, facing a large lake reflecting the setting sun under a partly cloudy sky."
+      },
+      {
+        "url": "venue_gallery/mestono/photo4.jpg",
+        "alt": "A plate of roasted fish with rice and cherry tomatoes, and a glass of white wine, on a wooden table next to a railing overlooking a vast lake under a dramatic, cloudy sky with sunbeams breaking through."
+      },
+      {
+        "url": "venue_gallery/mestono/photo5.jpg",
+        "alt": "Aerial view of a lakeside village with houses nestled on green hills, a beach with people and boats, and a large restaurant extending over the clear blue-green water."
+      }
+    ],
+    "rating": 4.3,
+    "priceLevel": 2,
+    "location": {
+      "address": "Restaurant \"Kaj Mestono\", Peshtani",
+      "googleMapsUrl": "https://www.google.com/maps/place/Restaurant+%22Kaj+Mestono%22/@41.0158135,20.8090438,17z/data=!3m1!4b1!4m6!3m5!1s0x1350c6ab6455d367%3A0xca79a9f097d9f2f3!8m2!3d41.0158135!4d20.8090438!16s%2Fg%2F11y3p8qr9x?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d752.6078887994283!2d20.80904376965506!3d41.01581351011118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c6ab6455d367%3A0xca79a9f097d9f2f3!2zUmVzdGF1cmFudCDigJ5LYWogTWVzdG9ub-KAnA!5e0!3m2!1sen!2smk!4v1752260195657!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046 273 888",
+    "workingHours": "09:00 - 00:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
