@@ -4,8 +4,7 @@
     "name": "Bros Burger",
     "description": "When that burger craving hits in Ohrid, Bros Burger is your go-to for a no-fuss, seriously satisfying experience. It's not about white tablecloths it's about the pure joy of a well-made burger. Imagine biting into a juicy patty, perfectly cooked, with all the right fixings, and that unmistakable aroma of a classic burger joint. It's the kind of place where you can grab a quick, delicious meal that truly hits the spot, leaving you feeling happy and fueled up for more adventures in beautiful Ohrid.",
     "type": [
-      "fast-food",
-      "restaurant"
+      "fast-food"      
     ],
     "imageUrl": "images_venue/fast_food/bros_card.jpg",
     "gallery": [
@@ -3028,6 +3027,54 @@
     },
     "phone": "",
     "workingHours": "10:00 - 19:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 92,
+    "name": "Ana Marija",
+    "description": "Discover a true gem in Ohrid: Restaurant Ana Marija. We invite you to a place where warmth fills the air and the views are simply magnificent. Imagine settling in with loved ones, enjoying a delicious meal while gazing out at the sparkling lights of the old city and the vast, peaceful Lake Ohrid – a picture-perfect backdrop for any occasion.\n\nWhat truly sets us apart is the heartbeat of our evenings: the timeless melodies of Ohridski Calgii. This beautiful traditional music isn't just background noise; it's a living part of our heritage, adding a unique, soulful touch that makes every moment feel authentically Ohrid. It's the perfect way to unwind, connect, and truly feel the spirit of our town.\n\nJoin us at Ana Marija for an experience that delights your palate and touches your heart.",
+    "type": [
+      "restaurant"
+    ],
+    "tags": [
+      "restaurant",
+      "traditional",
+      "scenic",
+      "romantic",
+      "family",
+      "heritage",
+      "music",
+      "authentic"
+    ],
+    "imageUrl": "images_venue/anamarija_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/anamarija/photo1.jpg",
+        "alt": "A beautiful outdoor patio at Restaurant Ana Marija, set with tables and chairs draped in green cloths, all framed by strategically placed green trees. The scene offers a stunning, elevated view of Ohrid's lush landscape, distant city buildings, and the expansive, sparkling Lake Ohrid under a bright sky, promising a delightful dining experience."
+      },
+      {
+        "url": "venue_gallery/anamarija/photo2.jpg",
+        "alt": "A spacious, covered outdoor dining area at Restaurant Ana Marija, featuring numerous tables with light blue tablecloths and dark chairs, ready for guests. Beyond the open sides, trees and a glimpse of the natural surroundings suggest a pleasant, airy dining atmosphere."
+      },
+      {
+        "url": "venue_gallery/anamarija/photo3.jpg",
+        "alt": "An aerial view of Restaurant Ana Marija, showing its multi-level building with red tile roofs and extensive outdoor patio areas. These patios are filled with tables, green umbrellas, and small trees, all set on a hillside overlooking the surrounding green landscape and distant homes, hinting at the restaurant's panoramic views."
+      },
+      {
+        "url": "venue_gallery/anamarija/photo4.jpg",
+        "alt": "A charming outdoor dining terrace at Restaurant Ana Marija, with tables and chairs shaded by well-manicured trees. The view extends far beyond the railing, revealing a vast expanse of green fields, the bustling city of Ohrid in the distance, and the serene blue of Lake Ohrid under a bright, partly cloudy sky, offering an inviting and picturesque setting."
+      }
+    ],
+    "rating": 4.5,
+    "priceLevel": 1,
+    "location": {
+      "address": "Restaurant Ana Marija, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Restaurant+Ana+Marija,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0136474251126!2d20.795785576447834!3d41.11239301300688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dde81f0f8353%3A0xfaabbe5670c0615a!2sRestaurant%20Ana%20Marija!5e0!3m2!1sen!2smk!4v1752257000000!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "072 307 305",
+    "workingHours": "08:00 - 00:00 (Sun - Thur)<br>08:00 - 01:00 (Fri - Sat)",
     "bookingUrl": "#",
     "events": []
   }
