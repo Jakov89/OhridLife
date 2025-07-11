@@ -2787,5 +2787,44 @@
     "workingHours": "09:00 - 01:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 86,
+    "name": "Autotransport Boban",
+    "description": "With Autotransport Boban, your prized possessions are always in motion, safely and swiftly. Whether it's your car, yacht, or boat, we're on call 24/7 to ensure a smooth journey. We're not just transporting vehicles we're delivering peace of mind, one mile at a time.",
+    "type": [
+      "transport",
+      "rental"
+    ],
+    "tags": [
+      "transport",
+      "rental",
+      "vehicle-transport",
+      "car-transport",
+      "boat-transport",
+      "yacht-transport",
+      "24/7"
+    ],
+    "imageUrl": "images_venue/rent/transport/boban_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/boban/photo1.jpg",
+        "alt": "A silver Mercedes-Benz SUV is towing a white and blue Bayliner boat on a trailer down a paved residential street with houses on either side under a clear blue sky"
+      },
+      {
+        "url": "venue_gallery/boban/photo2.jpg",
+        "alt": "A silver Mercedes-Benz SUV is backing a yellow and white speed boat on a trailer into a body of water from a concrete boat ramp. Several other boats are docked in the background, and hills are visible in the distance under a sunny sky. A person is visible in the driver's seat of the SUV"
+      },
+      {
+        "url": "venue_gallery/boban/photo3.jpg",
+        "alt": "A silver Mercedes-Benz SUV is towing a white Mercedes-Benz sedan loaded onto a flatbed car transport trailer down a paved residential street with houses and trees in the background under a clear blue sky"
+      }
+    ],
+    "rating": 4.6,
+    "priceLevel": 1,
+    "phone": "072 516 620",
+    "workingHours": "00:00 - 24:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]

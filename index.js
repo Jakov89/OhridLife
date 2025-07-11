@@ -39,7 +39,7 @@ const mainCategoryConfig = {
     },
     'Rentals & Services': {
         icon: '🚗',
-        subcategories: ['rent-a-car', 'rent-a-bike', 'rent-a-scooter'],
+        subcategories: ['rent-a-car', 'rent-a-bike', 'rent-a-scooter', 'transport'],
     },
     'Shopping': {
         icon: '🛍️',
@@ -321,19 +321,23 @@ function generateVenueSchema(venue) {
         "description": venue.description.en,
         "image": `${window.location.origin}/${venue.imageUrl}`,
         "telephone": venue.phone,
-        "address": {
+        "url": window.location.href // This should ideally be a direct link to the venue if such pages existed
+    };
+
+    // Only add address if venue has location
+    if (venue.location?.address) {
+        schema.address = {
             "@type": "PostalAddress",
             "streetAddress": venue.location.address,
             "addressLocality": "Ohrid",
             "addressCountry": "MK"
-        },
-        "geo": {
+        };
+        schema.geo = {
             "@type": "GeoCoordinates",
             // Note: This requires getting lat/lon from the Google Maps URL, which is complex.
             // A simpler approach is to use the address, or add lat/lon to your JSON.
-        },
-        "url": window.location.href // This should ideally be a direct link to the venue if such pages existed
-    };
+        };
+    }
 
     // Use a more specific type if possible
     const venueType = Array.isArray(venue.type.en) ? venue.type.en[0] : venue.type.en;
@@ -515,7 +519,7 @@ function createSlider(elementOrSelector, options, name) {
 function renderVenueCard(venue) {
     const name = venue.name?.en || 'Unnamed Venue';
     const description = venue.description?.en || 'No description available.';
-    const location = venue.location?.address || 'Location not specified.';
+    const location = venue.location?.address || null;
     
     let categoryString = 'General';
     if (venue.type?.en) {
@@ -552,6 +556,16 @@ function renderVenueCard(venue) {
         ratingBadge = `<span class="venue-card-badge no-rating-badge">Not yet rated</span>`;
     }
 
+    // Build location HTML conditionally
+    const locationHtml = location ? `
+        <div class="venue-card-location">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+            </svg>
+            <span>${location}</span>
+        </div>
+    ` : '';
+
     return `
         <div class="keen-slider__slide" data-venue-id="${venue.id}">
             <div class="venue-card" onclick="openVenueModal(${venue.id})">
@@ -566,12 +580,7 @@ function renderVenueCard(venue) {
                     <span class="venue-card-category">${categoryString}</span>
                     <h3 class="venue-card-title">${name}</h3>
                     <p class="venue-card-description">${description}</p>
-                    <div class="venue-card-location">
-                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                        </svg>
-                        <span>${location}</span>
-                    </div>
+                    ${locationHtml}
                 </div>
             </div>
         </div>
@@ -749,7 +758,7 @@ function categorizeVenueForRotation(venue) {
     const types = Array.isArray(venue.type?.en) ? venue.type.en : [venue.type?.en];
     
     // Check for services (including pet services) - HIGHER PRIORITY
-    if (types.some(type => ['rent-a-car', 'rent-a-scooter', 'rent-a-bike', 'rent', 'pet-shop', 'grooming', 'vet'].includes(type))) {
+    if (types.some(type => ['rent-a-car', 'rent-a-scooter', 'rent-a-bike', 'rent', 'transport', 'pet-shop', 'grooming', 'vet'].includes(type))) {
         return 'services';
     }
     
@@ -936,6 +945,7 @@ function populateAllVenuesSlider(venues) {
         sliderContainer.innerHTML = venues.map(renderVenueCard).join('');
         if (arrows.left) arrows.left.style.display = 'none';
         if (arrows.right) arrows.right.style.display = 'none';
+        observeLazyImages(sliderContainer); // Fix: Observe images for single venues too!
         return;
     }
     
