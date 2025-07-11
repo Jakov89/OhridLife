@@ -3104,5 +3104,56 @@
     "workingHours": "08:00 - 00:00 (Sun - Thur)<br>08:00 - 01:00 (Fri - Sat)",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 93,
+    "name": "Restaurant Valentino",
+    "description": "Dive into a world of taste at Valentino Ohrid. We're dedicated to serving truly good food with an impressive variety of styles on our menu. Whatever your preference, you'll find a delicious experience crafted just for you. Come and discover your next culinary favorite!",
+    "type": [
+      "restaurant"
+    ],
+    "tags": [
+      "restaurant",
+      "fine-dining",
+      "variety",
+      "quality",
+      "elegant",
+      "modern",
+      "culinary"
+    ],
+    "imageUrl": "images_venue/valentino_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/valentino/photo1.jpg",
+        "alt": "The interior dining area of Valentino restaurant, warmly lit with modern green ambient lighting along the ceiling. Tables are neatly set with white tablecloths and elegant green-backed chairs, with a large potted plant adding a touch of greenery."
+      },
+      {
+        "url": "venue_gallery/valentino/photo2.jpg",
+        "alt": "A wide view of the inviting dining room at Valentino restaurant, showcasing multiple tables set with white tablecloths and green-backed chairs. The room is illuminated by warm green cove lighting in the ceiling, creating an elegant and comfortable atmosphere."
+      },
+      {
+        "url": "venue_gallery/valentino/photo3.jpg",
+        "alt": "An evening exterior shot of Valentino Ristorante, with its distinctive green building and illuminated \"VALENTINO\" sign. The streetlights are on, and several cars are parked along the road, indicating the restaurant's presence in a quiet, tree-lined neighborhood at dusk."
+      },
+      {
+        "url": "venue_gallery/valentino/photo4.jpg",
+        "alt": "A close-up of a delicious plate featuring sliced meat (likely pork) covered in a rich mushroom and bacon cream sauce. It's accompanied by golden roasted potato wedges, vibrant green broccoli florets, and a portion of fluffy rice, beautifully garnished with a cherry tomato and fresh herbs."
+      },
+      {
+        "url": "venue_gallery/valentino/photo5.jpg",
+        "alt": "A close-up of a beautifully plated dish featuring tender grilled octopus tentacles, accompanied by roasted potato wedges, sliced grilled zucchini, and fresh orange segments. A small side bowl of vibrant tomato and olive salsa, garnished with herbs and a drizzle of dark sauce, completes this appealing and colorful meal."
+      }
+    ],
+    "rating": 4.5,
+    "priceLevel": 2,
+    "location": {
+      "address": "Restaurant Valentino, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Restaurant+Valentino,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0136474251126!2d20.795785576447834!3d41.11239301300688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dde81f0f8353%3A0xfaabbe5670c0615a!2sRestaurant%20Valentino!5e0!3m2!1sen!2smk!4v1752258000000!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070 304 103",
+    "workingHours": "08:00 - 00:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
