@@ -31,7 +31,7 @@ const mainCategoryConfig = {
     },
     'Adventure & Sport': {
         icon: '🏞️',
-        subcategories: ['kayaking', 'sup', 'diving', 'cruises', 'hiking', 'atv', 'sports', 'camping', 'gym', 'fitness'],
+        subcategories: ['kayaking', 'sup', 'diving', 'cruises', 'hiking', 'atv', 'sports', 'camping', 'gym', 'fitness', 'paragliding'],
     },
     'Health & Wellness': {
         icon: '⚕️',
@@ -768,7 +768,7 @@ function categorizeVenueForRotation(venue) {
     }
     
     // Check for adventure & sports
-    if (types.some(type => ['atv', 'diving', 'sup', 'sports', 'gym', 'kayaking', 'hiking', 'camping'].includes(type))) {
+    if (types.some(type => ['atv', 'diving', 'sup', 'sports', 'gym', 'kayaking', 'hiking', 'camping', 'paragliding'].includes(type))) {
         return 'adventure-sports';
     }
     

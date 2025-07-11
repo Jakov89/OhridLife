@@ -2826,5 +2826,64 @@
     "workingHours": "00:00 - 24:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 87,
+    "name": "Paragliding Ohrid",
+    "description": "Prepare to embrace the sky with our paragliding adventures from the majestic Mount Galicica, overlooking the serene beauty of Ohrid. We believe in more than just a flight we offer a personal journey into the clouds, guided by passionate pilots who share your thrill. Feel the wind whisper against your face as you launch into an unforgettable panorama, where the deep blue of Lake Ohrid merges with the endless horizon. We're here to help you not just fly, but to truly feel the freedom and magic of the moment, creating memories that will lift your spirit long after your feet touch the ground. Your adventure, our passion – together, we'll soar.",
+    "type": [
+      "paragliding"
+    ],
+    "tags": [
+      "adventure",
+      "paragliding",
+      "outdoor",
+      "scenic",
+      "extreme-sport",
+      "mountain",
+      "aerial"
+    ],
+    "imageUrl": "images_venue/adventure_sport/paragliding_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/paraglidingohrid/photo1.jpg",
+        "alt": "Aerial view from a paraglider showing the vast, deep blue Lake Ohrid meeting a vibrant green forested coastline with winding roads, under a clear sky"
+      },
+      {
+        "url": "venue_gallery/paraglidingohrid/photo2.jpg",
+        "alt": "A paraglider's view looking out over Lake Ohrid at sunset, with the water reflecting the warm colors of the sky and distant land bathed in golden light"
+      },
+      {
+        "url": "venue_gallery/paraglidingohrid/photo3.jpg",
+        "alt": "A person in sunglasses and a helmet is seen mid-air during a tandem paragliding flight over Lake Ohrid, with a large aquapark and green landscape visible below"
+      },
+      {
+        "url": "venue_gallery/paraglidingohrid/photo4.jpg",
+        "alt": "A paraglider's eye view from a tandem flight showing the expansive blue waters of Lake Ohrid, curving around the densely populated town of Ohrid with its many buildings and a visible coastline"
+      },
+      {
+        "url": "venue_gallery/paraglidingohrid/photo5.jpg",
+        "alt": "A person in a blue jacket and helmet is captured in a selfie-style view during a tandem paragliding flight over very clear, turquoise waters of Lake Ohrid, with distant land and a cloudy sky"
+      },
+      {
+        "url": "venue_gallery/paraglidingohrid/photo6.jpg",
+        "alt": "Two colorful paragliders are seen high in the air over a sprawling green mountain, with the vast blue Lake Ohrid stretching into the distance under a bright sky"
+      },
+      {
+        "url": "venue_gallery/paraglidingohrid/photo7.jpg",
+        "alt": "A paraglider's view looking down over the vibrant turquoise waters of Lake Ohrid, with the densely packed red-roofed buildings of Ohrid town nestled along the curved coastline"
+      }
+    ],
+    "rating": 5.0,
+    "priceLevel": 2,
+    "location": {
+      "address": "Paragliding Ohrid, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Paragliding+Ohrid/@41.1027398,20.8059143,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dcaa4278ec37:0xf85fd941317e66f1!8m2!3d41.1027398!4d20.8059143!16s%2Fg%2F11y3p8qr9x?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6012.911211783943!2d20.8059143!3d41.1027398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcaa4278ec37%3A0xf85fd941317e66f1!2sParagliding%20Ohrid!5e0!3m2!1sen!2smk!4v1752242724894!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "+38975281091",
+    "workingHours": "06:00 - 22:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
