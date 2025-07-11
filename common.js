@@ -86,7 +86,7 @@ function renderFooter() {
                 <div class="footer-section">
                     <h4>About Ohrid</h4>
                     <ul>
-                        <li><a href="/learn">History & Culture</a></li>
+                        <li><a href="https://ohrid.gov.mk/%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%98%D0%B0-%D0%B7%D0%B0-%D0%BE%D1%85%D1%80%D0%B8%D0%B4/" target="_blank" rel="noopener noreferrer">History & Culture</a></li>
                         <li><a href="https://whc.unesco.org/en/list/99/" target="_blank" rel="noopener noreferrer">UNESCO Heritage</a></li>
                         <li><a href="/learn">Local Traditions</a></li>
                         <li><a href="/learn">Travel Tips</a></li>
@@ -96,9 +96,9 @@ function renderFooter() {
                 <div class="footer-section">
                     <h4>Contact & Info</h4>
                     <ul>
-                        <li><a href="mailto:contact@ohridlife.com">Get in Touch</a></li>
-                        <li><a href="mailto:events@ohridlife.com">Submit Event</a></li>
-                        <li><a href="mailto:venues@ohridlife.com">Add Your Venue</a></li>
+                        <li><a href="mailto:contact@ohridhub.mk">Get in Touch</a></li>
+                        <li><a href="mailto:contact@ohridhub.mk">Submit Event</a></li>
+                        <li><a href="mailto:contact@ohridhub.mk">Add Your Venue</a></li>
                     </ul>
                 </div>
             </div>
