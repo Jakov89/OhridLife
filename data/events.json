@@ -2937,6 +2937,21 @@
         "eventBookingUrl": "#",
         "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.4998263787522!2d20.79826309209592!3d41.112706236366044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddf33f004b8b%3A0x3a3c071af81981e0!2sPod%20Murenka!5e0!3m2!1sen!2smk!4v1752147241867!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
         "locationName": "Cafe Pod Murenkana"
+    },
+    {
+        "id": 194,
+        "venueId": null,
+        "eventName": "Malite Dzvezdicki so Ka Dvojce",
+        "isoDate": "2025-07-18",
+        "startTime": "20:00",
+        "day": "Fri.",
+        "description": "🌟 Experience the Magic: \"Little Stars with Ka Dvojche\" 5th Jubilee! 🌟\n\nJoin us this Friday, July 18th, at 8:00 PM at \"Vangel Naumovski\" Square in Ohrid for the 5th annual celebration of young talent and creativity!\n\n🎭 What to Expect:\n\n🎵 A special premiere of \"Пеј Охриде\" by Marama & Broz, featuring our own Little Stars!\n\n🎤 Heartwarming performances by 25 aspiring vocalists who will steal your heart\n\n🎨 An inspiring art exhibition by Tactus Art School showcasing young artistic talent\n\n🎪 A unique creative performance by the exceptional Nikola Toni\n\nThis enchanting evening celebrates culture, creativity, and the bright future of our children. Don't miss this magical celebration of young talent under the Ohrid sky! ✨",
+        "category": "Music",
+        "imageUrl": "events_image/jovica/k-2.jpg",
+        "eventBookingUrl": "#",
+        "ticketPrice": "Free Entry",
+        "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5060172365766!2d20.808492669655323!3d41.11216540862888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db5f4a4301bf%3A0x3cbf1d3133d981d6!2sThe%20Four%20Rivers%20Of%20Paradise!5e0!3m2!1sen!2smk!4v1752252495989!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+        "locationName": "Malo Plostadce Vangel Naumovski"
     }
 ]
 
