@@ -2977,5 +2977,54 @@
     "workingHours": "10:00 - 22:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 90,
+    "name": "Park Golden Beach",
+    "description": "Discover Park Golden Beach, the ultimate destination on Lake Ohrid where the fun never stops! Our beautiful beach and inviting swimming pool are your playgrounds for thrilling day parties, filled with sunshine, great music, and an infectious vibe.\n\nBut the real magic happens when the stars come out! Our poolside transforms into Ohrid's hottest spot for electrifying night parties, offering an unparalleled atmosphere for dancing and creating unforgettable memories.\n\nAt Park Golden Beach, every moment is a celebration. Join us for an exhilarating experience where the lake's beauty meets non-stop entertainment.",
+    "type": [
+      "beach"
+    ],
+    "tags": [
+      "beach",
+      "pool",
+      "party",
+      "lakeside",
+      "swimming",
+      "nightlife",
+      "entertainment",
+      "day-parties",
+      "night-parties"
+    ],
+    "imageUrl": "images_venue/beach/golden_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/golden/photo1.jpg",
+        "alt": "A bustling outdoor restaurant and lounge area at Park Golden Beach, filled with people enjoying drinks and conversations under large, shaded awnings. The vibrant atmosphere suggests a lively daytime gathering with distant views of Lake Ohrid."
+      },
+      {
+        "url": "venue_gallery/golden/photo2.jpg",
+        "alt": "A lively day scene at Park Golden Beach, showing a pebble beach crowded with people relaxing on sun loungers and bean bags under numerous white umbrellas. Many are also enjoying the clear waters of Lake Ohrid, with a long stone pier visible and a sunny, inviting sky overhead."
+      },
+      {
+        "url": "venue_gallery/golden/photo3.jpg",
+        "alt": "A large, inviting swimming pool at Park Golden Beach, filled with people of all ages swimming, playing, and enjoying the sun. The clear blue water, surrounded by lounge chairs, evokes a perfect day for relaxation and fun, with the \"Golden Beach Park\" logo visible."
+      },
+      {
+        "url": "venue_gallery/golden/photo4.jpg",
+        "alt": "A vibrant aerial view of Park Golden Beach, showcasing its large, bright blue swimming pool surrounded by sun loungers and cabanas, bustling with people. To the right, a wide beach area with numerous white umbrellas and more people leads into the clear waters of Lake Ohrid, illustrating a full-service summer leisure complex."
+      }
+    ],
+    "rating": 4.2,
+    "priceLevel": 3,
+    "location": {
+      "address": "Park Golden Beach, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Golden+Beach/@41.0899427,20.7988477,17z/data=!3m1!4b1!4m6!3m5!1s0x1350c3507e60c8ed%3A0x97b1fb096f26e52!8m2!3d41.0899427!4d20.7988477!16s%2Fg%2F11y3p8qr9x?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.99937404797475!2d20.79884772427415!3d41.089942723622265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c3507e60c8ed%3A0x97b1fb096f26e52!2sGolden%20Beach!5e0!3m2!1sen!2smk!4v1752254797299!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075 255 599, 073 308 308",
+    "workingHours": "09:00 - 01:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
