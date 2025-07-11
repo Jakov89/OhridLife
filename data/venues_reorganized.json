@@ -2885,5 +2885,46 @@
     "workingHours": "06:00 - 22:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 88,
+    "name": "Urban Shine Ohrid",
+    "description": "Urban Shine Ohrid is your premier destination for meticulous car detailing and expert furniture cleaning. We bring a professional touch to revitalize your vehicles and restore the vibrancy of your home furnishings, ensuring a truly comprehensive clean",
+    "type": [
+      "detailing"
+    ],
+    "tags": [
+      "detailing",
+      "car-cleaning",
+      "furniture-cleaning",
+      "professional",
+      "cleaning-service",
+      "24/7"
+    ],
+    "imageUrl": "images_venue/rent/detailing/urban_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/urbanshine/1.jpg",
+        "alt": "A split image showing the \"before\" and \"after\" of a car's interior floor. The left side (\"before\") shows a dirty black car carpet covered in debris and crumbs. The right side (\"after\") shows the same carpet clean and free of dirt. The logo \"@Urban Shine\" is watermarked in the middle."
+      },
+      {
+        "url": "venue_gallery/urbanshine/2.jpg",
+        "alt": "A split image showing the \"before\" and \"after\" of a car's rear seat. The left side (\"before\") shows a soiled, discolored black fabric car seat with visible dirt and stains. The right side (\"after\") shows the same seat looking clean, dark, and restored to its original appearance. The logo \"@Urban Shine\" is watermarked in the middle."
+      },
+      {
+        "url": "venue_gallery/urbanshine/3.jpg",
+        "alt": "A split image showing the \"before\" and \"after\" of a car's front passenger seat. The left side (\"before\") shows a dirty, speckled black fabric car seat with visible debris and a cleaning product bottle. The right side (\"after\") shows the same seat looking thoroughly clean, dark, and free of dirt. The logo \"@Urban Shine\" is watermarked in the middle."
+      },
+      {
+        "url": "venue_gallery/urbanshine/4.jpg",
+        "alt": "A split image showing the \"before\" and \"after\" of a multi-colored upholstered furniture piece. The left side (\"before\") shows the fabric with visible dirt, smudges, and discoloration on various patches. The right side (\"after\") shows the same furniture fabric looking clean, with vibrant, distinct colors restored. The logo \"@Urban Shine\" is watermarked in the middle."
+      }
+    ],
+    "rating": 4.6,
+    "priceLevel": 1,
+    "phone": "075 808 545",
+    "workingHours": "00:00 - 24:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]

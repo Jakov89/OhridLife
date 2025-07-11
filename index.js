@@ -39,7 +39,7 @@ const mainCategoryConfig = {
     },
     'Rentals & Services': {
         icon: '🚗',
-        subcategories: ['rent-a-car', 'rent-a-bike', 'rent-a-scooter', 'transport'],
+        subcategories: ['rent-a-car', 'rent-a-bike', 'rent-a-scooter', 'transport', 'detailing'],
     },
     'Shopping': {
         icon: '🛍️',
