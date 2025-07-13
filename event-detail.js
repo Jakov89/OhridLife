@@ -95,6 +95,31 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
+    function updateMetaTags(event) {
+        // Update Open Graph meta tags
+        document.querySelector('meta[property="og:title"]').content = `${event.eventName} - OhridHub`;
+        document.querySelector('meta[property="og:description"]').content = event.description || event.longDescription || 'Discover amazing events in Ohrid, North Macedonia';
+        
+        // Update image if available
+        if (event.imageUrl) {
+            const baseUrl = 'https://www.ohridhub.com';
+            const normalizedImageUrl = event.imageUrl.startsWith('/') ? event.imageUrl : `/${event.imageUrl}`;
+            const fullImageUrl = `${baseUrl}${normalizedImageUrl}`;
+            document.querySelector('meta[property="og:image"]').content = fullImageUrl;
+            document.querySelector('meta[name="twitter:image"]').content = fullImageUrl;
+        }
+        
+        // Update Twitter Card meta tags
+        document.querySelector('meta[name="twitter:title"]').content = `${event.eventName} - OhridHub`;
+        document.querySelector('meta[name="twitter:description"]').content = event.description || event.longDescription || 'Discover amazing events in Ohrid, North Macedonia';
+        
+        // Update canonical URL and og:url
+        const canonicalUrl = `https://www.ohridhub.com/event/${event.id}`;
+        document.querySelector('link[rel="canonical"]').href = canonicalUrl;
+        document.querySelector('meta[property="og:url"]').content = canonicalUrl;
+        document.querySelector('meta[property="twitter:url"]').content = canonicalUrl;
+    }
+    
     function displayEventData(event) {
         try {
             // Hide loading spinner
@@ -102,6 +127,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Show event card
             document.getElementById('event-detail-card').style.display = 'block';
+            
+            // Update meta tags for social sharing
+            updateMetaTags(event);
             
             // Update page title
             document.title = `${event.eventName || 'Event'} - OhridHub`;
