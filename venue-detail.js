@@ -9,6 +9,41 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+function updateMetaTags(venue) {
+    // Get the venue name, defaulting to a generic title if not available
+    const name = venue.name?.en || venue.name || 'Venue';
+    const description = venue.description?.en || venue.description || 'Discover amazing venues in Ohrid, North Macedonia';
+    
+    // Update page title
+    document.title = `${name} - OhridHub`;
+    
+    // Update meta description
+    document.querySelector('meta[name="description"]').content = description;
+    
+    // Update Open Graph meta tags
+    document.querySelector('meta[property="og:title"]').content = `${name} - OhridHub`;
+    document.querySelector('meta[property="og:description"]').content = description;
+    
+    // Update image if available
+    if (venue.imageUrl) {
+        const baseUrl = 'https://www.ohridhub.com';
+        const normalizedImageUrl = venue.imageUrl.startsWith('/') ? venue.imageUrl : `/${venue.imageUrl}`;
+        const fullImageUrl = `${baseUrl}${normalizedImageUrl}`;
+        document.querySelector('meta[property="og:image"]').content = fullImageUrl;
+        document.querySelector('meta[name="twitter:image"]').content = fullImageUrl;
+    }
+    
+    // Update Twitter Card meta tags
+    document.querySelector('meta[name="twitter:title"]').content = `${name} - OhridHub`;
+    document.querySelector('meta[name="twitter:description"]').content = description;
+    
+    // Update canonical URL and og:url
+    const canonicalUrl = `https://www.ohridhub.com/venue/${venue.id}`;
+    document.querySelector('link[rel="canonical"]').href = canonicalUrl;
+    document.querySelector('meta[property="og:url"]').content = canonicalUrl;
+    document.querySelector('meta[property="twitter:url"]').content = canonicalUrl;
+}
+
 async function fetchVenueDetails(id, container) {
     try {
         const response = await fetch(`/api/venues/${id}`);
@@ -24,6 +59,9 @@ async function fetchVenueDetails(id, container) {
 }
 
 function renderVenueDetails(venue, container) {
+    // Update meta tags for social sharing
+    updateMetaTags(venue);
+
     // Clear the "Loading..." message
     container.innerHTML = '';
 
