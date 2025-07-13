@@ -306,10 +306,10 @@ app.get('/events/:id', (req, res) => {
                 .replace(/<meta property="og:title" content=".*">/, `<meta property="og:title" content="${title}">`)
                 .replace(/<meta property="og:description" content=".*">/, `<meta property="og:description" content="${description}">`)
                 .replace(/<meta property="og:image" content=".*">/, `<meta property="og:image" content="${imageUrl}">`)
-                .replace(/<meta property="twitter:url" content=".*">/, `<meta property="twitter:url" content="${pageUrl}">`)
-                .replace(/<meta property="twitter:title" content=".*">/, `<meta property="twitter:title" content="${title}">`)
-                .replace(/<meta property="twitter:description" content=".*">/, `<meta property="twitter:description" content="${description}">`)
-                .replace(/<meta property="twitter:image" content=".*">/, `<meta property="twitter:image" content="${imageUrl}">`);
+                .replace(/<meta name="twitter:url" content=".*">/, `<meta name="twitter:url" content="${pageUrl}">`)
+                .replace(/<meta name="twitter:title" content=".*">/, `<meta name="twitter:title" content="${title}">`)
+                .replace(/<meta name="twitter:description" content=".*">/, `<meta name="twitter:description" content="${description}">`)
+                .replace(/<meta name="twitter:image" content=".*">/, `<meta name="twitter:image" content="${imageUrl}">`);
             
             // Inject schema markup
             const schemaScript = `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
@@ -445,10 +445,10 @@ app.get('/organizations/:id', (req, res) => {
                 .replace(/<meta property="og:title" content=".*">/, `<meta property="og:title" content="${name}">`)
                 .replace(/<meta property="og:description" content=".*">/, `<meta property="og:description" content="${description}">`)
                 .replace(/<meta property="og:image" content=".*">/, `<meta property="og:image" content="${imageUrl}">`)
-                .replace(/<meta property="twitter:url" content=".*">/, `<meta property="twitter:url" content="${pageUrl}">`)
-                .replace(/<meta property="twitter:title" content=".*">/, `<meta property="twitter:title" content="${name}">`)
-                .replace(/<meta property="twitter:description" content=".*">/, `<meta property="twitter:description" content="${description}">`)
-                .replace(/<meta property="twitter:image" content=".*">/, `<meta property="twitter:image" content="${imageUrl}">`);
+                .replace(/<meta name="twitter:url" content=".*">/, `<meta name="twitter:url" content="${pageUrl}">`)
+                .replace(/<meta name="twitter:title" content=".*">/, `<meta name="twitter:title" content="${name}">`)
+                .replace(/<meta name="twitter:description" content=".*">/, `<meta name="twitter:description" content="${description}">`)
+                .replace(/<meta name="twitter:image" content=".*">/, `<meta name="twitter:image" content="${imageUrl}">`);
             
             const script = `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
             finalHtml = finalHtml.replace('</head>', `${script}</head>`);
@@ -608,20 +608,20 @@ app.get('/venues/:id', (req, res) => {
                     `<meta property="og:url" content="${pageUrl}">`
                 )
                 .replace(
-                    '<meta property="twitter:title" content="Venue Details - OhridHub">',
-                    `<meta property="twitter:title" content="${title}">`
+                    '<meta name="twitter:title" content="Venue Details - OhridHub">',
+                    `<meta name="twitter:title" content="${title}">`
                 )
                 .replace(
-                    '<meta property="twitter:description" content="Discover details about venues in Ohrid.">',
-                    `<meta property="twitter:description" content="${description}">`
+                    '<meta name="twitter:description" content="Discover details about venues in Ohrid.">',
+                    `<meta name="twitter:description" content="${description}">`
                 )
                 .replace(
-                    '<meta property="twitter:image" content="https://www.ohridhub.com/images_ohrid/photo1.jpg">',
-                    `<meta property="twitter:image" content="${imageUrl}">`
+                    '<meta name="twitter:image" content="https://www.ohridhub.com/images_ohrid/photo1.jpg">',
+                    `<meta name="twitter:image" content="${imageUrl}">`
                 )
                 .replace(
-                    '<meta property="twitter:url" content="https://www.ohridhub.com/">',
-                    `<meta property="twitter:url" content="${pageUrl}">`
+                    '<meta name="twitter:url" content="https://www.ohridhub.com/">',
+                    `<meta name="twitter:url" content="${pageUrl}">`
                 );
 
             // Inject Schema.org

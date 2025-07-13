@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const canonicalUrl = `https://www.ohridhub.com/event/${event.id}`;
         document.querySelector('link[rel="canonical"]').href = canonicalUrl;
         document.querySelector('meta[property="og:url"]').content = canonicalUrl;
-        document.querySelector('meta[property="twitter:url"]').content = canonicalUrl;
+        document.querySelector('meta[name="twitter:url"]').content = canonicalUrl;
     }
     
     function displayEventData(event) {

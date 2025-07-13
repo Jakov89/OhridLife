@@ -41,7 +41,7 @@ function updateMetaTags(venue) {
     const canonicalUrl = `https://www.ohridhub.com/venue/${venue.id}`;
     document.querySelector('link[rel="canonical"]').href = canonicalUrl;
     document.querySelector('meta[property="og:url"]').content = canonicalUrl;
-    document.querySelector('meta[property="twitter:url"]').content = canonicalUrl;
+    document.querySelector('meta[name="twitter:url"]').content = canonicalUrl;
 }
 
 async function fetchVenueDetails(id, container) {
