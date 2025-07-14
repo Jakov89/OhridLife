@@ -1,19 +1,11 @@
 [
   {
     "id": 24,
-    "name": {
-      "en": "Bros Burger",
-      "mk": ""
-    },
-    "description": {
-      "en": "When that burger craving hits in Ohrid, Bros Burger is your go-to for a no-fuss, seriously satisfying experience. It's not about white tablecloths it's about the pure joy of a well-made burger. Imagine biting into a juicy patty, perfectly cooked, with all the right fixings, and that unmistakable aroma of a classic burger joint. It's the kind of place where you can grab a quick, delicious meal that truly hits the spot, leaving you feeling happy and fueled up for more adventures in beautiful Ohrid.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "fast-food"
-      ]
-    },
+    "name": "Bros Burger",
+    "description": "When that burger craving hits in Ohrid, Bros Burger is your go-to for a no-fuss, seriously satisfying experience. It's not about white tablecloths it's about the pure joy of a well-made burger. Imagine biting into a juicy patty, perfectly cooked, with all the right fixings, and that unmistakable aroma of a classic burger joint. It's the kind of place where you can grab a quick, delicious meal that truly hits the spot, leaving you feeling happy and fueled up for more adventures in beautiful Ohrid.",
+    "type": [
+      "fast-food"      
+    ],
     "imageUrl": "images_venue/fast_food/bros_card.jpg",
     "gallery": [
       {
@@ -42,20 +34,12 @@
   },
   {
     "id": 83,
-    "name": {
-      "en": "Cosa Nostra Pizza",
-      "mk": ""
-    },
-    "description": {
-      "en": "Craving authentic flavors in Ohrid? Pizzeria Cosa Nostra offers a delightful menu of pizzas, pasta, and more, served in a relaxed and welcoming setting. Perfect for a casual lunch or a delightful dinner out",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "restaurant",
-        "pizza"
-      ]
-    },
+    "name": "Cosa Nostra Pizza",
+    "description": "Craving authentic flavors in Ohrid? Pizzeria Cosa Nostra offers a delightful menu of pizzas, pasta, and more, served in a relaxed and welcoming setting. Perfect for a casual lunch or a delightful dinner out",
+    "type": [
+      "restaurant",
+      "pizza"
+    ],
     "tags": [
       "restaurant",
       "pizza",
@@ -94,19 +78,9 @@
   },
   {
     "id": 10,
-    "name": {
-      "en": "Despina Event Venue & Lounge",
-      "mk": ""
-    },
-    "description": {
-      "en": "Primarily a venue for weddings and private events, Despina also boasts a perfect lakeside location that's accessible at other times.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "restaurant"
-      ]
-    },
+    "name": "Despina Event Venue & Lounge",
+    "description": "Primarily a venue for weddings and private events, Despina also boasts a perfect lakeside location that's accessible at other times.",
+    "type": "restaurant",
     "tags": [
       "restaurant",
       "scenic",
@@ -141,20 +115,12 @@
   },
   {
     "id": 84,
-    "name": {
-      "en": "Leonardo Pizza",
-      "mk": ""
-    },
-    "description": {
-      "en": "Leonardo in Ohrid is your go-to spot for great food and a fantastic vibe. Come savor our delicious pizzas and more in a setting that's always ready to welcome you, whether for a casual bite or a festive gathering.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "restaurant",
-        "pizza"
-      ]
-    },
+    "name": "Leonardo Pizza",
+    "description": "Leonardo in Ohrid is your go-to spot for great food and a fantastic vibe. Come savor our delicious pizzas and more in a setting that's always ready to welcome you, whether for a casual bite or a festive gathering.",
+    "type": [
+      "restaurant",
+      "pizza"
+    ],
     "tags": [
       "restaurant",
       "pizza",
@@ -193,19 +159,9 @@
   },
   {
     "id": 79,
-    "name": {
-      "en": "Meana Lagadin",
-      "mk": ""
-    },
-    "description": {
-      "en": "Step inside Meana Lagadin and instantly feel like you've found a warm, inviting home away from home. With its beautiful exposed brick, rustic wooden touches, and that lovely, cozy lighting, it just feels like the perfect place to gather.\n\nThey're passionate about bringing you delicious, traditional flavors that truly hit the spot, all served in an atmosphere that's genuinely relaxed and friendly. Whether you're sharing a meal with loved ones or just unwinding, Meana Lagadin promises a comfortable setting where you can simply enjoy good food and great company. It's a place where you can taste tradition and feel truly welcome.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "restaurant"
-      ]
-    },
+    "name": "Meana Lagadin",
+    "description": "Step inside Meana Lagadin and instantly feel like you've found a warm, inviting home away from home. With its beautiful exposed brick, rustic wooden touches, and that lovely, cozy lighting, it just feels like the perfect place to gather.\n\nThey're passionate about bringing you delicious, traditional flavors that truly hit the spot, all served in an atmosphere that's genuinely relaxed and friendly. Whether you're sharing a meal with loved ones or just unwinding, Meana Lagadin promises a comfortable setting where you can simply enjoy good food and great company. It's a place where you can taste tradition and feel truly welcome.",
+    "type": "restaurant",
     "tags": [
       "restaurant",
       "traditional",
@@ -242,19 +198,9 @@
   },
   {
     "id": 25,
-    "name": {
-      "en": "Pink Panter",
-      "mk": ""
-    },
-    "description": {
-      "en": "A well-known fast-food spot in Ohrid, famous for its tasty burgers and quick service.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "fast-food"
-      ]
-    },
+    "name": "Pink Panter",
+    "description": "A well-known fast-food spot in Ohrid, famous for its tasty burgers and quick service.",
+    "type": "fast-food",
     "tags": [
       "fast-food",
       "foodie",
@@ -275,19 +221,9 @@
   },
   {
     "id": 26,
-    "name": {
-      "en": "Pinokio",
-      "mk": ""
-    },
-    "description": {
-      "en": "A charming and popular fast-food spot, perfect for a quick and delicious bite.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "fast-food"
-      ]
-    },
+    "name": "Pinokio",
+    "description": "A charming and popular fast-food spot, perfect for a quick and delicious bite.",
+    "type": "fast-food",
     "tags": [
       "fast-food",
       "foodie",
@@ -322,19 +258,9 @@
   },
   {
     "id": 80,
-    "name": {
-      "en": "Pizza Via Sacra",
-      "mk": ""
-    },
-    "description": {
-      "en": "Craving authentic, delicious pizza in the heart of Ohrid? Look no further than Pizza Via Sacra! This cozy spot is all about serving up perfectly crafted pizzas with that irresistible combination of crispy crust, fresh toppings, and melted cheese that hits just right.\n\nWhether you're looking for a quick bite, a casual dinner with friends, or a late-night treat, Pizza Via Sacra delivers exactly what you're craving. With their warm, welcoming atmosphere and commitment to quality ingredients, it's the perfect place to satisfy your pizza desires. Come hungry and leave happy!",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "restaurant"
-      ]
-    },
+    "name": "Pizza Via Sacra",
+    "description": "Craving authentic, delicious pizza in the heart of Ohrid? Look no further than Pizza Via Sacra! This cozy spot is all about serving up perfectly crafted pizzas with that irresistible combination of crispy crust, fresh toppings, and melted cheese that hits just right.\n\nWhether you're looking for a quick bite, a casual dinner with friends, or a late-night treat, Pizza Via Sacra delivers exactly what you're craving. With their warm, welcoming atmosphere and commitment to quality ingredients, it's the perfect place to satisfy your pizza desires. Come hungry and leave happy!",
+    "type": "restaurant",
     "tags": [
       "restaurant",
       "pizza",
@@ -358,19 +284,9 @@
   },
   {
     "id": 27,
-    "name": {
-      "en": "Simple Burgers",
-      "mk": ""
-    },
-    "description": {
-      "en": "Simple Burgers in Ohrid lives up to its name by delivering exactly what you crave: straightforward, delicious burgers done right. It's that friendly, unpretentious spot where the focus is simply on a juicy patty, fresh toppings, and a perfectly toasted bun. You can feel the care that goes into making each burger a satisfying experience – the kind of meal that hits the spot without any fuss, leaving you happy and ready to explore more of Ohrid's charm.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "fast-food"
-      ]
-    },
+    "name": "Simple Burgers",
+    "description": "Simple Burgers in Ohrid lives up to its name by delivering exactly what you crave: straightforward, delicious burgers done right. It's that friendly, unpretentious spot where the focus is simply on a juicy patty, fresh toppings, and a perfectly toasted bun. You can feel the care that goes into making each burger a satisfying experience – the kind of meal that hits the spot without any fuss, leaving you happy and ready to explore more of Ohrid's charm.",
+    "type": "fast-food",
     "tags": [
       "fast-food",
       "foodie",
@@ -405,19 +321,9 @@
   },
   {
     "id": 14,
-    "name": {
-      "en": "Stazione",
-      "mk": ""
-    },
-    "description": {
-      "en": "Nestled by the serene waters of Lake Ohrid, Stazione Ohrid isn't just a restaurant; it's a little slice of tranquility. Imagine escaping the bustling town center, finding a shaded spot under the trees, and listening to the gentle lapping of the lake just meters away. It's the kind of place where you can truly unwind, savoring delicious pizza and pasta with a view that soothes your soul. Stazione offers that perfect blend of good food, a peaceful ambiance, and that wonderfully simple pleasure of being close to the water – making it an ideal spot to relax and recharge in beautiful Ohrid",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "restaurant"
-      ]
-    },
+    "name": "Stazione",
+    "description": "Nestled by the serene waters of Lake Ohrid, Stazione Ohrid isn't just a restaurant; it's a little slice of tranquility. Imagine escaping the bustling town center, finding a shaded spot under the trees, and listening to the gentle lapping of the lake just meters away. It's the kind of place where you can truly unwind, savoring delicious pizza and pasta with a view that soothes your soul. Stazione offers that perfect blend of good food, a peaceful ambiance, and that wonderfully simple pleasure of being close to the water – making it an ideal spot to relax and recharge in beautiful Ohrid",
+    "type": "restaurant",
     "tags": [
       "foodie",
       "italian",
@@ -451,19 +357,9 @@
   },
   {
     "id": 78,
-    "name": {
-      "en": "Terasa Utarna",
-      "mk": ""
-    },
-    "description": {
-      "en": "Step onto Utarna Terrace and feel that wonderful Ohrid vibe instantly! This isn't just a place to sit it's where you can truly soak in the beauty around you. Imagine relaxing with your favorite drink, maybe a delicious bite, while enjoying those stunning views and the fresh air.\n\nWhether you're starting your day with a peaceful coffee, meeting friends for a casual lunch, or unwinding as the sun sets, Utarna Terrace offers that perfect, easygoing atmosphere. It's simply a lovely spot to slow down, connect, and enjoy the best of Ohrid. We think you'll love it here!",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "restaurant"
-      ]
-    },
+    "name": "Terasa Utarna",
+    "description": "Step onto Utarna Terrace and feel that wonderful Ohrid vibe instantly! This isn't just a place to sit it's where you can truly soak in the beauty around you. Imagine relaxing with your favorite drink, maybe a delicious bite, while enjoying those stunning views and the fresh air.\n\nWhether you're starting your day with a peaceful coffee, meeting friends for a casual lunch, or unwinding as the sun sets, Utarna Terrace offers that perfect, easygoing atmosphere. It's simply a lovely spot to slow down, connect, and enjoy the best of Ohrid. We think you'll love it here!",
+    "type": "restaurant",
     "tags": [
       "restaurant",
       "scenic",
@@ -500,19 +396,9 @@
   },
   {
     "id": 12,
-    "name": {
-      "en": "The Harbour",
-      "mk": ""
-    },
-    "description": {
-      "en": "An elegant venue by the lake, perfect for a refined meal or drinks. Offers a beautiful view.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "restaurant"
-      ]
-    },
+    "name": "The Harbour",
+    "description": "An elegant venue by the lake, perfect for a refined meal or drinks. Offers a beautiful view.",
+    "type": "restaurant",
     "tags": [
       "restaurant",
       "scenic",
@@ -547,19 +433,9 @@
   },
   {
     "id": 15,
-    "name": {
-      "en": "Tino Restaurant",
-      "mk": ""
-    },
-    "description": {
-      "en": "Tucked along the shimmering edge of Lake Ohrid, Tino Restaurant  feels like a warm invitation to indulge in modern Macedonian cuisine with a side of stunning lake views. The dining room and summer terrace,buzz with a lively yet refined atmosphere, often serenaded by live music on weekends. Their menu is a mix of local classics—like Ohrid trout stuffed with thinly sliced vegetables—and international dishes with an Italian twist. The buffet breakfast is a generous spread, perfect for fueling a day of exploring Ohrid, while dinner feels special with show cooking and thoughtful wine pairings.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "restaurant"
-      ]
-    },
+    "name": "Tino Restaurant",
+    "description": "Tucked along the shimmering edge of Lake Ohrid, Tino Restaurant  feels like a warm invitation to indulge in modern Macedonian cuisine with a side of stunning lake views. The dining room and summer terrace,buzz with a lively yet refined atmosphere, often serenaded by live music on weekends. Their menu is a mix of local classics—like Ohrid trout stuffed with thinly sliced vegetables—and international dishes with an Italian twist. The buffet breakfast is a generous spread, perfect for fueling a day of exploring Ohrid, while dinner feels special with show cooking and thoughtful wine pairings.",
+    "type": "restaurant",
     "tags": [
       "restaurant",
       "foodie",
@@ -595,19 +471,9 @@
   },
   {
     "id": 23,
-    "name": {
-      "en": "Anxiety Cafe",
-      "mk": ""
-    },
-    "description": {
-      "en": "A unique cafe with a quirky and artistic vibe, perfect for those looking for a different kind of coffee experience.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "coffee"
-      ]
-    },
+    "name": "Anxiety Cafe",
+    "description": "A unique cafe with a quirky and artistic vibe, perfect for those looking for a different kind of coffee experience.",
+    "type": "coffee",
     "tags": [
       "coffee",
       "artistic",
@@ -628,20 +494,12 @@
   },
   {
     "id": 1,
-    "name": {
-      "en": "Kadmo Bar",
-      "mk": ""
-    },
-    "description": {
-      "en": "Kadmo Bar perches right on the lakefront with sweeping views of Old Town Ohrid—perfect for sunset drinks. From casual beers and wines to live music nights, it gives off that effortlessly cool lounge vibe. It's ideal for laid‑back evenings when you just want to soak in the lakefront buzz.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "coffee",
-        "restaurant"
-      ]
-    },
+    "name": "Kadmo Bar",
+    "description": "Kadmo Bar perches right on the lakefront with sweeping views of Old Town Ohrid—perfect for sunset drinks. From casual beers and wines to live music nights, it gives off that effortlessly cool lounge vibe. It's ideal for laid‑back evenings when you just want to soak in the lakefront buzz.",
+    "type": [
+      "coffee",
+      "restaurant"
+    ],
     "tags": [
       "popular",
       "nightlife",
@@ -661,26 +519,6 @@
       {
         "url": "venue_gallery/kadmo_bar/photo3.jpg",
         "alt": "What a lovely spot to unwind! Sipping on a delicious drink (looks like a coffee or a sweet treat!) at Kadmo Lounge Bar, right by the water's edge, surrounded by good company and beautiful lake scenery."
-      },
-      {
-        "url": "venue_gallery/kadmo_bar/photo4.jpg",
-        "alt": "The welcoming interior of Kaamo, showcasing our well-stocked bar, stylish brick accents, and a variety of comfortable seating options for a relaxed atmosphere."
-      },
-      {
-        "url": "venue_gallery/kadmo_bar/photo5.jpg",
-        "alt": "Cozy indoor lounge area at Kaamo, featuring comfortable seating and warm wooden tables, with a seamless flow to our shaded outdoor patio overlooking the lake."
-      },
-      {
-        "url": "venue_gallery/kadmo_bar/photo6.jpg",
-        "alt": "Lush outdoor patio at Kaamo, with a leafy canopy overhead and inviting seating looking out onto the beautiful Ohrid Lake."
-      },
-      {
-        "url": "venue_gallery/kadmo_bar/photo7.jpg",
-        "alt": "Relaxing lakeside seating at Kaamo, offering stunning panoramic views of Lake Ohrid under a bright sky, with a hint of our vibrant branding."
-      },
-      {
-        "url": "venue_gallery/kadmo_bar/photo8.jpg",
-        "alt": "Spacious and charming outdoor dining area at Kaamo, shaded by a natural vine canopy, featuring a mix of wooden and woven chairs and tables."
       }
     ],
     "priceLevel": 3,
@@ -696,19 +534,9 @@
   },
   {
     "id": 18,
-    "name": {
-      "en": "Octava",
-      "mk": ""
-    },
-    "description": {
-      "en": "Octava Lounge Bar is where you go in Ohrid when you want to feel a bit chic, but still utterly at ease. Picture yourself settled into a stylish, comfortable spot, perhaps with a meticulously crafted cocktail in hand, and the shimmering expanse of Lake Ohrid just steps away. It's the kind of place that effortlessly blends a sophisticated atmosphere with a relaxed, inviting vibe. Whether you're unwinding after a day of exploring, enjoying a lively evening with friends, or simply savoring a quiet moment with a stunning view, Octava offers that perfect balance – a touch of luxury without ever feeling stuffy, making you feel right at home while enjoying the finer things.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "coffee"
-      ]
-    },
+    "name": "Octava",
+    "description": "Octava Lounge Bar is where you go in Ohrid when you want to feel a bit chic, but still utterly at ease. Picture yourself settled into a stylish, comfortable spot, perhaps with a meticulously crafted cocktail in hand, and the shimmering expanse of Lake Ohrid just steps away. It's the kind of place that effortlessly blends a sophisticated atmosphere with a relaxed, inviting vibe. Whether you're unwinding after a day of exploring, enjoying a lively evening with friends, or simply savoring a quiet moment with a stunning view, Octava offers that perfect balance – a touch of luxury without ever feeling stuffy, making you feel right at home while enjoying the finer things.",
+    "type": "coffee",
     "tags": [
       "coffee",
       "modern",
@@ -743,19 +571,9 @@
   },
   {
     "id": 22,
-    "name": {
-      "en": "Pier 82",
-      "mk": ""
-    },
-    "description": {
-      "en": "A modern bar with a great view of the lake, perfect for a relaxing drink.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "coffee"
-      ]
-    },
+    "name": "Pier 82",
+    "description": "A modern bar with a great view of the lake, perfect for a relaxing drink.",
+    "type": "coffee",
     "tags": [
       "coffee",
       "modern",
@@ -790,19 +608,9 @@
   },
   {
     "id": 17,
-    "name": {
-      "en": "SU Rooftop",
-      "mk": ""
-    },
-    "description": {
-      "en": "Perched above the city, this intimate spot dishes up burgers, stroganoff, and cocktails with breathtaking Lake Ohrid views. It's a romantic choice for breakfast or dinner, with a cozy, elegant vibe.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "coffee"
-      ]
-    },
+    "name": "SU Rooftop",
+    "description": "Perched above the city, this intimate spot dishes up burgers, stroganoff, and cocktails with breathtaking Lake Ohrid views. It's a romantic choice for breakfast or dinner, with a cozy, elegant vibe.",
+    "type": "coffee",
     "tags": [
       "rooftop",
       "scenic",
@@ -838,19 +646,9 @@
   },
   {
     "id": 6,
-    "name": {
-      "en": "Alomos Night Club",
-      "mk": ""
-    },
-    "description": {
-      "en": "Alomos Night Club offers a lively atmosphere with live music, primarily featuring Serbian artists and bands.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "club"
-      ]
-    },
+    "name": "Alomos Night Club",
+    "description": "Alomos Night Club offers a lively atmosphere with live music, primarily featuring Serbian artists and bands.",
+    "type": "club",
     "tags": [
       "nightlife",
       "music",
@@ -881,21 +679,13 @@
   },
   {
     "id": 82,
-    "name": {
-      "en": "Coffee & Bar La Fabrique",
-      "mk": ""
-    },
-    "description": {
-      "en": "Step into Coffee & Bar La Fabrique and discover your new favorite cozy spot in Ohrid! Whether you're looking for that perfect morning coffee, a comforting hot chocolate on a chilly evening, or a relaxed drink with friends, this is the place.\n\nWith its warm, inviting ambiance and a fantastic selection of beverages, La Fabrique is designed for those moments when you just want to unwind and feel at home. It's truly a lovely place to relax, connect, and enjoy the good things in life, day or night. We think you'll feel right at home here!",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "coffee",
-        "bar",
-        "fast food"
-      ]
-    },
+    "name": "Coffee & Bar La Fabrique",
+    "description": "Step into Coffee & Bar La Fabrique and discover your new favorite cozy spot in Ohrid! Whether you're looking for that perfect morning coffee, a comforting hot chocolate on a chilly evening, or a relaxed drink with friends, this is the place.\n\nWith its warm, inviting ambiance and a fantastic selection of beverages, La Fabrique is designed for those moments when you just want to unwind and feel at home. It's truly a lovely place to relax, connect, and enjoy the good things in life, day or night. We think you'll feel right at home here!",
+    "type": [
+      "coffee",
+      "bar",
+      "fast food"
+    ],
     "tags": [
       "coffee",
       "bar",
@@ -934,19 +724,9 @@
   },
   {
     "id": 13,
-    "name": {
-      "en": "Dublin Irish Pub",
-      "mk": ""
-    },
-    "description": {
-      "en": "Dublin Irish Pub in Ohrid is a little slice of Ireland by the lake, perfect for when you're craving that familiar pub feeling. It's the kind of place where you can unwind with a pint – and yes, they often have Guinness on tap! – soak in the warm, inviting atmosphere, and maybe even catch some live music on the weekends. Whether you're looking for a hearty bite, a refreshing drink, or just a friendly spot to chat and enjoy the view of Lake Ohrid, Dublin offers that relaxed, welcoming vibe that makes you feel right at home, even miles away from the Emerald Isle.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "pub"
-      ]
-    },
+    "name": "Dublin Irish Pub",
+    "description": "Dublin Irish Pub in Ohrid is a little slice of Ireland by the lake, perfect for when you're craving that familiar pub feeling. It's the kind of place where you can unwind with a pint – and yes, they often have Guinness on tap! – soak in the warm, inviting atmosphere, and maybe even catch some live music on the weekends. Whether you're looking for a hearty bite, a refreshing drink, or just a friendly spot to chat and enjoy the view of Lake Ohrid, Dublin offers that relaxed, welcoming vibe that makes you feel right at home, even miles away from the Emerald Isle.",
+    "type": "pub",
     "tags": [
       "pub",
       "foodie",
@@ -981,19 +761,9 @@
   },
   {
     "id": 76,
-    "name": {
-      "en": "INclusive",
-      "mk": ""
-    },
-    "description": {
-      "en": "Tired of the same old night out? Get ready for a breath of fresh air at Inclusive Disco in Ohrid! This isn't just another club; it's a place where you can genuinely let loose and enjoy yourself. They've crafted a truly modern and vibrant space with fantastic lighting and sound, making every beat feel incredible.\n\nWhat really sets them apart? They're all about quality music, great drinks, and unforgettable parties. Whether you're into soulful ballads or high-energy dance tracks, their diverse music program has something for everyone. You can expect top-notch local and international artists and DJs to keep the rhythm going, ensuring every night is a good one.\n\nMore than anything, Inclusive Disco promises a night of guaranteed comfort and safety, with impeccable service in an atmosphere that's designed to impress. It's a spot where you can truly feel at home while experiencing the best of Ohrid's nightlife. Come on down and be part of the story – you're guaranteed a fantastic time!",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "club"
-      ]
-    },
+    "name": "INclusive",
+    "description": "Tired of the same old night out? Get ready for a breath of fresh air at Inclusive Disco in Ohrid! This isn't just another club; it's a place where you can genuinely let loose and enjoy yourself. They've crafted a truly modern and vibrant space with fantastic lighting and sound, making every beat feel incredible.\n\nWhat really sets them apart? They're all about quality music, great drinks, and unforgettable parties. Whether you're into soulful ballads or high-energy dance tracks, their diverse music program has something for everyone. You can expect top-notch local and international artists and DJs to keep the rhythm going, ensuring every night is a good one.\n\nMore than anything, Inclusive Disco promises a night of guaranteed comfort and safety, with impeccable service in an atmosphere that's designed to impress. It's a spot where you can truly feel at home while experiencing the best of Ohrid's nightlife. Come on down and be part of the story – you're guaranteed a fantastic time!",
+    "type": "club",
     "tags": [
       "nightlife",
       "party",
@@ -1030,19 +800,9 @@
   },
   {
     "id": 4,
-    "name": {
-      "en": "Irish Pub Five",
-      "mk": ""
-    },
-    "description": {
-      "en": "Irish Pub Five brings a friendly, upbeat bar vibe paired with hearty pub food. Their burgers are famously massive and tasty, and the beer list caters to both locals and craft-beer fans.With TVs for sports nights and occasional live music, it's a comfortable spot for a casual dinner or a fun night out.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "pub"
-      ]
-    },
+    "name": "Irish Pub Five",
+    "description": "Irish Pub Five brings a friendly, upbeat bar vibe paired with hearty pub food. Their burgers are famously massive and tasty, and the beer list caters to both locals and craft-beer fans.With TVs for sports nights and occasional live music, it's a comfortable spot for a casual dinner or a fun night out.",
+    "type": "pub",
     "tags": [
       "pub",
       "foodie",
@@ -1069,19 +829,9 @@
   },
   {
     "id": 2,
-    "name": {
-      "en": "Jazz Inn",
-      "mk": ""
-    },
-    "description": {
-      "en": "Ohrid's legendary Jazz Inn is much more than a bar—it's an intimate musical experience since 1989. Tucked in Old Town, it feels like a cozy living room where locals and tourists sip whisky while soaking in smooth jazz sets. Charming, relaxed, and beautifully authentic; perfect for anyone craving a cultural, after-dinner ambience with soul.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "club"
-      ]
-    },
+    "name": "Jazz Inn",
+    "description": "Ohrid's legendary Jazz Inn is much more than a bar—it's an intimate musical experience since 1989. Tucked in Old Town, it feels like a cozy living room where locals and tourists sip whisky while soaking in smooth jazz sets. Charming, relaxed, and beautifully authentic; perfect for anyone craving a cultural, after-dinner ambience with soul.",
+    "type": "club",
     "tags": [
       "nightlife",
       "music",
@@ -1116,21 +866,13 @@
   },
   {
     "id": 75,
-    "name": {
-      "en": "Le Petit Bistro Lihnidos",
-      "mk": ""
-    },
-    "description": {
-      "en": "Step into a little piece of charm at Le Petit Bistro Lihnidos! Tucked away in beautiful Ohrid, this spot is all about bringing you a cozy, warm, and inviting experience. Imagine savoring delicious bites and refreshing sips in an atmosphere that feels just like home, but with that lovely lakeside touch. It's the perfect place to unwind, share a laugh with friends, or simply watch the world go by. Come and discover your new favorite corner in Ohrid!",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "restaurant",
-        "coffee",
-        "club"
-      ]
-    },
+    "name": "Le Petit Bistro Lihnidos",
+    "description": "Step into a little piece of charm at Le Petit Bistro Lihnidos! Tucked away in beautiful Ohrid, this spot is all about bringing you a cozy, warm, and inviting experience. Imagine savoring delicious bites and refreshing sips in an atmosphere that feels just like home, but with that lovely lakeside touch. It's the perfect place to unwind, share a laugh with friends, or simply watch the world go by. Come and discover your new favorite corner in Ohrid!",
+    "type": [
+      "restaurant",
+      "coffee",
+      "club"
+    ],
     "tags": [],
     "imageUrl": "images_venue/lapetit_card.jpg",
     "gallery": [],
@@ -1148,19 +890,9 @@
   },
   {
     "id": 21,
-    "name": {
-      "en": "Lion",
-      "mk": ""
-    },
-    "description": {
-      "en": "Lion is more than just a restaurant in Ohrid it's a delightful discovery for your taste buds, wrapped up in a genuinely warm atmosphere. Imagine stepping into a place where the love for good food is palpable, whether it's their \"Slow cooked Baby Back Ribs\" that have folks raving, or the fresh local fish. What truly sets Lion apart is that human touch – the owners, a couple with a passion for hospitality, have poured their hearts into creating a diverse menu that blends traditional Macedonian flavors with a fresh, international twist. It's the kind of spot where you can kick off your day with a lovely breakfast, enjoy a relaxed lunch by the lake, or settle in for a vibrant evening with great food and perhaps some live music. You can feel the dedication in every dish and the genuine desire to make your visit a memorable part of your Ohrid experience.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "club"
-      ]
-    },
+    "name": "Lion",
+    "description": "Lion is more than just a restaurant in Ohrid it's a delightful discovery for your taste buds, wrapped up in a genuinely warm atmosphere. Imagine stepping into a place where the love for good food is palpable, whether it's their \"Slow cooked Baby Back Ribs\" that have folks raving, or the fresh local fish. What truly sets Lion apart is that human touch – the owners, a couple with a passion for hospitality, have poured their hearts into creating a diverse menu that blends traditional Macedonian flavors with a fresh, international twist. It's the kind of spot where you can kick off your day with a lovely breakfast, enjoy a relaxed lunch by the lake, or settle in for a vibrant evening with great food and perhaps some live music. You can feel the dedication in every dish and the genuine desire to make your visit a memorable part of your Ohrid experience.",
+    "type": "club",
     "tags": [
       "club",
       "nightlife",
@@ -1195,20 +927,12 @@
   },
   {
     "id": 3,
-    "name": {
-      "en": "Liquid Cafe Bar",
-      "mk": ""
-    },
-    "description": {
-      "en": "Right by the lake, Liquid Cafe Bar is the perfect haven for both coffee lovers and cocktail seekers. It's modern and laid‑back, serving everything from robust espresso to lakefront mojitos. . Day or night, it's a great stop for  conversation, or an Instagram-worthy sunset moment.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "club",
-        "coffee"
-      ]
-    },
+    "name": "Liquid Cafe Bar",
+    "description": "Right by the lake, Liquid Cafe Bar is the perfect haven for both coffee lovers and cocktail seekers. It's modern and laid‑back, serving everything from robust espresso to lakefront mojitos. . Day or night, it's a great stop for  conversation, or an Instagram-worthy sunset moment.",
+    "type": [
+      "club",
+      "coffee"
+    ],
     "tags": [
       "popular",
       "nightlife",
@@ -1242,15 +966,8 @@
   },
   {
     "id": 5,
-    "name": {
-      "en": "Omnia Night Club",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "club"
-      ]
-    },
+    "name": "Omnia Night Club",
+    "type": "club",
     "tags": [
       "popular",
       "nightlife",
@@ -1264,13 +981,10 @@
         "alt": "Stepping into the electrifying atmosphere of 'Omnia Nightclub' in Ohrid! The cutting-edge red lit bar with its cool geometric pattern sets the stage for an unforgettable night of music and energy."
       }
     ],
-    "description": {
-      "en": "As one of Ohrid's top nightlife venues, Omnia exudes high energy with a state‑of‑the‑art sound system, polished lights, and headline DJs. Located in the town center, it's where party-goers dance late into the night—especially during themed nights and DJ shows . If you're in the mood for an electric club atmosphere, this is your go-to venue.",
-      "mk": ""
-    },
+    "description": "As one of Ohrid's top nightlife venues, Omnia exudes high energy with a state‑of‑the‑art sound system, polished lights, and headline DJs. Located in the town center, it's where party-goers dance late into the night—especially during themed nights and DJ shows . If you're in the mood for an electric club atmosphere, this is your go-to venue.",
     "priceLevel": 2,
     "location": {
-      "address": "Цар Самоил 30, Ohrid 6000",
+      "address": "Partizanska 2, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Omnia+Night+Club/@41.1131001,20.7998957,19z/data=!3m1!4b1!4m6!3m5!1s0x1350dd7a9302f453:0xd39672b71f9f0769!8m2!3d41.1131001!4d20.8005394!16s%2Fg%2F11c6p35rgy?entry=ttu",
       "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
@@ -1281,20 +995,12 @@
   },
   {
     "id": 67,
-    "name": {
-      "en": "Pivnica Sokak",
-      "mk": ""
-    },
-    "description": {
-      "en": "Pub & Pivnica Sokak in Ohrid is much more than just a pub. It's a popular gathering spot where friends connect. Known for its inviting, brand-new ambiance and fresh offerings, it's a hidden gem that promises to become your new favorite local spot. Expect a friendly atmosphere perfect for enjoying a great selection of drinks,including a variety of Macedonian draft beers.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "pub",
-        "fast-food"
-      ]
-    },
+    "name": "Pivnica Sokak",
+    "description": "Pub & Pivnica Sokak in Ohrid is much more than just a pub. It's a popular gathering spot where friends connect. Known for its inviting, brand-new ambiance and fresh offerings, it's a hidden gem that promises to become your new favorite local spot. Expect a friendly atmosphere perfect for enjoying a great selection of drinks,including a variety of Macedonian draft beers.",
+    "type": [
+      "pub",
+      "fast-food"
+    ],
     "tags": [
       "pub",
       "foodie",
@@ -1330,19 +1036,9 @@
   },
   {
     "id": 7,
-    "name": {
-      "en": "Rebel",
-      "mk": ""
-    },
-    "description": {
-      "en": "Rebel is Ohrid's house & techno hotspot. With a strong calendar of themed nights and guest DJs, it's ideal for late-night dance seekers. Expect pulsing rhythm, vibrant crowd, and a seriously cool club energy. A must for electronic music fans.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "club"
-      ]
-    },
+    "name": "Rebel",
+    "description": "Rebel is Ohrid's house & techno hotspot. With a strong calendar of themed nights and guest DJs, it's ideal for late-night dance seekers. Expect pulsing rhythm, vibrant crowd, and a seriously cool club energy. A must for electronic music fans.",
+    "type": "club",
     "tags": [
       "nightlife",
       "party",
@@ -1381,20 +1077,12 @@
   },
   {
     "id": 81,
-    "name": {
-      "en": "Shilla Coffee & Bar",
-      "mk": ""
-    },
-    "description": {
-      "en": "A place with a view.A beloved local spot since 2013, whose vibe spontaneously established itself as an alternative art scene hosting various cultural, social, and nightlife events while supporting young artists.Clean, crisp and fresh tasting, we seek to deliver Ohrid’s finest cocktails for 12 years.The name comes from the timeless Macedonian pop hit “Шила“ by the legendary Maja Odzaklievska, telling a story of a femme fatale fond to younger guys and blackjack. Sung in 1987, this song still sounds fresh and zestful – the kind of energy we tried to reflect here 26 years later.Whether you're in for a morning espresso or an evening cocktails, “Shilla” is where Ohrid comes alive.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "coffee",
-        "bar"
-      ]
-    },
+    "name": "Shilla Coffee & Bar",
+    "description": "A place with a view.A beloved local spot since 2013, whose vibe spontaneously established itself as an alternative art scene hosting various cultural, social, and nightlife events while supporting young artists.Clean, crisp and fresh tasting, we seek to deliver Ohrid’s finest cocktails for 12 years.The name comes from the timeless Macedonian pop hit “Шила“ by the legendary Maja Odzaklievska, telling a story of a femme fatale fond to younger guys and blackjack. Sung in 1987, this song still sounds fresh and zestful – the kind of energy we tried to reflect here 26 years later.Whether you're in for a morning espresso or an evening cocktails, “Shilla” is where Ohrid comes alive.",
+    "type": [
+      "coffee",
+      "bar"
+    ],
     "tags": [
       "coffee",
       "bar",
@@ -1433,19 +1121,9 @@
   },
   {
     "id": 16,
-    "name": {
-      "en": "Tino Pub",
-      "mk": ""
-    },
-    "description": {
-      "en": "Tino Pub & Bar, right on the edge of Lake Ohrid, is that wonderful kind of place where you can truly kick back and soak it all in. It's not about being fancy it's about the feeling of the sun on your face, the gentle lapping of the water, and the easygoing hum of conversations. Grab a refreshing drink, maybe a cool beer, and let the relaxed lakeside ambiance wash over you. Whether you're catching up with friends or simply enjoying a quiet moment with that incredible view, Tino's offers a perfectly chill escape in the heart of Ohrid.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "pub"
-      ]
-    },
+    "name": "Tino Pub",
+    "description": "Tino Pub & Bar, right on the edge of Lake Ohrid, is that wonderful kind of place where you can truly kick back and soak it all in. It's not about being fancy it's about the feeling of the sun on your face, the gentle lapping of the water, and the easygoing hum of conversations. Grab a refreshing drink, maybe a cool beer, and let the relaxed lakeside ambiance wash over you. Whether you're catching up with friends or simply enjoying a quiet moment with that incredible view, Tino's offers a perfectly chill escape in the heart of Ohrid.",
+    "type": "pub",
     "tags": [
       "pub",
       "foodie",
@@ -1480,22 +1158,14 @@
   },
   {
     "id": 34,
-    "name": {
-      "en": "Adventure Ohrid",
-      "mk": ""
-    },
-    "description": {
-      "en": "For thrill-seekers! Adventure organizes custom, action-packed tours, from paragliding over the lake to off-road safaris in Galichica National Park. Many activities offer incredible, unique lake views.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "sports",
-        "kayaking",
-        "sup",
-        "hiking"
-      ]
-    },
+    "name": "Adventure Ohrid",
+    "description": "For thrill-seekers! Adventure organizes custom, action-packed tours, from paragliding over the lake to off-road safaris in Galichica National Park. Many activities offer incredible, unique lake views.",
+    "type": [
+      "sports",
+      "kayaking",
+      "sup",
+      "hiking"
+    ],
     "tags": [
       "outdoors",
       "adventure",
@@ -1531,19 +1201,9 @@
   },
   {
     "id": 30,
-    "name": {
-      "en": "Amfora Diving Center",
-      "mk": ""
-    },
-    "description": {
-      "en": "Ever wondered what ancient secrets lie beneath Ohrid's shimmering surface? Amfora Diving Center isn't just about scuba gear it's your personal invitation to unlock a hidden world. Imagine the quiet thrill of descending into crystal-clear waters, discovering submerged archaeological parks that tell tales of lakeside life millennia ago, or exploring vibrant freshwater ecosystems. Here, the friendly, passionate instructors don't just teach you to dive; they share their love for Ohrid's unique underwater heritage, making every breath below the surface feel like a discovery and a true connection to this ancient lake. It's an unforgettable journey into the silent, beautiful history beneath your feet.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "diving"
-      ]
-    },
+    "name": "Amfora Diving Center",
+    "description": "Ever wondered what ancient secrets lie beneath Ohrid's shimmering surface? Amfora Diving Center isn't just about scuba gear it's your personal invitation to unlock a hidden world. Imagine the quiet thrill of descending into crystal-clear waters, discovering submerged archaeological parks that tell tales of lakeside life millennia ago, or exploring vibrant freshwater ecosystems. Here, the friendly, passionate instructors don't just teach you to dive; they share their love for Ohrid's unique underwater heritage, making every breath below the surface feel like a discovery and a true connection to this ancient lake. It's an unforgettable journey into the silent, beautiful history beneath your feet.",
+    "type": "diving",
     "tags": [
       "diving",
       "adventure",
@@ -1578,19 +1238,9 @@
   },
   {
     "id": 29,
-    "name": {
-      "en": "ATV Adrenaline",
-      "mk": ""
-    },
-    "description": {
-      "en": "Ready to truly experience Ohrid's untamed beauty? ATV Adrenaline Ohrid takes you beyond the postcard views into the heart of Galicica National Park. Feel the surge of excitement as expert guides lead you through rugged terrain, revealing spectacular vistas of both Lake Ohrid and Lake Prespa. It's more than just an exhilarating ride; it's a personal journey into untouched nature, promising unforgettable thrills and memories forged with every turn.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "atv"
-      ]
-    },
+    "name": "ATV Adrenaline",
+    "description": "Ready to truly experience Ohrid's untamed beauty? ATV Adrenaline Ohrid takes you beyond the postcard views into the heart of Galicica National Park. Feel the surge of excitement as expert guides lead you through rugged terrain, revealing spectacular vistas of both Lake Ohrid and Lake Prespa. It's more than just an exhilarating ride; it's a personal journey into untouched nature, promising unforgettable thrills and memories forged with every turn.",
+    "type": "atv",
     "tags": [
       "atv",
       "adventure",
@@ -1625,19 +1275,9 @@
   },
   {
     "id": 28,
-    "name": {
-      "en": "ATV Adventure Ohrid",
-      "mk": ""
-    },
-    "description": {
-      "en": "ATV Adventure Ohrid isn't just about hopping on a quad bike; it's about unlocking a thrilling new perspective of this stunning region, guided by folks who genuinely love to share its beauty. Imagine feeling the wind on your face as you zoom through off-road trails, climbing to breathtaking viewpoints where both Lake Ohrid and Lake Prespa stretch out beneath you. It's the kind of experience where friendly, expert guides not only ensure your safety but also sprinkle in local insights and share their passion for the landscape. You're not just a rider you're an explorer, weaving through charming villages and untouched nature, creating unforgettable memories with every turn of the wheel. It's an adrenaline rush with a personal touch, making you feel connected to the wild heart of Ohrid.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "atv"
-      ]
-    },
+    "name": "ATV Adventure Ohrid",
+    "description": "ATV Adventure Ohrid isn't just about hopping on a quad bike; it's about unlocking a thrilling new perspective of this stunning region, guided by folks who genuinely love to share its beauty. Imagine feeling the wind on your face as you zoom through off-road trails, climbing to breathtaking viewpoints where both Lake Ohrid and Lake Prespa stretch out beneath you. It's the kind of experience where friendly, expert guides not only ensure your safety but also sprinkle in local insights and share their passion for the landscape. You're not just a rider you're an explorer, weaving through charming villages and untouched nature, creating unforgettable memories with every turn of the wheel. It's an adrenaline rush with a personal touch, making you feel connected to the wild heart of Ohrid.",
+    "type": "atv",
     "tags": [
       "atv",
       "adventure",
@@ -1672,19 +1312,9 @@
   },
   {
     "id": 31,
-    "name": {
-      "en": "Exodus",
-      "mk": ""
-    },
-    "description": {
-      "en": "Exodus Gym in Ohrid is a modern fitness facility designed for champions. Featuring a professional boxing ring, a well-equipped strength training area, and a variety of functional fitness options, it's the perfect place to push your limits and achieve your fitness goals.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "gym"
-      ]
-    },
+    "name": "Exodus",
+    "description": "Exodus Gym in Ohrid is a modern fitness facility designed for champions. Featuring a professional boxing ring, a well-equipped strength training area, and a variety of functional fitness options, it's the perfect place to push your limits and achieve your fitness goals.",
+    "type": "gym",
     "tags": [
       "gym",
       "fitness",
@@ -1719,19 +1349,9 @@
   },
   {
     "id": 38,
-    "name": {
-      "en": "FitBox",
-      "mk": ""
-    },
-    "description": {
-      "en": "A specialized fitness studio focusing on high-intensity interval training and boxing workouts.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "gym"
-      ]
-    },
+    "name": "FitBox",
+    "description": "A specialized fitness studio focusing on high-intensity interval training and boxing workouts.",
+    "type": "gym",
     "tags": [
       "gym",
       "fitness",
@@ -1766,19 +1386,9 @@
   },
   {
     "id": 37,
-    "name": {
-      "en": "FitForm",
-      "mk": ""
-    },
-    "description": {
-      "en": "A friendly and welcoming gym with a focus on functional fitness and personal training.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "gym"
-      ]
-    },
+    "name": "FitForm",
+    "description": "A friendly and welcoming gym with a focus on functional fitness and personal training.",
+    "type": "gym",
     "tags": [
       "gym",
       "fitness",
@@ -1813,19 +1423,9 @@
   },
   {
     "id": 36,
-    "name": {
-      "en": "IB Fitness",
-      "mk": ""
-    },
-    "description": {
-      "en": "A modern fitness center in Ohrid with high-quality equipment for strength and cardio. It's a great place to work out with professional machines and amenities, but it's an indoor facility.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "gym"
-      ]
-    },
+    "name": "IB Fitness",
+    "description": "A modern fitness center in Ohrid with high-quality equipment for strength and cardio. It's a great place to work out with professional machines and amenities, but it's an indoor facility.",
+    "type": "gym",
     "tags": [
       "gym",
       "fitness",
@@ -1860,19 +1460,9 @@
   },
   {
     "id": 33,
-    "name": {
-      "en": "Kliment Koleski",
-      "mk": ""
-    },
-    "description": {
-      "en": "The Kliment Koleski Sporting Complex in Ohrid is a modern, large-scale facility that serves as a hub for athletic excellence and community events. It features an indoor track and other amenities for various sports.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "sports"
-      ]
-    },
+    "name": "Kliment Koleski",
+    "description": "The Kliment Koleski Sporting Complex in Ohrid is a modern, large-scale facility that serves as a hub for athletic excellence and community events. It features an indoor track and other amenities for various sports.",
+    "type": "sports",
     "tags": [
       "sports",
       "fitness",
@@ -1903,22 +1493,14 @@
   },
   {
     "id": 35,
-    "name": {
-      "en": "Ljubanishta Beach & Camping",
-      "mk": ""
-    },
-    "description": {
-      "en": "Ljubanishta Beach & Camping is a vibrant destination on the shores of Lake Ohrid, offering more than just a place to pitch a tent. With a beautiful beach, a welcoming restaurant, sports facilities, and an adventure park with a ropes course, it's the perfect spot for family fun, relaxation, and outdoor adventure.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "camping",
-        "beach",
-        "restaurant",
-        "sports"
-      ]
-    },
+    "name": "Ljubanishta Beach & Camping",
+    "description": "Ljubanishta Beach & Camping is a vibrant destination on the shores of Lake Ohrid, offering more than just a place to pitch a tent. With a beautiful beach, a welcoming restaurant, sports facilities, and an adventure park with a ropes course, it's the perfect spot for family fun, relaxation, and outdoor adventure.",
+    "type": [
+      "camping",
+      "beach",
+      "restaurant",
+      "sports"
+    ],
     "tags": [
       "family-friendly",
       "outdoors",
@@ -1962,19 +1544,9 @@
   },
   {
     "id": 32,
-    "name": {
-      "en": "SUP Club Ohrid",
-      "mk": ""
-    },
-    "description": {
-      "en": "Glide across Lake Ohrid on a stand-up paddleboard! They offer guided tours, perfect for all levels, allowing you to peacefully explore hidden coves and enjoy unparalleled lake views from the water.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "sup"
-      ]
-    },
+    "name": "SUP Club Ohrid",
+    "description": "Glide across Lake Ohrid on a stand-up paddleboard! They offer guided tours, perfect for all levels, allowing you to peacefully explore hidden coves and enjoy unparalleled lake views from the water.",
+    "type": "sup",
     "tags": [
       "sup",
       "adventure",
@@ -2009,19 +1581,11 @@
   },
   {
     "id": 45,
-    "name": {
-      "en": "Ambulance",
-      "mk": ""
-    },
-    "description": {
-      "en": "Ambulance Ohrid represents the critical frontline of emergency medical services (EMS) for the city and surrounding region. As the primary provider of pre-hospital care, their teams respond to a wide range of medical emergencies and accidents, often providing initial stabilization and life-saving interventions on-site. They function as the essential link to further medical treatment, transporting patients to the General Hospital of Ohrid or other specialized facilities for comprehensive Emergency Room (ER) care.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "hospital"
-      ]
-    },
+    "name": "Ambulance",
+    "description": "Ambulance Ohrid represents the critical frontline of emergency medical services (EMS) for the city and surrounding region. As the primary provider of pre-hospital care, their teams respond to a wide range of medical emergencies and accidents, often providing initial stabilization and life-saving interventions on-site. They function as the essential link to further medical treatment, transporting patients to the General Hospital of Ohrid or other specialized facilities for comprehensive Emergency Room (ER) care.",
+    "type": [
+      "hospital"
+    ],
     "tags": [
       "hospital",
       "health",
@@ -2044,19 +1608,11 @@
   },
   {
     "id": 48,
-    "name": {
-      "en": "Cardiology center St. Stephen",
-      "mk": ""
-    },
-    "description": {
-      "en": "The Institute for Prevention, Treatment, and Rehabilitation of Cardiovascular Diseases – Ohrid, often referred to as \"Cardio Ohrid,\" is a highly specialized public health institution dedicated to comprehensive cardiac care. It focuses on the prevention, diagnosis, treatment, and rehabilitation of cardiovascular diseases, playing a crucial role in managing heart health for the region. As a specialized center, it aims to provide advanced and focused care for patients with heart-related issues.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "hospital"
-      ]
-    },
+    "name": "Cardiology center St. Stephen",
+    "description": "The Institute for Prevention, Treatment, and Rehabilitation of Cardiovascular Diseases – Ohrid, often referred to as \"Cardio Ohrid,\" is a highly specialized public health institution dedicated to comprehensive cardiac care. It focuses on the prevention, diagnosis, treatment, and rehabilitation of cardiovascular diseases, playing a crucial role in managing heart health for the region. As a specialized center, it aims to provide advanced and focused care for patients with heart-related issues.",
+    "type": [
+      "hospital"
+    ],
     "tags": [
       "hospital",
       "health",
@@ -2079,19 +1635,11 @@
   },
   {
     "id": 61,
-    "name": {
-      "en": "Dentoria Dental",
-      "mk": ""
-    },
-    "description": {
-      "en": "Dentoria Dental in Ohrid is a modern dental clinic offering a wide array of high-quality dental services. They specialize in areas like general dentistry, oral surgery, prosthetics (including various types of crowns), and dental implantology, often utilizing the latest technology. Dentoria is committed to providing excellent customer service and patient satisfaction at competitive prices, serving both local residents and international dental tourists.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "dentist"
-      ]
-    },
+    "name": "Dentoria Dental",
+    "description": "Dentoria Dental in Ohrid is a modern dental clinic offering a wide array of high-quality dental services. They specialize in areas like general dentistry, oral surgery, prosthetics (including various types of crowns), and dental implantology, often utilizing the latest technology. Dentoria is committed to providing excellent customer service and patient satisfaction at competitive prices, serving both local residents and international dental tourists.",
+    "type": [
+      "dentist"
+    ],
     "tags": [
       "dentist",
       "health",
@@ -2114,19 +1662,11 @@
   },
   {
     "id": 60,
-    "name": {
-      "en": "Dr. Batkoski - Dental Center",
-      "mk": ""
-    },
-    "description": {
-      "en": "Dr. Batkoski – Dental Center in Ohrid is a modern dental clinic renowned for providing high-quality, comprehensive dental services to both local patients and a significant number of international dental tourists. With over 25 years of experience, they offer a wide range of treatments, from general dentistry and cosmetic procedures like veneers and teeth whitening to specialized services such as dental implants, orthodontics (including Invisalign), and oral surgery. The clinic is known for its expert team, modern equipment (including 3D scanning), affordable prices, and commitment to patient satisfaction, often exceeding EU regulations and offering free consultations.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "dentist"
-      ]
-    },
+    "name": "Dr. Batkoski - Dental Center",
+    "description": "Dr. Batkoski – Dental Center in Ohrid is a modern dental clinic renowned for providing high-quality, comprehensive dental services to both local patients and a significant number of international dental tourists. With over 25 years of experience, they offer a wide range of treatments, from general dentistry and cosmetic procedures like veneers and teeth whitening to specialized services such as dental implants, orthodontics (including Invisalign), and oral surgery. The clinic is known for its expert team, modern equipment (including 3D scanning), affordable prices, and commitment to patient satisfaction, often exceeding EU regulations and offering free consultations.",
+    "type": [
+      "dentist"
+    ],
     "tags": [
       "dentist",
       "health",
@@ -2149,19 +1689,11 @@
   },
   {
     "id": 64,
-    "name": {
-      "en": "Dr. Elena Dental Clinic",
-      "mk": ""
-    },
-    "description": {
-      "en": "Dr. Elena Dental Clinic in Ohrid is a welcoming private practice dedicated to providing essential and reliable general dental care. Focused on the oral health of the local community, the clinic offers a range of services from routine check-ups and cleanings to restorative treatments. Situated on Bul. Turistichka 40, Dr. Elena Dental Clinic aims to deliver accessible, high-quality care in a comfortable setting, helping patients maintain healthy smiles.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "dentist"
-      ]
-    },
+    "name": "Dr. Elena Dental Clinic",
+    "description": "Dr. Elena Dental Clinic in Ohrid is a welcoming private practice dedicated to providing essential and reliable general dental care. Focused on the oral health of the local community, the clinic offers a range of services from routine check-ups and cleanings to restorative treatments. Situated on Bul. Turistichka 40, Dr. Elena Dental Clinic aims to deliver accessible, high-quality care in a comfortable setting, helping patients maintain healthy smiles.",
+    "type": [
+      "dentist"
+    ],
     "tags": [
       "dentist",
       "health",
@@ -2183,19 +1715,11 @@
   },
   {
     "id": 66,
-    "name": {
-      "en": "Dr. Mojsoska Dental & Aesthetic center",
-      "mk": ""
-    },
-    "description": {
-      "en": "D-R Mojsoska Dental Centar in Ohrid is a specialized center for dental and aesthetic medicine, evolved from a general dentistry practice established in 2004. They offer a comprehensive range of services, excelling in Orthodontics and Implantology for advanced dental solutions, alongside facial aesthetic treatments like hyaluronic fillers and botulinum toxin. The clinic is committed to providing high-quality care with an expert team, addressing both routine and complex cases to help patients achieve their ideal smile.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "dentist"
-      ]
-    },
+    "name": "Dr. Mojsoska Dental & Aesthetic center",
+    "description": "D-R Mojsoska Dental Centar in Ohrid is a specialized center for dental and aesthetic medicine, evolved from a general dentistry practice established in 2004. They offer a comprehensive range of services, excelling in Orthodontics and Implantology for advanced dental solutions, alongside facial aesthetic treatments like hyaluronic fillers and botulinum toxin. The clinic is committed to providing high-quality care with an expert team, addressing both routine and complex cases to help patients achieve their ideal smile.",
+    "type": [
+      "dentist"
+    ],
     "tags": [
       "dentist",
       "health",
@@ -2218,19 +1742,11 @@
   },
   {
     "id": 44,
-    "name": {
-      "en": "General Hospital of Ohrid",
-      "mk": ""
-    },
-    "description": {
-      "en": "The General Hospital of Ohrid is a key public health institution serving the Ohrid region, providing a wide array of general medical and specialized care. It offers comprehensive inpatient and outpatient services, emergency care, and diagnostic capabilities, catering to both local residents and the numerous tourists visiting the city. The hospital is continuously engaged in efforts to modernize its facilities and equipment to enhance patient outcomes, and includes departments such as infectious diseases. It forms an integral part of the regional healthcare network, often collaborating with other specialized medical centers in Ohrid, such as the Orthopedics and Traumatology Hospital \"St. Erazmo\" and the Institute for Cardiovascular Diseases.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "hospital"
-      ]
-    },
+    "name": "General Hospital of Ohrid",
+    "description": "The General Hospital of Ohrid is a key public health institution serving the Ohrid region, providing a wide array of general medical and specialized care. It offers comprehensive inpatient and outpatient services, emergency care, and diagnostic capabilities, catering to both local residents and the numerous tourists visiting the city. The hospital is continuously engaged in efforts to modernize its facilities and equipment to enhance patient outcomes, and includes departments such as infectious diseases. It forms an integral part of the regional healthcare network, often collaborating with other specialized medical centers in Ohrid, such as the Orthopedics and Traumatology Hospital \"St. Erazmo\" and the Institute for Cardiovascular Diseases.",
+    "type": [
+      "hospital"
+    ],
     "tags": [
       "hospital",
       "health",
@@ -2253,19 +1769,11 @@
   },
   {
     "id": 63,
-    "name": {
-      "en": "Lasovski Dental Office",
-      "mk": ""
-    },
-    "description": {
-      "en": "Lasovski Dental Office in Ohrid is a well-established dental center founded in April 1993, with over 30 years of experience. Led by Dr. Bebi Lasovski and more recently joined by Dr. Hristijan Lasovski, they provide a comprehensive range of professional dental services. Their offerings include restorative, reconstructive, and cosmetic dentistry, along with specialized treatments such as dental implants, root canal treatment, pediatric dentistry, and aesthetic procedures like hyaluronic acid fillers. They are known for their commitment to excellence, patient comfort, and continuously integrating new knowledge and techniques.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "dentist"
-      ]
-    },
+    "name": "Lasovski Dental Office",
+    "description": "Lasovski Dental Office in Ohrid is a well-established dental center founded in April 1993, with over 30 years of experience. Led by Dr. Bebi Lasovski and more recently joined by Dr. Hristijan Lasovski, they provide a comprehensive range of professional dental services. Their offerings include restorative, reconstructive, and cosmetic dentistry, along with specialized treatments such as dental implants, root canal treatment, pediatric dentistry, and aesthetic procedures like hyaluronic acid fillers. They are known for their commitment to excellence, patient comfort, and continuously integrating new knowledge and techniques.",
+    "type": [
+      "dentist"
+    ],
     "tags": [
       "dentist",
       "health",
@@ -2288,19 +1796,11 @@
   },
   {
     "id": 46,
-    "name": {
-      "en": "Malaricna",
-      "mk": ""
-    },
-    "description": {
-      "en": "\"Маларична Охрид\" is a historically significant Health Center in Ohrid, North Macedonia, named for its pivotal role in the region's fight against malaria a century ago. Today, it continues to serve as a primary healthcare hub, offering general medical services and diagnostics to the community. The site is currently at the center of a public debate regarding proposals to replace the recently renovated building with a new multi-story residential complex, raising concerns among citizens and heritage advocates about urban planning and the preservation of public spaces in this UNESCO World Heritage city.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "hospital"
-      ]
-    },
+    "name": "Malaricna",
+    "description": "\"Маларична Охрид\" is a historically significant Health Center in Ohrid, North Macedonia, named for its pivotal role in the region's fight against malaria a century ago. Today, it continues to serve as a primary healthcare hub, offering general medical services and diagnostics to the community. The site is currently at the center of a public debate regarding proposals to replace the recently renovated building with a new multi-story residential complex, raising concerns among citizens and heritage advocates about urban planning and the preservation of public spaces in this UNESCO World Heritage city.",
+    "type": [
+      "hospital"
+    ],
     "tags": [
       "hospital",
       "health",
@@ -2323,19 +1823,11 @@
   },
   {
     "id": 49,
-    "name": {
-      "en": "Merifarm",
-      "mk": ""
-    },
-    "description": {
-      "en": "A reliable pharmacy providing prescription medications, over-the-counter drugs, and health products. Merifarm is committed to serving the community's healthcare needs with professional advice and a wide range of medical supplies.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "pharmacy"
-      ]
-    },
+    "name": "Merifarm",
+    "description": "A reliable pharmacy providing prescription medications, over-the-counter drugs, and health products. Merifarm is committed to serving the community's healthcare needs with professional advice and a wide range of medical supplies.",
+    "type": [
+      "pharmacy"
+    ],
     "tags": [
       "pharmacy",
       "health",
@@ -2357,19 +1849,11 @@
   },
   {
     "id": 51,
-    "name": {
-      "en": "Pasholi Pharmacy",
-      "mk": ""
-    },
-    "description": {
-      "en": "Pasholi Pharmacy offers a wide range of pharmaceutical products, medical supplies, and health consultations. Committed to providing excellent customer service, their team of professional pharmacists is ready to assist with your healthcare needs.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "pharmacy"
-      ]
-    },
+    "name": "Pasholi Pharmacy",
+    "description": "Pasholi Pharmacy offers a wide range of pharmaceutical products, medical supplies, and health consultations. Committed to providing excellent customer service, their team of professional pharmacists is ready to assist with your healthcare needs.",
+    "type": [
+      "pharmacy"
+    ],
     "tags": [
       "pharmacy",
       "health",
@@ -2391,19 +1875,11 @@
   },
   {
     "id": 52,
-    "name": {
-      "en": "Pharmacy Planta",
-      "mk": ""
-    },
-    "description": {
-      "en": "Pharmacy Planta provides a wide selection of medications, health supplements, and personal care items. With a focus on patient well-being, their professional staff offers expert advice and friendly service.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "pharmacy"
-      ]
-    },
+    "name": "Pharmacy Planta",
+    "description": "Pharmacy Planta provides a wide selection of medications, health supplements, and personal care items. With a focus on patient well-being, their professional staff offers expert advice and friendly service.",
+    "type": [
+      "pharmacy"
+    ],
     "tags": [
       "pharmacy",
       "health",
@@ -2425,19 +1901,11 @@
   },
   {
     "id": 65,
-    "name": {
-      "en": "PZO Dr. Jolevski",
-      "mk": ""
-    },
-    "description": {
-      "en": "PZO \"D-r Jolevski\" in Ohrid is a dental clinic known for providing a wide range of services, including general dentistry and specialized treatments like orthodontics. Led by dentists such as Dr. Mirko Jolevski, Dr. Ljubo Jolevski, and Dr. Mersiha Eminovic Ljato, the clinic offers various procedures including braces, X-rays, laser dentistry, dentures, and consultations. They operate throughout the week, with private patients welcome, focusing on comprehensive dental care in Ohrid.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "dentist"
-      ]
-    },
+    "name": "PZO Dr. Jolevski",
+    "description": "PZO \"D-r Jolevski\" in Ohrid is a dental clinic known for providing a wide range of services, including general dentistry and specialized treatments like orthodontics. Led by dentists such as Dr. Mirko Jolevski, Dr. Ljubo Jolevski, and Dr. Mersiha Eminovic Ljato, the clinic offers various procedures including braces, X-rays, laser dentistry, dentures, and consultations. They operate throughout the week, with private patients welcome, focusing on comprehensive dental care in Ohrid.",
+    "type": [
+      "dentist"
+    ],
     "tags": [
       "dentist",
       "health",
@@ -2460,19 +1928,11 @@
   },
   {
     "id": 47,
-    "name": {
-      "en": "St Erasmus",
-      "mk": ""
-    },
-    "description": {
-      "en": "The Special Hospital for Orthopaedic Surgery and Traumatology \"St. Erazmo\" in Ohrid is a leading public medical institution dedicated to the comprehensive care of the locomotory system. It provides advanced services for orthopedic diseases, acute trauma, and reconstructive surgery, alongside neurosurgery, urology, and rehabilitation. Located on the shores of Lake Ohrid, it serves as a vital specialized healthcare center for the region, continually modernizing its facilities and techniques for advanced patient outcomes.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "hospital"
-      ]
-    },
+    "name": "St Erasmus",
+    "description": "The Special Hospital for Orthopaedic Surgery and Traumatology \"St. Erazmo\" in Ohrid is a leading public medical institution dedicated to the comprehensive care of the locomotory system. It provides advanced services for orthopedic diseases, acute trauma, and reconstructive surgery, alongside neurosurgery, urology, and rehabilitation. Located on the shores of Lake Ohrid, it serves as a vital specialized healthcare center for the region, continually modernizing its facilities and techniques for advanced patient outcomes.",
+    "type": [
+      "hospital"
+    ],
     "tags": [
       "hospital",
       "health",
@@ -2496,19 +1956,11 @@
   },
   {
     "id": 62,
-    "name": {
-      "en": "Tilevi Dental",
-      "mk": ""
-    },
-    "description": {
-      "en": "Tilevi Dental in Ohrid is a local dental office committed to providing general dental care for the community. Located at Car Samoil 8, they offer essential services like check-ups, cleanings, and common restorative treatments in a patient-focused setting. With regular operating hours from Monday to Saturday, Tilevi Dental aims to provide accessible and reliable dental services to ensure the oral health of its patients.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "dentist"
-      ]
-    },
+    "name": "Tilevi Dental",
+    "description": "Tilevi Dental in Ohrid is a local dental office committed to providing general dental care for the community. Located at Car Samoil 8, they offer essential services like check-ups, cleanings, and common restorative treatments in a patient-focused setting. With regular operating hours from Monday to Saturday, Tilevi Dental aims to provide accessible and reliable dental services to ensure the oral health of its patients.",
+    "type": [
+      "dentist"
+    ],
     "tags": [
       "dentist",
       "health",
@@ -2530,19 +1982,11 @@
   },
   {
     "id": 56,
-    "name": {
-      "en": "Via Farm",
-      "mk": ""
-    },
-    "description": {
-      "en": "Via Farm is a well-stocked pharmacy providing a range of prescription and over-the-counter medications, health products, and professional advice from qualified pharmacists to meet your healthcare needs.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "pharmacy"
-      ]
-    },
+    "name": "Via Farm",
+    "description": "Via Farm is a well-stocked pharmacy providing a range of prescription and over-the-counter medications, health products, and professional advice from qualified pharmacists to meet your healthcare needs.",
+    "type": [
+      "pharmacy"
+    ],
     "tags": [
       "pharmacy",
       "health",
@@ -2564,19 +2008,11 @@
   },
   {
     "id": 59,
-    "name": {
-      "en": "Via Farm - 13",
-      "mk": ""
-    },
-    "description": {
-      "en": "Via Farm is a well-stocked pharmacy providing a range of prescription and over-the-counter medications, health products, and professional advice from qualified pharmacists to meet your healthcare needs.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "pharmacy"
-      ]
-    },
+    "name": "Via Farm - 13",
+    "description": "Via Farm is a well-stocked pharmacy providing a range of prescription and over-the-counter medications, health products, and professional advice from qualified pharmacists to meet your healthcare needs.",
+    "type": [
+      "pharmacy"
+    ],
     "tags": [
       "pharmacy",
       "health",
@@ -2598,19 +2034,11 @@
   },
   {
     "id": 54,
-    "name": {
-      "en": "Via Farm - 2",
-      "mk": ""
-    },
-    "description": {
-      "en": "Via Farm is a well-stocked pharmacy providing a range of prescription and over-the-counter medications, health products, and professional advice from qualified pharmacists to meet your healthcare needs.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "pharmacy"
-      ]
-    },
+    "name": "Via Farm - 2",
+    "description": "Via Farm is a well-stocked pharmacy providing a range of prescription and over-the-counter medications, health products, and professional advice from qualified pharmacists to meet your healthcare needs.",
+    "type": [
+      "pharmacy"
+    ],
     "tags": [
       "pharmacy",
       "health",
@@ -2632,19 +2060,11 @@
   },
   {
     "id": 53,
-    "name": {
-      "en": "Zegin No. 2",
-      "mk": ""
-    },
-    "description": {
-      "en": "Zegin Pharmacy is a trusted local pharmacy offering a comprehensive selection of prescription medications, over-the-counter remedies, vitamins, and personal care products. Their knowledgeable pharmacists are available to provide professional advice and support for all your health and wellness needs.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "pharmacy"
-      ]
-    },
+    "name": "Zegin No. 2",
+    "description": "Zegin Pharmacy is a trusted local pharmacy offering a comprehensive selection of prescription medications, over-the-counter remedies, vitamins, and personal care products. Their knowledgeable pharmacists are available to provide professional advice and support for all your health and wellness needs.",
+    "type": [
+      "pharmacy"
+    ],
     "tags": [
       "pharmacy",
       "health",
@@ -2666,19 +2086,11 @@
   },
   {
     "id": 58,
-    "name": {
-      "en": "Zegin No. 3",
-      "mk": ""
-    },
-    "description": {
-      "en": "Zegin Pharmacy is a trusted local pharmacy offering a comprehensive selection of prescription medications, over-the-counter remedies, vitamins, and personal care products. Their knowledgeable pharmacists are available to provide professional advice and support for all your health and wellness needs.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "pharmacy"
-      ]
-    },
+    "name": "Zegin No. 3",
+    "description": "Zegin Pharmacy is a trusted local pharmacy offering a comprehensive selection of prescription medications, over-the-counter remedies, vitamins, and personal care products. Their knowledgeable pharmacists are available to provide professional advice and support for all your health and wellness needs.",
+    "type": [
+      "pharmacy"
+    ],
     "tags": [
       "pharmacy",
       "health",
@@ -2700,19 +2112,11 @@
   },
   {
     "id": 57,
-    "name": {
-      "en": "Zegin No. 5",
-      "mk": ""
-    },
-    "description": {
-      "en": "Zegin Pharmacy is a trusted local pharmacy offering a comprehensive selection of prescription medications, over-the-counter remedies, vitamins, and personal care products. Their knowledgeable pharmacists are available to provide professional advice and support for all your health and wellness needs.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "pharmacy"
-      ]
-    },
+    "name": "Zegin No. 5",
+    "description": "Zegin Pharmacy is a trusted local pharmacy offering a comprehensive selection of prescription medications, over-the-counter remedies, vitamins, and personal care products. Their knowledgeable pharmacists are available to provide professional advice and support for all your health and wellness needs.",
+    "type": [
+      "pharmacy"
+    ],
     "tags": [
       "pharmacy",
       "health",
@@ -2734,19 +2138,11 @@
   },
   {
     "id": 50,
-    "name": {
-      "en": "Zegin No.1",
-      "mk": ""
-    },
-    "description": {
-      "en": "Zegin Pharmacy is a trusted local pharmacy offering a comprehensive selection of prescription medications, over-the-counter remedies, vitamins, and personal care products. Their knowledgeable pharmacists are available to provide professional advice and support for all your health and wellness needs.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "pharmacy"
-      ]
-    },
+    "name": "Zegin No.1",
+    "description": "Zegin Pharmacy is a trusted local pharmacy offering a comprehensive selection of prescription medications, over-the-counter remedies, vitamins, and personal care products. Their knowledgeable pharmacists are available to provide professional advice and support for all your health and wellness needs.",
+    "type": [
+      "pharmacy"
+    ],
     "tags": [
       "pharmacy",
       "health",
@@ -2768,19 +2164,11 @@
   },
   {
     "id": 55,
-    "name": {
-      "en": "Zegin No.4",
-      "mk": ""
-    },
-    "description": {
-      "en": "Zegin Pharmacy is a trusted local pharmacy offering a comprehensive selection of prescription medications, over-the-counter remedies, vitamins, and personal care products. Their knowledgeable pharmacists are available to provide professional advice and support for all your health and wellness needs.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "pharmacy"
-      ]
-    },
+    "name": "Zegin No.4",
+    "description": "Zegin Pharmacy is a trusted local pharmacy offering a comprehensive selection of prescription medications, over-the-counter remedies, vitamins, and personal care products. Their knowledgeable pharmacists are available to provide professional advice and support for all your health and wellness needs.",
+    "type": [
+      "pharmacy"
+    ],
     "tags": [
       "pharmacy",
       "health",
@@ -2802,20 +2190,12 @@
   },
   {
     "id": 40,
-    "name": {
-      "en": "Escape",
-      "mk": ""
-    },
-    "description": {
-      "en": "Escape Rent a Car in Ohrid provides reliable and flexible vehicle rental solutions for exploring the stunning North Macedonian landscape. They focus on offering a diverse and well-maintained fleet to ensure you find the perfect car for your journey, whether it's a compact for city driving or something larger for scenic routes. Committed to customer satisfaction and a straightforward rental process, Escape Rent a Car aims to help you discover Ohrid and beyond with ease and comfort.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "rent-a-car",
-        "rent-a-scooter"
-      ]
-    },
+    "name": "Escape",
+    "description": "Escape Rent a Car in Ohrid provides reliable and flexible vehicle rental solutions for exploring the stunning North Macedonian landscape. They focus on offering a diverse and well-maintained fleet to ensure you find the perfect car for your journey, whether it's a compact for city driving or something larger for scenic routes. Committed to customer satisfaction and a straightforward rental process, Escape Rent a Car aims to help you discover Ohrid and beyond with ease and comfort.",
+    "type": [
+      "rent-a-car",
+      "rent-a-scooter"
+    ],
     "tags": [
       "rent-a-car",
       "rent-a-scooter",
@@ -2838,19 +2218,11 @@
   },
   {
     "id": 73,
-    "name": {
-      "en": "Fauna Pet Shop",
-      "mk": ""
-    },
-    "description": {
-      "en": "Fauna Pet Shop is a well-equipped destination for pet owners, offering a wide array of products essential for the well-being and happiness of various pets. You can find a comprehensive selection of high-quality food, equipment, vitamins, minerals, and cosmetics for dogs, cats, birds, rodents, and fish. They also stock treats, leashes, collars, flea and tick prevention, cat litter, and even pet clothing, ensuring you can find everything needed for proper care and enrichment.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "pet-shop"
-      ]
-    },
+    "name": "Fauna Pet Shop",
+    "description": "Fauna Pet Shop is a well-equipped destination for pet owners, offering a wide array of products essential for the well-being and happiness of various pets. You can find a comprehensive selection of high-quality food, equipment, vitamins, minerals, and cosmetics for dogs, cats, birds, rodents, and fish. They also stock treats, leashes, collars, flea and tick prevention, cat litter, and even pet clothing, ensuring you can find everything needed for proper care and enrichment.",
+    "type": [
+      "pet-shop"
+    ],
     "tags": [
       "pet-shop",
       "pets",
@@ -2874,21 +2246,13 @@
   },
   {
     "id": 39,
-    "name": {
-      "en": "GoGo - Rent a Car",
-      "mk": ""
-    },
-    "description": {
-      "en": "GoGo - Rent a Car in Ohrid, North Macedonia, provides a personalized and professional rental experience for cars, bicycles, and e-bikes. They focus on offering a well-maintained, high-quality fleet to ensure a safe and reliable journey through the beautiful Ohrid region, with family-friendly options like child safety booster seats available. Prioritizing transparent pricing and excellent customer service, GoGo aims to make your exploration of Ohrid as smooth and enjoyable as possible.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "rent-a-car",
-        "rent-a-bike",
-        "rent-a-scooter"
-      ]
-    },
+    "name": "GoGo - Rent a Car",
+    "description": "GoGo - Rent a Car in Ohrid, North Macedonia, provides a personalized and professional rental experience for cars, bicycles, and e-bikes. They focus on offering a well-maintained, high-quality fleet to ensure a safe and reliable journey through the beautiful Ohrid region, with family-friendly options like child safety booster seats available. Prioritizing transparent pricing and excellent customer service, GoGo aims to make your exploration of Ohrid as smooth and enjoyable as possible.",
+    "type": [
+      "rent-a-car",
+      "rent-a-bike",
+      "rent-a-scooter"
+    ],
     "tags": [
       "rent-a-car",
       "rent-a-bike",
@@ -2913,19 +2277,11 @@
   },
   {
     "id": 72,
-    "name": {
-      "en": "GoodFellas GroomingSalon",
-      "mk": ""
-    },
-    "description": {
-      "en": "GoodFellas GroomingSalon in Ohrid is where your canine companions get top-notch care. Passionate about dogs, they provide professional grooming to ensure your furry friends always look and feel their absolute best.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "grooming"
-      ]
-    },
+    "name": "GoodFellas GroomingSalon",
+    "description": "GoodFellas GroomingSalon in Ohrid is where your canine companions get top-notch care. Passionate about dogs, they provide professional grooming to ensure your furry friends always look and feel their absolute best.",
+    "type": [
+      "grooming"
+    ],
     "tags": [
       "grooming",
       "pets",
@@ -2948,19 +2304,11 @@
   },
   {
     "id": 42,
-    "name": {
-      "en": "IGo Transport and Rental agency",
-      "mk": ""
-    },
-    "description": {
-      "en": "iGo Rent a Car in Ohrid aims to provide a convenient and straightforward car rental experience for travelers. They distinguish themselves with a focus on offering new and clean vehicles across various categories, from economy to more spacious options. With services like free car delivery to your chosen location in Ohrid, iGo Rent a Car strives to make exploring the region easy and enjoyable, emphasizing quick reservations and customer satisfaction.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "rent-a-car"
-      ]
-    },
+    "name": "IGo Transport and Rental agency",
+    "description": "iGo Rent a Car in Ohrid aims to provide a convenient and straightforward car rental experience for travelers. They distinguish themselves with a focus on offering new and clean vehicles across various categories, from economy to more spacious options. With services like free car delivery to your chosen location in Ohrid, iGo Rent a Car strives to make exploring the region easy and enjoyable, emphasizing quick reservations and customer satisfaction.",
+    "type": [
+      "rent-a-car"
+    ],
     "tags": [
       "rent-a-car",
       "rental",
@@ -2982,19 +2330,11 @@
   },
   {
     "id": 70,
-    "name": {
-      "en": "K9 Grooming",
-      "mk": ""
-    },
-    "description": {
-      "en": "K-9 Grooming Salon in Ohrid, located at Dimitar Vlahov br. 20A, offers professional and comprehensive grooming services to keep your dog looking and feeling their best. With a high rating, they provide essential care including bathing, brushing, hair trimming, and nail clipping for a happy and healthy canine companion.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "grooming"
-      ]
-    },
+    "name": "K9 Grooming",
+    "description": "K-9 Grooming Salon in Ohrid, located at Dimitar Vlahov br. 20A, offers professional and comprehensive grooming services to keep your dog looking and feeling their best. With a high rating, they provide essential care including bathing, brushing, hair trimming, and nail clipping for a happy and healthy canine companion.",
+    "type": [
+      "grooming"
+    ],
     "tags": [
       "grooming",
       "pets",
@@ -3017,19 +2357,11 @@
   },
   {
     "id": 41,
-    "name": {
-      "en": "Pegasus",
-      "mk": ""
-    },
-    "description": {
-      "en": "Pegasus Rent a Car in Ohrid stands out by offering a highly convenient and customer-focused rental experience. They provide a diverse fleet of well-maintained vehicles suitable for any journey, complemented by services like free car delivery to various locations in the region, including the airport and city center. With a commitment to 24/7 technical support and road assistance, Pegasus Rent a Car ensures peace of mind and aims to deliver the best cars at competitive prices for a smooth exploration of Ohrid and its surroundings.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "rent-a-car"
-      ]
-    },
+    "name": "Pegasus",
+    "description": "Pegasus Rent a Car in Ohrid stands out by offering a highly convenient and customer-focused rental experience. They provide a diverse fleet of well-maintained vehicles suitable for any journey, complemented by services like free car delivery to various locations in the region, including the airport and city center. With a commitment to 24/7 technical support and road assistance, Pegasus Rent a Car ensures peace of mind and aims to deliver the best cars at competitive prices for a smooth exploration of Ohrid and its surroundings.",
+    "type": [
+      "rent-a-car"
+    ],
     "tags": [
       "rent-a-car",
       "rental",
@@ -3051,19 +2383,11 @@
   },
   {
     "id": 43,
-    "name": {
-      "en": "Rent a Car Kiko",
-      "mk": ""
-    },
-    "description": {
-      "en": "Rent a Car Kiko in Ohrid is committed to offering a convenient and reliable car rental service. They aim to provide a well-maintained fleet of vehicles to cater to various travel needs, ensuring a smooth and comfortable journey as you explore Ohrid and its beautiful surroundings. Kiko focuses on delivering a hassle-free experience with a dedication to customer satisfaction.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "rent-a-car"
-      ]
-    },
+    "name": "Rent a Car Kiko",
+    "description": "Rent a Car Kiko in Ohrid is committed to offering a convenient and reliable car rental service. They aim to provide a well-maintained fleet of vehicles to cater to various travel needs, ensuring a smooth and comfortable journey as you explore Ohrid and its beautiful surroundings. Kiko focuses on delivering a hassle-free experience with a dedication to customer satisfaction.",
+    "type": [
+      "rent-a-car"
+    ],
     "tags": [
       "rent-a-car",
       "rental",
@@ -3085,19 +2409,11 @@
   },
   {
     "id": 71,
-    "name": {
-      "en": "Vet Spirit",
-      "mk": ""
-    },
-    "description": {
-      "en": "Vet Spirit Ohrid is a veterinary clinic dedicated to providing comprehensive care for pets. They offer a wide range of services, including preventive examinations, various treatments, surgery, dentistry, and biochemical and blood analysis, all aimed at ensuring the health and well-being of your animal companions. They are known for their commitment to attentive service for domestic animals.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "vet"
-      ]
-    },
+    "name": "Vet Spirit",
+    "description": "Vet Spirit Ohrid is a veterinary clinic dedicated to providing comprehensive care for pets. They offer a wide range of services, including preventive examinations, various treatments, surgery, dentistry, and biochemical and blood analysis, all aimed at ensuring the health and well-being of your animal companions. They are known for their commitment to attentive service for domestic animals.",
+    "type": [
+      "vet"
+    ],
     "tags": [
       "vet",
       "pets",
@@ -3121,19 +2437,11 @@
   },
   {
     "id": 74,
-    "name": {
-      "en": "Vet-Medika",
-      "mk": ""
-    },
-    "description": {
-      "en": "Veterinarna Ambulanta Vet-Medika, widely known as Vet Medika Ohrid, is a place where your beloved animal companions receive caring and professional attention. They understand that your pet is family, and their team is dedicated to providing a warm, reassuring environment for both you and your furry, scaled, or feathered friend.\n\nAt Vet Medika Ohrid, you can expect comprehensive general veterinary care. This typically includes everything from essential routine check-ups and vaccinations to the diagnosis and treatment of various illnesses. They're there for those unexpected minor injuries and also offer valuable advice on preventative care, nutrition, and overall wellness.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "vet"
-      ]
-    },
+    "name": "Vet-Medika",
+    "description": "Veterinarna Ambulanta Vet-Medika, widely known as Vet Medika Ohrid, is a place where your beloved animal companions receive caring and professional attention. They understand that your pet is family, and their team is dedicated to providing a warm, reassuring environment for both you and your furry, scaled, or feathered friend.\n\nAt Vet Medika Ohrid, you can expect comprehensive general veterinary care. This typically includes everything from essential routine check-ups and vaccinations to the diagnosis and treatment of various illnesses. They're there for those unexpected minor injuries and also offer valuable advice on preventative care, nutrition, and overall wellness.",
+    "type": [
+      "vet"
+    ],
     "tags": [
       "vet",
       "pets",
@@ -3156,19 +2464,11 @@
   },
   {
     "id": 69,
-    "name": {
-      "en": "Veterinarna Ambulanta Toni",
-      "mk": ""
-    },
-    "description": {
-      "en": "Veterinarian Ambulance Dr. Toni, also known as Toni Vet, is a highly-rated clinic in Ohrid dedicated to the health and well-being of your beloved pets. They offer comprehensive general veterinary care, ensuring your animals receive compassionate and professional attention.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "vet"
-      ]
-    },
+    "name": "Veterinarna Ambulanta Toni",
+    "description": "Veterinarian Ambulance Dr. Toni, also known as Toni Vet, is a highly-rated clinic in Ohrid dedicated to the health and well-being of your beloved pets. They offer comprehensive general veterinary care, ensuring your animals receive compassionate and professional attention.",
+    "type": [
+      "vet"
+    ],
     "tags": [
       "vet",
       "pets",
@@ -3192,19 +2492,9 @@
   },
   {
     "id": 77,
-    "name": {
-      "en": "Armada Boat",
-      "mk": ""
-    },
-    "description": {
-      "en": "Ready to experience the magic of Lake Ohrid in a truly special way? Boat Armada is here to make your lake adventures unforgettable! They're all about giving you a fantastic time out on the water, whether you're looking for a relaxing cruise, an exciting exploration of hidden coves, or a fun day soaking up the sun.\n\nWith Boat Armada, you can expect a seamless and enjoyable experience. They offer comfortable boats and a friendly crew dedicated to showing you the very best of our stunning lake. It's the perfect way to create lasting memories with family and friends, all while surrounded by Ohrid's breathtaking natural beauty. Come on board and let the good times sail!",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "cruises"
-      ]
-    },
+    "name": "Armada Boat",
+    "description": "Ready to experience the magic of Lake Ohrid in a truly special way? Boat Armada is here to make your lake adventures unforgettable! They're all about giving you a fantastic time out on the water, whether you're looking for a relaxing cruise, an exciting exploration of hidden coves, or a fun day soaking up the sun.\n\nWith Boat Armada, you can expect a seamless and enjoyable experience. They offer comfortable boats and a friendly crew dedicated to showing you the very best of our stunning lake. It's the perfect way to create lasting memories with family and friends, all while surrounded by Ohrid's breathtaking natural beauty. Come on board and let the good times sail!",
+    "type": "cruises",
     "tags": [
       "adventure",
       "water",
@@ -3241,21 +2531,13 @@
   },
   {
     "id": 8,
-    "name": {
-      "en": "Cuba Libre Beach & Bar",
-      "mk": ""
-    },
-    "description": {
-      "en": "Cuba Libre takes the party outdoors—on a lakeside beach! This seasonal hotspot morphs into a tropical-style lounge with cocktails, snacks, sunbeds, and loud, fun music. In summer, grab a mojito by the water; off-season, the indoor bar keeps the relaxed party vibe alive.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "coffee",
-        "beach",
-        "club"
-      ]
-    },
+    "name": "Cuba Libre Beach & Bar",
+    "description": "Cuba Libre takes the party outdoors—on a lakeside beach! This seasonal hotspot morphs into a tropical-style lounge with cocktails, snacks, sunbeds, and loud, fun music. In summer, grab a mojito by the water; off-season, the indoor bar keeps the relaxed party vibe alive.",
+    "type": [
+      "coffee",
+      "beach",
+      "club"
+    ],
     "tags": [
       "popular",
       "beach",
@@ -3292,21 +2574,13 @@
   },
   {
     "id": 11,
-    "name": {
-      "en": "Egoist Beach Bar & Restaurant",
-      "mk": ""
-    },
-    "description": {
-      "en": "A luxury-style nighttime destination that also serves as a beach with perfect food during summer days. Hosts events with popular Macedonian and international singers at night.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "restaurant",
-        "club",
-        "beach"
-      ]
-    },
+    "name": "Egoist Beach Bar & Restaurant",
+    "description": "A luxury-style nighttime destination that also serves as a beach with perfect food during summer days. Hosts events with popular Macedonian and international singers at night.",
+    "type": [
+      "restaurant",
+      "club",
+      "beach"
+    ],
     "tags": [
       "popular",
       "beach",
@@ -3343,20 +2617,12 @@
   },
   {
     "id": 9,
-    "name": {
-      "en": "Kadmo Beach Restaurant",
-      "mk": ""
-    },
-    "description": {
-      "en": "The lakefront restaurant, Kadmo Beach Restaurant offers the full dining experience with pasta, burgers, seafood, and even pizza—all with stunning lake views. With its charming sunset setting, this is more of a full‑meal, relaxed-elegance spot than just a drink destination.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "restaurant",
-        "beach"
-      ]
-    },
+    "name": "Kadmo Beach Restaurant",
+    "description": "The lakefront restaurant, Kadmo Beach Restaurant offers the full dining experience with pasta, burgers, seafood, and even pizza—all with stunning lake views. With its charming sunset setting, this is more of a full‑meal, relaxed-elegance spot than just a drink destination.",
+    "type": [
+      "restaurant",
+      "beach"
+    ],
     "tags": [
       "popular",
       "beach",
@@ -3393,20 +2659,12 @@
   },
   {
     "id": 20,
-    "name": {
-      "en": "Kaneo Beach Bar",
-      "mk": ""
-    },
-    "description": {
-      "en": "Imagine yourself unwinding at Kaneo Beach Bar, where the gentle lapping of Lake Ohrid's waves provides the perfect soundtrack to your day. It's a spot where every sip tastes better with the stunning views, and the laid-back vibe makes you feel instantly at home. Whether you're soaking up the sun or enjoying a cool drink as the day fades, Kaneo offers that perfect blend of relaxation and pure lakeside magic.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "beach",
-        "restaurant"
-      ]
-    },
+    "name": "Kaneo Beach Bar",
+    "description": "Imagine yourself unwinding at Kaneo Beach Bar, where the gentle lapping of Lake Ohrid's waves provides the perfect soundtrack to your day. It's a spot where every sip tastes better with the stunning views, and the laid-back vibe makes you feel instantly at home. Whether you're soaking up the sun or enjoying a cool drink as the day fades, Kaneo offers that perfect blend of relaxation and pure lakeside magic.",
+    "type": [
+      "beach",
+      "restaurant"
+    ],
     "tags": [
       "popular",
       "foodie",
@@ -3442,19 +2700,11 @@
   },
   {
     "id": 68,
-    "name": {
-      "en": "Ohrid Lake Cruises",
-      "mk": ""
-    },
-    "description": {
-      "en": "Ohrid Lake Cruises \"Mato Catamaran\" offers a range of unforgettable experiences on Lake Ohrid. You can embark on full-day tours to historical and natural sites like the Monastery of St. Naum, enjoying the stunning coastal villages and breathtaking sunsets. They also provide romantic night cruises, allowing you to experience Ohrid's unique evening atmosphere with comfortable, luxurious boats and cold drinks. For special occasions, Mato Catamaran offers private parties, making it an ideal choice for birthdays, weddings, or corporate events. Their tours aim to provide a unique perspective of Ohrid, showcasing its city and surrounding beauties from the tranquil waters of the lake, often including free Wi-Fi and complimentary drinks on board.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "cruises"
-      ]
-    },
+    "name": "Ohrid Lake Cruises",
+    "description": "Ohrid Lake Cruises \"Mato Catamaran\" offers a range of unforgettable experiences on Lake Ohrid. You can embark on full-day tours to historical and natural sites like the Monastery of St. Naum, enjoying the stunning coastal villages and breathtaking sunsets. They also provide romantic night cruises, allowing you to experience Ohrid's unique evening atmosphere with comfortable, luxurious boats and cold drinks. For special occasions, Mato Catamaran offers private parties, making it an ideal choice for birthdays, weddings, or corporate events. Their tours aim to provide a unique perspective of Ohrid, showcasing its city and surrounding beauties from the tranquil waters of the lake, often including free Wi-Fi and complimentary drinks on board.",
+    "type": [
+      "cruises"
+    ],
     "tags": [
       "cruises",
       "adventure",
@@ -3491,21 +2741,60 @@
     "events": []
   },
   {
+    "id": 85,
+    "name": "Taboo Billiards & Bar",
+    "description": "Step into Taboo Billiards & Bar in Ohrid, and you'll find a place that's both stylish and incredibly welcoming. Imagine sinking into a plush armchair on a striking red carpet, cueing up for a game of pool on a vibrant blue table, all while surrounded by warm, inviting lighting. Whether you're unwinding at the beautifully lit bar with a drink in hand or enjoying some friendly competition, Taboo feels like your go-to spot for a relaxed yet lively evening out. It's got that perfect blend of classic charm and modern comfort, making every visit feel just right.",
+    "type": [
+      "pub",
+      "coffee"
+    ],
+    "tags": [
+      "pub",
+      "coffee",
+      "entertainment",
+      "billiards",
+      "social"
+    ],
+    "imageUrl": "images_venue/taboo_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/taboo/photo1.jpg",
+        "alt": "A wide shot of a lively entertainment space, dominated by a brilliant blue billiard table set against a bold red carpet. To the left, a cozy seating area with tables and chairs invites conversation, while to the right, plush, dark green armchairs offer a more relaxed vibe. In the background, a beautifully lit bar is visible, making this feel like the perfect spot for a fun-filled evening with friends."
+      },
+      {
+        "url": "venue_gallery/taboo/photo2.jpg",
+        "alt": "A closer look at a stylish bar area, showcasing the rich, dark wood of the bar counter and the subtle warm lighting beneath it. The exposed brick wall behind is lined with shelves holding various bottles, all bathed in a soft, inviting glow. A coffee machine sits on the counter, suggesting this place serves more than just evening drinks. It feels sophisticated and welcoming."
+      },
+      {
+        "url": "venue_gallery/taboo/photo3.jpg",
+        "alt": "A warm and inviting bar scene, dimly lit with amber glow. The long wooden bar stretches across, with a row of plush, high-backed stools waiting for patrons. Behind the bar, shelves stocked with bottles are softly illuminated, and a well-lit fridge on the right promises cold drinks. It looks like a cozy spot for a night out."
+      },
+      {
+        "url": "venue_gallery/taboo/photo4.jpg",
+        "alt": "A vibrant and playful view of a recreation area with a bright blue billiard table taking center stage on a striking red carpet. In the background, there's a glimpse of a well-stocked bar, and a 'Red Bull Open' sign adds a splash of neon. An arched doorway in the brick wall leads to what looks like another part of the venue, hinting at more fun to be had."
+      }
+    ],
+    "rating": 4.4,
+    "ratingCount": 1,
+    "priceLevel": 1,
+    "location": {
+      "address": "Taboo - Billiards & Bar, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Taboo+-+Billiards+%26+Bar/@41.11534689194039,20.800175381482767,17z/data=!3m1!4b1!4m6!3m5!1s0x1350db7e2b2c4a81:0xe1ff5903190a4a8c!8m2!3d41.11534689194039!4d20.800175381482767!16s%2Fg%2F11c5s1bvf0?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d531.3692484737195!2d20.800175381482767!3d41.11534689194039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db7e2b2c4a81%3A0xe1ff5903190a4a8c!2sTaboo%20-%20Billiards%20%26%20Bar!5e0!3m2!1sen!2smk!4v1751809282854!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070 361 002",
+    "workingHours": "09:00 - 01:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
     "id": 86,
-    "name": {
-      "en": "Autotransport Boban",
-      "mk": ""
-    },
-    "description": {
-      "en": "With Autotransport Boban, your prized possessions are always in motion, safely and swiftly. Whether it's your car, yacht, or boat, we're on call 24/7 to ensure a smooth journey. We're not just transporting vehicles we're delivering peace of mind, one mile at a time.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "transport",
-        "rental"
-      ]
-    },
+    "name": "Autotransport Boban",
+    "description": "With Autotransport Boban, your prized possessions are always in motion, safely and swiftly. Whether it's your car, yacht, or boat, we're on call 24/7 to ensure a smooth journey. We're not just transporting vehicles we're delivering peace of mind, one mile at a time.",
+    "type": [
+      "transport",
+      "rental"
+    ],
     "tags": [
       "transport",
       "rental",
@@ -3539,19 +2828,11 @@
   },
   {
     "id": 87,
-    "name": {
-      "en": "Paragliding Ohrid",
-      "mk": ""
-    },
-    "description": {
-      "en": "Prepare to embrace the sky with our paragliding adventures from the majestic Mount Galicica, overlooking the serene beauty of Ohrid. We believe in more than just a flight we offer a personal journey into the clouds, guided by passionate pilots who share your thrill. Feel the wind whisper against your face as you launch into an unforgettable panorama, where the deep blue of Lake Ohrid merges with the endless horizon. We're here to help you not just fly, but to truly feel the freedom and magic of the moment, creating memories that will lift your spirit long after your feet touch the ground. Your adventure, our passion – together, we'll soar.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "paragliding"
-      ]
-    },
+    "name": "Paragliding Ohrid",
+    "description": "Prepare to embrace the sky with our paragliding adventures from the majestic Mount Galicica, overlooking the serene beauty of Ohrid. We believe in more than just a flight we offer a personal journey into the clouds, guided by passionate pilots who share your thrill. Feel the wind whisper against your face as you launch into an unforgettable panorama, where the deep blue of Lake Ohrid merges with the endless horizon. We're here to help you not just fly, but to truly feel the freedom and magic of the moment, creating memories that will lift your spirit long after your feet touch the ground. Your adventure, our passion – together, we'll soar.",
+    "type": [
+      "paragliding"
+    ],
     "tags": [
       "adventure",
       "paragliding",
@@ -3592,7 +2873,7 @@
         "alt": "A paraglider's view looking down over the vibrant turquoise waters of Lake Ohrid, with the densely packed red-roofed buildings of Ohrid town nestled along the curved coastline"
       }
     ],
-    "rating": 5,
+    "rating": 5.0,
     "priceLevel": 2,
     "location": {
       "address": "Paragliding Ohrid, Ohrid",
@@ -3606,19 +2887,11 @@
   },
   {
     "id": 88,
-    "name": {
-      "en": "Urban Shine Ohrid",
-      "mk": ""
-    },
-    "description": {
-      "en": "Urban Shine Ohrid is your premier destination for meticulous car detailing and expert furniture cleaning. We bring a professional touch to revitalize your vehicles and restore the vibrancy of your home furnishings, ensuring a truly comprehensive clean",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "detailing"
-      ]
-    },
+    "name": "Urban Shine Ohrid",
+    "description": "Urban Shine Ohrid is your premier destination for meticulous car detailing and expert furniture cleaning. We bring a professional touch to revitalize your vehicles and restore the vibrancy of your home furnishings, ensuring a truly comprehensive clean",
+    "type": [
+      "detailing"
+    ],
     "tags": [
       "detailing",
       "car-cleaning",
@@ -3655,19 +2928,11 @@
   },
   {
     "id": 89,
-    "name": {
-      "en": "Orevche Beach",
-      "mk": ""
-    },
-    "description": {
-      "en": "Dive into the dynamic spirit of Orevche Beach, perfectly situated on the breathtaking shores of Lake Ohrid. This isn't just a beach it's a non-stop hub of energy! From the moment the sun rises, you'll find a lively atmosphere, crystal-clear waters perfect for a refreshing dip, and stunning views that frame your day. But Orevche is truly renowned for its vibrant party scene, which ignites early and continues well into the night. Expect buzzing music, spontaneous celebrations, and an infectious good-time vibe that makes every moment a party. Whether you're chilling by the water or dancing with friends, Orevche Beach promises an unforgettable, high-energy lakeside experience.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "beach"
-      ]
-    },
+    "name": "Orevche Beach",
+    "description": "Dive into the dynamic spirit of Orevche Beach, perfectly situated on the breathtaking shores of Lake Ohrid. This isn't just a beach it's a non-stop hub of energy! From the moment the sun rises, you'll find a lively atmosphere, crystal-clear waters perfect for a refreshing dip, and stunning views that frame your day. But Orevche is truly renowned for its vibrant party scene, which ignites early and continues well into the night. Expect buzzing music, spontaneous celebrations, and an infectious good-time vibe that makes every moment a party. Whether you're chilling by the water or dancing with friends, Orevche Beach promises an unforgettable, high-energy lakeside experience.",
+    "type": [
+      "beach"
+    ],
     "tags": [
       "beach",
       "party",
@@ -3714,19 +2979,11 @@
   },
   {
     "id": 90,
-    "name": {
-      "en": "Park Golden Beach",
-      "mk": ""
-    },
-    "description": {
-      "en": "Discover Park Golden Beach, the ultimate destination on Lake Ohrid where the fun never stops! Our beautiful beach and inviting swimming pool are your playgrounds for thrilling day parties, filled with sunshine, great music, and an infectious vibe.\n\nBut the real magic happens when the stars come out! Our poolside transforms into Ohrid's hottest spot for electrifying night parties, offering an unparalleled atmosphere for dancing and creating unforgettable memories.\n\nAt Park Golden Beach, every moment is a celebration. Join us for an exhilarating experience where the lake's beauty meets non-stop entertainment.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "beach"
-      ]
-    },
+    "name": "Park Golden Beach",
+    "description": "Discover Park Golden Beach, the ultimate destination on Lake Ohrid where the fun never stops! Our beautiful beach and inviting swimming pool are your playgrounds for thrilling day parties, filled with sunshine, great music, and an infectious vibe.\n\nBut the real magic happens when the stars come out! Our poolside transforms into Ohrid's hottest spot for electrifying night parties, offering an unparalleled atmosphere for dancing and creating unforgettable memories.\n\nAt Park Golden Beach, every moment is a celebration. Join us for an exhilarating experience where the lake's beauty meets non-stop entertainment.",
+    "type": [
+      "beach"
+    ],
     "tags": [
       "beach",
       "pool",
@@ -3771,19 +3028,11 @@
   },
   {
     "id": 91,
-    "name": {
-      "en": "Gradishte 2 Beach Bar",
-      "mk": ""
-    },
-    "description": {
-      "en": "Get ready for non-stop summer vibes at Gradishte 2 Beach Bar on Lake Ohrid! Famed for our legendary all-day parties, we bring the beats, the sun, and the clearest waters together for an unforgettable experience. Dive in, dance on the pebbles, and make memories. Your summer starts here!",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "beach"
-      ]
-    },
+    "name": "Gradishte 2 Beach Bar",
+    "description": "Get ready for non-stop summer vibes at Gradishte 2 Beach Bar on Lake Ohrid! Famed for our legendary all-day parties, we bring the beats, the sun, and the clearest waters together for an unforgettable experience. Dive in, dance on the pebbles, and make memories. Your summer starts here!",
+    "type": [
+      "beach"
+    ],
     "tags": [
       "beach",
       "party",
@@ -3810,19 +3059,11 @@
   },
   {
     "id": 92,
-    "name": {
-      "en": "Ana Marija",
-      "mk": ""
-    },
-    "description": {
-      "en": "Discover a true gem in Ohrid: Restaurant Ana Marija. We invite you to a place where warmth fills the air and the views are simply magnificent. Imagine settling in with loved ones, enjoying a delicious meal while gazing out at the sparkling lights of the old city and the vast, peaceful Lake Ohrid – a picture-perfect backdrop for any occasion.\n\nWhat truly sets us apart is the heartbeat of our evenings: the timeless melodies of Ohridski Calgii. This beautiful traditional music isn't just background noise; it's a living part of our heritage, adding a unique, soulful touch that makes every moment feel authentically Ohrid. It's the perfect way to unwind, connect, and truly feel the spirit of our town.\n\nJoin us at Ana Marija for an experience that delights your palate and touches your heart.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "restaurant"
-      ]
-    },
+    "name": "Ana Marija",
+    "description": "Discover a true gem in Ohrid: Restaurant Ana Marija. We invite you to a place where warmth fills the air and the views are simply magnificent. Imagine settling in with loved ones, enjoying a delicious meal while gazing out at the sparkling lights of the old city and the vast, peaceful Lake Ohrid – a picture-perfect backdrop for any occasion.\n\nWhat truly sets us apart is the heartbeat of our evenings: the timeless melodies of Ohridski Calgii. This beautiful traditional music isn't just background noise; it's a living part of our heritage, adding a unique, soulful touch that makes every moment feel authentically Ohrid. It's the perfect way to unwind, connect, and truly feel the spirit of our town.\n\nJoin us at Ana Marija for an experience that delights your palate and touches your heart.",
+    "type": [
+      "restaurant"
+    ],
     "tags": [
       "restaurant",
       "traditional",
@@ -3866,19 +3107,11 @@
   },
   {
     "id": 93,
-    "name": {
-      "en": "Restaurant Valentino",
-      "mk": ""
-    },
-    "description": {
-      "en": "Dive into a world of taste at Valentino Ohrid. We're dedicated to serving truly good food with an impressive variety of styles on our menu. Whatever your preference, you'll find a delicious experience crafted just for you. Come and discover your next culinary favorite!",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "restaurant"
-      ]
-    },
+    "name": "Restaurant Valentino",
+    "description": "Dive into a world of taste at Valentino Ohrid. We're dedicated to serving truly good food with an impressive variety of styles on our menu. Whatever your preference, you'll find a delicious experience crafted just for you. Come and discover your next culinary favorite!",
+    "type": [
+      "restaurant"
+    ],
     "tags": [
       "restaurant",
       "fine-dining",
@@ -3925,19 +3158,11 @@
   },
   {
     "id": 94,
-    "name": {
-      "en": "Kaj Mestono",
-      "mk": ""
-    },
-    "description": {
-      "en": "Kaj Mestono, nestled in the serene village of Peshtani, offers a truly enchanting escape from the bustling city crowds of Ohrid. This remarkable venue boasts an unparalleled, sweeping panorama of the entire Lake Ohrid, a view so perfect it feels hand-painted.\n\nImagine stepping onto a terrace where the turquoise waters stretch endlessly before you, meeting the distant mountains in a hazy embrace. From sunrise's gentle glow to the breathtaking hues of sunset painting the sky over the tranquil lake, every moment here is a masterpiece. Kaj Mestono isn't just a place it's an experience, a tranquil haven where the beauty of nature takes center stage, allowing you to unwind, connect, and savor the peace that only such an incredible vista can offer. It's the ideal spot for those seeking serenity, unforgettable moments, and a visual feast for the soul, far removed from the everyday.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "restaurant"
-      ]
-    },
+    "name": "Kaj Mestono",
+    "description": "Kaj Mestono, nestled in the serene village of Peshtani, offers a truly enchanting escape from the bustling city crowds of Ohrid. This remarkable venue boasts an unparalleled, sweeping panorama of the entire Lake Ohrid, a view so perfect it feels hand-painted.\n\nImagine stepping onto a terrace where the turquoise waters stretch endlessly before you, meeting the distant mountains in a hazy embrace. From sunrise's gentle glow to the breathtaking hues of sunset painting the sky over the tranquil lake, every moment here is a masterpiece. Kaj Mestono isn't just a place it's an experience, a tranquil haven where the beauty of nature takes center stage, allowing you to unwind, connect, and savor the peace that only such an incredible vista can offer. It's the ideal spot for those seeking serenity, unforgettable moments, and a visual feast for the soul, far removed from the everyday.",
+    "type": [
+      "restaurant"
+    ],
     "tags": [
       "restaurant",
       "scenic",
@@ -3985,19 +3210,11 @@
   },
   {
     "id": 95,
-    "name": {
-      "en": "Kaneo Letna Bavcha",
-      "mk": ""
-    },
-    "description": {
-      "en": "Kaneo Letna Bavcha, often simply known as Kaneo Restaurant & Summer Garden, isn't just one of Ohrid's most popular venues it's practically a postcard brought to life. Perched right on the serene shores of Lake Ohrid, with the iconic Church of St. John at Kaneo seemingly rising out of the water beside it, this spot offers a truly magical ambiance that's hard to beat.\n\nImagine savoring exquisite Macedonian cuisine, from their renowned Ohrid lake fish to fresh seafood, all while the gentle lapping of the waves provides a natural soundtrack. Whether you're enjoying a sun-drenched lunch on their expansive terrace or a romantic dinner as the sun dips below the horizon, painting the sky in fiery hues, every meal here feels like an occasion. It's a place where the stunning views compete only with the delicious flavors on your plate, creating an unforgettable sensory experience. The friendly service and the palpable sense of history in the air simply add to its charm, making Kaneo Letna Bavcha a beloved gem in the heart of Ohrid.",
-      "mk": ""
-    },
-    "type": {
-      "en": [
-        "restaurant"
-      ]
-    },
+    "name": "Kaneo Letna Bavcha",
+    "description": "Kaneo Letna Bavcha, often simply known as Kaneo Restaurant & Summer Garden, isn't just one of Ohrid's most popular venues it's practically a postcard brought to life. Perched right on the serene shores of Lake Ohrid, with the iconic Church of St. John at Kaneo seemingly rising out of the water beside it, this spot offers a truly magical ambiance that's hard to beat.\n\nImagine savoring exquisite Macedonian cuisine, from their renowned Ohrid lake fish to fresh seafood, all while the gentle lapping of the waves provides a natural soundtrack. Whether you're enjoying a sun-drenched lunch on their expansive terrace or a romantic dinner as the sun dips below the horizon, painting the sky in fiery hues, every meal here feels like an occasion. It's a place where the stunning views compete only with the delicious flavors on your plate, creating an unforgettable sensory experience. The friendly service and the palpable sense of history in the air simply add to its charm, making Kaneo Letna Bavcha a beloved gem in the heart of Ohrid.",
+    "type": [
+      "restaurant"
+    ],
     "tags": [
       "restaurant",
       "lakeside",
@@ -4045,6 +3262,44 @@
     },
     "phone": "070 776 837",
     "workingHours": "09:00 - 22:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 96,
+    "name": "Golf Club Ohrid CZG",
+    "description": "Nestled gracefully within the scenic city area of Ohrid, Ohrid Golf Club CZG emerges as a distinctive and inviting retreat, offering a perfect blend of sporting excellence and serene leisure. At its heart lies a meticulously designed 6-hole, par 21 golf course, spanning four hectares, that promises an engaging and enjoyable challenge for players across all skill levels. Operating under the precise rules established by R&A and USGA, the club ensures a truly professional and fair playing environment, with flexible booking options for 6, 12, or 18 holes, complemented by convenient golf club and trolley rentals. Beyond the greens, the club is home to a dedicated Golf Academy, providing expert instruction through private, group, and trial lessons tailored to nurture every golfer's potential, from aspiring beginners to seasoned enthusiasts. The charming \"Gibli\" clubhouse serves as the vibrant hub of the club, not only housing a well-stocked pro shop for all your golfing needs but also featuring the inviting Gibli Café. This versatile space extends a warm invitation for organizing a variety of social gatherings, including dynamic team-building events and memorable birthday parties, making Ohrid Golf Club CZG a comprehensive destination that beautifully marries the joy of golf with opportunities for connection and celebration in the heart of Ohrid.",
+    "type": [
+      "sports"
+    ],
+    "tags": [
+      "golf",
+      "sport",
+      "adventure",
+      "academy",
+      "family",
+      "events"
+    ],
+    "imageUrl": "images_venue/adventure_sport/golf_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/golf/photo1.jpg",
+        "alt": "A sunny outdoor scene showing a lush green golf course. In the foreground, part of a white pillar with pink floral decorations is visible on the left. Two golfers with push carts are walking in the distance across the green. On the right, a golf bag with clubs rests on a stand next to a green hitting mat. Trees line the background under a bright blue sky."
+      },
+      {
+        "url": "venue_gallery/golf/photo2.jpg",
+        "alt": "A wide shot of a vibrant green golf course under a brilliant blue sky with some scattered white clouds. Trees line the left and background, and a distinctive gnarled, dead tree trunk stands on the right edge of the frame. The green grass of the course stretches out under the bright sunlight."
+      }
+    ],
+    "rating": 4.8,
+    "priceLevel": 2,
+    "location": {
+      "address": "Golf Club Ohrid CZG, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Golf+Club+Ohrid+CZG,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0136474251126!2d20.795785576447834!3d41.11239301300688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dde81f0f8353%3A0xfaabbe5670c0615a!2sGolf%20Club%20Ohrid%20CZG!5e0!3m2!1sen!2smk!4v1750874632065!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070 249 237",
+    "workingHours": "15:00 - 19:00 (Mon - Fri)<br>09:00 - 19:00 (Sat - Sun)",
     "bookingUrl": "#",
     "events": []
   }

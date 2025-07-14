@@ -3237,5 +3237,41 @@
     "workingHours": "09:00 - 22:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 96,
+    "name": "Golf Club Ohrid CZG",
+    "description": "Nestled gracefully within the scenic city area of Ohrid, Ohrid Golf Club CZG emerges as a distinctive and inviting retreat, offering a perfect blend of sporting excellence and serene leisure. At its heart lies a meticulously designed 6-hole, par 21 golf course, spanning four hectares, that promises an engaging and enjoyable challenge for players across all skill levels. Operating under the precise rules established by R&A and USGA, the club ensures a truly professional and fair playing environment, with flexible booking options for 6, 12, or 18 holes, complemented by convenient golf club and trolley rentals. Beyond the greens, the club is home to a dedicated Golf Academy, providing expert instruction through private, group, and trial lessons tailored to nurture every golfer's potential, from aspiring beginners to seasoned enthusiasts. The charming \"Gibli\" clubhouse serves as the vibrant hub of the club, not only housing a well-stocked pro shop for all your golfing needs but also featuring the inviting Gibli Café. This versatile space extends a warm invitation for organizing a variety of social gatherings, including dynamic team-building events and memorable birthday parties, making Ohrid Golf Club CZG a comprehensive destination that beautifully marries the joy of golf with opportunities for connection and celebration in the heart of Ohrid.",
+    "type": "sports",
+    "tags": [
+      "golf",
+      "sport",
+      "adventure",
+      "academy",
+      "family",
+      "events"
+    ],
+    "imageUrl": "images_venue/adventure_sport/golf_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/golf/photo1.jpg",
+        "alt": "A sunny outdoor scene showing a lush green golf course. In the foreground, part of a white pillar with pink floral decorations is visible on the left. Two golfers with push carts are walking in the distance across the green. On the right, a golf bag with clubs rests on a stand next to a green hitting mat. Trees line the background under a bright blue sky."
+      },
+      {
+        "url": "venue_gallery/golf/photo2.jpg",
+        "alt": "A wide shot of a vibrant green golf course under a brilliant blue sky with some scattered white clouds. Trees line the left and background, and a distinctive gnarled, dead tree trunk stands on the right edge of the frame. The green grass of the course stretches out under the bright sunlight."
+      }
+    ],
+    "rating": 4.8,
+    "priceLevel": 2,
+    "location": {
+      "address": "Golf Club Ohrid CZG, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Golf+Club+Ohrid+CZG,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0136474251126!2d20.795785576447834!3d41.11239301300688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dde81f0f8353%3A0xfaabbe5670c0615a!2sGolf%20Club%20Ohrid%20CZG!5e0!3m2!1sen!2smk!4v1750874632065!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070 249 237",
+    "workingHours": "15:00 - 19:00 (Mon - Fri)<br>09:00 - 19:00 (Sat - Sun)",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
