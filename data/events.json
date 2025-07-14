@@ -4068,5 +4068,20 @@
         "ticketPrice": "400 MKD",
         "locationName": "Orevche Beach",
         "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1505.5379350197938!2d20.802501035702093!3d41.00171256139019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c13591200d0f%3A0x6007f5112572b1c5!2zQmVhY2gg4oCeT3JldsSNZeKAnA!5e0!3m2!1sen!2smk!4v1752253966136!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    {
+        "id": 264,
+        "venueId": 76,
+        "eventName": "Pedja Medenica",
+        "isoDate": "2025-07-18",
+        "startTime": "23:46",
+        "day": "Fri.",
+        "description": "Get ready for an evening filled with powerful emotions and unforgettable melodies! We are incredibly excited to welcome the beloved Pedja Medenica to INclusive Ohrid.\n\nKnown for his captivating voice and songs that truly speak to the soul, Pedja Medenica promises a performance that will touch your heart. This is your chance to sing along to your favorites and experience the magic he brings to every stage.\n\nJoin us for a night where passion meets music, creating memories you'll cherish. Don't miss this special opportunity to connect with one of the region's most celebrated artists!",
+        "category": "Music",
+        "imageUrl": "events_image/inclusive/pedja.jpg",
+        "eventBookingUrl": "#",
+        "eventContact": "075 265 616",
+        "locationName": "INclusive",
+        "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.024588451584!2d20.79619265434825!3d41.11149499421593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcaa5b8b2e5b%3A0x1e1d6c8e1e9b6e2a!2sINclusive!5e0!3m2!1sen!2smk!4v1752260000000!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     }
 ]
