@@ -3267,10 +3267,56 @@
     "location": {
       "address": "Golf Club Ohrid CZG, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Golf+Club+Ohrid+CZG,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0136474251126!2d20.795785576447834!3d41.11239301300688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dde81f0f8353%3A0xfaabbe5670c0615a!2sGolf%20Club%20Ohrid%20CZG!5e0!3m2!1sen!2smk!4v1750874632065!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125.0247910415706!2d20.810714645585144!3d41.12931091394364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbc80dfe6305%3A0xb1df663440036641!2sGolf%20Club%20Ohrid%20CZG!5e0!3m2!1sen!2smk!4v1752488628955!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
     "phone": "070 249 237",
     "workingHours": "15:00 - 19:00 (Mon - Fri)<br>09:00 - 19:00 (Sat - Sun)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 97,
+    "name": "Queen Sunset Bar",
+    "description": "Nestled along the picturesque shores of Lake Ohrid, Queen Sunset Bar offers a truly regal experience for those seeking breathtaking views and a sophisticated ambiance. This outdoor venue, part of the Inex Olgica Hotel & Spa complex, is designed to maximize its stunning location, providing guests with unparalleled vistas of the expansive lake and the majestic mountains beyond, especially as the sun dips below the horizon.\n\nWith comfortable, stylish outdoor seating, including plush sofas and chairs set on a manicured green space, Queen Sunset Bar invites guests to relax and soak in the serene beauty. Whether you're enjoying a refreshing cocktail, a light snack, or simply taking in the magnificent sunsets that paint the sky in vibrant hues, the atmosphere here is one of relaxed elegance. It's the perfect spot to unwind after a day of exploring Ohrid, or to kick off an evening in this historic and beautiful city.",
+    "type": "coffee",
+    "tags": [
+      "sunset",
+      "lakeside",
+      "cocktails",
+      "scenic",
+      "outdoor",
+      "luxury",
+      "nightlife",
+      "club"
+    ],
+    "imageUrl": "images_venue/queen_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/queen/photo1.jpg",
+        "alt": "A wide shot of a sunset over a large lake with mountains in the background. A boat is visible on the water, and in the foreground is a modern outdoor seating area with tables and chairs on a patio with a white railing"
+      },
+      {
+        "url": "venue_gallery/queen/photo2.jpg",
+        "alt": "A group of people are seated at an outdoor bar or lounge area overlooking a large lake and distant mountains at dusk. They are sitting on comfortable outdoor sofas and chairs, some on a patch of artificial grass. A tall, white decorative lamp is prominent in the foreground."
+      },
+      {
+        "url": "venue_gallery/queen/photo3.jpg",
+        "alt": "A close-up of a yellow cocktail in a stemmed glass with a kiwi slice and two black straws, set on a white table. In the blurred background, there's a body of water under an overcast sky and a white railing."
+      },
+      {
+        "url": "venue_gallery/queen/photo4.jpg",
+        "alt": "A scenic view from an outdoor bar area, showing a vast lake and mountains in the distance under a clear sky. In the foreground, white cushioned outdoor chairs and tables are arranged along a white railing. The logo \"QUEEN SUNSET BAR\" is visible in the sky."
+      }
+    ],
+    "rating": 4.8,
+    "priceLevel": 2,
+    "location": {
+      "address": "Queen Sunset Bar, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Queen+Sunset+Bar/@41.085493387012676,20.79613323135766,17z/data=!3m1!4b1!4m6!3m5!1s0x1350c58917cecb51:0xdd18e3b8be12bf94!8m2!3d41.085493387012676!4d20.79613323135766!16s%2Fg%2F11y3p8qr9x?entry=ttu",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2126.4433291142163!2d20.79613323135766!3d41.085493387012676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c58917cecb51%3A0xdd18e3b8be12bf94!2sQueen%20Sunset%20Bar!5e0!3m2!1sen!2smk!4v1752488598722!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "076 400 040",
+    "workingHours": "19:00 - 00:00",
     "bookingUrl": "#",
     "events": []
   }
