@@ -4227,5 +4227,21 @@
         "ticketPrice": "100 MKD",
         "locationName": "Orevche Beach",
         "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1505.5379350197938!2d20.802501035702093!3d41.00171256139019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c13591200d0f%3A0x6007f5112572b1c5!2zQmVhY2gg4oCeT3JldeSNZeKAnA!5e0!3m2!1sen!2smk!4v1752253966136!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    {
+        "id": 274,
+        "venueId": 16,
+        "eventName": "DJ Vanco",
+        "isoDate": "2025-07-16",
+        "startTime": "21:30",
+        "day": "Wed.",
+        "description": "Get ready to rewind and groove as Ohrid's very own DJ Vanco, the master of old-school beats, takes over the decks at Tino's Pub!\n\nJoin us for a night of classic hits, forgotten gems, and all your favorite anthems from back in the day. DJ Vanco will be spinning a seamless mix of genres that defined an era, ensuring the dance floor is buzzing and the good vibes are flowing.\n\nTino's Pub, known for its lively atmosphere and prime lakeside location on Kej Makedonija, is the perfect setting to enjoy a nostalgic journey through sound. Grab a cold one, gather your friends, and prepare for a night of pure old-school fun with one of Ohrid's most beloved local DJs.",
+        "category": "Music",
+        "imageUrl": "images_venue/tino_pub_card.jpg",
+        "eventBookingUrl": "#",
+        "eventContact": "071 263 444",
+        "ticketPrice": "Free Entry",
+        "locationName": "Tino Pub",
+        "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.167727943966!2d20.80317447644784!3d41.10902781321446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd31c22464af%3A0xf903361d023a5c1b!2sTino's%20Pub%20%26%20Bar!5e0!3m2!1sen!2smk!4v1750872851291!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     }
 ]
