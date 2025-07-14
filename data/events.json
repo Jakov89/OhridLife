@@ -4243,5 +4243,21 @@
         "ticketPrice": "Free Entry",
         "locationName": "Tino Pub",
         "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.167727943966!2d20.80317447644784!3d41.10902781321446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd31c22464af%3A0xf903361d023a5c1b!2sTino's%20Pub%20%26%20Bar!5e0!3m2!1sen!2smk!4v1750872851291!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    {
+        "id": 275,
+        "venueId": 16,
+        "eventName": "T&T",
+        "isoDate": "2025-07-17",
+        "startTime": "22:30",
+        "day": "Thu.",
+        "description": "Get ready for an exciting night of live music at Tino's Pub! We're thrilled to host T&T for an unforgettable performance. Join us by the lake for great tunes, a fantastic atmosphere, and all your favorite drinks. Don't miss out on a night of vibrant entertainment!",
+        "category": "Music",
+        "imageUrl": "images_venue/tino_pub_card.jpg",
+        "eventBookingUrl": "#",
+        "eventContact": "071 263 444",
+        "ticketPrice": "Free Entry",
+        "locationName": "Tino Pub",
+        "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.167727943966!2d20.80317447644784!3d41.10902781321446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd31c22464af%3A0xf903361d023a5c1b!2sTino's%20Pub%20%26%20Bar!5e0!3m2!1sen!2smk!4v1750872851291!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     }
 ]
