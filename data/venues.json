@@ -471,8 +471,8 @@
   },
   {
     "id": 23,
-    "name": "Anxiety Cafe",
-    "description": "A unique cafe with a quirky and artistic vibe, perfect for those looking for a different kind of coffee experience.",
+    "name": "Anxiety Stop&Go",
+    "description": "Step into Anxiety Stop&Go, a vibrant and welcoming bar where we believe in crafting the perfect antidote to your day. Here, we've redefined the art of the cocktail, focusing on freshly squeezed lemon and orange to create a burst of invigorating flavor in every glass. Our unique concept lets you \"build your buzz\" exactly how you like it. Whether you're looking for a gentle unwind or a lively pick-me-up, our skilled bartenders are ready to mix a drink tailored to your mood. Imagine the bright tang of fresh citrus mingling with your spirit of choice, creating a symphony of taste that's as refreshing as it is uplifting. Anxiety Stop&Go is more than just a bar; it's a sanctuary where you can pause, recharge, and leave your worries at the door. Come experience the difference that fresh ingredients and a personalized touch can make.",
     "type": "coffee",
     "tags": [
       "coffee",

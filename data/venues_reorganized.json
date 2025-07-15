@@ -471,8 +471,8 @@
   },
   {
     "id": 23,
-    "name": "Anxiety Cafe",
-    "description": "A unique cafe with a quirky and artistic vibe, perfect for those looking for a different kind of coffee experience.",
+    "name": "Anxiety Stop&Go",
+    "description": "Step into Anxiety Stop&Go, a vibrant and welcoming bar where we believe in crafting the perfect antidote to your day. Here, we've redefined the art of the cocktail, focusing on freshly squeezed lemon and orange to create a burst of invigorating flavor in every glass. Our unique concept lets you \"build your buzz\" exactly how you like it. Whether you're looking for a gentle unwind or a lively pick-me-up, our skilled bartenders are ready to mix a drink tailored to your mood. Imagine the bright tang of fresh citrus mingling with your spirit of choice, creating a symphony of taste that's as refreshing as it is uplifting. Anxiety Stop&Go is more than just a bar; it's a sanctuary where you can pause, recharge, and leave your worries at the door. Come experience the difference that fresh ingredients and a personalized touch can make.",
     "type": "coffee",
     "tags": [
       "coffee",
@@ -3348,6 +3348,53 @@
     },
     "phone": "076 400 040",
     "workingHours": "19:00 - 00:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 98,
+    "name": "Lychnidia Food Zone",
+    "description": "Welcome to Lychnidia Food Zone, your culinary haven nestled right on the serene shores of the magnificent Ohrid Lake. Here, the gentle lapping of the waves provides the perfect soundtrack to an unforgettable dining experience, where every meal is infused with warmth, tradition, and a true taste of Macedonia.\n\nStep into our welcoming space and let your senses be delighted. Our menu is a passionate celebration of diverse flavors, with a special emphasis on authentic Macedonian cuisine that tells a story with every bite. From hearty stews and grilled meats prepared with age-old recipes, to fresh catches from the lake and vibrant salads bursting with local produce, there's something to tempt every palate. We believe food is about connection, and our dishes are crafted to bring people together, sharing moments of joy and delicious discovery.\n\nWhether you're seeking a leisurely lunch with breathtaking lake views, a romantic sunset dinner, or a lively gathering with friends and family, Lychnidia Food Zone offers a setting that feels just like home. Come and experience the magic of Ohrid, one delightful dish at a time. We can't wait to share our table with you.",
+    "type": [
+      "restaurant",
+      "beach"
+    ],
+    "imageUrl": "images_venue/lychnidia_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/lychnidia/photo1.jpg",
+        "alt": "A stunning lakeside view at sunset, with a massive, cheesy burger impaled by a knife taking center stage on a wooden table, hinting at a hearty meal with a beautiful backdrop"
+      },
+      {
+        "url": "venue_gallery/lychnidia/photo2.jpg",
+        "alt": "Two appealing dishes, one featuring a whole fish garnished with citrus and the other a plate of what looks like fried delights, are artfully presented on a wooden counter overlooking the shimmering lake"
+      },
+      {
+        "url": "venue_gallery/lychnidia/photo3.jpg",
+        "alt": "Two people enjoy a serene sunset over the lake from a cozy, shaded outdoor dining area, capturing a moment of peaceful relaxation."
+      },
+      {
+        "url": "venue_gallery/lychnidia/photo4.jpg",
+        "alt": "A close-up of succulent ribs, generously coated in sesame seeds and served with golden fries, looking absolutely delicious and ready to be devoured."
+      },
+      {
+        "url": "venue_gallery/lychnidia/photo5.jpg",
+        "alt": "Inside a charming restaurant, warm lighting and rustic brick pillars create an inviting atmosphere, with tables set and ready for guests to enjoy a meal."
+      },
+      {
+        "url": "venue_gallery/lychnidia/photo6.jpg",
+        "alt": "A beautifully organized display of wine bottles in a wooden rack, stretching across the wall, with wine glasses hanging neatly above, ready for a perfect pour."
+      }
+    ],
+    "rating": 4.7,
+    "priceLevel": 1,
+    "location": {
+      "address": "Lychnidia Food Zone, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lychnidia+Food+Zone,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.9180423166234!2d20.8010274696552!3d41.07615810918314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c3bd308865ff%3A0x3621fd4b48f22cf6!2sLYCHNIDIA-FOOD%20ZONE-OHRID!5e0!3m2!1sen!2smk!4v1752569317236!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075 326 867",
+    "workingHours": "08:00 - 23:30",
     "bookingUrl": "#",
     "events": []
   }
