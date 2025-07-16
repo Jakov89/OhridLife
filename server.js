@@ -164,7 +164,7 @@ app.get('/sitemap.xml', async (req, res) => {
             { url: '/learn', changefreq: 'monthly', priority: 0.7 },
         ];
 
-        const stream = new SitemapStream({ hostname: 'https://www.ohridhub.com' });
+        const stream = new SitemapStream({ hostname: 'https://www.ohridhub.mk' });
 
         // Add static pages
         links.forEach(link => stream.write(link));
@@ -267,12 +267,12 @@ app.get('/events/:id', (req, res) => {
             // Use summer logo for events from Summer Comedy Marathon organization (ID 1)
             let imageUrl;
             if (event.organizationId === 1) {
-                imageUrl = `https://www.ohridhub.com/logo/summer_logo.jpg`;
+                imageUrl = `https://www.ohridhub.mk/logo/summer_logo.jpg`;
             } else {
-                imageUrl = `https://www.ohridhub.com/${event.imageUrl || 'images_ohrid/photo1.jpg'}`;
+                imageUrl = `https://www.ohridhub.mk/${event.imageUrl || 'images_ohrid/photo1.jpg'}`;
             }
             
-            const pageUrl = `https://www.ohridhub.com/events/${event.id}`;
+            const pageUrl = `https://www.ohridhub.mk/events/${event.id}`;
             const venueName = venue ? (venue.name || event.locationName) : event.locationName;
             
             // Create event schema markup
@@ -296,7 +296,7 @@ app.get('/events/:id', (req, res) => {
                 "organizer": {
                     "@type": "Organization",
                     "name": "OhridHub",
-                    "url": "https://www.ohridhub.com"
+                    "url": "https://www.ohridhub.mk"
                 },
                 "offers": {
                     "@type": "Offer",
@@ -434,14 +434,14 @@ app.get('/organizations/:id', (req, res) => {
 
             const name = org.name?.en || org.title || 'Organization Details';
             const description = (org.description?.en || org.description || 'Discover this organization in Ohrid.').substring(0, 160);
-            const pageUrl = `https://www.ohridhub.com/organizations/${org.id}`;
+            const pageUrl = `https://www.ohridhub.mk/organizations/${org.id}`;
             
             // Use summer logo for Summer Comedy Marathon organization (ID 1)
             let imageUrl;
             if (org.id === 1) {
-                imageUrl = `https://www.ohridhub.com/logo/summer_logo.jpg`;
+                imageUrl = `https://www.ohridhub.mk/logo/summer_logo.jpg`;
             } else {
-                imageUrl = `https://www.ohridhub.com/${org.imageUrl || 'images_ohrid/photo4.jpg'}`;
+                imageUrl = `https://www.ohridhub.mk/${org.imageUrl || 'images_ohrid/photo4.jpg'}`;
             }
 
             const schema = {
@@ -570,8 +570,8 @@ app.get('/venues/:id', (req, res) => {
             // Replace placeholders with actual venue data for SEO
             const title = `${venue.name.en || 'Venue'} - OhridHub`;
             const description = venue.description.en ? venue.description.en.substring(0, 160) : `Discover ${venue.name.en} in Ohrid.`;
-            const imageUrl = `https://www.ohridhub.com/${venue.imageUrl || 'images_ohrid/photo1.jpg'}`;
-            const pageUrl = `https://www.ohridhub.com/venues/${venue.id}`;
+            const imageUrl = `https://www.ohridhub.mk/${venue.imageUrl || 'images_ohrid/photo1.jpg'}`;
+            const pageUrl = `https://www.ohridhub.mk/venues/${venue.id}`;
 
             const schema = {
                 "@context": "https://schema.org",
@@ -603,7 +603,7 @@ app.get('/venues/:id', (req, res) => {
                     `<meta name="description" content="${description}">`
                 )
                 .replace(
-                    '<link rel="canonical" href="https://www.ohridhub.com" />',
+                    '<link rel="canonical" href="https://www.ohridhub.mk" />',
                     `<link rel="canonical" href="${pageUrl}" />`
                 )
                 .replace(
@@ -615,11 +615,11 @@ app.get('/venues/:id', (req, res) => {
                     `<meta property="og:description" content="${description}">`
                 )
                 .replace(
-                    '<meta property="og:image" content="https://www.ohridhub.com/images_ohrid/photo1.jpg">',
+                    '<meta property="og:image" content="https://www.ohridhub.mk/images_ohrid/photo1.jpg">',
                     `<meta property="og:image" content="${imageUrl}">`
                 )
                 .replace(
-                    '<meta property="og:url" content="https://www.ohridhub.com/">',
+                    '<meta property="og:url" content="https://www.ohridhub.mk/">',
                     `<meta property="og:url" content="${pageUrl}">`
                 )
                 .replace(
@@ -631,11 +631,11 @@ app.get('/venues/:id', (req, res) => {
                     `<meta name="twitter:description" content="${description}">`
                 )
                 .replace(
-                    '<meta name="twitter:image" content="https://www.ohridhub.com/images_ohrid/photo1.jpg">',
+                    '<meta name="twitter:image" content="https://www.ohridhub.mk/images_ohrid/photo1.jpg">',
                     `<meta name="twitter:image" content="${imageUrl}">`
                 )
                 .replace(
-                    '<meta name="twitter:url" content="https://www.ohridhub.com/">',
+                    '<meta name="twitter:url" content="https://www.ohridhub.mk/">',
                     `<meta name="twitter:url" content="${pageUrl}">`
                 );
 
