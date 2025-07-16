@@ -1267,7 +1267,12 @@ function openEventModal(eventId) {
     const ticketEl = modal.querySelector('#modal-event-ticket');
     const ticketPriceEl = modal.querySelector('#modal-event-ticket-price');
     if (event.ticketPrice && ticketEl && ticketPriceEl) {
-        ticketPriceEl.textContent = event.ticketPrice;
+        // Make the price clickable if eventBookingUrl exists
+        if (event.eventBookingUrl && event.eventBookingUrl !== '#' && event.eventBookingUrl.trim() !== '') {
+            ticketPriceEl.innerHTML = `<a href="${event.eventBookingUrl}" target="_blank" style="font-weight: bold; text-decoration: none; cursor: pointer; color: inherit;">${event.ticketPrice}</a>`;
+        } else {
+            ticketPriceEl.textContent = event.ticketPrice;
+        }
         ticketEl.style.display = 'flex';
     } else if (ticketEl) {
         ticketEl.style.display = 'none';

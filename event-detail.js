@@ -196,7 +196,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const priceText = document.getElementById('event-price');
             if (event.ticketPrice) {
                 priceInfo.style.display = 'flex';
-                priceText.textContent = event.ticketPrice;
+                
+                // Make the price clickable if eventBookingUrl exists
+                if (event.eventBookingUrl && event.eventBookingUrl !== '#' && event.eventBookingUrl.trim() !== '') {
+                    priceText.innerHTML = `<a href="${event.eventBookingUrl}" target="_blank" style="font-weight: bold; text-decoration: none; cursor: pointer; color: inherit;">${event.ticketPrice}</a>`;
+                } else {
+                    priceText.textContent = event.ticketPrice;
+                }
             } else {
                 priceInfo.style.display = 'none';
             }
