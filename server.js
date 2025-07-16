@@ -263,7 +263,15 @@ app.get('/events/:id', (req, res) => {
             // Prepare event data for SEO
             const title = `${event.eventName} - OhridHub`;
             const description = event.description ? event.description.substring(0, 160) : `Join us for ${event.eventName} in Ohrid.`;
-            const imageUrl = `https://www.ohridhub.com/${event.imageUrl || 'images_ohrid/photo1.jpg'}`;
+            
+            // Use summer logo for events from Summer Comedy Marathon organization (ID 1)
+            let imageUrl;
+            if (event.organizationId === 1) {
+                imageUrl = `https://www.ohridhub.com/logo/summer_logo.jpg`;
+            } else {
+                imageUrl = `https://www.ohridhub.com/${event.imageUrl || 'images_ohrid/photo1.jpg'}`;
+            }
+            
             const pageUrl = `https://www.ohridhub.com/events/${event.id}`;
             const venueName = venue ? (venue.name || event.locationName) : event.locationName;
             
@@ -427,7 +435,14 @@ app.get('/organizations/:id', (req, res) => {
             const name = org.name?.en || org.title || 'Organization Details';
             const description = (org.description?.en || org.description || 'Discover this organization in Ohrid.').substring(0, 160);
             const pageUrl = `https://www.ohridhub.com/organizations/${org.id}`;
-            const imageUrl = `https://www.ohridhub.com/${org.imageUrl || 'images_ohrid/photo4.jpg'}`;
+            
+            // Use summer logo for Summer Comedy Marathon organization (ID 1)
+            let imageUrl;
+            if (org.id === 1) {
+                imageUrl = `https://www.ohridhub.com/logo/summer_logo.jpg`;
+            } else {
+                imageUrl = `https://www.ohridhub.com/${org.imageUrl || 'images_ohrid/photo4.jpg'}`;
+            }
 
             const schema = {
                 "@context": "https://schema.org",
