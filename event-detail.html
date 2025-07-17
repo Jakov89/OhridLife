@@ -11,19 +11,19 @@
     
     <!-- Open Graph Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.ohridhub.com/">
+    <meta property="og:url" content="https://www.ohridhub.mk/">
     <meta property="og:title" content="Event - OhridHub">
     <meta property="og:description" content="Discover amazing events in Ohrid, North Macedonia">
-    <meta property="og:image" content="https://www.ohridhub.com/images_ohrid/photo1.jpg">
+    <meta property="og:image" content="https://www.ohridhub.mk/images_ohrid/photo1.jpg">
     <meta property="og:site_name" content="OhridHub">
     
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:domain" content="ohridhub.com">
-    <meta name="twitter:url" content="https://www.ohridhub.com/">
+    <meta name="twitter:domain" content="ohridhub.mk">
+    <meta name="twitter:url" content="https://www.ohridhub.mk/">
     <meta name="twitter:title" content="Event - OhridHub">
     <meta name="twitter:description" content="Discover amazing events in Ohrid, North Macedonia">
-    <meta name="twitter:image" content="https://www.ohridhub.com/images_ohrid/photo1.jpg">
+    <meta name="twitter:image" content="https://www.ohridhub.mk/images_ohrid/photo1.jpg">
     
     <!-- Facebook Meta Pixel Code -->
     <script>
@@ -43,8 +43,37 @@
     /></noscript>
     <!-- End Facebook Meta Pixel Code -->
     
+    <!-- Event Structured Data -->
+    <script type="application/ld+json" id="event-structured-data">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Event Name",
+        "description": "Event description will be populated dynamically",
+        "startDate": "2025-01-01T20:00:00",
+        "location": {
+            "@type": "Place",
+            "name": "Venue Name",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ohrid",
+                "addressCountry": "North Macedonia"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "OhridHub",
+            "url": "https://www.ohridhub.mk"
+        },
+        "image": "https://www.ohridhub.mk/logo/ohridhub.png",
+        "url": "https://www.ohridhub.mk/event-detail.html",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+    }
+    </script>
+    
     <link rel="stylesheet" href="/style.css">
-    <link rel="canonical" href="https://www.ohridhub.com/">
+    <link rel="canonical" href="https://www.ohridhub.mk/event-detail.html">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,7 +127,7 @@
                 
                 <div class="event-detail-card" id="event-detail-card" style="display: none;">
                     <div class="event-image-container">
-                        <img id="event-image" src="" alt="Event Image" class="event-detail-image">
+                        <img id="event-image" src="" alt="Event Image" class="event-detail-image" loading="lazy">
                     </div>
                     
                     <div class="event-info-container">
@@ -202,7 +231,7 @@
                     </div>
                     
                     <div class="story-card-image-container">
-                        <img class="story-card-image" id="story-card-image" src="" alt="Event image">
+                        <img class="story-card-image" id="story-card-image" src="" alt="Event image" loading="lazy">
                     </div>
                     
                     <div class="story-card-footer">

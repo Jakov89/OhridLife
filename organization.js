@@ -3,13 +3,10 @@ let selectedTemplate = 'gradient-1';
 let currentEventForStory = null;
 
 function setupInstagramStoryModalListeners() {
-    console.log('Setting up Instagram story modal listeners...');
-    
     // Modal close button
     const closeBtn = document.getElementById('instagram-story-modal-close');
     if (closeBtn) {
         closeBtn.addEventListener('click', closeInstagramStoryModal);
-        console.log('Close button listener attached');
     } else {
         console.error('Close button not found');
     }
@@ -22,17 +19,14 @@ function setupInstagramStoryModalListeners() {
                 closeInstagramStoryModal();
             }
         });
-        console.log('Modal backdrop listener attached');
     } else {
         console.error('Instagram story modal not found');
     }
     
     // Template selection
     const templateOptions = document.querySelectorAll('.template-option');
-    console.log('Found template options:', templateOptions.length);
     templateOptions.forEach((option, index) => {
         option.addEventListener('click', () => {
-            console.log('Template clicked:', option.dataset.template);
             templateOptions.forEach(opt => opt.classList.remove('selected'));
             option.classList.add('selected');
             selectedTemplate = option.dataset.template;
@@ -44,7 +38,6 @@ function setupInstagramStoryModalListeners() {
     const downloadBtn = document.getElementById('download-story-btn');
     if (downloadBtn) {
         downloadBtn.addEventListener('click', downloadStoryImage);
-        console.log('Download button listener attached');
     } else {
         console.error('Download button not found');
     }
@@ -53,7 +46,6 @@ function setupInstagramStoryModalListeners() {
     const instagramBtn = document.getElementById('open-instagram-btn');
     if (instagramBtn) {
         instagramBtn.addEventListener('click', openInstagramApp);
-        console.log('Instagram button listener attached');
     } else {
         console.error('Instagram button not found');
     }
@@ -104,8 +96,6 @@ function updateStoryCardPreview() {
         return;
     }
     
-    console.log('Updating story card preview for event:', currentEventForStory.eventName);
-    
     const preview = document.getElementById('story-card-preview');
     if (!preview) {
         console.error('Story card preview element not found');
@@ -120,7 +110,6 @@ function updateStoryCardPreview() {
         'gradient-5': 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
     };
     
-    console.log('Selected template:', selectedTemplate);
     preview.style.background = gradients[selectedTemplate] || gradients['gradient-1'];
     
     // Update content
@@ -153,8 +142,6 @@ function updateStoryCardPreview() {
             storyImage.style.display = 'none';
         }
     }
-    
-    console.log('Story card preview updated successfully');
 }
 
 function downloadStoryImage() {
@@ -162,8 +149,6 @@ function downloadStoryImage() {
         console.error('No current event for story download');
         return;
     }
-    
-    console.log('Starting story image download for event:', currentEventForStory.eventName);
     
     // Create a high-resolution temporary preview element
     const tempPreview = createHighResolutionPreview();
@@ -516,8 +501,6 @@ function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
 }
 
 function downloadCanvas(canvas) {
-    console.log('Converting canvas to data URL and downloading...');
-    
     try {
         const link = document.createElement('a');
         const fileName = `${(currentEventForStory.eventName || 'event').replace(/[^a-z0-9]/gi, '_')}-instagram-story.png`;
@@ -528,22 +511,17 @@ function downloadCanvas(canvas) {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-        
-        console.log('Download triggered successfully:', fileName);
     } catch (error) {
         console.error('Error during canvas download:', error);
     }
 }
 
 function openInstagramApp() {
-    console.log('Opening Instagram app/web...');
-    
     try {
         // Check if it's a mobile device
         const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         
         if (isMobile) {
-            console.log('Mobile device detected, trying to open Instagram app...');
             // Try to open Instagram app
             const instagramURL = 'instagram://camera';
             
@@ -556,12 +534,10 @@ function openInstagramApp() {
             // Fallback to Instagram web after a short delay
             setTimeout(() => {
                 document.body.removeChild(iframe);
-                console.log('Fallback to Instagram web...');
                 window.open('https://www.instagram.com/', '_blank');
             }, 1500);
         } else {
             // On desktop, open Instagram web
-            console.log('Desktop device detected, opening Instagram web...');
             window.open('https://www.instagram.com/', '_blank');
         }
     } catch (error) {

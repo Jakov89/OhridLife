@@ -9,4 +9,4 @@ Allow: /
 
 # Provide the location of the sitemap.
 # You should generate a sitemap.xml file for better indexing.
-Sitemap: https://www.ohridhub.com/sitemap.xml 
+Sitemap: https://www.ohridhub.mk/sitemap.xml 

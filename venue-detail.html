@@ -7,22 +7,22 @@
     <!-- SEO and Meta Tags - These will be populated by the server -->
     <title>Venue Details - OhridHub</title>
     <meta name="description" content="Discover details about venues in Ohrid.">
-    <link rel="canonical" href="https://www.ohridhub.com" />
+    <link rel="canonical" href="https://www.ohridhub.mk/venue-detail.html" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.ohridhub.com/">
+    <meta property="og:url" content="https://www.ohridhub.mk/venue-detail.html">
     <meta property="og:title" content="Venue Details - OhridHub">
     <meta property="og:description" content="Discover details about venues in Ohrid.">
-    <meta property="og:image" content="https://www.ohridhub.com/images_ohrid/photo1.jpg">
+    <meta property="og:image" content="https://www.ohridhub.mk/images_ohrid/photo1.jpg">
     <meta property="og:site_name" content="OhridHub">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://www.ohridhub.com/">
+    <meta name="twitter:url" content="https://www.ohridhub.mk/venue-detail.html">
     <meta name="twitter:title" content="Venue Details - OhridHub">
     <meta name="twitter:description" content="Discover details about venues in Ohrid.">
-    <meta name="twitter:image" content="https://www.ohridhub.com/images_ohrid/photo1.jpg">
+    <meta name="twitter:image" content="https://www.ohridhub.mk/images_ohrid/photo1.jpg">
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -51,6 +51,29 @@
     src="https://www.facebook.com/tr?id=1739179403354905&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+    
+    <!-- Venue Structured Data -->
+    <script type="application/ld+json" id="venue-structured-data">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Venue Name",
+        "description": "Venue description will be populated dynamically",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ohrid",
+            "addressCountry": "North Macedonia"
+        },
+        "telephone": "+389 XX XXX XXX",
+        "url": "https://www.ohridhub.mk/venue-detail.html",
+        "image": "https://www.ohridhub.mk/logo/ohridhub.png",
+        "priceRange": "$$",
+        "servesCuisine": "International",
+        "acceptsReservations": true,
+        "hasMenu": true,
+        "openingHours": "Mo-Su 08:00-24:00"
+    }
+    </script>
 </head>
 <body>
     <header id="navbar">

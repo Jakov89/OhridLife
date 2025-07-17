@@ -60,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const rawVenues = await response.json();
             venuesData = Array.isArray(rawVenues) ? rawVenues.map(normalizeVenueDataItem) : [];
-            console.log('Loaded venues data:', venuesData.length, 'venues');
         } catch (error) {
             console.error('Failed to load venues data:', error);
             // Don't fail completely, just continue without venue data
@@ -486,7 +485,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function downloadStoryImage() {
         if (!eventData) return;
         
-        console.log('Starting story image download for event:', eventData.eventName);
         
         // Create a high-resolution temporary preview element
         const tempPreview = createHighResolutionPreview();

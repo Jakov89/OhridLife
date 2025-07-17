@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Check if we're on the day planner page
     if (!document.getElementById('planner-calendar-container')) {
-        console.log('Not on day planner page, exiting...');
         return;
     }
     
@@ -585,7 +584,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderSeasonalWidget() {
         const seasonalDisplay = document.getElementById('seasonal-display');
         if (!seasonalDisplay) {
-            console.log('Seasonal display element not found');
             return;
         }
         
@@ -668,7 +666,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function fetchWeather() {
-        console.log('Using seasonal weather fallback for Ohrid');
         // Use realistic seasonal weather data based on current date
         currentWeatherData = getSeasonalWeatherFallback();
     }
@@ -992,10 +989,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const planItems = plannerData[targetDate];
         
         if (planItems && planItems.length > 0) {
-            console.log('Testing reminder for date:', targetDate);
             showDailyReminder(targetDate, planItems);
         } else {
-            console.log('No planned activities for date:', targetDate);
             showSuccessMessage('No planned activities found for ' + targetDate + '. Add some activities first!');
         }
     };
@@ -1014,10 +1009,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (datesWithPlans.length > 0) {
             const testDate = datesWithPlans[0];
-            console.log('Testing reminder for first available date:', testDate);
             testDailyReminder(testDate);
         } else {
-            console.log('No planned activities found in any date');
             showSuccessMessage('No planned activities found. Add some activities to test reminders!');
         }
     };
@@ -1202,7 +1195,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Check if SortableJS is available
         if (typeof Sortable === 'undefined') {
-            console.log('SortableJS not loaded, drag-and-drop functionality will be disabled');
             return;
         }
 
@@ -1495,7 +1487,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function savePlannerData() {
         try {
             localStorage.setItem('ohridHubPlanner', JSON.stringify(plannerData));
-            console.log("Planner data saved for date:", new Date(currentlySelectedDate).toDateString());
             
             // After saving, trigger a calendar re-render to show plan indicators
             // We'll dispatch a custom event that the calendar can listen for
@@ -1515,7 +1506,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderWeatherWidget() {
         const weatherDisplay = document.getElementById('weather-display');
         if (!weatherDisplay) {
-            console.log('Weather display element not found');
             return;
         }
         
@@ -1601,7 +1591,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function initializeAiPlanner() {
         // Check if we're on the day planner page and all required elements exist
         if (!showAiPlannerBtn || !aiPlannerModal || !aiMoodChoices || !aiTimeChoices) {
-            console.log('AI Planner elements not found - skipping initialization');
             return;
         }
 
@@ -2143,7 +2132,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (fullDayAdventures.includes(venueType)) {
                             // Camping selected - this will dominate the day
                             const venueName = venue.name && venue.name.en ? venue.name.en : 'Unknown Venue';
-                            console.log(`🏕️ Full-day camping selected: ${venueName} - this will dominate the itinerary`);
                             
                             usedVenueIds.add(venue.id);
                             suggestions.push({
@@ -2166,7 +2154,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 const venueName = venue.name && venue.name.en ? venue.name.en : 'Unknown Venue';
                 const venueScore = venue.score !== undefined ? venue.score.toFixed(1) : 'N/A';
-                console.log(`Selected venue: ${venueName} (Type: ${venueType}, Score: ${venueScore}) for ${timeSlot}`);
                 
                 suggestions.push({
                     venueId: venue.id,
@@ -2188,7 +2175,6 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (campingFocused) {
                 // Camping-focused day: mainly camping + dinner
-                console.log('🏕️ Generating camping-focused itinerary');
                 addActivity([...fullDayAdventures], '09:00'); // Start camping early
                 
                 // Check if camping was actually selected
@@ -2395,7 +2381,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderAiSuggestions(suggestions) {
         if (!aiSuggestionsList) {
-            console.log('AI suggestions list element not found');
             return;
         }
         
