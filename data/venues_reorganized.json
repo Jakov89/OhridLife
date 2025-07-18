@@ -3450,5 +3450,89 @@
     "workingHours": "08:00 - 21:00 (Mon - Sat)",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 100,
+    "name": "Jungle Beach",
+    "description": "Jungle Beach offers a serene and natural ambiance, living up to its name with lush surrounding greenery that provides a unique, exotic feel. This idyllic stretch of golden sand invites you to relax and soak up the sun, while the exceptionally clear and refreshing waters of Lake Ohrid are perfect for swimming.\n\nIt's known for attracting those seeking a more secluded and rustic beach experience, often described as having a \"hype atmosphere\" compared to some of its more laid-back neighbors. While it maintains its unspoiled charm, you can expect amenities for comfort, and it's even pet-friendly!\n\nBeyond sunbathing and swimming, the tranquil atmosphere makes it ideal for unwinding, reading, or simply connecting with nature. For the more adventurous, nearby hiking trails offer captivating viewpoints with panoramic vistas of the lake.\n\nWhether you're looking for a vibrant beach day with good vibes or a peaceful escape surrounded by nature, Jungle Beach offers a unique slice of paradise on Lake Ohrid.",
+    "type": [
+      "beach"
+    ],
+    "tags": [
+      "beach",
+      "natural",
+      "secluded",
+      "pet-friendly",
+      "swimming",
+      "hiking",
+      "scenic"
+    ],
+    "imageUrl": "images_venue/beach/jungle_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/jungle/photo1.jpg",
+        "alt": "An outdoor lounge area at sunset, with colorful fabric canopies overhead. The space features low wooden tables, green cushions on the ground, and faces a calm body of water with a small boat and silhouetted figures."
+      },
+      {
+        "url": "venue_gallery/jungle/photo2.jpg",
+        "alt": "A night view of an outdoor lounge area, dramatically lit with green and yellow lighting. Colorful fabric canopies stretch overhead, covering a space with low tables, green cushions on the ground, and a textured path."
+      }
+    ],
+    "rating": 4.5,
+    "priceLevel": 2,
+    "location": {
+      "address": "Beach Gradishte 3 (Jungle beach), Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Beach+Gradishte+3+Jungle+beach,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1064.588627318584!2d20.80279083845281!3d41.000935955509796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c135c6e24139%3A0x9d5a29c17f7d6d97!2sBeach%20Gradishte%203%20(Jungle%20beach)!5e0!3m2!1sen!2smk!4v1752827687682!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075 636 222",
+    "workingHours": "10:00 - 18:00 (Sun - Thu)<br>10:00 - 22:00 (Fri - Sat)",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 101,
+    "name": "Jovanovic SUP & Kayaks",
+    "description": "Welcome to Jovanovic SUP & Kayak Rental, your friendly gateway to exploring the stunning beauty of Lake Ohrid!\n\nImagine gliding across the crystal-clear waters, feeling the gentle sun on your skin, and discovering hidden coves and breathtaking views at your own pace. Whether you're a seasoned paddler or trying it for the very first time, we're here to make your adventure unforgettable.\n\nAt Jovanovic, it's more than just renting equipment; it's about creating joyful memories. Our warm and welcoming team is ready to set you up with the perfect paddleboard or kayak, offer tips, and ensure you feel confident and ready to embark on your lake journey. Come connect with nature, enjoy a peaceful escape, or have a fun-filled day with family and friends. We can't wait to share the magic of Ohrid from the water with you!",
+    "type": [
+      "sup",
+      "kayaking"
+    ],
+    "tags": [
+      "sup",
+      "kayaking",
+      "water-sports",
+      "adventure",
+      "rental",
+      "lake",
+      "outdoors",
+      "family-friendly"
+    ],
+    "imageUrl": "images_venue/adventure_sport/jovanovic_sup_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/jovanovic/photo1.jpg",
+        "alt": "A person in a red \"Water Sport\" life vest kneels on a white and blue paddleboard with a paddle, on clear blue water with visible rocks below the surface."
+      },
+      {
+        "url": "venue_gallery/jovanovic/photo2.jpg",
+        "alt": "A light blue and green kayak with a red paddle and sandals rests in the shallow, clear water next to a wooden pier. In the background, traditional stilt houses of the Bay of Bones Museum are visible over the lake."
+      },
+      {
+        "url": "venue_gallery/jovanovic/photo3.jpg",
+        "alt": "A person in a white \"Jovanovic SUP & Kayak\" t-shirt paddles a yellow kayak away from the shore on Lake Ohrid, with the historic old town, houses, and green hills visible in the background under a clear sky."
+      }
+    ],
+    "rating": 4.6,
+    "priceLevel": 2,
+    "location": {
+      "address": "Kayak & SUP Ohrid (Jovanovic), Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kayak+%26+SUP+Ohrid+Jovanovic,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223.4233765029473!2d20.794229304121988!3d41.11237085132945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd2ee667cfdb%3A0x7ba7933f84901eb8!2sKayak%20%26%20SUP%20Ohrid%20(Jovanovic)!5e0!3m2!1sen!2smk!4v1752827894069!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070 589 218",
+    "workingHours": "10:30 - 19:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
