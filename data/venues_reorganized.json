@@ -473,9 +473,13 @@
     "id": 23,
     "name": "Anxiety Stop&Go",
     "description": "Step into Anxiety Stop&Go, a vibrant and welcoming bar where we believe in crafting the perfect antidote to your day. Here, we've redefined the art of the cocktail, focusing on freshly squeezed lemon and orange to create a burst of invigorating flavor in every glass. Our unique concept lets you \"build your buzz\" exactly how you like it. Whether you're looking for a gentle unwind or a lively pick-me-up, our skilled bartenders are ready to mix a drink tailored to your mood. Imagine the bright tang of fresh citrus mingling with your spirit of choice, creating a symphony of taste that's as refreshing as it is uplifting. Anxiety Stop&Go is more than just a bar; it's a sanctuary where you can pause, recharge, and leave your worries at the door. Come experience the difference that fresh ingredients and a personalized touch can make.",
-    "type": "coffee",
+    "type": [
+      "coffee",
+      "to-go"
+    ],
     "tags": [
       "coffee",
+      "to-go",
       "artistic",
       "quirky",
       "unique"
@@ -3395,6 +3399,55 @@
     },
     "phone": "075 326 867",
     "workingHours": "08:00 - 23:30",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 99,
+    "name": "Drop - Coffee & Snacks",
+    "description": "Welcome to Drop - Coffee & Snacks, your newest cozy escape right here in Ohrid!\n\nImagine a place where the aroma of freshly brewed coffee invites you in, and delicious, comforting snacks are always ready to tempt your taste buds. Drop is more than just a spot for a quick bite it's designed to be your little haven, whether you're catching up with friends, finding a moment of quiet, or just need that perfect pick-me-up. We're here to serve you warmth, flavor, and a smile – truly a place where you can just... drop in and feel at home.",
+    "type": [
+      "coffee",
+      "to-go"
+    ],
+    "tags": [
+      "coffee",
+      "to-go",
+      "snacks",
+      "cozy",
+      "takeaway"
+    ],
+    "imageUrl": "images_venue/drop_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/drop/photo1.jpg",
+        "alt": "An overhead shot of various \"Drop\" products arranged on a wooden surface with a burlap mat. Items include a box of colorful energy balls, two smoothies, and two small coffee cups."
+      },
+      {
+        "url": "venue_gallery/drop/photo2.jpg",
+        "alt": "A person in a green jacket and light pants holds and eats from an open black \"Drop\" branded takeout box containing a fresh green salad with beans and mushrooms."
+      },
+      {
+        "url": "venue_gallery/drop/photo3.jpg",
+        "alt": "A close-up of a fresh sandwich on dark bread with lettuce, tomato, and mushrooms, resting on a wooden cutting board."
+      },
+      {
+        "url": "venue_gallery/drop/photo4.jpg",
+        "alt": "Two clear plastic bowls with lids, each filled with fresh, colorful salads, are placed side-by-side on a light gray concrete surface. One contains feta cheese and vegetables, the other chickpeas, beans, and hummus."
+      },
+      {
+        "url": "venue_gallery/drop/photo5.jpg",
+        "alt": "A hand with colorful painted fingernails holds a clear plastic cup of iced coffee with a \"Drop\" logo sticker and a black straw. The person wears a striped shirt and a leather jacket."
+      }
+    ],
+    "priceLevel": 1,
+    "location": {
+      "address": "Drop - Coffee & Snacks, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Drop+-+Coffee+%26+Snacks,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d579.4811929843678!2d20.80451492599393!3d41.11320366614306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd5b67bc796f%3A0x84af321b13f8fac9!2sDrop!5e0!3m2!1sen!2smk!4v1752825066416!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "076 750 970",
+    "workingHours": "08:00 - 21:00 (Mon - Sat)",
     "bookingUrl": "#",
     "events": []
   }
