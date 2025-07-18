@@ -57,9 +57,62 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchAllData();
 });
 
+// --- SKELETON LOADING FUNCTIONS ---
+function showSkeletonScreens() {
+    const heroSkeleton = document.getElementById('hero-skeleton');
+    const recommendationsSkeleton = document.getElementById('recommendations-skeleton');
+    
+    if (heroSkeleton) {
+        heroSkeleton.classList.remove('hidden');
+    }
+    
+    if (recommendationsSkeleton) {
+        recommendationsSkeleton.classList.remove('hidden');
+    }
+    
+    // Hide actual content
+    const heroSlider = document.getElementById('hero-slider-container');
+    const recommendationsSlider = document.getElementById('recommendations-slider-container');
+    
+    if (heroSlider) {
+        heroSlider.style.display = 'none';
+    }
+    
+    if (recommendationsSlider) {
+        recommendationsSlider.style.display = 'none';
+    }
+}
+
+function hideSkeletonScreens() {
+    const heroSkeleton = document.getElementById('hero-skeleton');
+    const recommendationsSkeleton = document.getElementById('recommendations-skeleton');
+    
+    if (heroSkeleton) {
+        heroSkeleton.classList.add('hidden');
+    }
+    
+    if (recommendationsSkeleton) {
+        recommendationsSkeleton.classList.add('hidden');
+    }
+    
+    // Show actual content
+    const heroSlider = document.getElementById('hero-slider-container');
+    const recommendationsSlider = document.getElementById('recommendations-slider-container');
+    
+    if (heroSlider) {
+        heroSlider.style.display = '';
+    }
+    
+    if (recommendationsSlider) {
+        recommendationsSlider.style.display = '';
+    }
+}
+
 // --- DATA FETCHING ---
 async function fetchAllData() {
-    // Add loading state
+    // Show skeleton screens instead of basic loading
+    showSkeletonScreens();
+    
     const mainContent = document.getElementById('main-page-content');
     if (mainContent) {
         mainContent.classList.add('loading');
@@ -91,12 +144,15 @@ async function fetchAllData() {
         featuredEventsData = organizations;
         learnOhridTexts = learnOhrid;
 
+        // Hide skeleton screens and show content
+        hideSkeletonScreens();
+        
         // Remove loading state
         if (mainContent) {
             mainContent.classList.remove('loading');
         }
 
-        initializeApp();
+        await initializeApp();
         
         // Handle URL parameters after data is loaded
         handleUrlParameters();
@@ -105,28 +161,22 @@ async function fetchAllData() {
         initializeCalendar();
 
     } catch (error) {
-        console.error("Fatal Error: Could not fetch initial data.", error);
+        console.error('Error loading app data:', error);
         
-        // Remove loading state
+        // Hide skeleton screens even on error
+        hideSkeletonScreens();
+        
+        // Show error message
+        const mainContent = document.getElementById('main-page-content');
         if (mainContent) {
             mainContent.classList.remove('loading');
-        }
-        
-        // Show user-friendly error message
-        showErrorMessage('Unable to load content. Please check your internet connection and refresh the page.');
-        
-        // Fallback content
-        if (mainContent) {
             mainContent.innerHTML = `
-                <div class="error-fallback">
-                    <h2>Content Unavailable</h2>
-                    <p>We're having trouble loading the page content. Please try:</p>
-                    <ul>
-                        <li>Refreshing the page</li>
-                        <li>Checking your internet connection</li>
-                        <li>Trying again in a few moments</li>
-                    </ul>
-                    <button onclick="location.reload()" class="btn btn-primary">Refresh Page</button>
+                <div class="error-container" style="text-align: center; padding: 2rem; color: var(--destructive);">
+                    <h2>Unable to load content</h2>
+                    <p>Please refresh the page to try again.</p>
+                    <button onclick="location.reload()" class="btn btn-primary" style="margin-top: 1rem;">
+                        Refresh Page
+                    </button>
                 </div>
             `;
         }
@@ -213,7 +263,19 @@ window.addEventListener('popstate', (event) => {
 });
 
 // --- INITIALIZATION ---
-function initializeApp() {
+async function initializeApp() {
+    // Check WebP support first
+    isWebPSupported = await checkWebPSupport();
+    
+    // Preload critical images
+    preloadCriticalImages();
+    
+    // Initialize performance monitoring
+    measurePerformance();
+    
+    // Initialize accessibility improvements
+    improveAccessibility();
+    
     setupEventListeners();
     initializeLazyObserver();
     venueRatings = JSON.parse(localStorage.getItem('ohridHubVenueRatings')) || {}; // Load ratings
@@ -226,6 +288,9 @@ function initializeApp() {
     // animateStatsOnScroll(); // Removed - statistics section deleted
     document.getElementById('main-page-content')?.classList.remove('hidden');
     setupImageModalClosers();
+    
+    // Update breadcrumbs for homepage
+    updateBreadcrumbs('Home');
 }
 
 // --- UI & STATS UPDATES ---
@@ -304,7 +369,7 @@ function setupEventListeners() {
     // Planner-specific listeners will be set up in its init function
 }
 
-// --- SCHEMA.ORG DYNAMIC INJECTION ---
+// --- ENHANCED SCHEMA.ORG DYNAMIC INJECTION ---
 function generateVenueSchema(venue) {
     if (!venue) return;
 
@@ -319,31 +384,70 @@ function generateVenueSchema(venue) {
         "@type": "LocalBusiness", // Default type
         "name": venue.name.en,
         "description": venue.description.en,
-        "image": `${window.location.origin}/${venue.imageUrl}`,
+        "image": getOptimizedImagePath(`${window.location.origin}/${venue.imageUrl}`),
         "telephone": venue.phone,
-        "url": window.location.href // This should ideally be a direct link to the venue if such pages existed
+        "url": window.location.href,
+        "priceRange": venue.priceLevel ? "$".repeat(venue.priceLevel) : "$$",
+        "openingHours": venue.workingHours ? `Mo-Su ${venue.workingHours}` : undefined
     };
 
-    // Only add address if venue has location
+    // Enhanced address and location data
     if (venue.location?.address) {
         schema.address = {
             "@type": "PostalAddress",
             "streetAddress": venue.location.address,
             "addressLocality": "Ohrid",
-            "addressCountry": "MK"
+            "addressRegion": "Ohrid Municipality",
+            "addressCountry": "MK",
+            "postalCode": "6000"
         };
-        schema.geo = {
-            "@type": "GeoCoordinates",
-            // Note: This requires getting lat/lon from the Google Maps URL, which is complex.
-            // A simpler approach is to use the address, or add lat/lon to your JSON.
+        
+        // Add geographic coordinates if available
+        if (venue.location.lat && venue.location.lng) {
+            schema.geo = {
+                "@type": "GeoCoordinates",
+                "latitude": venue.location.lat,
+                "longitude": venue.location.lng
+            };
+        }
+    }
+
+    // Add rating and review data
+    if (venue.rating) {
+        schema.aggregateRating = {
+            "@type": "AggregateRating",
+            "ratingValue": venue.rating,
+            "bestRating": "5",
+            "worstRating": "1",
+            "reviewCount": venue.reviewCount || 1
         };
     }
 
-    // Use a more specific type if possible
+    // Add amenities and features
+    if (venue.amenities && venue.amenities.length > 0) {
+        schema.amenityFeature = venue.amenities.map(amenity => ({
+            "@type": "LocationFeatureSpecification",
+            "name": amenity,
+            "value": true
+        }));
+    }
+
+    // Add gallery images
+    if (venue.gallery && venue.gallery.length > 0) {
+        schema.photo = venue.gallery.map(img => ({
+            "@type": "ImageObject",
+            "url": getOptimizedImagePath(`${window.location.origin}/${img.url}`),
+            "description": img.alt || venue.name.en
+        }));
+    }
+
+    // Use more specific types based on venue category
     const venueType = Array.isArray(venue.type.en) ? venue.type.en[0] : venue.type.en;
-    switch (venueType) {
+    switch (venueType?.toLowerCase()) {
         case 'restaurant':
             schema['@type'] = 'Restaurant';
+            schema.servesCuisine = venue.cuisine || 'International';
+            schema.acceptsReservations = true;
             break;
         case 'club':
             schema['@type'] = 'NightClub';
@@ -355,8 +459,25 @@ function generateVenueSchema(venue) {
             schema['@type'] = 'Beach';
             break;
         case 'hotel':
-             schema['@type'] = 'Hotel';
-             break;
+            schema['@type'] = 'Hotel';
+            break;
+        case 'coffee':
+            schema['@type'] = 'CafeOrCoffeeShop';
+            break;
+        case 'hospital':
+            schema['@type'] = 'Hospital';
+            break;
+        case 'pharmacy':
+            schema['@type'] = 'Pharmacy';
+            break;
+        case 'gym':
+            schema['@type'] = 'ExerciseGym';
+            break;
+        case 'spa':
+            schema['@type'] = 'DaySpa';
+            break;
+        default:
+            schema['@type'] = 'LocalBusiness';
     }
 
     const script = document.createElement('script');
@@ -379,30 +500,92 @@ function generateEventSchema(event) {
         "@context": "https://schema.org",
         "@type": "Event",
         "name": event.eventName,
-        "description": event.description,
+        "description": event.longDescription || event.description,
         "startDate": `${event.isoDate}T${event.startTime || '00:00'}`,
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
+        "url": window.location.href,
+        "inLanguage": "en-US",
+        "audience": {
+            "@type": "Audience",
+            "audienceType": "General Public"
+        },
         "location": {
             "@type": "Place",
             "name": event.locationName || "Ohrid",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Ohrid",
-                "addressCountry": "MK"
+                "addressRegion": "Ohrid Municipality",
+                "addressCountry": "MK",
+                "postalCode": "6000"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "OhridHub",
+            "url": "https://www.ohridhub.mk",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.ohridhub.mk/logo/ohridhub.png"
             }
         }
     };
 
+    // Enhanced image handling
     if (event.imageUrl) {
-        schema.image = `${window.location.origin}/${event.imageUrl}`;
+        schema.image = {
+            "@type": "ImageObject",
+            "url": getOptimizedImagePath(`${window.location.origin}/${event.imageUrl}`),
+            "description": `${event.eventName} event image`
+        };
     }
 
-    if (event.eventBookingUrl && event.eventBookingUrl !== '#') {
+    // Enhanced offers and pricing
+    if (event.ticketPrice) {
+        const isFree = event.ticketPrice.toLowerCase().includes('free');
         schema.offers = {
             "@type": "Offer",
-            "url": event.eventBookingUrl,
-            "availability": "https://schema.org/InStock"
+            "name": "Event Ticket",
+            "price": isFree ? "0" : event.ticketPrice.replace(/[^0-9]/g, '') || "0",
+            "priceCurrency": "MKD",
+            "availability": "https://schema.org/InStock",
+            "validFrom": new Date().toISOString(),
+            "url": event.eventBookingUrl && event.eventBookingUrl !== '#' ? event.eventBookingUrl : window.location.href
+        };
+    }
+
+    // Add event category as genre
+    if (event.category) {
+        schema.genre = event.category;
+    }
+
+    // Add performer if available
+    if (event.performer) {
+        schema.performer = {
+            "@type": "Person",
+            "name": event.performer
+        };
+    }
+
+    // Add end date estimate (assume 3 hours if not specified)
+    if (event.endTime) {
+        schema.endDate = `${event.isoDate}T${event.endTime}`;
+    } else {
+        const startDateTime = new Date(`${event.isoDate}T${event.startTime || '20:00'}`);
+        const endDateTime = new Date(startDateTime.getTime() + 3 * 60 * 60 * 1000); // Add 3 hours
+        schema.endDate = endDateTime.toISOString();
+    }
+
+    // Add social media and contact info
+    if (event.eventContact) {
+        schema.offers = {
+            ...schema.offers,
+            "seller": {
+                "@type": "Organization",
+                "name": event.locationName || "Venue",
+                "telephone": event.eventContact
+            }
         };
     }
 
@@ -472,19 +655,66 @@ function animateStatsOnScroll() {
 }
 
 // --- LAZY IMAGE LOADING ---
+// --- PERFORMANCE & IMAGE OPTIMIZATION ---
+let isWebPSupported = false;
+
+// Check WebP support
+function checkWebPSupport() {
+    return new Promise((resolve) => {
+        const webP = new Image();
+        webP.onload = webP.onerror = function () {
+            resolve(webP.height === 2);
+        };
+        webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUExANAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==';
+    });
+}
+
+// Convert image path to WebP if supported
+function getOptimizedImagePath(imagePath) {
+    if (!imagePath || !isWebPSupported) return imagePath;
+    
+    // Don't convert if already WebP or if it's a data URL
+    if (imagePath.includes('.webp') || imagePath.startsWith('data:')) {
+        return imagePath;
+    }
+    
+    // Convert to WebP format
+    const pathWithoutExt = imagePath.replace(/\.(jpg|jpeg|png)$/i, '');
+    return `${pathWithoutExt}.webp`;
+}
+
+// Enhanced lazy loading with WebP support and error handling
 function initializeLazyObserver() {
     lazyImageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const img = entry.target;
-                const src = img.dataset.src;
-                img.src = src;
-                img.classList.add('lazy-loaded');
-                observer.unobserve(img);
+                const originalSrc = img.dataset.src;
+                const optimizedSrc = getOptimizedImagePath(originalSrc);
+                
+                // Create a new image to test if WebP version exists
+                const testImage = new Image();
+                
+                testImage.onload = function() {
+                    // WebP version loaded successfully
+                    img.src = optimizedSrc;
+                    img.classList.add('lazy-loaded');
+                    observer.unobserve(img);
+                };
+                
+                testImage.onerror = function() {
+                    // WebP version failed, use original
+                    img.src = originalSrc;
+                    img.classList.add('lazy-loaded');
+                    observer.unobserve(img);
+                };
+                
+                testImage.src = optimizedSrc;
             }
         });
     }, {
-        rootMargin: "0px 0px 200px 0px" // Load images 200px before they enter the viewport
+        rootMargin: "0px 0px 300px 0px", // Increased from 200px for better performance
+        threshold: 0.1 // Load when 10% of image is visible
     });
 }
 
@@ -492,6 +722,23 @@ function observeLazyImages(container) {
     if (!container || !lazyImageObserver) return;
     const images = container.querySelectorAll('img.lazy');
     images.forEach(img => lazyImageObserver.observe(img));
+}
+
+// Preload critical images
+function preloadCriticalImages() {
+    const criticalImages = [
+        'images_ohrid/photo1.jpg',
+        'images_ohrid/photo2.jpg',
+        'logo/ohridhub.png'
+    ];
+    
+    criticalImages.forEach(imagePath => {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = getOptimizedImagePath(imagePath);
+        document.head.appendChild(link);
+    });
 }
 
 // --- SLIDER UTILITY ---
@@ -2351,6 +2598,155 @@ function openInstagramApp() {
         // Fallback to Instagram web
         window.open('https://www.instagram.com/', '_blank');
     }
+}
+
+// --- BREADCRUMB NAVIGATION ---
+function generateBreadcrumbSchema(breadcrumbs) {
+    const existingSchema = document.getElementById('breadcrumb-schema');
+    if (existingSchema) {
+        existingSchema.remove();
+    }
+
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": breadcrumbs.map((item, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "name": item.name,
+            "item": item.url
+        }))
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = 'breadcrumb-schema';
+    script.text = JSON.stringify(schema);
+    document.head.appendChild(script);
+}
+
+function renderBreadcrumbs(breadcrumbs) {
+    const breadcrumbContainer = document.getElementById('breadcrumb-container');
+    if (!breadcrumbContainer || !breadcrumbs || breadcrumbs.length === 0) return;
+
+    const breadcrumbHTML = breadcrumbs.map((item, index) => {
+        const isLast = index === breadcrumbs.length - 1;
+        if (isLast) {
+            return `<span class="breadcrumb-current" aria-current="page">${item.name}</span>`;
+        } else {
+            return `<a href="${item.url}" class="breadcrumb-link">${item.name}</a>`;
+        }
+    }).join('<span class="breadcrumb-separator" aria-hidden="true">›</span>');
+
+    breadcrumbContainer.innerHTML = `
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb-list">
+                    ${breadcrumbHTML}
+                </ol>
+            </div>
+        </nav>
+    `;
+
+    breadcrumbContainer.classList.remove('hidden');
+    
+    // Generate structured data for breadcrumbs
+    generateBreadcrumbSchema(breadcrumbs);
+}
+
+function updateBreadcrumbs(currentPage, additionalItems = []) {
+    // Don't show breadcrumbs on homepage
+    if (currentPage === 'Home' && additionalItems.length === 0) {
+        const breadcrumbContainer = document.getElementById('breadcrumb-container');
+        if (breadcrumbContainer) {
+            breadcrumbContainer.classList.add('hidden');
+        }
+        return;
+    }
+
+    const baseBreadcrumbs = [
+        { name: 'Home', url: '/' }
+    ];
+
+    let breadcrumbs = [...baseBreadcrumbs];
+    
+    // Add additional breadcrumb items
+    breadcrumbs = breadcrumbs.concat(additionalItems);
+    
+    // Add current page as last item (only if it's not Home)
+    if (currentPage !== 'Home') {
+        breadcrumbs.push({
+            name: currentPage,
+            url: window.location.href
+        });
+    }
+
+    renderBreadcrumbs(breadcrumbs);
+}
+
+// --- PERFORMANCE MONITORING ---
+function measurePerformance() {
+    if ('performance' in window) {
+        // Measure page load time
+        window.addEventListener('load', () => {
+            const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+            
+            // Log performance metrics (can be sent to analytics)
+            console.log('Page Load Time:', loadTime + 'ms');
+            
+            // Measure Core Web Vitals
+            if ('web-vital' in window) {
+                getCLS(console.log);
+                getFID(console.log);
+                getFCP(console.log);
+                getLCP(console.log);
+                getTTFB(console.log);
+            }
+        });
+    }
+}
+
+// --- ACCESSIBILITY IMPROVEMENTS ---
+function improveAccessibility() {
+    // Add skip links functionality
+    const skipLink = document.querySelector('.skip-link');
+    if (skipLink) {
+        skipLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = document.getElementById('main-content');
+            if (target) {
+                target.focus();
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+
+    // Improve focus management for modals
+    const modals = document.querySelectorAll('.modal-overlay');
+    modals.forEach(modal => {
+        modal.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const closeButton = modal.querySelector('.modal-close-button');
+                if (closeButton) {
+                    closeButton.click();
+                }
+            }
+        });
+    });
+
+    // Add keyboard navigation for sliders
+    const sliders = document.querySelectorAll('.keen-slider');
+    sliders.forEach(slider => {
+        slider.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                const prevButton = slider.parentElement.querySelector('.slider-arrow.left');
+                if (prevButton) prevButton.click();
+            } else if (e.key === 'ArrowRight') {
+                const nextButton = slider.parentElement.querySelector('.slider-arrow.right');
+                if (nextButton) nextButton.click();
+            }
+        });
+    });
 }
 
 // MAIN INITIALIZATION

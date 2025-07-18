@@ -5100,3 +5100,384 @@ textarea:focus {
     margin-bottom: 1.5rem;
 }
 
+/* =============== SKELETON LOADING ANIMATIONS =============== */
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: calc(200px + 100%) 0;
+    }
+}
+
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200px 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 4px;
+}
+
+.skeleton-text {
+    height: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.skeleton-text.large {
+    height: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.skeleton-text.small {
+    height: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.skeleton-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.skeleton-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skeleton-venue-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 280px;
+    height: 350px;
+}
+
+.skeleton-venue-image {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200px 100%;
+    animation: skeleton-loading 1.5s infinite;
+}
+
+.skeleton-venue-content {
+    padding: 1rem;
+}
+
+.skeleton-venue-title {
+    height: 1.25rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200px 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 4px;
+}
+
+.skeleton-venue-description {
+    height: 0.875rem;
+    margin-bottom: 0.25rem;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200px 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 4px;
+}
+
+.skeleton-venue-description:last-child {
+    width: 60%;
+}
+
+.skeleton-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.skeleton-hero {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200px 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.skeleton-event-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.skeleton-event-image {
+    width: 100%;
+    height: 240px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200px 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.skeleton-event-title {
+    height: 1.5rem;
+    margin-bottom: 0.75rem;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200px 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 4px;
+}
+
+.skeleton-event-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skeleton-event-meta-item {
+    height: 1rem;
+    width: 120px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200px 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 4px;
+}
+
+.skeleton-button {
+    height: 2.5rem;
+    width: 120px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200px 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 9999px;
+    margin-right: 0.5rem;
+}
+
+/* Loading container styles */
+.loading-container {
+    padding: 2rem 0;
+}
+
+.loading-container.recommendations {
+    margin-bottom: 3rem;
+}
+
+.loading-container.venues {
+    margin-bottom: 2rem;
+}
+
+/* Hide content during loading */
+.loading .hero-slider,
+.loading .recommendations-container,
+.loading .venues-container {
+    display: none;
+}
+
+/* Show skeleton during loading */
+.loading .skeleton-hero,
+.loading .skeleton-grid {
+    display: block;
+}
+
+/* Responsive skeleton adjustments */
+@media (max-width: 768px) {
+    .skeleton-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .skeleton-venue-card {
+        width: 100%;
+        height: auto;
+    }
+    
+    .skeleton-hero {
+        height: 300px;
+    }
+    
+    .skeleton-event-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .skeleton-event-meta-item {
+        width: 100%;
+    }
+}
+
+/* Dark mode skeleton styles */
+@media (prefers-color-scheme: dark) {
+    .skeleton {
+        background: linear-gradient(90deg, #2a2a2a 25%, #3a3a3a 50%, #2a2a2a 75%);
+        background-size: 200px 100%;
+    }
+    
+    .skeleton-venue-image,
+    .skeleton-venue-title,
+    .skeleton-venue-description,
+    .skeleton-hero,
+    .skeleton-event-image,
+    .skeleton-event-title,
+    .skeleton-event-meta-item,
+    .skeleton-button {
+        background: linear-gradient(90deg, #2a2a2a 25%, #3a3a3a 50%, #2a2a2a 75%);
+        background-size: 200px 100%;
+    }
+}
+
+/* =============== BREADCRUMB NAVIGATION =============== */
+
+.breadcrumb-nav {
+    background: var(--background);
+    border-bottom: 1px solid var(--border);
+    padding: 0.75rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.breadcrumb-list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.875rem;
+}
+
+.breadcrumb-link {
+    color: var(--muted-foreground);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.breadcrumb-current {
+    color: var(--foreground);
+    font-weight: 500;
+}
+
+.breadcrumb-separator {
+    color: var(--muted-foreground);
+    margin: 0 0.25rem;
+    font-size: 0.75rem;
+}
+
+/* =============== PERFORMANCE OPTIMIZATIONS =============== */
+
+/* Critical path CSS improvements */
+.above-the-fold {
+    contain: layout;
+}
+
+/* Prevent layout shifts */
+.hero-slider {
+    min-height: 400px;
+}
+
+.venue-card-image-container {
+    contain: layout;
+}
+
+/* Improve font loading */
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    font-display: swap;
+}
+
+/* =============== ACCESSIBILITY IMPROVEMENTS =============== */
+
+/* Skip links */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--primary);
+    color: var(--primary-foreground);
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1000;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+/* Focus management */
+.modal-overlay:focus-within {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Keyboard navigation indicators */
+.keen-slider:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Better focus indicators */
+*:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Remove outline for mouse users */
+.mouse-user *:focus {
+    outline: none;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .skeleton {
+        background: linear-gradient(90deg, #000 25%, #333 50%, #000 75%);
+    }
+    
+    .breadcrumb-nav {
+        border-bottom: 2px solid var(--foreground);
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .skeleton {
+        animation: none;
+    }
+    
+    .btn,
+    .venue-card-image,
+    .slider-arrow {
+        transition: none;
+    }
+}
+
+/* =============== RESPONSIVE BREADCRUMBS =============== */
+
+@media (max-width: 768px) {
+    .breadcrumb-nav {
+        padding: 0.5rem 0;
+    }
+    
+    .breadcrumb-list {
+        font-size: 0.75rem;
+        gap: 0.25rem;
+    }
+    
+    .breadcrumb-separator {
+        margin: 0 0.125rem;
+    }
+}
+
