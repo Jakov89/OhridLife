@@ -675,102 +675,362 @@ document.addEventListener('DOMContentLoaded', () => {
         const canvas = document.createElement('canvas');
         const ctx = canvas.getContext('2d');
         
-        // Instagram Story dimensions (9:16 aspect ratio)
-        canvas.width = 1080;
-        canvas.height = 1920;
+        // Instagram Story dimensions with high DPI support
+        const baseWidth = 1080;
+        const baseHeight = 1920;
+        const scale = window.devicePixelRatio || 2; // Use device pixel ratio or default to 2 for high quality
         
-        // Get gradient
-        const gradients = {
-            'gradient-1': ['#667eea', '#764ba2'],
-            'gradient-2': ['#f093fb', '#f5576c'],
-            'gradient-3': ['#4facfe', '#00f2fe'],
-            'gradient-4': ['#43e97b', '#38f9d7'],
-            'gradient-5': ['#fa709a', '#fee140']
+        // Set actual canvas size for high DPI
+        canvas.width = baseWidth * scale;
+        canvas.height = baseHeight * scale;
+        
+        // Scale the context to match the device pixel ratio
+        ctx.scale(scale, scale);
+        
+        // Set canvas display size (CSS size)
+        canvas.style.width = baseWidth + 'px';
+        canvas.style.height = baseHeight + 'px';
+        
+        // Enable high-quality rendering
+        ctx.imageSmoothingEnabled = true;
+        ctx.imageSmoothingQuality = 'high';
+        
+        // Enhanced gradients with more sophisticated colors
+        const gradientColors = {
+            'gradient-1': {
+                colors: ['#667eea', '#764ba2'],
+                angle: 135,
+                name: 'Purple Dream'
+            },
+            'gradient-2': {
+                colors: ['#f093fb', '#f5576c'],
+                angle: 135,
+                name: 'Sunset Glow'
+            },
+            'gradient-3': {
+                colors: ['#4facfe', '#00f2fe'],
+                angle: 135,
+                name: 'Ocean Breeze'
+            },
+            'gradient-4': {
+                colors: ['#43e97b', '#38f9d7'],
+                angle: 135,
+                name: 'Forest Fresh'
+            },
+            'gradient-5': {
+                colors: ['#fa709a', '#fee140'],
+                angle: 135,
+                name: 'Golden Hour'
+            }
         };
         
-        const [color1, color2] = gradients[selectedTemplate];
+        const selectedGradient = gradientColors[selectedTemplate] || gradientColors['gradient-1'];
+        const [color1, color2] = selectedGradient.colors;
         
-        // Create gradient
-        const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+        // Create enhanced gradient with radial overlay
+        const gradient = ctx.createLinearGradient(0, 0, baseWidth, baseHeight);
         gradient.addColorStop(0, color1);
         gradient.addColorStop(1, color2);
         
         // Fill background
         ctx.fillStyle = gradient;
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillRect(0, 0, baseWidth, baseHeight);
         
-        // Add overlay
-        ctx.fillStyle = 'rgba(0, 0, 0, 0.3)';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        // Add sophisticated overlay pattern
+        const radialGradient = ctx.createRadialGradient(
+            baseWidth / 2, baseHeight / 2, 0,
+            baseWidth / 2, baseHeight / 2, baseWidth
+        );
+        radialGradient.addColorStop(0, 'rgba(255, 255, 255, 0.1)');
+        radialGradient.addColorStop(0.5, 'rgba(255, 255, 255, 0.05)');
+        radialGradient.addColorStop(1, 'rgba(0, 0, 0, 0.2)');
         
-        // Set text color
+        ctx.fillStyle = radialGradient;
+        ctx.fillRect(0, 0, baseWidth, baseHeight);
+        
+        // Add subtle texture pattern
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.03)';
+        for (let i = 0; i < baseWidth; i += 4) {
+            for (let j = 0; j < baseHeight; j += 4) {
+                if (Math.random() > 0.7) {
+                    ctx.fillRect(i, j, 2, 2);
+                }
+            }
+        }
+        
+        // Layout constants for better positioning
+        const padding = 80;
+        const headerY = 200;
+        const imageY = 800;
+        const footerY = 1550;
+        
+        // Enhanced text styling
         ctx.fillStyle = 'white';
         ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
         
-        // Date
+        // Add text shadow function
+        function addTextShadow(ctx, shadowColor = 'rgba(0, 0, 0, 0.3)', blur = 8) {
+            ctx.shadowColor = shadowColor;
+            ctx.shadowBlur = blur;
+            ctx.shadowOffsetX = 2;
+            ctx.shadowOffsetY = 2;
+        }
+        
+        // Reset shadow function
+        function resetShadow(ctx) {
+            ctx.shadowColor = 'transparent';
+            ctx.shadowBlur = 0;
+            ctx.shadowOffsetX = 0;
+            ctx.shadowOffsetY = 0;
+        }
+        
+        // Header section with enhanced styling
+        
+        // Date with improved styling
         const eventDate = new Date(eventData.isoDate);
         const formattedDate = eventDate.toLocaleDateString('en-US', {
+            weekday: 'short',
             month: 'short',
             day: 'numeric',
             year: 'numeric'
         }).toUpperCase();
         
-        ctx.font = 'bold 32px Arial';
-        ctx.fillText(formattedDate, canvas.width / 2, 200);
+        addTextShadow(ctx);
+        ctx.font = '600 32px system-ui, -apple-system, sans-serif';
+        ctx.globalAlpha = 0.9;
+        ctx.fillText(formattedDate, baseWidth / 2, headerY - 20);
+        resetShadow(ctx);
+        ctx.globalAlpha = 1;
         
-        // Event title
-        ctx.font = 'bold 56px Arial';
+        // Event title with enhanced typography
+        addTextShadow(ctx);
+        ctx.font = '700 64px system-ui, -apple-system, sans-serif';
         const title = eventData.eventName || 'Event';
-        wrapText(ctx, title, canvas.width / 2, 300, canvas.width - 200, 80);
         
-        // Category badge
-        ctx.font = '28px Arial';
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+        // Enhanced text wrapping with better line height
+        wrapTextEnhanced(ctx, title, baseWidth / 2, headerY + 60, baseWidth - 160, 80);
+        resetShadow(ctx);
+        
+        // Category badge with modern design
         const category = eventData.category || 'Event';
-        const categoryWidth = ctx.measureText(category).width + 40;
-        const categoryX = (canvas.width - categoryWidth) / 2;
-        ctx.fillRect(categoryX, 420, categoryWidth, 60);
-        ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
-        ctx.fillText(category, canvas.width / 2, 460);
+        ctx.font = '500 28px system-ui, -apple-system, sans-serif';
+        const categoryMetrics = ctx.measureText(category);
+        const badgeWidth = categoryMetrics.width + 60;
+        const badgeHeight = 50;
+        const badgeX = (baseWidth - badgeWidth) / 2;
+        const badgeY = headerY + 200;
         
-        // Venue and time
+        // Enhanced badge with gradient and shadow
+        ctx.shadowColor = 'rgba(0, 0, 0, 0.2)';
+        ctx.shadowBlur = 12;
+        ctx.shadowOffsetY = 4;
+        
+        // Create badge gradient
+        const badgeGradient = ctx.createLinearGradient(badgeX, badgeY, badgeX, badgeY + badgeHeight);
+        badgeGradient.addColorStop(0, 'rgba(255, 255, 255, 0.25)');
+        badgeGradient.addColorStop(1, 'rgba(255, 255, 255, 0.15)');
+        
+        ctx.fillStyle = badgeGradient;
+        ctx.fillRect(badgeX, badgeY, badgeWidth, badgeHeight);
+        
+        // Add badge border
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
+        ctx.lineWidth = 2;
+        ctx.strokeRect(badgeX, badgeY, badgeWidth, badgeHeight);
+        
+        resetShadow(ctx);
+        
+        // Badge text
         ctx.fillStyle = 'white';
-        ctx.font = '36px Arial';
-        ctx.fillText(`📍 ${eventData.locationName || 'Ohrid'}`, canvas.width / 2, 1650);
-        ctx.fillText(`🕐 ${eventData.startTime || '20:00'}`, canvas.width / 2, 1720);
+        ctx.fillText(category, baseWidth / 2, badgeY + badgeHeight / 2);
         
-        // Branding
-        ctx.font = 'bold 32px Arial';
-        ctx.fillText('OHRIDHUB', canvas.width / 2, 1800);
-        
-        // Load and draw event image if available
+        // Event image with enhanced styling
         if (eventData.imageUrl) {
             const img = new Image();
             img.crossOrigin = 'anonymous';
+            
+            // Add timeout for image loading
+            let imageLoadTimeout;
+            
             img.onload = function() {
-                // Draw circular image
+                clearTimeout(imageLoadTimeout);
+                
+                // Enhanced circular image with multiple effects
+                const imageSize = 320; // Increased size for better mobile visibility
+                const imageX = baseWidth / 2;
+                const centerY = imageY;
+                
+                // Add glow effect behind image
+                ctx.shadowColor = color2;
+                ctx.shadowBlur = 40;
+                ctx.shadowOffsetX = 0;
+                ctx.shadowOffsetY = 0;
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+                ctx.beginPath();
+                ctx.arc(imageX, centerY, imageSize / 2 + 20, 0, 2 * Math.PI);
+                ctx.fill();
+                resetShadow(ctx);
+                
+                // Draw main image with clipping
                 ctx.save();
                 ctx.beginPath();
-                ctx.arc(canvas.width / 2, 950, 200, 0, 2 * Math.PI);
+                ctx.arc(imageX, centerY, imageSize / 2, 0, 2 * Math.PI);
                 ctx.clip();
-                ctx.drawImage(img, canvas.width / 2 - 200, 750, 400, 400);
+                
+                // Add slight image enhancement
+                ctx.filter = 'brightness(1.1) contrast(1.1) saturate(1.2)';
+                ctx.drawImage(img, imageX - imageSize / 2, centerY - imageSize / 2, imageSize, imageSize);
+                ctx.filter = 'none';
                 ctx.restore();
                 
-                // Add border
-                ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
-                ctx.lineWidth = 6;
+                // Enhanced border with gradient
+                const borderGradient = ctx.createLinearGradient(
+                    imageX - imageSize / 2, centerY - imageSize / 2,
+                    imageX + imageSize / 2, centerY + imageSize / 2
+                );
+                borderGradient.addColorStop(0, 'rgba(255, 255, 255, 0.6)');
+                borderGradient.addColorStop(1, 'rgba(255, 255, 255, 0.2)');
+                
+                ctx.strokeStyle = borderGradient;
+                ctx.lineWidth = 8; // Increased border width
                 ctx.beginPath();
-                ctx.arc(canvas.width / 2, 950, 200, 0, 2 * Math.PI);
+                ctx.arc(imageX, centerY, imageSize / 2, 0, 2 * Math.PI);
                 ctx.stroke();
                 
-                downloadCanvas(canvas);
+                // Add inner highlight
+                ctx.strokeStyle = 'rgba(255, 255, 255, 0.4)';
+                ctx.lineWidth = 3;
+                ctx.beginPath();
+                ctx.arc(imageX, centerY, imageSize / 2 - 4, 0, 2 * Math.PI);
+                ctx.stroke();
+                
+                finishCanvasDrawing();
             };
+            
             img.onerror = function() {
-                downloadCanvas(canvas);
+                clearTimeout(imageLoadTimeout);
+                console.log('Image failed to load, creating placeholder');
+                createPlaceholder();
             };
+            
+            // Set timeout for image loading (5 seconds)
+            imageLoadTimeout = setTimeout(() => {
+                console.log('Image loading timeout, creating placeholder');
+                createPlaceholder();
+            }, 5000);
+            
             img.src = eventData.imageUrl;
         } else {
+            createPlaceholder();
+        }
+        
+        function createPlaceholder() {
+            // Create attractive placeholder when no image
+            const imageSize = 320; // Increased size for better mobile visibility
+            const imageX = baseWidth / 2;
+            const centerY = imageY;
+            
+            // Placeholder circle with gradient
+            const placeholderGradient = ctx.createRadialGradient(
+                imageX, centerY, 0,
+                imageX, centerY, imageSize / 2
+            );
+            placeholderGradient.addColorStop(0, 'rgba(255, 255, 255, 0.3)');
+            placeholderGradient.addColorStop(1, 'rgba(255, 255, 255, 0.1)');
+            
+            ctx.fillStyle = placeholderGradient;
+            ctx.beginPath();
+            ctx.arc(imageX, centerY, imageSize / 2, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            // Add placeholder border
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.4)';
+            ctx.lineWidth = 8;
+            ctx.beginPath();
+            ctx.arc(imageX, centerY, imageSize / 2, 0, 2 * Math.PI);
+            ctx.stroke();
+            
+            // Add event icon in placeholder
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+            ctx.font = '80px system-ui, -apple-system, sans-serif'; // Increased icon size
+            ctx.fillText('🎉', imageX, centerY);
+            
+            finishCanvasDrawing();
+        }
+        
+        function finishCanvasDrawing() {
+            // Footer section with enhanced styling
+            ctx.fillStyle = 'white';
+            ctx.textAlign = 'center';
+            
+            // Enhanced venue info
+            addTextShadow(ctx);
+            ctx.font = '500 38px system-ui, -apple-system, sans-serif';
+            ctx.globalAlpha = 0.95;
+            ctx.fillText(`📍 ${eventData.locationName || 'Ohrid'}`, baseWidth / 2, footerY);
+            resetShadow(ctx);
+            
+            // Enhanced time info
+            addTextShadow(ctx);
+            ctx.font = '600 42px system-ui, -apple-system, sans-serif';
+            ctx.globalAlpha = 1;
+            ctx.fillText(`🕐 ${eventData.startTime || '20:00'}`, baseWidth / 2, footerY + 70);
+            resetShadow(ctx);
+            
+            // Enhanced branding with subtle styling
+            ctx.font = '600 32px system-ui, -apple-system, sans-serif';
+            ctx.globalAlpha = 0.8;
+            addTextShadow(ctx, 'rgba(0, 0, 0, 0.2)', 4);
+            ctx.fillText('OHRIDHUB', baseWidth / 2, footerY + 140);
+            resetShadow(ctx);
+            
+            // Add decorative elements
+            ctx.globalAlpha = 0.3;
+            ctx.fillStyle = 'white';
+            
+            // Top decorative line
+            ctx.fillRect(baseWidth / 2 - 40, 80, 80, 3);
+            
+            // Bottom decorative line
+            ctx.fillRect(baseWidth / 2 - 40, 1840, 80, 3);
+            
+            ctx.globalAlpha = 1;
+            
             downloadCanvas(canvas);
+        }
+        
+        // Enhanced text wrapping function
+        function wrapTextEnhanced(ctx, text, x, y, maxWidth, lineHeight) {
+            const words = text.split(' ');
+            let line = '';
+            let currentY = y;
+            const lines = [];
+            
+            // First pass: determine all lines
+            for (let n = 0; n < words.length; n++) {
+                const testLine = line + words[n] + ' ';
+                const metrics = ctx.measureText(testLine);
+                const testWidth = metrics.width;
+                
+                if (testWidth > maxWidth && n > 0) {
+                    lines.push(line.trim());
+                    line = words[n] + ' ';
+                } else {
+                    line = testLine;
+                }
+            }
+            if (line.trim()) {
+                lines.push(line.trim());
+            }
+            
+            // Second pass: draw centered lines
+            const totalHeight = lines.length * lineHeight;
+            let startY = y - totalHeight / 2 + lineHeight / 2;
+            
+            lines.forEach((line, index) => {
+                ctx.fillText(line, x, startY + index * lineHeight);
+            });
         }
     }
     
@@ -796,10 +1056,54 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function downloadCanvas(canvas) {
-        const link = document.createElement('a');
-        link.download = `${eventData.eventName || 'event'}-instagram-story.png`;
-        link.href = canvas.toDataURL();
-        link.click();
+        try {
+            // Create a temporary canvas at the correct resolution for download
+            const downloadCanvas = document.createElement('canvas');
+            const downloadCtx = downloadCanvas.getContext('2d');
+            
+            // Set the download canvas to Instagram Story dimensions
+            downloadCanvas.width = 1080;
+            downloadCanvas.height = 1920;
+            
+            // Enable high-quality rendering
+            downloadCtx.imageSmoothingEnabled = true;
+            downloadCtx.imageSmoothingQuality = 'high';
+            
+            // Draw the high-DPI canvas onto the download canvas, scaling it down
+            downloadCtx.drawImage(canvas, 0, 0, downloadCanvas.width, downloadCanvas.height);
+            
+            // Create download link
+            const link = document.createElement('a');
+            const fileName = `${eventData.eventName || 'event'}-instagram-story.png`;
+            link.download = fileName;
+            
+            // Use maximum quality for the download
+            link.href = downloadCanvas.toDataURL('image/png', 1.0);
+            
+            // Trigger download
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            console.log('Image downloaded successfully:', fileName);
+        } catch (error) {
+            console.error('Error during canvas download:', error);
+            
+            // Fallback: try direct download from original canvas
+            try {
+                const link = document.createElement('a');
+                const fileName = `${eventData.eventName || 'event'}-instagram-story.png`;
+                link.download = fileName;
+                link.href = canvas.toDataURL('image/png', 1.0);
+                
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            } catch (fallbackError) {
+                console.error('Fallback download also failed:', fallbackError);
+                alert('Failed to download image. Please try again.');
+            }
+        }
     }
     
     function openInstagramApp() {
