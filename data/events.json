@@ -6201,5 +6201,37 @@
     "ticketPrice": "600 MKD (till 03.08)",
     "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.99937404797475!2d20.79884772427415!3d41.089942723622265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c3507e60c8ed%3A0x97b1fb096f26e52!2sGolden%20Beach!5e0!3m2!1sen!2smk!4v1752254797299!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Park Golden Beach"
+  },
+  {
+    "id": 401,
+    "venueId": null,
+    "eventName": "HUMN 🍦SUMMER JAM!",
+    "isoDate": "2025-07-19",
+    "startTime": "09:00",
+    "day": "Sat.",
+    "description": "PART 1: 9 AM - 2 PM\n\nHUMN Pop Up: TASTE THE COLOR\n\nCOFFEE MATCHA WORKSHOP by Roastery Artisan Coffee House ☕🍵\n\nGroove to the beats of DJ FOODIEMAN 🎶\n\nPART 2: 6 PM - 10 PM\n\nSIGNATURE COCKTAILS SUNSET PARTY with Hotel Su 🌅🍸\n\nSpecial Perk: With every HUMN product purchased, you get FREE access to the event the following day! \"THE BUTTER YOU WEAR, THE BOLDER YOU FEEL.\"",
+    "category": "",
+    "imageUrl": "events_image/humn/humn2.jpg",
+    "eventBookingUrl": "#",
+    "eventContact": "N/A",
+    "ticketPrice": "Free Entry",
+    "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.9924531322511!2d20.806906791912542!3d41.10736652888151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca80ff1d9eb%3A0xff917fc23ad178!2sSu%20Hotel!5e0!3m2!1sen!2smk!4v1752871655667!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Su Hotel"
+  },
+  {
+    "id": 402,
+    "venueId": null,
+    "eventName": "HUMN 🍦SUMMER JAM!",
+    "isoDate": "2025-07-20",
+    "startTime": "08:00",
+    "day": "Sun.",
+    "description": "8 AM - 1 PM\n\nWORKOUT SESSION with EMILIJA KOLOSKA 💪\n\n+ FREE SMOOTHIE after your workout",
+    "category": "Fitness",
+    "imageUrl": "events_image/humn/humn2.jpg",
+    "eventBookingUrl": "#",
+    "eventContact": "N/A",
+    "ticketPrice": "Free Entry",
+    "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.9924531322511!2d20.806906791912542!3d41.10736652888151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca80ff1d9eb%3A0xff917fc23ad178!2sSu%20Hotel!5e0!3m2!1sen!2smk!4v1752871655667!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Su Hotel"
   }
 ]
