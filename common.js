@@ -13,7 +13,7 @@ function renderNavbar() {
                 <li><a href="/" data-id="home">Home</a></li>
                 <li><a href="/#plan-your-visit" data-id="events">Events</a></li>
                 <li><a href="/day-planner" data-id="planner">Day Planner</a></li>
-                <li><a href="/learn" data-id="learn">Learn Ohrid</a></li>
+                <li><a href="/learn.html" data-id="learn">Learn Ohrid</a></li>
             </ul>
         </nav>
         <button class="hamburger-menu" aria-label="Open navigation menu">
@@ -69,7 +69,7 @@ function renderFooter() {
                         <li><a href="/">Home</a></li>
                         <li><a href="/#plan-your-visit">Events</a></li>
                         <li><a href="/day-planner">Day Planner</a></li>
-                        <li><a href="/learn">Learn About Ohrid</a></li>
+                        <li><a href="/learn.html">Learn About Ohrid</a></li>
                     </ul>
                 </div>
                 
