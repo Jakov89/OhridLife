@@ -2122,7 +2122,12 @@ function setupInstagramStoryModalListeners() {
             templateOptions.forEach(opt => opt.classList.remove('selected'));
             option.classList.add('selected');
             selectedTemplate = option.dataset.template;
-            updateStoryCardPreview();
+            // Update preview for both events and venues
+            if (currentEventForStory) {
+                updateStoryCardPreview();
+            } else if (currentVenueForStory) {
+                updateVenueStoryPreview();
+            }
         });
     });
     
@@ -2243,8 +2248,8 @@ function updateStoryCardPreview() {
 }
 
 function downloadStoryImage() {
-    if (!currentEventForStory) {
-        console.error('No current event for story download');
+    if (!currentEventForStory && !currentVenueForStory) {
+        console.error('No current event or venue for story download');
         return;
     }
     
@@ -2278,6 +2283,24 @@ function downloadStoryImage() {
 }
 
 function createHighResolutionPreview() {
+    // Check if we have venue or event data and normalize it
+    let storyData;
+    if (currentVenueForStory) {
+        storyData = {
+            eventName: currentVenueForStory.name?.en || currentVenueForStory.name || 'Amazing Venue',
+            category: '',  // Hide category for venues
+            locationName: currentVenueForStory.location?.address || 'Ohrid',
+            startTime: currentVenueForStory.workingHours || 'Discover Ohrid',
+            imageUrl: currentVenueForStory.imageUrl,
+            isoDate: new Date().toISOString()
+        };
+    } else if (currentEventForStory) {
+        storyData = currentEventForStory;
+    } else {
+        console.error('No story data available for preview');
+        return null;
+    }
+
     const tempPreview = document.createElement('div');
     tempPreview.className = 'story-card-preview';
     tempPreview.id = 'temp-story-card-preview';
@@ -2332,7 +2355,7 @@ function createHighResolutionPreview() {
     header.style.zIndex = '2';
     header.style.textAlign = 'center';
     
-    const eventDate = new Date(currentEventForStory.isoDate);
+    const eventDate = new Date(storyData.isoDate);
     const formattedDate = eventDate.toLocaleDateString('en-US', {
         month: 'short',
         day: 'numeric',
@@ -2350,7 +2373,7 @@ function createHighResolutionPreview() {
     header.appendChild(dateElement);
     
     const titleElement = document.createElement('div');
-    titleElement.textContent = currentEventForStory.eventName || 'Event';
+    titleElement.textContent = storyData.eventName || 'Event';
     titleElement.style.fontSize = '80px';
     titleElement.style.fontWeight = '700';
     titleElement.style.marginBottom = '40px';
@@ -2359,7 +2382,7 @@ function createHighResolutionPreview() {
     header.appendChild(titleElement);
     
     const categoryElement = document.createElement('div');
-    categoryElement.textContent = currentEventForStory.category || 'Event';
+    categoryElement.textContent = storyData.category || 'Event';
     categoryElement.style.fontSize = '36px';
     categoryElement.style.background = 'rgba(255, 255, 255, 0.2)';
     categoryElement.style.padding = '16px 48px';
@@ -2378,9 +2401,9 @@ function createHighResolutionPreview() {
     imageContainer.style.alignItems = 'center';
     imageContainer.style.minHeight = '600px';
     
-    if (currentEventForStory.imageUrl) {
+    if (storyData.imageUrl) {
         const img = document.createElement('img');
-        img.src = currentEventForStory.imageUrl;
+        img.src = storyData.imageUrl;
         img.style.width = '480px';
         img.style.height = '480px';
         img.style.borderRadius = '50%';
@@ -2397,7 +2420,7 @@ function createHighResolutionPreview() {
     footer.style.textAlign = 'center';
     
     const venueElement = document.createElement('div');
-    venueElement.textContent = `📍 ${currentEventForStory.locationName || 'Ohrid'}`;
+    venueElement.textContent = `📍 ${storyData.locationName || 'Ohrid'}`;
     venueElement.style.fontSize = '52px';
     venueElement.style.opacity = '0.9';
     venueElement.style.marginBottom = '32px';
@@ -2405,7 +2428,7 @@ function createHighResolutionPreview() {
     footer.appendChild(venueElement);
     
     const timeElement = document.createElement('div');
-    timeElement.textContent = `🕐 ${currentEventForStory.startTime || '20:00'}`;
+    timeElement.textContent = `🕐 ${storyData.startTime || '20:00'}`;
     timeElement.style.fontSize = '64px';
     timeElement.style.fontWeight = '600';
     timeElement.style.marginBottom = '40px';
@@ -2433,6 +2456,25 @@ function createHighResolutionPreview() {
 }
 
 function downloadStoryImageManual() {
+    // Check if we have venue or event data and normalize it
+    let storyData;
+    if (currentVenueForStory) {
+        // Map venue data to match event structure for drawing
+        storyData = {
+            eventName: currentVenueForStory.name?.en || currentVenueForStory.name || 'Amazing Venue',
+            category: 'Venue',
+            locationName: currentVenueForStory.location?.address || 'Ohrid',
+            startTime: currentVenueForStory.workingHours || 'Discover Ohrid',
+            imageUrl: currentVenueForStory.imageUrl,
+            isoDate: new Date().toISOString() // Use current date for venues
+        };
+    } else if (currentEventForStory) {
+        storyData = currentEventForStory;
+    } else {
+        console.error('No story data available for download');
+        return;
+    }
+
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
     
@@ -2549,7 +2591,7 @@ function downloadStoryImageManual() {
     // Header section with enhanced styling
     
     // Date with improved styling
-    const eventDate = new Date(currentEventForStory.isoDate);
+    const eventDate = new Date(storyData.isoDate);
     const formattedDate = eventDate.toLocaleDateString('en-US', {
         weekday: 'short',
         month: 'short',
@@ -2567,14 +2609,14 @@ function downloadStoryImageManual() {
     // Event title with enhanced typography
     addTextShadow(ctx);
     ctx.font = '700 64px system-ui, -apple-system, sans-serif';
-    const title = currentEventForStory.eventName || 'Event';
+    const title = storyData.eventName || 'Event';
     
     // Enhanced text wrapping with better line height
     wrapTextEnhanced(ctx, title, baseWidth / 2, headerY + 60, baseWidth - 160, 80);
     resetShadow(ctx);
     
-    // Category badge with modern design
-    const category = currentEventForStory.category || 'Event';
+    // Category badge with modern design (hidden for venues)
+    const category = currentVenueForStory ? '' : (storyData.category || 'Event');
     ctx.font = '500 28px system-ui, -apple-system, sans-serif';
     const categoryMetrics = ctx.measureText(category);
     const badgeWidth = categoryMetrics.width + 60;
@@ -2607,7 +2649,7 @@ function downloadStoryImageManual() {
     ctx.fillText(category, baseWidth / 2, badgeY + badgeHeight / 2);
     
     // Event image with enhanced styling
-    if (currentEventForStory.imageUrl) {
+    if (storyData.imageUrl) {
         const img = new Image();
         img.crossOrigin = 'anonymous';
         
@@ -2681,7 +2723,7 @@ function downloadStoryImageManual() {
             createPlaceholder();
         }, 5000);
         
-        img.src = currentEventForStory.imageUrl;
+        img.src = storyData.imageUrl;
     } else {
         createPlaceholder();
     }
@@ -2729,14 +2771,14 @@ function downloadStoryImageManual() {
         addTextShadow(ctx);
         ctx.font = '500 38px system-ui, -apple-system, sans-serif';
         ctx.globalAlpha = 0.95;
-        ctx.fillText(`📍 ${currentEventForStory.locationName || 'Ohrid'}`, baseWidth / 2, footerY);
+        ctx.fillText(`📍 ${storyData.locationName || 'Ohrid'}`, baseWidth / 2, footerY);
         resetShadow(ctx);
         
         // Enhanced time info
         addTextShadow(ctx);
         ctx.font = '600 42px system-ui, -apple-system, sans-serif';
         ctx.globalAlpha = 1;
-        ctx.fillText(`🕐 ${currentEventForStory.startTime || '20:00'}`, baseWidth / 2, footerY + 70);
+        ctx.fillText(`🕐 ${storyData.startTime || '20:00'}`, baseWidth / 2, footerY + 70);
         resetShadow(ctx);
         
         // Enhanced branding with subtle styling
@@ -3351,6 +3393,9 @@ function openVenueInstagramStoryModal() {
     // Update story preview with venue data
     updateVenueStoryPreview();
     
+    // Setup listeners if not already done (reuse the existing function)
+    setupInstagramStoryModalListeners();
+    
     // Show the Instagram story modal
     const storyModal = document.getElementById('instagram-story-modal');
     if (storyModal) {
@@ -3363,6 +3408,19 @@ function openVenueInstagramStoryModal() {
 
 function updateVenueStoryPreview() {
     if (!currentVenueForStory) return;
+    
+    // Update template background
+    const preview = document.getElementById('story-card-preview');
+    if (preview) {
+        const gradients = {
+            'gradient-1': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+            'gradient-2': 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+            'gradient-3': 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+            'gradient-4': 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
+            'gradient-5': 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+        };
+        preview.style.background = gradients[selectedTemplate] || gradients['gradient-1'];
+    }
     
     const storyTitle = document.getElementById('story-card-title');
     const storyCategory = document.getElementById('story-card-category');
