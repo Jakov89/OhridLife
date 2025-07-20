@@ -34,6 +34,7 @@
 
 html {
     /* Reverted to default by removing width and overflow properties */
+    font-display: swap; /* Improve font loading performance */
 }
 
 body {
@@ -45,6 +46,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     position: relative;
+    contain: layout style paint; /* Improve rendering performance */
+    font-display: swap;
 }
 
 body::before {
@@ -871,6 +874,7 @@ span.flatpickr-weekday {
     cursor: pointer;
     overflow: hidden;
     min-height: 80px;
+    align-items: center;
 }
 
 .daily-event-card:hover {
@@ -880,21 +884,25 @@ span.flatpickr-weekday {
 }
 
 .daily-event-image {
-    width: 70px;
+    width: 90px;
     height: 70px;
     object-fit: cover;
+    object-position: center;
     border-radius: var(--radius);
     margin-right: 0.75rem;
     flex-shrink: 0;
+    display: block;
+    aspect-ratio: 4/3;
 }
 
 .event-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     flex-grow: 1;
     gap: 0.25rem;
     min-height: 70px;
+    overflow: hidden;
 }
 
 /* Daily Event Card Titles - Normal smaller size */
@@ -979,6 +987,7 @@ span.flatpickr-weekday {
     width: 100%;
     height: 250px;
     object-fit: cover;
+    object-position: center;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     margin-bottom: 1.5rem;
@@ -1123,25 +1132,55 @@ span.flatpickr-weekday {
 .venue-card-image-container {
     position: relative;
     width: 100%;
-    padding-top: 66.66%; /* 3:2 Aspect Ratio */
+    height: 200px; /* Fixed height instead of padding-top */
+    overflow: hidden;
 }
 
 .venue-card-image {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     transition: opacity 0.4s ease-in-out;
+    display: block;
 }
 
-/* Styles for lazy loading */
-.venue-card-image.lazy {
-    opacity: 0;
+/* Force proper image display for all venue cards */
+.venue-card img,
+.venue-card-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+    max-width: none !important;
+    max-height: none !important;
+    border-radius: 0 !important;
+    aspect-ratio: 2/1; /* Landscape aspect ratio */
 }
 
-.venue-card-image.lazy-loaded {
+/* Force proper image display for all event images */
+.daily-event-image,
+.event-detail-image,
+.modal-event-image {
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+}
+
+.daily-event-image {
+    aspect-ratio: 4/3 !important;
+}
+
+/* Force proper image display for all card images */
+.card-image {
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+}
+
+/* Venue card images always visible */
+.venue-card-image {
     opacity: 1;
 }
 
@@ -1933,12 +1972,15 @@ span.flatpickr-weekday {
     position: relative;
     width: 100%;
     height: 180px;
+    overflow: hidden;
 }
 
 .recommendations-highlight .venue-card-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 .recommendations-highlight .venue-card-badges {
@@ -2042,6 +2084,8 @@ span.flatpickr-weekday {
 .keen-slider__slide {
   padding: 4px; /* Give space for box-shadow */
   min-width: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
 .slider-arrow {
@@ -2242,6 +2286,12 @@ span.flatpickr-weekday {
 .all-venues-slider-wrapper#all-venues-slider .keen-slider__slide {
     min-width: 280px;
     max-width: 320px;
+    height: auto;
+}
+
+.all-venues-slider-wrapper#all-venues-slider .venue-card {
+    width: 100%;
+    height: 100%;
 }
 
 .all-venues-slider-wrapper.single-item-container {
@@ -3156,7 +3206,7 @@ select.form-input {
 .card-image-container {
     position: relative;
     width: 100%;
-    padding-top: 66.66%; /* 3:2 Aspect Ratio */
+    height: 200px; /* Fixed height instead of padding-top */
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -3170,12 +3220,11 @@ select.form-input {
 }
 
 .card-image {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 /* Removed old keen-slider styling for daily events - now using show more approach */
@@ -4550,8 +4599,10 @@ textarea:focus {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     cursor: pointer;
     transition: transform 0.3s ease;
+    display: block;
 }
 
 .event-detail-image:hover {
@@ -5478,6 +5529,330 @@ textarea:focus {
     
     .breadcrumb-separator {
         margin: 0 0.125rem;
+    }
+}
+
+/* Optimize critical above-the-fold content */
+.hero-section {
+    contain: layout style;
+}
+
+/* Optimize images for better loading - only new images */
+img[data-src] {
+    loading: lazy;
+    decoding: async;
+    height: auto;
+}
+
+/* Existing images keep their current behavior */
+img:not([data-src]) {
+    height: auto;
+}
+
+/* Critical images should be loaded immediately */
+.hero-image,
+.critical-image {
+    loading: eager !important;
+    opacity: 1 !important;
+}
+
+/* Optimize animations */
+.animated-element {
+    will-change: transform;
+    transform: translateZ(0); /* Force hardware acceleration */
+}
+
+/* Optimize scroll performance */
+.scroll-container {
+    will-change: scroll-position;
+    transform: translateZ(0);
+}
+
+/* Optimize layout shifts */
+.image-placeholder {
+    background-color: #f0f0f0;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Web Vitals optimizations */
+.loading-skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Prevent layout shift for dynamic content */
+.dynamic-content {
+    min-height: 100px;
+    contain: layout;
+}
+
+/* Error and Empty States */
+.error-state,
+.empty-state {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: #666;
+}
+
+.error-state .error-icon,
+.empty-state .empty-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.error-state h3,
+.empty-state h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.error-state p,
+.empty-state p {
+    margin-bottom: 2rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.retry-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.retry-button:hover {
+    background: #0056b3;
+}
+
+/* Loading skeleton improvements */
+.loading-skeleton-container {
+    padding: 1rem;
+}
+
+.skeleton-image,
+.skeleton-text {
+    border-radius: 4px;
+}
+
+/* Image loading states - only apply to lazy loaded images */
+img[data-src] {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+img[data-src].loaded,
+img:not([data-src]) {
+    opacity: 1 !important;
+}
+
+/* Fallback: ensure all images are visible by default */
+img {
+    opacity: 1;
+}
+
+/* Only hide new lazy-loaded images */
+img[data-src]:not(.loaded) {
+    opacity: 0;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 4rem 0;
+    margin-top: 3rem;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.contact-info h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.contact-info p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    background: white;
+    padding: 0.75rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-width: 3rem;
+    text-align: center;
+}
+
+.contact-item h4 {
+    color: #333;
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.contact-item p,
+.contact-item a {
+    color: #666;
+    margin: 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #007bff;
+}
+
+.contact-form-container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    display: block;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.875rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #fafafa;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-submit {
+    width: 100%;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+.btn-submit:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #c3e6cb;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.form-group .error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.contact-form input.error,
+.contact-form textarea.error {
+    border-color: #dc3545;
+    background: #fff5f5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-section {
+        padding: 2rem 0;
+    }
+    
+    .contact-form-container {
+        padding: 1.5rem;
+    }
+    
+    .contact-info h2 {
+        font-size: 2rem;
     }
 }
 

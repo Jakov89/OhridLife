@@ -130,3 +130,412 @@ function normalizeVenueDataItem(venue) {
     }
     return newVenue;
 } 
+
+// Dynamic Meta Tag Management System
+class MetaTagManager {
+    static updatePageMeta(data) {
+        // Update basic meta tags
+        if (data.title) {
+            document.title = data.title;
+            this.updateMetaTag('og:title', data.title);
+            this.updateMetaTag('twitter:title', data.title);
+        }
+        
+        if (data.description) {
+            this.updateMetaTag('description', data.description);
+            this.updateMetaTag('og:description', data.description);
+            this.updateMetaTag('twitter:description', data.description);
+        }
+        
+        if (data.image) {
+            const fullImageUrl = data.image.startsWith('http') ? data.image : `https://www.ohridhub.mk${data.image}`;
+            this.updateMetaTag('og:image', fullImageUrl);
+            this.updateMetaTag('twitter:image', fullImageUrl);
+        }
+        
+        if (data.url) {
+            const fullUrl = data.url.startsWith('http') ? data.url : `https://www.ohridhub.mk${data.url}`;
+            this.updateMetaTag('og:url', fullUrl);
+            this.updateMetaTag('twitter:url', fullUrl);
+            this.updateLinkTag('canonical', fullUrl);
+        }
+        
+        if (data.keywords) {
+            this.updateMetaTag('keywords', data.keywords);
+        }
+        
+        // Add structured data
+        if (data.structuredData) {
+            this.addStructuredData(data.structuredData);
+        }
+    }
+    
+    static updateMetaTag(name, content) {
+        // Handle property-based meta tags (Open Graph, Twitter)
+        let selector = `meta[property="${name}"]`;
+        let meta = document.querySelector(selector);
+        
+        // If not found, try name-based meta tags
+        if (!meta) {
+            selector = `meta[name="${name}"]`;
+            meta = document.querySelector(selector);
+        }
+        
+        if (meta) {
+            meta.setAttribute('content', content);
+        } else {
+            // Create new meta tag if it doesn't exist
+            meta = document.createElement('meta');
+            if (name.includes(':')) {
+                meta.setAttribute('property', name);
+            } else {
+                meta.setAttribute('name', name);
+            }
+            meta.setAttribute('content', content);
+            document.head.appendChild(meta);
+        }
+    }
+    
+    static updateLinkTag(rel, href) {
+        let link = document.querySelector(`link[rel="${rel}"]`);
+        if (link) {
+            link.setAttribute('href', href);
+        } else {
+            link = document.createElement('link');
+            link.setAttribute('rel', rel);
+            link.setAttribute('href', href);
+            document.head.appendChild(link);
+        }
+    }
+    
+    static addStructuredData(data) {
+        // Remove existing structured data
+        const existing = document.querySelector('script[type="application/ld+json"]');
+        if (existing) {
+            existing.remove();
+        }
+        
+        // Add new structured data
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify(data);
+        document.head.appendChild(script);
+    }
+    
+    // Generate venue-specific meta data
+    static generateVenueMeta(venue) {
+        const title = `${venue.name} - ${venue.type} in Ohrid | OhridHub`;
+        const description = `${venue.description.substring(0, 150)}... Discover ${venue.name}, a popular ${venue.type} in Ohrid. View photos, location, and more on OhridHub.`;
+        const keywords = `${venue.name}, ${venue.type}, Ohrid, North Macedonia, ${venue.tags ? venue.tags.join(', ') : ''}`;
+        const url = `/venue-detail.html?id=${venue.id}`;
+        const image = venue.imageUrl || '/images_ohrid/photo1.jpg';
+        
+        const structuredData = {
+            "@context": "https://schema.org",
+            "@type": venue.type === 'restaurant' ? 'Restaurant' : 'LocalBusiness',
+            "name": venue.name,
+            "description": venue.description,
+            "image": `https://www.ohridhub.mk${image}`,
+            "url": `https://www.ohridhub.mk${url}`,
+            "address": venue.location ? {
+                "@type": "PostalAddress",
+                "addressLocality": "Ohrid",
+                "addressCountry": "North Macedonia",
+                "streetAddress": venue.location.address
+            } : undefined,
+            "telephone": venue.phone,
+            "priceRange": venue.priceLevel ? '$'.repeat(venue.priceLevel) : undefined,
+            "aggregateRating": venue.rating ? {
+                "@type": "AggregateRating",
+                "ratingValue": venue.rating,
+                "ratingCount": venue.ratingCount || 1
+            } : undefined
+        };
+        
+        return { title, description, keywords, url, image, structuredData };
+    }
+    
+    // Generate event-specific meta data
+    static generateEventMeta(event) {
+        const title = `${event.title} - ${event.category} Event in Ohrid | OhridHub`;
+        const description = `${event.description.substring(0, 150)}... Join this ${event.category} event on ${event.date} in Ohrid. ${event.ticketPrice}. More details on OhridHub.`;
+        const keywords = `${event.title}, ${event.category}, Ohrid events, ${event.date}, ${event.locationName}`;
+        const url = `/event-detail.html?id=${event.id}`;
+        const image = event.imageUrl || '/images_ohrid/photo1.jpg';
+        
+        const structuredData = {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": event.title,
+            "description": event.description,
+            "image": `https://www.ohridhub.mk${image}`,
+            "url": `https://www.ohridhub.mk${url}`,
+            "startDate": event.isoDate + 'T' + (event.startTime || '20:00'),
+            "location": {
+                "@type": "Place",
+                "name": event.locationName,
+                "address": "Ohrid, North Macedonia"
+            },
+            "organizer": {
+                "@type": "Organization",
+                "name": "OhridHub"
+            },
+            "offers": event.ticketPrice !== 'Free Entry' ? {
+                "@type": "Offer",
+                "price": event.ticketPrice,
+                "priceCurrency": "MKD",
+                "availability": "https://schema.org/InStock"
+            } : undefined
+        };
+        
+        return { title, description, keywords, url, image, structuredData };
+    }
+}
+
+// Enhanced Loading System for Better UX
+class LoadingManager {
+    static createSkeletonScreen(target, type = 'default') {
+        const skeleton = document.createElement('div');
+        skeleton.className = 'loading-skeleton-container';
+        
+        let skeletonHTML = '';
+        
+        switch (type) {
+            case 'venue-card':
+                skeletonHTML = `
+                    <div class="loading-skeleton skeleton-image" style="width: 100%; height: 200px; margin-bottom: 1rem;"></div>
+                    <div class="loading-skeleton skeleton-text" style="width: 70%; height: 1.5rem; margin-bottom: 0.5rem;"></div>
+                    <div class="loading-skeleton skeleton-text" style="width: 90%; height: 1rem; margin-bottom: 0.5rem;"></div>
+                    <div class="loading-skeleton skeleton-text" style="width: 60%; height: 1rem;"></div>
+                `;
+                break;
+            case 'event-card':
+                skeletonHTML = `
+                    <div class="loading-skeleton skeleton-image" style="width: 100%; height: 150px; margin-bottom: 1rem;"></div>
+                    <div class="loading-skeleton skeleton-text" style="width: 80%; height: 1.5rem; margin-bottom: 0.5rem;"></div>
+                    <div class="loading-skeleton skeleton-text" style="width: 50%; height: 1rem; margin-bottom: 0.5rem;"></div>
+                    <div class="loading-skeleton skeleton-text" style="width: 40%; height: 1rem;"></div>
+                `;
+                break;
+            case 'venue-detail':
+                skeletonHTML = `
+                    <div class="loading-skeleton skeleton-image" style="width: 100%; height: 400px; margin-bottom: 2rem;"></div>
+                    <div class="loading-skeleton skeleton-text" style="width: 60%; height: 2.5rem; margin-bottom: 1rem;"></div>
+                    <div class="loading-skeleton skeleton-text" style="width: 100%; height: 1rem; margin-bottom: 0.5rem;"></div>
+                    <div class="loading-skeleton skeleton-text" style="width: 100%; height: 1rem; margin-bottom: 0.5rem;"></div>
+                    <div class="loading-skeleton skeleton-text" style="width: 80%; height: 1rem; margin-bottom: 2rem;"></div>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <div class="loading-skeleton skeleton-image" style="width: 100%; height: 150px;"></div>
+                        <div class="loading-skeleton skeleton-image" style="width: 100%; height: 150px;"></div>
+                        <div class="loading-skeleton skeleton-image" style="width: 100%; height: 150px;"></div>
+                    </div>
+                `;
+                break;
+            default:
+                skeletonHTML = `
+                    <div class="loading-skeleton skeleton-text" style="width: 80%; height: 1.5rem; margin-bottom: 1rem;"></div>
+                    <div class="loading-skeleton skeleton-text" style="width: 100%; height: 1rem; margin-bottom: 0.5rem;"></div>
+                    <div class="loading-skeleton skeleton-text" style="width: 90%; height: 1rem;"></div>
+                `;
+        }
+        
+        skeleton.innerHTML = skeletonHTML;
+        target.appendChild(skeleton);
+        return skeleton;
+    }
+    
+    static removeSkeletonScreen(target) {
+        const skeletons = target.querySelectorAll('.loading-skeleton-container');
+        skeletons.forEach(skeleton => skeleton.remove());
+    }
+    
+    static showErrorState(target, message = 'Something went wrong. Please try again.', retry = null) {
+        target.innerHTML = `
+            <div class="error-state">
+                <div class="error-icon">⚠️</div>
+                <h3>Oops!</h3>
+                <p>${message}</p>
+                ${retry ? '<button class="retry-button btn-primary" onclick="' + retry + '">Try Again</button>' : ''}
+            </div>
+        `;
+    }
+    
+    static showEmptyState(target, message = 'No items found', description = '') {
+        target.innerHTML = `
+            <div class="empty-state">
+                <div class="empty-icon">📋</div>
+                <h3>${message}</h3>
+                ${description ? `<p>${description}</p>` : ''}
+            </div>
+        `;
+    }
+}
+
+// Performance monitoring utility
+class PerformanceMonitor {
+    static measurePageLoad() {
+        if ('performance' in window) {
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    const perfData = performance.getEntriesByType('navigation')[0];
+                    const loadTime = perfData.loadEventEnd - perfData.loadEventStart;
+                    
+                    // Log performance metrics (can be sent to analytics)
+                    console.log('Page Load Metrics:', {
+                        domContentLoaded: perfData.domContentLoadedEventEnd - perfData.domContentLoadedEventStart,
+                        fullLoad: loadTime,
+                        firstByte: perfData.responseStart - perfData.requestStart
+                    });
+                    
+                    // Mark as performance issue if load time > 3 seconds
+                    if (loadTime > 3000) {
+                        console.warn('Slow page load detected:', loadTime + 'ms');
+                    }
+                }, 0);
+            });
+        }
+    }
+    
+    static observeLayoutShifts() {
+        if ('LayoutShiftObserver' in window) {
+            let clsValue = 0;
+            let clsEntries = [];
+            
+            const observer = new PerformanceObserver((list) => {
+                for (const entry of list.getEntries()) {
+                    if (!entry.hadRecentInput) {
+                        clsValue += entry.value;
+                        clsEntries.push(entry);
+                    }
+                }
+                
+                if (clsValue > 0.1) {
+                    console.warn('Layout shift detected:', clsValue);
+                }
+            });
+            
+            observer.observe({ entryTypes: ['layout-shift'] });
+        }
+    }
+}
+
+// Enhanced image loading with WebP support and lazy loading
+class ImageOptimizer {
+    static supportsWebP() {
+        const canvas = document.createElement('canvas');
+        canvas.width = 1;
+        canvas.height = 1;
+        return canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+    }
+    
+    static optimizeImage(img) {
+        // Add intersection observer for better lazy loading
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const image = entry.target;
+                        this.loadImage(image);
+                        observer.unobserve(image);
+                    }
+                });
+            }, {
+                rootMargin: '50px'
+            });
+            
+            imageObserver.observe(img);
+        } else {
+            // Fallback for browsers without IntersectionObserver
+            this.loadImage(img);
+        }
+    }
+    
+    static loadImage(img) {
+        const src = img.dataset.src || img.src;
+        
+        // Try WebP if supported
+        if (this.supportsWebP() && src.includes('.jpg')) {
+            const webpSrc = src.replace('.jpg', '.webp');
+            
+            // Test if WebP version exists
+            const testImg = new Image();
+            testImg.onload = () => {
+                img.src = webpSrc;
+                img.classList.add('loaded');
+            };
+            testImg.onerror = () => {
+                img.src = src;
+                img.classList.add('loaded');
+            };
+            testImg.src = webpSrc;
+        } else {
+            img.src = src;
+            img.classList.add('loaded');
+        }
+    }
+    
+    static initializeImageOptimization() {
+        // Only process images with data-src attribute (new lazy loaded images)
+        document.querySelectorAll('img[data-src]').forEach(img => {
+            this.optimizeImage(img);
+        });
+        
+        // Ensure existing images are visible and working
+        document.querySelectorAll('img:not([data-src])').forEach(img => {
+            if (!img.complete) {
+                img.addEventListener('load', () => {
+                    img.style.opacity = '1';
+                });
+            } else {
+                img.style.opacity = '1';
+            }
+        });
+        
+        // Observer for dynamically added images - only process new data-src images
+        if ('MutationObserver' in window) {
+            const observer = new MutationObserver(mutations => {
+                mutations.forEach(mutation => {
+                    if (mutation.type === 'childList') {
+                        mutation.addedNodes.forEach(node => {
+                            if (node.nodeType === 1) {
+                                // Only process images with data-src (new lazy loaded images)
+                                const lazyImages = node.querySelectorAll ? node.querySelectorAll('img[data-src]') : [];
+                                lazyImages.forEach(img => this.optimizeImage(img));
+                                
+                                // Ensure regular images are visible
+                                const regularImages = node.querySelectorAll ? node.querySelectorAll('img:not([data-src])') : [];
+                                regularImages.forEach(img => {
+                                    img.style.opacity = '1';
+                                });
+                            }
+                        });
+                    }
+                });
+            });
+            
+            observer.observe(document.body, {
+                childList: true,
+                subtree: true
+            });
+        }
+    }
+}
+
+// Initialize performance monitoring
+document.addEventListener('DOMContentLoaded', () => {
+    PerformanceMonitor.measurePageLoad();
+    PerformanceMonitor.observeLayoutShifts();
+    
+    // Immediate fix: ensure all existing images are visible
+    document.querySelectorAll('img:not([data-src])').forEach(img => {
+        img.style.opacity = '1';
+    });
+    
+    ImageOptimizer.initializeImageOptimization();
+});
+
+// Export for use in other files
+window.MetaTagManager = MetaTagManager; 
+window.LoadingManager = LoadingManager;
+window.PerformanceMonitor = PerformanceMonitor;
+window.ImageOptimizer = ImageOptimizer; 

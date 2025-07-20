@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OhridHub - Your Ultimate Guide to Ohrid</title>
-    <meta name="description" content="Your ultimate guide to exploring Ohrid. Discover the best events, venues, restaurants, and activities. Plan your perfect trip with OhridHub, the pearl of the Balkans.">
+    <title>OhridHub - Your Ultimate Guide to Ohrid | Events, Venues & Tourism</title>
+    <meta name="description" content="Discover the best of Ohrid with OhridHub - your ultimate guide to events, restaurants, venues, and activities. Plan your perfect trip to the Pearl of the Balkans with insider recommendations and real-time information.">
+    <meta name="keywords" content="Ohrid, North Macedonia, tourism, events, restaurants, venues, activities, Lake Ohrid, travel guide, Balkans, vacation">
+    <meta name="author" content="OhridHub">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://www.ohridhub.mk" />
 
     <!-- Favicon -->
@@ -16,18 +19,54 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.ohridhub.mk/">
-    <meta property="og:title" content="OhridHub - Your Ultimate Guide to Ohrid">
-    <meta property="og:description" content="Your ultimate guide to exploring Ohrid. Discover the best events, venues, restaurants, and activities. Plan your perfect trip with OhridHub, the pearl of the Balkans.">
+    <meta property="og:title" content="OhridHub - Your Ultimate Guide to Ohrid | Events, Venues & Tourism">
+    <meta property="og:description" content="Discover the best of Ohrid with OhridHub - your ultimate guide to events, restaurants, venues, and activities. Plan your perfect trip to the Pearl of the Balkans.">
     <meta property="og:image" content="https://www.ohridhub.mk/logo/ohridhub.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="OhridHub">
+    <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.ohridhub.mk/">
-    <meta property="twitter:title" content="OhridHub - Your Ultimate Guide to Ohrid">
-    <meta property="twitter:description" content="Your ultimate guide to exploring Ohrid. Discover the best events, venues, restaurants, and activities. Plan your perfect trip with OhridHub, the pearl of the Balkans.">
+    <meta property="twitter:title" content="OhridHub - Your Ultimate Guide to Ohrid | Events, Venues & Tourism">
+    <meta property="twitter:description" content="Discover the best of Ohrid with OhridHub - your ultimate guide to events, restaurants, venues, and activities. Plan your perfect trip to the Pearl of the Balkans.">
     <meta property="twitter:image" content="https://www.ohridhub.mk/logo/ohridhub.png">
+    <meta property="twitter:creator" content="@OhridHub">
+
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "OhridHub",
+        "description": "Your ultimate guide to exploring Ohrid, North Macedonia",
+        "url": "https://www.ohridhub.mk",
+        "sameAs": [
+            "https://www.facebook.com/ohridhub",
+            "https://www.instagram.com/ohridhub"
+        ],
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.ohridhub.mk/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
 
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Immediate image fix to prevent hiding -->
+    <style>
+        img { opacity: 1 !important; }
+        img[data-src]:not(.loaded) { opacity: 0; }
+    </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -279,7 +318,93 @@
         <!-- Content for Ohridsko Leto will be injected by script.js -->
     </section>
 
-
+    <!-- Contact Section -->
+    <section id="contact-section" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about Ohrid or need recommendations? We're here to help make your visit unforgettable!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <a href="mailto:contact@ohridhub.mk">contact@ohridhub.mk</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Ohrid, North Macedonia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div>
+                                <h4>Response Time</h4>
+                                <p>Within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Your Name *</label>
+                            <input type="text" id="contact-name" name="name" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-email">Email Address *</label>
+                            <input type="email" id="contact-email" name="email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <select id="contact-subject" name="subject">
+                                <option value="">Select a topic</option>
+                                <option value="recommendations">Travel Recommendations</option>
+                                <option value="events">Event Information</option>
+                                <option value="venues">Venue Inquiries</option>
+                                <option value="business">Business Partnership</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn-submit">
+                                <span class="submit-text">Send Message</span>
+                                <span class="submit-loading" style="display: none;">Sending...</span>
+                            </button>
+                        </div>
+                        
+                        <div id="form-success" class="success-message" style="display: none;">
+                            ✅ Thank you! Your message has been sent successfully. We'll get back to you soon.
+                        </div>
+                        
+                        <div id="form-error" class="error-message" style="display: none;">
+                            ❌ Sorry, there was an error sending your message. Please try again or contact us directly.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer id="page-footer">
         <div class="container">
@@ -294,7 +419,7 @@
                 <a href="https://www.facebook.com/profile.php?id=61577806165599" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
                 </a>
-                <a href="mailto:contact@ohridlife.com" aria-label="Contact us via email">
+                <a href="mailto:contact@ohridhub.mk" aria-label="Contact us via email">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 </a>
             </div>

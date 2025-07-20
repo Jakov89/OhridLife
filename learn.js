@@ -39,15 +39,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const title = tempDiv.querySelector('h1')?.innerText || 'Learn About Ohrid';
         const description = tempDiv.querySelector('p')?.innerText.substring(0, 160) || 'Discover the rich history and beauty of Ohrid.';
 
-        document.getElementById('meta-title').innerText = `${title} - OhridHub`;
-        document.getElementById('meta-description').setAttribute('content', description);
-        
-        // Update Open Graph tags
-        document.getElementById('og-title').setAttribute('content', `${title} - OhridHub`);
-        document.getElementById('og-description').setAttribute('content', description);
-
-        // Update Twitter tags
-        document.getElementById('twitter-title').setAttribute('content', `${title} - OhridHub`);
+        // Use MetaTagManager if available for comprehensive updates
+        if (window.MetaTagManager) {
+            const metaData = {
+                title: `${title} - OhridHub`,
+                description: description,
+                url: `/learn.html?lang=${lang}`,
+                image: '/images_ohrid/photo1.jpg',
+                keywords: `Ohrid, history, North Macedonia, tourism, ${lang === 'mk' ? 'македонски' : 'learn'}`
+            };
+            window.MetaTagManager.updatePageMeta(metaData);
+        } else {
+            // Fallback to element-based updates
+            document.title = `${title} - OhridHub`;
+            const metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) metaDesc.content = description;
+        }
         document.getElementById('twitter-description').setAttribute('content', description);
     }
 

@@ -95,28 +95,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function updateMetaTags(event) {
-        // Update Open Graph meta tags
-        document.querySelector('meta[property="og:title"]').content = `${event.eventName} - OhridHub`;
-        document.querySelector('meta[property="og:description"]').content = event.description || event.longDescription || 'Discover amazing events in Ohrid, North Macedonia';
-        
-        // Update image if available
-        if (event.imageUrl) {
-            const baseUrl = 'https://www.ohridhub.com';
-            const normalizedImageUrl = event.imageUrl.startsWith('/') ? event.imageUrl : `/${event.imageUrl}`;
-            const fullImageUrl = `${baseUrl}${normalizedImageUrl}`;
-            document.querySelector('meta[property="og:image"]').content = fullImageUrl;
-            document.querySelector('meta[name="twitter:image"]').content = fullImageUrl;
+        // Use the new MetaTagManager for comprehensive meta tag updates
+        if (window.MetaTagManager) {
+            // Normalize event data structure for the MetaTagManager
+            const normalizedEvent = {
+                id: event.id,
+                title: event.eventName || event.title,
+                description: event.description || event.longDescription || 'Discover amazing events in Ohrid, North Macedonia',
+                category: event.category,
+                date: event.date,
+                isoDate: event.isoDate,
+                startTime: event.startTime,
+                locationName: event.locationName || event.venue,
+                ticketPrice: event.ticketPrice || 'Free Entry',
+                imageUrl: event.imageUrl
+            };
+            
+            const metaData = window.MetaTagManager.generateEventMeta(normalizedEvent);
+            window.MetaTagManager.updatePageMeta(metaData);
+        } else {
+            // Fallback to basic updates if MetaTagManager isn't loaded
+            const title = `${event.eventName || event.title || 'Event'} - OhridHub`;
+            const description = event.description || event.longDescription || 'Discover amazing events in Ohrid, North Macedonia';
+            document.title = title;
+            
+            const metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) metaDesc.content = description;
         }
-        
-        // Update Twitter Card meta tags
-        document.querySelector('meta[name="twitter:title"]').content = `${event.eventName} - OhridHub`;
-        document.querySelector('meta[name="twitter:description"]').content = event.description || event.longDescription || 'Discover amazing events in Ohrid, North Macedonia';
-        
-        // Update canonical URL and og:url
-        const canonicalUrl = `https://www.ohridhub.com/event/${event.id}`;
-        document.querySelector('link[rel="canonical"]').href = canonicalUrl;
-        document.querySelector('meta[property="og:url"]').content = canonicalUrl;
-        document.querySelector('meta[name="twitter:url"]').content = canonicalUrl;
     }
     
     function displayEventData(event) {

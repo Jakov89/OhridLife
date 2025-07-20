@@ -648,6 +648,123 @@ app.get('/venues/:id', (req, res) => {
     });
 });
 
+// Contact Form API Endpoint
+app.post('/api/contact', async (req, res) => {
+    try {
+        const { name, email, subject, message, to, timestamp } = req.body;
+        
+        // Validate required fields
+        if (!name || !email || !message) {
+            return res.status(400).json({ 
+                success: false, 
+                error: 'Name, email, and message are required' 
+            });
+        }
+        
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            return res.status(400).json({ 
+                success: false, 
+                error: 'Invalid email address' 
+            });
+        }
+        
+        // Create email content
+        const emailContent = {
+            from: email,
+            to: to || 'contact@ohridhub.mk',
+            subject: `OhridHub Contact: ${subject || 'New Message'}`,
+            html: `
+                <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+                    <h2 style="color: #333; border-bottom: 2px solid #007bff; padding-bottom: 10px;">
+                        New Contact Form Submission
+                    </h2>
+                    
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                        <p><strong>Name:</strong> ${name}</p>
+                        <p><strong>Email:</strong> ${email}</p>
+                        <p><strong>Subject:</strong> ${subject || 'General Inquiry'}</p>
+                        <p><strong>Date:</strong> ${new Date(timestamp).toLocaleString()}</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 20px; border: 1px solid #dee2e6; border-radius: 8px;">
+                        <h3 style="color: #333; margin-top: 0;">Message:</h3>
+                        <p style="line-height: 1.6; color: #555;">${message}</p>
+                    </div>
+                    
+                    <div style="margin-top: 20px; padding: 15px; background: #e9ecef; border-radius: 8px; font-size: 12px; color: #666;">
+                        <p>This message was sent via the OhridHub contact form.</p>
+                        <p>Reply directly to this email to respond to ${name}.</p>
+                    </div>
+                </div>
+            `,
+            text: `
+                New Contact Form Submission from OhridHub
+                
+                Name: ${name}
+                Email: ${email}
+                Subject: ${subject || 'General Inquiry'}
+                Date: ${new Date(timestamp).toLocaleString()}
+                
+                Message:
+                ${message}
+                
+                Reply to: ${email}
+            `
+        };
+        
+        // For now, log the email content (replace with actual email sending)
+        console.log('📧 Contact Form Submission:');
+        console.log('From:', email);
+        console.log('Name:', name);
+        console.log('Subject:', subject);
+        console.log('Message:', message);
+        console.log('Timestamp:', timestamp);
+        
+        // TODO: Implement actual email sending with nodemailer or similar service
+        // Example implementation would be:
+        /*
+        const nodemailer = require('nodemailer');
+        const transporter = nodemailer.createTransporter({
+            service: 'gmail', // or your email service
+            auth: {
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS
+            }
+        });
+        
+        await transporter.sendMail(emailContent);
+        */
+        
+        // Store submission (optional - you could save to database)
+        const submission = {
+            id: Date.now(),
+            name,
+            email,
+            subject,
+            message,
+            timestamp: timestamp || new Date().toISOString(),
+            ip: req.ip,
+            userAgent: req.get('User-Agent')
+        };
+        
+        // For now, just return success
+        res.json({ 
+            success: true, 
+            message: 'Contact form submitted successfully',
+            submissionId: submission.id
+        });
+        
+    } catch (error) {
+        console.error('Contact form error:', error);
+        res.status(500).json({ 
+            success: false, 
+            error: 'Internal server error' 
+        });
+    }
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 }); 
