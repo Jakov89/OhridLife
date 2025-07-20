@@ -6233,5 +6233,21 @@
     "ticketPrice": "Free Entry",
     "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.9924531322511!2d20.806906791912542!3d41.10736652888151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca80ff1d9eb%3A0xff917fc23ad178!2sSu%20Hotel!5e0!3m2!1sen!2smk!4v1752871655667!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Su Hotel"
+  },
+  {
+    "id": 403,
+    "venueId": 1,
+    "eventName": "Gjoko Taneski",
+    "isoDate": "2025-07-22",
+    "startTime": "22:00",
+    "day": "Tue.",
+    "description": "Kadmo Bar hosts Gjoko Taneski! An unforgettable night with a music icon.",
+    "category": "Music",
+    "imageUrl": "events_image/kadmo/gjoko.jpg",
+    "eventBookingUrl": "#",
+    "eventContact": "070 293 888",
+    "ticketPrice": "Free Entry",
+    "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.035415523309!2d20.796792600000003!3d41.1119176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca527527cbf%3A0xc117df555899d00e!2sKadmo%20Lounge%20Bar!5e0!3m2!1sen!2smk!4v1748537148170!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Kadmo Lounge Bar"
   }
 ]

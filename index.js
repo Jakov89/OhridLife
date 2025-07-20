@@ -1340,7 +1340,7 @@ function openVenueModal(venueId) {
     // --- Populate Info Grid ---
     const infoGrid = document.getElementById('modal-info-grid');
     if(infoGrid) {
-        const workingHoursHTML = venue.workingHours ? venue.workingHours.replace(/<br>/g, '\n').replace(/\n/g, '<br>') : '';
+        const workingHoursHTML = venue.workingHours || '';
         infoGrid.innerHTML = `
             ${venue.location?.address ? `<div class="modal-info-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div class="modal-info-item-content"><h5>Location</h5><p>${venue.location.address}</p>${venue.location.googleMapsUrl ? `<a href="${venue.location.googleMapsUrl}" target="_blank" rel="noopener noreferrer">View on Google Maps</a>` : ''}</div></div>` : ''}
             ${venue.workingHours ? `<div class="modal-info-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><div class="modal-info-item-content"><h5>Working Hours</h5><p>${workingHoursHTML}</p></div></div>` : ''}
@@ -2286,11 +2286,20 @@ function createHighResolutionPreview() {
     // Check if we have venue or event data and normalize it
     let storyData;
     if (currentVenueForStory) {
+        // Clean working hours by removing HTML tags and converting to simple text
+        let cleanWorkingHours = currentVenueForStory.workingHours || 'Discover Ohrid';
+        if (cleanWorkingHours !== 'Discover Ohrid') {
+            cleanWorkingHours = cleanWorkingHours
+                .replace(/<br>/g, ' | ')
+                .replace(/<[^>]*>/g, '') // Remove any other HTML tags
+                .trim();
+        }
+        
         storyData = {
             eventName: currentVenueForStory.name?.en || currentVenueForStory.name || 'Amazing Venue',
             category: '',  // Hide category for venues
             locationName: currentVenueForStory.location?.address || 'Ohrid',
-            startTime: currentVenueForStory.workingHours || 'Discover Ohrid',
+            startTime: cleanWorkingHours,
             imageUrl: currentVenueForStory.imageUrl,
             isoDate: new Date().toISOString()
         };
@@ -2355,12 +2364,19 @@ function createHighResolutionPreview() {
     header.style.zIndex = '2';
     header.style.textAlign = 'center';
     
-    const eventDate = new Date(storyData.isoDate);
-    const formattedDate = eventDate.toLocaleDateString('en-US', {
-        month: 'short',
-        day: 'numeric',
-        year: 'numeric'
-    });
+    let formattedDate;
+    if (currentVenueForStory) {
+        // For venues, show "Visit in Ohrid" instead of date
+        formattedDate = 'Visit in Ohrid';
+    } else {
+        // For events, show formatted date
+        const eventDate = new Date(storyData.isoDate);
+        formattedDate = eventDate.toLocaleDateString('en-US', {
+            month: 'short',
+            day: 'numeric',
+            year: 'numeric'
+        });
+    }
     
     const dateElement = document.createElement('div');
     dateElement.textContent = formattedDate;
@@ -2460,11 +2476,20 @@ function downloadStoryImageManual() {
     let storyData;
     if (currentVenueForStory) {
         // Map venue data to match event structure for drawing
+        // Clean working hours by removing HTML tags and converting to simple text
+        let cleanWorkingHours = currentVenueForStory.workingHours || 'Discover Ohrid';
+        if (cleanWorkingHours !== 'Discover Ohrid') {
+            cleanWorkingHours = cleanWorkingHours
+                .replace(/<br>/g, ' | ')
+                .replace(/<[^>]*>/g, '') // Remove any other HTML tags
+                .trim();
+        }
+        
         storyData = {
             eventName: currentVenueForStory.name?.en || currentVenueForStory.name || 'Amazing Venue',
             category: 'Venue',
             locationName: currentVenueForStory.location?.address || 'Ohrid',
-            startTime: currentVenueForStory.workingHours || 'Discover Ohrid',
+            startTime: cleanWorkingHours,
             imageUrl: currentVenueForStory.imageUrl,
             isoDate: new Date().toISOString() // Use current date for venues
         };
@@ -2591,13 +2616,20 @@ function downloadStoryImageManual() {
     // Header section with enhanced styling
     
     // Date with improved styling
-    const eventDate = new Date(storyData.isoDate);
-    const formattedDate = eventDate.toLocaleDateString('en-US', {
-        weekday: 'short',
-        month: 'short',
-        day: 'numeric',
-        year: 'numeric'
-    }).toUpperCase();
+    let formattedDate;
+    if (currentVenueForStory) {
+        // For venues, show "Visit in Ohrid" instead of date
+        formattedDate = 'VISIT IN OHRID';
+    } else {
+        // For events, show formatted date
+        const eventDate = new Date(storyData.isoDate);
+        formattedDate = eventDate.toLocaleDateString('en-US', {
+            weekday: 'short',
+            month: 'short',
+            day: 'numeric',
+            year: 'numeric'
+        }).toUpperCase();
+    }
     
     addTextShadow(ctx);
     ctx.font = '600 32px system-ui, -apple-system, sans-serif';
@@ -3443,7 +3475,12 @@ function updateVenueStoryPreview() {
     }
     
     if (storyTime && currentVenueForStory.workingHours) {
-        storyTime.textContent = `⏰ ${currentVenueForStory.workingHours}`;
+        // Clean working hours for preview display
+        let cleanWorkingHours = currentVenueForStory.workingHours
+            .replace(/<br>/g, ' | ')
+            .replace(/<[^>]*>/g, '') // Remove any other HTML tags
+            .trim();
+        storyTime.textContent = `⏰ ${cleanWorkingHours}`;
     } else if (storyTime) {
         storyTime.textContent = '🌟 Discover Ohrid';
     }

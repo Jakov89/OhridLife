@@ -872,8 +872,9 @@ span.flatpickr-weekday {
     transition: all 0.3s ease;
     cursor: pointer;
     overflow: hidden;
-    min-height: 80px;
-    align-items: center;
+    min-height: 85px;
+    align-items: flex-start;
+    gap: 0.75rem;
 }
 
 .daily-event-card:hover {
@@ -882,26 +883,36 @@ span.flatpickr-weekday {
     flex-shrink: 0;
 }
 
+.daily-event-card:hover .daily-event-image {
+    transform: scale(1.02);
+}
+
 .daily-event-image {
-    width: 90px;
-    height: 70px;
+    max-width: 90px;
+    max-height: 90px;
+    min-width: 60px;
+    min-height: 60px;
+    width: auto;
+    height: auto;
     object-fit: cover;
     object-position: center;
     border-radius: var(--radius);
-    margin-right: 0.75rem;
     flex-shrink: 0;
     display: block;
-    aspect-ratio: 4/3;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    /* Removed fixed aspect-ratio to allow natural proportions */
+    /* Removed margin-right since parent has gap now */
 }
 
 .event-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     flex-grow: 1;
     gap: 0.25rem;
     min-height: 70px;
     overflow: hidden;
+    padding-top: 0.125rem;
 }
 
 /* Daily Event Card Titles - Normal smaller size */
@@ -977,6 +988,31 @@ span.flatpickr-weekday {
     flex-direction: column;
 }
 
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    .daily-event-image {
+        max-width: 80px;
+        max-height: 80px;
+        min-width: 50px;
+        min-height: 50px;
+    }
+    
+    .daily-event-card {
+        min-height: 75px;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+    
+    .event-detail-image {
+        max-height: 300px;
+    }
+    
+    .modal-event-image {
+        max-height: 250px;
+        min-height: 150px;
+    }
+}
+
 /* =============== EVENT MODAL =============== */
 .event-modal-content {
     padding: 1.5rem;
@@ -984,13 +1020,16 @@ span.flatpickr-weekday {
 
 .modal-event-image {
     width: 100%;
-    height: 250px;
+    max-height: 350px;
+    min-height: 200px;
+    height: auto;
     object-fit: cover;
     object-position: center;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     margin-bottom: 1.5rem;
     display: none; /* Hidden by default, shown by JS */
+    /* Allow natural aspect ratio while keeping reasonable bounds */
 }
 
 .modal-event-title {
@@ -1167,9 +1206,7 @@ span.flatpickr-weekday {
     display: block !important;
 }
 
-.daily-event-image {
-    aspect-ratio: 4/3 !important;
-}
+/* Removed fixed aspect ratio for daily event images to allow natural proportions */
 
 /* Force proper image display for all card images */
 .card-image {
@@ -4620,18 +4657,25 @@ textarea:focus {
 .event-image-container {
     position: relative;
     width: 100%;
-    height: 400px;
+    max-height: 500px;
+    min-height: 250px;
+    height: auto;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .event-detail-image {
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-height: 500px;
     object-fit: cover;
     object-position: center;
     cursor: pointer;
     transition: transform 0.3s ease;
     display: block;
+    /* Allow natural aspect ratio for event detail images */
 }
 
 .event-detail-image:hover {
