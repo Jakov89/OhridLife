@@ -337,6 +337,9 @@ function setupEventListeners() {
 
     const venueModal = document.getElementById('venue-modal');
     venueModal?.querySelector('.modal-close-button')?.addEventListener('click', closeVenueModal);
+    
+    // Venue Instagram Story button
+    document.getElementById('venue-instagram-story-btn')?.addEventListener('click', openVenueInstagramStoryModal);
     venueModal?.addEventListener('click', (e) => {
         if (e.target === venueModal) closeVenueModal();
     });
@@ -813,7 +816,7 @@ function renderVenueCard(venue) {
 
     return `
         <div class="keen-slider__slide" data-venue-id="${venue.id}">
-            <div class="venue-card" onclick="openVenueModal(${venue.id})">
+            <div class="venue-card" onclick="event.stopPropagation(); openVenueModal(${venue.id})">
                 <div class="venue-card-image-container">
                     <img src="${imageUrl}" alt="${name}" class="venue-card-image" loading="lazy">
                     <div class="venue-card-badges">
@@ -1309,13 +1312,19 @@ function openVenueModal(venueId) {
         return;
     }
     
-    generateVenueSchema(venue); 
-
     const modal = document.getElementById('venue-modal');
     if (!modal) {
         console.error('Venue modal element not found in DOM.');
         return;
     }
+
+    // Check if modal is already open
+    if (!modal.classList.contains('hidden')) {
+        console.log('Modal is already open');
+        return;
+    }
+    
+    generateVenueSchema(venue);
 
     // --- Safely populate modal elements ---
     const name = venue.name?.en || 'Unnamed Venue';
@@ -1386,19 +1395,38 @@ function openVenueModal(venueId) {
         }
     }
 
+    // Store current scroll position and prevent body scroll
+    const scrollY = window.scrollY;
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100%';
+    document.body.style.overflow = 'hidden';
+    
     modal.classList.remove('hidden');
-    document.body.style.overflow = 'hidden'; 
+    
+    // Ensure modal is centered in viewport
+    modal.scrollTop = 0;
 
     const url = new URL(window.location);
     url.searchParams.set('venue', venueId);
     window.history.pushState({ venueId }, name, url);
 }
 
+// Make openVenueModal globally accessible for inline onclick handlers
+window.openVenueModal = openVenueModal;
+
 function closeVenueModal() {
     const modal = document.getElementById('venue-modal');
     if (modal) {
         modal.classList.add('hidden');
+        
+        // Restore scroll position
+        const scrollY = document.body.style.top;
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.width = '';
         document.body.style.overflow = '';
+        window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
         
         // Remove the schema script when the modal is closed
         const venueSchema = document.getElementById('venue-schema');
@@ -1412,6 +1440,9 @@ function closeVenueModal() {
         window.history.pushState({}, document.title, url);
     }
 }
+
+// Make closeVenueModal globally accessible as well
+window.closeVenueModal = closeVenueModal;
 
 function openEventModal(eventId) {
     const event = eventsListData.find(e => e.id == eventId);
@@ -1519,15 +1550,31 @@ function openEventModal(eventId) {
 
 
 
-    modal.classList.remove('hidden');
+    // Store current scroll position and prevent body scroll
+    const scrollY = window.scrollY;
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100%';
     document.body.style.overflow = 'hidden';
+    
+    modal.classList.remove('hidden');
+    
+    // Ensure modal is centered in viewport
+    modal.scrollTop = 0;
 }
 
 function closeEventModal() {
     const modal = document.getElementById('event-detail-modal');
     if (modal) {
         modal.classList.add('hidden');
+        
+        // Restore scroll position
+        const scrollY = document.body.style.top;
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.width = '';
         document.body.style.overflow = '';
+        window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
 
         // Remove the event schema script
         const eventSchema = document.getElementById('event-schema');
@@ -2132,6 +2179,10 @@ function closeInstagramStoryModal() {
         modal.classList.remove('visible');
         // Restore body overflow
         document.body.style.overflow = '';
+        
+        // Clear current story data
+        currentVenueForStory = null;
+        // Note: currentEventForStory is managed by existing event functionality
     }
 }
 
@@ -2784,7 +2835,9 @@ function downloadCanvas(canvas) {
         
         // Create download link
         const link = document.createElement('a');
-        const fileName = `${(currentEventForStory.eventName || 'event').replace(/[^a-z0-9]/gi, '_')}-instagram-story.png`;
+        const fileName = currentVenueForStory ? 
+            `${(currentVenueForStory.name?.en || currentVenueForStory.name || 'venue').replace(/[^a-z0-9]/gi, '_')}-instagram-story.png` :
+            `${(currentEventForStory.eventName || 'event').replace(/[^a-z0-9]/gi, '_')}-instagram-story.png`;
         link.download = fileName;
         
         // Use maximum quality for the download
@@ -2802,7 +2855,9 @@ function downloadCanvas(canvas) {
         // Fallback: try direct download from original canvas
         try {
             const link = document.createElement('a');
-            const fileName = `${(currentEventForStory.eventName || 'event').replace(/[^a-z0-9]/gi, '_')}-instagram-story.png`;
+                    const fileName = currentVenueForStory ? 
+            `${(currentVenueForStory.name?.en || currentVenueForStory.name || 'venue').replace(/[^a-z0-9]/gi, '_')}-instagram-story.png` :
+            `${(currentEventForStory.eventName || 'event').replace(/[^a-z0-9]/gi, '_')}-instagram-story.png`;
             link.download = fileName;
             link.href = canvas.toDataURL('image/png', 1.0);
             
@@ -3260,6 +3315,117 @@ class ContactFormManager {
         this.successMessage.style.display = 'none';
         this.errorMessage.style.display = 'none';
     }
+}
+
+// Venue Instagram Story functionality
+let currentVenueForStory = null;
+
+function openVenueInstagramStoryModal() {
+    // Get the current venue data from the modal
+    const venueName = document.getElementById('modal-venue-name')?.textContent;
+    const venueType = document.getElementById('modal-venue-type')?.textContent;
+    const venueDescription = document.getElementById('modal-venue-description')?.textContent;
+    const venueImage = document.getElementById('modal-venue-image')?.src;
+    
+    if (!venueName) {
+        console.error('No venue data available for Instagram story');
+        return;
+    }
+    
+    // Find the venue data from venuesData
+    const venue = venuesData.find(v => v.name === venueName || v.name?.en === venueName);
+    
+    if (!venue) {
+        console.error('Venue not found in data');
+        return;
+    }
+    
+    currentVenueForStory = venue;
+    
+    // Update modal title
+    const modalTitle = document.getElementById('instagram-story-modal-title');
+    if (modalTitle) {
+        modalTitle.textContent = 'Share Venue on Instagram';
+    }
+    
+    // Update story preview with venue data
+    updateVenueStoryPreview();
+    
+    // Show the Instagram story modal
+    const storyModal = document.getElementById('instagram-story-modal');
+    if (storyModal) {
+        storyModal.classList.add('visible');
+        document.body.style.overflow = 'hidden';
+    } else {
+        console.error('Instagram story modal not found');
+    }
+}
+
+function updateVenueStoryPreview() {
+    if (!currentVenueForStory) return;
+    
+    const storyTitle = document.getElementById('story-card-title');
+    const storyCategory = document.getElementById('story-card-category');
+    const storyVenue = document.getElementById('story-card-venue');
+    const storyTime = document.getElementById('story-card-time');
+    const storyImage = document.getElementById('story-card-image');
+    const storyDate = document.getElementById('story-card-date');
+    
+    if (storyTitle) {
+        storyTitle.textContent = currentVenueForStory.name?.en || currentVenueForStory.name || 'Amazing Venue';
+    }
+    
+    if (storyCategory) {
+        storyCategory.textContent = '';
+        storyCategory.style.display = 'none';
+    }
+    
+    if (storyVenue && currentVenueForStory.location) {
+        storyVenue.textContent = `📍 ${currentVenueForStory.location.address || 'Ohrid, North Macedonia'}`;
+    }
+    
+    if (storyTime && currentVenueForStory.workingHours) {
+        storyTime.textContent = `⏰ ${currentVenueForStory.workingHours}`;
+    } else if (storyTime) {
+        storyTime.textContent = '🌟 Discover Ohrid';
+    }
+    
+    if (storyDate) {
+        storyDate.textContent = 'Visit in Ohrid';
+    }
+    
+    if (storyImage && currentVenueForStory.imageUrl) {
+        storyImage.src = currentVenueForStory.imageUrl;
+        storyImage.alt = currentVenueForStory.name?.en || currentVenueForStory.name || 'Venue image';
+    }
+}
+
+function generateVenueHashtags() {
+    if (!currentVenueForStory) return '';
+    
+    let hashtags = ['#Ohrid', '#Macedonia', '#OhridHub', '#Travel', '#Balkans'];
+    
+    // Add venue type hashtags
+    if (currentVenueForStory.type) {
+        const types = Array.isArray(currentVenueForStory.type) ? currentVenueForStory.type : [currentVenueForStory.type];
+        types.forEach(type => {
+            if (type) {
+                hashtags.push(`#${type.replace(/\s+/g, '').replace(/-/g, '')}`);
+            }
+        });
+    }
+    
+    // Add venue tags
+    if (currentVenueForStory.tags) {
+        currentVenueForStory.tags.forEach(tag => {
+            hashtags.push(`#${tag.replace(/\s+/g, '')}`);
+        });
+    }
+    
+    // Add specific venue hashtags
+    hashtags.push('#Restaurant', '#Dining', '#NorthMacedonia', '#LakeOhrid');
+    
+    return hashtags.slice(0, 15).join(' '); // Limit to 15 hashtags
 }
 
 // Initialize contact form when DOM is loaded

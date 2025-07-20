@@ -46,7 +46,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
     position: relative;
-    contain: layout style paint; /* Improve rendering performance */
     font-display: swap;
 }
 
@@ -1156,7 +1155,7 @@ span.flatpickr-weekday {
     max-width: none !important;
     max-height: none !important;
     border-radius: 0 !important;
-    aspect-ratio: 2/1; /* Landscape aspect ratio */
+    /* Remove forced landscape aspect ratio to let images display naturally */
 }
 
 /* Force proper image display for all event images */
@@ -1566,17 +1565,20 @@ span.flatpickr-weekday {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 9999;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     backdrop-filter: blur(5px);
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .modal-overlay:not(.hidden) {
@@ -1590,13 +1592,15 @@ span.flatpickr-weekday {
     border-radius: var(--radius-lg);
     width: 90%;
     max-width: 650px;
-    max-height: 90vh;
+    max-height: calc(100vh - 40px);
     overflow-y: auto;
     position: relative;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     transform: scale(0.95);
     transition: transform 0.3s ease;
     border: 1px solid var(--border);
+    margin: auto;
+    flex-shrink: 0;
 }
 
 .modal-overlay:not(.hidden) .modal-content {
@@ -1968,19 +1972,44 @@ span.flatpickr-weekday {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
+/* Clean recommendations container styling */
 .recommendations-highlight .venue-card-image-container {
     position: relative;
     width: 100%;
-    height: 180px;
+    height: 250px; /* Taller for more square/portrait-like format */
     overflow: hidden;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
 }
 
+.recommendations-highlight .venue-card-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+    max-width: none !important;
+    max-height: none !important;
+    border-radius: 0 !important;
+    aspect-ratio: 4/3; /* Square/portrait format for recommendations */
+    transition: transform 0.3s ease;
+}
+
+.recommendations-highlight .venue-card:hover .venue-card-image {
+    transform: scale(1.05);
+}
+
+/* Force square/portrait format for recommendations */
 .recommendations-highlight .venue-card-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     display: block;
+    aspect-ratio: 4/3; /* More square/portrait-like format like event cards */
+}
+
+.recommendations-highlight .venue-card:hover .venue-card-image {
+    transform: scale(1.05);
 }
 
 .recommendations-highlight .venue-card-badges {
@@ -3674,7 +3703,7 @@ select.form-input {
     }
     
     .recommendations-highlight .venue-card-image-container {
-        height: 140px;
+        height: 200px; /* Taller on mobile too */
     }
     
     .recommendations-highlight .venue-card-content {
@@ -3735,7 +3764,7 @@ select.form-input {
     }
     
     .recommendations-highlight .venue-card-image-container {
-        height: 120px;
+        height: 180px; /* Taller on small screens too */
     }
 }
 
@@ -5668,6 +5697,45 @@ img {
 /* Only hide new lazy-loaded images */
 img[data-src]:not(.loaded) {
     opacity: 0;
+}
+
+/* Venue Social Actions */
+.venue-social-actions {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.btn-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    border: none;
+    padding: 0.875rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(188, 24, 136, 0.3);
+}
+
+.btn-instagram:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(188, 24, 136, 0.4);
+}
+
+.btn-instagram:active {
+    transform: translateY(0);
+}
+
+.btn-instagram svg {
+    width: 24px;
+    height: 24px;
 }
 
 /* Contact Section Styles */
