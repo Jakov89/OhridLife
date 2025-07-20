@@ -1794,7 +1794,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedTime = aiTimeChoices.querySelector('.active')?.dataset.value;
 
         if (selectedMoods.length === 0 || !selectedCompany || !selectedBudget || !selectedTime) {
-            alert('Please make a selection for each category.');
+            Toast.warning('Please complete all required fields before submitting.', 'Incomplete Form');
             return;
         }
 
@@ -2497,7 +2497,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         if (planToShare.items.length === 0) {
-            alert("Your plan for this date is empty. Add some items to share.");
+            Toast.info('Add some activities to your plan before sharing.', 'Empty Plan');
             return;
         }
 
@@ -2507,13 +2507,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const url = `${window.location.origin}${window.location.pathname}?plan=${encodedData}`;
 
             navigator.clipboard.writeText(url).then(() => {
-                alert('A shareable link has been copied to your clipboard!');
+                Toast.success('Link copied to clipboard! Share your amazing Ohrid day plan.', 'Share Ready');
             }, () => {
-                alert('Could not copy the link. Please copy it manually:\n' + url);
+                Toast.warning(`Unable to copy automatically. Please copy this link manually: ${url}`, 'Manual Copy Required');
             });
         } catch (error) {
             console.error('Failed to create shareable link:', error);
-            alert('Could not create a shareable link. Please try again.');
+            Toast.error('Failed to create shareable link. Please try again.', 'Share Error');
         }
     }
 
@@ -2540,7 +2540,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             } catch (error) {
                 console.error('Failed to parse shared plan data from URL:', error);
-                alert('The shared plan link is invalid or corrupted.');
+                Toast.error('The shared plan link is invalid or corrupted. Please check the link and try again.', 'Invalid Link');
             }
         }
         return false; // No valid shared plan found

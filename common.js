@@ -1,41 +1,168 @@
-function renderNavbar() {
-    const navbar = document.getElementById('navbar');
-    if (!navbar) return;
-    const container = navbar.querySelector('.container');
-    if (!container) return;
+// Enhanced Navbar System
+class NavbarManager {
+    constructor() {
+        this.navbar = document.getElementById('navbar');
+        this.hamburger = null;
+        this.navLinksContainer = null;
+        this.lastScrollTop = 0;
+        this.scrollThreshold = 100;
+        this.scrollTimeout = null;
+        this.isMenuOpen = false;
+        
+        this.init();
+    }
+    
+    init() {
+        this.render();
+        this.setupEventListeners();
+        this.handleActiveLink();
+        this.setupScrollBehavior();
+    }
+    
+    render() {
+        if (!this.navbar) return;
+        const container = this.navbar.querySelector('.container');
+        if (!container) return;
 
-    container.innerHTML = `
-        <div class="nav-logo">
-            <a href="/"><span class="logo-main">OhridHub</span></a>
-        </div>
-        <nav class="nav-links-container">
-            <ul class="nav-links">
-                <li><a href="/" data-id="home">Home</a></li>
-                <li><a href="/#plan-your-visit" data-id="events">Events</a></li>
-                <li><a href="/day-planner" data-id="planner">Day Planner</a></li>
-                <li><a href="/learn.html" data-id="learn">Learn Ohrid</a></li>
-            </ul>
-        </nav>
-        <button class="hamburger-menu" aria-label="Open navigation menu">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-        </button>
-    `;
-}
-
-function setupMobileMenu() {
-    const hamburger = document.querySelector('.hamburger-menu');
-    const navLinksContainer = document.querySelector('.nav-links-container');
-
-    if (hamburger && navLinksContainer) {
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navLinksContainer.classList.toggle('active');
-            document.body.style.overflow = navLinksContainer.classList.contains('active') ? 'hidden' : '';
+        container.innerHTML = `
+            <div class="nav-logo">
+                <a href="/"><span class="logo-main">OhridHub</span></a>
+            </div>
+            <nav class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="/" data-id="home">Home</a></li>
+                    <li><a href="/#plan-your-visit" data-id="events">Events</a></li>
+                    <li><a href="/day-planner" data-id="planner">Day Planner</a></li>
+                    <li><a href="/learn.html" data-id="learn">Learn Ohrid</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" aria-label="Open navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        `;
+        
+        // Store references to elements
+        this.hamburger = this.navbar.querySelector('.hamburger-menu');
+        this.navLinksContainer = this.navbar.querySelector('.nav-links-container');
+    }
+    
+    setupEventListeners() {
+        if (!this.hamburger || !this.navLinksContainer) return;
+        
+        // Mobile menu toggle
+        this.hamburger.addEventListener('click', () => this.toggleMobileMenu());
+        
+        // Close menu on link click
+        this.navLinksContainer.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    this.closeMobileMenu();
+                }
+            });
+        });
+        
+        // Close menu on outside click
+        document.addEventListener('click', (e) => {
+            if (this.isMenuOpen && 
+                !this.hamburger.contains(e.target) && 
+                !this.navLinksContainer.contains(e.target)) {
+                this.closeMobileMenu();
+            }
+        });
+        
+        // Handle resize
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                if (window.innerWidth > 768 && this.isMenuOpen) {
+                    this.closeMobileMenu();
+                }
+            }, 100);
+        });
+        
+        // Handle escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.isMenuOpen) {
+                this.closeMobileMenu();
+            }
         });
     }
+    
+    toggleMobileMenu() {
+        this.isMenuOpen = !this.isMenuOpen;
+        this.hamburger.classList.toggle('active');
+        this.navLinksContainer.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+    }
+    
+    closeMobileMenu() {
+        this.isMenuOpen = false;
+        this.hamburger.classList.remove('active');
+        this.navLinksContainer.classList.remove('active');
+        document.body.classList.remove('menu-open');
+    }
+    
+    handleActiveLink() {
+        const currentPath = window.location.pathname;
+        const currentHash = window.location.hash;
+        
+        this.navbar.querySelectorAll('.nav-links a').forEach(link => {
+            const linkPath = link.getAttribute('href');
+            
+            // Handle both path and hash matches
+            if ((currentPath === '/' && linkPath === '/') || 
+                (currentPath !== '/' && linkPath.includes(currentPath)) ||
+                (currentHash && linkPath.includes(currentHash))) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }
+    
+    setupScrollBehavior() {
+        let lastScrollTop = 0;
+        let scrollTimeout;
+        
+        window.addEventListener('scroll', () => {
+            clearTimeout(scrollTimeout);
+            
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Add condensed class when scrolling down
+            if (currentScroll > 0) {
+                this.navbar.classList.add('nav-condensed');
+            } else {
+                this.navbar.classList.remove('nav-condensed');
+            }
+            
+            // Hide navbar when scrolling down, show when scrolling up
+            if (currentScroll > lastScrollTop && currentScroll > this.scrollThreshold) {
+                // Scrolling down
+                this.navbar.classList.add('nav-hidden');
+            } else {
+                // Scrolling up
+                this.navbar.classList.remove('nav-hidden');
+            }
+            
+            lastScrollTop = currentScroll;
+            
+            // Reset scroll direction detection after scroll stops
+            scrollTimeout = setTimeout(() => {
+                this.navbar.classList.remove('nav-hidden');
+            }, 150);
+        }, { passive: true }); // Performance optimization for scroll listener
+    }
 }
+
+// Initialize navbar
+document.addEventListener('DOMContentLoaded', () => {
+    window.navbarManager = new NavbarManager();
+    renderFooter();
+});
 
 function renderFooter() {
     const footer = document.getElementById('page-footer');
@@ -109,13 +236,6 @@ function renderFooter() {
         </div>
     `;
 }
-
-// Run on all pages
-document.addEventListener('DOMContentLoaded', () => {
-    renderNavbar();
-    setupMobileMenu();
-    renderFooter();
-});
 
 function normalizeVenueDataItem(venue) {
     const newVenue = { ...venue };
@@ -368,6 +488,208 @@ class LoadingManager {
                 ${description ? `<p>${description}</p>` : ''}
             </div>
         `;
+    }
+}
+
+// Enhanced Toast Notification System
+class ToastManager {
+    constructor() {
+        this.container = null;
+        this.toasts = new Map();
+        this.createContainer();
+    }
+
+    createContainer() {
+        if (document.querySelector('.toast-container')) return;
+        
+        this.container = document.createElement('div');
+        this.container.className = 'toast-container';
+        document.body.appendChild(this.container);
+    }
+
+    show(options) {
+        const {
+            type = 'info',
+            title,
+            message,
+            duration = 5000,
+            persistent = false,
+            action = null
+        } = options;
+
+        const toast = document.createElement('div');
+        const toastId = Date.now() + Math.random();
+        toast.className = `toast ${type}`;
+        toast.setAttribute('data-toast-id', toastId);
+
+        const icon = this.getIcon(type);
+        
+        toast.innerHTML = `
+            <div class="toast-icon">${icon}</div>
+            <div class="toast-content">
+                ${title ? `<div class="toast-title">${title}</div>` : ''}
+                <div class="toast-message">${message}</div>
+            </div>
+            <button class="toast-close" aria-label="Close notification">×</button>
+            ${!persistent ? '<div class="toast-progress"></div>' : ''}
+        `;
+
+        // Add event listeners
+        const closeBtn = toast.querySelector('.toast-close');
+        closeBtn.addEventListener('click', () => this.hide(toastId));
+
+        // Add action button if provided
+        if (action) {
+            const actionBtn = document.createElement('button');
+            actionBtn.className = 'btn btn-sm btn-primary';
+            actionBtn.textContent = action.text;
+            actionBtn.addEventListener('click', () => {
+                action.callback();
+                this.hide(toastId);
+            });
+            toast.querySelector('.toast-content').appendChild(actionBtn);
+        }
+
+        this.container.appendChild(toast);
+        this.toasts.set(toastId, { element: toast, timer: null });
+
+        // Trigger animation
+        requestAnimationFrame(() => {
+            toast.classList.add('show');
+        });
+
+        // Auto-hide with progress bar
+        if (!persistent && duration > 0) {
+            const progressBar = toast.querySelector('.toast-progress');
+            if (progressBar) {
+                progressBar.style.width = '100%';
+                progressBar.style.transitionDuration = `${duration}ms`;
+                requestAnimationFrame(() => {
+                    progressBar.style.width = '0%';
+                });
+            }
+
+            const timer = setTimeout(() => {
+                this.hide(toastId);
+            }, duration);
+
+            this.toasts.get(toastId).timer = timer;
+        }
+
+        return toastId;
+    }
+
+    hide(toastId) {
+        const toastData = this.toasts.get(toastId);
+        if (!toastData) return;
+
+        const { element, timer } = toastData;
+        
+        if (timer) {
+            clearTimeout(timer);
+        }
+
+        element.classList.remove('show');
+        element.classList.add('hide');
+
+        setTimeout(() => {
+            if (element.parentNode) {
+                element.parentNode.removeChild(element);
+            }
+            this.toasts.delete(toastId);
+        }, 300);
+    }
+
+    hideAll() {
+        this.toasts.forEach((_, toastId) => {
+            this.hide(toastId);
+        });
+    }
+
+    getIcon(type) {
+        const icons = {
+            success: '✓',
+            error: '✕',
+            warning: '⚠',
+            info: 'ⓘ'
+        };
+        return icons[type] || icons.info;
+    }
+
+    // Convenience methods
+    success(message, title = 'Success') {
+        return this.show({ type: 'success', title, message });
+    }
+
+    error(message, title = 'Error') {
+        return this.show({ type: 'error', title, message, duration: 7000 });
+    }
+
+    warning(message, title = 'Warning') {
+        return this.show({ type: 'warning', title, message, duration: 6000 });
+    }
+
+    info(message, title = '') {
+        return this.show({ type: 'info', title, message });
+    }
+}
+
+// Create global toast instance
+const Toast = new ToastManager();
+
+// Enhanced Error Handler with User-Friendly Messages
+class ErrorHandler {
+    static handle(error, context = '') {
+        console.error(`Error ${context}:`, error);
+        
+        let userMessage = 'Something went wrong. Please try again.';
+        let title = 'Error';
+        
+        if (error.message) {
+            if (error.message.includes('fetch')) {
+                userMessage = 'Unable to connect to the server. Please check your internet connection.';
+                title = 'Connection Error';
+            } else if (error.message.includes('404')) {
+                userMessage = 'The requested content was not found.';
+                title = 'Not Found';
+            } else if (error.message.includes('500')) {
+                userMessage = 'Server error. Please try again later.';
+                title = 'Server Error';
+            } else if (error.message.includes('Network')) {
+                userMessage = 'Network error. Please check your connection and try again.';
+                title = 'Network Error';
+            }
+        }
+        
+        Toast.error(userMessage, title);
+    }
+    
+    static handleApiError(response, context = '') {
+        let message = 'An unexpected error occurred.';
+        let title = 'Error';
+        
+        switch (response.status) {
+            case 404:
+                message = 'The requested content was not found.';
+                title = 'Not Found';
+                break;
+            case 500:
+                message = 'Server error. Please try again later.';
+                title = 'Server Error';
+                break;
+            case 403:
+                message = 'You do not have permission to access this content.';
+                title = 'Access Denied';
+                break;
+            case 429:
+                message = 'Too many requests. Please wait a moment and try again.';
+                title = 'Rate Limited';
+                break;
+            default:
+                message = `Request failed with status ${response.status}.`;
+        }
+        
+        Toast.error(message, title);
     }
 }
 

@@ -763,7 +763,7 @@ function downloadCanvas(canvas) {
             document.body.removeChild(link);
         } catch (fallbackError) {
             console.error('Fallback download also failed:', fallbackError);
-            alert('Failed to download image. Please try again.');
+            Toast.error('Unable to download the image. Please try again.', 'Download Failed');
         }
     }
 }

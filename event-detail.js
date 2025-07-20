@@ -352,7 +352,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         } else {
             // Fallback if the loading element is not found
-            alert(`Error: ${message}`);
+            Toast.error(message, 'Error');
         }
     }
     
@@ -1106,7 +1106,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.body.removeChild(link);
             } catch (fallbackError) {
                 console.error('Fallback download also failed:', fallbackError);
-                alert('Failed to download image. Please try again.');
+                Toast.error('Unable to download the Instagram story. Please try again.', 'Download Failed');
             }
         }
     }
