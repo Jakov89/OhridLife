@@ -1,5 +1,55 @@
 [
   {
+    "id": 85,
+    "name": "Restaurant Bravo",
+    "description": "Bravo Restaurant, perched just above the charming city of Ohrid, offers more than just a meal – it's an experience for all your senses. Imagine savoring delicious local flavors while gazing out at the breathtaking panoramic views of Lake Ohrid and the red-tiled roofs of the old town. Whether you're enjoying a sun-drenched lunch on their terrace or a romantic dinner under the stars, the warm and welcoming atmosphere at Bravo makes every moment feel special. It's the perfect spot to unwind, soak in the beauty, and create unforgettable memories with loved ones.",
+    "type": "restaurant",
+    "tags": [
+      "restaurant",
+      "scenic",
+      "romantic",
+      "traditional"
+    ],
+    "imageUrl": "images_venue/bravo_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/bravo/photo1.jpg",
+        "alt": "A vibrant plate of chicken in a rich sauce with rice and roasted potatoes, garnished with fresh lettuce. The plate is held against a stunning background of lush green hillsides and the deep blue waters of Lake Ohrid under a clear sky."
+      },
+      {
+        "url": "venue_gallery/bravo/photo2.jpg",
+        "alt": "A vibrant plate of chicken in a rich sauce with rice and roasted potatoes, garnished with fresh lettuce. The plate is held against a stunning background of lush green hillsides and the deep blue waters of Lake Ohrid under a clear sky."
+      },
+      {
+        "url": "venue_gallery/bravo/photo3.jpg",
+        "alt": "A beautifully plated dish featuring a burger topped with white sauce, accompanied by potato wedges, broccoli, and a drizzle of red sauce. The dish is set on a table with a stunning sunset view over Lake Ohrid, with warm orange and purple hues in the sky."
+      },
+      {
+        "url": "venue_gallery/bravo/photo4.jpg",
+        "alt": "A fresh salad with mixed greens, cherry tomatoes, cucumber slices, and large shavings of cheese, topped with a sprig of parsley. The plate is held up against a clear blue sky, with a lush green hillside and the expansive blue of Lake Ohrid visible in the background."
+      },
+      {
+        "url": "venue_gallery/bravo/photo5.jpg",
+        "alt": "Inside a spacious restaurant dining room with many tables set with napkins and glasses. Large windows line one wall, offering a view of autumn trees and a distant lake. The chairs are upholstered in shades of orange and purple."
+      },
+      {
+        "url": "venue_gallery/bravo/photo6.jpg",
+        "alt": "A wide shot of a modern restaurant dining room with many tables, most of them set. Large windows offer a panoramic view of Lake Ohrid and surrounding autumn foliage. The room has a contemporary design with warm lighting fixtures."
+      }
+    ],
+    "rating": 4.6,
+    "priceLevel": 2,
+    "location": {
+      "address": "Restaurant Bravo, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Restaurant+Bravo/@41.08818471438427,20.821649056696856",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.5609140962213!2d20.821649056696856!3d41.08818471438427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c55efe28b2e1%3A0xd13e2614c2dffaf4!2sRestaurant%20Bravo!5e0!3m2!1sen!2smk!4v1753096219824!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075 998 000",
+    "workingHours": "08:00 - 00:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
     "id": 24,
     "name": "Bros Burger",
     "description": "When that burger craving hits in Ohrid, Bros Burger is your go-to for a no-fuss, seriously satisfying experience. It's not about white tablecloths it's about the pure joy of a well-made burger. Imagine biting into a juicy patty, perfectly cooked, with all the right fixings, and that unmistakable aroma of a classic burger joint. It's the kind of place where you can grab a quick, delicious meal that truly hits the spot, leaving you feeling happy and fueled up for more adventures in beautiful Ohrid.",
