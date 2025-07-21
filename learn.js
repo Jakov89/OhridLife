@@ -73,92 +73,56 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function initializeGallery() {
         const galleryImages = [
-            'images_ohrid/photo1.jpg',
-            'images_ohrid/photo2.jpg',
-            'images_ohrid/photo3.jpg',
-            'images_ohrid/photo4.jpg',
-            'images_ohrid/photo5.jpg'
+            'images_ohrid/ohrid1.jpg',
+            'images_ohrid/ohrid2.jpg',
+            'images_ohrid/ohrid3.jpg',
+            'images_ohrid/ohrid4.jpg',
+            'images_ohrid/ohrid5.jpg'
         ];
 
-        const sliderContainer = document.getElementById('gallery-slider');
-        galleryImages.forEach(src => {
-            const slide = document.createElement('div');
-            slide.className = 'keen-slider__slide';
-            const img = document.createElement('img');
-            img.src = src;
-            img.alt = 'Ohrid Gallery Image';
-            slide.appendChild(img);
-            sliderContainer.appendChild(slide);
+        const mainImageContainer = document.querySelector('.gallery-main-image');
+        if (!mainImageContainer) return;
+
+        let currentIndex = 0;
+
+        // Function to update main image
+        function updateMainImage() {
+            mainImageContainer.innerHTML = `
+                <img src="${galleryImages[currentIndex]}" 
+                     alt="Ohrid Gallery Image ${currentIndex + 1}" 
+                     loading="lazy">
+            `;
+        }
+
+        // Initialize main image
+        updateMainImage();
+
+        // Setup navigation
+        const prevBtn = document.getElementById('gallery-prev');
+        const nextBtn = document.getElementById('gallery-next');
+
+        if (prevBtn && nextBtn) {
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+                updateMainImage();
+            });
+
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % galleryImages.length;
+                updateMainImage();
+            });
+        }
+
+        // Setup keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+                updateMainImage();
+            } else if (e.key === 'ArrowRight') {
+                currentIndex = (currentIndex + 1) % galleryImages.length;
+                updateMainImage();
+            }
         });
-
-        if (galleryImages.length > 0 && typeof KeenSlider !== 'undefined') {
-            const slider = new KeenSlider("#gallery-slider", {
-                loop: true,
-                slideChanged(s) {
-                    updateUI(s);
-                },
-                created(s) {
-                    addDotBtns(s);
-                    addArrowBtns(s);
-                    updateUI(s);
-                }
-            });
-        }
-
-        function updateUI(s) {
-            updateDots(s);
-            updateArrows(s);
-        }
-
-        function addDotBtns(s) {
-            const dotsContainer = document.getElementById("gallery-dots");
-            if (!dotsContainer) return;
-            dotsContainer.innerHTML = "";
-            s.track.details.slides.forEach((_e, idx) => {
-                const dot = document.createElement("button");
-                dot.classList.add("dot");
-                dot.addEventListener("click", () => s.moveToIdx(idx));
-                dotsContainer.appendChild(dot);
-            });
-        }
-
-        function updateDots(s) {
-             const dots = document.querySelectorAll("#gallery-dots .dot");
-             dots.forEach((dot, idx) => {
-                dot.classList.toggle("active", idx === s.track.details.rel);
-            });
-        }
-        
-        function addArrowBtns(s) {
-            const arrowLeft = document.getElementById("gallery-arrow-left");
-            const arrowRight = document.getElementById("gallery-arrow-right");
-            if(arrowLeft && arrowRight) {
-                arrowLeft.innerHTML = arrowSVG("left");
-                arrowRight.innerHTML = arrowSVG("right");
-                arrowLeft.addEventListener("click", () => s.prev());
-                arrowRight.addEventListener("click", () => s.next());
-            }
-        }
-
-        function updateArrows(s) {
-            const arrowLeft = document.getElementById("gallery-arrow-left");
-            const arrowRight = document.getElementById("gallery-arrow-right");
-            if (arrowLeft && arrowRight && !s.options.loop) {
-                arrowLeft.disabled = s.track.details.rel === 0;
-                arrowRight.disabled = s.track.details.rel === s.track.details.slides.length - 1;
-                arrowLeft.classList.toggle("arrow--disabled", arrowLeft.disabled);
-                arrowRight.classList.toggle("arrow--disabled", arrowRight.disabled);
-            }
-        }
-
-        function arrowSVG(direction) {
-            return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                ${direction === "left"
-                ? "<path d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z'/>"
-                : "<path d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'/>"
-                }
-            </svg>`;
-        }
     }
 
     initializePage();

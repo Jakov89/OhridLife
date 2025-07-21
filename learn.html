@@ -29,7 +29,6 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="learn.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Meta Pixel Code -->
@@ -91,14 +90,15 @@
 
         <section id="ohrid-gallery" class="py-8">
             <h2 class="text-3xl font-bold text-center mb-8">Ohrid Gallery</h2>
-            <div class="navigation-wrapper">
-                <div id="gallery-slider" class="keen-slider">
-                    <!-- Slides will be injected here -->
+            <div class="gallery-single-view">
+                <div class="gallery-main-image">
+                    <!-- Main image will be here -->
                 </div>
-                <button class="arrow arrow--left" id="gallery-arrow-left"></button>
-                <button class="arrow arrow--right" id="gallery-arrow-right"></button>
+                <div class="gallery-navigation">
+                    <button class="gallery-nav-button prev" id="gallery-prev">&lt;</button>
+                    <button class="gallery-nav-button next" id="gallery-next">&gt;</button>
+                </div>
             </div>
-             <div class="dots" id="gallery-dots"></div>
         </section>
     </main>
 
@@ -106,7 +106,6 @@
         <!-- Footer content from script.js -->
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.js"></script>
     <script src="common.js"></script>
     <script src="learn.js"></script>
 </body>

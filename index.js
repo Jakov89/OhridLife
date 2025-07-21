@@ -731,7 +731,7 @@ function observeLazyImages(container) {
 function preloadCriticalImages() {
     const criticalImages = [
         'images_ohrid/photo1.jpg',
-        'images_ohrid/photo2.jpg',
+        'images_ohrid/photo6.jpg',
         'logo/ohridhub.png'
     ];
     

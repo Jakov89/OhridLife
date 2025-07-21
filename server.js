@@ -5,6 +5,35 @@ const { SitemapStream, streamToPromise } = require('sitemap');
 const { Readable } = require('stream');
 const compression = require('compression');
 const helmet = require('helmet');
+const sharp = require('sharp');
+
+// Cache for optimized images
+const imageCache = new Map();
+
+// Function to optimize image
+async function optimizeImage(imagePath, width) {
+    const cacheKey = `${imagePath}-${width}`;
+    
+    if (imageCache.has(cacheKey)) {
+        return imageCache.get(cacheKey);
+    }
+
+    try {
+        const imageBuffer = await sharp(imagePath)
+            .resize(width, null, {
+                withoutEnlargement: true,
+                fit: 'inside'
+            })
+            .jpeg({ quality: 85, progressive: true })
+            .toBuffer();
+
+        imageCache.set(cacheKey, imageBuffer);
+        return imageBuffer;
+    } catch (error) {
+        console.error('Image optimization error:', error);
+        throw error;
+    }
+}
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -30,6 +59,44 @@ app.use(helmet({
 
 // Enable compression
 app.use(compression());
+
+// Optimized image route
+app.get('/optimized-image/*', async (req, res) => {
+    try {
+        const imagePath = req.params[0];
+        const width = parseInt(req.query.width) || 1200; // Default width if not specified
+        
+        if (!imagePath) {
+            return res.status(400).send('Image path is required');
+        }
+
+        const fullPath = path.join(__dirname, imagePath);
+        
+        // Check if file exists
+        if (!fs.existsSync(fullPath)) {
+            return res.status(404).send('Image not found');
+        }
+
+        // Get file extension
+        const ext = path.extname(fullPath).toLowerCase();
+        const allowedExtensions = ['.jpg', '.jpeg', '.png', '.webp'];
+        
+        if (!allowedExtensions.includes(ext)) {
+            return res.status(400).send('Invalid image format');
+        }
+
+        const optimizedImage = await optimizeImage(fullPath, width);
+        
+        // Set cache headers
+        res.setHeader('Cache-Control', 'public, max-age=31536000'); // Cache for 1 year
+        res.setHeader('Content-Type', 'image/jpeg');
+        res.send(optimizedImage);
+
+    } catch (error) {
+        console.error('Error optimizing image:', error);
+        res.status(500).send('Error processing image');
+    }
+});
 
 // Static file serving with better caching and MIME types
 app.use(express.static('.', {
@@ -269,7 +336,7 @@ app.get('/events/:id', (req, res) => {
             if (event.organizationId === 1) {
                 imageUrl = `https://www.ohridhub.mk/logo/summer_logo.jpg`;
             } else {
-                imageUrl = `https://www.ohridhub.mk/${event.imageUrl || 'images_ohrid/photo1.jpg'}`;
+                imageUrl = `https://www.ohridhub.mk/${event.imageUrl || 'images_ohrid/photo7.jpg'}`;
             }
             
             const pageUrl = `https://www.ohridhub.mk/events/${event.id}`;
@@ -441,7 +508,7 @@ app.get('/organizations/:id', (req, res) => {
             if (org.id === 1) {
                 imageUrl = `https://www.ohridhub.mk/logo/summer_logo.jpg`;
             } else {
-                imageUrl = `https://www.ohridhub.mk/${org.imageUrl || 'images_ohrid/photo4.jpg'}`;
+                imageUrl = `https://www.ohridhub.mk/${org.imageUrl || 'images_ohrid/photo8.jpg'}`;
             }
 
             const schema = {

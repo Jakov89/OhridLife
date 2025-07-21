@@ -3194,8 +3194,9 @@ select.form-input {
     display: flex;
     justify-content: center;
     padding: 1rem;
-    background-color: #f0f4f8; /* Light blue-gray background */
+    background-color: #f0f4f8;
     border-bottom: 1px solid #dcdcdc;
+    margin-top: 64px; /* Add margin to account for fixed navbar */
 }
 
 .weather-widget {
@@ -3225,6 +3226,28 @@ select.form-input {
     font-size: 1rem;
     color: #666;
     text-transform: capitalize;
+}
+
+/* Responsive adjustments for weather widget */
+@media (max-width: 768px) {
+    .weather-widget-container {
+        margin-top: 56px; /* Slightly smaller margin for mobile navbar */
+        padding: 0.75rem;
+    }
+
+    .weather-temperature {
+        font-size: 1.5rem;
+    }
+
+    .weather-description {
+        font-size: 0.9rem;
+    }
+
+    .weather-icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 12px;
+    }
 }
 
 /* Styles for Associated Events on Organization Page */
