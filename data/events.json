@@ -1,5 +1,21 @@
 [
   {
+    "id": 412,
+    "venueId": 85,
+    "eventName": "Dac & Aleksandar + Bravo Lotarija",
+    "isoDate": "2025-07-25",
+    "startTime": "21:00",
+    "day": "Fri.",
+    "description": "Enjoy a special performance by the incredible Dac & Aleksandar as they serenade you with their captivating voices. Plus, get ready for exciting surprises and gifts with the Bravo Lottery!",
+    "category": "Music",
+    "imageUrl": "events_image/bravo/25.07.jpg",
+    "eventBookingUrl": "#",
+    "eventContact": "075 998 000 / 075 998 001",
+    "ticketPrice": "Free Entry",
+    "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.5609140962213!2d20.821649056696856!3d41.08818471438427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c55efe28b2e1%3A0xd13e2614c2dffaf4!2sRestaurant%20Bravo!5e0!3m2!1sen!2smk!4v1753096219824!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Restaurant Bravo"
+  },
+  {
     "id": 1,
     "eventName": "The Cultural Seven",
     "isoDate": "2025-07-05",
