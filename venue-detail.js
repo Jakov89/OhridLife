@@ -46,8 +46,8 @@ function renderVenueDetails(venue, container) {
     // Clear the "Loading..." message
     container.innerHTML = '';
 
-    const name = venue.name?.en || 'Unnamed Venue';
-    const description = venue.description?.en || 'No description available.';
+    const name = venue.name || 'Unnamed Venue';
+    const description = venue.description || 'No description available.';
     const imageUrl = venue.imageUrl || 'https://via.placeholder.com/1200x400?text=OhridHub';
 
     const header = document.createElement('div');
@@ -65,7 +65,17 @@ function renderVenueDetails(venue, container) {
         <div class="venue-detail-info-panel">
             <h2>About ${name}</h2>
             <p>${description}</p>
-            <!-- Add more details like working hours, contact, etc. here -->
+            <div class="venue-details">
+                ${venue.phone ? `<p><strong>Phone:</strong> ${venue.phone}</p>` : ''}
+                ${venue.workingHours ? `<p><strong>Working Hours:</strong> ${venue.workingHours}</p>` : ''}
+                ${venue.priceLevel ? `<p><strong>Price Level:</strong> ${Array(venue.priceLevel).fill('€').join('')}</p>` : ''}
+                ${venue.rating ? `<p><strong>Rating:</strong> ${venue.rating} ⭐</p>` : ''}
+            </div>
+            ${venue.location?.mapIframe ? `
+            <div class="venue-map">
+                <h3>Location</h3>
+                ${venue.location.mapIframe}
+            </div>` : ''}
         </div>
         <div class="venue-detail-gallery-panel">
             <h3>Gallery</h3>
@@ -78,13 +88,103 @@ function renderVenueDetails(venue, container) {
     container.appendChild(header);
     container.appendChild(content);
 
+    // Create modal container
+    const modalContainer = document.createElement('div');
+    modalContainer.id = 'venue-modal';
+    modalContainer.className = 'venue-modal';
+    modalContainer.innerHTML = `
+        <div class="modal-content" id="modal-details-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-image-container">
+                <img id="modal-image" src="" alt="">
+            </div>
+            <div class="modal-navigation">
+                <button class="modal-nav prev">&lt;</button>
+                <button class="modal-nav next">&gt;</button>
+            </div>
+        </div>
+    `;
+    container.appendChild(modalContainer);
+
     // Populate the gallery
     const galleryGrid = document.getElementById('venue-gallery-grid');
+    let currentImageIndex = 0;
+    
     if (venue.gallery && venue.gallery.length > 0) {
-        galleryGrid.innerHTML = venue.gallery.map(img => {
-            const altText = (img.alt !== null && img.alt !== undefined) ? img.alt : name;
-            return `<img src="/${img.url}" alt="${altText}" class="gallery-image" loading="lazy">`;
+        galleryGrid.innerHTML = venue.gallery.map((img, index) => {
+            const altText = img.alt || name;
+            return `<img src="/${img.url}" alt="${altText}" class="gallery-image" data-index="${index}" loading="lazy">`;
         }).join('');
+
+        // Add click event listeners to gallery images
+        const galleryImages = galleryGrid.querySelectorAll('.gallery-image');
+        const modal = document.getElementById('venue-modal');
+        const modalImage = document.getElementById('modal-image');
+        const closeBtn = modal.querySelector('.close-modal');
+        const prevBtn = modal.querySelector('.modal-nav.prev');
+        const nextBtn = modal.querySelector('.modal-nav.next');
+
+        function openModal(index) {
+            currentImageIndex = index;
+            modal.style.display = 'block';
+            updateModalImage();
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        function updateModalImage() {
+            const img = venue.gallery[currentImageIndex];
+            modalImage.src = '/' + img.url;
+            modalImage.alt = img.alt || name;
+            
+            // Update navigation buttons visibility
+            prevBtn.style.display = currentImageIndex > 0 ? 'block' : 'none';
+            nextBtn.style.display = currentImageIndex < venue.gallery.length - 1 ? 'block' : 'none';
+        }
+
+        galleryImages.forEach(img => {
+            img.addEventListener('click', () => {
+                openModal(parseInt(img.dataset.index));
+            });
+        });
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+
+        prevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (currentImageIndex > 0) {
+                currentImageIndex--;
+                updateModalImage();
+            }
+        });
+
+        nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (currentImageIndex < venue.gallery.length - 1) {
+                currentImageIndex++;
+                updateModalImage();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (modal.style.display === 'block') {
+                if (e.key === 'Escape') closeModal();
+                if (e.key === 'ArrowLeft' && currentImageIndex > 0) {
+                    currentImageIndex--;
+                    updateModalImage();
+                }
+                if (e.key === 'ArrowRight' && currentImageIndex < venue.gallery.length - 1) {
+                    currentImageIndex++;
+                    updateModalImage();
+                }
+            }
+        });
     } else {
         galleryGrid.innerHTML = '<p>No gallery images available.</p>';
     }

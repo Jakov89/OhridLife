@@ -1364,7 +1364,7 @@ function renderHeroSlider() {
 function openVenueModal(venueId) {
     const venue = venuesData.find(v => v.id == venueId);
     if (!venue) {
-        ErrorHandler.handle(new Error('Venue not found'), 'loading venue details');
+        console.error('Venue not found for ID:', venueId);
         return;
     }
     
@@ -1398,14 +1398,23 @@ function populateVenueModal(venue, modal) {
     const name = venue.name?.en || 'Unnamed Venue';
     const type = venue.type?.en || 'No type specified';
     const description = venue.description?.en || 'No description available.';
-    const imageUrl = venue.imageUrl || 'https://via.placeholder.com/400x250?text=No+Image';
+    const imageUrl = venue.imageUrl ? 
+        (venue.imageUrl.startsWith('http') ? venue.imageUrl : (venue.imageUrl.startsWith('/') ? venue.imageUrl : `/${venue.imageUrl}`)) : 
+        'https://via.placeholder.com/400x250/cccccc/666666?text=No+Image';
     
     // Get the modal content container
-
+    const modalContent = document.getElementById('modal-details-content');
+    if (!modalContent) {
+        console.error('Modal content container not found');
+        return;
+    }
 
     // Replace modal loading content with actual content
+    console.log('Loading venue:', venue.name, 'with image:', imageUrl);
     modalContent.innerHTML = `
-        <img id="modal-venue-image" src="${imageUrl}" alt="Venue image" loading="lazy">
+        <img id="modal-venue-image" src="${imageUrl}" alt="${name}" 
+             onload="console.log('✅ Image loaded successfully:', this.src);"
+             onerror="console.error('❌ Image failed to load:', this.src); this.src='https://via.placeholder.com/700x300/cccccc/666666?text=Image+Not+Available';">
         <div class="modal-info-section">
             <h2 id="modal-venue-name">${name}</h2>
             <p id="modal-venue-type" class="venue-type-info">${Array.isArray(type) ? type.join(', ') : type}</p>
@@ -1417,7 +1426,20 @@ function populateVenueModal(venue, modal) {
             </div>
             
             <div id="modal-rating-container" class="modal-rating-container">
-                <!-- Rating display and input will be injected here -->
+                <h5>Rate this venue</h5>
+                <div class="rating-display">
+                    <span id="modal-rating-value">0.0</span>
+                    <span class="rating-separator"> • </span>
+                    <span id="modal-rating-count">0 reviews</span>
+                </div>
+                <div class="rating-stars">
+                    <span data-value="1">⭐</span>
+                    <span data-value="2">⭐</span>
+                    <span data-value="3">⭐</span>
+                    <span data-value="4">⭐</span>
+                    <span data-value="5">⭐</span>
+                </div>
+                <p class="rating-message">Click stars to rate this venue</p>
             </div>
             
             <div class="venue-social-actions">
@@ -1444,6 +1466,35 @@ function populateVenueModal(venue, modal) {
     // Setup rating stars after content is loaded
     setupRatingStars(venue.id);
     
+    // Update rating display with current venue ratings
+    const ratings = venueRatings[venue.id] || [];
+    const ratingCount = ratings.length;
+    const rating = ratingCount > 0 ? ratings.reduce((a, b) => a + b, 0) / ratingCount : 0;
+    
+    const ratingValueEl = document.getElementById('modal-rating-value');
+    const ratingCountEl = document.getElementById('modal-rating-count');
+    
+    if (ratingValueEl) {
+        ratingValueEl.textContent = rating > 0 ? rating.toFixed(1) : '0.0';
+    }
+    if (ratingCountEl) {
+        ratingCountEl.textContent = ratingCount === 1 ? '1 review' : `${ratingCount} reviews`;
+    }
+    
+    // Setup main venue image click handler
+    const mainVenueImage = document.getElementById('modal-venue-image');
+    if (mainVenueImage) {
+        mainVenueImage.style.cursor = 'pointer';
+        mainVenueImage.addEventListener('click', () => {
+            const imageModal = document.getElementById('image-modal');
+            const imageModalImg = document.getElementById('image-modal-img');
+            if(imageModal && imageModalImg) {
+                imageModalImg.src = mainVenueImage.src;
+                imageModal.classList.remove('hidden');
+            }
+        });
+    }
+
     // Setup gallery image click handlers
     const galleryImages = modalContent.querySelectorAll('.modal-gallery-image');
     galleryImages.forEach(img => {
