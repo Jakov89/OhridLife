@@ -523,7 +523,7 @@
     "id": 23,
     "name": "Anxiety Stop&Go",
     "description": "Step into Anxiety Stop&Go, a vibrant and welcoming bar where we believe in crafting the perfect antidote to your day. Here, we've redefined the art of the cocktail, focusing on freshly squeezed lemon and orange to create a burst of invigorating flavor in every glass. Our unique concept lets you \"build your buzz\" exactly how you like it. Whether you're looking for a gentle unwind or a lively pick-me-up, our skilled bartenders are ready to mix a drink tailored to your mood. Imagine the bright tang of fresh citrus mingling with your spirit of choice, creating a symphony of taste that's as refreshing as it is uplifting. Anxiety Stop&Go is more than just a bar; it's a sanctuary where you can pause, recharge, and leave your worries at the door. Come experience the difference that fresh ingredients and a personalized touch can make.",
-    "type": "coffee",
+    "type": ["coffee","to-go"],
     "tags": [
       "coffee",
       "artistic",
@@ -3369,5 +3369,39 @@
     "workingHours": "19:00 - 00:00",
     "bookingUrl": "#",
     "events": []
-  }
+  },
+  {
+      "id": 98,
+      "name": "Most Bar",
+      "description": "Oh, Most Bar in Ohrid! It's that wonderful spot you dream about when you need to hit pause. Tucked away right by the water's edge, you can practically dip your toes in the lake while sipping your drink. It's truly a serene escape, a place where the only rush is the gentle lapping of the waves, inviting you to simply relax and let the peaceful beauty of Ohrid wash over you.",
+      "type": ["coffee","to-go"],
+      "tags": [
+        "coffee",
+        "lakeside",
+        "relaxing",
+        "peaceful"
+      ],
+      "imageUrl": "images_venue/most_card.jpg",
+      "gallery": [
+        {
+          "url": "venue_gallery/most/photo1.jpg",
+          "alt": "A sunny day at our charming lakeside spot, where you can relax outdoors and enjoy the good life by the water."
+        },
+        {
+          "url": "venue_gallery/most/photo2.jpg",
+          "alt": "Imagine stepping out onto this lovely wooden deck, taking a deep breath of fresh air, and soaking in the peaceful views of Lake Ohrid and its gentle reeds"
+        }
+      ],
+      "rating": 4.5,
+      "priceLevel": 1,
+      "location": {
+        "address": "Most Bar, Ohrid",
+        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.3888088766657!2d20.806322941948995!3d41.104198893356845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db090aae08fb%3A0x2d78ac4c21707f7a!2sMost%20Bar!5e0!3m2!1sen!2smk!4v1753197166543!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      },
+      "phone": "077 833 622",
+      "workingHours": "08:00 - 00:00",
+      "bookingUrl": "#",
+      "events": []
+    }
+  
 ]
