@@ -45,10 +45,19 @@ app.use(helmet({
             defaultSrc: ["'self'"],
             styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://cdn.jsdelivr.net"],
             fontSrc: ["'self'", "https://fonts.gstatic.com"],
-            scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", "https://cdn.jsdelivr.net", "https://connect.facebook.net"],
+            scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", "https://cdn.jsdelivr.net", "https://connect.facebook.net", "https://www.googletagmanager.com"],
             scriptSrcAttr: ["'unsafe-inline'"], // Allow inline event handlers like onclick
             imgSrc: ["'self'", "data:", "https:", "http:", "blob:"],
-            connectSrc: ["'self'", "https://api.open-meteo.com", "https://connect.facebook.net"],
+            connectSrc: [
+                "'self'", 
+                "https://api.open-meteo.com", 
+                "https://connect.facebook.net",
+                "https://www.googletagmanager.com",
+                "https://www.google-analytics.com",
+                "https://fonts.googleapis.com",
+                "https://fonts.gstatic.com",
+                "https://cdn.jsdelivr.net"
+            ],
             frameSrc: ["'self'", "https://www.google.com", "https://maps.google.com"],
             objectSrc: ["'none'"],
             baseUri: ["'self'"],
@@ -830,6 +839,34 @@ app.post('/api/contact', async (req, res) => {
             error: 'Internal server error' 
         });
     }
+});
+
+// Handle service worker requests - return empty service worker that unregisters itself
+app.get('/sw.js', (req, res) => {
+    res.setHeader('Content-Type', 'application/javascript');
+    res.setHeader('Cache-Control', 'no-cache');
+    res.send(`
+// Service worker cleanup - unregisters itself
+self.addEventListener('install', function() {
+    self.skipWaiting();
+});
+
+self.addEventListener('activate', function(event) {
+    event.waitUntil(
+        self.registration.unregister()
+            .then(function() {
+                console.log('Service worker unregistered successfully');
+                return caches.keys().then(function(cacheNames) {
+                    return Promise.all(
+                        cacheNames.map(function(cacheName) {
+                            return caches.delete(cacheName);
+                        })
+                    );
+                });
+            })
+    );
+});
+`);
 });
 
 app.listen(PORT, () => {
