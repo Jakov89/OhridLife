@@ -3396,7 +3396,7 @@
         "mapIframe": ""
       },
       "phone": "",
-      "workingHours": "",
+      "workingHours": "09:00 - 00:00",
       "bookingUrl": "#",
       "events": []
     },
@@ -3415,15 +3415,7 @@
         "nature"
       ],
       "imageUrl": "images_venue/adventure_sport/golf_card.jpg",
-      "gallery": [
-        {
-          "url": "venue_gallery/golf/photo1.jpg",
-          "alt": "A sunny outdoor scene showing a lush green golf course. In the foreground, part of a white pillar with pink floral decorations is visible on the left. Two golfers with push carts are walking in the distance across the green. On the right, a golf bag with clubs rests on a stand next to a green hitting mat. Trees line the background under a bright blue sky."
-        },
-        {
-          "url": "venue_gallery/golf/photo2.jpg",
-          "alt": "A wide shot of a vibrant green golf course under a brilliant blue sky with some scattered white clouds. Trees line the left and background, and a distinctive gnarled, dead tree trunk stands on the right edge of the frame. The green grass of the course stretches out under the bright sunlight."
-        }
+      "gallery": [       
       ],
       "rating": 4.8,
       "priceLevel": 2,
