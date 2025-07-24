@@ -3291,7 +3291,7 @@
   {
     "id": 96,
     "name": "Golf Club Ohrid CZG",
-    "description": "Nestled gracefully within the scenic city area of Ohrid, Ohrid Golf Club CZG emerges as a distinctive and inviting retreat, offering a perfect blend of sporting excellence and serene leisure. At its heart lies a meticulously designed 6-hole, par 21 golf course, spanning four hectares, that promises an engaging and enjoyable challenge for players across all skill levels. Operating under the precise rules established by R&A and USGA, the club ensures a truly professional and fair playing environment, with flexible booking options for 6, 12, or 18 holes, complemented by convenient golf club and trolley rentals. Beyond the greens, the club is home to a dedicated Golf Academy, providing expert instruction through private, group, and trial lessons tailored to nurture every golfer's potential, from aspiring beginners to seasoned enthusiasts. The charming \"Gibli\" clubhouse serves as the vibrant hub of the club, not only housing a well-stocked pro shop for all your golfing needs but also featuring the inviting Gibli Café. This versatile space extends a warm invitation for organizing a variety of social gatherings, including dynamic team-building events and memorable birthday parties, making Ohrid Golf Club CZG a comprehensive destination that beautifully marries the joy of golf with opportunities for connection and celebration in the heart of Ohrid.",
+    "description": "<b>GOLF COURSE OHRID</b>\n\nThe golf course in Ohrid is the first and only golf center in the Republic of Macedonia – a modern complex offering a unique sports and recreational experience.\n\nThe course is located within the city area, on the grounds of the former military barracks in Ohrid, just 3 km from the port and the city center.\n\n<b>OPENING HOURS</b>\nOpen daily from 08:00 to 22:00. For scheduled events, operating hours can be adjusted according to the renter's needs.\n\n<b>ABOUT THE COURSE</b>\nThis facility covers approximately 4 hectares and includes a 6-hole golf course (par 21) built to international standards. Compact in size, the course is carefully designed to challenge players of all skill levels.\n\n<b>ACTIVITIES AND OFFERINGS</b>\nGuests can enjoy a variety of golf-related activities. The main attraction is playing golf on the well-maintained 6-hole course. A standard round includes all 6 holes, with the option to repeat the course for a full 12 or 18-hole experience, offering a solid challenge even for experienced players.\n\nAll necessary equipment is available for rent on-site – including golf clubs, bags, push trolleys, and golf balls.\n\nIn addition to offerings for experienced golfers, the Golf Club also provides beginner lessons with licensed instructors.\n\nLocated in the very heart of the golf course, Gibli Café is more than just a coffee bar – it is a true retreat for lovers of great coffee, peaceful atmosphere and natural beauty. We offer a carefully selected range of drinks and cocktails, perfectly complementing the taste and atmosphere of every moment.\n\n<b>WHO IS IT FOR?</b>\nThe offer at Golf Club Ohrid is tailored for a variety of visitors, regardless of age, experience, or reason for visit. Golf as a sport provides the opportunity for enjoyment and socializing in a pleasant environment, making it accessible to everyone:\n\n• Families with children:\nThe club is a great place for family activities. There is a golf academy and school for children, where young players can learn the basics of golf in a fun and safe way, under the supervision of instructors.\n\n• Tourists and beginners:\nVisitors to Ohrid seeking a new experience can try golf for the first time. Whether you're completely new to golf, the friendly staff and training programs will help you learn the basic rules and strokes.\n\n• Experienced golf enthusiasts:\nFor passionate golfers, this course offers the opportunity to play in unique conditions in Macedonia. As the first (and currently only) golf course in the country, it's a must-visit destination for golfers traveling through the region looking to add a round to their itinerary.\n\n• Business professionals and groups:\nThe clubhouse is the perfect place for corporate gatherings and networking in a relaxed, informal setting. With team-building events, business meetings, or presentations organized in the clubhouse or on the course, business guests can combine work with recreation.\n\n<b>SERVICES OFFERED</b>\n\n• Golf course play (6 / 12 / 18 holes)\n\n• Use of the driving range\n\n• Golf equipment rental (complete club set, bag, trolley, golf balls)\n\n• Basic training and support for beginners (introduction to rules and techniques)\n\n• Green Card Program – new golfers can complete the academy's Green Card program, earning certification and becoming amateur golfers with a starting handicap of 54.\n\n• Access to clubhouse facilities\n\n• Free parking",
     "type": "sports",
     "tags": [
       "golf",
@@ -3320,7 +3320,7 @@
       "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125.0247910415706!2d20.810714645585144!3d41.12931091394364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbc80dfe6305%3A0xb1df663440036641!2sGolf%20Club%20Ohrid%20CZG!5e0!3m2!1sen!2smk!4v1752488628955!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
     "phone": "070 249 237",
-    "workingHours": "15:00 - 19:00 (Mon - Fri)<br>09:00 - 19:00 (Sat - Sun)",
+    "workingHours": "08:00 - 22:00 (Daily)",
     "bookingUrl": "#",
     "events": []
   },
@@ -3386,22 +3386,55 @@
         {
           "url": "venue_gallery/most/photo1.jpg",
           "alt": "A sunny day at our charming lakeside spot, where you can relax outdoors and enjoy the good life by the water."
-        },
-        {
-          "url": "venue_gallery/most/photo2.jpg",
-          "alt": "Imagine stepping out onto this lovely wooden deck, taking a deep breath of fresh air, and soaking in the peaceful views of Lake Ohrid and its gentle reeds"
         }
       ],
-      "rating": 4.5,
-      "priceLevel": 1,
+      "rating": 4.8,
+      "priceLevel": 2,
       "location": {
         "address": "Most Bar, Ohrid",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.3888088766657!2d20.806322941948995!3d41.104198893356845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db090aae08fb%3A0x2d78ac4c21707f7a!2sMost%20Bar!5e0!3m2!1sen!2smk!4v1753197166543!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+        "googleMapsUrl": "#",
+        "mapIframe": ""
       },
-      "phone": "077 833 622",
-      "workingHours": "08:00 - 00:00",
+      "phone": "",
+      "workingHours": "",
+      "bookingUrl": "#",
+      "events": []
+    },
+    {
+      "id": 99,
+      "name": "Gibli Café",
+      "description": "<b>GIBLI CAFÉ – AN OASIS OF FLAVOR AND SERENITY AMIDST THE GREENERY</b>\n\nLocated in the very heart of the golf course, Gibli Café is more than just a coffee bar – it is a true retreat for lovers of great coffee, peaceful atmosphere and natural beauty.\n\nWith a seating capacity of 50 guests for everyday enjoyment, as well as the possibility for larger gatherings of up to 150 people, the café offers the perfect ambiance for relaxation and socializing.\n\nTogether with the clubhouse at the Ohrid golf course, Gibli Café is an excellent choice for team-building activities, corporate events, and other celebrations, providing a unique opportunity to combine sports with business or private events in a distinctive setting.\n\nWe offer a carefully selected range of drinks and cocktails, perfectly complementing the taste and atmosphere of every moment. Our signature coffee, the unique Shakerato – cold, elegant, and unforgettable – is already a recognized symbol of the place.\n\nGibli Café is the perfect blend of urban elegance and natural tranquility, surrounded by impeccably maintained green areas, with panoramic views from all sides overlooking the course.\n\nIn this eco-conscious space, far from the city noise and hustle, every cup of coffee tastes like relaxation, and every cocktail tells its own story. Perfect for morning relaxation, afternoon chats, or evening events, Gibli Café is where nature and great taste meet.\n\nFree parking is available.",
+      "type": "coffee",
+      "tags": [
+        "coffee",
+        "cocktails",
+        "events",
+        "corporate",
+        "peaceful",
+        "golf",
+        "nature"
+      ],
+      "imageUrl": "images_venue/adventure_sport/golf_card.jpg",
+      "gallery": [
+        {
+          "url": "venue_gallery/golf/photo1.jpg",
+          "alt": "A sunny outdoor scene showing a lush green golf course. In the foreground, part of a white pillar with pink floral decorations is visible on the left. Two golfers with push carts are walking in the distance across the green. On the right, a golf bag with clubs rests on a stand next to a green hitting mat. Trees line the background under a bright blue sky."
+        },
+        {
+          "url": "venue_gallery/golf/photo2.jpg",
+          "alt": "A wide shot of a vibrant green golf course under a brilliant blue sky with some scattered white clouds. Trees line the left and background, and a distinctive gnarled, dead tree trunk stands on the right edge of the frame. The green grass of the course stretches out under the bright sunlight."
+        }
+      ],
+      "rating": 4.8,
+      "priceLevel": 2,
+      "location": {
+        "address": "Gibli Café - Golf Club Ohrid CZG, Ohrid",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Golf+Club+Ohrid+CZG,Ohrid",
+        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125.0247910415706!2d20.810714645585144!3d41.12931091394364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbc80dfe6305%3A0xb1df663440036641!2sGolf%20Club%20Ohrid%20CZG!5e0!3m2!1sen!2smk!4v1752488628955!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      },
+      "phone": "+389 75 391 445",
+      "workingHours": "08:00 - 22:00 (Daily)",
       "bookingUrl": "#",
       "events": []
     }
-  
 ]
