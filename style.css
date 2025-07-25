@@ -7126,3 +7126,10 @@ img[data-src]:not(.loaded) {
     }
 }
 
+/* Fix for Gibli Café image positioning */
+.venue-card img[src*="gibli_card.png"] {
+    object-position: center center !important;
+    object-fit: contain !important;
+    background-color: #f8f9fa;
+}
+

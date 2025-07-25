@@ -3292,12 +3292,12 @@
     "id": 96,
     "name": "Golf Club Ohrid CZG",
     "description": "<b>GOLF COURSE OHRID</b>\n\nThe golf course in Ohrid is the first and only golf center in the Republic of Macedonia – a modern complex offering a unique sports and recreational experience.\n\nThe course is located within the city area, on the grounds of the former military barracks in Ohrid, just 3 km from the port and the city center.\n\n<b>OPENING HOURS</b>\nOpen daily from 08:00 to 22:00. For scheduled events, operating hours can be adjusted according to the renter's needs.\n\n<b>ABOUT THE COURSE</b>\nThis facility covers approximately 4 hectares and includes a 6-hole golf course (par 21) built to international standards. Compact in size, the course is carefully designed to challenge players of all skill levels.\n\n<b>ACTIVITIES AND OFFERINGS</b>\nGuests can enjoy a variety of golf-related activities. The main attraction is playing golf on the well-maintained 6-hole course. A standard round includes all 6 holes, with the option to repeat the course for a full 12 or 18-hole experience, offering a solid challenge even for experienced players.\n\nAll necessary equipment is available for rent on-site – including golf clubs, bags, push trolleys, and golf balls.\n\nIn addition to offerings for experienced golfers, the Golf Club also provides beginner lessons with licensed instructors.\n\nLocated in the very heart of the golf course, Gibli Café is more than just a coffee bar – it is a true retreat for lovers of great coffee, peaceful atmosphere and natural beauty. We offer a carefully selected range of drinks and cocktails, perfectly complementing the taste and atmosphere of every moment.\n\n<b>WHO IS IT FOR?</b>\nThe offer at Golf Club Ohrid is tailored for a variety of visitors, regardless of age, experience, or reason for visit. Golf as a sport provides the opportunity for enjoyment and socializing in a pleasant environment, making it accessible to everyone:\n\n• Families with children:\nThe club is a great place for family activities. There is a golf academy and school for children, where young players can learn the basics of golf in a fun and safe way, under the supervision of instructors.\n\n• Tourists and beginners:\nVisitors to Ohrid seeking a new experience can try golf for the first time. Whether you're completely new to golf, the friendly staff and training programs will help you learn the basic rules and strokes.\n\n• Experienced golf enthusiasts:\nFor passionate golfers, this course offers the opportunity to play in unique conditions in Macedonia. As the first (and currently only) golf course in the country, it's a must-visit destination for golfers traveling through the region looking to add a round to their itinerary.\n\n• Business professionals and groups:\nThe clubhouse is the perfect place for corporate gatherings and networking in a relaxed, informal setting. With team-building events, business meetings, or presentations organized in the clubhouse or on the course, business guests can combine work with recreation.\n\n<b>SERVICES OFFERED</b>\n\n• Golf course play (6 / 12 / 18 holes)\n\n• Use of the driving range\n\n• Golf equipment rental (complete club set, bag, trolley, golf balls)\n\n• Basic training and support for beginners (introduction to rules and techniques)\n\n• Green Card Program – new golfers can complete the academy's Green Card program, earning certification and becoming amateur golfers with a starting handicap of 54.\n\n• Access to clubhouse facilities\n\n• Free parking",
-    "type": "sports",
+    "type": "golf",
     "tags": [
       "golf",
-      "sport",
+      "sports",
+      "outdoors",
       "adventure",
-      "academy",
       "family",
       "events"
     ],
@@ -3414,7 +3414,7 @@
         "golf",
         "nature"
       ],
-      "imageUrl": "images_venue/adventure_sport/golf_card.jpg",
+      "imageUrl": "images_venue/gibli_card.png",
       "gallery": [       
       ],
       "rating": 4.8,
