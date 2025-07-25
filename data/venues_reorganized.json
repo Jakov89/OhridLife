@@ -617,7 +617,7 @@
       "events": []
     },
     {
-      "id": 99,
+      "id": 102,
       "name": "Gibli Café",
       "description": "<b>GIBLI CAFÉ – AN OASIS OF FLAVOR AND SERENITY AMIDST THE GREENERY</b>\n\nLocated in the very heart of the golf course, Gibli Café is more than just a coffee bar – it is a true retreat for lovers of great coffee, peaceful atmosphere and natural beauty.\n\nWith a seating capacity of 50 guests for everyday enjoyment, as well as the possibility for larger gatherings of up to 150 people, the café offers the perfect ambiance for relaxation and socializing.\n\nTogether with the clubhouse at the Ohrid golf course, Gibli Café is an excellent choice for team-building activities, corporate events, and other celebrations, providing a unique opportunity to combine sports with business or private events in a distinctive setting.\n\nWe offer a carefully selected range of drinks and cocktails, perfectly complementing the taste and atmosphere of every moment. Our signature coffee, the unique Shakerato – cold, elegant, and unforgettable – is already a recognized symbol of the place.\n\nGibli Café is the perfect blend of urban elegance and natural tranquility, surrounded by impeccably maintained green areas, with panoramic views from all sides overlooking the course.\n\nIn this eco-conscious space, far from the city noise and hustle, every cup of coffee tastes like relaxation, and every cocktail tells its own story. Perfect for morning relaxation, afternoon chats, or evening events, Gibli Café is where nature and great taste meet.\n\nFree parking is available.",
       "type": "coffee",
@@ -633,13 +633,18 @@
       "imageUrl": "images_venue/gibli_card.png",
       "gallery": [
         {
-          "url": "venue_gallery/golf/photo1.jpg",
-          "alt": "A sunny outdoor scene showing a lush green golf course. In the foreground, part of a white pillar with pink floral decorations is visible on the left. Two golfers with push carts are walking in the distance across the green. On the right, a golf bag with clubs rests on a stand next to a green hitting mat. Trees line the background under a bright blue sky."
+          "url": "venue_gallery/gibli/photo1.jpg",
+          "alt": "A view of a golf practice area from a covered patio. White outdoor furniture with grey cushions is arranged on the stone patio. In the green grass beyond the patio, there are three golf bags on carts positioned next to green hitting mats and nets. A flag is visible on the left side, and a large tree is on the right."
         },
         {
-          "url": "venue_gallery/golf/photo2.jpg",
-          "alt": "A wide shot of a vibrant green golf course under a brilliant blue sky with some scattered white clouds. Trees line the left and background, and a distinctive gnarled, dead tree trunk stands on the right edge of the frame. The green grass of the course stretches out under the bright sunlight."
+          "url": "venue_gallery/gibli/photo2.jpg",
+          "alt": "A close-up of a table on a covered patio overlooking a golf course. A laptop is open on the left, displaying a webpage titled 'THE RULES OF GOLF.' On the right, a glass of an orange beverage with ice and a citrus slice sits on a black napkin. The background shows more outdoor furniture and a lush green golf course."
+        },
+        {
+          "url": "venue_gallery/gibli/photo3.jpg",
+          "alt": "A hand holds a stemmed glass with a dark, frothy drink, likely an espresso martini or similar coffee-based cocktail. The setting is an outdoor patio with a view of a green golf course in the background. A white pillar adorned with a garland of pink flowers is to the right, and green leaves from a tree are visible at the top."
         }
+       
       ],
       "rating": 4.8,
       "priceLevel": 2,
@@ -3404,12 +3409,20 @@
     "imageUrl": "images_venue/adventure_sport/golf_card.jpg",
     "gallery": [
       {
-        "url": "venue_gallery/golf/photo1.jpg",
-        "alt": "A sunny outdoor scene showing a lush green golf course. In the foreground, part of a white pillar with pink floral decorations is visible on the left. Two golfers with push carts are walking in the distance across the green. On the right, a golf bag with clubs rests on a stand next to a green hitting mat. Trees line the background under a bright blue sky."
+        "url": "venue_gallery/golf/photo5.jpg",
+        "alt": "A group of four men on a green golf course. One man in a blue shirt and blue hat is crouched down on the grass, picking up or placing a golf ball. Another man in a brightly patterned shirt stands to his right, holding a golf club. In the background, two more men watch. A golf bag on a pushcart is in the foreground to the left."
       },
       {
-        "url": "venue_gallery/golf/photo2.jpg",
-        "alt": "A wide shot of a vibrant green golf course under a brilliant blue sky with some scattered white clouds. Trees line the left and background, and a distinctive gnarled, dead tree trunk stands on the right edge of the frame. The green grass of the course stretches out under the bright sunlight."
+        "url": "venue_gallery/golf/photo6.jpg",
+        "alt": "A young man is teaching two young women how to play golf at a driving range. The man is holding a golf club and demonstrating a swing, while the two women watch intently. They are all standing on a green mat on a sunny day with trees in the background. A basket of golf balls sits on the mat to the right."
+      },
+      {
+        "url": "venue_gallery/golf/photo3.jpg",
+        "alt": " A close-up, low-angle shot of a single white golf ball resting on a tee in the middle of lush green grass. The background is a soft focus of more green grass and trees under a bright, overcast sky."
+      },
+      {
+        "url": "venue_gallery/golf/photo4.jpg",
+        "alt": "Two men are on a golf course. One man in a striped shirt and black pants is walking away from a white clubhouse in the background, carrying a golf bag over his shoulder. Another man in a light blue shirt is bent over, pushing a golf bag on a cart towards the right side of the frame."
       }
     ],
     "rating": 4.8,
