@@ -1119,9 +1119,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 if (isToday(date)) {
                     dayElement.classList.add('today');
-                }
-                
-                if (isSameDate(date, selectedDate)) {
+                    // Auto-select today's date on initial load
+                    if (isSameDate(date, selectedDate)) {
+                        dayElement.classList.add('selected');
+                    }
+                } else if (isSameDate(date, selectedDate)) {
                     dayElement.classList.add('selected');
                 }
                 
@@ -1435,6 +1437,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const eventsToday = eventsData.filter(event => event.isoDate === dateStr);
 
         if (eventsToday.length > 0) {
+            // Sort events by start time
+            eventsToday.sort((a, b) => {
+                const timeA = a.startTime || '00:00';
+                const timeB = b.startTime || '00:00';
+                return timeA.localeCompare(timeB);
+            });
+
             dailyEventsSuggestionContainer.classList.remove('hidden');
             dailyEventsSuggestionList.innerHTML = eventsToday.map(event => `
                 <div class="suggested-event-card">
