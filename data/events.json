@@ -2710,11 +2710,11 @@
   {
     "id": 157,
     "venueId": 5,
-    "eventName": "DJ Ljubisha (Afro Latino Vibes + Sax)",
+    "eventName": "DJ Miilo",
     "isoDate": "2025-07-16",
     "startTime": "23:55",
     "day": "Wed.",
-    "description": "Immerse yourself in a sensational evening at Omnia Night Club, as DJ Ljubisha transports you with an incredible fusion of Afro Latino vibes, elevated by the live, soulful sounds of a saxophone. This is more than just a night out; it's an experience designed to make your spirit soar and your feet move. Feel the passion, embrace the rhythm, and create unforgettable memories right here in Ohrid.",
+    "description": "",
     "category": "Music",
     "imageUrl": "images_venue/omnia_card.jpg",
     "eventBookingUrl": "#",
@@ -2934,7 +2934,7 @@
   {
     "id": 171,
     "venueId": 5,
-    "eventName": "DJ Ljubisha (Afro Latino Vibes + Sax)",
+    "eventName": "DJ Miilo",
     "isoDate": "2025-07-30",
     "startTime": "23:55",
     "day": "Wed.",
