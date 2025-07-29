@@ -58,12 +58,14 @@ app.use(helmet({
                 "https://www.google-analytics.com",
                 "https://fonts.googleapis.com",
                 "https://fonts.gstatic.com",
-                "https://cdn.jsdelivr.net"
+                "https://cdn.jsdelivr.net",
+                "https://formspree.io",
+                "https://*.formspree.io"
             ],
             frameSrc: ["'self'", "https://www.google.com", "https://maps.google.com"],
             objectSrc: ["'none'"],
             baseUri: ["'self'"],
-            formAction: ["'self'"]
+            formAction: ["'self'", "https://formspree.io", "https://*.formspree.io"]
         }
     }
 }));

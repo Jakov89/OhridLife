@@ -3317,8 +3317,24 @@ class ContactFormManager {
         // Add real-time validation
         this.addRealTimeValidation();
         
-        // Handle form submission
-        this.form.addEventListener('submit', (e) => this.handleSubmit(e));
+        // Handle form submission - let HTML handle it natively for Formspree
+        this.form.addEventListener('submit', (e) => {
+            // For Formspree, let the form submit naturally
+            if (this.form.action && this.form.action.includes('formspree.io')) {
+                // Set the reply-to field
+                const replyToField = this.form.querySelector('input[name="_replyto"]');
+                if (replyToField) {
+                    const emailField = this.form.querySelector('input[name="email"]');
+                    if (emailField) {
+                        replyToField.value = emailField.value;
+                    }
+                }
+                // Let form submit naturally - no preventDefault
+                return true;
+            }
+            // For other submissions, use JavaScript
+            this.handleSubmit(e);
+        });
     }
     
     addRealTimeValidation() {
