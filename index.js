@@ -3460,47 +3460,36 @@ class ContactFormManager {
     
     async submitToAPI(data) {
         try {
-            // Send to backend API
-            const response = await fetch('/api/contact', {
+            // Submit to Formspree - configured with your form endpoint
+            const response = await fetch('https://formspree.io/f/xrblkjja', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    ...data,
-                    to: 'contact@ohridhub.mk',
-                    timestamp: new Date().toISOString()
+                    name: data.name,
+                    email: data.email,
+                    subject: data.subject || 'New Contact Form Message',
+                    message: data.message,
+                    _replyto: data.email,
+                    _subject: `OhridHub Contact: ${data.subject || 'New Message'}`
                 })
             });
             
             if (response.ok) {
+                console.log('✅ Email sent successfully via Formspree');
                 return true;
             } else {
-                console.error('Server responded with error:', response.status);
+                console.error('❌ Formspree error:', response.status);
                 return false;
             }
         } catch (error) {
-            console.error('Network error submitting form:', error);
-            
-            // Fallback: Try alternative email service (EmailJS)
-            return this.submitViaEmailJS(data);
-        }
-    }
-    
-    async submitViaEmailJS(data) {
-        // Alternative client-side email service
-        // You can configure EmailJS for immediate email sending without backend
-        try {
-            // This would require EmailJS setup
-            console.log('Fallback: Contact form data:', data);
-            
-            // For now, return true to show success (actual implementation would need EmailJS configuration)
-            return true;
-        } catch (error) {
-            console.error('EmailJS submission failed:', error);
+            console.error('❌ Network error submitting form:', error);
             return false;
         }
     }
+    
+    // Removed EmailJS - using simple Formspree instead
     
     setLoading(loading) {
         if (!this.submitButton) return;
