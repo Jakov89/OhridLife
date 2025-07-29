@@ -6,6 +6,8 @@ const { Readable } = require('stream');
 const compression = require('compression');
 const helmet = require('helmet');
 const sharp = require('sharp');
+const nodemailer = require('nodemailer');
+require('dotenv').config();
 
 // Cache for optimized images
 const imageCache = new Map();
@@ -68,6 +70,10 @@ app.use(helmet({
 
 // Enable compression
 app.use(compression());
+
+// Parse JSON requests for API endpoints
+app.use(express.json({ limit: '10mb' }));
+app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
 // Optimized image route
 app.get('/optimized-image/*', async (req, res) => {
@@ -790,7 +796,7 @@ app.post('/api/contact', async (req, res) => {
             `
         };
         
-        // For now, log the email content (replace with actual email sending)
+        // Log the email content for debugging
         console.log('📧 Contact Form Submission:');
         console.log('From:', email);
         console.log('Name:', name);
@@ -798,20 +804,33 @@ app.post('/api/contact', async (req, res) => {
         console.log('Message:', message);
         console.log('Timestamp:', timestamp);
         
-        // TODO: Implement actual email sending with nodemailer or similar service
-        // Example implementation would be:
-        /*
-        const nodemailer = require('nodemailer');
-        const transporter = nodemailer.createTransporter({
-            service: 'gmail', // or your email service
-            auth: {
-                user: process.env.EMAIL_USER,
-                pass: process.env.EMAIL_PASS
+        // Send email if configured
+        if (process.env.EMAIL_USER && process.env.EMAIL_PASS) {
+            try {
+                const transporter = nodemailer.createTransporter({
+                    service: 'gmail',
+                    auth: {
+                        user: process.env.EMAIL_USER,
+                        pass: process.env.EMAIL_PASS
+                    }
+                });
+                
+                await transporter.sendMail({
+                    from: process.env.EMAIL_USER,
+                    to: process.env.EMAIL_TO || 'contact@ohridhub.mk',
+                    subject: emailContent.subject,
+                    html: emailContent.html,
+                    replyTo: email
+                });
+                
+                console.log('✅ Email sent successfully');
+            } catch (emailError) {
+                console.error('❌ Email sending failed:', emailError.message);
+                // Don't fail the request if email fails - still log the submission
             }
-        });
-        
-        await transporter.sendMail(emailContent);
-        */
+        } else {
+            console.log('⚠️  Email not configured - submission logged only');
+        }
         
         // Store submission (optional - you could save to database)
         const submission = {
