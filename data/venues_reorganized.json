@@ -3664,5 +3664,37 @@
     "workingHours": "10:30 - 19:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 103,
+    "name": "Youth Center Ohrid (YCO)",
+    "description": "Youth Center Ohrid is a vibrant hub for creative learning and cultural activities in the heart of Ohrid. This welcoming space provides young people with opportunities to explore their artistic talents, develop new skills, and connect with their community through various educational programs and workshops.\n\nThe center regularly hosts art classes, creative workshops, and cultural events that foster creativity and personal growth. With experienced instructors and a supportive environment, it's the perfect place for young minds to flourish and express themselves through various forms of artistic expression.\n\nWhether you're interested in visual arts, learning new techniques, or participating in community events, Youth Center Ohrid offers a warm, inclusive atmosphere where creativity and learning come together.",
+    "type": [
+      "educational",
+      "cultural"
+    ],
+    "tags": [
+      "youth",
+      "education",
+      "art",
+      "workshops",
+      "cultural",
+      "community",
+      "creative",
+      "learning"
+    ],
+    "imageUrl": "images_venue/mco_card.jpg",
+    "gallery": [],
+    "rating": 4.7,
+    "priceLevel": 1,
+    "location": {
+      "address": "Youth Center Ohrid (YCO), Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Youth+center+Ohrid+(YCO)/@41.129200408359004,20.809696728549735",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.3109853509307!2d20.809696728549735!3d41.129200408359004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbcdb1fa6ad7%3A0xeb96484349cc5d1d!2sYouth%20center%20Ohrid%20(YCO)!5e0!3m2!1sen!2smk!4v1753977790408!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "",
+    "workingHours": "09:00 - 17:00 (Mon - Fri)",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
