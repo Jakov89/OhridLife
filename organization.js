@@ -993,7 +993,7 @@ function openEventModal(eventId) {
         // Replace newline characters with <br> tags to render paragraphs
         eventDescriptionEl.innerHTML = (event.longDescription || event.description).replace(/\n/g, '<br>');
     } else {
-        eventDescriptionEl.textContent = 'No description available.';
+        eventDescriptionEl.style.display = 'none';
     }
 
     const eventImageEl = modal.querySelector('#modal-event-image');

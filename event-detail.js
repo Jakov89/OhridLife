@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const description = event.longDescription || event.description;
                 descriptionEl.innerHTML = description.replace(/\n/g, '<br>');
             } else {
-                descriptionEl.textContent = 'No description available.';
+                descriptionEl.style.display = 'none';
             }
             
             // Booking button
