@@ -1,5 +1,44 @@
 [
   {
+    "id": 103,
+    "name": "Amfora Restaurant",
+    "description": "Amfora Restaurant in Ohrid is one of those rare spots where you instantly feel at ease. Tucked just a short walk from the lake, it offers a cozy, welcoming atmosphere with a touch of elegance. The food speaks for itself—fresh, local ingredients turned into traditional Macedonian dishes with a modern twist. Whether you're there for a relaxed lunch or a slow dinner with wine as the sun sets, Amfora makes you feel like you're exactly where you're supposed to be.",
+    "type": "restaurant",
+    "tags": [
+      "restaurant",
+      "traditional",
+      "cozy",
+      "elegant",
+      "local cuisine"
+    ],
+    "imageUrl": "images_venue/amfora_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/amfora/photo1.jpg",
+        "alt": "A warmly lit private dining area at Amfora Restaurant, featuring a long wooden table elegantly set with wine glasses and white napkins, surrounded by velvet chairs and a dark green cushioned bench against an exposed brick wall with a painting of a boat."
+      },
+      {
+        "url": "venue_gallery/amfora/photo2.jpg",
+        "alt": "A wide view of Amfora Restaurant's modern interior with wooden flooring, stylish chairs, and a welcoming atmosphere. The setting includes dim lighting, contemporary décor, and softly bustling tables in the background."
+      },
+      {
+        "url": "venue_gallery/amfora/photo3.jpg",
+        "alt": "A cozy corner inside Amfora Restaurant, framed by lush green plants in the foreground. The table is neatly arranged for guests, surrounded by plush seating under warm ambient lighting and a ceiling with decorative fixtures."
+      }
+    ],
+    "rating": 4.0,
+    "priceLevel": 2,
+    "location": {
+      "address": "Amfora Restaurant, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Amfora+Restaurant",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.4149272395437!2d20.803154587558076!3d41.111345514302116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb73fc2689d%3A0xac2f3deaa7f9e4ad!2sAmfora%20Restaurant!5e0!3m2!1sen!2smk!4v1754156666553!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070605206",
+    "workingHours": "11:00 - 23:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
     "id": 85,
     "name": "Restaurant Bravo",
     "description": "Bravo Restaurant, perched just above the charming city of Ohrid, offers more than just a meal – it's an experience for all your senses. Imagine savoring delicious local flavors while gazing out at the breathtaking panoramic views of Lake Ohrid and the red-tiled roofs of the old town. Whether you're enjoying a sun-drenched lunch on their terrace or a romantic dinner under the stars, the warm and welcoming atmosphere at Bravo makes every moment feel special. It's the perfect spot to unwind, soak in the beauty, and create unforgettable memories with loved ones.",
