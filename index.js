@@ -33,6 +33,10 @@ const mainCategoryConfig = {
         icon: '🏞️',
         subcategories: ['kayaking', 'sup', 'diving', 'cruises', 'hiking', 'atv', 'sports', 'camping', 'gym', 'fitness', 'paragliding', 'golf'],
     },
+    'Entertainment & Gaming': {
+        icon: '🎮',
+        subcategories: ['gaming-house', 'vr-gaming', 'board-games','darts','billiards'],
+    },
     'Health & Wellness': {
         icon: '⚕️',
         subcategories: ['hospital', 'pharmacy', 'dentist', 'spa'],
@@ -48,7 +52,7 @@ const mainCategoryConfig = {
     'Pet Care': {
         icon: '🐾',
         subcategories: ['vet', 'pet-shop', 'grooming'],
-    }
+    }   
 };
 
 

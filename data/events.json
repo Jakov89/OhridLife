@@ -1,5 +1,21 @@
 [
   {
+    "id": 488,
+    "venueId": 85,
+    "eventName": "Jordan Mitev",
+    "isoDate": "2025-08-08",
+    "startTime": "21:00",
+    "day": "Fri.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "events_image/bravo/08.08.png",
+    "eventBookingUrl": "#",
+    "eventContact": "075 995 000 | 075 998 001",
+    "ticketPrice": "Free Entry",
+    "locationName": "Restaurant Bravo",
+    "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.5609140962213!2d20.821649056696856!3d41.08818471438427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c55efe28b2e1%3A0xd13e2614c2dffaf4!2sRestaurant%20Bravo!5e0!3m2!1sen!2smk!4v1753096219824!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
     "id": 487,
     "organizationId": 3,
     "eventName": "Dani Dimitriovska",
@@ -3869,7 +3885,7 @@
     "locationName": "Holland Park"
   },
   {
-    "id": 187,
+        "id": 187,
     "venueId": null,
     "eventName": "Lychnid Running Society",
     "isoDate": "2025-08-03",
@@ -3881,8 +3897,8 @@
     "eventBookingUrl": "#",
     "eventContact": "N/A",
     "ticketPrice": "Free participation",
-    "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4130.839233079902!2d20.803367611876848!3d41.101013828538385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca9f9db054d%3A0x71c13f3efa95e411!2sVoena%20plazha!5e0!3m2!1sen!2smk!4v1754059947708!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "locationName": "Voena Plaža (Military Beach)"
+    "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5219636896414!2d20.8018714667874!3d41.11077231398043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca6762de8ff%3A0x7211a175c9a90fa!2sOld%20Swimming%20Court!5e0!3m2!1sen!2smk!4v1754087063695!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Military Beach (Voena Plaža)"
   },
   {
     "id": 188,
