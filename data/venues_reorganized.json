@@ -14,15 +14,15 @@
     "imageUrl": "images_venue/amfora_card.jpg",
     "gallery": [
       {
-        "url": "venue_gallery/amfora/photo1.jpg",
+        "url": "venue_gallery/amfora/photo1.png",
         "alt": "A warmly lit private dining area at Amfora Restaurant, featuring a long wooden table elegantly set with wine glasses and white napkins, surrounded by velvet chairs and a dark green cushioned bench against an exposed brick wall with a painting of a boat."
       },
       {
-        "url": "venue_gallery/amfora/photo2.jpg",
+        "url": "venue_gallery/amfora/photo2.png",
         "alt": "A wide view of Amfora Restaurant's modern interior with wooden flooring, stylish chairs, and a welcoming atmosphere. The setting includes dim lighting, contemporary décor, and softly bustling tables in the background."
       },
       {
-        "url": "venue_gallery/amfora/photo3.jpg",
+        "url": "venue_gallery/amfora/photo3.png",
         "alt": "A cozy corner inside Amfora Restaurant, framed by lush green plants in the foreground. The table is neatly arranged for guests, surrounded by plush seating under warm ambient lighting and a ceiling with decorative fixtures."
       }
     ],
