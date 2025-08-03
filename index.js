@@ -534,7 +534,7 @@ function generateEventSchema(event) {
             "url": "https://www.ohridhub.mk",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.ohridhub.mk/logo/ohridhub.png"
+                "url": "https://www.ohridhub.mk/logo/ohridhub_logo_transparent_belo.png"
             }
         }
     };
@@ -736,7 +736,7 @@ function preloadCriticalImages() {
     const criticalImages = [
         'images_ohrid/photo1.jpg',
         'images_ohrid/photo6.jpg',
-        'logo/ohridhub.png'
+        'logo/ohridhub_logo_transparent_belo.png'
     ];
     
     criticalImages.forEach(imagePath => {
