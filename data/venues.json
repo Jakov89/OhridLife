@@ -3702,5 +3702,35 @@
     "workingHours": "09:00 - 01:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 108,
+    "name": "Hype Gaming",
+    "description": "Hype Gaming is the go-to spot in Ohrid for gamers who want it all. With high-end PCs and PlayStations ready to go, it's the perfect place to jump into your favorite games solo or with friends. Whether you're into competitive action or just casual fun, Hype brings the energy.",
+    "type": [
+      "gaming-house"
+    ],
+    "tags": [
+      "gaming",
+      "esports",
+      "entertainment",
+      "pc-gaming",
+      "playstation",
+      "competitive",
+      "casual"
+    ],
+    "imageUrl": "images_venue/enterteiment/hype_card.jpg",
+    "gallery": [],
+    "rating": 4.3,
+    "priceLevel": 2,
+    "location": {
+      "address": "Hype, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Hype/@41.111674202801495,20.80765283032175",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d265.6994883973052!2d20.80765283032175!3d41.111674202801495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dba8cbaffb45%3A0x58ec80a92ef03b29!2sHype!5e0!3m2!1sen!2smk!4v1754250568331!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "078 381 802",
+    "workingHours": "11:00 - 03:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
