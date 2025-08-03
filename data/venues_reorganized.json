@@ -3933,5 +3933,94 @@
     "workingHours": "11:00 - 03:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 109,
+    "name": "Beach & Bar K'j Divono",
+    "description": "A beautiful lakeside venue combining a relaxing beach atmosphere with quality restaurant service. Perfect for enjoying meals and drinks while soaking up the stunning Lake Ohrid views in a natural outdoor setting.",
+    "type": [
+      "beach",
+      "restaurant"
+    ],
+    "tags": [
+      "beach",
+      "restaurant",
+      "lakeside",
+      "outdoor",
+      "scenic",
+      "relaxing",
+      "family-friendly"
+    ],
+    "imageUrl": "images_venue/divono_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/divono/photo1.jpg",
+        "alt": "People sit at wooden picnic tables under large, green \"Zlaten Dab\" branded umbrellas in a sunny outdoor restaurant. The tables are on a paved area next to a grassy lawn. In the background, there are numerous other patrons, and beyond them, the clear blue water of a lake stretches to the horizon, surrounded by lush green trees."
+      },
+      {
+        "url": "venue_gallery/divono/photo2.jpg",
+        "alt": "A scenic view of a lake at sunset. The sun is a bright, lens-flared orb in the sky, casting a warm glow over the calm water. The foreground is a grassy area with people relaxing on sun loungers and sitting at picnic tables under green \"Zlaten Dab\" umbrellas. Several colorful kayaks are visible on the grass to the right, near the water's edge."
+      },
+      {
+        "url": "venue_gallery/divono/photo3.jpg",
+        "alt": "An image of a campground or picnic area, showing several large, round wooden picnic tables and benches scattered across a grassy field. In the background, multiple large campervans and cars are parked, with tall pine trees and other deciduous trees providing shade. The sky is bright and blue, and the late afternoon sun casts long shadows from the trees and tables."
+      }
+    ],
+    "rating": 4.3,
+    "priceLevel": 2,
+    "location": {
+      "address": "Restaurant K'j Divono, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Restaurant+K'j+Divono/@41.09106493486494,20.799815452226216",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.7475021926772!2d20.799815452226216!3d41.09106493486494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c350e996fb19%3A0x3c0e460ffa3d014!2zUmVzdGF1cmFudCDigJ5LJ2ogRGl2b25v4oCc!5e0!3m2!1sen!2smk!4v1754253360324!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "078 472 482",
+    "workingHours": "09:00 - 22:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 110,
+    "name": "Camperstop Divono",
+    "description": "Camperstop Divono offers the perfect lakeside stop for travelers on the road. Located just steps from Lake Ohrid, it provides a peaceful place to park, rest, and recharge. With clean facilities, friendly hosts, and easy access to the beach and bar next door, it's a favorite spot for camper lovers exploring Ohrid.",
+    "type": [
+      "camping",
+      "beach"
+    ],
+    "tags": [
+      "camping",
+      "beach",
+      "campervan",
+      "lakeside",
+      "travel",
+      "outdoor",
+      "facilities",
+      "peaceful"
+    ],
+    "imageUrl": "images_venue/adventure_sport/divono_card.png",
+    "gallery": [
+      {
+        "url": "venue_gallery/campdivono/photo1.jpg",
+        "alt": "Several large white campervans and a travel trailer are parked on a grassy field, surrounded by tall pine trees. In the distance, a body of water is visible through the trees. The sky is overcast and the ground is covered in green grass and pine needles. A couple of picnic tables are also visible near the water's edge."
+      },
+      {
+        "url": "venue_gallery/campdivono/photo2.jpg",
+        "alt": "A wide-angle view of a grassy campsite on a sunny day. A large, dark-colored camper truck and a smaller orange van are parked on the left, facing a large body of water. On the right, a white campervan is parked next to a yellow pop-up tent. The sky is a clear, bright blue, and a line of mountains is visible in the distance across the water."
+      },
+      {
+        "url": "venue_gallery/campdivono/photo3.jpg",
+        "alt": "An open, grassy field is used as a campsite with several campervans and travel trailers lined up in the background. The vehicles are of various colors, including white, green, and yellow. The field is surrounded by trees and a few buildings are visible on the far right. The sky is partly cloudy with patches of blue."
+      }
+    ],
+    "rating": 4.3,
+    "priceLevel": 2,
+    "location": {
+      "address": "Camper Stop Divono, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Camper+Stop+Divono/@41.09113038576699,20.79990891026699",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d632.1411500249187!2d20.79990891026699!3d41.09113038576699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c34eb7bb1e91%3A0xbe7a6f98373caced!2sCamper%20Stop%20Divono%22!5e0!3m2!1sen!2smk!4v1754254026061!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "078 472 482",
+    "workingHours": "00:00 - 24:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
