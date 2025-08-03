@@ -3551,5 +3551,62 @@
     "workingHours": "08:00 - 22:00 (Mon)<br>Tuesday Closed<br>08:00 - 22:00 (Wed - Fri)<br>10:00 - 23:00 (Sun - Sat)",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 105,
+    "name": "ENTiTY",
+    "description": "Step into ENTiTY, the premier electronic sports center in the heart of Ohrid, designed for both dedicated gaming enthusiasts and casual players. We've created the ultimate gaming atmosphere with top-of-the-line PCs and professional-grade gear to elevate your experience.\n\nOur high-performance setups feature:\n\nCPUs: AMD Ryzen 7 7800X3D\n\nGPUs: NVIDIA GeForce 4060 Ti, 4070 Ti Super, and 4080 Super\n\nMemory: 32GB 6000MHz RAM\n\nImmerse yourself in ultra-smooth gameplay with our cutting-edge monitors from BenQ, offering refresh rates of 240Hz, 400Hz, and even 540Hz.\n\nFor console fans, we also offer the latest PlayStation 5 Pro with 144Hz TVs for a truly next-gen experience.\n\nGame in comfort and style with our DXRacer and Noblechair professional gaming chairs.\n\nWhether you're training for a tournament or just looking to have fun, ENTiTY provides the perfect blend of high-end technology and a welcoming community atmosphere.",
+    "type": [
+      "gaming-house"
+    ],
+    "tags": [
+      "gaming",
+      "esports",
+      "entertainment",
+      "technology",
+      "community"
+    ],
+    "imageUrl": "images_venue/enterteiment/entity_card.png",
+    "gallery": [
+      {
+        "url": "venue_gallery/entity/photo1.jpg",
+        "alt": "A row of four high-end gaming stations with dark gaming chairs and monitors. Above the desks, a row of lit-up, custom-built PCs with clear cases and white liquid cooling systems are mounted on a shelf. The room is dimly lit with blue and purple ambient lighting."
+      },
+      {
+        "url": "venue_gallery/entity/photo2.jpg",
+        "alt": "A wide shot of a modern gaming lounge. On the left, a low wall separates a lounge area with plush sofas and low tables from the main gaming area. The lounge has a large window looking into a different section. The main gaming area features rows of computers and gaming chairs, illuminated with blue light."
+      },
+      {
+        "url": "venue_gallery/entity/photo3.jpg",
+        "alt": "A wide-angle view of an esports center with a long row of gaming PCs and chairs. The room has a dark, futuristic aesthetic with blue and purple ambient lighting. On the right, a long shelf holds several desktop computers with glowing components. On the left, a lounge area with sofas is partially visible."
+      },
+      {
+        "url": "venue_gallery/entity/photo4.jpg",
+        "alt": "A view of a row of gaming stations from the side, showing multiple black gaming chairs and monitors displaying the ENTiTY logo. Above the stations, a row of white desktop computers with custom water-cooling and illuminated components are visible. The room has a dark ambiance with purple lighting and a display case with a trophy and a jersey on a shelf in the background."
+      },
+      {
+        "url": "venue_gallery/entity/photo5.jpg",
+        "alt": "A close-up side view of a row of gaming stations. Each station has a monitor displaying the ENTiTY logo, a mechanical keyboard, headphones, and a mouse on a large gaming mat. The gaming chairs have green LED lights underneath them, and the desktop PCs on a shelf above are illuminated with a warm light."
+      },
+      {
+        "url": "venue_gallery/entity/photo6.jpg",
+        "alt": "A close-up, low-angle shot of a gaming station. A monitor displays the ENTiTY esports logo and information in a foreign language. A mechanical keyboard, mouse, and headphones are placed on a large gaming mousepad. The gaming chair is black with green accents and the room is lit with a purple light."
+      },
+      {
+        "url": "venue_gallery/entity/photo7.jpg",
+        "alt": "A close-up side view of a row of gaming stations with red and black gaming chairs. The monitors display the ENTiTY logo. The desktop PCs at the first two stations are black with glowing blue fans and components. The stations have mechanical keyboards and large mousepads, and the room is lit with a combination of blue and red ambient light."
+      }
+    ],
+    "rating": 5.0,
+    "priceLevel": 2,
+    "location": {
+      "address": "eSports ENTiTY, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/eSports+ENTiTY/@41.115839436402986,20.79974916772834",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125.4610457663084!2d20.79974916772834!3d41.115839436402986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd4744188455%3A0x753cc639e8f43b97!2seSports%20ENTiTY!5e0!3m2!1sen!2smk!4v1754217850714!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070 328 068",
+    "workingHours": "12:00 - 04:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
