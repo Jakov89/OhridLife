@@ -3865,5 +3865,42 @@
     "workingHours": "08:00 - 00:00 (Mon - Thu)<br>08:00 - 01:00 (Fri - Sat)",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 112,
+    "name": "Karting Rimo",
+    "description": "Karting Rimo brings the thrill of speed to the heart of Ohrid. With a well-maintained outdoor track, powerful karts, and a safe setup, it's perfect for adrenaline seekers of all ages. Whether you're racing friends or practicing solo, expect a fun, competitive vibe with some scenic lake views nearby.",
+    "type": [
+      "go-kart"
+    ],
+    "tags": [
+      "adventure",
+      "sport",
+      "go-kart",
+      "racing",
+      "outdoor",
+      "adrenaline",
+      "competitive",
+      "family-friendly",
+      "speed"
+    ],
+    "imageUrl": "images_venue/adventure_sport/rimo_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/rimo/photo1.jpg",
+        "alt": "Two people are driving go-karts on a paved outdoor track. The track is lined with stacks of old tires, painted in alternating colors of red, orange, and black, to serve as barriers. The drivers are wearing white helmets. The sky is clear and blue, and there are trees and buildings in the background."
+      }
+    ],
+    "rating": 4.4,
+    "priceLevel": 2,
+    "location": {
+      "address": "Karting Rimo, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Karting+Rimo/@41.10209578810158,20.812396880947293",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4251.811986541195!2d20.812396880947293!3d41.10209578810158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db56f6e15a43%3A0xf1d04ca50210645e!2zS2FydGluZyDigJ5SaW1v4oCc!5e0!3m2!1sen!2smk!4v1754257291866!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "078 232 770",
+    "workingHours": "18:00 - 00:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]

@@ -31,7 +31,7 @@ const mainCategoryConfig = {
     },
     'Adventure & Sport': {
         icon: '🏞️',
-        subcategories: ['kayaking', 'sup', 'diving', 'cruises', 'hiking', 'atv', 'sports', 'camping', 'gym', 'fitness', 'paragliding', 'golf'],
+        subcategories: ['kayaking', 'sup', 'diving', 'cruises', 'hiking', 'atv', 'sports', 'camping', 'gym', 'fitness', 'paragliding', 'golf', 'go-kart'],
     },
     'Entertainment & Gaming': {
         icon: '🎮',
