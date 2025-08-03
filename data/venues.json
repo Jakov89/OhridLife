@@ -3821,5 +3821,49 @@
     "workingHours": "00:00 - 24:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 111,
+    "name": "Restaurant Biljanini Izvori",
+    "description": "Restaurant Biljanini Izvori blends tradition, flavor, and nature in one iconic spot. Located near the famous springs, it's known for its authentic Macedonian cuisine, fresh trout, and peaceful outdoor seating surrounded by greenery. Whether you're a local or a visitor, it's a place where good food meets Ohrid's natural beauty.",
+    "type": [
+      "restaurant"
+    ],
+    "tags": [
+      "restaurant",
+      "traditional",
+      "macedonian-cuisine",
+      "trout",
+      "outdoor-seating",
+      "nature",
+      "springs",
+      "authentic"
+    ],
+    "imageUrl": "images_venue/biljanini_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/biljanini/photo1.jpg",
+        "alt": "A peaceful outdoor scene in a park-like setting. In the center, a white, modern-style sculpture stands in the middle of a round pond. The pond is surrounded by a path and lush green trees. In the foreground, the back of a black horse-drawn carriage with red wheels is visible."
+      },
+      {
+        "url": "venue_gallery/biljanini/photo2.jpg",
+        "alt": "An outdoor restaurant patio is set in a green, wooded area. Patrons are seated at tables under a roof and large green umbrellas. The patio is surrounded by a curved, stone-paved path and a small lawn. Large terracotta pots with plants and hanging baskets with flowers decorate the space."
+      },
+      {
+        "url": "venue_gallery/biljanini/photo3.jpg",
+        "alt": "The interior of a rustic restaurant with a wooden ceiling and large windows that offer a view of trees outside. Wooden tables are set with white tablecloths and red checkered runners. The room is decorated with various items, including a model sailboat, a ship, and several antique-style lamps. A flat-screen TV is mounted high on the wall."
+      }
+    ],
+    "rating": 4.3,
+    "priceLevel": 3,
+    "location": {
+      "address": "Biljana's Springs Restaurant, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Biljana's+Springs+Restaurant/@41.1029842,20.8145509",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.6111043606429!2d20.8145509!3d41.1029842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db51394c5f7f%3A0x5aad7cbe9f5f70de!2sBiljana's%20Springs%20Restaurant!5e0!3m2!1sen!2smk!4v1754255684211!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "078 278 501",
+    "workingHours": "08:00 - 00:00 (Mon - Thu)<br>08:00 - 01:00 (Fri - Sat)",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
