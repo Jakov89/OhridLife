@@ -4103,5 +4103,105 @@
     "workingHours": "18:00 - 00:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 113,
+    "name": "Gostilnica kaj Meche",
+    "description": "Gostilnica Kaj Meche feels like home with a plate of real, hearty food. Known for its traditional Macedonian dishes, generous portions, and warm hospitality, it's the kind of place where locals gather and visitors keep coming back. Simple, tasty, and made with love.",
+    "type": [
+      "restaurant"
+    ],
+    "tags": [
+      "restaurant",
+      "traditional",
+      "macedonian-cuisine",
+      "local",
+      "homestyle",
+      "affordable",
+      "family-friendly"
+    ],
+    "imageUrl": "images_venue/mece_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/mece/photo1.jpg",
+        "alt": "An indoor dining area with wooden tables set with plates, glasses, and napkins. A large window behind the tables offers a view of a lake and mountains."
+      },
+      {
+        "url": "venue_gallery/mece/photo2.jpg",
+        "alt": "A nighttime exterior shot of a restaurant named \"ГОСТИЛНИЦА КАЈ МЕЧЕ\" (Gostilnica Kaj Meche). The sign is lit up with bright white lights, and the building has a modern design with a glass-enclosed balcony"
+      },
+      {
+        "url": "venue_gallery/mece/photo3.jpg",
+        "alt": "A close-up of a dish served on a wooden cutting board. The dish consists of a large piece of roasted meat topped with a thick slice of grilled onion, served with a side of french fries and a slice of tomato. The restaurant's logo and name, \"ГОСТИЛНИЦА КАЈ МЕЧЕ,\" are branded on the board."
+      },
+      {
+        "url": "venue_gallery/mece/photo4.jpg",
+        "alt": "A close-up of a traditional Macedonian dish, possibly a stew, served in an orange clay pot. The dish is placed on a white plate with a fork and knife on a red and white checkered tablecloth. A glass of water is visible in the background. The restaurant's logo and name are visible in the top left corner."
+      }
+    ],
+    "rating": 4.6,
+    "priceLevel": 1,
+    "location": {
+      "address": "Gostilnica Kaj Meche, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Gostilnica+Kaj+Meče/@41.06163511207798,20.80203269415517",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d447.191906574417!2d20.80203269415517!3d41.06163511207798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c37f48644c11%3A0x44052259699db03d!2sGostilnica%20Kaj%20Me%C4%8De!5e0!3m2!1sen!2smk!4v1754258666402!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "078 350 955",
+    "workingHours": "08:30 - 00:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 114,
+    "name": "Gostilnica Grne",
+    "description": "Gostilnica Grne is all about real Macedonian comfort food, served with heart. Tucked in a quiet corner of Ohrid, it's known for its clay pot dishes, homemade flavors, and cozy, no-fuss atmosphere that makes you feel like you're eating at grandma's table.",
+    "type": [
+      "restaurant"
+    ],
+    "tags": [
+      "restaurant",
+      "traditional",
+      "macedonian-cuisine",
+      "local",
+      "homestyle",
+      "affordable",
+      "family-friendly",
+      "clay-pot",
+      "comfort-food"
+    ],
+    "imageUrl": "images_venue/grne_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/grne/photo1.jpg",
+        "alt": "An indoor view of a cozy restaurant dining area with a rustic feel. The room has exposed wooden beams, brick walls, and multiple tables with checkered tablecloths. Large windows provide a view of an outdoor patio area."
+      },
+      {
+        "url": "venue_gallery/grne/photo2.jpg",
+        "alt": "A brighter, slightly different angle of the same restaurant dining area. The image shows the tables with red and white checkered tablecloths and cushioned chairs. The large glass doors are open, leading to an outdoor seating area."
+      },
+      {
+        "url": "venue_gallery/grne/photo3.jpg",
+        "alt": "A nighttime shot of the restaurant's entrance. The building has a stone foundation and a covered patio area with a wooden structure, lit by warm pendant lights. Steps lead up to the entrance, and there are potted plants and rustic decor."
+      },
+      {
+        "url": "venue_gallery/grne/photo4.jpg",
+        "alt": "A close-up, top-down view of a platter of food on a wooden board. The platter includes grilled halloumi cheese, french fries in a small clay pot, grilled onions, grilled zucchini, and grilled tomatoes. A pair of metal tongs rests on the platter."
+      },
+      {
+        "url": "venue_gallery/grne/photo5.jpg",
+        "alt": "A close-up of a bubbling dish served in a traditional clay pot. The dish appears to be a casserole or stew with melted cheese and fresh parsley on top. It's sitting on a wooden board and a napkin, on a table with a red and white checkered tablecloth."
+      }
+    ],
+    "rating": 4.4,
+    "priceLevel": 1,
+    "location": {
+      "address": "Gostilnica Grne, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Gostilnica+Grne/@41.06052300140558,20.802781053416254",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d447.19946830046945!2d20.802781053416254!3d41.06052300140558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c37f60a3049f%3A0x6e5cf6fc41be86bc!2sGostilnica%20Grne!5e0!3m2!1sen!2smk!4v1754258975540!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "071 463 322",
+    "workingHours": "08:00 - 22:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
