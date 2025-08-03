@@ -14,15 +14,15 @@
     "imageUrl": "images_venue/amfora_card.jpg",
     "gallery": [
       {
-        "url": "venue_gallery/amfora/photo1.jpg",
+        "url": "venue_gallery/amfora/photo1.png",
         "alt": "A warmly lit private dining area at Amfora Restaurant, featuring a long wooden table elegantly set with wine glasses and white napkins, surrounded by velvet chairs and a dark green cushioned bench against an exposed brick wall with a painting of a boat."
       },
       {
-        "url": "venue_gallery/amfora/photo2.jpg",
+        "url": "venue_gallery/amfora/photo2.png",
         "alt": "A wide view of Amfora Restaurant's modern interior with wooden flooring, stylish chairs, and a welcoming atmosphere. The setting includes dim lighting, contemporary décor, and softly bustling tables in the background."
       },
       {
-        "url": "venue_gallery/amfora/photo3.jpg",
+        "url": "venue_gallery/amfora/photo3.png",
         "alt": "A cozy corner inside Amfora Restaurant, framed by lush green plants in the foreground. The table is neatly arranged for guests, surrounded by plush seating under warm ambient lighting and a ceiling with decorative fixtures."
       }
     ],
@@ -3487,5 +3487,69 @@
       "workingHours": "08:00 - 22:00 (Daily)",
       "bookingUrl": "#",
       "events": []
-    }
+    },
+  {
+    "id": 104,
+    "name": "Plate Bistro",
+    "description": "At @platebistro, everything revolves around the kitchen. It's the kind of place where great food meets a laid-back, casual vibe. Their signature burgers — made from 100% beef, either smashed or shredded — have built a loyal following, and for good reason. If you're in the mood for something lighter, their rice-based bowl salads with chicken or beef and fresh veggies hit the spot. Mornings start with eggs for breakfast, evenings bring out the cocktails and shareable bites, and during the day, it's the perfect place to enjoy a quality coffee or a calming tea.",
+    "type": [
+      "restaurant",
+      "fast-food",
+      "to-go"
+    ],
+    "tags": [
+      "restaurant",
+      "burgers",
+      "breakfast",
+      "coffee",
+      "cocktails",
+      "casual dining"
+    ],
+    "imageUrl": "images_venue/plate_card5.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/plate/photo1",
+        "alt": "A top-down view of two plates on a wooden table. One plate contains a pulled pork burger with a side of french fries and a small bowl of sauce. The other plate holds a bowl of food that appears to be a salad or rice bowl with various toppings, and next to it are what looks like two slices of bread and a folded omelet or crepe-like item."
+      },
+      {
+        "url": "venue_gallery/plate/photo2",
+        "alt": "A close-up, eye-level shot of a pulled pork burger with a wooden skewer stuck through the top bun, served on a red and white plate. Next to the burger is a pile of french fries and a small dish of sauce. The background is a brightly lit, out-of-focus window with the reverse text \"etalo\" visible."
+      },
+      {
+        "url": "venue_gallery/plate/photo3",
+        "alt": "A small white espresso cup with the \"S. Giusto\" logo sits on a matching saucer on a wooden table. The background is out of focus, showing a wall decorated with an assortment of decorative plates in various patterns and colors."
+      },
+      {
+        "url": "venue_gallery/plate/photo4",
+        "alt": "A close-up shot of a window with the word \"plate\" written in a modern, stylized font. The background, visible through the window, is a wall decorated with a collection of diverse and colorful decorative plates. There is a geometric pattern on the window glass below the text."
+      },
+      {
+        "url": "venue_gallery/plate/photo5",
+        "alt": "A white, commercial-style espresso machine with several portafilters and control panels on a countertop. In the background, a person is visible, and the word \"etalo\" is seen in reverse on a window."
+      },
+      {
+        "url": "venue_gallery/plate/photo6",
+        "alt": "A close-up, focused shot of a tall glass filled with an amber-colored cocktail, garnished with two orange slices. A person, out of focus and with a beard, holds the glass in the background."
+      },
+      {
+        "url": "venue_gallery/plate/photo7",
+        "alt": "A close-up, high-angle shot of a large bowl filled with various food items arranged in separate sections, including green peas, corn kernels, white rice, shredded purple cabbage, and a creamy topping. The bowl is on a wooden table, and a patterned couch is visible in the soft-focus background."
+      },
+      {
+        "url": "venue_gallery/plate/photo8",
+        "alt": "A close-up, low-angle shot of a bowl of french fries generously topped with a large amount of grated cheese and black pepper. The background is out of focus, showing a patterned fabric surface."
+      }
+    ],
+    "rating": 5.0,
+    "priceLevel": 3,
+    "location": {
+      "address": "Plate Bistro, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Plate+Bistro/@41.11394903102612,20.80218717455864",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.7427999241574!2d20.80218717455864!3d41.11394903102612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd87b9aebc9d%3A0xa8005c310976c076!2sPlate%20Bistro!5e0!3m2!1sen!2smk!4v1754215762222!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "074 221 889",
+    "workingHours": "08:00 - 22:00 (Mon)<br>Tuesday Closed<br>08:00 - 22:00 (Wed - Fri)<br>10:00 - 23:00 (Sun - Sat)",
+    "bookingUrl": "#",
+    "events": []
+  }
 ]
