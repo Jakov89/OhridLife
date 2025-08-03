@@ -3858,5 +3858,50 @@
     "workingHours": "12:00 - 04:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 107,
+    "name": "Mr. I",
+    "description": "Mr. I in Ohrid isn't just a bar – it's a vibe. Set just steps from the lake, it blends laid-back energy with upbeat music and a cool crowd. Whether you're starting your night with cocktails or just dropping in for a chilled beer with friends, Mr. I gives you that perfect mix of good drinks, easygoing atmosphere, and Ohrid summer charm.",
+    "type": [
+      "coffee",
+      "club",
+      "restaurant"
+    ],
+    "tags": [
+      "coffee",
+      "club",
+      "restaurant",
+      "cocktails",
+      "nightlife",
+      "lakeside",
+      "casual"
+    ],
+    "imageUrl": "images_venue/mri_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/mri/photo1.jpg",
+        "alt": "An indoor shot of a lounge area with a plush, tufted, burgundy sofa against a light-colored wall. In front of the sofa is a rectangular, tufted, beige ottoman serving as a coffee table. The floor is made of wood planks. Overhead, several modern light fixtures with exposed filament bulbs hang from the ceiling. A large window with horizontal blinds is on the right, letting in bright light. In the background to the left, a doorway leads to another dining area."
+      },
+      {
+        "url": "venue_gallery/mri/photo2.jpg",
+        "alt": "Two hookahs with tall, ornate bases are on a glass coffee table. The one on the left has a clear base with black hoses, while the one on the right has a blue glowing base and a blue hose. Several round tins of hookah tobacco are arranged on the table in front of the hookahs. In the background, there are framed movie posters on the wall, including one of Captain Jack Sparrow from Pirates of the Caribbean, and various lounge chairs and sofas"
+      },
+      {
+        "url": "venue_gallery/mri/photo3.jpg",
+        "alt": "A tall glass of layered coffee, possibly a latte or macchiato, sits on a small glass saucer, which is placed on a glass table. The drink has a distinct layer of milk at the bottom, followed by coffee, and a thick foam top with a sprinkle of cocoa powder. Around the saucer, coffee beans are scattered. A small packet of sugar and a spoon are also on the saucer. In the background, out of focus, are green upholstered chairs and a menu."
+      }
+    ],
+    "rating": 4.6,
+    "priceLevel": 3,
+    "location": {
+      "address": "Hotel Mr. I, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Hotel+Mr.+I/@41.10997594578873,20.80460882421455",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12023.468319290754!2d20.79432733021765!3d41.11559391657759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca653025c71%3A0xad22d75edd8ef400!2sHotel%20Mr.%20I!5e0!3m2!1sen!2smk!4v1754249849213!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075 248 963",
+    "workingHours": "09:00 - 01:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
