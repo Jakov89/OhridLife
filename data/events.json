@@ -5337,7 +5337,7 @@
     "id": 277,
     "venueId": 16,
     "eventName": "Balkanikos",
-    "isoDate": "2025-08-08",
+    "isoDate": "2025-08-09",
     "startTime": "23:00",
     "day": "Sat.",
     "description":"",
@@ -7744,5 +7744,35 @@
     
     "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d187.8771951016529!2d20.801355406186275!3d41.1119240187071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1skasarna%20ohrid!5e0!3m2!1sen!2smk!4v1754328574117!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Pred Hotel Nova Riviera"
+  },
+  {
+    "id": 503,
+    "eventName": "Reset na plazha Vol.5",
+    "isoDate": "2025-08-09",
+    "startTime": "18:45",
+    "day": "Sat.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "events_image/reset/09.08.jpg",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+    "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.6106758190438!2d20.8062346335346!3d41.10302164407034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca9f9db054d%3A0x71c13f3efa95e411!2sVoena%20plazha!5e0!3m2!1sen!2smk!4v1754330173405!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Plazha Bafalo"
+  },
+  {
+    "id": 504,
+    "eventName": "Promocija na slikovnicata \"DRUGARKA, DRUGARKO I DVE MACHENCA\"",
+    "isoDate": "2025-08-06",
+    "startTime": "18:00",
+    "day": "Wed.",
+    "description": "",
+    "category": "Literature",
+    "imageUrl": "events_image/knigi/drugarka.jpg",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+    "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.9969164368003!2d20.79804447644791!3d41.112758412984235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca41483ba1d%3A0x5656b39d717def08!2sLibrary%20Grigor%20Prlichev!5e0!3m2!1sen!2smk!4v1754330747678!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Library Grigor Prlichev"
   }
 ]
