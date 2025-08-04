@@ -7762,7 +7762,7 @@
   },
   {
     "id": 504,
-    "eventName": "Promocija na slikovnicata \"DRUGARKA, DRUGARKO I DVE MACHENCA\"",
+    "eventName": "Promocija na slikovnicata \"DRUGARKA, DRUGARKO I DVE MACHENCA\" - Od Denis jankolovski i  Natasha Kostovska",
     "isoDate": "2025-08-06",
     "startTime": "18:00",
     "day": "Wed.",
@@ -7774,5 +7774,35 @@
     "ticketPrice": "Free Entry",
     "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.9969164368003!2d20.79804447644791!3d41.112758412984235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca41483ba1d%3A0x5656b39d717def08!2sLibrary%20Grigor%20Prlichev!5e0!3m2!1sen!2smk!4v1754330747678!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Library Grigor Prlichev"
+  },
+  {
+    "id": 505,
+    "eventName": "Promocija na \"Zima vo prodavnicata za chudni milenichinja\" - Od Elena Obuhova",
+    "isoDate": "2025-08-07",
+    "startTime": "12:00",
+    "day": "Thu.",
+    "description": "",
+    "category": "Literature",
+    "imageUrl": "events_image/knigi/drugarka.jpg",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+    "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.9969164368003!2d20.79804447644791!3d41.112758412984235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca41483ba1d%3A0x5656b39d717def08!2sLibrary%20Grigor%20Prlichev!5e0!3m2!1sen!2smk!4v1754330747678!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Library Grigor Prlichev"
+  },
+  {
+    "id": 506,
+    "eventName": "Knizhevno-muzichka vecher: 5 godini \"(e)Lit\"",
+    "isoDate": "2025-08-06",
+    "startTime": "20:00",
+    "day": "Wed.",
+    "description": "",
+    "category": "Literature & Music",
+    "imageUrl": "events_image/random/elit.jpg",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    
+    "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d315.96848940805774!2d20.796041214464516!3d41.11234587527213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2smk!4v1754348753981!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Muzejsko - Kulturen Centar \"Lapidarium\""
   }
 ]
