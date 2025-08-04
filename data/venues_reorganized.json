@@ -4203,5 +4203,53 @@
     "workingHours": "08:00 - 22:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 115,
+    "name": "Kult Café",
+    "description": "Kult Café is part of the Kult Cultural Center and is open daily from 8 AM to midnight. It's the perfect place to enjoy coffee, smoothies, soft drinks, or something stronger. The café also serves as a cozy venue for book launches, cultural events, and intimate live music performances—especially focused on promoting young local music talents.",
+    "type": "coffee",
+    "tags": [
+      "coffee",
+      "cultural-center",
+      "live-music",
+      "events",
+      "smoothies",
+      "cozy"
+    ],
+    "imageUrl": "images_venue/kult_caffee_card.jpeg",
+    "gallery": [
+      {
+        "url": "venue_gallery/kult_kafe/photo1.jpg",
+        "alt": "Two young men playing electric guitars in a modern cafe. The one on the left is wearing a black t-shirt and the one on the right is in a light-colored, long-sleeve shirt. A drum set is partially visible in the background, along with a green hanging plant and a sign with the word \"КУЛТ\"."
+      },
+      {
+        "url": "venue_gallery/kult_kafe/photo2.jpg",
+        "alt": "A stylish seating area in a cafe featuring two yellow wingback chairs, a dark-colored, organically shaped coffee table with metal legs, and a matching small stool. A black barrel with white text serves as an accent piece. The wall behind the chairs is dark gray with vertical wood-like slats and a gold sign that reads \"КУЛТ\"."
+      },
+      {
+        "url": "venue_gallery/kult_kafe/photo3.jpg",
+        "alt": "A wide shot of the cafe's interior, showing a variety of seating arrangements. There are multiple small tables with chairs, a larger rectangular table, and a long tufted gray sofa. A decorative wooden panel with an eagle-like design is mounted on the wall above the sofa. A raised platform with more seating and the \"КУЛТ\" sign is visible in the back."
+      },
+      {
+        "url": "venue_gallery/kult_kafe/photo4.jpg",
+        "alt": "A close-up of a table in a cafe. A pink box filled with a bouquet of white and pink flowers is next to a tall glass with a purple smoothie and a black straw. A black menu with Cyrillic and English text is on the table, and in the background, a small stage area with musical instruments and the yellow chairs from the other photo can be seen."
+      },
+      {
+        "url": "venue_gallery/kult_kafe/photo5.jpg",
+        "alt": "A high-angle close-up of a cocktail in a textured glass filled with crushed ice and a garnish of star-shaped fruit slices, likely pineapple. A black bent straw is in the glass. The drink is on a wooden surface with a carved wooden sign that reads \"LOVE\". In the background, there is a black lantern with a decorative cutout pattern and a dark wall."
+      }
+    ],
+    "rating": 5.0,
+    "priceLevel": 2,
+    "location": {
+      "address": "Kult Café, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Kult+kulturen+centar",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.7394143019913!2d20.80005628389622!3d41.11454053940515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd2ab0d8ed21%3A0x89723c86f54776be!2sKult%20kulturen%20centar!5e0!3m2!1sen!2smk!4v1754321137292!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075 285 228",
+    "workingHours": "08:00 - 24:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
