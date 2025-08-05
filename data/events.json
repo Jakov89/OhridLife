@@ -304,7 +304,7 @@
   },
   {
     "id": 470,
-    "venueId": 103,
+    
     "eventName": "Letna Shkola Za Gitara",
     "isoDate": "2025-08-15",
     "startTime": "11:00",
@@ -320,7 +320,7 @@
   },
   {
     "id": 469,
-    "venueId": 103,
+    
     "eventName": "Letna Shkola Za Gitara",
     "isoDate": "2025-08-14",
     "startTime": "11:00",
@@ -336,7 +336,7 @@
   },
   {
     "id": 468,
-    "venueId": 103,
+    
     "eventName": "Letna Shkola Za Gitara",
     "isoDate": "2025-08-13",
     "startTime": "11:00",
@@ -352,7 +352,7 @@
   },
   {
     "id": 467,
-    "venueId": 103,
+    
     "eventName": "Letna Shkola Za Gitara",
     "isoDate": "2025-08-12",
     "startTime": "11:00",
@@ -368,7 +368,7 @@
   },
   {
     "id": 466,
-    "venueId": 103,
+    
     "eventName": "Letna Shkola Za Gitara",
     "isoDate": "2025-08-11",
     "startTime": "11:00",
@@ -384,7 +384,7 @@
   },
   {
     "id": 465,
-    "venueId": 103,
+    
     "eventName": "Letna Likovna Shkola",
     "isoDate": "2025-08-15",
     "startTime": "09:30",
@@ -400,7 +400,7 @@
   },
   {
     "id": 464,
-    "venueId": 103,
+    
     "eventName": "Letna Likovna Shkola",
     "isoDate": "2025-08-14",
     "startTime": "09:30",
@@ -416,7 +416,7 @@
   },
   {
     "id": 463,
-    "venueId": 103,
+    
     "eventName": "Letna Likovna Shkola",
     "isoDate": "2025-08-13",
     "startTime": "09:30",
@@ -432,7 +432,7 @@
   },
   {
     "id": 462,
-    "venueId": 103,
+    
     "eventName": "Letna Likovna Shkola",
     "isoDate": "2025-08-12",
     "startTime": "09:30",
@@ -448,7 +448,7 @@
   },
   {
     "id": 461,
-    "venueId": 103,
+    
     "eventName": "Letna Likovna Shkola",
     "isoDate": "2025-08-11",
     "startTime": "09:30",
@@ -7864,5 +7864,69 @@
     "ticketPrice": "Free Entry",
     "locationName": "Trevnik pred SU",
     "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.24108332982!2d20.804638076447734!3d41.10742561331329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca806d5d649%3A0x7940caea2e819cce!2sSu%20rooftop%20restaurant!5e0!3m2!1sen!2smk!4v1750872886213!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": 512,
+    
+    "eventName": "Kamera, Svetla, Akcija",
+    "isoDate": "2025-08-13",
+    "startTime": "11:00",
+    "day": "Wed.",
+    "description": "🎬 Masterclass in Directing and Screenwriting with Antonio Veljanoski.",
+    "category": "Movie",
+    "imageUrl": "events_image/mladinski/13.jpg",
+    "eventBookingUrl": "www.mco.mk",
+    "eventContact": "",
+    "ticketPrice": "Free",
+    "locationName": "Youth Center Ohrid (YCO)",
+    "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.3109853509307!2d20.809696728549735!3d41.129200408359004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbcdb1fa6ad7%3A0xeb96484349cc5d1d!2sYouth%20center%20Ohrid%20(YCO)!5e0!3m2!1sen!2smk!4v1753977790408!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": 513,
+    
+    "eventName": "Dishenje i Dvizhenje",
+    "isoDate": "2025-08-14",
+    "startTime": "08:00",
+    "day": "Thu.",
+    "description": "🧘‍♀️ Morning Yoga with Emilija Koloska",
+    "category": "Yoga",
+    "imageUrl": "events_image/mladinski/14.jpg",
+    "eventBookingUrl": "www.mco.mk",
+    "eventContact": "",
+    "ticketPrice": "Free",
+    "locationName": "Cuba Libre Beach",
+    "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d632.0445020413437!2d20.806893772117164!3d41.10117422815745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smk!4v1754419787039!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": 513,
+    
+    "eventName": "Minato za idnina",
+    "isoDate": "2025-08-15",
+    "startTime": "19:00",
+    "day": "Fri.",
+    "description": "Historical Seminar with Ivan Križić: “The Past as a Tool for a Youthful Future”",
+    "category": "History",
+    "imageUrl": "events_image/mladinski/15.jpg",
+    "eventBookingUrl": "www.mco.mk",
+    "eventContact": "",
+    "ticketPrice": "Free",
+    "locationName": "Youth Center Ohrid (YCO)",
+    "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.3109853509307!2d20.809696728549735!3d41.129200408359004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbcdb1fa6ad7%3A0xeb96484349cc5d1d!2sYouth%20center%20Ohrid%20(YCO)!5e0!3m2!1sen!2smk!4v1753977790408!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": 514,
+    
+    "eventName": "Megjunaroden den na mladi",
+    "isoDate": "2025-08-12",
+    "startTime": "18:00",
+    "day": "Tue.",
+    "description": "🎨 18:00 - 19:00\nKreativna rabotilnica \"Umetnosta vo haronijia\"\nMentori: Krsistof Sabras i Fani Milosheva\n\n🎭 19:00 - 20:00\n\"Kreativni race, veseli srca\" - Izlozhba na letna kreativna shkola na MCO\n\n🎤 20:00 - 20:15\nOficijalni obrakjanja i otvaranje na vecherna programa\n\n🌍 20:15 - 20:45\n\"Od Ohrid do Normandija, Francija - Iskuseno, dozhiveano, spodeleno\"\nSpodeluvanje iskustvo od mladinska razmena\n\n🎸 20:45 - 21:30\n\"Muzika od mladite\" - Muzichki nastap na Bendot na MCO\n\n🎬 21:30 - 22:00\nProekcija na \"Mi(s)sing Dog\" + Q&A - Antonio Veljanoski\n\n🎧 22:00 - 23:30\nDJ Anna & DJ Leo (Lychnid Coffee Society)\nZabava i neformalno druzhenje",
+    "category": "History",
+    "imageUrl": "events_image/mladinski/12.jpg",
+    "eventBookingUrl": "www.mco.mk",
+    "eventContact": "",
+    "ticketPrice": "Free",
+    "locationName": "Youth Center Ohrid (YCO)",
+    "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.3109853509307!2d20.809696728549735!3d41.129200408359004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbcdb1fa6ad7%3A0xeb96484349cc5d1d!2sYouth%20center%20Ohrid%20(YCO)!5e0!3m2!1sen!2smk!4v1753977790408!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   }
 ]
