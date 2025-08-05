@@ -4109,5 +4109,51 @@
     "workingHours": "08:00 - 24:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 117,
+    "name": "Pirustija Nedanoski",
+    "description": "Pirustija Nedanoski is a traditional family-owned pottery workshop located in the village of Ramne, just above Ohrid. Known for its handmade clay products crafted with care and passed-down techniques, the studio preserves the authentic spirit of Macedonian craftsmanship. Visitors can explore the workshop, learn about the pottery process, and purchase unique ceramic pieces.",
+    "type": "rural tourism",
+    "tags": [
+      "rural tourism",
+      "traditional",
+      "pottery",
+      "workshop",
+      "handmade",
+      "crafts",
+      "cultural heritage",
+      "local experience"
+    ],
+    "imageUrl": "images_venue/rural/nedanoski_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/nedanoski/photo1.jpg",
+        "alt": "An outdoor scene showing two long tables covered with red and white checkered tablecloths. A large group of people, mostly women of various ages, are seated at the tables, eating and socializing. Some other people are standing around the tables. The area is shaded by a tree and has a fence made of intertwined branches in the background."
+      },
+      {
+        "url": "venue_gallery/nedanoski/photo2.jpg",
+        "alt": "A close-up shot of a golden-brown, baked round pastry, possibly a 'zelnik' or 'pita', sitting in a black metal pan. The pan is elevated on a rustic metal stand over a bed of glowing embers and ashes, suggesting it was cooked outdoors over a fire."
+      },
+      {
+        "url": "venue_gallery/nedanoski/photo3.jpg",
+        "alt": "A large, round platter is completely filled with different types of baked pastries, cut into square and triangular pieces. In the center, there are three small clay bowls containing dips; two of them have a red relish, likely 'ajvar', and the third has a lighter-colored dip, possibly a yogurt-based sauce."
+      },
+      {
+        "url": "venue_gallery/nedanoski/photo4.jpg",
+        "alt": "A person's hand is shown lifting a large, round, metal lid covered in sand and ash. The lid is being removed from a pan sitting on a stand over a fire, revealing a pastry that is in the process of being cooked. The background consists of a wall made of stacked wood logs."
+      }
+    ],
+    "rating": 5.0,
+    "priceLevel": 2,
+    "location": {
+      "address": "Pirustija Nedanoski, Ramne, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Pirustija+Nedanoski",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.148997266157!2d20.834614176447868!3d41.1094369131894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db6934c152c1%3A0xda2931c5a73ccf82!2sPirustija%20Nedanoski!5e0!3m2!1sen!2smk!4v1754413233252!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075 741 466",
+    "workingHours": "Tue-Thu: 14:00-16:00, 17:00-20:00<br>Fri: 09:00-11:00<br>Sat: 10:00-11:00, 17:00-20:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
