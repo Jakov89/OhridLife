@@ -21,6 +21,10 @@ const mainCategoryConfig = {
         icon: '🍔',
         subcategories: ['restaurant', 'coffee', 'pub', 'fast-food', 'to-go'],
     },
+    'Rural Tourism': {
+        icon: '🌾',
+        subcategories: ['rural tourism'],
+    },
     'Nightlife': {
         icon: '🌙',
         subcategories: ['club', 'pub'],
@@ -32,6 +36,10 @@ const mainCategoryConfig = {
     'Adventure & Sport': {
         icon: '🏞️',
         subcategories: ['kayaking', 'sup', 'diving', 'cruises', 'hiking', 'atv', 'sports', 'camping', 'gym', 'fitness', 'paragliding', 'golf', 'go-kart'],
+    },
+    'Culture': {
+        icon: '🎨',
+        subcategories: ['art'],
     },
     'Entertainment & Gaming': {
         icon: '🎮',

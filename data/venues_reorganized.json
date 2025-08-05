@@ -4251,5 +4251,62 @@
     "workingHours": "08:00 - 24:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 116,
+    "name": "Kult Kulturen Centar",
+    "description": "Kult Kulturen Centar is a creative and cultural space located together with Kult Café in the heart of Ohrid. It's a place where art meets coffee — regularly hosting exhibitions, book promotions, and cultural events. Currently on view is the Point of View exhibition by Iva Jovanović and Anamarija Momiroska. Also available: unique designer tables by Studio Dana Ando (for sale), and carefully selected books from the publishing house Artkonnect.",
+    "type": "art",
+    "tags": [
+      "culture",
+      "art",
+      "gallery",
+      "exhibitions",
+      "cultural events",
+      "book promotions",
+      "design"
+    ],
+    "imageUrl": "images_venue/culture/kult_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/kult_kulturen/photo1.jpg",
+        "alt": "Interior view of Kult Kulturen Centar's gallery space showcasing contemporary art exhibitions"
+      },
+      {
+        "url": "venue_gallery/kult_kulturen/photo2.jpg",
+        "alt": "Art installation or exhibition piece at Kult Kulturen Centar"
+      },
+      {
+        "url": "venue_gallery/kult_kulturen/photo3.jpg",
+        "alt": "Book promotion or cultural event taking place in the center's space"
+      },
+      {
+        "url": "venue_gallery/kult_kulturen/photo4.jpg",
+        "alt": "Designer tables by Studio Dana Ando on display in the gallery"
+      },
+      {
+        "url": "venue_gallery/kult_kulturen/photo5.jpg",
+        "alt": "Point of View exhibition by Iva Jovanović and Anamarija Momiroska"
+      },
+      {
+        "url": "venue_gallery/kult_kulturen/photo6.jpg",
+        "alt": "Selection of books from Artkonnect publishing house displayed in the center"
+      },
+      {
+        "url": "venue_gallery/kult_kulturen/photo7.jpg",
+        "alt": "Overview of the cultural center's multifunctional space"
+      }
+    ],
+    "rating": 5.0,
+    "priceLevel": 2,
+    "location": {
+      "address": "Kult Café, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Kult+kulturen+centar",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.7394143019913!2d20.80005628389622!3d41.11454053940515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd2ab0d8ed21%3A0x89723c86f54776be!2sKult%20kulturen%20centar!5e0!3m2!1sen!2smk!4v1754321137292!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075 285 228",
+    "workingHours": "08:00 - 24:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
