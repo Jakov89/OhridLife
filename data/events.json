@@ -1,5 +1,33 @@
 [
   {
+    "id": 517,
+    "venueId": 20,
+    "eventName": "DJ Fic",
+    "isoDate": "2025-08-08",
+    "startTime": "15:00",
+    "day": "Thu.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "events_image/kaneoplazha/djfic.png",
+    "eventBookingUrl": "#",
+    "ticketPrice": "Free Entry",
+    "locationName": "Kaneo Plazha"
+  },
+  {
+    "id": 516,
+    "venueId": 20,
+    "eventName": "DJ Fic",
+    "isoDate": "2025-08-07",
+    "startTime": "15:00",
+    "day": "Wed.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "events_image/kaneoplazha/djfic.png",
+    "eventBookingUrl": "#",
+    "ticketPrice": "Free Entry",
+    "locationName": "Kaneo Plazha"
+  },
+  {
     "id": 490,
     "venueId": 76,
     "eventName": "Irie Scratch",
@@ -7898,7 +7926,7 @@
     "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d632.0445020413437!2d20.806893772117164!3d41.10117422815745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smk!4v1754419787039!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   },
   {
-    "id": 513,
+    "id": 514,
     
     "eventName": "Minato za idnina",
     "isoDate": "2025-08-15",
@@ -7914,7 +7942,7 @@
     "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.3109853509307!2d20.809696728549735!3d41.129200408359004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbcdb1fa6ad7%3A0xeb96484349cc5d1d!2sYouth%20center%20Ohrid%20(YCO)!5e0!3m2!1sen!2smk!4v1753977790408!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   },
   {
-    "id": 514,
+    "id": 515,
     
     "eventName": "Megjunaroden den na mladi",
     "isoDate": "2025-08-12",
