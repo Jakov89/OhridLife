@@ -46,23 +46,33 @@ function checkForSharedArtist() {
     const urlParams = new URLSearchParams(window.location.search);
     const artistId = urlParams.get('artist');
     
+    console.log('Checking for shared artist, ID:', artistId); // Debug log
+    
     if (artistId) {
         // Wait a bit for the data to load, then open the modal
         const checkAndOpen = () => {
+            console.log('Artists data loaded:', artistsData.length > 0); // Debug log
+            
             if (artistsData.length > 0) {
                 const artist = artistsData.find(a => a.id == artistId);
+                console.log('Found artist:', artist); // Debug log
+                
                 if (artist) {
+                    console.log('Opening modal for artist:', artist.name); // Debug log
                     // Small delay to ensure everything is rendered
                     setTimeout(() => {
                         openArtistModal(parseInt(artistId));
                         // Clean up URL without refreshing the page
                         const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
                         window.history.replaceState({}, document.title, newUrl);
-                    }, 500);
+                    }, 1000); // Increased delay
+                } else {
+                    console.log('Artist not found with ID:', artistId); // Debug log
                 }
             } else {
-                // If data isn't loaded yet, try again in 100ms
-                setTimeout(checkAndOpen, 100);
+                // If data isn't loaded yet, try again in 200ms
+                console.log('Data not ready, retrying...'); // Debug log
+                setTimeout(checkAndOpen, 200);
             }
         };
         
@@ -125,6 +135,9 @@ async function fetchArtistsData() {
         hideArtistSkeletons();
         
         await initializeArtistsApp();
+        
+        // Check for shared artist after everything is loaded
+        checkForSharedArtist();
         
     } catch (error) {
         console.error('Error loading artists data:', error);
