@@ -7337,6 +7337,16 @@ img[data-src]:not(.loaded) {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.hero-title-ohrid {
+    color: #0077b6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero-title-artists {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
 .artists-hero p {
     font-size: 1.25rem;
     line-height: 1.6;
@@ -7352,6 +7362,11 @@ img[data-src]:not(.loaded) {
     
     .artists-hero h1 {
         font-size: 2.5rem;
+    }
+    
+    .hero-title-ohrid,
+    .hero-title-artists {
+        display: inline-block;
     }
     
     .artists-hero p {
