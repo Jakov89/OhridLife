@@ -38,7 +38,37 @@ const artistCategoryConfig = {
 document.addEventListener('DOMContentLoaded', () => {
     fetchArtistsData();
     setupEventListeners();
+    checkForSharedArtist();
 });
+
+// --- CHECK FOR SHARED ARTIST ---
+function checkForSharedArtist() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const artistId = urlParams.get('artist');
+    
+    if (artistId) {
+        // Wait a bit for the data to load, then open the modal
+        const checkAndOpen = () => {
+            if (artistsData.length > 0) {
+                const artist = artistsData.find(a => a.id == artistId);
+                if (artist) {
+                    // Small delay to ensure everything is rendered
+                    setTimeout(() => {
+                        openArtistModal(parseInt(artistId));
+                        // Clean up URL without refreshing the page
+                        const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                        window.history.replaceState({}, document.title, newUrl);
+                    }, 500);
+                }
+            } else {
+                // If data isn't loaded yet, try again in 100ms
+                setTimeout(checkAndOpen, 100);
+            }
+        };
+        
+        checkAndOpen();
+    }
+}
 
 // --- SKELETON LOADING FUNCTIONS ---
 function showArtistSkeletons() {
