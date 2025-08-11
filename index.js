@@ -1287,11 +1287,27 @@ function populateAllVenuesSlider(venues) {
 
 function updateAllVenuesArrows(sliderInstance) {
     if (!sliderInstance) return;
-    const arrows = sliderInstance.container.parentElement.querySelectorAll('.slider-arrow');
-    if (arrows.length > 0) {
-        arrows.forEach(arrow => {
-            arrow.style.display = sliderInstance.track.details.slides.length > sliderInstance.options.slides.perView ? 'flex' : 'none';
-        });
+    
+    const leftArrow = document.getElementById('all-venues-arrow-left');
+    const rightArrow = document.getElementById('all-venues-arrow-right');
+    
+    if (!leftArrow || !rightArrow) return;
+    
+    const { slides } = sliderInstance.track.details;
+    const currentSlide = sliderInstance.track.details.rel;
+    const slidesLength = slides.length;
+    
+    // Show arrows if there are more slides than visible
+    if (slidesLength > 1) {
+        leftArrow.style.display = 'flex';
+        rightArrow.style.display = 'flex';
+        
+        // Disable/enable arrows based on position
+        leftArrow.disabled = currentSlide === 0;
+        rightArrow.disabled = currentSlide >= slidesLength - 1;
+    } else {
+        leftArrow.style.display = 'none';
+        rightArrow.style.display = 'none';
     }
 }
 

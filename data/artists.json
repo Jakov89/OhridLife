@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "name": "Vanco Play",
+        "category": "DJ",
+        "subcategory": "DJ",
+        "description": "Master music selector with 30+ years experience, perfect for private parties.",
+        "imageUrl": "artist_image/dj/vancho.jpg",
+        "profileImage": "artist_image/dj/vancho.jpg",
+        "upcomingEvents": [         
+        ],
+        "socialMedia": {
+            "instagram": "https://www.instagram.com/vanco.jovanoski/",
+            "facebook": "https://www.facebook.com/vanco.jovanoski.2025"
+        },
+        "contact": {
+            "type": "instagram",
+            "value": "https://www.instagram.com/vanco.jovanoski/",
+            "label": "Contact on Instagram"
+        },
+        "specialties": ["Disco Soul", "Jazz House", "Funk", "Jazz", "Blues", "Retro"],
+        "experience": "30+ years",        
+        "isActive": true,
+        "bio": "🎧 Vanco Play – a true master of musical storytelling.\nWith a career that began at just 12 years old, Vanco has worked as a DJ, radio host, and moderator, but prefers to call himself a music selector. His passion lies in crafting the perfect playlist, blending genres with precision and soul. Thanks to his vast experience, he is also highly sought after for private parties, where his ability to read the crowd and create the perfect vibe truly shines.\n\nA true expert in Disco Soul, Jazz House, Funk, Jazz, Blues, and Retro, Vanco Play transforms every set into a unique musical journey that connects deeply with his audience."
+    },
+    {
+        "id": 2,
+        "name": "Mario",
+        "category": "DJ",
+        "subcategory": "Electronic",
+        "description": "Ohrid DJ since 2006, mixing Disco, Funky, Afro House, and nostalgic retro hits.",
+        "imageUrl": "artist_image/dj/mario.jpg",
+        "profileImage": "artist_image/dj/mario.jpg",
+        "upcomingEvents": [         
+        ],
+        "socialMedia": {
+            "instagram": "https://www.instagram.com/deejay.mario",
+            "facebook": "https://www.facebook.com/deejay.mariooo?mibextid=wwXIfr&rdid=ustNpp9th8IGwwHN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F171EUbGZVf%2F%3Fmibextid%3DwwXIfr#"
+        },
+        "contact": {
+            "type": "instagram",
+            "value": "https://www.instagram.com/deejay.mario",
+            "label": "Message on Instagram"
+        },
+        "specialties": ["Disco", "Funky", "Club", "Afro House", "Retro"],
+        "experience": "18+ years",        
+        "isActive": true,
+        "bio": "🎧 DJ Mario, an Ohrid-based DJ active since 2006, is a passionate vinyl collector and music lover, blending sounds from retro to modern eras. His sets unite Disco, Funky, Club, and Afro House, along with nostalgic retro hits that ignite unforgettable energy on the dance floor.\n\nWith a commitment to strictly high-quality, timeless tracks, DJ Mario creates a unique atmosphere that keeps the crowd moving all night."
+    },   
+     {
+         "id": 3,
+         "name": "Urban Planet",
+         "category": "Band",
+         "subcategory": "Disco-Funk",
+         "description": "Urban Planet is a Disco-Funky band from Ohrid, bringing vibrant energy and groove.",
+        "imageUrl": "artist_image/band/urban.jpg",
+        "profileImage": "artist_image/band/urban.jpg",
+        "upcomingEvents": [         
+        ],
+        "socialMedia": {
+            "instagram": "https://www.instagram.com/urbanplanettheband/",
+            "facebook": "https://www.facebook.com/urbanplanettheband"
+        },
+        "contact": {
+            "type": "phone",
+            "value": "077 664 786",
+            "label": "Call Us"
+        },
+        "specialties": ["Disco", "Funk", "Live Performance", "Weddings", "Private Events", "Dance Music"],
+        "experience": "5+ years",        
+        "isActive": true,
+        "bio": "🎵 Urban Planet is a Disco-Funky band from Ohrid, bringing vibrant energy and groove to every stage. The five-member lineup features Dimitar Alchev on vocals, Filip Nikolovski on guitar, Nikola Josifoski on keyboards and backing vocals, Hendrik Zinger on bass guitar, and Bobi Damchevski on drums and backing vocals.\n\nPerforming together for over five years, the band has become a familiar presence in Ohrid's music scene, as well as in Bitola, Struga, and Skopje. From lively local gigs to private events such as weddings, seminars, and celebrations of all kinds, Urban Planet delivers a dynamic blend of rhythm and soul that gets everyone dancing."
+    }
+    
+]

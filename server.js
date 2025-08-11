@@ -493,6 +493,11 @@ app.get('/day-planner', (req, res) => {
     res.sendFile(path.join(__dirname, 'day-planner.html'));
 });
 
+// Serve artists.html for the /artists URL
+app.get('/artists', (req, res) => {
+    res.sendFile(path.join(__dirname, 'artists.html'));
+});
+
 // Serve organization.html for /organizations/:id
 app.get('/organizations/:id', (req, res) => {
     const orgId = parseInt(req.params.id, 10);
