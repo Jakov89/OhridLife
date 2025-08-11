@@ -238,16 +238,17 @@
   {
     "id": 516,
     "venueId": 20,
-    "eventName": "DJ Fic",
-    "isoDate": "2025-08-07",
+    "eventName": "DJ Vanco",
+    "isoDate": "2025-08-12",
     "startTime": "15:00",
     "day": "Thu.",
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/kaneoplazha/djfic.png",
+    "imageUrl": "events_image/vanco/vanco.jpg",
     "eventBookingUrl": "#",
     "ticketPrice": "Free Entry",
-    "locationName": "Kaneo Plazha"
+    "locationName": "Kaneo Plazha",
+    "artistId": 1
   },
   {
     "id": 490,

@@ -14,7 +14,11 @@ const artistSliders = {};
 const artistCategoryConfig = {
     'DJ': {
         icon: '🎧',
-        subcategories: ['Electronic', 'House', 'Commercial', 'Techno'],
+        subcategories: [],
+    },
+    'Band': {
+        icon: '🎵',
+        subcategories: ['Disco-Funk', 'Rock', 'Pop', 'Jazz', 'Electronic'],
     },
     'Singer': {
         icon: '🎤',
