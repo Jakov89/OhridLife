@@ -1167,12 +1167,13 @@ function performVenueFiltering(activeMainCategory, activeSubCategory) {
         }
     }
     
-    // Apply smart rotation only when showing "All" venues
-    if (activeMainCategory === 'All' && !activeSubCategory) {
-        const rotatedVenues = applySmartRotationToVenues(filteredVenues);
-        populateAllVenuesSlider(rotatedVenues);
+    // Server-side shuffling is now handled in the API, so we respect the order
+    // Only apply client-side sorting for specific category views when needed
+    if (activeMainCategory === 'Popular') {
+        // Popular venues are already sorted by rating in performVenueFiltering
+        populateAllVenuesSlider(filteredVenues);
     } else {
-        // Use original ordering for specific categories
+        // For all other categories, use the server-provided order (which is shuffled)
         populateAllVenuesSlider(filteredVenues);
     }
     

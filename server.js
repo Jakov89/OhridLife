@@ -145,9 +145,104 @@ app.use(express.static('.', {
     }
 }));
 
+// Venue shuffling cache
+let shuffledVenuesCache = null;
+let lastShuffleTime = 0;
+const SHUFFLE_INTERVAL = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
+
+// Venue category mapping for shuffling
+const venueCategoryMap = {
+    'Popular': ['restaurant', 'club', 'beach', 'coffee', 'pub'],
+    'Food & Drink': ['restaurant', 'coffee', 'pub', 'fast-food', 'to-go'],
+    'Rural Tourism': ['rural tourism'],
+    'Nightlife': ['club', 'pub'],
+    'Beach': ['beach'],
+    'Adventure & Sport': ['kayaking', 'sup', 'diving', 'cruises', 'hiking', 'atv', 'sports', 'camping', 'gym', 'fitness', 'paragliding', 'golf', 'go-kart'],
+    'Culture': ['art'],
+    'Entertainment & Gaming': ['gaming-house', 'vr-gaming', 'board-games','darts','billiards'],
+    'Health & Wellness': ['hospital', 'pharmacy', 'dentist', 'spa'],
+    'Rentals & Services': ['rent-a-car', 'rent-a-bike', 'rent-a-scooter', 'transport', 'detailing'],
+    'Shopping': ['market', 'souvenir', 'boutique'],
+    'Pet Care': ['vet', 'pet-shop', 'grooming']
+};
+
+// Fisher-Yates shuffle algorithm
+function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
+
+// Get venue category based on type
+function getVenueCategory(venue) {
+    const venueTypes = Array.isArray(venue.type?.en) ? venue.type.en : [venue.type?.en].filter(Boolean);
+    
+    // Check if venue has 'popular' tag
+    if (venue.tags?.includes('popular')) {
+        return 'Popular';
+    }
+    
+    // Find matching category
+    for (const [category, types] of Object.entries(venueCategoryMap)) {
+        if (venueTypes.some(type => types.includes(type?.toLowerCase()))) {
+            return category;
+        }
+    }
+    
+    return 'Food & Drink'; // Default category
+}
+
+// Shuffle venues within their categories
+function shuffleVenuesByCategory(venues) {
+    const categorizedVenues = {};
+    
+    // Group venues by category
+    venues.forEach(venue => {
+        const category = getVenueCategory(venue);
+        if (!categorizedVenues[category]) {
+            categorizedVenues[category] = [];
+        }
+        categorizedVenues[category].push(venue);
+    });
+    
+    // Shuffle within each category
+    Object.keys(categorizedVenues).forEach(category => {
+        categorizedVenues[category] = shuffleArray(categorizedVenues[category]);
+    });
+    
+    // Reconstruct the venues array maintaining category grouping
+    const shuffledVenues = [];
+    const categoryOrder = ['Popular', 'Food & Drink', 'Nightlife', 'Beach', 'Adventure & Sport', 'Culture', 'Entertainment & Gaming', 'Health & Wellness', 'Rentals & Services', 'Shopping', 'Pet Care', 'Rural Tourism'];
+    
+    categoryOrder.forEach(category => {
+        if (categorizedVenues[category]) {
+            shuffledVenues.push(...categorizedVenues[category]);
+        }
+    });
+    
+    // Add any remaining venues that didn't fit into predefined categories
+    Object.keys(categorizedVenues).forEach(category => {
+        if (!categoryOrder.includes(category)) {
+            shuffledVenues.push(...categorizedVenues[category]);
+        }
+    });
+    
+    return shuffledVenues;
+}
+
+// Check if venues need reshuffling
+function shouldReshuffle() {
+    const now = Date.now();
+    return !shuffledVenuesCache || (now - lastShuffleTime) >= SHUFFLE_INTERVAL;
+}
+
 // API endpoint to get venues
 app.get('/api/venues', (req, res) => {
-    res.setHeader('Cache-Control', 'public, max-age=3600'); // Cache API responses for 1 hour
+    // Set cache headers with shorter duration for dynamic content
+    res.setHeader('Cache-Control', 'public, max-age=1800'); // 30 minutes cache
     
     // Try venues_reorganized.json first, fallback to venues.json
     const venuesReorganizedPath = path.join(__dirname, 'data', 'venues_reorganized.json');
@@ -164,7 +259,7 @@ app.get('/api/venues', (req, res) => {
                 }
                 try {
                     const venues = JSON.parse(fallbackData);
-                    res.json(venues);
+                    handleVenueResponse(venues, res);
                 } catch (parseErr) {
                     console.error("Error parsing venues.json:", parseErr);
                     return res.status(500).json({ error: 'Failed to parse venue data.' });
@@ -173,13 +268,40 @@ app.get('/api/venues', (req, res) => {
         } else {
             try {
                 const venues = JSON.parse(data);
-                res.json(venues);
+                handleVenueResponse(venues, res);
             } catch (parseErr) {
                 console.error("Error parsing venues_reorganized.json:", parseErr);
                 return res.status(500).json({ error: 'Failed to parse venue data.' });
             }
         }
     });
+});
+
+// Handle venue response with shuffling logic
+function handleVenueResponse(venues, res) {
+    if (shouldReshuffle()) {
+        console.log('Reshuffling venues within categories...');
+        shuffledVenuesCache = shuffleVenuesByCategory(venues);
+        lastShuffleTime = Date.now();
+        
+        // Log shuffle statistics
+        const categoryStats = {};
+        shuffledVenuesCache.forEach(venue => {
+            const category = getVenueCategory(venue);
+            categoryStats[category] = (categoryStats[category] || 0) + 1;
+        });
+        console.log('Venues shuffled by category:', categoryStats);
+    }
+    
+    res.json(shuffledVenuesCache || venues);
+}
+
+// API endpoint to manually trigger venue reshuffling (for testing)
+app.post('/api/venues/reshuffle', (req, res) => {
+    console.log('Manual venue reshuffle triggered');
+    shuffledVenuesCache = null; // Clear cache to force reshuffle
+    lastShuffleTime = 0;
+    res.json({ message: 'Venue reshuffle triggered successfully' });
 });
 
 // API endpoint to get events
