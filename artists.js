@@ -31,6 +31,10 @@ const artistCategoryConfig = {
     'Musician': {
         icon: '🎸',
         subcategories: ['Acoustic', 'Rock', 'Jazz'],
+    },
+    'Rap': {
+        icon: '🎤',
+        subcategories: ['Hip Hop', 'Rap'],
     }
 };
 
@@ -265,34 +269,44 @@ function generateRatingStars(rating) {
     return starsHTML;
 }
 
+// Fisher-Yates shuffle algorithm for artists
+function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
+
 // --- FEATURED ARTISTS ---
 function populateFeaturedArtists() {
     const featuredContainer = document.querySelector('#featured-artists-slider');
     if (!featuredContainer) return;
     
-    // Get top-rated artists for featured section
-    const featuredArtists = artistsData
-        .filter(artist => artist.isActive)
-        .sort((a, b) => (b.rating || 0) - (a.rating || 0))
-        .slice(0, 6);
+    // Get all active artists, shuffle them, and take maximum 5
+    const activeArtists = artistsData.filter(artist => artist.isActive);
     
-    if (featuredArtists.length === 0) {
+    if (activeArtists.length === 0) {
         featuredContainer.innerHTML = '<p class="no-artists-message">No featured artists available.</p>';
         return;
     }
     
+    const shuffledArtists = shuffleArray(activeArtists);
+    const featuredArtists = shuffledArtists.slice(0, Math.min(5, shuffledArtists.length));
+    
     featuredContainer.innerHTML = featuredArtists.map(artist => renderArtistCard(artist, true)).join('');
     
-    // Create slider
+    // Create slider with adjusted breakpoints for maximum 5 items
     createArtistSlider('#featured-artists-slider', {
-        loop: true,
+        loop: featuredArtists.length > 1,
         slides: { perView: 1.1, spacing: 10 },
         breakpoints: {
             '(min-width: 480px)': { slides: { perView: 1.3, spacing: 12 } },
             '(min-width: 640px)': { slides: { perView: 2.1, spacing: 15 } },
             '(min-width: 768px)': { slides: { perView: 2.5, spacing: 20 } },
             '(min-width: 1024px)': { slides: { perView: 3.5, spacing: 25 } },
-            '(min-width: 1200px)': { slides: { perView: 4, spacing: 25 } },
+            '(min-width: 1200px)': { slides: { perView: Math.min(4, featuredArtists.length), spacing: 25 } },
         },
     }, 'featured');
     
