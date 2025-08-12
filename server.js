@@ -78,10 +78,16 @@ const corsOptions = {
     maxAge: 86400 // 24 hours
 };
 
-// Apply CORS only to API routes
+// Security and Performance Middleware with relaxed settings for API routes
 app.use('/api', cors(corsOptions));
+app.use('/api', (req, res, next) => {
+    // Disable CSP for API routes
+    helmet({
+        contentSecurityPolicy: false,
+    })(req, res, next);
+});
 
-// Security and Performance Middleware
+// Regular security settings for non-API routes
 app.use(helmet({
     contentSecurityPolicy: {
         directives: {
@@ -777,12 +783,22 @@ app.get('/', (req, res) => {
 });
 
 // Catch-all to serve index.html for any other request
-app.get('*', (req, res) => {
+// API routes should be defined before this line
+
+// Catch-all route for non-API requests
+app.get('*', (req, res, next) => {
+    // Don't handle API routes here
+    if (req.path.startsWith('/api/')) {
+        return next();
+    }
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // API endpoint to get a single venue by ID
 app.get('/api/venues/:id', (req, res) => {
+    // Set content type to JSON
+    res.setHeader('Content-Type', 'application/json');
+    
     const venueId = parseInt(req.params.id, 10);
     const venuesPath = path.join(__dirname, 'data', 'venues.json');
     fs.readFile(venuesPath, 'utf8', (err, data) => {
