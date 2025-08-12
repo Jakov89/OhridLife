@@ -5,6 +5,7 @@ const { SitemapStream, streamToPromise } = require('sitemap');
 const { Readable } = require('stream');
 const compression = require('compression');
 const helmet = require('helmet');
+const cors = require('cors');
 const sharp = require('sharp');
 const nodemailer = require('nodemailer');
 require('dotenv').config();
@@ -40,6 +41,46 @@ async function optimizeImage(imagePath, width) {
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// CORS Configuration for API endpoints
+const corsOptions = {
+    origin: function (origin, callback) {
+        // Allow requests with no origin (like mobile apps or curl requests)
+        if (!origin) return callback(null, true);
+        
+        // List of allowed origins
+        const allowedOrigins = [
+            'http://localhost:3000',     // Local development
+            'http://localhost:19000',    // React Native development
+            'http://localhost:19001',    // React Native development
+            'http://localhost:19002',    // React Native development
+            'exp://',                    // Expo development
+            'exp://localhost:19000',     // Expo local
+            'exp://localhost:19001',     // Expo local
+            'exp://localhost:19002',     // Expo local
+            'exp://192.168.*',           // Expo on local network
+            'https://exp.host',          // Expo production
+            'https://*.exp.host',        // Expo production subdomains
+            'https://*.expo.io',         // Expo production
+            'https://*.expo.dev',        // Expo production
+            'https://www.ohridhub.mk'    // Production website
+        ];
+        
+        // Check if the origin is allowed
+        if (allowedOrigins.some(allowedOrigin => origin.startsWith(allowedOrigin))) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    methods: ['GET', 'POST', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Accept', 'Authorization'],
+    credentials: true,
+    maxAge: 86400 // 24 hours
+};
+
+// Apply CORS only to API routes
+app.use('/api', cors(corsOptions));
+
 // Security and Performance Middleware
 app.use(helmet({
     contentSecurityPolicy: {
@@ -60,7 +101,12 @@ app.use(helmet({
                 "https://fonts.gstatic.com",
                 "https://cdn.jsdelivr.net",
                 "https://formspree.io",
-                "https://*.formspree.io"
+                "https://*.formspree.io",
+                // Allow React Native app origins
+                "http://localhost:19000",
+                "http://localhost:19001",
+                "http://localhost:19002",
+                "exp://"
             ],
             frameSrc: ["'self'", "https://www.google.com", "https://maps.google.com"],
             objectSrc: ["'none'"],
