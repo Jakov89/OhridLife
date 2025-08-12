@@ -1,5 +1,21 @@
 [ 
   {
+    "id": 533,
+    "venueId": null,
+    "eventName": "From OHRID To JADRAN - Sunset Party",
+    "isoDate": "2025-08-27",
+    "startTime": "18:30",
+    "day": "Wed.",
+    "description": "From Ohrid to the Adriatic — a journey filled with music, rhythm, and great vibes, bringing you the best hits and unforgettable moments!\n\n- Vlado Broz & DJ Marama\n- DJ Gec",
+    "category": "Music & Entertainment",
+    "imageUrl": "events_image/bojan/27.08.jpg",
+    "eventBookingUrl": "#",
+    "eventContact": "070 807 603 | 071 537 663",
+    "ticketPrice": "With Reservation",
+    "locationName": "Orce Nikolov Bar (Slavija Beach)",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.8810260195775!2d20.80003955305253!3d41.07939406294555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c325362d476d%3A0xf086d1743a775239!2sBeach%20Nemo!5e0!3m2!1sen!2smk!4v1755000319039!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
     "id": 531,
     "venueId": null,
     "eventName": "Turnir vo mal fudbal \"Bogorodica Kup\"",
