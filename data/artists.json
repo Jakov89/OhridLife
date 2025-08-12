@@ -68,6 +68,25 @@
         "experience": "5+ years",        
         "isActive": true,
         "bio": "🎵 Urban Planet is a Disco-Funky band from Ohrid, bringing vibrant energy and groove to every stage. The five-member lineup features Dimitar Alchev on vocals, Filip Nikolovski on guitar, Nikola Josifoski on keyboards and backing vocals, Hendrik Zinger on bass guitar, and Bobi Damchevski on drums and backing vocals.\n\nPerforming together for over five years, the band has become a familiar presence in Ohrid's music scene, as well as in Bitola, Struga, and Skopje. From lively local gigs to private events such as weddings, seminars, and celebrations of all kinds, Urban Planet delivers a dynamic blend of rhythm and soul that gets everyone dancing."
+    },
+    {
+        "id": 4,
+        "name": "Bad Contract",
+        "category": "Rap",
+        "description": "Bad Contract is a legendary rap group from Ohrid, formed in 2001.",
+        "imageUrl": "artist_image/rap/bc.jpg",
+        "profileImage": "artist_image/rap/bc.jpg",
+        "upcomingEvents": [],
+        "socialMedia": {
+            "instagram": "https://www.instagram.com/maca_trpeski/",
+            "facebook": "https://www.facebook.com/maca.trpeski",
+            "instagram2": "https://www.instagram.com/meckarov_official/",
+            "facebook2": "https://www.facebook.com/Meckarow"
+        },
+        "specialties": ["Rap", "Hip Hop", "Live Performance"],
+        "isActive": true,
+        "experience": "20+ years",
+        "hideBooking": true,
+        "bio": "Bad Contract is a legendary rap group from Ohrid, formed in 2001. Their name, Bad Contract, was inspired by the significant events surrounding the signing of the Ohrid Agreement. The group consists of two members: Maca MF (Marjan Trpeski) and Meckarov (Naum Doloski).\n\nTheir songs and themes are deeply rooted in real-life experiences and events they lived through at the time of recording. Still active today, they continue to record and perform, while also working on their solo projects and new material as Bad Contract.\n\nSome of their most popular tracks include:\n\n• Alkoholika\n• Srceto na Lavot\n• Dupnime Jako\n • Alo (featuring Gazda Paja & Young Palk)"
     }
-    
 ]
