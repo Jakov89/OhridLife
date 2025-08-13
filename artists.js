@@ -777,13 +777,16 @@ function updateContactButton(artist) {
     const bookButton = document.getElementById('book-artist-btn');
     if (!bookButton) return;
     
-    // Hide booking button if artist has hideBooking flag
-    if (artist.hideBooking) {
+    // Hide booking button only if artist has hideBooking flag AND no contact info
+    if (artist.hideBooking && !artist.contact) {
         bookButton.style.display = 'none';
         return;
     }
     
     if (artist.contact) {
+        // Make sure button is visible when contact info exists
+        bookButton.style.display = 'block';
+        
         // Update button text and icon based on contact type
         let icon, text, clickHandler;
         
