@@ -98,8 +98,13 @@
         "profileImage": "artist_image/band/backdor.jpg",
         "upcomingEvents": [],
         "socialMedia": {
-            "instagram": "https://www.instagram.com/maca_trpeski/",
-            "facebook": "https://www.facebook.com/maca.trpeski"          
+            "instagram": "https://www.instagram.com/thebackdoorband/",
+            "facebook": "https://www.facebook.com/BackdoorBandOhrid"          
+        },
+        "contact": {
+            "type": "phone",
+            "value": "+38977922921",
+            "label": "Call Us"
         },
         "specialties": ["Rock", "Live Performance"],
         "isActive": true,
