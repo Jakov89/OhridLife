@@ -88,5 +88,23 @@
         "experience": "20+ years",
         "hideBooking": true,
         "bio": "Bad Contract is a legendary rap group from Ohrid, formed in 2001. Their name, Bad Contract, was inspired by the significant events surrounding the signing of the Ohrid Agreement. The group consists of two members: Maca MF (Marjan Trpeski) and Meckarov (Naum Doloski).\n\nTheir songs and themes are deeply rooted in real-life experiences and events they lived through at the time of recording. Still active today, they continue to record and perform, while also working on their solo projects and new material as Bad Contract.\n\nSome of their most popular tracks include:\n\n• Alkoholika\n• Srceto na Lavot\n• Dupnime Jako\n • Alo (featuring Gazda Paja & Young Palk)"
+    },
+    {
+        "id": 5,
+        "name": "Backdoor Band",
+        "category": "Band",
+        "description": "High-energy rock band from Ohrid delivering authentic performances.",
+        "imageUrl": "artist_image/band/backdor.jpg",
+        "profileImage": "artist_image/band/backdor.jpg",
+        "upcomingEvents": [],
+        "socialMedia": {
+            "instagram": "https://www.instagram.com/maca_trpeski/",
+            "facebook": "https://www.facebook.com/maca.trpeski"          
+        },
+        "specialties": ["Rock", "Live Performance"],
+        "isActive": true,
+        "experience": "20+ years",
+        "hideBooking": true,
+        "bio": "The Backdoor Band – Straight out of Ohrid, Macedonia, we've been rocking stages across the country and beyond, winning over crowds with our high-energy performances. For years, we were known as a powerhouse cover band, bringing classic rock and timeless hits to life. But in early 2013, we took things to the next level and began crafting our own original music — a raw, authentic sound straight from the heart.\n\nWith Žarko Jakimoski on lead vocals & bass, Laze Farmakoski shredding on lead guitar, and Nikola Koljuševski-Ozzy driving the beat on drums & backing vocals, we deliver pure rock 'n' roll spirit with every show.\n\nSo grab a drink, turn it up, and join us on this ride. Keep on rockin' and follow us! 🤘🍻🤘"
     }
 ]
