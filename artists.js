@@ -117,8 +117,8 @@ async function fetchArtistsData() {
     
     try {
         const [artistsResponse, eventsResponse] = await Promise.all([
-            fetch('data/artists.json'),
-            fetch('data/events.json')
+            fetch('/api/artists'),
+            fetch('/api/events')
         ]);
         
         if (!artistsResponse.ok) {

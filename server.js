@@ -375,6 +375,25 @@ app.get('/api/events', (req, res) => {
     });
 });
 
+// API endpoint to get artists
+app.get('/api/artists', (req, res) => {
+    res.setHeader('Cache-Control', 'public, max-age=3600'); // Cache API responses for 1 hour
+    const artistsPath = path.join(__dirname, 'data', 'artists.json');
+    fs.readFile(artistsPath, 'utf8', (err, data) => {
+        if (err) {
+            console.error("Error reading artists.json:", err);
+            return res.status(500).json({ error: 'Failed to load artists data.' });
+        }
+        try {
+            const artists = JSON.parse(data);
+            res.json(artists);
+        } catch (parseErr) {
+            console.error("Error parsing artists.json:", parseErr);
+            return res.status(500).json({ error: 'Failed to parse artists data.' });
+        }
+    });
+});
+
 // API endpoint to get featured events
 app.get('/api/featured-events', (req, res) => {
     const featuredEventsPath = path.join(__dirname, 'data', 'featured_events.json');
