@@ -522,13 +522,8 @@ app.get('/events/:id', (req, res) => {
             const title = `${event.eventName} - OhridHub`;
             const description = event.description ? event.description.substring(0, 160) : `Join us for ${event.eventName} in Ohrid.`;
             
-            // Use summer logo for events from Summer Comedy Marathon organization (ID 1)
-            let imageUrl;
-            if (event.organizationId === 1) {
-                imageUrl = `https://www.ohridhub.mk/logo/summer_logo.jpg`;
-            } else {
-                imageUrl = `https://www.ohridhub.mk/${event.imageUrl || 'images_ohrid/photo7.jpg'}`;
-            }
+            // Use event-specific image or default
+            let imageUrl = `https://www.ohridhub.mk/${event.imageUrl || 'images_ohrid/photo7.jpg'}`;
             
             const pageUrl = `https://www.ohridhub.mk/events/${event.id}`;
             const venueName = venue ? (venue.name || event.locationName) : event.locationName;

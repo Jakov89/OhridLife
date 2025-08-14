@@ -1323,7 +1323,8 @@ function renderHeroSlider() {
                 const description = event.description?.en || event.description || '';
                 const type = event.type?.en || event.type || 'Event';
                 const imageUrl = event.imageUrl || 'https://via.placeholder.com/320x240/cccccc/666666?text=Event+Image';
-                const eventUrl = `/organizations/${event.id}`;
+                // Use specialLink if available, otherwise use organization page
+                const eventUrl = event.specialLink || `/organizations/${event.id}`;
                 const imagePositionClass = event.imagePosition ? `hero-slide-image--align-${event.imagePosition}` : '';
 
                 return `
