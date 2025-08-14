@@ -1057,12 +1057,11 @@
     "id": 21,
     "name": "Lion",
     "description": "Lion is more than just a restaurant in Ohrid it's a delightful discovery for your taste buds, wrapped up in a genuinely warm atmosphere. Imagine stepping into a place where the love for good food is palpable, whether it's their \"Slow cooked Baby Back Ribs\" that have folks raving, or the fresh local fish. What truly sets Lion apart is that human touch – the owners, a couple with a passion for hospitality, have poured their hearts into creating a diverse menu that blends traditional Macedonian flavors with a fresh, international twist. It's the kind of spot where you can kick off your day with a lovely breakfast, enjoy a relaxed lunch by the lake, or settle in for a vibrant evening with great food and perhaps some live music. You can feel the dedication in every dish and the genuine desire to make your visit a memorable part of your Ohrid experience.",
-    "type": "club",
+    "type": "restaurant",
     "tags": [
-      "club",
-      "nightlife",
-      "music",
-      "party"
+      "fast-food",
+      "cafe",
+      "restaurant"
     ],
     "imageUrl": "images_venue/lion_card.jpg",
     "gallery": [
