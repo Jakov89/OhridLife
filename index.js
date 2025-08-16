@@ -1158,6 +1158,27 @@ function adjustImageFit(img) {
         img.style.objectPosition = 'center center';
     }
     
+    // Find the venue card media container for dynamic height adjustment
+    const mediaContainer = img.closest('.venue-card__media');
+    if (mediaContainer) {
+        const isPortrait = ratio < 1; // Height > Width
+        const isLandscape = ratio > 1.3; // Width significantly > Height
+        
+        console.log(`📱 Portrait: ${isPortrait}, 🖥️ Landscape: ${isLandscape}`);
+        
+        // Adjust container aspect ratio based on image orientation
+        if (isPortrait) {
+            console.log('📱 Setting venue portrait aspect ratio (3:4)');
+            mediaContainer.style.aspectRatio = '3 / 4';
+        } else if (isLandscape) {
+            console.log('🖥️ Setting venue landscape aspect ratio (16:9)');
+            mediaContainer.style.aspectRatio = '16 / 9';
+        } else {
+            console.log('⬜ Setting venue standard aspect ratio (4:3)');
+            mediaContainer.style.aspectRatio = '4 / 3';
+        }
+    }
+    
     // Special handling for images that might have logos or text
     // Check if image seems to have important content that shouldn't be cropped
     const aspectRatioTolerance = 0.2;
@@ -1168,6 +1189,12 @@ function adjustImageFit(img) {
         img.style.objectFit = 'contain';
         img.style.objectPosition = 'center center';
         img.style.backgroundColor = '#fff';
+        
+        // Set square aspect ratio for square images
+        if (mediaContainer) {
+            console.log('🔳 Setting square aspect ratio (1:1) for logo image');
+            mediaContainer.style.aspectRatio = '1 / 1';
+        }
     }
 }
 
@@ -1196,31 +1223,58 @@ function initializeImageFitting() {
 
 // Adjust positioning for legacy venue images
 function adjustLegacyImageFit(img) {
+    console.log('🔍 adjustLegacyImageFit called for:', img.src);
+    
     if (!img.complete || !img.naturalWidth || !img.naturalHeight) {
+        console.log('⚠️ Legacy venue image not ready, retrying...');
         setTimeout(() => adjustLegacyImageFit(img), 100);
         return;
     }
     
     const ratio = img.naturalWidth / img.naturalHeight;
-    const expectedRatio = 4/3; // Our container ratio
+    const isPortrait = ratio < 1; // Height > Width
+    const isLandscape = ratio > 1.3; // Width significantly > Height
     
-    if (ratio < expectedRatio) {
-        // Portrait-ish images: position toward top
-        img.style.objectPosition = 'center top';
-    } else if (ratio > expectedRatio * 1.5) {
-        // Very wide images: might need different positioning
+    console.log(`📐 Legacy venue image: ${img.naturalWidth}x${img.naturalHeight}, ratio: ${ratio.toFixed(2)}`);
+    console.log(`📱 Portrait: ${isPortrait}, 🖥️ Landscape: ${isLandscape}`);
+    
+    // Find the legacy venue image container
+    const imageSection = img.closest('.venue-image-section');
+    if (imageSection) {
+        // Adjust container aspect ratio based on image orientation
+        if (isPortrait) {
+            console.log('📱 Setting legacy venue portrait aspect ratio (3:4)');
+            imageSection.style.aspectRatio = '3 / 4';
+        } else if (isLandscape) {
+            console.log('🖥️ Setting legacy venue landscape aspect ratio (16:9)');
+            imageSection.style.aspectRatio = '16 / 9';
+        } else {
+            console.log('⬜ Setting legacy venue standard aspect ratio (4:3)');
+            imageSection.style.aspectRatio = '4 / 3';
+        }
+    }
+    
+    // Set appropriate object positioning
+    if (isPortrait) {
+        img.style.objectPosition = 'center center';
+    } else if (isLandscape) {
         img.style.objectPosition = 'center center';
     } else {
-        // Normal landscape: center positioning
         img.style.objectPosition = 'center center';
     }
     
     // Handle square-ish images (likely logos)
     if (Math.abs(ratio - 1) < 0.2) {
+        console.log('🔳 Applying contain mode for legacy square/logo image');
         img.style.objectFit = 'contain';
         img.style.objectPosition = 'center center';
         img.style.backgroundColor = '#fff';
+        if (imageSection) {
+            imageSection.style.aspectRatio = '1 / 1';
+        }
     }
+    
+    console.log('✅ Legacy venue image fit adjusted');
 }
 
 // Handle image loading errors gracefully
