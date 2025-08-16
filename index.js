@@ -1245,6 +1245,50 @@ function refreshAllImageFitting() {
     });
 }
 
+// Event Image Orientation Detection
+function adjustEventCardHeight(img) {
+    console.log('🔍 Checking event image orientation:', img.src);
+    
+    if (!img.naturalWidth || !img.naturalHeight) {
+        console.log('⚠️ Image dimensions not ready, retrying...');
+        setTimeout(() => adjustEventCardHeight(img), 100);
+        return;
+    }
+    
+    const aspectRatio = img.naturalWidth / img.naturalHeight;
+    const isPortrait = aspectRatio < 1; // Height > Width
+    const isLandscape = aspectRatio > 1.3; // Width significantly > Height
+    
+    console.log(`📐 Image dimensions: ${img.naturalWidth}x${img.naturalHeight}, ratio: ${aspectRatio.toFixed(2)}`);
+    console.log(`📱 Portrait: ${isPortrait}, 🖥️ Landscape: ${isLandscape}`);
+    
+    const imageSection = img.closest('.event-card-image-section');
+    if (!imageSection) {
+        console.log('❌ Could not find image section');
+        return;
+    }
+    
+    // Apply different heights based on orientation
+    if (isPortrait) {
+        console.log('📱 Setting portrait height (320px)');
+        imageSection.style.height = '320px';
+        img.style.objectFit = 'cover';
+        img.style.objectPosition = 'center center';
+    } else if (isLandscape) {
+        console.log('🖥️ Setting landscape height (180px)');
+        imageSection.style.height = '180px';
+        img.style.objectFit = 'cover';
+        img.style.objectPosition = 'center center';
+    } else {
+        console.log('⬜ Setting standard height (240px)');
+        imageSection.style.height = '240px';
+        img.style.objectFit = 'cover';
+        img.style.objectPosition = 'center center';
+    }
+    
+    console.log('✅ Event card height adjusted');
+}
+
 // --- VENUE INTERACTION HANDLERS ---
 function handleVenueCardClick(cardElement, venueId) {
     // Open modal for both mobile and desktop
@@ -2815,7 +2859,7 @@ function renderEventsForDate(dateStr) {
             <div class="modern-event-card" data-event-id="${event.id}" ${isHidden} onclick="openEventModal(${event.id})">
                 <div class="event-card-image-section">
                     ${event.imageUrl ? `
-                        <img src="${event.imageUrl}" alt="${event.eventName}" class="event-card-image" loading="lazy">
+                        <img src="${event.imageUrl}" alt="${event.eventName}" class="event-card-image" loading="lazy" onload="adjustEventCardHeight(this)">
                     ` : `
                         <div class="event-card-placeholder">
                             <div class="placeholder-icon">${getCategoryIcon(event.category)}</div>
