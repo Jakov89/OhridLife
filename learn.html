@@ -86,26 +86,214 @@
         </div>
     </header>
 
-    <main class="container" id="learn-ohrid-page">
-        <section id="ohrid-text-content" class="py-8">
-            <div class="language-switcher">
-                <button id="lang-en" class="btn-lang active">English</button>
-                <button id="lang-mk" class="btn-lang">Македонски</button>
+    <main id="learn-ohrid-page">
+        <!-- Hero Section -->
+        <section id="learn-hero" class="learn-hero">
+            <div class="hero-background">
+                <img src="images_ohrid/ohrid1.jpg" alt="Ohrid panoramic view" loading="eager">
+                <div class="hero-overlay"></div>
             </div>
-            <!-- Text about Ohrid will go here -->
-            <h1>Learn About Ohrid</h1>
-            <p>Loading content...</p>
+            <div class="container hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">📚</span>
+                    <span class="badge-text">Discover Ohrid's Heritage</span>
+                </div>
+                <h1 class="hero-title">Ohrid: A Journey Through Time</h1>
+                <p class="hero-subtitle">Uncover the secrets of the ancient city where history whispers through every stone, and legends come alive in the shimmering waters of Europe's oldest lake.</p>
+                
+                <div class="hero-actions">
+                    <button id="explore-timeline-btn" class="btn btn-primary hero-btn">
+                        <span class="btn-icon">🕒</span>
+                        Explore Timeline
+                    </button>
+                    <button id="visit-churches-btn" class="btn btn-secondary hero-btn">
+                        <span class="btn-icon">⛪</span>
+                        Sacred Sites
+                    </button>
+                </div>
+                
+                <div class="hero-quick-facts">
+                    <div class="quick-fact">
+                        <span class="fact-number">365</span>
+                        <span class="fact-label">Churches</span>
+                    </div>
+                    <div class="quick-fact">
+                        <span class="fact-number">2000+</span>
+                        <span class="fact-label">Years Old</span>
+                    </div>
+                    <div class="quick-fact">
+                        <span class="fact-number">UNESCO</span>
+                        <span class="fact-label">Heritage Site</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="ohrid-gallery" class="py-8">
-            <h2 class="text-3xl font-bold text-center mb-8">Ohrid Gallery</h2>
-            <div class="gallery-single-view">
-                <div class="gallery-main-image">
-                    <!-- Main image will be here -->
+        <!-- Interactive Timeline Section -->
+        <section id="timeline-section" class="timeline-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>
+                        <span class="section-icon">⏳</span>
+                        Journey Through History
+                    </h2>
+                    <p class="section-subtitle">Explore key moments that shaped Ohrid's remarkable heritage</p>
                 </div>
-                <div class="gallery-navigation">
-                    <button class="gallery-nav-button prev" id="gallery-prev">&lt;</button>
-                    <button class="gallery-nav-button next" id="gallery-next">&gt;</button>
+                
+                <div class="timeline-container">
+                    <div class="timeline-navigation">
+                        <button class="timeline-btn active" data-period="ancient">
+                            <span class="timeline-icon">🏛️</span>
+                            <span class="timeline-label">Ancient</span>
+                            <span class="timeline-years">200 BC - 500 AD</span>
+                        </button>
+                        <button class="timeline-btn" data-period="medieval">
+                            <span class="timeline-icon">👑</span>
+                            <span class="timeline-label">Medieval</span>
+                            <span class="timeline-years">893 - 1400 AD</span>
+                        </button>
+                        <button class="timeline-btn" data-period="ottoman">
+                            <span class="timeline-icon">🕌</span>
+                            <span class="timeline-label">Ottoman</span>
+                            <span class="timeline-years">1400 - 1912</span>
+                        </button>
+                        <button class="timeline-btn" data-period="modern">
+                            <span class="timeline-icon">🏆</span>
+                            <span class="timeline-label">Modern</span>
+                            <span class="timeline-years">1912 - Today</span>
+                        </button>
+                    </div>
+                    
+                    <div class="timeline-content" id="timeline-content">
+                        <!-- Timeline content will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Language-Specific Content Section -->
+        <section id="ohrid-text-content" class="text-content-section">
+            <div class="container">
+                <div class="content-header">
+                    <div class="language-switcher">
+                        <button id="lang-en" class="btn-lang active">English</button>
+                        <button id="lang-mk" class="btn-lang">Македонски</button>
+                    </div>
+                </div>
+                
+                <div class="content-wrapper">
+                    <div class="content-sidebar">
+                        <div class="content-navigation">
+                            <h4>Quick Navigation</h4>
+                            <ul class="nav-list">
+                                <li><a href="#ancient-origins">Ancient Origins</a></li>
+                                <li><a href="#slavic-culture">Slavic Culture</a></li>
+                                <li><a href="#medieval-glory">Medieval Glory</a></li>
+                                <li><a href="#ottoman-period">Ottoman Period</a></li>
+                                <li><a href="#modern-ohrid">Modern Ohrid</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="content-highlights">
+                            <h4>Did You Know?</h4>
+                            <div class="highlight-item">
+                                <span class="highlight-icon">💡</span>
+                                <p>Ohrid has 365 churches - one for each day of the year!</p>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-icon">📖</span>
+                                <p>The Cyrillic alphabet was perfected here by Saint Clement.</p>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-icon">🌊</span>
+                                <p>Lake Ohrid is 2-3 million years old - one of Europe's oldest!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main-content">
+                        <div id="text-content-display">
+                            <!-- Text content will be populated by JavaScript -->
+                            <div class="loading-content">
+                                <div class="loading-spinner"></div>
+                                <p>Loading historical content...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Gallery Section -->
+        <section id="ohrid-gallery" class="gallery-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>
+                        <span class="section-icon">📸</span>
+                        Visual Journey
+                    </h2>
+                    <p class="section-subtitle">Experience Ohrid's beauty through stunning photography</p>
+                </div>
+                
+                <div class="gallery-container">
+                    <div class="gallery-main">
+                        <div class="gallery-main-image">
+                            <!-- Main image will be populated by JavaScript -->
+                        </div>
+                        <div class="gallery-navigation">
+                            <button class="gallery-nav-button prev" id="gallery-prev" aria-label="Previous image">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                                </svg>
+                            </button>
+                            <button class="gallery-nav-button next" id="gallery-next" aria-label="Next image">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="gallery-info">
+                            <h4 id="gallery-image-title">Ohrid Panorama</h4>
+                            <p id="gallery-image-description">Breathtaking view of Lake Ohrid and the historic city</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-thumbnails">
+                        <!-- Thumbnails will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-Action Section -->
+        <section id="cta-section" class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Explore Ohrid?</h2>
+                    <p>From ancient churches to vibrant events, discover everything this magical city has to offer.</p>
+                    
+                    <div class="cta-actions">
+                        <a href="churches.html" class="cta-card">
+                            <span class="cta-icon">⛪</span>
+                            <h3>Sacred Heritage</h3>
+                            <p>Explore 365 churches and monasteries</p>
+                            <span class="cta-arrow">→</span>
+                        </a>
+                        
+                        <a href="events.html" class="cta-card">
+                            <span class="cta-icon">🎭</span>
+                            <h3>Cultural Events</h3>
+                            <p>Discover festivals and performances</p>
+                            <span class="cta-arrow">→</span>
+                        </a>
+                        
+                        <a href="venues.html" class="cta-card">
+                            <span class="cta-icon">🍽️</span>
+                            <h3>Local Experiences</h3>
+                            <p>Find restaurants, cafes, and activities</p>
+                            <span class="cta-arrow">→</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

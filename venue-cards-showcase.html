@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OhridHub - Enhanced Venue Cards Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--background);
+            color: var(--foreground);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        
+        .showcase-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .showcase-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .showcase-header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--foreground);
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--foreground) 0%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .showcase-header p {
+            font-size: 1.1rem;
+            color: var(--muted-foreground);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .feature-card {
+            background: var(--card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--foreground);
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-desc {
+            font-size: 0.9rem;
+            color: var(--muted-foreground);
+        }
+        
+        .demo-section {
+            margin-bottom: 4rem;
+        }
+        
+        .demo-section h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--foreground);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .instructions {
+            background: var(--muted);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .instructions h3 {
+            margin-bottom: 1rem;
+            color: var(--foreground);
+        }
+        
+        .instructions p {
+            color: var(--muted-foreground);
+            margin-bottom: 0.5rem;
+        }
+        
+        .demo-venues {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 24px;
+        }
+        
+        @media (max-width: 768px) {
+            .demo-venues {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="showcase-container">
+        <div class="showcase-header">
+            <h1>🏛️ Enhanced OhridHub Venue Cards</h1>
+            <p>Modern, responsive venue cards with smart category icons, hover effects, and mobile-optimized interactions</p>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <div class="feature-title">Smart Category Icons</div>
+                <div class="feature-desc">Automatic icon detection for 15+ venue types including restaurants, bars, museums, and more</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <div class="feature-title">Hover Effects</div>
+                <div class="feature-desc">Desktop hover reveals additional details like hours, phone, and quick actions</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <div class="feature-title">Mobile Optimized</div>
+                <div class="feature-desc">Tap-to-expand functionality replaces hover effects on mobile devices</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏷️</div>
+                <div class="feature-title">Tag System</div>
+                <div class="feature-desc">Clean tag chips show venue amenities and features at a glance</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⭐</div>
+                <div class="feature-title">Rating Display</div>
+                <div class="feature-desc">Integrated star ratings with review counts for quick quality assessment</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <div class="feature-title">OhridHub Branding</div>
+                <div class="feature-desc">Consistent blue/white theme with subtle shadows and modern typography</div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>🖥️ Desktop Experience</h2>
+            <div class="instructions">
+                <h3>Desktop Instructions</h3>
+                <p><strong>Hover</strong> over any venue card to see additional details</p>
+                <p>Click <strong>"View Details"</strong> to open the venue modal</p>
+                <p>Click <strong>"Directions"</strong> to open Google Maps</p>
+            </div>
+            
+            <div id="desktop-demo" class="demo-venues">
+                <!-- Venue cards will be populated here -->
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>📱 Mobile Experience</h2>
+            <div class="instructions">
+                <h3>Mobile Instructions</h3>
+                <p><strong>Tap</strong> any venue card to expand and see additional details</p>
+                <p>Tap again to collapse the expanded view</p>
+                <p>Only one card can be expanded at a time</p>
+            </div>
+            
+            <div id="mobile-demo" class="demo-venues">
+                <!-- Venue cards will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script>
+        // Demo venue data
+        const demoVenues = [
+            {
+                id: 1,
+                name: "Amfora Restaurant",
+                description: "Amfora Restaurant in Ohrid offers a cozy, welcoming atmosphere with a touch of elegance and traditional Macedonian dishes.",
+                type: "restaurant",
+                tags: ["traditional", "cozy", "elegant", "local cuisine"],
+                imageUrl: "images_venue/amfora_card.jpg",
+                location: { address: "Amfora Restaurant, Ohrid", googleMapsUrl: "https://maps.google.com" },
+                phone: "070605206",
+                workingHours: "11:00 - 23:00"
+            },
+            {
+                id: 2,
+                name: "Jazz Inn",
+                description: "Experience the magic of live jazz in an intimate setting with sophisticated ambiance and world-class performances.",
+                type: "entertainment",
+                tags: ["live music", "jazz", "cocktails", "intimate"],
+                imageUrl: "images_venue/jazz_card.jpg",
+                location: { address: "Jazz Inn, Old Town Ohrid", googleMapsUrl: "https://maps.google.com" },
+                phone: "070123456",
+                workingHours: "19:00 - 02:00"
+            },
+            {
+                id: 3,
+                name: "Golden Beach Club",
+                description: "Relax and unwind at our beautiful lakeside beach club with stunning views and premium amenities.",
+                type: "beach",
+                tags: ["beach", "swimming", "cocktails", "lake view"],
+                imageUrl: "images_venue/golden_card.jpg",
+                location: { address: "Gradishte Beach, Ohrid", googleMapsUrl: "https://maps.google.com" },
+                phone: "070987654",
+                workingHours: "08:00 - 20:00"
+            },
+            {
+                id: 4,
+                name: "St. Kliment Museum",
+                description: "Discover the rich history and cultural heritage of Ohrid through our extensive collection of artifacts.",
+                type: "museum",
+                tags: ["history", "culture", "education", "heritage"],
+                imageUrl: "images_venue/museum_card.jpg",
+                location: { address: "Plaoshnik, Ohrid", googleMapsUrl: "https://maps.google.com" },
+                phone: "046261267",
+                workingHours: "09:00 - 17:00"
+            }
+        ];
+
+        // Initialize venue ratings for demo
+        const venueRatings = {
+            1: [4.5, 4.2, 4.8, 4.1, 4.6],
+            2: [4.7, 4.9, 4.5, 4.8],
+            3: [4.3, 4.1, 4.4, 4.2, 4.5, 4.3],
+            4: [4.8, 4.9, 4.7, 4.8, 4.9]
+        };
+
+        function renderDemoVenues() {
+            const desktopContainer = document.getElementById('desktop-demo');
+            const mobileContainer = document.getElementById('mobile-demo');
+            
+            const venueCards = demoVenues.map(venue => {
+                const cardHtml = renderVenueCard(venue);
+                // Remove the keen-slider wrapper for demo
+                return cardHtml
+                    .replace('<div class="keen-slider__slide" data-venue-id="' + venue.id + '">', '<div data-venue-id="' + venue.id + '">')
+                    .replace('</div>\n    `;', '</div>');
+            }).join('');
+            
+            desktopContainer.innerHTML = venueCards;
+            mobileContainer.innerHTML = venueCards;
+        }
+
+        function openVenueModal(id) {
+            alert(`Opening venue details for venue ID: ${id}`);
+        }
+
+        // Initialize demo
+        document.addEventListener('DOMContentLoaded', function() {
+            renderDemoVenues();
+            initializeMobileVenueCards();
+        });
+    </script>
+</body>
+</html>

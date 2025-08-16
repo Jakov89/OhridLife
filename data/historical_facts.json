@@ -1,0 +1,193 @@
+{
+  "facts": [
+    {
+      "id": 1,
+      "fact": "Ohrid was known as Lychnidos in ancient times, meaning 'City of Light' in ancient Greek, due to the white limestone cliffs reflecting sunlight across the lake.",
+      "category": "ancient",
+      "icon": "🏛️",
+      "period": "200 BC"
+    },
+    {
+      "id": 2,
+      "fact": "The Ancient Theatre of Ohrid, built around 200 BC, could hold up to 5,000 spectators and is still used today for concerts and festivals.",
+      "category": "ancient",
+      "icon": "🎭",
+      "period": "200 BC"
+    },
+    {
+      "id": 3,
+      "fact": "Saint Clement of Ohrid established the first Slavic university here in 893 AD, making it the cradle of Slavic literacy and culture.",
+      "category": "medieval",
+      "icon": "📚",
+      "period": "893 AD"
+    },
+    {
+      "id": 4,
+      "fact": "The Cyrillic alphabet was perfected in Ohrid by Saint Clement",
+      "category": "medieval",
+      "icon": "✍️",
+      "period": "9th century"
+    },   
+    {
+      "id": 5,
+      "fact": "Samuel's Fortress, built in the 10th century, offers one of the most spectacular views of Lake Ohrid.",
+      "category": "medieval",
+      "icon": "🏰",
+      "period": "10th century"
+    },
+    {
+      "id": 6,
+      "fact": "The Church of Saint Sophia contains frescoes from the 11th century, representing some of the finest examples of Byzantine art in the Balkans.",
+      "category": "medieval",
+      "icon": "🎨",
+      "period": "11th century"
+    },
+    {
+      "id": 7,
+      "fact": "Ohrid has exactly 365 churches - one for each day of the year - earning it the nickname 'Jerusalem of the Balkans'.",
+      "category": "religious",
+      "icon": "⛪",
+      "period": "Various periods"
+    },
+    {
+      "id": 8,
+      "fact": "The Church of Saint John at Kaneo, perched dramatically on a cliff, is Ohrid's most photographed landmark and dates to the 13th century.",
+      "category": "religious",
+      "icon": "📸",
+      "period": "13th century"
+    },
+    {
+      "id": 9,
+      "fact": "Lake Ohrid is one of Europe's oldest lakes, estimated to be 2-3 million years old, hosting over 200 endemic species.",
+      "category": "nature",
+      "icon": "🌊",
+      "period": "2-3 million years"
+    },
+    {
+      "id": 10,
+      "fact": "The famous Ohrid trout (Salmo letnica) is endemic to Lake Ohrid and has been a local delicacy for over 2,000 years.",
+      "category": "nature",
+      "icon": "🐟",
+      "period": "Ancient times"
+    },
+    {
+      "id": 11,
+      "fact": "UNESCO declared both Lake Ohrid and the city as World Heritage Sites - one of the few places with dual natural and cultural recognition.",
+      "category": "modern",
+      "icon": "🏆",
+      "period": "1979-1980"
+    },
+    {
+      "id": 12,
+      "fact": "The traditional Ohrid houses with their wooden balconies and Ottoman-era architecture showcase 500 years of cultural fusion.",
+      "category": "architecture",
+      "icon": "🏘️",
+      "period": "15th-19th century"
+    },
+    {
+      "id": 13,
+      "fact": "The Via Egnatia, the ancient Roman road connecting Rome to Constantinople, passed through Lychnidos (Ohrid), making it a major trade hub.",
+      "category": "ancient",
+      "icon": "🛤️",
+      "period": "2nd century BC"
+    },
+    {
+      "id": 14,
+      "fact": "Saint Naum Monastery, 29km from Ohrid, was built by Saint Naum of Preslav in 905 AD and houses peacocks that roam freely in its gardens.",
+      "category": "religious",
+      "icon": "🦚",
+      "period": "905 AD"
+    },
+    {
+      "id": 15,
+      "fact": "The Robevci House, now a museum, showcases traditional 19th-century Ohrid lifestyle with authentic furniture and ethnographic artifacts.",
+      "category": "culture",
+      "icon": "🏠",
+      "period": "19th century"
+    },
+    {
+      "id": 17,
+      "fact": "Ohrid's Old Bazaar has been a center of trade and craftsmanship for over 500 years, still featuring traditional Macedonian handicrafts.",
+      "category": "culture",
+      "icon": "🛍️",
+      "period": "16th century"
+    },
+    {
+      "id": 18,
+      "fact": "The Ohrid Summer Festival, established in 1961, transforms ancient venues into world-class performance spaces every July and August.",
+      "category": "modern",
+      "icon": "🎪",
+      "period": "Since 1961"
+    },
+    {
+      "id": 19,
+      "fact": "Lake Ohrid reaches a maximum depth of 288 meters, making it one of the deepest lakes in the Balkans.",
+      "category": "nature",
+      "icon": "📏",
+      "period": "Natural formation"
+    },
+    {
+      "id": 20,
+      "fact": "The Plaošnik archaeological site revealed remains of Saint Clement's original monastery and the first Slavic university in the world.",
+      "category": "medieval",
+      "icon": "🔍",
+      "period": "9th century"
+    },
+    {
+      "id": 21,
+      "fact": "Ohrid pearls, made from fish scales of the endemic Ohrid bleak fish, were a luxury item traded throughout Europe for centuries.",
+      "category": "culture",
+      "icon": "💎",
+      "period": "Traditional craft"
+    },
+    {
+      "id": 22,
+      "fact": "The city survived invasions by Romans, Byzantines, Bulgarians, Serbs, and Ottomans, each leaving their architectural and cultural mark.",
+      "category": "history",
+      "icon": "⚔️",
+      "period": "2000+ years"
+    },
+    {
+      "id": 23,
+      "fact": "Traditional Ohrid boats called 'čun' have been used for fishing on the lake for over 1,000 years, with designs unchanged since medieval times.",
+      "category": "culture",
+      "icon": "⛵",
+      "period": "Medieval times"
+    },
+    {
+      "id": 24,
+      "fact": "The Monastery of Saint Panteleimon contains the tomb of Saint Clement and is considered one of the most sacred sites in Orthodox Christianity.",
+      "category": "religious",
+      "icon": "⚰️",
+      "period": "893 AD"
+    },
+    {
+      "id": 25,
+      "fact": "Ohrid's city walls once extended all the way to the lake shore, with underwater foundations still visible in clear weather.",
+      "category": "medieval",
+      "icon": "🧱",
+      "period": "10th-14th century"
+    },   
+    {
+      "id": 26,
+      "fact": "During WWII, Ohrid served as a safe haven for refugees and resistance fighters, with many hidden passages and secret rooms still existing today.",
+      "category": "modern",
+      "icon": "🕳️",
+      "period": "1941-1945"
+    },
+    {
+      "id": 27,
+      "fact": "The traditional Ohrid song 'Lihnida Kajche Vslashe' is one of North Macedonia's most beloved folk songs.",
+      "category": "culture",
+      "icon": "🎵",
+      "period": "Traditional"
+    },   
+    {
+      "id": 28,
+      "fact": "The word 'Ohrid' comes from the Slavic 'оh rid', meaning 'on the hill', referring to the city's elevated position above the lake.",
+      "category": "history",
+      "icon": "🏔️",
+      "period": "Slavic settlement"
+    }
+  ]
+}

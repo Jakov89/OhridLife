@@ -4,6 +4,8 @@ let eventsListData = [];
 let featuredEventsData = [];
 let learnOhridTexts = {};
 let venueRatings = {}; // Holds all user-submitted ratings
+let historicalFacts = [];
+let currentFactIndex = 0;
 
 // --- LAZY LOADING OBSERVER ---
 let lazyImageObserver;
@@ -67,6 +69,10 @@ const mainCategoryConfig = {
 // --- DOMContentLoaded ---
 document.addEventListener('DOMContentLoaded', () => {
     fetchAllData();
+    // Initialize layout controls if they exist
+    initializeLayoutControls();
+    // Initialize image fitting for existing images
+    setTimeout(() => initializeImageFitting(), 500);
 });
 
 // --- SKELETON LOADING FUNCTIONS ---
@@ -131,11 +137,12 @@ async function fetchAllData() {
     }
 
     try {
-        const [venuesResponse, eventsResponse, organizationsResponse, learnOhridResponse] = await Promise.all([
+        const [venuesResponse, eventsResponse, organizationsResponse, learnOhridResponse, historicalFactsResponse] = await Promise.all([
             fetch('/api/venues'),
             fetch('/api/events'),
             fetch('/api/organizations'),
-            fetch('/api/learn-ohrid-texts')
+            fetch('/api/learn-ohrid-texts'),
+            fetch('/data/historical_facts.json')
         ]);
 
         // Check response status
@@ -143,18 +150,21 @@ async function fetchAllData() {
         if (!eventsResponse.ok) throw new Error(`Events API error: ${eventsResponse.status}`);
         if (!organizationsResponse.ok) throw new Error(`Organizations API error: ${organizationsResponse.status}`);
         if (!learnOhridResponse.ok) throw new Error(`Learn API error: ${learnOhridResponse.status}`);
+        if (!historicalFactsResponse.ok) throw new Error(`Historical facts API error: ${historicalFactsResponse.status}`);
 
-        const [venues, events, organizations, learnOhrid] = await Promise.all([
+        const [venues, events, organizations, learnOhrid, historicalFactsData] = await Promise.all([
             venuesResponse.json(),
             eventsResponse.json(),
             organizationsResponse.json(),
-            learnOhridResponse.json()
+            learnOhridResponse.json(),
+            historicalFactsResponse.json()
         ]);
 
         venuesData = venues.map(normalizeVenueDataItem);
         eventsListData = events.filter(event => !event.isHidden);
         featuredEventsData = organizations;
         learnOhridTexts = learnOhrid;
+        historicalFacts = historicalFactsData.facts;
 
         // Hide skeleton screens and show content
         hideSkeletonScreens();
@@ -297,6 +307,7 @@ async function initializeApp() {
     populateVenueFilters();
     filterAndDisplayVenues();
     fetchWeather();
+    initializeHistoricalFacts();
     // animateStatsOnScroll(); // Removed - statistics section deleted
     document.getElementById('main-page-content')?.classList.remove('hidden');
     setupImageModalClosers();
@@ -777,21 +788,82 @@ function createSlider(elementOrSelector, options, name) {
     return slider;
 }
 
+// --- CATEGORY ICON MAPPING ---
+const VENUE_CATEGORY_ICONS = {
+    'restaurant': '🍽️',
+    'bar': '🍻', 
+    'cafe': '☕',
+    'hotel': '🏨',
+    'museum': '🏛️',
+    'church': '⛪',
+    'beach': '🏖️',
+    'adventure': '🏔️',
+    'entertainment': '🎭',
+    'health': '🏥',
+    'shopping': '🛍️',
+    'nightclub': '🌙',
+    'fast-food': '🍔',
+    'culture': '🎨',
+    'sport': '⚽',
+    'transport': '🚗',
+    'beauty': '💄',
+    'education': '📚',
+    'general': '📍'
+};
+
+function getVenueCategoryIcon(venueType) {
+    if (!venueType) return VENUE_CATEGORY_ICONS.general;
+    
+    let type = '';
+    if (typeof venueType === 'string') {
+        type = venueType.toLowerCase();
+    } else if (typeof venueType === 'object' && venueType.en) {
+        type = Array.isArray(venueType.en) ? venueType.en[0] : venueType.en;
+        type = type.toLowerCase();
+    }
+    
+    // Smart mapping for common venue types
+    if (type.includes('restaurant') || type.includes('dining')) return VENUE_CATEGORY_ICONS.restaurant;
+    if (type.includes('bar') || type.includes('pub')) return VENUE_CATEGORY_ICONS.bar;
+    if (type.includes('cafe') || type.includes('coffee')) return VENUE_CATEGORY_ICONS.cafe;
+    if (type.includes('hotel') || type.includes('accommodation')) return VENUE_CATEGORY_ICONS.hotel;
+    if (type.includes('museum')) return VENUE_CATEGORY_ICONS.museum;
+    if (type.includes('church') || type.includes('monastery')) return VENUE_CATEGORY_ICONS.church;
+    if (type.includes('beach')) return VENUE_CATEGORY_ICONS.beach;
+    if (type.includes('adventure') || type.includes('outdoor')) return VENUE_CATEGORY_ICONS.adventure;
+    if (type.includes('entertainment') || type.includes('theater')) return VENUE_CATEGORY_ICONS.entertainment;
+    if (type.includes('health') || type.includes('medical')) return VENUE_CATEGORY_ICONS.health;
+    if (type.includes('shop') || type.includes('store')) return VENUE_CATEGORY_ICONS.shopping;
+    if (type.includes('night') || type.includes('club')) return VENUE_CATEGORY_ICONS.nightclub;
+    if (type.includes('fast') || type.includes('burger')) return VENUE_CATEGORY_ICONS['fast-food'];
+    if (type.includes('culture') || type.includes('art')) return VENUE_CATEGORY_ICONS.culture;
+    if (type.includes('sport') || type.includes('fitness')) return VENUE_CATEGORY_ICONS.sport;
+    if (type.includes('transport') || type.includes('rent')) return VENUE_CATEGORY_ICONS.transport;
+    if (type.includes('beauty') || type.includes('spa')) return VENUE_CATEGORY_ICONS.beauty;
+    if (type.includes('education') || type.includes('school')) return VENUE_CATEGORY_ICONS.education;
+    
+    return VENUE_CATEGORY_ICONS[type] || VENUE_CATEGORY_ICONS.general;
+}
+
 // --- RENDERING FUNCTIONS ---
 function renderVenueCard(venue) {
-    const name = venue.name?.en || 'Unnamed Venue';
-    const description = venue.description?.en || 'No description available.';
+    const name = venue.name?.en || venue.name || 'Unnamed Venue';
+    const description = venue.description?.en || venue.description || 'No description available.';
     const location = venue.location?.address || null;
     
     let categoryString = 'General';
+    let venueType = venue.type;
     if (venue.type?.en) {
         const type = Array.isArray(venue.type.en) ? venue.type.en[0] : venue.type.en;
         if (type && typeof type === 'string') {
             categoryString = type.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
         }
+    } else if (typeof venue.type === 'string') {
+        categoryString = venue.type.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
     }
 
-    const imageUrl = venue.imageUrl || 'https://via.placeholder.com/400x200/cccccc/666666?text=No+Image';
+    const categoryIcon = getVenueCategoryIcon(venueType);
+    const imageUrl = venue.imageUrl || 'https://via.placeholder.com/400x220/f8fafc/94a3b8?text=No+Image';
     const isRecommended = venue.tags?.includes('Recommended');
 
     // --- Dynamic Rating Logic ---
@@ -819,32 +891,464 @@ function renderVenueCard(venue) {
     // Build location HTML conditionally
     const locationHtml = location ? `
         <div class="venue-card-location">
-             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
             </svg>
             <span>${location}</span>
         </div>
     ` : '';
 
-    return `
-        <div class="keen-slider__slide" data-venue-id="${venue.id}">
-            <div class="venue-card" onclick="event.stopPropagation(); openVenueModal(${venue.id})">
-                <div class="venue-card-image-container">
-                    <img src="${imageUrl}" alt="${name}" class="venue-card-image" loading="lazy">
-                    <div class="venue-card-badges">
-                        ${recommendationBadge}
-                        ${ratingBadge}
-                    </div>
+    // Build tags HTML from venue tags
+    const tags = venue.tags || [];
+    const displayTags = tags.filter(tag => tag !== 'Recommended').slice(0, 3);
+    const tagsHtml = displayTags.length > 0 ? `
+        <div class="venue-card-tags">
+            ${displayTags.map(tag => `<span class="venue-card-tag">${tag}</span>`).join('')}
+        </div>
+    ` : '';
+
+    // Build hover details for desktop
+    const hoverDetailsHtml = `
+        <div class="venue-card-hover-details">
+            <div class="venue-card-hover-content">
+                <h4 class="venue-card-hover-title">${name}</h4>
+                <div class="venue-card-hover-info">
+                    ${venue.workingHours ? `
+                        <div class="venue-card-hover-item">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>${venue.workingHours}</span>
+                        </div>
+                    ` : ''}
+                    ${venue.phone ? `
+                        <div class="venue-card-hover-item">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>${venue.phone}</span>
+                        </div>
+                    ` : ''}
                 </div>
-                <div class="venue-card-content">
-                    <span class="venue-card-category">${categoryString}</span>
-                    <h3 class="venue-card-title">${name}</h3>
-                    <p class="venue-card-description">${description}</p>
-                    ${locationHtml}
+                <div class="venue-card-hover-actions">
+                    <button class="venue-card-hover-btn primary" onclick="event.stopPropagation(); openVenueModal(${venue.id})">
+                        View Details
+                    </button>
+                    ${venue.location?.googleMapsUrl ? `
+                        <a href="${venue.location.googleMapsUrl}" target="_blank" class="venue-card-hover-btn secondary" onclick="event.stopPropagation()">
+                            Directions
+                        </a>
+                    ` : ''}
                 </div>
             </div>
         </div>
     `;
+
+    // Truncate description for card display
+    const shortDescription = description.length > 120 ? description.substring(0, 120) + '...' : description;
+    
+    // Build contact icons section
+    const contactIcons = [];
+    if (venue.phone) {
+        contactIcons.push(`
+            <button class="contact-icon" onclick="event.stopPropagation(); window.location.href='tel:${venue.phone}'" title="Call ${venue.phone}">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+            </button>
+        `);
+    }
+    if (venue.location?.googleMapsUrl) {
+        contactIcons.push(`
+            <button class="contact-icon" onclick="event.stopPropagation(); window.open('${venue.location.googleMapsUrl}', '_blank')" title="Get Directions">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+            </button>
+        `);
+    }
+
+    return `
+        <div class="keen-slider__slide" data-venue-id="${venue.id}">
+            <div class="redesigned-venue-card" onclick="event.stopPropagation(); handleVenueCardClick(this, ${venue.id})">
+                <!-- Image Section with 4:3 Aspect Ratio -->
+                <div class="venue-card__media">
+                    <img src="${imageUrl}" 
+                         alt="${name}" 
+                         class="venue-card__img" 
+                         loading="lazy" 
+                         decoding="async"
+                         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                         onload="console.log('Image loaded:', this.src); adjustImageFit(this);"
+                         onerror="handleImageError(this)">
+                    <div class="venue-image-overlay">
+                        <span class="venue-type-badge">${categoryString}</span>
+                        ${isRecommended ? '<span class="recommended-badge">★ Recommended</span>' : ''}
+                    </div>
+                </div>
+                
+                <!-- Essential Information Section -->
+                <div class="venue-essential-info">
+                    <!-- Name and Rating Row -->
+                    <div class="venue-header-row">
+                        <div class="venue-name-section">
+                            <h3 class="venue-name">${name}</h3>
+                            <span class="venue-category">${categoryString}</span>
+                        </div>
+                        ${rating && ratingCount > 0 ? `
+                            <div class="venue-rating-display">
+                                <div class="rating-stars">
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                    </svg>
+                                    <span class="rating-value">${rating.toFixed(1)}</span>
+                                </div>
+                                <span class="rating-count">${ratingCount} reviews</span>
+                            </div>
+                        ` : '<div class="venue-rating-display"><span class="no-rating">No reviews</span></div>'}
+                    </div>
+                    
+                    <!-- Location and Hours Row -->
+                    <div class="venue-details-row">
+                        ${location ? `
+                            <div class="venue-info-item">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                <span class="info-text">${location}</span>
+                            </div>
+                        ` : ''}
+                        
+                        ${venue.workingHours ? `
+                            <div class="venue-info-item">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span class="info-text">${venue.workingHours}</span>
+                            </div>
+                        ` : ''}
+                    </div>
+                    
+                    <!-- Short Description -->
+                    <div class="venue-description-preview">
+                        <p class="description-text">${shortDescription}</p>
+                        ${description.length > 120 ? `
+                            <button class="read-more-toggle" onclick="event.stopPropagation(); toggleCardDescription(this)" data-venue-id="${venue.id}">
+                                Read More
+                            </button>
+                        ` : ''}
+                    </div>
+                </div>
+                
+                <!-- Contact and Action Section -->
+                <div class="venue-action-section">
+                    <div class="contact-actions">
+                        ${contactIcons.length > 0 ? contactIcons.join('') : ''}
+                        <button class="view-details-btn" onclick="event.stopPropagation(); handleVenueCardClick(this, ${venue.id})">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                            Details
+                        </button>
+                    </div>
+                    
+                    ${displayTags.length > 0 ? `
+                        <div class="venue-tags-compact">
+                            ${displayTags.slice(0, 2).map(tag => `<span class="venue-tag">${tag}</span>`).join('')}
+                            ${displayTags.length > 2 ? `<span class="more-tags">+${displayTags.length - 2}</span>` : ''}
+                        </div>
+                    ` : ''}
+                </div>
+                
+                <!-- Expandable Section (Hidden by default) -->
+                <div class="venue-expandable-section" id="expandable-${venue.id}" style="display: none;">
+                    <div class="expanded-content">
+                        <div class="full-description">
+                            <h4>About</h4>
+                            <p>${description}</p>
+                        </div>
+                        
+                        ${displayTags.length > 0 ? `
+                            <div class="all-tags">
+                                <h4>Tags</h4>
+                                <div class="tags-list">
+                                    ${displayTags.map(tag => `<span class="venue-tag">${tag}</span>`).join('')}
+                                </div>
+                            </div>
+                        ` : ''}
+                        
+                        ${venue.phone || venue.location?.googleMapsUrl ? `
+                            <div class="contact-info">
+                                <h4>Contact</h4>
+                                <div class="contact-details">
+                                    ${venue.phone ? `
+                                        <a href="tel:${venue.phone}" class="contact-link" onclick="event.stopPropagation()">
+                                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                            </svg>
+                                            ${venue.phone}
+                                        </a>
+                                    ` : ''}
+                                    
+                                    ${venue.location?.googleMapsUrl ? `
+                                        <a href="${venue.location.googleMapsUrl}" target="_blank" class="contact-link" onclick="event.stopPropagation()">
+                                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                            </svg>
+                                            Get Directions
+                                        </a>
+                                    ` : ''}
+                                </div>
+                            </div>
+                        ` : ''}
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+// --- IMAGE HANDLING FUNCTIONS ---
+function adjustImageFit(img) {
+    console.log('adjustImageFit called for:', img.src);
+    
+    if (!img.complete || !img.naturalWidth || !img.naturalHeight) {
+        console.log('Image not ready, retrying...');
+        // Image not fully loaded yet, try again after a short delay
+        setTimeout(() => adjustImageFit(img), 100);
+        return;
+    }
+    
+    const ratio = img.naturalWidth / img.naturalHeight;
+    const expectedRatio = 4/3; // Our container ratio
+    
+    console.log(`Image ${img.src.split('/').pop()}: ${img.naturalWidth}x${img.naturalHeight}, ratio: ${ratio.toFixed(2)}`);
+    
+    // Calculate how much the image differs from our expected ratio
+    const ratioDifference = Math.abs(ratio - expectedRatio) / expectedRatio;
+    
+    // Reset any previous styles
+    img.classList.remove('venue-card__img--contain');
+    img.style.objectFit = '';
+    img.style.backgroundColor = '';
+    
+    // If the image ratio is very different from 4:3, or if it's extreme
+    if (ratioDifference > 0.4 || ratio >= 2.0 || ratio <= 0.6) {
+        // Use contain for extreme ratios to avoid bad cropping
+        console.log('Applying contain mode for extreme ratio');
+        img.classList.add('venue-card__img--contain');
+        img.style.objectFit = 'contain';
+        img.style.objectPosition = 'center center';
+        img.style.backgroundColor = '#fff';
+    } else if (ratio < expectedRatio) {
+        // Portrait-ish images: position toward top to avoid cutting off important content
+        console.log('Applying top positioning for portrait image');
+        img.style.objectFit = 'cover';
+        img.style.objectPosition = 'center top';
+    } else {
+        // Landscape-ish images: use center positioning
+        console.log('Applying center positioning for landscape image');
+        img.style.objectFit = 'cover';
+        img.style.objectPosition = 'center center';
+    }
+    
+    // Special handling for images that might have logos or text
+    // Check if image seems to have important content that shouldn't be cropped
+    const aspectRatioTolerance = 0.2;
+    if (Math.abs(ratio - 1) < aspectRatioTolerance) {
+        // Square-ish images often have logos - use contain to preserve them
+        console.log('Applying contain mode for square/logo image');
+        img.classList.add('venue-card__img--contain');
+        img.style.objectFit = 'contain';
+        img.style.objectPosition = 'center center';
+        img.style.backgroundColor = '#fff';
+    }
+}
+
+// Initialize image fitting for all existing images
+function initializeImageFitting() {
+    // Handle new venue card images
+    document.querySelectorAll('.venue-card__img').forEach(img => {
+        if (img.complete && img.naturalWidth > 0) {
+            adjustImageFit(img);
+        } else {
+            img.addEventListener('load', () => adjustImageFit(img));
+            img.addEventListener('error', () => handleImageError(img));
+        }
+    });
+    
+    // Handle legacy venue images
+    document.querySelectorAll('.venue-image').forEach(img => {
+        if (img.complete && img.naturalWidth > 0) {
+            adjustLegacyImageFit(img);
+        } else {
+            img.addEventListener('load', () => adjustLegacyImageFit(img));
+            img.addEventListener('error', () => handleImageError(img));
+        }
+    });
+}
+
+// Adjust positioning for legacy venue images
+function adjustLegacyImageFit(img) {
+    if (!img.complete || !img.naturalWidth || !img.naturalHeight) {
+        setTimeout(() => adjustLegacyImageFit(img), 100);
+        return;
+    }
+    
+    const ratio = img.naturalWidth / img.naturalHeight;
+    const expectedRatio = 4/3; // Our container ratio
+    
+    if (ratio < expectedRatio) {
+        // Portrait-ish images: position toward top
+        img.style.objectPosition = 'center top';
+    } else if (ratio > expectedRatio * 1.5) {
+        // Very wide images: might need different positioning
+        img.style.objectPosition = 'center center';
+    } else {
+        // Normal landscape: center positioning
+        img.style.objectPosition = 'center center';
+    }
+    
+    // Handle square-ish images (likely logos)
+    if (Math.abs(ratio - 1) < 0.2) {
+        img.style.objectFit = 'contain';
+        img.style.objectPosition = 'center center';
+        img.style.backgroundColor = '#fff';
+    }
+}
+
+// Handle image loading errors gracefully
+function handleImageError(img) {
+    img.style.backgroundColor = '#f8fafc';
+    img.style.background = 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect width=\'400\' height=\'300\' fill=\'%23f8fafc\'/%3E%3Cg fill=\'%23cbd5e1\'%3E%3Cpath d=\'M180 140h40v20h-40z\'/%3E%3Ccircle cx=\'170\' cy=\'120\' r=\'8\'/%3E%3Cpath d=\'M160 100h80v80h-80z\' fill=\'none\' stroke=\'%23cbd5e1\' stroke-width=\'2\'/%3E%3C/g%3E%3Ctext x=\'200\' y=\'210\' text-anchor=\'middle\' fill=\'%2394a3b8\' font-family=\'Arial\' font-size=\'14\'%3EImage not available%3C/text%3E%3C/svg%3E") center/cover no-repeat';
+    img.alt = 'Image not available';
+}
+
+// Force refresh image fitting for all images (useful for debugging)
+function refreshAllImageFitting() {
+    console.log('Refreshing image fitting for all venue images...');
+    document.querySelectorAll('.venue-card__img, .venue-image').forEach(img => {
+        if (img.complete && img.naturalWidth > 0) {
+            if (img.classList.contains('venue-card__img')) {
+                adjustImageFit(img);
+            } else {
+                adjustLegacyImageFit(img);
+            }
+            console.log(`Adjusted image: ${img.src.split('/').pop()}, ratio: ${(img.naturalWidth / img.naturalHeight).toFixed(2)}`);
+        }
+    });
+}
+
+// --- VENUE INTERACTION HANDLERS ---
+function handleVenueCardClick(cardElement, venueId) {
+    // Open modal for both mobile and desktop
+    openVenueModal(venueId);
+}
+
+// Toggle expandable description in venue cards
+function toggleCardDescription(button) {
+    const venueId = button.getAttribute('data-venue-id');
+    const expandableSection = document.getElementById(`expandable-${venueId}`);
+    const isExpanded = expandableSection.style.display !== 'none';
+    
+    if (isExpanded) {
+        expandableSection.style.display = 'none';
+        button.textContent = 'Read More';
+        button.classList.remove('expanded');
+    } else {
+        expandableSection.style.display = 'block';
+        button.textContent = 'Read Less';
+        button.classList.add('expanded');
+    }
+}
+
+// Make function globally accessible
+window.toggleCardDescription = toggleCardDescription;
+
+// Get category icon for events
+function getCategoryIcon(category) {
+    const categoryMap = {
+        'music': '🎵',
+        'music & entertainment': '🎵',
+        'festival': '🎪',
+        'sport': '⚽',
+        'sports': '⚽',
+        'art': '🎨',
+        'culture': '🏛️',
+        'food': '🍽️',
+        'workshop': '🛠️',
+        'conference': '🎤',
+        'party': '🎉',
+        'entertainment': '🎭',
+        'wellness': '🧘',
+        'outdoor': '🌲',
+        'theater': '🎭',
+        'cinema': '🎬',
+        'dance': '💃',
+        'comedy': '😄',
+        'charity': '❤️',
+        'business': '💼',
+        'education': '📚'
+    };
+    
+    const normalizedCategory = category.toLowerCase().trim();
+    return categoryMap[normalizedCategory] || '📅';
+}
+
+
+
+function initializeMobileVenueCards() {
+    // Handle window resize to reset mobile states
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            // Remove expanded state when switching to desktop
+            document.querySelectorAll('.venue-card.expanded').forEach(card => {
+                card.classList.remove('expanded');
+            });
+        }
+    });
+}
+
+// --- LAYOUT SWITCHING FUNCTIONS ---
+function setVenueLayout(layout) {
+    const container = document.querySelector('.venues-container');
+    const gridBtn = document.querySelector('.layout-toggle-btn[data-layout="grid"]');
+    const listBtn = document.querySelector('.layout-toggle-btn[data-layout="list"]');
+    
+    if (!container) return;
+    
+    if (layout === 'grid') {
+        container.className = 'venues-container venues-grid';
+        gridBtn?.classList.add('active');
+        listBtn?.classList.remove('active');
+    } else if (layout === 'list') {
+        container.className = 'venues-container venues-list';
+        listBtn?.classList.add('active');
+        gridBtn?.classList.remove('active');
+    }
+    
+    // Store preference
+    localStorage.setItem('venueLayout', layout);
+}
+
+function initializeLayoutControls() {
+    const layoutControls = document.querySelectorAll('.layout-toggle-btn');
+    layoutControls.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const layout = btn.getAttribute('data-layout');
+            setVenueLayout(layout);
+        });
+    });
+    
+    // Load saved preference
+    const savedLayout = localStorage.getItem('venueLayout') || 'grid';
+    setVenueLayout(savedLayout);
 }
 
 function populateRecommendations() {
@@ -870,6 +1374,12 @@ function populateRecommendations() {
 
     recommendationsContainer.innerHTML = recommendations.map(renderVenueCard).join('');
     // Images now load directly, no lazy loading needed
+
+    // Initialize image fitting for smart aspect ratio handling
+    setTimeout(() => initializeImageFitting(), 100);
+
+    // Initialize mobile interactions
+    initializeMobileVenueCards();
 
     createSlider('#recommendations-slider', {
         loop: true,
@@ -1264,6 +1774,9 @@ function populateAllVenuesSlider(venues) {
     sliderContainer.classList.add('keen-slider');
     sliderContainer.innerHTML = venues.map(renderVenueCard).join('');
 
+    // Initialize image fitting for smart aspect ratio handling
+    setTimeout(() => initializeImageFitting(), 100);
+
     createSlider(sliderContainer, {
         loop: false,
         slides: { perView: 'auto', spacing: 15 },
@@ -1410,154 +1923,286 @@ function openVenueModal(venueId) {
         return;
     }
     
-    // Show modal with loading state first
+    // Show modal immediately and populate content
     modal.classList.remove('hidden');
-    const modalContent = document.getElementById('modal-details-content');
-    showModalLoadingState(modalContent);
     
-    // Add small delay to show loading state
-    setTimeout(() => {
-        populateVenueModal(venue, modal);
-    }, 300);
+    // Directly populate the modal without loading state delay
+    populateVenueModal(venue, modal);
 }
 
 function populateVenueModal(venue, modal) {
     generateVenueSchema(venue);
 
     // --- Safely populate modal elements ---
-    const name = venue.name?.en || 'Unnamed Venue';
-    const type = venue.type?.en || 'No type specified';
-    const description = venue.description?.en || 'No description available.';
+    const name = venue.name?.en || venue.name || 'Unnamed Venue';
+    const type = venue.type?.en || venue.type || 'No type specified';
+    const description = venue.description?.en || venue.description || 'No description available.';
     const imageUrl = venue.imageUrl ? 
         (venue.imageUrl.startsWith('http') ? venue.imageUrl : (venue.imageUrl.startsWith('/') ? venue.imageUrl : `/${venue.imageUrl}`)) : 
-        'https://via.placeholder.com/400x250/cccccc/666666?text=No+Image';
+        'https://via.placeholder.com/400x280/f8fafc/94a3b8?text=No+Image';
     
-    // Get the modal content container
-    const modalContent = document.getElementById('modal-details-content');
-    if (!modalContent) {
-        console.error('Modal content container not found');
-        return;
+    console.log('Loading enhanced venue modal for:', name);
+    
+    // Get category icon
+    const categoryIcon = getVenueCategoryIcon(venue.type);
+    
+    // Populate main image
+    const modalImage = document.getElementById('modal-venue-image');
+    if (modalImage) {
+        modalImage.src = imageUrl;
+        modalImage.alt = name;
     }
+    
+    // Populate category icon
+    const modalCategoryIcon = document.getElementById('modal-category-icon');
+    if (modalCategoryIcon) {
+        modalCategoryIcon.textContent = categoryIcon;
+    }
+    
+    // Populate venue name and type
+    const modalVenueName = document.getElementById('modal-venue-name');
+    if (modalVenueName) {
+        modalVenueName.textContent = name;
+    }
+    
+    const modalVenueType = document.getElementById('modal-venue-type');
+    if (modalVenueType) {
+        const typeString = Array.isArray(type) ? type.join(', ') : type;
+        modalVenueType.textContent = typeof typeString === 'string' ? 
+            typeString.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) : 
+            typeString;
+    }
+    
+    // Populate description with read more functionality
+    const modalDescription = document.getElementById('modal-venue-description');
+    const readMoreBtn = document.getElementById('read-more-btn');
+    if (modalDescription && readMoreBtn) {
+        modalDescription.textContent = description;
+        
+        // Check if description is long enough to need "Read More"
+        const descriptionElement = modalDescription.parentElement;
+        if (description.length > 200) {
+            readMoreBtn.classList.remove('hidden');
+            readMoreBtn.addEventListener('click', () => {
+                descriptionElement.classList.toggle('expanded');
+                readMoreBtn.textContent = descriptionElement.classList.contains('expanded') ? 'Read Less' : 'Read More';
+            });
+        } else {
+            readMoreBtn.classList.add('hidden');
+        }
+    }
+    
+    // Populate rating
+    populateVenueRating(venue);
+    
+    // Populate tags
+    populateVenueTags(venue);
+    
+    // Populate details grid
+    populateVenueDetails(venue);
+    
+    // Populate opening hours
+    populateVenueHours(venue);
+    
+    // Populate gallery
+    populateVenueGallery(venue);
+    
+    // Populate events (if any)
+    populateVenueEvents(venue);
+    
+    // Setup mobile action bar
+    setupMobileActionBar(venue);
+}
 
-    // Replace modal loading content with actual content
-    console.log('Loading venue:', venue.name, 'with image:', imageUrl);
-    modalContent.innerHTML = `
-        <img id="modal-venue-image" src="${imageUrl}" alt="${name}" 
-             onload="console.log('✅ Image loaded successfully:', this.src);"
-             onerror="console.error('❌ Image failed to load:', this.src); this.src='https://via.placeholder.com/700x300/cccccc/666666?text=Image+Not+Available';">
-        <div class="modal-info-section">
-            <h2 id="modal-venue-name">${name}</h2>
-            <p id="modal-venue-type" class="venue-type-info">${Array.isArray(type) ? type.join(', ') : type}</p>
-            <p id="modal-venue-description">${description}</p>
-            <div id="modal-info-grid" class="modal-info-grid">
-                ${venue.location?.address ? `<div class="modal-info-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div class="modal-info-item-content"><h5>Location</h5><p>${venue.location.address}</p>${venue.location.googleMapsUrl ? `<a href="${venue.location.googleMapsUrl}" target="_blank" rel="noopener noreferrer">View on Google Maps</a>` : ''}</div></div>` : ''}
-                ${venue.workingHours ? `<div class="modal-info-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><div class="modal-info-item-content"><h5>Working Hours</h5><p>${venue.workingHours}</p></div></div>` : ''}
-                ${venue.phone ? `<div class="modal-info-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><div class="modal-info-item-content"><h5>Contact</h5><p><a href="tel:${venue.phone}">${venue.phone}</a></p></div></div>` : ''}
-            </div>
-            
-            <div id="modal-rating-container" class="modal-rating-container">
-                <h5>Rate this venue</h5>
-                <div class="rating-display">
-                    <span id="modal-rating-value">0.0</span>
-                    <span class="rating-separator"> • </span>
-                    <span id="modal-rating-count">0 reviews</span>
-                </div>
-                <div class="rating-stars">
-                    <span data-value="1">⭐</span>
-                    <span data-value="2">⭐</span>
-                    <span data-value="3">⭐</span>
-                    <span data-value="4">⭐</span>
-                    <span data-value="5">⭐</span>
-                </div>
-                <p class="rating-message">Click stars to rate this venue</p>
-            </div>
-            
-            <div class="venue-social-actions">
-                <button class="btn-instagram" id="venue-instagram-story-btn" title="Share venue on Instagram">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                    Share on Instagram
-                </button>
-            </div>
-        </div>
-        <div id="modal-gallery-container" class="modal-gallery-container" style="${venue.gallery && venue.gallery.length > 0 ? 'display: block' : 'display: none'}">
-            <h5 class="modal-section-title">Gallery</h5>
-            <div id="modal-gallery-grid" class="modal-gallery-grid">
-                ${venue.gallery && venue.gallery.length > 0 ? venue.gallery.map(img => {
-                    const finalAltText = (img.alt !== null && img.alt !== undefined) ? img.alt : name;
-                    return `<img src="${img.url}" alt="${finalAltText}" class="modal-gallery-image" loading="lazy">`;
-                }).join('') : ''}
-            </div>
-        </div>
-        <div id="modal-map-container">${venue.location?.mapIframe ? venue.location.mapIframe : ''}</div>
-    `;
+// --- ENHANCED MODAL HELPER FUNCTIONS ---
+
+function populateVenueRating(venue) {
+    const ratingContainer = document.getElementById('modal-rating-container');
+    if (!ratingContainer) return;
     
-    // Setup rating stars after content is loaded
-    setupRatingStars(venue.id);
-    
-    // Update rating display with current venue ratings
     const ratings = venueRatings[venue.id] || [];
     const ratingCount = ratings.length;
-    const rating = ratingCount > 0 ? ratings.reduce((a, b) => a + b, 0) / ratingCount : 0;
+    const rating = ratingCount > 0 ? ratings.reduce((a, b) => a + b, 0) / ratingCount : null;
     
-    const ratingValueEl = document.getElementById('modal-rating-value');
-    const ratingCountEl = document.getElementById('modal-rating-count');
-    
-    if (ratingValueEl) {
-        ratingValueEl.textContent = rating > 0 ? rating.toFixed(1) : '0.0';
+    if (rating && ratingCount > 0) {
+        ratingContainer.innerHTML = `
+            <div class="venue-rating-display">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <span>${rating.toFixed(1)} (${ratingCount} reviews)</span>
+            </div>
+        `;
+    } else {
+        ratingContainer.innerHTML = `
+            <div class="venue-rating-display">
+                <span class="no-rating">No ratings yet</span>
+            </div>
+        `;
     }
-    if (ratingCountEl) {
-        ratingCountEl.textContent = ratingCount === 1 ? '1 review' : `${ratingCount} reviews`;
-    }
-    
-    // Setup main venue image click handler
-    const mainVenueImage = document.getElementById('modal-venue-image');
-    if (mainVenueImage) {
-        mainVenueImage.style.cursor = 'pointer';
-        mainVenueImage.addEventListener('click', () => {
-            const imageModal = document.getElementById('image-modal');
-            const imageModalImg = document.getElementById('image-modal-img');
-            if(imageModal && imageModalImg) {
-                imageModalImg.src = mainVenueImage.src;
-                imageModal.classList.remove('hidden');
-            }
-        });
-    }
-
-    // Setup gallery image click handlers
-    const galleryImages = modalContent.querySelectorAll('.modal-gallery-image');
-    galleryImages.forEach(img => {
-        img.addEventListener('click', () => {
-            const imageModal = document.getElementById('image-modal');
-            const imageModalImg = document.getElementById('image-modal-img');
-            if(imageModal && imageModalImg) {
-                imageModalImg.src = img.src;
-                imageModal.classList.remove('hidden');
-            }
-        });
-    });
-    
-    // Setup venue Instagram story button
-    const instagramBtn = document.getElementById('venue-instagram-story-btn');
-    if (instagramBtn) {
-        instagramBtn.addEventListener('click', openVenueInstagramStoryModal);
-    }
-
-    // Store current scroll position and prevent body scroll
-    const scrollY = window.scrollY;
-    document.body.style.top = `-${scrollY}px`;
-    document.body.style.position = 'fixed';
-    document.body.style.width = '100%';
-    document.body.style.overflow = 'hidden';
-    
-    // Ensure modal is centered in viewport
-    modal.scrollTop = 0;
-
-    const url = new URL(window.location);
-    url.searchParams.set('venue', venue.id);
-    window.history.pushState({ venueId: venue.id }, name, url);
 }
+
+function populateVenueTags(venue) {
+    const tagsSection = document.getElementById('venue-tags-section');
+    if (!tagsSection) return;
+    
+    // Hide the entire Amenities & Features section to make space for opening hours
+    tagsSection.style.display = 'none';
+}
+
+function populateVenueDetails(venue) {
+    const detailsGrid = document.getElementById('modal-info-grid');
+    if (!detailsGrid) return;
+    
+    let detailsHtml = '';
+    
+    if (venue.location?.address) {
+        detailsHtml += `
+            <div class="venue-detail-item">
+                <svg class="venue-detail-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <div class="venue-detail-content">
+                    <h6>Location</h6>
+                    <p>${venue.location.address}</p>
+                    ${venue.location.googleMapsUrl ? `<a href="${venue.location.googleMapsUrl}" target="_blank" rel="noopener noreferrer">View on Google Maps</a>` : ''}
+                </div>
+            </div>
+        `;
+    }
+    
+    if (venue.phone) {
+        detailsHtml += `
+            <div class="venue-detail-item">
+                <svg class="venue-detail-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <div class="venue-detail-content">
+                    <h6>Phone</h6>
+                    <p><a href="tel:${venue.phone}">${venue.phone}</a></p>
+                </div>
+            </div>
+        `;
+    }
+    
+    // Website section removed as requested
+    /* if (venue.website || venue.bookingUrl) {
+        const websiteUrl = venue.website || venue.bookingUrl;
+        detailsHtml += `
+            <div class="venue-detail-item">
+                <svg class="venue-detail-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                </svg>
+                <div class="venue-detail-content">
+                    <h6>Website</h6>
+                    <p><a href="${websiteUrl}" target="_blank" rel="noopener noreferrer">Visit Website</a></p>
+                </div>
+            </div>
+        `;
+    } */
+    
+    detailsGrid.innerHTML = detailsHtml;
+}
+
+function populateVenueHours(venue) {
+    const hoursSection = document.getElementById('venue-hours-section');
+    if (!hoursSection) return;
+    
+    if (!venue.workingHours) {
+        hoursSection.style.display = 'none';
+        return;
+    }
+    
+    // Simple hours display 
+    hoursSection.innerHTML = `
+        <h5 class="section-title">
+            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            Opening Hours
+        </h5>
+        <div class="venue-hours-grid">
+            <div class="hours-day">
+                <span class="hours-day-time">${venue.workingHours}</span>
+            </div>
+        </div>
+    `;
+    hoursSection.style.display = 'block';
+}
+
+function populateVenueGallery(venue) {
+    const galleryGrid = document.getElementById('modal-gallery-grid');
+    const galleryContainer = document.getElementById('modal-gallery-container');
+    if (!galleryGrid || !galleryContainer) return;
+    
+    const gallery = venue.gallery || [];
+    
+    if (gallery.length > 0) {
+        galleryGrid.innerHTML = gallery.slice(0, 6).map((image, index) => `
+            <div class="gallery-thumbnail" onclick="openImageModal('${image.url}', '${image.alt || venue.name}')">
+                <img src="${image.url}" alt="${image.alt || venue.name}" loading="lazy">
+            </div>
+        `).join('');
+        galleryContainer.style.display = 'block';
+    } else {
+        galleryContainer.style.display = 'none';
+    }
+}
+
+function populateVenueEvents(venue) {
+    const eventsSection = document.getElementById('venue-events-section');
+    if (!eventsSection) return;
+    
+    // Find events for this venue
+    const venueEvents = eventsListData?.filter(event => event.venueId === venue.id) || [];
+    const upcomingEvents = venueEvents.filter(event => {
+        const eventDate = new Date(event.date);
+        return eventDate >= new Date();
+    }).slice(0, 3);
+    
+    if (upcomingEvents.length > 0) {
+        const eventsHtml = upcomingEvents.map(event => `
+            <div class="venue-event-item" onclick="openEventModal(${event.id})">
+                <div class="event-date">
+                    <div>${new Date(event.date).getDate()}</div>
+                    <div>${new Date(event.date).toLocaleDateString('en', { month: 'short' })}</div>
+                </div>
+                <div class="event-info">
+                    <h6>${event.eventName || event.name}</h6>
+                    <p>${event.startTime || 'All Day'}</p>
+                </div>
+            </div>
+        `).join('');
+        
+        document.getElementById('venue-events-list').innerHTML = eventsHtml;
+        eventsSection.classList.remove('hidden');
+    } else {
+        eventsSection.classList.add('hidden');
+    }
+}
+
+function setupMobileActionBar(venue) {
+    // Mobile action bar completely disabled to fix scrolling issues
+    const actionBar = document.getElementById('mobile-action-bar');
+    if (actionBar) {
+        actionBar.style.display = 'none';
+    }
+}
+
+function openImageModal(imageSrc, imageAlt) {
+    const imageModal = document.getElementById('image-modal');
+    const imageModalImg = document.getElementById('image-modal-img');
+    
+    if (imageModal && imageModalImg) {
+        imageModalImg.src = imageSrc;
+        imageModalImg.alt = imageAlt;
+        imageModal.classList.remove('hidden');
+    }
+}
+
+// Enhanced venue modal implementation completed successfully!
 
 // Make openVenueModal globally accessible for inline onclick handlers
 window.openVenueModal = openVenueModal;
@@ -1603,44 +2248,101 @@ function openEventModal(eventId) {
     // Store current event ID for sharing
     modal.dataset.eventId = eventId;
 
-    modal.querySelector('#modal-event-name').textContent = event.eventName;
-
-    const eventDescriptionEl = modal.querySelector('#modal-event-description');
-    if (event.longDescription || event.description) {
-        // Replace newline characters with <br> tags to render paragraphs
-        eventDescriptionEl.innerHTML = (event.longDescription || event.description).replace(/\n/g, '<br>');
-    } else {
-        eventDescriptionEl.style.display = 'none';
-    }
-
+    // Populate event image and date badge
     const eventImageEl = modal.querySelector('#modal-event-image');
-    if (event.imageUrl) {
+    const dayEl = modal.querySelector('#modal-event-day');
+    const monthEl = modal.querySelector('#modal-event-month');
+    const categoryIconEl = modal.querySelector('#modal-event-category-icon');
+    const categoryEl = modal.querySelector('#modal-event-category');
+
+    if (event.imageUrl && eventImageEl) {
         eventImageEl.src = event.imageUrl;
         eventImageEl.alt = event.eventName;
         eventImageEl.style.display = 'block';
         eventImageEl.style.cursor = 'pointer';
 
-        // Add the click listener here, right after setting the src, to open the existing image modal
+        // Add click listener to open image in fullscreen
         eventImageEl.onclick = () => {
-             const imageModal = document.getElementById('image-modal');
-             const modalImageContent = document.getElementById('image-modal-img'); // Use the correct ID
-             if (imageModal && modalImageContent) {
+            const imageModal = document.getElementById('image-modal');
+            const modalImageContent = document.getElementById('image-modal-img');
+            if (imageModal && modalImageContent) {
                 modalImageContent.src = eventImageEl.src;
                 imageModal.classList.remove('hidden');
-             }
+            }
         };
-
-    } else {
-        eventImageEl.style.display = 'none';
-        eventImageEl.onclick = null; // Remove listener if there's no image
     }
-    
-    modal.querySelector('#modal-event-category').textContent = event.category;
 
+    // Populate date badge
+    if (event.isoDate && dayEl && monthEl) {
+        const date = new Date(event.isoDate);
+        dayEl.textContent = date.getDate();
+        monthEl.textContent = date.toLocaleDateString('en', { month: 'short' });
+    }
+
+    // Populate category badge
+    if (categoryIconEl && categoryEl) {
+        categoryIconEl.textContent = getCategoryIcon(event.category);
+        categoryEl.textContent = event.category;
+    }
+
+    // Populate title
+    const titleEl = modal.querySelector('#modal-event-name');
+    if (titleEl) {
+        titleEl.textContent = event.eventName;
+    }
+
+    // Populate quick info
+    const timeEl = modal.querySelector('#modal-event-time-text');
+    const venueEl = modal.querySelector('#modal-event-venue-text');
+    const ticketEl = modal.querySelector('#modal-event-ticket');
+    const ticketPriceEl = modal.querySelector('#modal-event-ticket-price');
+
+    if (timeEl) {
+        const date = new Date(event.isoDate);
+        const dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
+        const dateString = date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+        timeEl.textContent = `${dayName}, ${dateString} at ${event.startTime || 'All Day'}`;
+    }
+
+    if (venueEl) {
+        const venue = venuesData.find(v => v.id === event.venueId);
+        venueEl.textContent = venue?.name?.en || venue?.name || event.locationName || 'TBA';
+    }
+
+    if (event.ticketPrice && ticketEl && ticketPriceEl) {
+        ticketPriceEl.textContent = event.ticketPrice;
+        ticketEl.style.display = 'flex';
+    } else if (ticketEl) {
+        ticketEl.style.display = 'none';
+    }
+
+    // Populate description
+    const descriptionEl = modal.querySelector('#modal-event-description');
+    if (descriptionEl) {
+        const description = event.longDescription || event.description || 'No description available.';
+        descriptionEl.innerHTML = description.replace(/\n/g, '<br>');
+    }
+
+    // Populate location details
+    const venueNameEl = modal.querySelector('#modal-event-venue-name');
+    const venueAddressEl = modal.querySelector('#modal-event-venue-address');
     const mapContainer = modal.querySelector('#modal-event-location-map');
-    const venue = venuesData.find(v => v.id === event.venueId);
+
+    if (venueNameEl) {
+        const venue = venuesData.find(v => v.id === event.venueId);
+        venueNameEl.textContent = venue?.name?.en || venue?.name || event.locationName || 'Event Location';
+    }
+
+    if (venueAddressEl) {
+        const venue = venuesData.find(v => v.id === event.venueId);
+        venueAddressEl.textContent = venue?.location?.address || 'Address not specified';
+    }
+
+    // Populate map
     if (mapContainer) {
+        const venue = venuesData.find(v => v.id === event.venueId);
         let iframe = null;
+        
         if (venue && venue.location && venue.location.mapIframe) {
             iframe = venue.location.mapIframe;
         } else if (event.locationIframe) {
@@ -1657,45 +2359,25 @@ function openEventModal(eventId) {
         }
     }
 
-    const bookingBtn = document.getElementById('modal-event-booking-btn');
-    if (event.eventBookingUrl && event.eventBookingUrl !== '#') {
-        bookingBtn.href = event.eventBookingUrl;
-        bookingBtn.style.display = 'inline-flex';
-    } else {
-        bookingBtn.style.display = 'none';
+    // Handle gallery if available
+    const gallerySection = modal.querySelector('#event-gallery-section');
+    const galleryGrid = modal.querySelector('#event-gallery-grid');
+    
+    if (event.gallery && event.gallery.length > 0 && gallerySection && galleryGrid) {
+        const galleryHTML = event.gallery.map(imageUrl => `
+            <div class="event-gallery-item" onclick="openImageModal('${imageUrl}')">
+                <img src="${imageUrl}" alt="Event gallery image" loading="lazy">
+            </div>
+        `).join('');
+        
+        galleryGrid.innerHTML = galleryHTML;
+        gallerySection.style.display = 'block';
+    } else if (gallerySection) {
+        gallerySection.style.display = 'none';
     }
 
-    const dateTimeEl = modal.querySelector('#modal-event-date-time');
-    if(dateTimeEl) {
-        const date = new Date(event.isoDate);
-        const day = date.toLocaleDateString('en-US', { weekday: 'long' });
-        dateTimeEl.textContent = `${day}, ${date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} at ${event.startTime}`;
-    }
-
-    const contactEl = modal.querySelector('#modal-event-contact');
-    const contactPhoneEl = modal.querySelector('#modal-event-contact-phone');
-    if (event.eventContact && contactEl && contactPhoneEl) {
-        contactPhoneEl.textContent = event.eventContact;
-        contactEl.style.display = 'flex';
-    } else if (contactEl) {
-        contactEl.style.display = 'none';
-    }
-
-    const ticketEl = modal.querySelector('#modal-event-ticket');
-    const ticketPriceEl = modal.querySelector('#modal-event-ticket-price');
-    if (event.ticketPrice && ticketEl && ticketPriceEl) {
-        // Make the price clickable if eventBookingUrl exists
-        if (event.eventBookingUrl && event.eventBookingUrl !== '#' && event.eventBookingUrl.trim() !== '') {
-            ticketPriceEl.innerHTML = `<a href="${event.eventBookingUrl}" target="_blank" style="font-weight: bold; text-decoration: none; cursor: pointer; color: inherit;">${event.ticketPrice}</a>`;
-        } else {
-            ticketPriceEl.textContent = event.ticketPrice;
-        }
-        ticketEl.style.display = 'flex';
-    } else if (ticketEl) {
-        ticketEl.style.display = 'none';
-    }
-
-
+    // Setup action buttons
+    setupEventModalActions(event);
 
     // Store current scroll position and prevent body scroll
     const scrollY = window.scrollY;
@@ -1709,6 +2391,145 @@ function openEventModal(eventId) {
     // Ensure modal is centered in viewport
     modal.scrollTop = 0;
 }
+
+// Helper function to setup event modal action buttons
+function setupEventModalActions(event) {
+    const plannerBtn = document.getElementById('event-planner-btn');
+    const contactBtn = document.getElementById('event-contact-btn');
+    const shareBtn = document.getElementById('event-share-btn');
+    const directionsBtn = document.getElementById('event-directions-btn');
+
+    // Add to planner functionality
+    if (plannerBtn) {
+        plannerBtn.onclick = () => {
+            // Implement add to planner functionality
+            console.log('Add to planner:', event.eventName);
+            plannerBtn.innerHTML = `
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Added to Planner
+            `;
+            plannerBtn.disabled = true;
+            setTimeout(() => {
+                plannerBtn.innerHTML = `
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Add to My Planner
+                `;
+                plannerBtn.disabled = false;
+            }, 2000);
+        };
+    }
+
+    // Contact organizer functionality
+    if (contactBtn) {
+        if (event.eventContact) {
+            contactBtn.onclick = () => window.open(`tel:${event.eventContact}`, '_self');
+            contactBtn.style.display = 'flex';
+        } else {
+            contactBtn.style.display = 'none';
+        }
+    }
+
+    // Share event functionality
+    if (shareBtn) {
+        shareBtn.onclick = () => {
+            // Implement share functionality
+            if (navigator.share) {
+                navigator.share({
+                    title: event.eventName,
+                    text: event.description,
+                    url: window.location.href
+                });
+            } else {
+                // Fallback to copy URL
+                const url = `${window.location.origin}${window.location.pathname}?event=${event.id}`;
+                navigator.clipboard.writeText(url).then(() => {
+                    shareBtn.innerHTML = `
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Link Copied!
+                    `;
+                    setTimeout(() => {
+                        shareBtn.innerHTML = `
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"></path>
+                            </svg>
+                            Share Event
+                        `;
+                    }, 2000);
+                });
+            }
+        };
+    }
+
+    // Get directions functionality
+    if (directionsBtn) {
+        directionsBtn.onclick = () => {
+            const venue = venuesData.find(v => v.id === event.venueId);
+            if (venue && venue.location && venue.location.googleMapsUrl) {
+                window.open(venue.location.googleMapsUrl, '_blank');
+            } else if (event.locationName) {
+                const query = encodeURIComponent(event.locationName + ', Ohrid');
+                window.open(`https://www.google.com/maps/search/${query}`, '_blank');
+            }
+        };
+    }
+}
+
+// Helper function to open image modal
+function openImageModal(imageUrl) {
+    const imageModal = document.getElementById('image-modal');
+    const modalImageContent = document.getElementById('image-modal-img');
+    if (imageModal && modalImageContent) {
+        modalImageContent.src = imageUrl;
+        imageModal.classList.remove('hidden');
+    }
+}
+
+// Helper function to open directions
+function openDirections(locationName) {
+    const query = encodeURIComponent(locationName + ', Ohrid');
+    window.open(`https://www.google.com/maps/search/${query}`, '_blank');
+}
+
+// Helper function to share event
+function shareEvent(eventName, description, eventId) {
+    if (navigator.share) {
+        navigator.share({
+            title: eventName,
+            text: description,
+            url: window.location.href
+        });
+    } else {
+        // Fallback to copy URL
+        const url = `${window.location.origin}${window.location.pathname}?event=${eventId}`;
+        navigator.clipboard.writeText(url).then(() => {
+            // Show temporary feedback
+            const button = event.target.closest('button');
+            const originalHTML = button.innerHTML;
+            button.innerHTML = `
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Link Copied!
+            `;
+            setTimeout(() => {
+                button.innerHTML = originalHTML;
+            }, 2000);
+        });
+    }
+}
+
+// Make these functions globally accessible
+window.openDirections = openDirections;
+window.shareEvent = shareEvent;
 
 function closeEventModal() {
     const modal = document.getElementById('event-detail-modal');
@@ -1982,25 +2803,87 @@ function renderEventsForDate(dateStr) {
 
         const isHidden = index >= 3 ? 'style="display: none;"' : '';
 
+        // Get venue and map info
+        const eventVenue = venuesData.find(v => v.id === event.venueId);
+        const hasMap = eventVenue?.location?.mapIframe || event.mapIframe || event.locationIframe;
+        const fullDescription = event.longDescription || event.description || '';
+        const date = new Date(event.isoDate);
+        const dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
+        const dateString = date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+
         return `
-            <div class="daily-event-card detailed" data-event-id="${event.id}" ${isHidden}>
-                ${event.imageUrl ? `<img src="${event.imageUrl}" alt="${event.eventName}" class="daily-event-image">` : ''}
-                <div class="event-info">
-                    <span class="event-title">${event.eventName}</span>
-                    <div class="event-meta">
-                        <div class="event-meta-item event-time">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <div class="modern-event-card" data-event-id="${event.id}" ${isHidden} onclick="openEventModal(${event.id})">
+                <div class="event-card-image-section">
+                    ${event.imageUrl ? `
+                        <img src="${event.imageUrl}" alt="${event.eventName}" class="event-card-image" loading="lazy">
+                    ` : `
+                        <div class="event-card-placeholder">
+                            <div class="placeholder-icon">${getCategoryIcon(event.category)}</div>
+                        </div>
+                    `}
+                </div>
+                
+                <div class="event-card-content">
+                    <div class="event-card-header">
+                        <h3 class="event-title">${event.eventName}</h3>
+                        ${event.ticketPrice && event.ticketPrice !== '#' ? `
+                            <div class="event-price-tag">
+                                <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M3 0a1 1 0 0 0-1 1v6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3A.5.5 0 0 0 2 11v4a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-4a.5.5 0 0 0-.5-.5 1.5 1.5 0 1 1 0-3A.5.5 0 0 0 14 7V1a1 1 0 0 0-1-1H3z"/>
+                                </svg>
+                                <span>${event.ticketPrice}</span>
+                            </div>
+                        ` : ''}
+                    </div>
+                    
+                    <div class="event-card-meta">
+                        <div class="event-meta-item">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            <span>${date.toLocaleDateString('en', { month: 'short', day: 'numeric' })}</span>
+                        </div>
+                        <div class="event-meta-item">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
                             <span>${event.startTime || 'All Day'}</span>
                         </div>
-                        <div class="event-meta-item event-venue">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            <span>${venueName}</span>
+                        <div class="event-meta-item">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>${eventVenue?.name?.en || eventVenue?.name || event.locationName || 'TBA'}</span>
                         </div>
-                        ${contactInfo}
-                        ${ticketInfo}
+                        <div class="event-meta-item">
+                            <span class="category-icon">${getCategoryIcon(event.category)}</span>
+                            <span>${event.category}</span>
+                        </div>
                     </div>
-                    <div class="event-footer">
-                        <span class="event-category">${event.category}</span>
+                    
+
+                    
+                    <div class="event-card-actions">
+                        <button class="event-action-btn primary" onclick="event.stopPropagation(); openEventModal(${event.id})">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                            View Details
+                        </button>
+                        ${event.eventContact ? `
+                            <button class="event-action-btn secondary" onclick="event.stopPropagation(); window.open('tel:${event.eventContact}', '_self')">
+                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                                Contact
+                            </button>
+                        ` : ''}
                     </div>
                 </div>
             </div>
@@ -2022,7 +2905,7 @@ function renderEventsForDate(dateStr) {
     listElement.innerHTML = eventsHTML + showMoreButton;
 
     // Add click listeners to event cards
-    listElement.querySelectorAll('.daily-event-card').forEach(card => {
+    listElement.querySelectorAll('.modern-event-card').forEach(card => {
         card.addEventListener('click', () => openEventModal(card.dataset.eventId));
     });
 
@@ -2034,13 +2917,13 @@ function renderEventsForDate(dateStr) {
             this.classList.add('btn-loading');
             this.disabled = true;
             
-            const hiddenEvents = listElement.querySelectorAll('.daily-event-card[style*="display: none"]');
+            const hiddenEvents = listElement.querySelectorAll('.modern-event-card[style*="display: none"]');
             const isExpanded = hiddenEvents.length === 0;
             
             setTimeout(() => {
                 if (isExpanded) {
                     // Collapse: hide events beyond first 3
-                    const allEvents = listElement.querySelectorAll('.daily-event-card');
+                    const allEvents = listElement.querySelectorAll('.modern-event-card');
                     allEvents.forEach((event, index) => {
                         if (index >= 3) {
                             event.style.opacity = '0';
@@ -2055,7 +2938,7 @@ function renderEventsForDate(dateStr) {
                 } else {
                     // Expand: show all events
                     hiddenEvents.forEach((event, index) => {
-                        event.style.display = 'flex';
+                        event.style.display = 'block';
                         event.style.opacity = '0';
                         event.style.transform = 'translateY(20px)';
                         setTimeout(() => {
@@ -3710,6 +4593,94 @@ function generateVenueHashtags() {
     hashtags.push('#Restaurant', '#Dining', '#NorthMacedonia', '#LakeOhrid');
     
     return hashtags.slice(0, 15).join(' '); // Limit to 15 hashtags
+}
+
+// =============== HISTORICAL FACTS FUNCTIONALITY ===============
+
+function initializeHistoricalFacts() {
+    if (!historicalFacts || historicalFacts.length === 0) {
+        console.warn('No historical facts data available');
+        return;
+    }
+    
+    // Set today's fact based on day of year for consistency
+    const today = new Date();
+    const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
+    currentFactIndex = (dayOfYear - 1) % historicalFacts.length;
+    
+    displayCurrentFact();
+    setupFactEventListeners();
+}
+
+function displayCurrentFact() {
+    const fact = historicalFacts[currentFactIndex];
+    if (!fact) return;
+    
+    const factIcon = document.getElementById('daily-fact-icon');
+    const factPeriod = document.getElementById('daily-fact-period');
+    const factDescription = document.getElementById('daily-fact-description');
+    
+    if (factIcon) factIcon.textContent = fact.icon;
+    if (factPeriod) factPeriod.textContent = fact.period;
+    if (factDescription) factDescription.textContent = fact.fact;
+    
+    // Add smooth transition effect
+    const factCard = document.querySelector('.historical-fact-card');
+    if (factCard) {
+        factCard.style.transform = 'scale(0.98)';
+        setTimeout(() => {
+            factCard.style.transform = 'scale(1)';
+        }, 150);
+    }
+}
+
+function setupFactEventListeners() {
+    const prevBtn = document.getElementById('prev-fact');
+    const nextBtn = document.getElementById('next-fact');
+    const randomBtn = document.getElementById('random-fact');
+    const churchesBtn = document.getElementById('churches-cta-btn');
+    
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            currentFactIndex = (currentFactIndex - 1 + historicalFacts.length) % historicalFacts.length;
+            displayCurrentFact();
+        });
+    }
+    
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            currentFactIndex = (currentFactIndex + 1) % historicalFacts.length;
+            displayCurrentFact();
+        });
+    }
+    
+    if (randomBtn) {
+        randomBtn.addEventListener('click', () => {
+            const randomIndex = Math.floor(Math.random() * historicalFacts.length);
+            currentFactIndex = randomIndex;
+            displayCurrentFact();
+        });
+    }
+    
+    if (churchesBtn) {
+        churchesBtn.addEventListener('click', () => {
+            window.location.href = 'churches.html';
+        });
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+        
+        if (e.key === 'ArrowLeft') {
+            prevBtn?.click();
+        } else if (e.key === 'ArrowRight') {
+            nextBtn?.click();
+        } else if (e.key === ' ' && e.ctrlKey) {
+            e.preventDefault();
+            randomBtn?.click();
+        }
+    });
 }
 
 // Initialize contact form when DOM is loaded

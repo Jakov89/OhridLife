@@ -1,0 +1,704 @@
+/* =============== CHURCHES PAGE STYLES =============== */
+
+#churches-page {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* =============== HERO SECTION =============== */
+.churches-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+}
+
+.hero-content {
+    order: 1;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, var(--primary) 0%, hsl(204, 90%, 58%) 100%);
+    color: var(--primary-foreground);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.badge-icon {
+    font-size: 1.2rem;
+}
+
+.churches-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    background: linear-gradient(135deg, var(--foreground) 0%, var(--primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--muted-foreground);
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hero-image {
+    position: relative;
+    order: 2;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    aspect-ratio: 4/3;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover img {
+    transform: scale(1.05);
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    padding: 2rem 1.5rem 1.5rem;
+    color: white;
+}
+
+.overlay-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+/* =============== FILTER SECTION =============== */
+.churches-filter {
+    background: var(--muted);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.filter-container h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--foreground);
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--card);
+    border: 2px solid var(--border);
+    color: var(--foreground);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.filter-btn:hover {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.filter-btn.active {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.btn-icon {
+    font-size: 1.1rem;
+}
+
+/* =============== CHURCHES GRID =============== */
+.churches-grid {
+    margin-bottom: 4rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.church-card {
+    background: var(--card);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.church-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.church-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.church-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.church-card:hover .church-image img {
+    transform: scale(1.05);
+}
+
+.church-period {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+}
+
+.church-category {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--primary);
+    color: var(--primary-foreground);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.church-content {
+    padding: 1.5rem;
+}
+
+.church-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.church-style {
+    font-size: 0.9rem;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.church-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--muted-foreground);
+    margin-bottom: 1.5rem;
+}
+
+.church-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-tag {
+    background: var(--muted);
+    color: var(--muted-foreground);
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.church-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.church-hours {
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+}
+
+.view-details-btn {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-details-btn:hover {
+    background: hsl(204, 90%, 58%);
+    transform: scale(1.05);
+}
+
+/* =============== VISITING TIPS =============== */
+.visiting-tips {
+    background: linear-gradient(135deg, var(--muted) 0%, rgba(248,250,252,0.8) 100%);
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    margin-bottom: 4rem;
+}
+
+.tips-container h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.section-icon {
+    font-size: 2.5rem;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.tip-item {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.tip-item:hover {
+    transform: translateY(-2px);
+}
+
+.tip-item::before {
+    content: "💡";
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.tip-item p {
+    margin: 0;
+    line-height: 1.5;
+    color: var(--foreground);
+}
+
+/* =============== HERITAGE SECTION =============== */
+.heritage-section {
+    margin-bottom: 4rem;
+}
+
+.heritage-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.heritage-text h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 1.5rem;
+}
+
+.heritage-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--muted-foreground);
+    margin-bottom: 1.5rem;
+}
+
+.heritage-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--card);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: transform 0.3s ease;
+}
+
+.highlight-item:hover {
+    transform: translateX(5px);
+}
+
+.highlight-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.highlight-item h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--foreground);
+    margin-bottom: 0.25rem;
+}
+
+.highlight-item p {
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.heritage-image {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.heritage-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    padding: 2rem 1.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* =============== MODAL STYLES =============== */
+.church-modal-content {
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-church-header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.modal-church-image {
+    width: 300px;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.modal-church-info h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 0.5rem;
+}
+
+.modal-church-period {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.modal-church-style {
+    font-size: 1rem;
+    color: var(--muted-foreground);
+    margin-bottom: 1rem;
+}
+
+.modal-church-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--foreground);
+    margin-bottom: 2rem;
+}
+
+.modal-church-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.detail-group h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.detail-group p {
+    font-size: 0.95rem;
+    color: var(--foreground);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    padding: 0.25rem 0;
+    color: var(--foreground);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.features-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* =============== MAP SECTION =============== */
+.modal-map-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+.modal-map-section h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--foreground);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.modal-map-section h4::before {
+    content: "📍";
+    font-size: 1.5rem;
+}
+
+.modal-map-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 1px solid var(--border);
+}
+
+.modal-map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    display: block;
+}
+
+/* =============== RESPONSIVE DESIGN =============== */
+@media (max-width: 768px) {
+    .churches-hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .hero-content {
+        order: 2;
+    }
+    
+    .hero-image {
+        order: 1;
+    }
+    
+    .churches-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .heritage-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .heritage-text h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .modal-church-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .modal-church-image {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .modal-map-container iframe {
+        height: 250px;
+    }
+    
+    .filter-buttons {
+        gap: 0.5rem;
+    }
+    
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .churches-filter {
+        padding: 1.5rem 1rem;
+    }
+    
+    .visiting-tips {
+        padding: 2rem 1rem;
+    }
+    
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .churches-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .church-content {
+        padding: 1rem;
+    }
+    
+    .church-meta {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+}

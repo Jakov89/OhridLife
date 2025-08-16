@@ -163,6 +163,38 @@
             <div id="hero-skeleton" class="skeleton-hero hidden" aria-hidden="true"></div>
         </section>
 
+        <!-- Historical Fact of the Day Section -->
+        <section id="historical-fact-section" class="historical-fact-section py-6" aria-labelledby="fact-heading">
+            <div class="container mx-auto px-4">
+                <div class="historical-fact-card">
+                    <div class="fact-header">
+                        <div class="fact-icon" id="daily-fact-icon">🏛️</div>
+                        <div class="fact-title">
+                            <h3 id="fact-heading">Historical Fact of the Day</h3>
+                            <p class="fact-subtitle">Discover Ohrid's fascinating history, one story at a time</p>
+                        </div>
+                        <div class="fact-actions">
+                            <button id="churches-cta-btn" class="btn btn-secondary">
+                                <span>⛪</span>
+                                Churches of Ohrid
+                            </button>
+                        </div>
+                    </div>
+                    <div class="fact-content">
+                        <div class="fact-text" id="daily-fact-text">
+                            <span class="fact-period" id="daily-fact-period">200 BC</span>
+                            <p id="daily-fact-description">Loading today's historical fact...</p>
+                        </div>
+                        <div class="fact-controls">
+                            <button class="fact-nav-btn" id="prev-fact" aria-label="Previous fact">←</button>
+                            <button class="fact-nav-btn" id="next-fact" aria-label="Next fact">→</button>
+                            <button class="fact-nav-btn refresh" id="random-fact" aria-label="Random fact">🎲</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- "Our Recommendations" Section -->
         <section id="discover-places" class="recommendations-highlight" aria-labelledby="recommendations-heading">
             <div class="container mx-auto px-4">
@@ -440,40 +472,104 @@
         </div>
     </footer>
 
-    <!-- Venue Detail Modal -->
+    <!-- Enhanced Venue Detail Modal -->
     <div id="venue-modal" class="modal-overlay hidden">
-        <div class="modal-content">
+        <div class="enhanced-modal-content">
             <button class="modal-close-button" aria-label="Close modal">&times;</button>
-            <div id="modal-details-content">
-                <img id="modal-venue-image" src="" alt="Venue image" loading="lazy">
-                <div class="modal-info-section">
-                    <h2 id="modal-venue-name"></h2>
-                    <p id="modal-venue-type" class="venue-type-info"></p>
-                    <p id="modal-venue-description"></p>
-                    <div id="modal-info-grid" class="modal-info-grid">
-                        <!-- Venue-specific info will be injected here -->
-                    </div>
-                    
-                    <div id="modal-rating-container" class="modal-rating-container">
-                        <!-- Rating display and input will be injected here -->
-                    </div>
-                    
-                    <div class="venue-social-actions">
-                        <button class="btn-instagram" id="venue-instagram-story-btn" title="Share venue on Instagram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            
+            <!-- Modal Header with Image -->
+            <div class="modal-header">
+                <div class="modal-image-container" id="modal-image-container">
+                    <img id="modal-venue-image" src="" alt="Venue image" loading="lazy">
+                    <div class="modal-image-overlay">
+                        <button class="gallery-expand-btn" id="gallery-expand-btn" title="View Gallery">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                             </svg>
-                            Share on Instagram
                         </button>
                     </div>
                 </div>
-                <div id="modal-gallery-container" class="modal-gallery-container">
-                    <h5 class="modal-section-title">Gallery</h5>
-                    <div id="modal-gallery-grid" class="modal-gallery-grid">
-                        <!-- Gallery images will be injected here -->
+                
+                <!-- Venue Header Info -->
+                <div class="modal-venue-header">
+                    <div class="venue-header-main">
+                        <div class="venue-category-icon" id="modal-category-icon">📍</div>
+                        <div class="venue-header-text">
+                            <h2 id="modal-venue-name"></h2>
+                            <p id="modal-venue-type" class="venue-type-info"></p>
+                        </div>
+                    </div>
+                    <div class="venue-rating-section" id="modal-rating-container">
+                        <!-- Rating will be injected here -->
                     </div>
                 </div>
-                <div id="modal-map-container"></div>
+            </div>
+            
+            <!-- Modal Body - Two Column Layout -->
+            <div class="modal-body">
+                <!-- Left Column - Quick Info -->
+                <div class="modal-left-column">
+                    <div class="venue-description-section">
+                        <div class="venue-description-content">
+                            <p id="modal-venue-description"></p>
+                            <button class="read-more-btn hidden" id="read-more-btn">Read More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="venue-tags-section" id="venue-tags-section">
+                        <!-- Tags will be injected here -->
+                    </div>
+                    
+                    <div class="venue-gallery-preview" id="modal-gallery-container">
+                        <h5 class="section-title">Gallery</h5>
+                        <div class="gallery-preview-grid" id="modal-gallery-grid">
+                            <!-- Gallery thumbnails will be injected here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column - Details -->
+                <div class="modal-right-column">
+                    <div class="venue-details-section">
+                        <h5 class="section-title">Details</h5>
+                        <div class="venue-details-grid" id="modal-info-grid">
+                            <!-- Contact and location info will be injected here -->
+                        </div>
+                    </div>
+                    
+                    <div class="venue-hours-section" id="venue-hours-section">
+                        <!-- Opening hours will be injected here -->
+                    </div>
+                    
+                    <div class="venue-events-section hidden" id="venue-events-section">
+                        <h5 class="section-title">Upcoming Events</h5>
+                        <div class="venue-events-list" id="venue-events-list">
+                            <!-- Events will be injected here -->
+                        </div>
+                        <button class="view-more-events-btn" id="view-more-events-btn">View All Events</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Action Bar removed to fix scrolling issues -->
+            <!-- <div class="mobile-action-bar" id="mobile-action-bar">
+                <button class="mobile-action-btn" id="mobile-call-btn">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                    <span>Call</span>
+                </button>
+                <button class="mobile-action-btn" id="mobile-directions-btn">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                    <span>Directions</span>
+                </button>
+                <!-- Website button removed -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                    </svg>
+
             </div>
         </div>
     </div>
@@ -488,65 +584,124 @@
 
     <!-- Event Detail Modal (New) -->
     <div id="event-detail-modal" class="modal-overlay hidden">
-        <div class="modal-content">
+        <div class="modern-event-modal-content">
             <button class="modal-close-button" id="event-detail-modal-close-button" aria-label="Close modal">&times;</button>
-            <div id="event-detail-modal-content" class="event-modal-content">
-                <img id="modal-event-image" src="" alt="Event image" class="modal-event-image" loading="lazy">
-                <div class="modal-body">
-                  <h2 id="modal-event-name" class="modal-event-title">Event Name</h2>
-                  <div class="modal-event-meta">
-                    <div class="modal-info-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
-                        </svg>
-                        <span id="modal-event-date-time"></span>
+            <!-- Event Modal Header -->
+            <div class="event-modal-header">
+                <div class="event-modal-image-container">
+                    <img id="modal-event-image" src="" alt="Event image" class="event-modal-image" loading="lazy">
+                    <div class="event-modal-overlay">
+                        <div class="event-modal-date-badge">
+                            <span class="event-modal-day" id="modal-event-day"></span>
+                            <span class="event-modal-month" id="modal-event-month"></span>
+                        </div>
+                        <div class="event-modal-category-badge" id="modal-event-category-badge">
+                            <span id="modal-event-category-icon"></span>
+                            <span id="modal-event-category"></span>
+                        </div>
                     </div>
-                    <div id="modal-event-contact" class="modal-info-item" style="display: none;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                        </svg>
-                        <span id="modal-event-contact-phone"></span>
-                    </div>
-                    <div id="modal-event-ticket" class="modal-info-item" style="display: none;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M3 0a1 1 0 0 0-1 1v6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3A.5.5 0 0 0 2 11v4a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-4a.5.5 0 0 0-.5-.5 1.5 1.5 0 1 1 0-3A.5.5 0 0 0 14 7V1a1 1 0 0 0-1-1H3z"/>
-                        </svg>
-                        <span id="modal-event-ticket-price"></span>
-                    </div>
-                    <div class="modal-info-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                        </svg>
-                        <span id="modal-event-category"></span>
-                    </div>
-                  </div>
-                  <p id="modal-event-description" class="modal-event-description">Full event description here...</p>
-                  
-                  <div id="modal-event-location-map" class="modal-event-map-container">
-                    <!-- Iframe will be inserted here -->
-                  </div>
                 </div>
                 
-                <div class="modal-event-footer">
-                    <div class="share-options">
-                        <button id="modal-event-share-btn" class="btn btn-secondary">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
-                                <polyline points="16 6 12 2 8 6"></polyline>
-                                <line x1="12" y1="2" x2="12" y2="15"></line>
+                <div class="event-modal-title-section">
+                    <h2 id="modal-event-name" class="event-modal-title">Event Name</h2>
+                    <div class="event-modal-quick-info">
+                        <div class="event-modal-meta-item">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
                             </svg>
-                            Share Link
-                        </button>
-                        <button class="share-option-btn instagram" id="modal-instagram-story-btn" title="Share to Instagram Story">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            <span id="modal-event-time-text"></span>
+                        </div>
+                        <div class="event-modal-meta-item">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
                             </svg>
-                        </button>
+                            <span id="modal-event-venue-text"></span>
+                        </div>
+                        <div class="event-modal-meta-item" id="modal-event-ticket" style="display: none;">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M3 0a1 1 0 0 0-1 1v6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3A.5.5 0 0 0 2 11v4a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-4a.5.5 0 0 0-.5-.5 1.5 1.5 0 1 1 0-3A.5.5 0 0 0 14 7V1a1 1 0 0 0-1-1H3z"/>
+                            </svg>
+                            <span id="modal-event-ticket-price"></span>
+                        </div>
                     </div>
-                    <a href="#" id="modal-event-booking-btn" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Book Now</a>
+                </div>
+            </div>
+            
+            <!-- Event Modal Body -->
+            <div class="event-modal-body">
+                <div class="event-modal-main-content">
+                    <div class="event-description-section">
+                        <h3>About This Event</h3>
+                        <div id="modal-event-description" class="event-description-content">
+                            Full event description here...
+                        </div>
+                    </div>
+                    
+                    <div class="event-location-section">
+                        <h3>Event Location</h3>
+                        <div class="event-location-details">
+                            <div class="location-info">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <div>
+                                    <div class="venue-name" id="modal-event-venue-name"></div>
+                                    <div class="venue-address" id="modal-event-venue-address"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal-event-location-map" class="event-location-map">
+                            <!-- Map iframe will be inserted here -->
+                        </div>
+                    </div>
+                    
+                    <div class="event-gallery-section" id="event-gallery-section" style="display: none;">
+                        <h3>Event Gallery</h3>
+                        <div class="event-gallery-grid" id="event-gallery-grid">
+                            <!-- Gallery images will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Event Modal Footer -->
+            <div class="event-modal-footer">
+                <div class="event-primary-actions">
+                    <button id="event-planner-btn" class="event-modal-btn primary">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        Add to My Planner
+                    </button>
+                    
+                    <button id="event-contact-btn" class="event-modal-btn secondary">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        Contact Organizer
+                    </button>
+                </div>
+                
+                <div class="event-secondary-actions">
+                    <button id="event-share-btn" class="event-modal-btn outline">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"></path>
+                        </svg>
+                        Share Event
+                    </button>
+                    
+                    <button id="event-directions-btn" class="event-modal-btn outline">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                        </svg>
+                        Get Directions
+                    </button>
                 </div>
             </div>
         </div>

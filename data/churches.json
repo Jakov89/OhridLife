@@ -1,0 +1,325 @@
+{
+  "churches": [
+    {
+      "id": 1,
+      "name": "Church of Saint John at Kaneo",
+      "name_mk": "Црква Свети Јован Канео",
+      "period": "13th century",
+      "architectural_style": "Byzantine",
+      "short_description": "Ohrid's most iconic church, dramatically perched on a cliff overlooking Lake Ohrid.",
+      "detailed_description": "Perched dramatically on a cliff above the waters of Lake Ohrid, just west of the fishing quarter of Kaneo, stands the Church of St. John the Theologian. Built in the early 13th century, during the time of the Ohrid noble family known as the Theologoi, the church is one of the city's most picturesque and iconic landmarks. Its construction reflects the refined craftsmanship of the era: the lower walls are built of finely cut stone, while the upper sections combine alternating rows of tufa and brick. The apse, eastern façade, and dome are adorned with ceramic-plastic decorations that enrich the appearance of the exterior. Fragments of the original 13th-century frescoes have survived in the dome, apse, and on the northern and southern pillars. In the dome's calotte, Christ Pantocrator is depicted in majesty, while eight standing prophets, arranged in pairs, encircle the drum below. The apse preserves scenes of The Communion of the Apostles and The Last Supper, alongside busts of church fathers. On the northern pillar, the church's patron, St. John the Theologian, is painted; opposite him, on the southern pillar, stands the image of Christ. Particularly noteworthy are the frescoes of the hierarchs, among whom appear St. Erasmus of Lychnidos, the first Christian missionary in this region, and St. Clement of Ohrid, the city's patron saint. Uniquely, the apostles in The Communion are painted in imperial vestments—a rare motif in Byzantine art. The church is not only a masterpiece of medieval architecture and painting but also a witness to significant historical events. It was here, in the first half of the 13th century, that Theodore Komnenos Doukas, Despot of Epirus, was crowned Emperor of Thessaloniki by the Archbishop of Ohrid, Demetrios Chomatenos. Today, St. John at Kaneo continues to enchant visitors with its sublime cliffside setting, its surviving frescoes, and its role as a living monument of Ohrid's spiritual and cultural legacy.",
+      "historical_significance": "Symbol of Ohrid's spiritual heritage and most photographed monument",
+      "features": [
+        "Built by noble Ohrid family the Theologoi (13th century)",
+        "Christ Pantocrator and eight prophets in dome",
+        "Apostles in imperial vestments - rare Byzantine motif",
+        "St. Erasmus of Lychnidos and St. Clement frescoes",
+        "Site of Theodore Komnenos Doukas' imperial coronation",
+        "Dramatic clifftop location above Lake Ohrid"
+      ],
+      "visiting_hours": "8:00 - 20:00 (summer), 9:00 - 17:00 (winter)",
+      "entrance_fee": "Free",
+      "accessibility": "Moderate difficulty - steep path",
+      "best_time_to_visit": "Late afternoon for golden hour photography",
+      "gallery": [
+        "churces/kaneo/photo1.jpg",
+        "churces/kaneo/photo2.jpg",
+        "churces/kaneo/photo3.jpg",
+        "churces/kaneo/photo4.jpg",
+        "churces/kaneo/photo5.jpg",
+        "churces/kaneo/photo6.jpg"
+      ],
+             "coordinates": "41.1093, 20.7926",
+       "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10111.75340596404!2d20.798478449372322!3d41.107399609324666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcb9e2457c71%3A0xbea74f2f5ddcc056!2sChurch%20of%20Saint%20Jovan%20the%20Theologian%20at%20Kaneo!5e0!3m2!1sen!2smk!4v1755263632264!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+       "category": "iconic"
+    },
+    {
+      "id": 2,
+      "name": "Church of Saint Sophia",
+      "name_mk": "Црква Света Софија",
+      "period": "11th century",
+      "architectural_style": "Byzantine",
+      "short_description": "Ancient cathedral with stunning Byzantine frescoes from the 11th-14th centuries.",
+      "detailed_description": "The Church of the Holy Wisdom (St. Sophia) in Ohrid is dedicated to Christ as the Divine Wisdom. Built on the foundations of an early Christian basilica, it served as the cathedral and patriarchal church during the reign of Tsar Samuel. Its present form dates back to the time of Archbishop Leo (1037–1056), who restored and enlarged the cathedral. When systematic cleaning and conservation began some fifty years ago, one of the most remarkable complexes of 11th-century fresco painting in European and Byzantine art was revealed. The early frescoes, together with later additions from the 14th century, immediately attracted international scholarly attention and secured a place in the most respected studies of medieval art. In the 11th century, St. Sophia was the Great Church of the Ohrid Archbishopric, whose jurisdiction stretched from the Danube to the Albanian coast and the Gulf of Thessaloniki. This ecclesiastical institution held a prominent position in the Orthodox world, and its leaders proudly emphasized their Justinian heritage. In the second half of the 15th century, the church was converted into a mosque, bringing significant alterations: the frescoes were covered with lime, the dome was dismantled and leveled with the roof, the marble templon was removed, and from its fragments a mimbar was built in the southwest corner of the naos. Under Archbishop Leo, more than sixty figures were painted in the fresco program. The central apse prominently features the Fathers of the Constantinopolitan Patriarchate—St. Basil the Great, St. John Chrysostom, and St. Gregory the Theologian. In the diaconicon, six Roman popes are depicted, reflecting the still-united relationship between Constantinople and Rome before the Great Schism of 1054. Among the most vivid and beloved frescoes are The Holy Trinity in the form of three angels visiting Abraham, The Hospitality of Abraham, The Sacrifice of Isaac, The Three Youths in the Fiery Furnace, and Jacob's Ladder. Between 1313 and 1314, Archbishop Gregory added the magnificent narthex, one of the finest works of late Byzantine and Macedonian architecture. The upper gallery was decorated in the late 14th century with frescoes depicting the donor Jovan Oliver and his family, alongside Archbishop Nikola. In modern times, Metropolitan Timothy of Debar and Kičevo initiated the removal of the Ottoman mimbar in 2000, followed by extensive restoration. The remains of the old templon were used to design a new marble iconostasis in authentic Byzantine style, restoring the liturgical life and full function of this centuries-old cathedral.",
+      "historical_significance": "Former cathedral of the Ohrid Archbishopric, UNESCO World Heritage site",
+      "features": [
+        "Cathedral of Ohrid Archbishopric during Tsar Samuel's reign",
+        "One of Europe's most remarkable 11th-century fresco complexes",
+        "The Holy Trinity as three angels visiting Abraham",
+        "Six Roman popes depicted before Great Schism of 1054",
+        "Magnificent narthex added by Archbishop Gregory (1313-1314)",
+        "Restored with authentic Byzantine marble iconostasis"
+      ],
+      "visiting_hours": "9:00 - 19:00 (summer), 9:00 - 16:00 (winter)",
+      "entrance_fee": "100 MKD (adults), 50 MKD (students)",
+      "accessibility": "Easy access from city center",
+      "best_time_to_visit": "Morning for best lighting of frescoes",
+      "gallery": [
+        "churces/sv.sofija/photo1.jpg",
+        "churces/sv.sofija/photo2.jpg",
+        "churces/sv.sofija/photo3.jpg",
+        "churces/sv.sofija/photo4.jpg",
+        "churces/sv.sofija/photo5.jpg",
+        "churces/sv.sofija/photo6.jpg"
+
+      ],
+             "coordinates": "41.1156, 20.7980",
+       "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125.6180077368995!2d20.79623686178591!3d41.110991587592636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbae7584491%3A0xf973c9aa671fb02d!2sChurch%20of%20Hagia%20Sophia!5e0!3m2!1sen!2smk!4v1755264178009!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+       "category": "major"
+    },
+    {
+      "id": 3,
+      "name": "Church of Saints Clement and Panteleimon",
+      "name_mk": "Црква Свети Климент и Пантелејмон",
+      "period": "Original 893 AD, reconstructed 2002",
+      "architectural_style": "Byzantine Revival",
+      "short_description": "Sacred site of Saint Clement's first monastery and the birthplace of Slavic literacy.",
+      "detailed_description": "On the evening of August 10, 2002, with inspired liturgical rites, solemn processions, and a magnificent litiya, history came full circle. After 530 years, a portion of the holy relics of St. Clement, which had rested in the Church of the Holy Mother of God Perivleptos, were returned to the very tomb he himself had prepared a millennium earlier—within his monastery of St. Panteleimon at Plaošnik. The following day, August 11, 2002, a grand hierarchical Divine Liturgy was celebrated to consecrate the newly rebuilt Monastery of St. Panteleimon and St. Clement of Ohrid. The new church was carefully designed to incorporate and preserve the remains of the original Clementine monastery. St. Clement's monastery holds unique significance as the site of the first Slavic university, a beacon of Slavic literacy and culture, and the cradle of the Ohrid Literary School. From here, more than 3,500 disciples were trained and sent forth, spreading the light of the written word as far as Rus'. The monastery also housed the hospital described by Archbishop Theophylact in the 12th century and by Dimitrios Chomatenos in the 13th. In the 14th century, Caesar Dukas and his son Dimitrios built a new church, only for the complex to be destroyed in the 15th century when it was turned into a mosque. Later, in the 17th century, it suffered severe damage from a powerful earthquake. In 2000, the Ministry of Culture of the Republic of Macedonia allocated significant funding and prioritized the completion of archaeological excavations at Plaošnik. Among the most impressive discoveries was the five-naved episcopal basilica, the ancient seat of the bishops of Lychnidos, dating from the 4th century. Nearby, archaeologists uncovered a monumental baptistery and numerous auxiliary structures, many adorned with splendid floor mosaics—works that reaffirm Ohrid's rightful title as the Jerusalem of the Balkans. Within the precincts of St. Clement's monastery, rich finds were unearthed: fragments of gilded vestments, numerous large enkolpia—double pectoral crosses bearing images of the Virgin and the Crucifixion of Christ, once used as reliquaries by monks—and a great number of coins and artifacts. The foundation stone for the renewed monastery was blessed on December 8, 2000, in honor of the 2000th Jubilee of Christianity. Today, the restored Monastery of St. Clement and St. Panteleimon stands once again as a radiant spiritual, cultural, and historical center, where faith, learning, and tradition converge in the heart of Ohrid.",
+      "historical_significance": "Birthplace of Slavic literacy, site of first Slavic university, tomb of Saint Clement",
+      "features": [
+        "Site of the first Slavic university",
+        "St. Clement's relics returned after 530 years (2002)",
+        "Cradle of the Ohrid Literary School",
+        "Five-naved episcopal basilica from 4th century",
+        "Ancient baptistery with splendid floor mosaics",
+        "Over 3,500 disciples trained and sent to Rus'"
+      ],
+      "visiting_hours": "8:00 - 20:00 daily",
+      "entrance_fee": "50 MKD (adults), 30 MKD (students)",
+      "accessibility": "Easy access with stairs",
+      "best_time_to_visit": "Any time, quieter in early morning",
+      "gallery": [
+        "churces/sv.kliment/photo1.jpg",
+        "churces/sv.kliment/photo2.jpg",
+        "churces/sv.kliment/photo3.jpg",
+        "churces/sv.kliment/photo4.jpg",
+        "churces/sv.kliment/photo5.jpg",
+        "churces/sv.kliment/photo6.jpg"   
+        
+      ],
+             "coordinates": "41.1139, 20.7975",
+       "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.3931884881636!2d20.79182436593958!3d41.112143989130644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcba362685c3%3A0x51734e25d97298d!2sChurch%20of%20Saints%20Clement%20of%20Ohrid%20and%20Panteleimon!5e0!3m2!1sen!2smk!4v1755264656726!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+       "category": "major"
+    },    
+    {
+      "id": 4,
+      "name": "Church of Saint Nicholas Bolnichki",
+      "name_mk": "Црква Свети Никола Болнички",
+      "period": "1313 AD",
+      "architectural_style": "Byzantine",
+      "short_description": "14th-century church known for its healing traditions and beautiful lakeside location.",
+      "detailed_description": "Not far from the shores of Lake Ohrid, beside the Lower Gate, stand the two churches known as The Healing Churches – St. Nicholas and St. Bogorodica. Their name comes from the tradition that a hospital once existed here in the Middle Ages, serving the local community. St. Nicholas the Healer was built in 1313 from cut stone, without the use of bricks. It is a single-nave church with a semicircular vaulted ceiling. On its western side rises a bell-tower in the form of a stone screen, unique in Macedonia, built under the influence of coastal architecture. In the courtyard of the church are the remains of the city walls, which once descended from Samuel's Fortress down to the lake. The church is first mentioned in documents belonging to St. Bogorodica Perivlepta in Ohrid. With the conquest of Ohrid by the Serbs in 1334, a fresco was painted on the southern outer wall showing Tsar Dušan, his wife Jelena, his son Uroš, and Archbishop Nikola, who would later crown Dušan as emperor in Skopje in 1346. In the 15th century, a chapel was added to the southern side of the church, of which only the apse remains today, decorated with the fresco The Communion of the Apostles. Among the most important frescoes in the interior are The Dormition of the Virgin, Christ's Entry into Jerusalem, and striking depictions of St. Clement, St. Nicholas, and St. Panteleimon.",
+      "historical_significance": "Historical healing center and pilgrim destination",
+      "features": [
+        "Built in 1313 from cut stone without bricks",
+        "Unique stone screen bell-tower - only one in Macedonia",
+        "Fresco of Tsar Dušan's family from 1334",
+        "The Dormition of the Virgin and Christ's Entry into Jerusalem",
+        "Remains of Samuel's Fortress city walls in courtyard",
+        "Medieval hospital tradition - The Healing Churches"
+      ],
+      "visiting_hours": "8:00 - 18:00 daily",
+      "entrance_fee": "Free",
+      "accessibility": "Easy lakeside access",
+      "best_time_to_visit": "Morning or evening for lake views",
+      "gallery": [
+        "churces/sv.nikolabolnicki/photo1.jpg",
+        "churces/sv.nikolabolnicki/photo2.jpg",
+        "churces/sv.nikolabolnicki/photo3.jpg",
+        "churces/sv.nikolabolnicki/photo4.jpg",
+        "churces/sv.nikolabolnicki/photo5.jpg"        
+      ],
+             "coordinates": "41.1125, 20.7945",
+       "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.8487552262763!2d20.79697430869514!3d41.112076684064206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4e6bed0af%3A0xe62f4c0ecb8ed3ca!2sChurch%20of%20Saint%20Nicholas%20of%20the%20Hospital%20(Bolnichki)!5e0!3m2!1sen!2smk!4v1755269041144!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+       "category": "historic"
+    },
+    {
+      "id": 5,
+      "name": "Saint Naum Monastery",
+      "name_mk": "Манастир Свети Наум",
+      "period": "905 AD",
+      "architectural_style": "Byzantine",
+      "short_description": "Ancient monastery with peacocks, natural springs, and the tomb of Saint Naum.",
+      "detailed_description": "Saint Naum Monastery, established in 905 AD by Saint Naum of Preslav, stands as one of Macedonia's most significant spiritual and natural sites. Located 29 kilometers south of Ohrid near the Albanian border, the monastery overlooks the southern shores of Lake Ohrid where natural springs create a mystical landscape. Saint Naum, a contemporary and follower of Saints Cyril and Methodius, founded this monastery as a center of learning and spirituality. The current church, rebuilt in the 16th-17th centuries, houses the tomb of Saint Naum, where pilgrims come to experience the legend that one can hear the saint's heartbeat by placing their ear to his tomb. The monastery is famous for its free-roaming peacocks, which have become a symbol of the site, and its location at the source of the River Crn Drim. The surrounding area features crystalline springs and offers boat rides through the scenic wetlands.",
+      "historical_significance": "Founded by Saint Naum, important pilgrimage site, source of River Crn Drim",
+      "features": [
+        "Tomb of Saint Naum",
+        "Free-roaming peacocks",
+        "Natural springs",
+        "Boat rides available",
+        "16th-17th century architecture",
+        "Border monastery location"
+      ],
+      "visiting_hours": "8:00 - 20:00 daily",
+      "entrance_fee": "100 MKD (monastery), boat rides extra",
+      "accessibility": "Car/bus needed from Ohrid (29km)",
+      "best_time_to_visit": "Spring and summer for peacocks and boat rides",
+      "gallery": [
+        "churces/sv.naum/photo1.jpg ",
+        "churces/sv.naum/photo2.jpg",
+        "churces/sv.naum/photo3.jpg",
+        "churces/sv.naum/photo4.jpg",
+        "churces/sv.naum/photo5.jpg"        
+      ],
+             "coordinates": "40.9158, 20.7398",
+       "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.1!2d20.7398!3d40.9158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcb9e2457c71%3A0xbea74f2f5ddcc061!2sSaint%20Naum%20Monastery!5e0!3m2!1sen!2smk!4v1755263632269!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+       "category": "monastery"
+    },
+    {
+      "id": 6,
+      "name": "Church of the Holy Mother of God Perivleptos",
+      "name_mk": "Црква Света Богородица Перивлепта",
+      "period": "1295 AD",
+      "architectural_style": "Late Byzantine",
+      "short_description": "13th-century church with some of the finest examples of late Byzantine frescoes.",
+             "detailed_description": "In 1295, during the tenure of Archbishop Makarios, the Byzantine governor Progon Zgur, a relative of Emperor Andronikos II Palaiologos, commissioned the construction of this church. The fresco decoration was created by the renowned painters Michael and Eutychios. In the altar apse, the first zone depicts hierarchs in full stature, the second zone shows half-length figures of hierarchs, and the third contains the scenes of The Doubt of Thomas, The Last Supper, and The Communion of the Apostles. At the highest point of the apse are the images of The Mother of God – Platytera and The Ascension of Christ. In the naos, frescoes cover all four walls in three distinct zones. The lowest zone portrays hierarchs, ascetics, and hermits; the middle zone illustrates the entire life of the Virgin Mary; while the uppermost zone is dedicated to scenes from the life and Passion of Christ. Among them are The Washing of the Feet, The Prayer in Gethsemane, The Betrayal by Judas, The Carrying of the Cross, and The Lamentation. These compositions emphasize a strong dramatic expression that would continue to influence medieval painting. During the 15th century, when the monastery of St. Panteleimon at Plaošnik was converted into a mosque, the people of Ohrid were permitted to transfer the relics of St. Clement to another church. Initially, they were moved to the small church of St. Clement, but because of the saint's great veneration, the citizens petitioned for his relics to be placed in a more prominent church. Their request was granted, and the relics were enshrined in the largest church at the time—St. Mary Perivleptos—which from that moment became widely known as the Church of St. Clement. At first, the relics were buried, but in the 19th century, with the desire to honor the city's patron more fittingly, they were exhumed and placed in a finely crafted silver reliquary adorned with ornaments. The reliquary was then set into a beautifully carved walnut sarcophagus. After World War II, under the communist regime, the church suffered a new period of neglect. Until 1952, regular liturgies were still held in St. Mary Perivleptos. That year, however, the authorities decided to transform the church into a monument of culture. On September 1, 1952, the parish priest, Father Gjorgji Nikoloski, secretly carried the relics under his arm, wrapped in a cloth, down Boro Šain Street to the church of St. Nicholas Gerakomija. The following day the sarcophagus was also transferred, with the help of several faithful parishioners—Stefan Dimzov, Ustijan Madžarov, and Andon Zavoјče. The relics remained there until September 22, 1991. With the renewal of church life after independence, the Holy Synod of the Macedonian Orthodox Church resolved to return the relics to their rightful place in the Church of St. Clement (St. Mary Perivleptos). In celebration, a grand procession was held, carrying the saint's relics through the episcopal centers of Macedonia before their solemn return.",
+      "historical_significance": "Finest example of late Byzantine art in the Balkans",
+      "features": [        
+        "Commissioned by Byzantine governor Progon Zgur (1295)",
+        "Frescoes by renowned painters Michael and Eutychios",
+        "Dramatic expression influencing medieval painting",
+        "Former resting place of St. Clement's relics",
+        "Secret relics transfer during communist period (1952)",
+        "Also known as Church of St. Clement"
+      ],
+      "visiting_hours": "9:00 - 17:00 (guided tours recommended)",
+      "entrance_fee": "150 MKD (adults), 100 MKD (students)",
+      "accessibility": "Located in old town, short walk required",
+      "best_time_to_visit": "Mid-morning for optimal fresco lighting",
+      "gallery": [
+        "churces/perivlepta/photo1.jpg",
+        "churces/perivlepta/photo2.jpg",
+        "churces/perivlepta/photo3.jpg",
+        "churces/perivlepta/photo4.jpg"       
+      ],
+             "coordinates": "41.1147, 20.7991",
+       "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d531.3789597428935!2d20.79505530726555!3d41.11414717430223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbb531ac125%3A0xfb0415fd7102fb82!2sChurch%20of%20the%20Virgin%20Mary%20Peribleptos!5e0!3m2!1sen!2smk!4v1755269600192!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+       "category": "major"
+    },
+    {
+      "id": 7,
+      "name": "Church of Saint Constantine and Helena",
+      "name_mk": "Црква Свети Константин и Елена",
+      "period": "1477 AD",
+      "architectural_style": "Byzantine",
+      "short_description": "Hidden gem with beautiful 14th-century frescoes and peaceful atmosphere.",
+      "detailed_description": "The Church of St. Constantine and St. Helena stands on a prominent spot in Ohrid's old town, near the church of St. Bogorodica Perivlepta. Above the southern entrance, an inscription reveals that the church was built and decorated with frescoes in 1477. The inscription mentions the founder, Partenije, who is depicted holding a model of the church. Next to him are portraits of his mother Maria and his son Mihailo. Architecturally, the church is a single-nave structure with a transverse barrel vault. The rectangular base is vaulted with a semicircular arch and ends on the eastern side with a three-sided apse. Later, a small chapel dedicated to St. Paraskeva the Great Martyr was added on the southern side. The construction is almost identical to two 14th-century churches: St. Bogorodica Bolnička and St. George in the village of Godivje, near Ohrid. The entire interior of the church is covered with frescoes. In the altar space is the depiction of The Virgin Platytera, beneath which stand the holy hierarchs: St. Basil, St. Gregory, St. John, and St. Athanasius. On the southern wall are painted St. Constantine and St. Helena. In the second register, scenes include The Descent of the Holy Spirit, The Dormition of the Virgin, The Last Supper, The Prayer in Gethsemane, The Denial of Peter, The Lamentation, and The Burial of Christ. On the vault appear striking images of God the Father, God the Son, and God the Holy Spirit. In the church's narthex, special attention is drawn to a partially preserved composition titled The Departure of the Warriors into Battle for the Triumph of Christianity.",
+      "historical_significance": "Dedicated to Emperor Constantine and Saint Helena, founders of Christian Rome",
+      "features": [
+        "Built and frescoed in 1477 by founder Partenije",
+        "Founder's family portraits - Partenije, Maria, and Mihailo",
+        "The Virgin Platytera with holy hierarchs in altar",
+        "Trinity depicted on vault - Father, Son, and Holy Spirit",
+        "The Departure of Warriors into Battle for Christianity",
+        "St. Paraskeva chapel added to southern side"
+      ],
+      "visiting_hours": "10:00 - 16:00 (varies, call ahead)",
+      "entrance_fee": "Free",
+      "accessibility": "Located in old town residential area",
+      "best_time_to_visit": "Weekday mornings for solitude",
+      "gallery": [
+        "churces/sv.konstantinielena/photo1.png",
+        "churces/sv.konstantinielena/photo2.png",
+        "churces/sv.konstantinielena/photo3.png",
+        "churces/sv.konstantinielena/photo5.jpg"
+      ],
+             "coordinates": "41.1142, 20.7988",
+       "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.7429679958179!2d20.796234632662703!3d41.113919666729615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4ae3abc8d%3A0x6090f0cf24abedaf!2sChurch%20of%20Saints%20Constantine%20and%20Helen!5e0!3m2!1sen!2smk!4v1755270589322!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+       "category": "historic"
+    },   
+ 
+    {
+      "id": 9,
+      "name": "Church of Saint Erasmus",
+      "name_mk": "Црква Свети Еразмо",
+      "period": "14th century",
+      "architectural_style": "Byzantine",
+      "short_description": "Medieval church dedicated to Saint Erasmus with beautiful lake views.",
+      "detailed_description": "The Church of Saint Erasmus, dating from the 14th century, is a charming medieval church located near the lake shore. Dedicated to Saint Erasmus, the patron saint of sailors, this church has historically served the fishing community of Ohrid. The church features typical late Byzantine architecture with well-preserved stone masonry and original architectural elements. Inside, visitors can admire frescoes from the 14th and 15th centuries, though some have been affected by time and moisture from the nearby lake. The church's location provides beautiful views of Lake Ohrid and has made it a favorite spot for both worship and contemplation. Its connection to the maritime traditions of Ohrid makes it particularly significant for understanding the city's relationship with the lake.",
+      "historical_significance": "Historic church serving Ohrid's fishing community",
+      "features": [
+        "14th-15th century frescoes",
+        "Lake shore location",
+        "Maritime heritage connection",
+        "Stone masonry architecture",
+        "Scenic lake views"
+      ],
+      "visiting_hours": "8:00 - 18:00 daily",
+      "entrance_fee": "Free",
+      "accessibility": "Easy lakeside access",
+      "best_time_to_visit": "Morning or evening for best lake views",
+      "gallery": [
+        "churces/sv.erazmo/photo1.jpg",
+        "churces/sv.erazmo/photo2.jpg",
+        "churces/sv.erazmo/photo3.jpg"
+      ],
+      "coordinates": "41.1120, 20.7940",
+      "map_embed": "<!-- Add Google Maps embed code here -->",
+      "category": "historic"
+    },    
+    
+    {
+      "id": 10,
+      "name": "Church of Saint Nicholas Gerakomija",
+      "name_mk": "Црква Свети Никола Геракомија",
+      "period": "13th century",
+      "architectural_style": "Byzantine",
+      "short_description": "13th-century church with unique name and architectural features in the upper town.",
+      "detailed_description": "The Church of St. Nicholas – Gerakomia is constructed with crushed stone in its lower sections, while the upper sections are built with finely carved tufa stone bound with lime mortar. Its architectural design follows the form of a three-aisled basilica. The central nave is vaulted with three blind domes, while the northern and southern aisles are covered with semicylindrical vaults. Interestingly, the vaults are not built in stone; instead, they rest on a wooden construction where thin layers of lime plaster were applied over wooden slats and then painted with frescoes. What makes this church particularly unusual is the fact that, from the 19th century until today, it has never been fully fresco-painted. The decoration work most likely began in the 1860s, when the famous painter Dico Zograph visited Ohrid. The most remarkable frescoes are those in the vaults of the northern and southern aisles and in the three blind domes. These were painted by Dico Krstev from the village of Tresonče, the most prolific Macedonian painter of the 19th century. The frescoes in the altar area, however, are of lower quality and were created by painters from the village of Openica near Ohrid. Inside the church stands a beautifully painted iconostasis, also the work of master painter Dico Zograph, completed on October 30, 1862.",
+      "historical_significance": "Unique among Ohrid's Saint Nicholas churches with distinctive name",
+      "features": [
+        "Three-aisled basilica with three blind domes",
+        "Unique wooden vault construction with lime plaster",
+        "Never fully fresco-painted - incomplete 19th-century decoration",
+        "Frescoes by Dico Krstev from Tresonče village",
+        "Iconostasis by master Dico Zograph (October 30, 1862)",
+        "Mixed stone construction - crushed stone and carved tufa"
+      ],
+      "visiting_hours": "9:00 - 17:00 (call ahead to confirm)",
+      "entrance_fee": "Free",
+      "accessibility": "Uphill walk required",
+      "best_time_to_visit": "Morning for best views and lighting",
+      "gallery": [
+        "churces/sv.nikolagerakomija/photo1.jpg",
+        "churces/sv.nikolagerakomija/photo2.jpg",
+        "churces/sv.nikolagerakomija/photo3.jpg",
+        "churces/sv.nikolagerakomija/photo4.jpg",
+        "churces/sv.nikolagerakomija/photo5.jpg"
+      ],
+      "coordinates": "41.1155, 20.7995",
+      "map_embed": "<!-- Add Google Maps embed code here -->",
+      "category": "historic"
+    }
+  ],
+  "categories": {
+    "iconic": {
+      "name": "Iconic Churches",
+      "description": "The most famous and photographed churches of Ohrid",
+      "color": "#FFD700"
+    },
+    "major": {
+      "name": "Major Historical Sites",
+      "description": "Churches of exceptional historical and artistic importance",
+      "color": "#FF6B35"
+    },
+    "historic": {
+      "name": "Historic Churches",
+      "description": "Beautiful churches with rich historical significance",
+      "color": "#4ECDC4"
+    },
+    "monastery": {
+      "name": "Monasteries",
+      "description": "Monastic complexes and retreat centers",
+      "color": "#45B7D1"
+    }
+  },
+  "visiting_tips": [
+    
+    "Modest dress code required - cover shoulders and knees",
+    "Photography may be restricted inside some churches",
+    "Best light for frescoes is usually mid-morning",
+    "Some churches require advance booking for groups",
+    
+    "Guided tours available in multiple languages"
+  ]
+}
