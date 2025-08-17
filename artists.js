@@ -152,10 +152,20 @@ async function fetchArtistsData() {
 
 // --- LINK EVENTS TO ARTISTS ---
 function linkEventsToArtists() {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Set to start of day for accurate comparison
+    
     artistsData.forEach(artist => {
         // Find events for this artist
         const artistEvents = eventsData
-            .filter(event => event.artistId === artist.id)
+            .filter(event => {
+                // Only include events for this artist
+                if (event.artistId !== artist.id) return false;
+                
+                // Only include future events (exclude past events)
+                const eventDate = new Date(event.isoDate);
+                return eventDate >= today;
+            })
             .map(event => ({
                 name: event.eventName,
                 date: formatEventDate(event.isoDate),
