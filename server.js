@@ -432,6 +432,25 @@ app.get('/api/learn-ohrid-texts', (req, res) => {
     });
 });
 
+// API endpoint to get churches
+app.get('/api/churches', (req, res) => {
+    res.setHeader('Cache-Control', 'public, max-age=7200'); // Cache for 2 hours (churches data changes rarely)
+    const churchesPath = path.join(__dirname, 'data', 'churches.json');
+    fs.readFile(churchesPath, 'utf8', (err, data) => {
+        if (err) {
+            console.error("Error reading churches.json:", err);
+            return res.status(500).json({ error: 'Failed to load churches data.' });
+        }
+        try {
+            const churchesData = JSON.parse(data);
+            res.json(churchesData.churches || churchesData);
+        } catch (parseErr) {
+            console.error("Error parsing churches.json:", parseErr);
+            return res.status(500).json({ error: 'Failed to parse churches data.' });
+        }
+    });
+});
+
 // API endpoint for historical day facts
 app.get('/api/historical-day', (req, res) => {
     res.setHeader('Cache-Control', 'public, max-age=3600'); // Cache for 1 hour
@@ -750,6 +769,42 @@ app.get('/api/organizations/:id', (req, res) => {
             res.json(organization);
         } else {
             res.status(404).json({ error: 'Organization not found.' });
+        }
+    });
+});
+
+// API endpoint to get a single church by ID
+app.get('/api/churches/:id', (req, res) => {
+    const churchId = parseInt(req.params.id, 10);
+    
+    // Validate church ID
+    if (isNaN(churchId) || churchId <= 0) {
+        return res.status(400).json({ error: 'Invalid church ID.' });
+    }
+    
+    const churchesPath = path.join(__dirname, 'data', 'churches.json');
+
+    fs.readFile(churchesPath, 'utf8', (err, data) => {
+        if (err) {
+            console.error("Error reading churches.json:", err);
+            return res.status(500).json({ error: 'Failed to load churches data.' });
+        }
+        
+        try {
+            const churchesData = JSON.parse(data);
+            const churches = churchesData.churches || churchesData;
+            const church = churches.find(c => c.id === churchId);
+
+            if (church) {
+                // Set cache headers for individual churches
+                res.setHeader('Cache-Control', 'public, max-age=3600'); // 1 hour cache
+                res.json(church);
+            } else {
+                res.status(404).json({ error: 'Church not found.' });
+            }
+        } catch (parseErr) {
+            console.error("Error parsing churches.json:", parseErr);
+            return res.status(500).json({ error: 'Failed to parse churches data.' });
         }
     });
 });
