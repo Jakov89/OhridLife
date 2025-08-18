@@ -11059,6 +11059,228 @@ img[data-src]:not(.loaded) {
     }
 }
 
+/* =============== VENUE DETAIL PAGE STYLES =============== */
+
+.venue-detail-header {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.venue-detail-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.venue-detail-main-image:hover {
+    transform: scale(1.02);
+}
+
+.venue-detail-title-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    padding: 40px 30px 30px;
+    color: white;
+}
+
+.venue-detail-title-overlay h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+}
+
+.venue-detail-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.venue-detail-info-panel {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border);
+}
+
+.venue-detail-info-panel h2 {
+    color: var(--foreground);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 10px;
+}
+
+.venue-detail-info-panel p {
+    color: var(--muted-foreground);
+    line-height: 1.7;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.venue-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.venue-details p {
+    margin: 0;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.95rem;
+}
+
+.venue-details p:last-child {
+    border-bottom: none;
+}
+
+.venue-details strong {
+    color: var(--foreground);
+    font-weight: 600;
+    min-width: 120px;
+    display: inline-block;
+}
+
+.venue-detail-gallery-panel {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border);
+}
+
+.venue-detail-gallery-panel h3 {
+    color: var(--foreground);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 10px;
+}
+
+.venue-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+.venue-gallery-grid img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.venue-gallery-grid img:hover {
+    transform: scale(1.05);
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.venue-map {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.venue-map h3 {
+    color: var(--foreground);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.venue-map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile responsive design for venue detail page */
+@media (max-width: 768px) {
+    .venue-detail-header {
+        height: 250px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+    }
+    
+    .venue-detail-title-overlay {
+        padding: 20px 20px 15px;
+    }
+    
+    .venue-detail-title-overlay h1 {
+        font-size: 1.8rem;
+    }
+    
+    .venue-detail-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .venue-detail-info-panel,
+    .venue-detail-gallery-panel {
+        padding: 20px;
+        border-radius: 12px;
+    }
+    
+    .venue-detail-info-panel h2,
+    .venue-detail-gallery-panel h3 {
+        font-size: 1.4rem;
+    }
+    
+    .venue-gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+    }
+    
+    .venue-gallery-grid img {
+        height: 100px;
+    }
+    
+    .venue-map iframe {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .venue-detail-header {
+        height: 200px;
+    }
+    
+    .venue-detail-title-overlay h1 {
+        font-size: 1.5rem;
+    }
+    
+    .venue-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Modal Body - Two Column Layout */
 .modal-body {
     display: grid;
