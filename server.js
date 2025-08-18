@@ -874,18 +874,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Catch-all to serve index.html for any other request
-// API routes should be defined before this line
-
-// Catch-all route for non-API requests
-app.get('*', (req, res, next) => {
-    // Don't handle API routes here
-    if (req.path.startsWith('/api/')) {
-        return next();
-    }
-    res.sendFile(path.join(__dirname, 'index.html'));
-});
-
 // API endpoint to get a single venue by ID
 app.get('/api/venues/:id', (req, res) => {
     // Set content type to JSON
@@ -1169,6 +1157,15 @@ self.addEventListener('activate', function(event) {
     );
 });
 `);
+});
+
+// Catch-all route for non-API requests (MUST be last!)
+app.get('*', (req, res, next) => {
+    // Don't handle API routes here
+    if (req.path.startsWith('/api/')) {
+        return next();
+    }
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(PORT, () => {
