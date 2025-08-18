@@ -6,11 +6,7 @@
         "description": "Master music selector with 30+ years experience, perfect for private parties.",
         "imageUrl": "artist_image/dj/vancho.jpg",
         "profileImage": "artist_image/dj/vancho.jpg",
-        "upcomingEvents": [   
-            {
-     
-            }      
-        ],
+        "upcomingEvents": [],
         "socialMedia": {
             "instagram": "https://www.instagram.com/vanco.jovanoski/",
             "facebook": "https://www.facebook.com/vanco.jovanoski.2025"
