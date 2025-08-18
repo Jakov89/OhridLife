@@ -7860,7 +7860,7 @@
     "day": "Mon.",
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/paulaner/18-24.png",
+    "imageUrl": "events_image/paulaner/11-17.png",
     "eventBookingUrl": "#",
     "eventContact": "",
     "ticketPrice": "Free entry",
@@ -7884,7 +7884,7 @@
   },
   {
     "id": 494,
-    "eventName": "Balkanikos Band",
+    "eventName": "Backdoor Band",
     "isoDate": "2025-08-20",
     "startTime": "22:00",
     "day": "Wed.",
@@ -7914,7 +7914,7 @@
   },
   {
     "id": 496,
-    "eventName": "Kameleon",
+    "eventName": "Balkanikos Band",
     "isoDate": "2025-08-22",
     "startTime": "22:00",
     "day": "Fri.",
@@ -7929,7 +7929,7 @@
   },
   {
     "id": 497,
-    "eventName": "Aneta Micova",
+    "eventName": "Anita Miceva",
     "isoDate": "2025-08-23",
     "startTime": "22:00",
     "day": "Sat.",
