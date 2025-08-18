@@ -6,7 +6,13 @@
         "description": "Master music selector with 30+ years experience, perfect for private parties.",
         "imageUrl": "artist_image/dj/vancho.jpg",
         "profileImage": "artist_image/dj/vancho.jpg",
-        "upcomingEvents": [         
+        "upcomingEvents": [   
+            {
+                "name": "Vanco Play",
+                "date": "2025-08-21",
+                "startTime": "20:00",
+                "venue": "Mlad Turist (Resen)"
+            }      
         ],
         "socialMedia": {
             "instagram": "https://www.instagram.com/vanco.jovanoski/",
