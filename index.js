@@ -2026,6 +2026,9 @@ function openVenueModal(venueId) {
     
     // Directly populate the modal without loading state delay
     populateVenueModal(venue, modal);
+    
+    // Initialize share button functionality
+    initializeVenueShareButton(venue);
 }
 
 function populateVenueModal(venue, modal) {
@@ -4708,6 +4711,152 @@ function initializeHistoricalFacts() {
     
     displayCurrentFact();
     setupFactEventListeners();
+}
+
+// =============== VENUE SHARE FUNCTIONALITY ===============
+
+function initializeVenueShareButton(venue) {
+    const shareBtn = document.getElementById('venue-share-btn');
+    if (!shareBtn) return;
+    
+    // Remove any existing event listeners
+    shareBtn.replaceWith(shareBtn.cloneNode(true));
+    const newShareBtn = document.getElementById('venue-share-btn');
+    
+    newShareBtn.addEventListener('click', () => shareVenue(venue));
+}
+
+async function shareVenue(venue) {
+    const venueName = venue.name?.en || venue.name || 'Venue';
+    const venueDescription = venue.description?.en || venue.description || `Discover ${venueName} in Ohrid`;
+    const venueUrl = `${window.location.origin}/venues/${venue.id}`;
+    
+    const shareData = {
+        title: `${venueName} - OhridHub`,
+        text: venueDescription.substring(0, 160) + (venueDescription.length > 160 ? '...' : ''),
+        url: venueUrl
+    };
+    
+    try {
+        // Check if Web Share API is supported (mainly mobile devices)
+        if (navigator.share && navigator.canShare && navigator.canShare(shareData)) {
+            await navigator.share(shareData);
+            console.log('Venue shared successfully via Web Share API');
+            return;
+        }
+    } catch (error) {
+        console.log('Web Share API failed, falling back to clipboard:', error);
+    }
+    
+    // Fallback: Copy to clipboard and show notification
+    try {
+        await navigator.clipboard.writeText(venueUrl);
+        showShareNotification('Link copied to clipboard!', 'success');
+    } catch (error) {
+        console.log('Clipboard API failed, showing share options:', error);
+        showShareOptionsModal(shareData);
+    }
+}
+
+function showShareNotification(message, type = 'info') {
+    // Remove any existing notifications
+    const existingNotification = document.querySelector('.share-notification');
+    if (existingNotification) {
+        existingNotification.remove();
+    }
+    
+    const notification = document.createElement('div');
+    notification.className = `share-notification ${type}`;
+    notification.innerHTML = `
+        <div class="notification-content">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>${message}</span>
+        </div>
+    `;
+    
+    document.body.appendChild(notification);
+    
+    // Trigger animation
+    setTimeout(() => notification.classList.add('show'), 100);
+    
+    // Remove after 3 seconds
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => notification.remove(), 300);
+    }, 3000);
+}
+
+function showShareOptionsModal(shareData) {
+    // Create share options modal as fallback
+    const shareModal = document.createElement('div');
+    shareModal.className = 'share-options-modal';
+    shareModal.innerHTML = `
+        <div class="share-options-content">
+            <div class="share-options-header">
+                <h3>Share this venue</h3>
+                <button class="share-close-btn" onclick="this.closest('.share-options-modal').remove()">×</button>
+            </div>
+            <div class="share-options-body">
+                <div class="share-link-container">
+                    <input type="text" class="share-link-input" value="${shareData.url}" readonly>
+                    <button class="copy-link-btn" onclick="copyShareLink(this, '${shareData.url}')">Copy</button>
+                </div>
+                <div class="share-social-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareData.url)}" 
+                       target="_blank" class="share-social-btn facebook">
+                        Facebook
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(shareData.text)}&url=${encodeURIComponent(shareData.url)}" 
+                       target="_blank" class="share-social-btn twitter">
+                        Twitter
+                    </a>
+                    <a href="https://wa.me/?text=${encodeURIComponent(shareData.text + ' ' + shareData.url)}" 
+                       target="_blank" class="share-social-btn whatsapp">
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(shareModal);
+    
+    // Close modal when clicking outside
+    shareModal.addEventListener('click', (e) => {
+        if (e.target === shareModal) {
+            shareModal.remove();
+        }
+    });
+}
+
+function copyShareLink(button, url) {
+    navigator.clipboard.writeText(url).then(() => {
+        const originalText = button.textContent;
+        button.textContent = 'Copied!';
+        button.classList.add('copied');
+        
+        setTimeout(() => {
+            button.textContent = originalText;
+            button.classList.remove('copied');
+        }, 2000);
+    }).catch(() => {
+        // Fallback for older browsers
+        const input = button.previousElementSibling;
+        input.select();
+        input.setSelectionRange(0, 99999);
+        document.execCommand('copy');
+        
+        const originalText = button.textContent;
+        button.textContent = 'Copied!';
+        button.classList.add('copied');
+        
+        setTimeout(() => {
+            button.textContent = originalText;
+            button.classList.remove('copied');
+        }, 2000);
+    });
 }
 
 function displayCurrentFact() {

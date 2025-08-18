@@ -432,6 +432,84 @@ app.get('/api/learn-ohrid-texts', (req, res) => {
     });
 });
 
+// API endpoint for historical day facts
+app.get('/api/historical-day', (req, res) => {
+    res.setHeader('Cache-Control', 'public, max-age=3600'); // Cache for 1 hour
+    res.setHeader('Content-Type', 'application/json');
+    
+    const historicalFactsPath = path.join(__dirname, 'data', 'historical_facts.json');
+    
+    fs.readFile(historicalFactsPath, 'utf8', (err, data) => {
+        if (err) {
+            console.error("Error reading historical_facts.json:", err);
+            return res.status(500).json({ error: 'Failed to load historical facts data.' });
+        }
+        
+        try {
+            const historicalData = JSON.parse(data);
+            const { date, limit } = req.query;
+            
+            // Transform facts to the required API format
+            const transformedFacts = historicalData.facts.map((fact, index) => {
+                // Generate a consistent date for each fact based on its ID
+                const baseDate = new Date('2025-01-01');
+                const dayOffset = (fact.id - 1) % 365; // Cycle through the year
+                const factDate = new Date(baseDate);
+                factDate.setDate(baseDate.getDate() + dayOffset);
+                
+                return {
+                    id: fact.id,
+                    date: factDate.toISOString().split('T')[0], // Format as YYYY-MM-DD
+                    title: `${fact.period}: ${fact.category.charAt(0).toUpperCase() + fact.category.slice(1)} Heritage`,
+                    description: fact.fact,
+                    image: `https://ohridhub.mk/uploads/historical/fact_${fact.id}.jpg`
+                };
+            });
+            
+            // Sort facts by date (most recent first)
+            transformedFacts.sort((a, b) => new Date(b.date) - new Date(a.date));
+            
+            let result = transformedFacts;
+            
+            // Handle date query parameter
+            if (date) {
+                const requestedDate = new Date(date);
+                if (isNaN(requestedDate.getTime())) {
+                    return res.status(400).json({ error: 'Invalid date format. Use YYYY-MM-DD.' });
+                }
+                
+                const dateStr = requestedDate.toISOString().split('T')[0];
+                result = transformedFacts.filter(fact => fact.date === dateStr);
+                
+                if (result.length === 0) {
+                    return res.status(404).json({ error: 'No historical fact found for the specified date.' });
+                }
+            }
+            // Handle limit query parameter
+            else if (limit) {
+                const limitNum = parseInt(limit, 10);
+                if (isNaN(limitNum) || limitNum <= 0) {
+                    return res.status(400).json({ error: 'Invalid limit. Must be a positive number.' });
+                }
+                result = transformedFacts.slice(0, limitNum);
+            }
+            // Default: return today's fact
+            else {
+                const today = new Date();
+                const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
+                const todayFactIndex = (dayOfYear - 1) % transformedFacts.length;
+                result = [transformedFacts[todayFactIndex]];
+            }
+            
+            res.json(result);
+            
+        } catch (parseErr) {
+            console.error("Error parsing historical_facts.json:", parseErr);
+            return res.status(500).json({ error: 'Failed to parse historical facts data.' });
+        }
+    });
+});
+
 // Sitemap generation
 app.get('/sitemap.xml', async (req, res) => {
     try {
