@@ -4446,6 +4446,315 @@ span.flatpickr-weekday {
     margin-bottom: 1.5rem;
     padding: 1rem 0;
     border-bottom: 1px solid #e5e7eb; /* A light separator */
+    position: relative;
+}
+
+/* Venue Category Dropdown Styles */
+.venue-category-dropdown {
+    display: none; /* Hidden by default, shown on mobile */
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+/* Enhanced dropdown menu styling */
+@media (max-width: 768px) {
+    .dropdown-menu.show {
+        background: #ffffff !important;
+        border: 2px solid #e5e7eb !important;
+        border-radius: 12px !important;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+        display: block !important;
+        position: absolute !important;
+        z-index: 999999 !important;
+        backdrop-filter: blur(10px) !important;
+        animation: dropdownSlideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+    
+    /* Subcategory dropdown gets special green styling */
+    .venue-subcategory-dropdown .dropdown-menu.show {
+        border: 2px solid #10b981 !important;
+        box-shadow: 0 20px 40px rgba(16, 185, 129, 0.2), 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    }
+}
+
+@keyframes dropdownSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.dropdown-trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-foreground);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+.dropdown-trigger:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
+    transform: translateY(-1px);
+}
+
+.dropdown-trigger:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.dropdown-trigger .selected-category-icon {
+    font-size: 1.2rem;
+    margin-right: 0.75rem;
+}
+
+.dropdown-trigger .selected-category-text {
+    flex: 1;
+    text-align: left;
+}
+
+.dropdown-arrow {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+    color: var(--muted-foreground);
+}
+
+.dropdown-trigger[aria-expanded="true"] .dropdown-arrow {
+    transform: rotate(180deg);
+    color: var(--primary);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 99999;
+    max-height: 400px;
+    overflow-y: auto;
+    min-width: 280px;
+    display: block;
+}
+
+.dropdown-menu.show {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+    display: block !important;
+}
+
+.dropdown-option {
+    display: flex;
+    align-items: center;
+    padding: 0.875rem 1.25rem;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    background: transparent;
+    width: 100%;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #374151;
+    border-bottom: 1px solid #f1f5f9;
+    position: relative;
+    overflow: hidden;
+}
+
+.dropdown-option::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+    transition: left 0.4s ease;
+}
+
+.dropdown-option:hover::before {
+    left: 100%;
+}
+
+.dropdown-option:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.dropdown-option:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dropdown-option:hover {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    color: #1e293b;
+    transform: translateX(4px);
+}
+
+.dropdown-option.active {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Special styling for subcategory dropdown options */
+.venue-subcategory-dropdown .dropdown-option::before {
+    background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.1), transparent);
+}
+
+.venue-subcategory-dropdown .dropdown-option:hover {
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    color: #14532d;
+}
+
+.venue-subcategory-dropdown .dropdown-option.active {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #ffffff;
+}
+
+.dropdown-option .option-icon {
+    font-size: 1.1rem;
+    margin-right: 0.75rem;
+    min-width: 24px;
+}
+
+.dropdown-option .option-text {
+    flex: 1;
+}
+
+/* Smooth scrollbar for dropdown */
+.dropdown-menu::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+    background: var(--muted);
+    border-radius: 3px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 3px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+    opacity: 0.8;
+}
+
+/* Desktop/Mobile visibility controls */
+.desktop-categories {
+    display: flex;
+}
+
+.mobile-categories {
+    display: none;
+}
+
+/* Ensure dropdown menu is properly hidden by default */
+.dropdown-menu {
+    display: block; /* Always in DOM for functionality */
+}
+
+/* Subcategory Dropdown Styles */
+.venue-subcategory-dropdown {
+    display: none; /* Hidden by default, shown when subcategories exist */
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    margin: 1rem auto 1.5rem auto;
+}
+
+/* Show subcategory dropdown when it has content */
+.venue-subcategory-dropdown.visible {
+    display: block !important;
+}
+
+.subcategory-trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.875rem 1.25rem;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+    border: 2px solid #10b981 !important;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25), 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.subcategory-trigger::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.subcategory-trigger:hover::before {
+    left: 100%;
+}
+
+.subcategory-trigger:hover {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+    border-color: #059669 !important;
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.35), 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-2px);
+}
+
+.subcategory-trigger:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+/* Desktop/Mobile visibility for subcategories */
+.desktop-subcategories {
+    display: flex;
+}
+
+.mobile-subcategories {
+    display: none;
 }
 
 #explore-all-venues .main-categories {
@@ -4459,51 +4768,144 @@ span.flatpickr-weekday {
     #explore-all-venues .main-categories-container {
         padding: 1rem 0;
         margin-bottom: 1.5rem;
-        overflow: hidden; /* Prevent container overflow */
     }
     
-    #explore-all-venues .main-categories {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        overflow-y: hidden;
-        justify-content: flex-start;
-        padding: 0.5rem 1rem;
-        scroll-behavior: smooth;
-        /* Show scrollbar on mobile for better UX */
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: thin;
-        scrollbar-color: rgba(59, 130, 246, 0.3) transparent;
+    /* Hide desktop categories, show mobile dropdown */
+    .desktop-categories {
+        display: none !important;
     }
     
-    #explore-all-venues .main-categories::-webkit-scrollbar {
-        height: 4px;
+    .mobile-categories {
+        display: block !important;
     }
     
-    #explore-all-venues .main-categories::-webkit-scrollbar-track {
-        background: rgba(0, 0, 0, 0.05);
-        border-radius: 2px;
+    /* Adjust dropdown for smaller screens */
+    .venue-category-dropdown {
+        display: block !important;
+        max-width: 320px;
+        margin: 0 auto;
     }
     
-    #explore-all-venues .main-categories::-webkit-scrollbar-thumb {
-        background: rgba(59, 130, 246, 0.4);
-        border-radius: 2px;
+    .dropdown-trigger {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        background: var(--primary);
+        color: var(--primary-foreground);
+        border-color: var(--primary);
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
     }
     
-    #explore-all-venues .main-categories::-webkit-scrollbar-thumb:hover {
-        background: rgba(59, 130, 246, 0.6);
+    .dropdown-trigger:hover {
+        background: var(--primary);
+        color: var(--primary-foreground);
+        box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
     }
     
-    #explore-all-venues .category-btn {
-        white-space: nowrap;
-        min-width: fit-content;
-        flex-shrink: 0;
-        flex-grow: 0;
-        width: auto;
-        margin-right: 0.5rem; /* Add margin for better spacing */
+    .dropdown-trigger .selected-category-icon {
+        font-size: 1.1rem;
+        margin-right: 0.5rem;
     }
     
-    #explore-all-venues .category-btn:last-child {
-        margin-right: 0;
+    .dropdown-arrow {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .dropdown-option {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .dropdown-option .option-icon {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+    
+    /* Show mobile subcategory dropdown, hide desktop */
+    .desktop-subcategories {
+        display: none !important;
+    }
+    
+    .mobile-subcategories {
+        display: block !important;
+    }
+    
+    /* Force subcategory dropdown to be visible on mobile when it has the visible class */
+    .venue-subcategory-dropdown.visible {
+        display: block !important;
+        margin: 1rem auto 1.5rem auto !important;
+        position: relative !important;
+        z-index: 100 !important;
+        background: transparent !important;
+        clear: both !important;
+    }
+    
+    /* Enhanced subcategory trigger for mobile */
+    .subcategory-trigger {
+        width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding: 1rem 1.25rem !important;
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+        border: 2px solid #10b981 !important;
+        border-radius: 10px !important;
+        cursor: pointer !important;
+        font-size: 0.9rem !important;
+        font-weight: 600 !important;
+        color: #ffffff !important;
+        box-shadow: 0 6px 16px rgba(16, 185, 129, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+        margin: 0.75rem 0 !important;
+        min-height: 54px !important;
+        position: relative !important;
+        overflow: hidden !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+    
+    .subcategory-trigger::before {
+        content: '' !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: -100% !important;
+        width: 100% !important;
+        height: 100% !important;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent) !important;
+        transition: left 0.5s !important;
+    }
+    
+    .subcategory-trigger:hover::before {
+        left: 100% !important;
+    }
+    
+    .subcategory-trigger:hover {
+        background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+        border-color: #059669 !important;
+        box-shadow: 0 8px 24px rgba(16, 185, 129, 0.4), 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+        transform: translateY(-2px) !important;
+    }
+    
+    .subcategory-trigger .selected-category-icon,
+    .subcategory-trigger .selected-category-text,
+    .subcategory-trigger .dropdown-arrow {
+        display: block !important;
+        opacity: 1 !important;
+        z-index: 2 !important;
+        position: relative !important;
+    }
+    
+    .subcategory-trigger .selected-category-icon {
+        font-size: 1rem !important;
+        margin-right: 0.5rem !important;
+    }
+    
+    .subcategory-trigger .dropdown-arrow {
+        width: 18px !important;
+        height: 18px !important;
+        transition: transform 0.3s ease !important;
+    }
+    
+    .subcategory-trigger[aria-expanded="true"] .dropdown-arrow {
+        transform: rotate(180deg) !important;
     }
 }
 
@@ -4555,6 +4957,27 @@ span.flatpickr-weekday {
     border-radius: var(--radius);
     padding: 0 1.5rem;
     margin-top: 0;
+}
+
+/* On mobile, hide the desktop subcategory container but allow mobile dropdown to show */
+@media (max-width: 768px) {
+    #sub-categories-container .desktop-subcategories {
+        display: none !important;
+    }
+    
+    #sub-categories-container .mobile-subcategories {
+        display: block !important;
+    }
+    
+    /* Reset container styles for mobile */
+    #sub-categories-container {
+        overflow: visible !important;
+        max-height: none !important;
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 1rem 0 !important;
+    }
 }
 
 #sub-categories-container:not(.hidden) {

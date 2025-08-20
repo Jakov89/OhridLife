@@ -262,13 +262,45 @@
                      <p class="text-muted-foreground mt-2">From lakeside restaurants to adventure sports, explore the best venues Ohrid has to offer.</p>
                 </div>
                 <div class="main-categories-container">
-                    <div class="main-categories flex flex-wrap justify-center gap-2 mb-4" role="group" aria-label="Venue categories">
+                    <!-- Desktop: Traditional button layout -->
+                    <div class="main-categories desktop-categories flex flex-wrap justify-center gap-2 mb-4" role="group" aria-label="Venue categories">
                         <!-- Main category filters will be injected here by JS -->
+                    </div>
+                    
+                    <!-- Mobile: Dropdown menu -->
+                    <div class="venue-category-dropdown mobile-categories">
+                        <button class="dropdown-trigger" id="venue-category-trigger" aria-haspopup="true" aria-expanded="false">
+                            <span class="selected-category-icon">🧡</span>
+                            <span class="selected-category-text">All Venues</span>
+                            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu" id="venue-category-dropdown">
+                            <!-- Dropdown options will be injected here by JS -->
+                        </div>
                     </div>
                 </div>
                 <div id="sub-categories-container" class="sub-categories-container hidden">
-                    <div class="sub-categories flex flex-wrap justify-center gap-2 mb-8" role="group" aria-label="Venue subcategories">
+                    <!-- Desktop: Traditional button layout -->
+                    <div class="sub-categories desktop-subcategories flex flex-wrap justify-center gap-2 mb-8" role="group" aria-label="Venue subcategories">
                         <!-- Sub-category filters will be injected here by JS -->
+                    </div>
+                    
+                    <!-- Mobile: Dropdown menu for subcategories -->
+                    <div class="venue-subcategory-dropdown mobile-subcategories">
+                        <button class="dropdown-trigger subcategory-trigger" id="venue-subcategory-trigger" aria-haspopup="true" aria-expanded="false">
+                            <div style="display: flex; align-items: center; flex: 1;">
+                                <span class="selected-category-icon">🔍</span>
+                                <span class="selected-category-text">All Categories</span>
+                            </div>
+                            <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width: 20px; height: 20px;">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu" id="venue-subcategory-dropdown">
+                            <!-- Dropdown subcategory options will be injected here by JS -->
+                        </div>
                     </div>
                 </div>
 

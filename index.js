@@ -1497,10 +1497,17 @@ function populateRecommendations() {
 
 function populateVenueFilters() {
     const mainCategoriesContainer = document.querySelector('.main-categories');
-    if (!mainCategoriesContainer) return;
+    const dropdownMenu = document.querySelector('#venue-category-dropdown');
+    
+    if (!mainCategoriesContainer) {
+        console.error('Main categories container not found');
+        return;
+    }
 
     const mainCategories = ['All', ...Object.keys(mainCategoryConfig)];
+    console.log('Populating venue filters with categories:', mainCategories);
 
+    // Populate desktop categories (existing functionality)
     mainCategoriesContainer.innerHTML = mainCategories.map(cat => {
         if (cat === 'All') {
             return `<button class="category-btn active" data-category="All">All Venues</button>`;
@@ -1514,9 +1521,35 @@ function populateVenueFilters() {
         `;
     }).join('');
 
+    // Populate mobile dropdown
+    if (dropdownMenu) {
+        const dropdownHTML = mainCategories.map(cat => {
+            if (cat === 'All') {
+                return `
+                    <button class="dropdown-option active" data-category="All">
+                        <span class="option-icon">🧡</span>
+                        <span class="option-text">All Venues</span>
+                    </button>
+                `;
+            }
+            const config = mainCategoryConfig[cat];
+            return `
+                <button class="dropdown-option" data-category="${cat}">
+                    <span class="option-icon">${config.icon}</span>
+                    <span class="option-text">${cat}</span>
+                </button>
+            `;
+        }).join('');
+        
+        dropdownMenu.innerHTML = dropdownHTML;
+        console.log('Main dropdown populated successfully');
+    } else {
+        console.error('Main dropdown menu element not found');
+    }
+
+    // Add event listeners for desktop categories
     mainCategoriesContainer.querySelectorAll('.category-btn').forEach(button => {
         button.addEventListener('click', (e) => {
-            // If the user clicks the icon/span, the target might be a child of the button
             const clickedButton = e.target.closest('.category-btn');
             if (!clickedButton) return;
 
@@ -1528,6 +1561,282 @@ function populateVenueFilters() {
             filterAndDisplayVenues();
         });
     });
+
+    // Initialize dropdown functionality with error handling
+    try {
+        initVenueCategoryDropdown();
+        console.log('Main dropdown initialized');
+    } catch (error) {
+        console.error('Error initializing main dropdown:', error);
+    }
+    
+    try {
+        initVenueSubcategoryDropdown();
+        console.log('Subcategory dropdown initialized');
+    } catch (error) {
+        console.error('Error initializing subcategory dropdown:', error);
+    }
+}
+
+function initVenueCategoryDropdown() {
+    const dropdownTrigger = document.querySelector('#venue-category-trigger');
+    const dropdownMenu = document.querySelector('#venue-category-dropdown');
+    const selectedIcon = document.querySelector('.selected-category-icon');
+    const selectedText = document.querySelector('.selected-category-text');
+    
+    console.log('Looking for dropdown elements:', {
+        trigger: !!dropdownTrigger,
+        menu: !!dropdownMenu,
+        icon: !!selectedIcon,
+        text: !!selectedText
+    });
+    
+    if (!dropdownTrigger || !dropdownMenu) {
+        console.error('Main dropdown elements not found - skipping initialization');
+        return;
+    }
+
+    console.log('Initializing main dropdown functionality...');
+
+    // Toggle dropdown
+    dropdownTrigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('Dropdown trigger clicked');
+        
+        const isOpen = dropdownTrigger.getAttribute('aria-expanded') === 'true';
+        console.log('Current state:', isOpen ? 'open' : 'closed');
+        
+        // Use setTimeout to prevent immediate closure from document click listener
+        setTimeout(() => {
+            if (isOpen) {
+                closeDropdown();
+            } else {
+                openDropdown();
+            }
+        }, 10);
+    });
+
+    // Handle dropdown option selection
+    dropdownMenu.addEventListener('click', (e) => {
+        const option = e.target.closest('.dropdown-option');
+        if (!option) return;
+
+        const category = option.dataset.category;
+        const icon = option.querySelector('.option-icon').textContent;
+        const text = option.querySelector('.option-text').textContent;
+
+        // Update dropdown trigger appearance
+        selectedIcon.textContent = icon;
+        selectedText.textContent = text;
+
+        // Update active states
+        dropdownMenu.querySelector('.dropdown-option.active')?.classList.remove('active');
+        option.classList.add('active');
+
+        // Update desktop categories to match
+        const desktopCategories = document.querySelector('.main-categories');
+        if (desktopCategories) {
+            desktopCategories.querySelector('.category-btn.active')?.classList.remove('active');
+            const matchingDesktopBtn = desktopCategories.querySelector(`[data-category="${category}"]`);
+            if (matchingDesktopBtn) {
+                matchingDesktopBtn.classList.add('active');
+            }
+        }
+
+        // Apply filter and update subcategories
+        console.log('Selected main category:', category);
+        populateSubFilters(category);
+        filterAndDisplayVenues();
+        
+        closeDropdown();
+    });
+
+    let documentClickListener;
+    let escapeKeyListener;
+
+    function openDropdown() {
+        console.log('Opening dropdown...');
+        dropdownTrigger.setAttribute('aria-expanded', 'true');
+        dropdownMenu.classList.add('show');
+        console.log('Dropdown classes after opening:', dropdownMenu.className);
+        console.log('Dropdown computed style:', window.getComputedStyle(dropdownMenu).display);
+        console.log('Dropdown visibility:', window.getComputedStyle(dropdownMenu).visibility);
+        console.log('Dropdown opacity:', window.getComputedStyle(dropdownMenu).opacity);
+        
+        // Add document listeners only when dropdown is open
+        setTimeout(() => {
+            documentClickListener = (e) => {
+                if (!dropdownTrigger.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    console.log('Clicking outside, closing dropdown');
+                    closeDropdown();
+                }
+            };
+            
+            escapeKeyListener = (e) => {
+                if (e.key === 'Escape') {
+                    closeDropdown();
+                }
+            };
+            
+            document.addEventListener('click', documentClickListener);
+            document.addEventListener('keydown', escapeKeyListener);
+        }, 100);
+    }
+
+    function closeDropdown() {
+        console.log('Closing dropdown...');
+        dropdownTrigger.setAttribute('aria-expanded', 'false');
+        dropdownMenu.classList.remove('show');
+        
+        // Remove document listeners when dropdown is closed
+        if (documentClickListener) {
+            document.removeEventListener('click', documentClickListener);
+            documentClickListener = null;
+        }
+        if (escapeKeyListener) {
+            document.removeEventListener('keydown', escapeKeyListener);
+            escapeKeyListener = null;
+        }
+    }
+}
+
+function initVenueSubcategoryDropdown() {
+    const dropdownTrigger = document.querySelector('#venue-subcategory-trigger');
+    const dropdownMenu = document.querySelector('#venue-subcategory-dropdown');
+    const selectedIcon = document.querySelector('#venue-subcategory-trigger .selected-category-icon');
+    const selectedText = document.querySelector('#venue-subcategory-trigger .selected-category-text');
+    
+    console.log('Looking for subcategory dropdown elements:', {
+        trigger: !!dropdownTrigger,
+        menu: !!dropdownMenu,
+        icon: !!selectedIcon,
+        text: !!selectedText
+    });
+    
+    if (!dropdownTrigger || !dropdownMenu) {
+        console.error('Subcategory dropdown elements not found - skipping initialization');
+        return;
+    }
+
+    console.log('Initializing subcategory dropdown functionality...');
+
+    let documentClickListener;
+    let escapeKeyListener;
+
+    // Toggle dropdown
+    dropdownTrigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const isOpen = dropdownTrigger.getAttribute('aria-expanded') === 'true';
+        
+        setTimeout(() => {
+            if (isOpen) {
+                closeSubcategoryDropdown();
+            } else {
+                openSubcategoryDropdown();
+            }
+        }, 10);
+    });
+
+    // Handle dropdown option selection
+    dropdownMenu.addEventListener('click', (e) => {
+        const option = e.target.closest('.dropdown-option');
+        if (!option) return;
+
+        const subcategory = option.dataset.subcategory;
+        const text = option.querySelector('.option-text').textContent;
+
+        // Update dropdown trigger appearance
+        selectedText.textContent = text;
+
+        // Update active states
+        dropdownMenu.querySelector('.dropdown-option.active')?.classList.remove('active');
+        option.classList.add('active');
+
+        // Update desktop subcategories to match
+        const desktopSubcategories = document.querySelector('.desktop-subcategories');
+        if (desktopSubcategories) {
+            desktopSubcategories.querySelector('.subcategory-btn.active')?.classList.remove('active');
+            const matchingDesktopBtn = desktopSubcategories.querySelector(`[data-subcategory="${subcategory}"]`);
+            if (matchingDesktopBtn) {
+                matchingDesktopBtn.classList.add('active');
+            }
+        }
+
+        // Apply filter
+        filterAndDisplayVenues();
+        closeSubcategoryDropdown();
+    });
+
+    function openSubcategoryDropdown() {
+        dropdownTrigger.setAttribute('aria-expanded', 'true');
+        dropdownMenu.classList.add('show');
+        
+        setTimeout(() => {
+            documentClickListener = (e) => {
+                if (!dropdownTrigger.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    closeSubcategoryDropdown();
+                }
+            };
+            
+            escapeKeyListener = (e) => {
+                if (e.key === 'Escape') {
+                    closeSubcategoryDropdown();
+                }
+            };
+            
+            document.addEventListener('click', documentClickListener);
+            document.addEventListener('keydown', escapeKeyListener);
+        }, 100);
+    }
+
+    function closeSubcategoryDropdown() {
+        dropdownTrigger.setAttribute('aria-expanded', 'false');
+        dropdownMenu.classList.remove('show');
+        
+        if (documentClickListener) {
+            document.removeEventListener('click', documentClickListener);
+            documentClickListener = null;
+        }
+        if (escapeKeyListener) {
+            document.removeEventListener('keydown', escapeKeyListener);
+            escapeKeyListener = null;
+        }
+    }
+
+    // Store functions globally for access from populateSubFilters
+    window.subcategoryDropdownFunctions = {
+        updateSubcategoryDropdown: (subcategories, activeSubcategory) => {
+            if (!dropdownMenu) {
+                console.error('Subcategory dropdown menu not found');
+                return;
+            }
+            
+            console.log('Populating subcategory dropdown with:', subcategories);
+            
+            const dropdownHTML = subcategories.map(subcat => {
+                const isActive = subcat === activeSubcategory;
+                const displayName = subcat === 'all' ? 'All Categories' : subcat.charAt(0).toUpperCase() + subcat.slice(1).replace(/-/g, ' ');
+                return `
+                    <button class="dropdown-option ${isActive ? 'active' : ''}" data-subcategory="${subcat}">
+                        <span class="option-icon">🔍</span>
+                        <span class="option-text">${displayName}</span>
+                    </button>
+                `;
+            }).join('');
+            
+            dropdownMenu.innerHTML = dropdownHTML;
+            console.log('Subcategory dropdown HTML updated');
+            
+            // Update trigger text
+            if (selectedText) {
+                selectedText.textContent = 'All Categories';
+                console.log('Subcategory trigger text updated');
+            }
+        }
+    };
 }
 
 function populateSubFilters(mainCategory) {
@@ -1537,23 +1846,28 @@ function populateSubFilters(mainCategory) {
     if (!subCategoriesContainer || !subCategoriesList) return;
 
     subCategoriesList.innerHTML = '';
+    const mobileSubcategoryElement = document.querySelector('.venue-subcategory-dropdown');
+    
     if (mainCategory === 'All' || !mainCategoryConfig[mainCategory]) {
         subCategoriesContainer.classList.add('hidden');
-        subCategoriesContainer.style.maxHeight = '0';
+        
+        // Hide mobile subcategory dropdown
+        if (mobileSubcategoryElement) {
+            mobileSubcategoryElement.style.display = 'none';
+            mobileSubcategoryElement.classList.remove('visible');
+            console.log('Subcategory dropdown hidden (All selected)');
+        }
         return;
     }
 
     subCategoriesContainer.classList.remove('hidden');
     const subCategories = mainCategoryConfig[mainCategory].subcategories;
+    
+    // Populate desktop subcategories (for desktop view)
     subCategoriesList.innerHTML = subCategories.map(subCat => {
         const formattedName = subCat.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
         return `<button class="subcategory-btn" data-subcategory="${subCat}">${formattedName}</button>`;
     }).join('');
-
-    // Set max-height for transition
-    setTimeout(() => {
-        subCategoriesContainer.style.maxHeight = subCategoriesList.scrollHeight + 40 + 'px'; // +40 for padding
-    }, 10);
 
 
     subCategoriesList.querySelectorAll('.subcategory-btn').forEach(button => {
@@ -1568,6 +1882,35 @@ function populateSubFilters(mainCategory) {
             filterAndDisplayVenues();
         });
     });
+
+    // Update mobile subcategory dropdown
+    const subcategoryContainer = document.querySelector('#sub-categories-container');
+    const mobileSubcategoryDropdownElement = document.querySelector('.venue-subcategory-dropdown');
+    
+    console.log('Updating subcategory dropdown for category:', mainCategory);
+    console.log('Subcategories found:', subCategories);
+    console.log('Mobile subcategory element found:', !!mobileSubcategoryDropdownElement);
+    
+    // Update mobile subcategory dropdown
+    if (window.subcategoryDropdownFunctions && subCategories.length > 0) {
+        const allSubcategories = ['all', ...subCategories];
+        window.subcategoryDropdownFunctions.updateSubcategoryDropdown(allSubcategories, 'all');
+        
+        // Show mobile subcategory dropdown
+        if (mobileSubcategoryDropdownElement) {
+            mobileSubcategoryDropdownElement.style.display = 'block';
+            mobileSubcategoryDropdownElement.classList.add('visible');
+            console.log('Subcategory dropdown shown for category:', mainCategory);
+            console.log('Available subcategories:', subCategories);
+        }
+    } else {
+        // Hide mobile subcategory dropdown when no subcategories
+        if (mobileSubcategoryDropdownElement) {
+            mobileSubcategoryDropdownElement.style.display = 'none';
+            mobileSubcategoryDropdownElement.classList.remove('visible');
+            console.log('Subcategory dropdown hidden - no subcategories available');
+        }
+    }
 }
 
 // --- SMART ROTATION LOGIC ---
