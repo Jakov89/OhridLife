@@ -4353,5 +4353,47 @@
     "workingHours": "Tue-Thu: 14:00-16:00, 17:00-20:00<br>Fri: 09:00-11:00<br>Sat: 10:00-11:00, 17:00-20:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 119,
+    "name": "Paint & Wine",
+    "description": "Paint & Wine Ohrid is where creativity and relaxation come together. Hosting painting workshops several times a month—most often on weekends—the venue offers a cozy and inspiring space for anyone looking to explore their artistic side while enjoying a glass of wine. Paint & Wine Ohrid is also part of larger cultural and social events around the city, bringing a touch of art and fun to every occasion. Workshop dates are always announced in advance on the profile, making it easy for everyone to join, connect, and create unforgettable memories.",
+    "type": "art",
+    "tags": [
+      "art",
+      "workshop",
+      "creative",
+      "wine",
+      "painting",
+      "cultural",
+      "relaxation",
+      "weekend events"
+    ],
+    "imageUrl": "images_venue/culture/paint_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/paint/photo1.jpg",
+        "alt": "An outdoor art workshop is set up in a lush green garden. A long white table holds a row of small easels, each with a blank white canvas. Cups filled with art supplies like brushes are placed at one end of the table. In front of the table, a row of three stools with floral-patterned cushions provides seating for participants. The background is filled with various green plants and some pink flowers."
+      },
+      {
+        "url": "venue_gallery/paint/photo2.jpg",
+        "alt": "An indoor \"paint and sip\" event is ready on a long red table. Each of the ten place settings has a small easel holding a canvas, some with a pre-drawn portrait of a woman with flowers in her hair. There are also wine glasses, small bowls of snacks, and paint brushes and jars of water for each person. Potted pink flowers are arranged as centerpieces along the table. The room has a whiteboard, an easel with a blank canvas, and backpacks hanging on chairs in the background. A laptop is visible on a black shelf unit to the left."
+      },
+      {
+        "url": "venue_gallery/paint/photo3.jpg",
+        "alt": "A holiday-themed painting workshop is set up on a long red table indoors. Several easels are arranged along the table, each holding a canvas with a pre-drawn picture of a small, green creature. Each spot also has a cup, paint brushes, and some candy bars. White and turquoise balloons float above the table, and a small Christmas tree made of tinsel hangs on the wall in the background. A banner with the word \"HAPPY\" is visible on the wall to the left."
+      }
+    ],
+    "rating": 4.5,
+    "priceLevel": 2,
+    "location": {
+      "address": "Language School Queen, Ohrid",
+      "googleMapsUrl": "",
+      "mapIframe": ""
+    },
+    "phone": "/",
+    "workingHours": "Workshop schedules announced on Instagram",
+    "bookingUrl": "https://www.instagram.com/paintandwineohrid/",
+    "events": []
   }
 ]
