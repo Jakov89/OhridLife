@@ -254,7 +254,7 @@
         "churces/sv.erazmo/photo3.jpg"
       ],
       "coordinates": "41.1120, 20.7940",
-      "map_embed": "<!-- Add Google Maps embed code here -->",
+      "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.6489108601513!2d20.761463199999998!3d41.142189699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcfe380307f1%3A0x67f98fa80471dd74!2sChurch%20of%20St.%20Erasmus!5e0!3m2!1sen!2smk!4v1755967882464!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
       "category": "historic"
     },    
     
@@ -287,6 +287,38 @@
         "churces/sv.nikolagerakomija/photo5.jpg"
       ],
       "coordinates": "41.1155, 20.7995",
+      "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187.8763589374726!2d20.794874221771018!3d41.11221620702848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbad8079883%3A0x57b1e49df4ebc9a2!2sChurch%20of%20Saint%20Nicholas%20Gerakomija!5e0!3m2!1sen!2smk!4v1755967996886!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "category": "historic"
+    },
+    {
+      "id": 11,
+      "name": "Church of Saint George",
+      "name_mk": "Црква Свети Ѓорѓи",
+      "period": "1834",
+      "architectural_style": "Macedonian National Revival",
+      "short_description": "19th-century church in upper Ohrid serving as a vital spiritual and cultural community hub.",
+      "detailed_description": "Tucked away in the eastern (upper) part of Ohrid—at the edge of the Rasadnik and Gorna Vlašaka Maala neighborhoods, near the city general hospital and the roundabout on the road toward Velgoshti and Bitola—the Church of Saint George stands as a testament to the enduring spiritual and communal heritage of the city. Originally built in 1834, aligning with a period of cultural revival within the region, its distinctive bell tower was added later in 1950, enhancing its architectural silhouette. Part of the frescoes within the church stem from its original construction period, executed in the Macedonian National Revival (Prerodba) style. These period elements coexist with later interior work: the church's nave was frescoed by Gjorgi Krstevski from Ohrid, while the altar paintings were crafted by Dragan Risteski, also from Ohrid. Throughout the 20th century, the church saw the addition of enclosed porches on its western and southern sides, providing practical shelter and architectural enhancement. On the south side, adjacent to one of these porches, a baptistery was built between 1984 and 1985, featuring frescoes by Dragan Risteski. Within the church courtyard, several supportive and communal structures were developed, including offices for the clergy and a people's refectory—a hall accommodating about 200 people. This multifunctional space serves both for religious education and secular instruction such as foreign language lessons. The complex was constructed in 1990 and consecrated by Metropolitan Timotej of the Debar–Kičevo Diocese.",
+      "historical_significance": "Living narrative of architectural adaptation and community life from 19th century to present",
+      "features": [
+        "Built in 1834 during Macedonian National Revival period",
+        "Distinctive bell tower added in 1950",
+        "Original Prerodba-style frescoes from construction period",
+        "Nave frescoes by Gjorgi Krstevski from Ohrid",
+        "Altar paintings by Dragan Risteski from Ohrid",
+        "Baptistery built 1984-1985 with Risteski frescoes",
+        "20th-century enclosed porches on western and southern sides",
+        "People's refectory accommodating 200 people (built 1990)",
+        "Multifunctional community spaces for education"
+      ],
+      "visiting_hours": "8:00 - 18:00 daily",
+      "entrance_fee": "Free",
+      "accessibility": "Located in upper Ohrid, moderate walk from center",
+      "best_time_to_visit": "Morning for community activities and peaceful atmosphere",
+      "gallery": [
+        "churces/sv.gjorgija/photo1.jpg",
+        "churces/sv.gjorgija/photo2.jpg"
+      ],
+      "coordinates": "41.1170, 20.8020",
       "map_embed": "<!-- Add Google Maps embed code here -->",
       "category": "historic"
     }
@@ -323,3 +355,5 @@
     "Guided tours available in multiple languages"
   ]
 }
+
+
