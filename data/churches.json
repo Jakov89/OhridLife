@@ -319,9 +319,146 @@
         "churces/sv.gjorgija/photo2.jpg"
       ],
       "coordinates": "41.1170, 20.8020",
-      "map_embed": "<!-- Add Google Maps embed code here -->",
+      "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d773.4609434747326!2d20.813782723500438!3d41.11775612954111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db60ccbaf78f%3A0x2d8f753cbb2623f9!2sChurch%20of%20Saint%20George!5e0!3m2!1sen!2smk!4v1755974810316!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
       "category": "historic"
-    }
+    },
+         {
+       "id": 12,
+       "name": "Church of Saint Nicholas",
+       "name_mk": "Црква Свети Никола",
+       "period": "1863",
+       "architectural_style": "19th-century Vlach",
+       "short_description": "Church built by Vlach refugees from Moscopole, preserving sacred elements from their destroyed homeland.",
+       "detailed_description": "According to tradition, the Church of Saint Nicholas was built by the Vlach community that settled in Ohrid after the burning of Moscopole by the Ottoman feudal lord Çeladin Bey. Many families fled from the devastated city and, seeking refuge, carried with them their faith and determination to establish a new spiritual home. An inscription in Greek, placed above the entrance, records that the church was constructed in 1863. Built from solid materials—stone and lime mortar, with finely carved stone edges—the church reflects the architectural craftsmanship of its time. The apse is especially remarkable, adorned with elegant arches made of carved tufa stone. Unlike many Orthodox churches of the period, the Church of Saint Nicholas was originally left without fresco decoration, which was unusual for that era. The frescoes visible today were later painted by the artist Dragan Risteski from the village of Sirula. The iconostasis is the work of the renowned 19th-century master Dicho Zograf from Tresonče, who also painted the half-length throne icons. Interestingly, the royal doors of the iconostasis and the crucifix do not stylistically match the rest of the ensemble. For this reason, it is believed that these sacred elements were brought from the burned churches of Moscopole, thus preserving a direct link between the lost Vlach religious heritage and their new spiritual home in Ohrid.",
+       "historical_significance": "Symbol of Vlach refugee resilience and preservation of Moscopole's destroyed religious heritage",
+       "features": [
+         "Built in 1863 by Vlach refugees from Moscopole",
+         "Greek inscription above entrance recording construction date",
+         "Stone and lime mortar construction with carved stone edges",
+         "Elegant apse with carved tufa stone arches",
+         "Originally built without frescoes (unusual for the period)",
+         "Later frescoes by Dragan Risteski from Sirula village",
+         "Iconostasis by master Dicho Zograf from Tresonče",
+         "Royal doors and crucifix believed salvaged from Moscopole churches",
+         "Direct link to lost Vlach religious heritage"
+       ],
+       "visiting_hours": "8:00 - 18:00 daily",
+       "entrance_fee": "Free",
+       "accessibility": "Located in Ohrid's Vlach quarter",
+       "best_time_to_visit": "Afternoon for contemplation of its historical significance",
+       "gallery": [
+         "churces/sv.nikola/photo1.jpg",
+         "churces/sv.nikola/photo2.jpg",
+         "churces/sv.nikola/photo3.jpg"
+       ],
+       "coordinates": "41.1150, 20.8000",
+       "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d265.7064930416972!2d20.80770340651453!3d41.109943377067495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db0049037a85%3A0x9649c9733f382896!2sChurch%20of%20Saint%20Nicholas!5e0!3m2!1sen!2smk!4v1755974635525!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+       "category": "historic"
+     },
+     {
+   "id": 13,
+   "name": "Church of the Virgin Mary (Sveta Bogorodica Kamensko)",
+   "name_mk": "Црква Света Богородица Каменско",
+   "period": "17th century, expanded 1832",
+   "architectural_style": "Orthodox Byzantine with Mijak craftsmanship",
+   "short_description": "Remarkable Orthodox temple with 17th-century origins, featuring splendid frescoes by Dicho Zograf and exquisite Mijak woodcarving.",
+   "detailed_description": "The Church of the Dormition of the Most Holy Mother of God, also known as Sveta Bogorodica Kamensko, is one of Ohrid's most remarkable Orthodox temples. Tradition holds that it was originally built and fresco-painted in the 17th century. The church was later expanded in 1832, a year engraved above its entrance gate. The interior of the church abounds in splendid fresco decoration, including two prominent vaults depicting the Virgin Mary and Jesus Christ in central positions. It is also adorned with a lavish wood-carved iconostasis, divided into five horizontal sections. Although the exact master remains unknown, it is widely believed that it was created by a skilled Mijak craftsman. The church's fresco decoration and icons on the iconostasis were painted in 1863 by the famous Macedonian iconographer Dicho Zograf, one of the most celebrated painters of the 19th century. The church was frescoed a second time in 1924, continuing its artistic renewal across generations. In modern times, the church has remained a vibrant religious and community center. An administrative building was constructed in 1991 to support parish life. Between September and October 2002, the Institute for Protection of Cultural Monuments and the National Museum of Ohrid carried out cleaning and conservation of the frescoes. On May 28, 2004, the fresco decoration of the western wall, which had not previously been painted, was completed. Shortly afterward, on June 15, 2004, the floor was entirely paved with marble granite. In December 2006, the church courtyard was expanded, with underground storage spaces built and the entire yard newly arranged.",
+   "historical_significance": "Outstanding example of Orthodox temple architecture with continuous artistic renewal across three centuries",
+   "features": [
+     "Originally built and frescoed in 17th century",
+     "Expanded in 1832 with date engraved above entrance",
+     "Two prominent vaults depicting Virgin Mary and Jesus Christ",
+     "Lavish wood-carved iconostasis in five horizontal sections",
+     "Mijak craftsmanship in iconostasis creation",
+     "Frescoes and icons by Dicho Zograf (1863)",
+     "Second fresco renovation in 1924",
+     "Administrative building added in 1991",
+     "Professional fresco conservation (2002)",
+     "Western wall fresco completion (2004)",
+     "Marble granite floor installation (2004)",
+     "Courtyard expansion with underground storage (2006)"
+   ],
+   "visiting_hours": "8:00 - 18:00 daily",
+   "entrance_fee": "Free",
+   "accessibility": "Easy access with modern facilities",
+   "best_time_to_visit": "Morning for optimal fresco viewing light",
+   "gallery": [
+     "churces/sv.kamensko/photo1.jpg",
+     "churces/sv.kamensko/photo2.jpg",
+     "churces/sv.kamensko/photo3.jpg",
+     "churces/sv.kamensko/photo4.jpg"
+        ],
+     "coordinates": "41.1140, 20.8010",
+     "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229.95705887858512!2d20.799364830375364!3d41.11611634188861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca3ad1842a1%3A0xeedc235073de96a6!2sChurch%20of%20the%20Virgin%20Mary%20-%20Kamensko!5e0!3m2!1sen!2smk!4v1755976227430!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+     "category": "historic"
+   }, 
+   {
+   "id": 14,
+   "name": "Church of the Virgin Mary of the Front Gate (Čelnička)",
+   "name_mk": "Црква Света Богородица Челничка",
+   "period": "Medieval foundations, rebuilt on ancient site",
+   "architectural_style": "Unique two-nave Macedonian Orthodox",
+   "short_description": "One-of-a-kind church in Macedonia with unique two-nave construction, built on medieval foundations with 14th-century fresco fragments.",
+   "detailed_description": "The Church of the Holy Mother of God – Čelnička is a unique example of Macedonian Orthodox architecture, remarkable for its two-nave construction plan, a feature that makes it one of a kind in Macedonia. The church was erected upon the foundations of a medieval church, preserving continuity of sacred tradition across centuries. Fragments of frescoes have survived from the 14th century, reflecting the characteristic style of Ohrid wall painting of that period. These remnants attest to the church's deep medieval roots and artistic value. In the late 19th century, the renowned painter Dicho Zograf undertook a significant fresco-painting of the church, further enriching its artistic heritage. Later, in 1901, the artist Kole Momirov contributed additional fresco work, ensuring that the church's decoration reflected both continuity and renewal across generations. After more than a century of spiritual service, the church underwent a renewal of its sacred status. On August 7, 2011, it was reconsecrated, reaffirming its role as a living center of Orthodox faith and tradition.",
+   "historical_significance": "Only church in Macedonia with two-nave construction, preserving medieval sacred tradition continuity",
+   "features": [
+     "Unique two-nave construction plan - only one in Macedonia",
+     "Built upon medieval church foundations",
+     "14th-century fresco fragments in characteristic Ohrid style",
+     "Late 19th-century frescoes by Dicho Zograf",
+     "Additional fresco work by Kole Momirov (1901)",
+     "Continuity of sacred tradition across centuries",
+     "Deep medieval roots and artistic value",
+     "Reconsecrated on August 7, 2011",
+     "Living center of Orthodox faith and tradition"
+   ],
+   "visiting_hours": "8:00 - 18:00 daily",
+   "entrance_fee": "Free",
+   "accessibility": "Located near city center front gate area",
+   "best_time_to_visit": "Afternoon for appreciating unique architectural features",
+   "gallery": [
+     "churces/chelnichka/photo1.jpg",
+     "churces/chelnichka/photo2.jpg",
+     "churces/chelnichka/photo3.jpg",
+     "churces/chelnichka/photo4.jpg"
+        ],
+     "coordinates": "41.1150, 20.7970",
+     "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1263.8420780793042!2d20.794105901322737!3d41.11400180324467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca495f7447b%3A0x16a55052fe4a08c1!2sChurch%20of%20the%20Virgin%20Mary%20of%20the%20Front%20Gate%20(%C4%8Celni%C4%8Dka)!5e0!3m2!1sen!2smk!4v1755979240595!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+     "category": "historic"
+   },
+       {
+     "id": 15,
+     "name": "Church of Saint Varvara",
+     "name_mk": "Црква Света Варвара",
+     "period": "1965",
+     "architectural_style": "Modern Macedonian Orthodox",
+     "short_description": "Modern Orthodox temple in Old Town dedicated to Saint Varvara the Great Martyr, featuring the preserved iconostasis from Saint John Kaneo.",
+     "detailed_description": "Saint Varvara the Great Martyr Church is a Macedonian Orthodox Christian temple located in the heart of Ohrid's Old Town, right next to the entrance of the Ancient Theatre, on the main street \"Ilindenska\" that leads to the Upper Gate of Samuel's Fortress. The church was built in 1965. On the very site, there once existed a small chamber where the icon of Saint Varvara the Great Martyr was kept, which still remains today on the northern wall. After the demolition of auxiliary buildings and the dismantling of the iconostasis of the church of \"Saint John\" – Kaneo, the same iconostasis was installed in this church, and the icons were placed inside to be preserved. Although relatively new, the church is significant as it continues the local tradition of venerating Saint Varvara, whose cult has deep roots in Orthodox Christianity. Saint Varvara, who lived in the 3rd century, is honored as one of the great martyrs of the early Church. She is venerated as a protector against sudden death, illness, and lightning, and her feast day is celebrated on December 17 according to the Julian calendar (December 4 on the Gregorian calendar). Her veneration is widespread across the Orthodox world, and in Ohrid the dedication of this temple reflects the enduring devotion of the faithful to her intercession and protection.",
+     "historical_significance": "Continues ancient tradition of venerating Saint Varvara the Great Martyr, preserves iconostasis from Saint John Kaneo",
+     "features": [
+       "Built in 1965 on site of ancient Saint Varvara chamber",
+       "Located next to Ancient Theatre entrance on Ilindenska street",
+       "Original Saint Varvara icon preserved on northern wall",
+       "Iconostasis transferred from Saint John Kaneo church",
+       "Icons preserved from dismantled Saint John Kaneo",
+       "Dedicated to Saint Varvara the Great Martyr (3rd century)",
+       "Protector against sudden death, illness, and lightning",
+       "Feast day December 17 (Julian) / December 4 (Gregorian)",
+       "Continues widespread Orthodox veneration tradition"
+     ],
+     "visiting_hours": "8:00 - 18:00 daily",
+     "entrance_fee": "Free",
+     "accessibility": "Prime Old Town location near Ancient Theatre",
+     "best_time_to_visit": "Around feast day (December 4/17) for special celebrations",
+     "gallery": [
+       "churces/sv.varvara/photo1.jpg",
+       "churces/sv.varvara/photo2.jpg",
+       "churces/sv.varvara/photo3.jpg"
+          ],
+       "coordinates": "41.1140, 20.7985",
+       "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1263.8420780793042!2d20.794105901322737!3d41.11400180324467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbb14979737%3A0xb4057da317683f31!2sChurch%20of%20Saint%20Varvara!5e0!3m2!1sen!2smk!4v1755979259640!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+       "category": "historic"
+     }
   ],
   "categories": {
     "iconic": {
