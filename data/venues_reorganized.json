@@ -22,6 +22,22 @@
       {
         "url": "venue_gallery/skycorner/photo2.jpg",
         "alt": "An indoor restaurant or bar with a glass A-frame roof, illuminated by red and purple neon lights. In the foreground, there are several large, low-slung orange chairs and a few small tables. In the background, there is a counter with tall bar stools and round, glowing lights. The floor is made of large, dark river stones."
+      },
+      {
+        "url": "venue_gallery/skycorner/photo3.jpg",
+        "alt": "A long, rectangular blue plate holds a kebab of golden-brown chicken pieces, garnished with chopped herbs. A small white bowl of a light green mint chutney sits in the top right corner, and a small salad of shredded red cabbage, carrots, and lettuce is on the left."
+      },
+      {
+        "url": "venue_gallery/skycorner/photo4.jpg",
+        "alt": "A wooden board holds four shot glasses, arranged in two pairs. Each glass contains a different colored liquid, alternating between a dark orange and a bright green. A small, fried, hollow sphere sits on top of each glass, garnished with a sprig of parsley. Shredded red and purple cabbage is scattered around the base of the glasses."
+      },
+      {
+        "url": "venue_gallery/skycorner/photo5.jpg",
+        "alt": "A close-up, overhead shot of a white bowl filled with chunks of chicken in a vibrant red-orange sauce. The dish is topped with a small mound of finely shredded red cabbage, white onion, and cilantro."
+      },
+      {
+        "url": "venue_gallery/skycorner/photo6.jpg",
+        "alt": "A round pizza with a thick, golden crust sits on a white plate. It is topped with melted mozzarella cheese, tomato sauce, and chunks of dark roasted chicken. A white sauce is drizzled over the top, and the pizza is garnished with chopped herbs."
       }
     ],
     "location": {
@@ -30,7 +46,7 @@
       "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.2252573097517!2d20.801061080700567!3d41.11831175273007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddab46bcebf9%3A0x18783fa1a77b14b6!2sSky%20Corner%20Hotel%20and%20Indian%20Restaurant%20Ohrid!5e0!3m2!1sen!2smk!4v1756381670770!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
     "phone": "+389 71 331 607",
-    "workingHours": "08:00 - 23:00",
+    "workingHours": "08:00 - 00:00",
     "bookingUrl": "#",
     "events": []
   },
