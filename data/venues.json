@@ -1,5 +1,40 @@
 [
   {
+    "id": 121,
+    "name": "Sky Corner",
+    "description": "Sky Corner is an authentic Indian restaurant in Ohrid, offering a rich and flavorful dining experience inspired by the diverse culinary traditions of India. Our menu features a wide variety of traditional Indian dishes made with aromatic spices and fresh ingredients, prepared by skilled chefs. Whether you're a fan of mild curries or bold, spicy flavors, our kitchen delivers something for every taste. With a warm and inviting atmosphere, Sky Corner is the perfect place to enjoy a memorable meal with friends, family, or fellow food lovers.",
+    "type": ["restaurant", "coffee", "club"],
+    "tags": [
+      "restaurant",
+      "indian",
+      "coffee",
+      "club",
+      "authentic",
+      "spicy",
+      "traditional"
+    ],
+    "imageUrl": "images_venue/skycorner_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/skycorner/photo1.jpg",
+        "alt": "An indoor restaurant or bar with a glass and metal A-frame roof and windows on the right wall that overlook a city. In the foreground, there are two turquoise barstools at a counter on the left and several gray upholstered chairs and tables filling the middle and right side of the room. The floor is made of gray river stones."
+      },
+      {
+        "url": "venue_gallery/skycorner/photo2.jpg",
+        "alt": "An indoor restaurant or bar with a glass A-frame roof, illuminated by red and purple neon lights. In the foreground, there are several large, low-slung orange chairs and a few small tables. In the background, there is a counter with tall bar stools and round, glowing lights. The floor is made of large, dark river stones."
+      }
+    ],
+    "location": {
+      "address": "Sky Corner Hotel and Indian Restaurant, Ohrid",
+      "googleMapsUrl": "https://maps.app.goo.gl/vkYCbPwoG8bHp3cU8",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.789238706075!2d20.798906376448087!3d41.11729381270462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddab46bcebf9%3A0x18783fa1a77b14b6!2sSky%20Corner%20Hotel%20and%20Indian%20Restaurant%20Ohrid!5e0!3m2!1sen!2smk!4v1756382338297!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "+389 71 331 607",
+    "workingHours": "08:00 - 23:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
     "id": 103,
     "name": "Amfora Restaurant",
     "description": "Amfora Restaurant in Ohrid is one of those rare spots where you instantly feel at ease. Tucked just a short walk from the lake, it offers a cozy, welcoming atmosphere with a touch of elegance. The food speaks for itself—fresh, local ingredients turned into traditional Macedonian dishes with a modern twist. Whether you're there for a relaxed lunch or a slow dinner with wine as the sun sets, Amfora makes you feel like you're exactly where you're supposed to be.",

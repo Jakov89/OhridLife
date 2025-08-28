@@ -74,6 +74,8 @@ function renderVenueDetails(venue, container) {
             ${venue.location?.mapIframe ? `
             <div class="venue-map">
                 <h3>Location</h3>
+                ${venue.location.address ? `<p><strong>Address:</strong> ${venue.location.address}</p>` : ''}
+                ${venue.location.googleMapsUrl ? `<p><a href="${venue.location.googleMapsUrl}" target="_blank" rel="noopener noreferrer" style="color: #007bff; text-decoration: none;">📍 View on Google Maps</a></p>` : ''}
                 ${venue.location.mapIframe}
             </div>` : ''}
         </div>

@@ -935,17 +935,35 @@ app.get('/api/venues/:id', (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     
     const venueId = parseInt(req.params.id, 10);
+    
+    // Try venues_reorganized.json first, fallback to venues.json
+    const venuesReorganizedPath = path.join(__dirname, 'data', 'venues_reorganized.json');
     const venuesPath = path.join(__dirname, 'data', 'venues.json');
-    fs.readFile(venuesPath, 'utf8', (err, data) => {
+    
+    fs.readFile(venuesReorganizedPath, 'utf8', (err, data) => {
         if (err) {
-            return res.status(500).json({ error: 'Failed to load venue data.' });
-        }
-        const venues = JSON.parse(data);
-        const venue = venues.find(v => v.id === venueId);
-        if (venue) {
-            res.json(venue);
+            console.warn("venues_reorganized.json not found for individual venue, trying venues.json:", err.message);
+            // Fallback to original venues.json
+            fs.readFile(venuesPath, 'utf8', (fallbackErr, fallbackData) => {
+                if (fallbackErr) {
+                    return res.status(500).json({ error: 'Failed to load venue data.' });
+                }
+                const venues = JSON.parse(fallbackData);
+                const venue = venues.find(v => v.id === venueId);
+                if (venue) {
+                    res.json(venue);
+                } else {
+                    res.status(404).json({ error: 'Venue not found.' });
+                }
+            });
         } else {
-            res.status(404).json({ error: 'Venue not found.' });
+            const venues = JSON.parse(data);
+            const venue = venues.find(v => v.id === venueId);
+            if (venue) {
+                res.json(venue);
+            } else {
+                res.status(404).json({ error: 'Venue not found.' });
+            }
         }
     });
 });
