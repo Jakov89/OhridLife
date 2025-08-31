@@ -110,5 +110,28 @@
         "experience": "20+ years",
         "hideBooking": false,
         "bio": "The Backdoor Band – Straight out of Ohrid, Macedonia, we've been rocking stages across the country and beyond, winning over crowds with our high-energy performances. For years, we were known as a powerhouse cover band, bringing classic rock and timeless hits to life. But in early 2013, we took things to the next level and began crafting our own original music — a raw, authentic sound straight from the heart.\n\nWith Žarko Jakimoski on lead vocals & bass, Laze Farmakoski shredding on lead guitar, and Nikola Koljuševski-Ozzy driving the beat on drums & backing vocals, we deliver pure rock 'n' roll spirit with every show.\n\nSo grab a drink, turn it up, and join us on this ride. Keep on rockin' and follow us! 🤘🍻🤘"
+    },
+    {
+        "id": 6,
+        "name": "VIS Biljana",
+        "category": "Band",
+        "description": "Ohrid's troubadour ensemble preserving traditional melodies since 2009.",
+        "imageUrl": "artist_image/chalgija/visbiljana.jpg",
+        "profileImage": "artist_image/chalgija/visbiljana.jpg",
+        "upcomingEvents": [],
+        "socialMedia": {
+            "instagram": "https://www.instagram.com/vis_biljana/",
+            "facebook": "https://www.facebook.com/ansamblbiljanaohrid"          
+        },
+        "contact": {
+            "type": "phone",
+            "value": "+38978804078",
+            "label": "Call Us"
+        },
+        "specialties": ["Traditional", "Folk", "Live Performance"],
+        "isActive": true,
+        "experience": "14+ years",
+        "hideBooking": false,
+        "bio": "VIS Biljana was founded in 2009, carrying on the legacy as the fourth troubadour generation of the city of Ohrid. From the very beginning, the ensemble has been dedicated to nurturing the authentic musical spirit of our region, creating a bridge between tradition and the present. Over the years, we have released two music albums and built a tradition of three annual concerts that hold a special place in the cultural life of Ohrid.\n\nThe first is held on Petrovden, a unique celebration performed on the waters of Lake Ohrid, symbolizing the harmony between music and nature. The second concert is a humanitarian event, dedicated to our late colleague and dear friend Andrej Labroski, with all proceeds supporting associations and individuals from vulnerable groups across the country. The third is our signature annual concert, \"Охридска визита\", through which we strive to honor and preserve the spiritual and musical heritage of our beloved city.\n\nWith every performance, VIS Biljana remains devoted to keeping Ohrid's tradition alive, while sharing its timeless melodies with future generations."
     }
 ]

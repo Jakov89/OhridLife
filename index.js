@@ -302,7 +302,7 @@ async function initializeApp() {
     initializeLazyObserver();
     venueRatings = JSON.parse(localStorage.getItem('ohridHubVenueRatings')) || {}; // Load ratings
     // updateStats(); // Removed - statistics section deleted
-    renderHeroSlider();
+    initializeHeroSlider();
     populateRecommendations();
     populateVenueFilters();
     filterAndDisplayVenues();
@@ -2266,37 +2266,11 @@ function updateAllVenuesArrows(sliderInstance) {
     }
 }
 
-function renderHeroSlider() {
-    const sliderContainer = document.querySelector('#hero-slider-container');
-    if (!sliderContainer) return;
+function initializeHeroSlider() {
+    const heroSlider = document.querySelector('#hero-slider');
+    if (!heroSlider) return;
 
-    sliderContainer.innerHTML = `
-        <div id="hero-slider" class="keen-slider">
-            ${featuredEventsData.map(event => {
-                const name = event.name?.en || event.title || 'Unnamed Event';
-                const description = event.description?.en || event.description || '';
-                const type = event.type?.en || event.type || 'Event';
-                const imageUrl = event.imageUrl || 'https://via.placeholder.com/320x240/cccccc/666666?text=Event+Image';
-                // Use specialLink if available, otherwise use organization page
-                const eventUrl = event.specialLink || `/organizations/${event.id}`;
-                const imagePositionClass = event.imagePosition ? `hero-slide-image--align-${event.imagePosition}` : '';
-
-                return `
-                <a href="${eventUrl}" class="keen-slider__slide hero-slide">
-                    <div class="hero-slide-image-container">
-                         <img src="${imageUrl}" alt="${name}" class="hero-slide-image ${imagePositionClass}" loading="lazy">
-                    </div>
-                    <div class="hero-slide-text-content">
-                        <span class="hero-slide-tag">${type}</span>
-                        <h3>${name}</h3>
-                        <p>${description}</p>
-                    </div>
-                </a>
-                `;
-            }).join('')}
-        </div>
-        <div class="hero-slider-dots"></div>
-    `;
+    let timeout;
 
     const keenSlider = createSlider('#hero-slider', {
         loop: true,
@@ -2325,7 +2299,7 @@ function renderHeroSlider() {
     };
 
     function updateDots(s) {
-        const dotsContainer = sliderContainer.querySelector(".hero-slider-dots");
+        const dotsContainer = document.querySelector(".hero-slider-dots");
         if (!dotsContainer) return;
 
         dotsContainer.innerHTML = "";
