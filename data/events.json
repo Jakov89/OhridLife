@@ -283,6 +283,53 @@
     "ticketPrice": "Free Entry",
    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.5888078684347!2d20.771507076440823!3d40.92476092456278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350bf118dae57bb%3A0x16cd69106ec5a888!2sCar%20Camp%20Ljubanishta!5e0!3m2!1sen!2smk!4v1750877591498!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Ljubanishta Beach & Camping"
+  },
+  {
+    "id": "18",
+    "venueId": 18,
+    "eventName": "Vlado Broz & DJ Marama",
+    "isoDate": "2025-09-05",
+    "startTime": "22:00",
+    "day": "Fri.",
+    "description": "It's the perfect night to relax, enjoy great music, and create some unforgettable memories in a cozy atmosphere. Don't miss this captivating performance!",
+    "category": "Music",
+    "imageUrl": "images_venue/octava_card.jpg",
+    "eventBookingUrl": "#",
+    "eventContact": "077 633 444",
+    "ticketPrice": "Free Entry",
+    "locationName": "Octava",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0488077434948!2d20.799729276447934!3d41.111625113054295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd66a9968849%3A0xb827cb595d1b7e7b!2sOctava%20Lounge%20Bar!5e0!3m2!1sen!2smk!4v1750873328387!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "19",
+    "venueId": 18,
+    "eventName": "Balkan Jam",
+    "isoDate": "2025-09-06",
+    "startTime": "22:00",
+    "day": "Sat.",
+    "description": "It's the perfect night to relax, enjoy great music, and create some unforgettable memories in a cozy atmosphere. Don't miss this captivating performance!",
+    "category": "Music",
+    "imageUrl": "images_venue/octava_card.jpg",
+    "eventBookingUrl": "#",
+    "eventContact": "077 633 444",
+    "ticketPrice": "Free Entry",
+    "locationName": "Octava",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0488077434948!2d20.799729276447934!3d41.111625113054295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd66a9968849%3A0xb827cb595d1b7e7b!2sOctava%20Lounge%20Bar!5e0!3m2!1sen!2smk!4v1750873328387!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "18",
+    "venueId": 18,
+    "eventName": "Balkanikos",
+    "isoDate": "2025-09-07",
+    "startTime": "22:00",
+    "day": "Sun.",
+    "description": "It's the perfect night to relax, enjoy great music, and create some unforgettable memories in a cozy atmosphere. Don't miss this captivating performance!",
+    "category": "Music",
+    "imageUrl": "images_venue/octava_card.jpg",
+    "eventBookingUrl": "#",
+    "eventContact": "077 633 444",
+    "ticketPrice": "Free Entry",
+    "locationName": "Octava",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0488077434948!2d20.799729276447934!3d41.111625113054295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd66a9968849%3A0xb827cb595d1b7e7b!2sOctava%20Lounge%20Bar!5e0!3m2!1sen!2smk!4v1750873328387!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   }
- 
 ]
