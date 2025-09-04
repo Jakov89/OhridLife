@@ -1241,6 +1241,40 @@ app.get('*', (req, res, next) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+// Image optimization endpoint
+app.get('/api/image-optimize/:folder/:filename', async (req, res) => {
+    try {
+        const { folder, filename } = req.params;
+        const width = parseInt(req.query.w) || 400;
+        const quality = parseInt(req.query.q) || 75;
+        
+        const imagePath = path.join(__dirname, folder, filename);
+        
+        // Check if file exists
+        if (!fs.existsSync(imagePath)) {
+            return res.status(404).send('Image not found');
+        }
+        
+        // Set cache headers for optimized images
+        res.set({
+            'Cache-Control': 'public, max-age=31536000', // 1 year
+            'Content-Type': 'image/jpeg'
+        });
+        
+        const optimizedBuffer = await optimizeImage(imagePath, width);
+        res.send(optimizedBuffer);
+        
+    } catch (error) {
+        console.error('Image optimization error:', error);
+        res.status(500).send('Image optimization failed');
+    }
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`🚀 Performance optimizations enabled:`);
+    console.log(`   - Gzip compression: ✅`);
+    console.log(`   - Image optimization: ✅`);
+    console.log(`   - Static file caching: ✅`);
+    console.log(`   - Lazy loading: ✅`);
 }); 

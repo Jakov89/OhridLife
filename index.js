@@ -7,6 +7,25 @@ let venueRatings = {}; // Holds all user-submitted ratings
 let historicalFacts = [];
 let currentFactIndex = 0;
 
+// Image optimization helper function
+function getOptimizedImageUrl(imageUrl, width = 400, quality = 75) {
+    // If it's already an external URL or data URL, return as is
+    if (imageUrl.startsWith('http') || imageUrl.startsWith('data:')) {
+        return imageUrl;
+    }
+    
+    // Extract folder and filename from the path
+    const pathParts = imageUrl.split('/');
+    if (pathParts.length >= 2) {
+        const folder = pathParts[0];
+        const filename = pathParts[1];
+        return `/api/image-optimize/${folder}/${filename}?w=${width}&q=${quality}`;
+    }
+    
+    // Fallback to original if path parsing fails
+    return imageUrl;
+}
+
 // --- LAZY LOADING OBSERVER ---
 let lazyImageObserver;
 
@@ -975,7 +994,8 @@ function renderVenueCard(venue) {
             <div class="redesigned-venue-card" onclick="event.stopPropagation(); handleVenueCardClick(this, ${venue.id})">
                 <!-- Image Section with 4:3 Aspect Ratio -->
                 <div class="venue-card__media">
-                    <img src="${imageUrl}" 
+                    <img data-src="${getOptimizedImageUrl(imageUrl, 400)}" 
+                         src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZjNmNGY2Ii8+CjxwYXRoIGQ9Im0xNSAxNSA2IDYgNi02TTIxIDIxaDEuNWEzLjUgMy41IDAgMSAwIDAtNyIgc3Ryb2tlPSIjOWNhM2FmIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo="
                          alt="${name}" 
                          class="venue-card__img" 
                          loading="lazy" 

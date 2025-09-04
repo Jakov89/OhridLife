@@ -858,8 +858,38 @@ document.addEventListener('DOMContentLoaded', () => {
     ImageOptimizer.initializeImageOptimization();
 });
 
+// Lazy loading for images - Performance optimization
+const lazyLoadImages = () => {
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    img.classList.add('loaded');
+                    observer.unobserve(img);
+                }
+            }
+        });
+    }, {
+        rootMargin: '50px 0px',
+        threshold: 0.01
+    });
+
+    const lazyImages = document.querySelectorAll('img[data-src]');
+    lazyImages.forEach(img => {
+        img.classList.add('lazy');
+        imageObserver.observe(img);
+    });
+};
+
+// Initialize lazy loading when DOM is ready
+document.addEventListener('DOMContentLoaded', lazyLoadImages);
+
 // Export for use in other files
 window.MetaTagManager = MetaTagManager; 
 window.LoadingManager = LoadingManager;
 window.PerformanceMonitor = PerformanceMonitor;
-window.ImageOptimizer = ImageOptimizer; 
+window.ImageOptimizer = ImageOptimizer;
+window.lazyLoadImages = lazyLoadImages; 

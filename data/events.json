@@ -317,7 +317,7 @@
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0488077434948!2d20.799729276447934!3d41.111625113054295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd66a9968849%3A0xb827cb595d1b7e7b!2sOctava%20Lounge%20Bar!5e0!3m2!1sen!2smk!4v1750873328387!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   },
   {
-    "id": "18",
+    "id": "20",
     "venueId": 18,
     "eventName": "Balkanikos",
     "isoDate": "2025-09-07",
@@ -333,7 +333,7 @@
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0488077434948!2d20.799729276447934!3d41.111625113054295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd66a9968849%3A0xb827cb595d1b7e7b!2sOctava%20Lounge%20Bar!5e0!3m2!1sen!2smk!4v1750873328387!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   },
   {
-    "id": "16",
+    "id": "21",
     "venueId": 76,
     "eventName": "DJ Black A",
     "isoDate": "2025-09-06",
@@ -347,5 +347,83 @@
     "ticketPrice": "Free Entry",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2251.491368773509!2d20.807618663394248!3d41.12622131914956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db21c01f6a8b%3A0xd07d14cd731e512d!2sINclusive!5e0!3m2!1sen!2smk!4v1751447318600!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "INclusive"
+  },
+  {
+    "id": "22",
+    "venueId": null,
+    "eventName": "Wine & Dine",
+    "isoDate": "2025-09-05",
+    "startTime": "22:00",
+    "day": "Fri.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "images_venue/su_card.jpg",
+    "eventBookingUrl": "#",
+    "eventContact": "N/A",
+    "ticketPrice": "Free Entry",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.9924531322511!2d20.806906791912542!3d41.10736652888151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca80ff1d9eb%3A0xff917fc23ad178!2sSu%20Hotel!5e0!3m2!1sen!2smk!4v1752871655667!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Su Hotel"
+  },
+  {
+    "id": "23",
+    "venueId": null,
+    "eventName": "Alexandar Josifovski & Shtock Me Baby",
+    "isoDate": "2025-09-06",
+    "startTime": "22:00",
+    "day": "Sat.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "images_venue/su_card.jpg",
+    "eventBookingUrl": "#",
+    "eventContact": "N/A",
+    "ticketPrice": "Free Entry",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.9924531322511!2d20.806906791912542!3d41.10736652888151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca80ff1d9eb%3A0xff917fc23ad178!2sSu%20Hotel!5e0!3m2!1sen!2smk!4v1752871655667!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Su Hotel"
+  },
+  {
+    "id": "24",
+    "venueId": null,
+    "eventName": "Darko Grozdanovski",
+    "isoDate": "2025-09-07",
+    "startTime": "22:00",
+    "day": "Sun.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "images_venue/su_card.jpg",
+    "eventBookingUrl": "#",
+    "eventContact": "N/A",
+    "ticketPrice": "Free Entry",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.9924531322511!2d20.806906791912542!3d41.10736652888151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca80ff1d9eb%3A0xff917fc23ad178!2sSu%20Hotel!5e0!3m2!1sen!2smk!4v1752871655667!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Su Hotel"
+  },
+  {
+    "id": "25",
+    "venueId": 7,
+    "eventName": "Martin Delimitov",
+    "isoDate": "2025-09-06",
+    "startTime": "23:55",
+    "day": "Sat.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "events_image/rebel/06.09.png",
+    "eventBookingUrl": "#",
+    "eventContact": "078 858 499",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.5986812961733!2d20.8143125!3d41.1053125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbb5377ef5c3%3A0xf12be018ed556603!2sRebel%20Ohrid!5e1!3m2!1sen!2smk!4v1748257098398!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Rebel"
+  },
+  {
+    "id": "26",
+    "venueId": 3,
+    "eventName": "DJ Face",
+    "isoDate": "2025-09-05",
+    "startTime": "22:00",
+    "day": "Fri.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "events_image/liquid/05.09.png",
+    "eventBookingUrl": "#",
+    "eventContact": "070 878 984",
+    "locationName": "Liquid Cafe Bar",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.96999952323426!2d20.796350681289486!3d41.11203210785903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca52629cca1%3A0xf2b6822b86dafab2!2sLiquid!5e0!3m2!1sen!2smk!4v1748537215411!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   }
 ]
