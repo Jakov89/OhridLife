@@ -1241,18 +1241,30 @@ app.get('*', (req, res, next) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Image optimization endpoint
-app.get('/api/image-optimize/:folder/:filename', async (req, res) => {
+// Image optimization endpoint with flexible path handling
+app.get('/api/image-optimize/*', async (req, res) => {
     try {
-        const { folder, filename } = req.params;
+        const imagePath = req.params[0]; // Get the full path after /api/image-optimize/
         const width = parseInt(req.query.w) || 400;
         const quality = parseInt(req.query.q) || 75;
         
-        const imagePath = path.join(__dirname, folder, filename);
+        const fullImagePath = path.join(__dirname, imagePath);
         
         // Check if file exists
-        if (!fs.existsSync(imagePath)) {
-            return res.status(404).send('Image not found');
+        if (!fs.existsSync(fullImagePath)) {
+            // If optimization fails, serve original image
+            return res.sendFile(fullImagePath, (err) => {
+                if (err) {
+                    res.status(404).send('Image not found');
+                }
+            });
+        }
+        
+        // Check if it's a supported image format
+        const ext = path.extname(fullImagePath).toLowerCase();
+        if (!['.jpg', '.jpeg', '.png', '.webp'].includes(ext)) {
+            // Serve original file if not a supported image format
+            return res.sendFile(fullImagePath);
         }
         
         // Set cache headers for optimized images
@@ -1261,12 +1273,19 @@ app.get('/api/image-optimize/:folder/:filename', async (req, res) => {
             'Content-Type': 'image/jpeg'
         });
         
-        const optimizedBuffer = await optimizeImage(imagePath, width);
+        const optimizedBuffer = await optimizeImage(fullImagePath, width);
         res.send(optimizedBuffer);
         
     } catch (error) {
         console.error('Image optimization error:', error);
-        res.status(500).send('Image optimization failed');
+        // Fallback to original image if optimization fails
+        const imagePath = req.params[0];
+        const fullImagePath = path.join(__dirname, imagePath);
+        res.sendFile(fullImagePath, (err) => {
+            if (err) {
+                res.status(500).send('Image optimization failed and original not found');
+            }
+        });
     }
 });
 

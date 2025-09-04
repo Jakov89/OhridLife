@@ -14,16 +14,8 @@ function getOptimizedImageUrl(imageUrl, width = 400, quality = 75) {
         return imageUrl;
     }
     
-    // Extract folder and filename from the path
-    const pathParts = imageUrl.split('/');
-    if (pathParts.length >= 2) {
-        const folder = pathParts[0];
-        const filename = pathParts[1];
-        return `/api/image-optimize/${folder}/${filename}?w=${width}&q=${quality}`;
-    }
-    
-    // Fallback to original if path parsing fails
-    return imageUrl;
+    // Use the full path for the optimization endpoint
+    return `/api/image-optimize/${imageUrl}?w=${width}&q=${quality}`;
 }
 
 // --- LAZY LOADING OBSERVER ---
