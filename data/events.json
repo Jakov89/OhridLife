@@ -2,7 +2,7 @@
   {
     "id": "1",
     "venueId": 116,
-    "eventName": "Promotion of the book Rock n’Beat by Mihajlo Grbevski & Multi-instrumental Live Looping Experience by Viktor Jolak",
+    "eventName": "Promotion of the book Rock n’Beat by Mihajlo Grbevski",
     "isoDate": "2025-09-06",
     "startTime": "20:00",
     "day": "Sat.",
@@ -984,5 +984,37 @@
     "ticketPrice": "100",
     "locationName": "Stadion Biljanini Izvori",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d632.0084978939489!2d20.812439572306676!3d41.104915331737864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db573d90d8ff%3A0x3c632b3690d95d53!2sAtina%20Bojadji%20Stadium!5e0!3m2!1sen!2smk!4v1755596076942!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "62",
+    "venueId": 5,
+    "eventName": "DJ Jaybeats",
+    "isoDate": "2025-09-06",
+    "startTime": "23:55",
+    "day": "Sat.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "events_image/omnia/06.09.png",
+    "eventBookingUrl": "#",
+    "eventContact": "078 586 699",
+    "ticketPrice": "Free entry",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Omnia Night Club"
+  },
+  {
+    "id": "63",
+    "venueId": 5,
+    "eventName": "DJ Oky Doky",
+    "isoDate": "2025-09-07",
+    "startTime": "23:55",
+    "day": "Sun.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "events_image/omnia/07.09.png",
+    "eventBookingUrl": "#",
+    "eventContact": "078 586 699",
+    "ticketPrice": "Free entry",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Omnia Night Club"
   }
 ]
