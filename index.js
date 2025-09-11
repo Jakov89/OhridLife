@@ -5,6 +5,7 @@ let featuredEventsData = [];
 let learnOhridTexts = {};
 let venueRatings = {}; // Holds all user-submitted ratings
 let historicalFacts = [];
+let churchesData = [];
 let currentFactIndex = 0;
 
 // Image optimization helper function
@@ -148,12 +149,13 @@ async function fetchAllData() {
     }
 
     try {
-        const [venuesResponse, eventsResponse, organizationsResponse, learnOhridResponse, historicalFactsResponse] = await Promise.all([
+        const [venuesResponse, eventsResponse, organizationsResponse, learnOhridResponse, historicalFactsResponse, churchesResponse] = await Promise.all([
             fetch('/api/venues'),
             fetch('/api/events'),
             fetch('/api/organizations'),
             fetch('/api/learn-ohrid-texts'),
-            fetch('/data/historical_facts.json')
+            fetch('/data/historical_facts.json'),
+            fetch('/data/churches.json')
         ]);
 
         // Check response status
@@ -162,13 +164,15 @@ async function fetchAllData() {
         if (!organizationsResponse.ok) throw new Error(`Organizations API error: ${organizationsResponse.status}`);
         if (!learnOhridResponse.ok) throw new Error(`Learn API error: ${learnOhridResponse.status}`);
         if (!historicalFactsResponse.ok) throw new Error(`Historical facts API error: ${historicalFactsResponse.status}`);
+        if (!churchesResponse.ok) throw new Error(`Churches API error: ${churchesResponse.status}`);
 
-        const [venues, events, organizations, learnOhrid, historicalFactsData] = await Promise.all([
+        const [venues, events, organizations, learnOhrid, historicalFactsData, churches] = await Promise.all([
             venuesResponse.json(),
             eventsResponse.json(),
             organizationsResponse.json(),
             learnOhridResponse.json(),
-            historicalFactsResponse.json()
+            historicalFactsResponse.json(),
+            churchesResponse.json()
         ]);
 
         venuesData = venues.map(normalizeVenueDataItem);
@@ -176,6 +180,7 @@ async function fetchAllData() {
         featuredEventsData = organizations;
         learnOhridTexts = learnOhrid;
         historicalFacts = historicalFactsData.facts;
+        churchesData = churches.churches;
 
         // Hide skeleton screens and show content
         hideSkeletonScreens();
@@ -2282,6 +2287,9 @@ function initializeHeroSlider() {
     const heroSlider = document.querySelector('#hero-slider');
     if (!heroSlider) return;
 
+    // Populate with random churches first
+    populateHeroWithChurches();
+
     let timeout;
 
     const keenSlider = createSlider('#hero-slider', {
@@ -2328,6 +2336,85 @@ function initializeHeroSlider() {
             dotsContainer.appendChild(dot);
         });
     }
+}
+
+function populateHeroWithChurches() {
+    const heroSlider = document.querySelector('#hero-slider');
+    if (!heroSlider || !churchesData || churchesData.length === 0) return;
+
+    // Get 3 random churches
+    const randomChurches = getRandomChurches(3);
+    
+    // Clear existing slides
+    heroSlider.innerHTML = '';
+    
+    // Create slides for each church
+    randomChurches.forEach(church => {
+        const slide = createChurchSlide(church);
+        heroSlider.appendChild(slide);
+    });
+}
+
+function getRandomChurches(count = 3) {
+    if (!churchesData || churchesData.length === 0) return [];
+    
+    // Create a copy of the array and shuffle it
+    const shuffled = [...churchesData].sort(() => 0.5 - Math.random());
+    
+    // Return the requested number of churches
+    return shuffled.slice(0, Math.min(count, shuffled.length));
+}
+
+function createChurchSlide(church) {
+    const slide = document.createElement('div');
+    slide.className = 'keen-slider__slide hero-slide church-slide';
+    
+    // Get the first image from the church gallery with better fallback handling
+    let imageUrl = 'images/placeholder.jpg';
+    if (church.gallery && church.gallery.length > 0) {
+        imageUrl = church.gallery[0];
+        // Ensure the image path is correct
+        if (!imageUrl.startsWith('http') && !imageUrl.startsWith('/')) {
+            imageUrl = imageUrl.startsWith('churces/') ? imageUrl : imageUrl;
+        }
+    }
+    
+    slide.innerHTML = `
+        <a href="churches.html?id=${church.id}" class="church-slide-link">
+            <div class="church-slide-image-container">
+                <img src="${imageUrl}" 
+                     alt="${church.name}" 
+                     loading="lazy" 
+                     class="church-slide-image"
+                     onerror="this.style.display='none'; this.parentNode.style.background='linear-gradient(135deg, #8B4513 0%, #A0522D 100%)'; this.parentNode.innerHTML += '<div style=\\'color: white; display: flex; align-items: center; justify-content: center; height: 100%; font-size: 3rem;\\'>⛪</div>';">
+                <div class="church-slide-overlay"></div>
+            </div>
+            <div class="church-slide-content">
+                <div class="church-slide-category">${getCategoryDisplayName(church.category)}</div>
+                <h3 class="church-slide-title">${church.name}</h3>
+                <p class="church-slide-period">${church.period}</p>
+                <p class="church-slide-description">${church.short_description}</p>
+                <div class="church-slide-button">
+                    <span>Explore Church</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+            </div>
+        </a>
+    `;
+    
+    return slide;
+}
+
+function getCategoryDisplayName(category) {
+    const categoryMap = {
+        'iconic': '⛪ Iconic Church',
+        'major': '🏛️ Major Historic Site',
+        'historic': '📿 Historic Church',
+        'monastery': '🕊️ Monastery'
+    };
+    return categoryMap[category] || '⛪ Church';
 }
 
 // --- MODAL ---
