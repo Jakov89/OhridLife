@@ -351,8 +351,8 @@
   {
     "id": "23",
     "venueId": null,
-    "eventName": "Alexandar Josifovski & Shtock Me Baby",
-    "isoDate": "2025-09-06",
+    "eventName": "Barcode",
+    "isoDate": "2025-09-13",
     "startTime": "22:00",
     "day": "Sat.",
     "description": "",
@@ -1080,5 +1080,21 @@
   "ticketPrice": "Free Entry",
   "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.0042165136758!2d20.797858478682038!3d41.11250689424211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca458b1aa21%3A0xd3267f5310ee9315!2sLe%20Petit%20Bistro%20Lihnidos!5e0!3m2!1sen!2smk!4v1751305628056!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
   "locationName": "Le Petit Bistro Lihnidos"
+  },
+  {
+    "id": "200",
+    "venueId": null,
+    "eventName": "HC Ohrid - HC Struga",
+    "isoDate": "2025-09-13",
+    "startTime": "18:30",
+    "day": "Sat.",
+    "description": "Handball match between HC Ohrid and HC Struga at the Atina Bojadji Sports Hall. Come support the local team in this exciting match!",
+    "category": "Sports",
+    "imageUrl": "events_image/rakomet/logo.jpg",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "100 MKD",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Atina Bojadji Sports Hall"
   }
 ]
