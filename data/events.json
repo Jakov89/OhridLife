@@ -127,8 +127,8 @@
   {
     "id": "9",
     "venueId": 16,
-    "eventName": "MoodFellas",
-    "isoDate": "2025-09-19",
+    "eventName": "Balkanikos",
+    "isoDate": "2025-09-26",
     "startTime": "22:30",
     "day": "Fri.",
     "description":"",
@@ -225,12 +225,12 @@
     "id": "15",
     "venueId": 11,
     "eventName": "Bobi Pavlovski",
-    "isoDate": "2025-09-06",
+    "isoDate": "2025-09-27",
     "startTime": "22:00",
     "day": "Sat.",
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/egoist/06.09.png",
+    "imageUrl": "events_image/egoist/27.09.png",
     "eventBookingUrl": "#",
     "eventContact": "072 248 203",
     "ticketPrice": "Free Entry",
@@ -1442,5 +1442,21 @@
     "ticketPrice": "Free Entry",
     "locationName": "Restaurant Bravo",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.5609140962213!2d20.821649056696856!3d41.08818471438427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c55efe28b2e1%3A0xd13e2614c2dffaf4!2sRestaurant%20Bravo!5e0!3m2!1sen!2smk!4v1753096219824!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "221",
+    "venueId": 2,
+    "eventName": "Transverse",
+    "isoDate": "2025-09-25",
+    "startTime": "22:00",
+    "day": "Thu.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "events_image/jazzinn/25.09.png",
+    "eventBookingUrl": "#",
+    "eventContact": "078 201 491",
+    "ticketPrice": "400 MKD",
+    "locationName": "Jazz Inn",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.97108961541426!2d20.79483075241209!3d41.11180561039946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbad9f657b9%3A0xe46164dac671a55b!2sJazz%20Inn!5e0!3m2!1sen!2smk!4v1748537193910!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   }
 ]
