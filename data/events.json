@@ -1286,11 +1286,11 @@
   {
     "id": "211",
     "venueId": 106,
-    "eventName": "UEFA Champions League (Part 1)",
-    "isoDate": "2025-09-18",
-    "startTime": "18:45",
-    "day": "Thu.",
-    "description": "Experience the thrill of UEFA Champions League action at Taboo Billiards & Bar. Join fellow football enthusiasts in our stylish venue featuring plush seating, a vibrant atmosphere, and the perfect setting to watch Europe's premier football competition unfold. Whether you're cheering for your favorite team or simply enjoying the beautiful game, Taboo provides the ideal combination of comfort and excitement for an unforgettable viewing experience.",
+    "eventName": "UEFA Europa League ",
+    "isoDate": "2025-09-24",
+    "startTime": "21:00",
+    "day": "Wed.",
+    "description": "",
     "category": "Sports",
     "imageUrl": "images_venue/taboo_card.jpg",
     "eventBookingUrl": "#",
@@ -1302,11 +1302,11 @@
   {
     "id": "212",
     "venueId": 106,
-    "eventName": "UEFA Champions League (Part 2)",
-    "isoDate": "2025-09-18",
+    "eventName": "UEFA Europa League",
+    "isoDate": "2025-09-25",
     "startTime": "21:00",
     "day": "Thu.",
-    "description": "Experience the thrill of UEFA Champions League action at Taboo Billiards & Bar. Join fellow football enthusiasts in our stylish venue featuring plush seating, a vibrant atmosphere, and the perfect setting to watch Europe's premier football competition unfold. Whether you're cheering for your favorite team or simply enjoying the beautiful game, Taboo provides the ideal combination of comfort and excitement for an unforgettable viewing experience.",
+    "description": "",
     "category": "Sports",
     "imageUrl": "images_venue/taboo_card.jpg",
     "eventBookingUrl": "#",
@@ -1380,7 +1380,7 @@
     "locationName": "Taboo Billiards & Bar"
   },
   {
-    "id": "216",
+    "id": "217",
     "venueId": 106,
     "eventName": "Arsenal - Manchester City (Premier League)",
     "isoDate": "2025-09-21",
@@ -1396,7 +1396,7 @@
     "locationName": "Taboo Billiards & Bar"
   },
   {
-    "id": "216",
+    "id": "218",
     "venueId": 106,
     "eventName": "Marseille - PSG (Ligue 1)",
     "isoDate": "2025-09-22",
@@ -1410,5 +1410,21 @@
     "ticketPrice": "Free Entry",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d531.3692484737195!2d20.800175381482767!3d41.11534689194039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db7e2b2c4a81%3A0xe1ff5903190a4a8c!2sTaboo%20-%20Billiards%20%26%20Bar!5e0!3m2!1sen!2smk!4v1751809282854!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Taboo Billiards & Bar"
+  },
+  {
+    "id": 219,
+    "venueId": 85,
+    "eventName": "Dac & Aleksandar Boemska Vizita",
+    "isoDate": "2025-09-27",
+    "startTime": "21:00",
+    "day": "Sat.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "events_image/bravo/27.09.png",
+    "eventBookingUrl": "#",
+    "eventContact": "075 995 000 | 075 998 001",
+    "ticketPrice": "Free Entry",
+    "locationName": "Restaurant Bravo",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.5609140962213!2d20.821649056696856!3d41.08818471438427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c55efe28b2e1%3A0xd13e2614c2dffaf4!2sRestaurant%20Bravo!5e0!3m2!1sen!2smk!4v1753096219824!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   }
 ]
