@@ -79,16 +79,16 @@
   {
     "id": "6",
   "venueId": 75,
-  "eventName": "Tajfata",
-  "isoDate": "2025-09-12",
-  "startTime": "23:00",
+  "eventName": "DJ Jana Slay",
+  "isoDate": "2025-09-28",
+  "startTime": "21:00",
   "day": "Fri",
   "description": "",
   "category": "Music",
-  "imageUrl": "events_image/riben/12.09.png",
+  "imageUrl": "events_image/riben/28.09.png",
   "eventBookingUrl": "#",
   "eventContact": "075 249 132",
-  "ticketPrice": "Free Entry",
+  "ticketPrice": "200 MKD",
   "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.0042165136758!2d20.797858478682038!3d41.11250689424211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca458b1aa21%3A0xd3267f5310ee9315!2sLe%20Petit%20Bistro%20Lihnidos!5e0!3m2!1sen!2smk!4v1751305628056!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
   "locationName": "Le Petit Bistro Lihnidos"
   },
@@ -111,8 +111,8 @@
   {
     "id": "8",
     "venueId": 16,
-    "eventName": "Oli Nenad Donco",
-    "isoDate": "2025-09-18",
+    "eventName": "T&T",
+    "isoDate": "2025-09-25",
     "startTime": "21:30",
     "day": "Thu.",
     "description":"",
@@ -143,8 +143,8 @@
   {
     "id": "10",
     "venueId": 16,
-    "eventName": "Balkan Jam",
-    "isoDate": "2025-09-20",
+    "eventName": "The Grove",
+    "isoDate": "2025-09-27",
     "startTime": "22:30",
     "day": "Sat.",
     "description":"",
@@ -240,10 +240,10 @@
   {
     "id": "16",
     "venueId": 76,
-    "eventName": "DJ Architect",
-    "isoDate": "2025-09-19",
+    "eventName": "Atila",
+    "isoDate": "2025-09-27",
     "startTime": "23:46",
-    "day": "Fri.",
+    "day": "Sat.",
     "description": "",
     "category": "Music",
     "imageUrl": "images_venue/inclusive_card.jpg",
@@ -1458,5 +1458,20 @@
     "ticketPrice": "400 MKD",
     "locationName": "Jazz Inn",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.97108961541426!2d20.79483075241209!3d41.11180561039946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbad9f657b9%3A0xe46164dac671a55b!2sJazz%20Inn!5e0!3m2!1sen!2smk!4v1748537193910!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "222",
+    "eventName": "Koncert na klasichna muzika (Stefani Dudikj & Damjan Mileski)",
+    "isoDate": "2025-09-24",
+    "startTime": "19:00",
+    "day": "Wed.",
+    "description": "Experience an evening of sublime classical music within the ancient walls of Hagia Sophia. Stefani Dudikj and Damjan Mileski will perform timeless classical pieces, their melodies resonating through the historic stone arches and creating an intimate atmosphere where Byzantine heritage meets musical artistry. The church's exceptional acoustics will enhance every note, making this a truly memorable musical journey.",
+    "category": "Music",
+    "imageUrl": "events_image/random/24.09.png",
+    "eventBookingUrl": "#",
+    "eventContact": "No Info",
+    "ticketPrice": "No Info",
+    "locationName": "Church of Hagia Sophia",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.65364336050146!2d20.793441849598697!3d41.11207220000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbae7584491%3A0xf973c9aa671fb02d!2sChurch%20of%20Hagia%20Sophia!5e1!3m2!1sen!2smk!4v1758617798131!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   }
 ]
