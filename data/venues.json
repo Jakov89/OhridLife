@@ -1659,7 +1659,8 @@
       "camping",
       "beach",
       "restaurant",
-      "sports"
+      "sports",
+      "family"
     ],
     "tags": [
       "family-friendly",
@@ -3095,7 +3096,8 @@
     "name": "Park Golden Beach",
     "description": "Discover Park Golden Beach, the ultimate destination on Lake Ohrid where the fun never stops! Our beautiful beach and inviting swimming pool are your playgrounds for thrilling day parties, filled with sunshine, great music, and an infectious vibe.\n\nBut the real magic happens when the stars come out! Our poolside transforms into Ohrid's hottest spot for electrifying night parties, offering an unparalleled atmosphere for dancing and creating unforgettable memories.\n\nAt Park Golden Beach, every moment is a celebration. Join us for an exhilarating experience where the lake's beauty meets non-stop entertainment.",
     "type": [
-      "beach"
+      "beach",
+      "family"
     ],
     "tags": [
       "beach",
@@ -3922,7 +3924,8 @@
     "name": "Karting Rimo",
     "description": "Karting Rimo brings the thrill of speed to the heart of Ohrid. With a well-maintained outdoor track, powerful karts, and a safe setup, it's perfect for adrenaline seekers of all ages. Whether you're racing friends or practicing solo, expect a fun, competitive vibe with some scenic lake views nearby.",
     "type": [
-      "go-kart"
+      "go-kart",
+      "family"
     ],
     "tags": [
       "adventure",

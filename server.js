@@ -215,7 +215,8 @@ const venueCategoryMap = {
     'Health & Wellness': ['hospital', 'pharmacy', 'dentist', 'spa'],
     'Rentals & Services': ['rent-a-car', 'rent-a-bike', 'rent-a-scooter', 'transport', 'detailing'],
     'Shopping': ['market', 'souvenir', 'boutique'],
-    'Pet Care': ['vet', 'pet-shop', 'grooming']
+    'Pet Care': ['vet', 'pet-shop', 'grooming'],
+    'Kids & Family': ['kindergarten', 'playhouse', 'playground', 'education']
 };
 
 // Fisher-Yates shuffle algorithm

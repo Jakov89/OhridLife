@@ -74,6 +74,10 @@ const mainCategoryConfig = {
     'Pet Care': {
         icon: '🐾',
         subcategories: ['vet', 'pet-shop', 'grooming'],
+    },
+    'Kids & Family': {
+        icon: '👨‍👩‍👧‍👦',
+        subcategories: ['kindergarten', 'playhouse', 'playground', 'education'],
     }   
 };
 
