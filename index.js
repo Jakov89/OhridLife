@@ -65,7 +65,7 @@ const mainCategoryConfig = {
     },
     'Rentals & Services': {
         icon: '🚗',
-        subcategories: ['rent-a-car', 'rent-a-bike', 'rent-a-scooter', 'transport', 'detailing'],
+        subcategories: ['rent-a-car', 'rent-a-bike', 'rent-a-scooter', 'towing-services', 'detailing'],
     },
     'Shopping': {
         icon: '🛍️',
@@ -825,7 +825,8 @@ const VENUE_CATEGORY_ICONS = {
     'fast-food': '🍔',
     'culture': '🎨',
     'sport': '⚽',
-    'transport': '🚗',
+    'transport': '🚌',
+    'towing-services': '🚗',
     'beauty': '💄',
     'education': '📚',
     'general': '📍'
@@ -858,7 +859,9 @@ function getVenueCategoryIcon(venueType) {
     if (type.includes('fast') || type.includes('burger')) return VENUE_CATEGORY_ICONS['fast-food'];
     if (type.includes('culture') || type.includes('art')) return VENUE_CATEGORY_ICONS.culture;
     if (type.includes('sport') || type.includes('fitness')) return VENUE_CATEGORY_ICONS.sport;
-    if (type.includes('transport') || type.includes('rent')) return VENUE_CATEGORY_ICONS.transport;
+    if (type.includes('towing')) return VENUE_CATEGORY_ICONS['towing-services'];
+    if (type.includes('transport')) return VENUE_CATEGORY_ICONS.transport;
+    if (type.includes('rent')) return VENUE_CATEGORY_ICONS.transport;
     if (type.includes('beauty') || type.includes('spa')) return VENUE_CATEGORY_ICONS.beauty;
     if (type.includes('education') || type.includes('school')) return VENUE_CATEGORY_ICONS.education;
     
@@ -1990,7 +1993,7 @@ function categorizeVenueForRotation(venue) {
     const types = Array.isArray(venue.type?.en) ? venue.type.en : [venue.type?.en];
     
     // Check for services (including pet services) - HIGHER PRIORITY
-    if (types.some(type => ['rent-a-car', 'rent-a-scooter', 'rent-a-bike', 'rent', 'transport', 'pet-shop', 'grooming', 'vet'].includes(type))) {
+    if (types.some(type => ['rent-a-car', 'rent-a-scooter', 'rent-a-bike', 'rent', 'towing-services', 'pet-shop', 'grooming', 'vet'].includes(type))) {
         return 'services';
     }
     

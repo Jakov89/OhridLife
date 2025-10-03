@@ -3009,12 +3009,12 @@
     "name": "Autotransport Boban",
     "description": "With Autotransport Boban, your prized possessions are always in motion, safely and swiftly. Whether it's your car, yacht, or boat, we're on call 24/7 to ensure a smooth journey. We're not just transporting vehicles we're delivering peace of mind, one mile at a time.",
     "type": [
-      "transport",
-      "rental"
+      "services",
+      "towing-services"
     ],
     "tags": [
-      "transport",
-      "rental",
+      "services",
+      "towing-services",
       "vehicle-transport",
       "car-transport",
       "boat-transport",

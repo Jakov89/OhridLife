@@ -213,7 +213,7 @@ const venueCategoryMap = {
     'Culture': ['art'],
     'Entertainment & Gaming': ['gaming-house', 'vr-gaming', 'board-games','darts','billiards'],
     'Health & Wellness': ['hospital', 'pharmacy', 'dentist', 'spa'],
-    'Rentals & Services': ['rent-a-car', 'rent-a-bike', 'rent-a-scooter', 'transport', 'detailing'],
+    'Rentals & Services': ['rent-a-car', 'rent-a-bike', 'rent-a-scooter', 'towing-services', 'detailing'],
     'Shopping': ['market', 'souvenir', 'boutique'],
     'Pet Care': ['vet', 'pet-shop', 'grooming'],
     'Kids & Family': ['kindergarten', 'playhouse', 'playground', 'education']
