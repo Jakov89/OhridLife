@@ -4298,5 +4298,144 @@
     "workingHours": "Workshop schedules announced on Instagram",
     "bookingUrl": "https://www.instagram.com/paintandwineohrid/",
     "events": []
+  },
+  {
+    "id": 122,
+    "name": "Tamaro Market 1",
+    "description": "Tamaro Market 1 is a well-known local supermarket located on Lazo Trposki Street in Ohrid. It offers a wide range of groceries and household essentials, making it a convenient stop for everyday shopping.\n\nThe store provides fresh fruits and vegetables, dairy products, bread, beverages, snacks, and packaged goods. Customers can also find household and hygiene products, cleaning supplies, and other daily necessities — all at affordable prices.\n\nWith its friendly staff and clean, organized shelves, Tamaro Market 1 ensures a fast and pleasant shopping experience for both locals and visitors. Whether you need fresh ingredients for cooking or a quick snack on the go, this market has everything in one place.",
+    "type": "market",
+    "tags": [
+      "market",
+      "grocery",
+      "local",
+      "shopping",
+      "fresh produce",
+      "affordable"
+    ],
+    "imageUrl": "images_venue/market/tamaro_card.jpg",
+    "gallery": [],
+    "rating": 4.2,
+    "priceLevel": 1,
+    "location": {
+      "address": "Tamaro 1, Lazo Trposki Street, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamaro+1+Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.32258218314527!2d20.81199919117566!3d41.11331291523652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db5e7c0e5e45%3A0x76446a110e2d1ef9!2sTamaro%201!5e1!3m2!1sen!2smk!4v1760350459481!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "+389 46 267 191",
+    "workingHours": "Mon-Sat: 07:30-22:00<br>Sunday: Closed",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 123,
+    "name": "Tamaro Market 7",
+    "description": "Tamaro Market 7 is one of the most modern and well-equipped supermarkets in Ohrid, located on ASNOM Street. It's part of the Tamaro retail chain, known for combining quality, variety, and affordable prices in a clean and organized shopping environment.\n\nThe market offers a complete range of grocery and household products — including:\n\nFresh fruits and vegetables, delivered daily from local and regional suppliers.\n\nHigh-quality meat and dairy products, with a wide selection of cheeses, yogurts, and cold cuts.\n\nBakery corner with freshly baked bread, pastries, and sweet treats.\n\nBeverages and snacks, including soft drinks, juices, beers, wines, and a large snack section.\n\nHousehold and hygiene essentials, cleaning products, and everyday necessities.\n\nReady-to-eat meals and fresh salads, perfect for those who want a quick and tasty option on the go.\n\nWith its spacious layout, modern design, and friendly staff, Tamaro Market 7 provides a comfortable and efficient shopping experience for both locals and tourists. It's open every day from early morning until late evening, making it a reliable destination for all daily needs.",
+    "type": "market",
+    "tags": [
+      "market",
+      "grocery",
+      "modern",
+      "shopping",
+      "fresh produce",
+      "bakery",
+      "affordable"
+    ],
+    "imageUrl": "images_venue/market/tamaro_card.jpg",
+    "gallery": [],
+    "rating": 4.5,
+    "priceLevel": 2,
+    "location": {
+      "address": "Tamaro 7, ASNOM Street, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamaro+7+Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3424131682159!2d20.814944469655295!3d41.109502108669865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db5c819b7185%3A0x83ec7acb4adc7da1!2sTamaro%207!5e1!3m2!1sen!2smk!4v1760351284955!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "+389 71 206 603",
+    "workingHours": "Mon-Sat: 08:00-21:45<br>Sunday: 08:00-21:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 124,
+    "name": "Tamaro Market 6",
+    "description": "Tamaro Market 6 is a neighborhood supermarket located on 7-mi Noemvri, Abas Emin area, in Ohrid.\n\nIt operates daily from about 7:30 AM to 10:00 PM, providing a convenient option for early morning or evening shoppers. Offering a well-rounded selection of groceries and essentials, Tamaro 6 stocks items such as fresh produce, dairy, common pantry goods, beverages, snacks, and hygiene/household supplies.\n\nShoppers often note that this store is one of the more affordable options among the Tamaro chain, offering value without sacrificing basic variety.\n\nThe store features a clean, organized layout and helpful staff, making it suitable for quick errands as well as more comprehensive grocery runs.",
+    "type": "market",
+    "tags": [
+      "market",
+      "grocery",
+      "neighborhood",
+      "shopping",
+      "fresh produce",
+      "affordable",
+      "value"
+    ],
+    "imageUrl": "images_venue/market/tamaro_card.jpg",
+    "gallery": [],
+    "rating": 4.3,
+    "priceLevel": 2,
+    "location": {
+      "address": "Tamaro 6, 7-mi Noemvri, Abas Emin, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamaro+6+Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.1768114381164!2d20.80761326965532!3d41.12161750848328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db61f89c062d%3A0xc19abd84fecaee19!2sTamaro%206!5e1!3m2!1sen!2smk!4v1760352035492!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "078 308 429",
+    "workingHours": "Mon-Sat: 07:30-22:00<br>Sunday: Closed",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 125,
+    "name": "Tamaro Market 10",
+    "description": "Tamaro Market 10 is one of the newer and well-organized supermarkets within the Tamaro chain, located in Ohrid. It offers customers a convenient shopping experience with a wide selection of quality groceries, fresh produce, and household essentials — all at competitive prices.\n\nThe store provides everything from fresh fruits and vegetables, meat and dairy products, and baked goods, to snacks, beverages, and everyday pantry staples. Shoppers can also find cleaning and hygiene products, as well as ready-to-eat meals and salads for those looking for something quick and fresh.\n\nWith its modern interior, organized layout, and friendly staff, Tamaro Market 10 ensures a comfortable and efficient shopping experience for every customer. The store is open daily, offering extended working hours to meet the needs of both locals and visitors in Ohrid.",
+    "type": "market",
+    "tags": [
+      "market",
+      "grocery",
+      "modern",
+      "shopping",
+      "fresh produce",
+      "affordable",
+      "convenient"
+    ],
+    "imageUrl": "images_venue/market/tamaro_card.jpg",
+    "gallery": [],
+    "rating": 4.2,
+    "priceLevel": 2,
+    "location": {
+      "address": "Tamaro 10, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamaro+10+Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2198880960294!2d20.803435569655306!3d41.11846630853182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dda6517e0507%3A0x6665209446352a74!2sTamaro%2010!5e1!3m2!1sen!2smk!4v1760352486515!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "+389 78 351 289",
+    "workingHours": "Daily: 08:00-22:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 126,
+    "name": "Tamaro Market 12",
+    "description": "Tamaro Market 12 is a neighborhood supermarket situated at Stiv Naumov 26, Ohrid, North Macedonia. It functions as a locally accessible grocery store that caters to the everyday needs of residents and visitors in the area.\n\nThe market offers a broad range of products, including:\n\nFresh groceries like fruits and vegetables\n\nPantry essentials such as grains, cooking oil, and other packaged goods\n\nSnacks, beverages, and refreshment items for quick purchases\n\nHousehold supplies and hygiene products needed on a regular basis\n\nWith its pleasant service and convenient location, Tamaro Market 12 provides a comfortable shopping environment. It is open late into the evening, making it a reliable option for those needing to shop after standard hours.",
+    "type": "market",
+    "tags": [
+      "market",
+      "grocery",
+      "neighborhood",
+      "shopping",
+      "fresh produce",
+      "affordable",
+      "local"
+    ],
+    "imageUrl": "images_venue/market/tamaro_card.jpg",
+    "gallery": [],
+    "rating": 4.3,
+    "priceLevel": 2,
+    "location": {
+      "address": "Tamaro 12, Stiv Naumov 26, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamaro+12+Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.19593737851!2d20.794956808265777!3d41.12021840721202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dda0c0d086c3%3A0x8553f1b6180bfad1!2sTamaro%2012!5e1!3m2!1sen!2smk!4v1760353147335!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "+389 78 351 289",
+    "workingHours": "Mon-Sat: 07:00-22:00<br>Sunday: Closed",
+    "bookingUrl": "#",
+    "events": []
   }
 ]

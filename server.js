@@ -214,7 +214,8 @@ const venueCategoryMap = {
     'Entertainment & Gaming': ['gaming-house', 'vr-gaming', 'board-games','darts','billiards'],
     'Health & Wellness': ['hospital', 'pharmacy', 'dentist', 'spa'],
     'Rentals & Services': ['rent-a-car', 'rent-a-bike', 'rent-a-scooter', 'towing-services', 'detailing'],
-    'Shopping': ['market', 'souvenir', 'boutique'],
+    'Shopping': ['souvenir', 'boutique'],
+    'Market': ['market'],
     'Pet Care': ['vet', 'pet-shop', 'grooming'],
     'Kids & Family': ['kindergarten', 'playhouse', 'playground', 'education']
 };
@@ -231,7 +232,8 @@ function shuffleArray(array) {
 
 // Get venue category based on type
 function getVenueCategory(venue) {
-    const venueTypes = Array.isArray(venue.type?.en) ? venue.type.en : [venue.type?.en].filter(Boolean);
+    const venueType = venue.type?.en || venue.type;
+    const venueTypes = Array.isArray(venueType) ? venueType : [venueType].filter(Boolean);
     
     // Check if venue has 'popular' tag
     if (venue.tags?.includes('popular')) {

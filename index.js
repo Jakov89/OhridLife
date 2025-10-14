@@ -69,7 +69,11 @@ const mainCategoryConfig = {
     },
     'Shopping': {
         icon: '🛍️',
-        subcategories: ['market', 'souvenir', 'boutique'],
+        subcategories: ['souvenir', 'boutique'],
+    },
+    'Market': {
+        icon: '🛒',
+        subcategories: ['market'],
     },
     'Pet Care': {
         icon: '🐾',
@@ -1990,7 +1994,8 @@ function getSmartCategoryOrder() {
 }
 
 function categorizeVenueForRotation(venue) {
-    const types = Array.isArray(venue.type?.en) ? venue.type.en : [venue.type?.en];
+    const venueType = venue.type?.en || venue.type;
+    const types = Array.isArray(venueType) ? venueType : [venueType];
     
     // Check for services (including pet services) - HIGHER PRIORITY
     if (types.some(type => ['rent-a-car', 'rent-a-scooter', 'rent-a-bike', 'rent', 'towing-services', 'pet-shop', 'grooming', 'vet'].includes(type))) {
@@ -2123,7 +2128,7 @@ function performVenueFiltering(activeMainCategory, activeSubCategory) {
             }
     
             filteredVenues = venuesData.filter(venue => {
-                const venueType = venue.type?.en;
+                const venueType = venue.type?.en || venue.type;
                 if (!venueType) return false;
                 
                 const types = Array.isArray(venueType) ? venueType : [venueType];
@@ -2133,7 +2138,7 @@ function performVenueFiltering(activeMainCategory, activeSubCategory) {
     
         if (activeSubCategory) {
             filteredVenues = filteredVenues.filter(venue => {
-                const venueType = venue.type?.en;
+                const venueType = venue.type?.en || venue.type;
                 if (!venueType) return false;
     
                 const types = Array.isArray(venueType) ? venueType : [venueType];
