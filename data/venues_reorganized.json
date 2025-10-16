@@ -4585,5 +4585,89 @@
     "workingHours": "Mon-Sat: 07:00-22:00<br>Sunday: Closed",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 127,
+    "name": "Top Market - 1",
+    "description": "Located right in the heart of Ohrid's old town, Top Market – City Center is the perfect stop for both locals and visitors who want to shop quickly and easily. The store offers a complete selection of groceries, fresh fruits and vegetables, dairy products, snacks, beverages, and local delicacies.\n\nInside, you'll find a clean and well-organized space, friendly staff, and a variety of well-known local and international brands. Whether you need to grab a few essentials or stock up for the week, this central location makes shopping simple and convenient — just a short walk from the main pedestrian zone and the lake.",
+    "type": "market",
+    "tags": [
+      "market",
+      "grocery",
+      "city center",
+      "shopping",
+      "fresh produce",
+      "convenient",
+      "local"
+    ],
+    "imageUrl": "images_venue/market/top_card.jpg",
+    "gallery": [],
+    "rating": 4.2,
+    "priceLevel": 2,
+    "location": {
+      "address": "Top Market, Ohrid City Center",
+      "googleMapsUrl": "https://maps.app.goo.gl/TopMarketOhrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1794.6674854741452!2d20.803170165556637!3d41.110136509044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb960c02af7%3A0xd55bdb3740761b22!2sTop%20Market!5e1!3m2!1sen!2smk!4v1760623445496!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075 207 398",
+    "workingHours": "Mon-Sat: 08:00-22:00<br>Sunday: Closed",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 128,
+    "name": "Top Market -2",
+    "description": "Situated in one of Ohrid's main residential areas, Top Market – Partizanska is a neighborhood favorite. It offers a warm and welcoming atmosphere with everything you need for your daily shopping — from fresh produce, bakery items, and meat products to household goods and beverages.\n\nThis location is especially popular among locals for its affordable prices, regular promotions, and consistent quality. It's the ideal place for a quick grocery run or a full weekly shop, all supported by friendly and helpful staff who know their regular customers by name.",
+    "type": "market",
+    "tags": [
+      "market",
+      "grocery",
+      "neighborhood",
+      "shopping",
+      "fresh produce",
+      "affordable",
+      "local"
+    ],
+    "imageUrl": "images_venue/market/top_card.jpg",
+    "gallery": [],
+    "rating": 4.4,
+    "priceLevel": 2,
+    "location": {
+      "address": "Top Market - Partizanska, Ohrid",
+      "googleMapsUrl": "https://maps.app.goo.gl/TopMarket2Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d68295.02879672329!2d20.759452221416336!3d41.11049621934443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbaf95393181%3A0xad5db3f09a3b8eb5!2sTop%20Market!5e1!3m2!1sen!2smk!4v1760624093804!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "075 235 319",
+    "workingHours": "Mon-Sat: 08:00-22:00<br>Sunday: Closed",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 129,
+    "name": "Top Market -3",
+    "description": "The newest and most modern member of the Top Market family, combines convenience, freshness, and comfort in one spacious location. The store features a wide variety of grocery products, local specialties, and daily essentials, arranged in a bright and easy-to-navigate interior.\n\nOne of its highlights is the nearby bakery offering freshly baked bread, pastries, and traditional Macedonian treats every morning. With easy parking access, longer working hours, and a calm atmosphere, this location has quickly become a go-to choice for both residents and travelers staying in the area.",
+    "type": "market",
+    "tags": [
+      "market",
+      "grocery",
+      "modern",
+      "shopping",
+      "fresh produce",
+      "bakery",
+      "convenient"
+    ],
+    "imageUrl": "images_venue/market/top_card.jpg",
+    "gallery": [],
+    "rating": 4.4,
+    "priceLevel": 2,
+    "location": {
+      "address": "Top Market -3, Ohrid",
+      "googleMapsUrl": "https://maps.app.goo.gl/TopMarket3Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114835.41980013777!2d20.70748966841384!3d41.12345314430039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd9956387d13%3A0xc6a933d25fd7f323!2sTop%20Market!5e1!3m2!1sen!2smk!4v1760624388780!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "076 293 505",
+    "workingHours": "Mon-Sat: 08:00-22:00<br>Sunday: 09:00-17:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
