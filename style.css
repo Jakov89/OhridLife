@@ -2660,6 +2660,54 @@ span.flatpickr-weekday {
     border: 1px solid rgba(34, 197, 94, 0.3);
 }
 
+/* Open/Closed Status Badges */
+.venue-status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px);
+}
+
+.venue-status-badge.status-open {
+    background: rgba(34, 197, 94, 0.95);
+    color: white;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.venue-status-badge.status-open::before {
+    content: '●';
+    font-size: 0.8rem;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.venue-status-badge.status-closed {
+    background: rgba(239, 68, 68, 0.95);
+    color: white;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.venue-status-badge.status-closed::before {
+    content: '●';
+    font-size: 0.8rem;
+}
+
+/* Pulse animation for Open status */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
 /* Content Section */
 .venue-card-body {
     padding: 20px;
@@ -3221,7 +3269,8 @@ span.flatpickr-weekday {
     }
     
     .venue-type-badge,
-    .recommended-badge {
+    .recommended-badge,
+    .venue-status-badge {
         font-size: 0.7rem;
         padding: 4px 8px;
     }
@@ -3396,7 +3445,8 @@ span.flatpickr-weekday {
     }
     
     .venue-type-badge,
-    .recommended-badge {
+    .recommended-badge,
+    .venue-status-badge {
         font-size: 0.7rem;
         padding: 4px 8px;
     }

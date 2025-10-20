@@ -205,7 +205,7 @@ const SHUFFLE_INTERVAL = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
 // Venue category mapping for shuffling
 const venueCategoryMap = {
     'Popular': ['restaurant', 'club', 'beach', 'coffee', 'pub'],
-    'Food & Drink': ['restaurant', 'coffee', 'pub', 'fast-food', 'to-go'],
+    'Food & Drink': ['restaurant', 'coffee', 'pub', 'fast-food', 'to-go', 'shisha'],
     'Rural Tourism': ['rural tourism'],
     'Nightlife': ['club', 'pub'],
     'Beach': ['beach'],
@@ -215,6 +215,7 @@ const venueCategoryMap = {
     'Health & Wellness': ['hospital', 'pharmacy', 'dentist', 'spa'],
     'Rentals & Services': ['rent-a-car', 'rent-a-bike', 'rent-a-scooter', 'towing-services', 'detailing'],
     'Shopping': ['souvenir', 'boutique'],
+    'Jewelry': ['jewelry'],
     'Market': ['market'],
     'Pet Care': ['vet', 'pet-shop', 'grooming'],
     'Kids & Family': ['kindergarten', 'playhouse', 'playground', 'education']

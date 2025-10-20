@@ -1367,7 +1367,7 @@
       "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.167727943966!2d20.80317447644784!3d41.10902781321446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd31c22464af%3A0xf903361d023a5c1b!2sTino's%20Pub%20%26%20Bar!5e0!3m2!1sen!2smk!4v1750872851291!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
     "phone": "046 250 250",
-    "workingHours": "Daily: 10:00-01:00 (Summer Hours: 10:00-02:00)",
+    "workingHours": "08:00 - 00:00",
     "bookingUrl": "#",
     "events": [274, 275, 276, 277]
   },
@@ -4667,6 +4667,317 @@
     },
     "phone": "076 293 505",
     "workingHours": "Mon-Sat: 08:00-22:00<br>Sunday: 09:00-17:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 130,
+    "name": "Talevi - Ohrid Pearls",
+    "description": "Talevi – Ohrid Pearl represents a symbol of centuries-old tradition, authenticity, and craftsmanship in the creation of the famous Ohrid pearl. Founded by the Talevi family, the brand preserves a craft passed down through generations, producing handmade pearls that embody the beauty of Lake Ohrid and the artistry of the old masters.\n\nEach Talevi pearl is the result of precision, knowledge, and passion – crafted with a unique technique that gives it an unmistakable shine and lasting quality. Today, Talevi – Ohrid Pearl is a recognized brand not only in Macedonia but also abroad, serving as an ambassador of Ohrid's culture and tradition.\n\nCombining traditional values with contemporary design, Talevi continues to create jewelry that tells a story – a story of Ohrid, of heritage, and of timeless beauty.",
+    "type": "jewelry",
+    "tags": [
+      "jewelry",
+      "traditional",
+      "handmade",
+      "pearls",
+      "craftsmanship",
+      "authentic",
+      "cultural heritage",
+      "shopping"
+    ],
+    "imageUrl": "images_venue/biser/talevi_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/talevi/photo1.jpg",
+        "alt": "A horizontal, interior photo of a jewelry shop. On the left, a tall, multi-level shelf with red accents displays numerous necklaces, earrings, and other jewelry, mostly featuring white and red beads or stones. The center of the room is dominated by an L-shaped counter with glass display cases showing more jewelry, including rings and bracelets with colorful stones and beads. The walls on the right are covered with a collection of framed items, including what appears to be a large map of a region, various small framed photographs, certificates, and religious or historical iconography. The lighting is bright and overhead."
+      }
+    ],
+    "rating": 4.7,
+    "priceLevel": 2,
+    "location": {
+      "address": "Talevi - Ohrid Pearls, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Talevi+-+Ohrid+Pearls/@41.11404494561418,20.717397467915543,13z/data=!4m6!3m5!1s0x1350dca38b8cb497:0x742d9bceb2d3e15c!8m2!3d41.11404494561418!4d20.717397467915543!16s%2Fg%2F11b6dqj8xt",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114851.88137054771!2d20.717397467915543!3d41.11404494561418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca38b8cb497%3A0x742d9bceb2d3e15c!2sTalevi%20-%20Ohrid%20Pearls!5e1!3m2!1sen!2smk!4v1760955427973!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070 261 216",
+    "workingHours": "Mon-Fri: 10:00-22:00<br>Sat: 08:30-21:00<br>Sunday: Closed",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 131,
+    "name": "Filevi - Ohrid Pearls 1",
+    "description": "Filevi – Ohrid Pearl is a distinguished family-brand rooted in the heart of Ohrid, North Macedonia, with an unbroken legacy of fine craftsmanship dating back to 1928.\n\nThe Filevi family stands among the only two lineages in Ohrid entrusted with the closely-guarded secret technique of producing the renowned Ohrid pearl — a tradition passed down through four generations.\n\nEach piece crafted by Filevi begins with the finest mother-of-pearl, carefully shaped and then coated with a unique emulsion derived from the scales of the endemic bleak fish of Lake Ohrid.\n\nGuided by an ethos of authenticity, refined design and lasting elegance, Filevi offers handcrafted jewelry that reflects both the heritage of the region and contemporary taste. Their collections are aimed at individuals who value distinction, legacy and timeless beauty.\n\nToday, Filevi – Ohrid Pearl is more than a jewelry maker — it is an ambassador of Macedonian culture, a guardian of craft heritage, and a creator of collectible pieces that carry both story and shine.",
+    "type": "jewelry",
+    "tags": [
+      "jewelry",
+      "traditional",
+      "handmade",
+      "pearls",
+      "craftsmanship",
+      "authentic",
+      "cultural heritage",
+      "shopping",
+      "family legacy",
+      "since 1928"
+    ],
+    "imageUrl": "images_venue/biser/filevi_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/filevi/photo1.jpg",
+        "alt": "A slightly vintage-filtered, vertical exterior view of the entrance to a jewelry shop called \"Dimitrija & Marija FILEVI\" in Ohrid. The shop is housed in a building with a rough-hewn stone facade and a low, stone step leading up to the entrance. The doorway has a large, arched glass transom above the door and an adjacent display window. The text on the arch reads: \"Dimitrija & Marija FILEVI SINCE 1928 ORIGINAL OHRID PEARLS FILEVI\" with a circular logo in the center. The display window on the right showcases several Ohrid Pearl necklaces on red velvet busts. The open glass door on the left offers a view into the brightly lit interior, which features another arched doorway in the background leading to an outdoor or brightly lit area. The shop's name, \"FILEVI,\" is also mounted vertically in red letters on the stone wall to the right of the entrance. A dark metal lantern hangs above the door."
+      }
+    ],
+    "rating": 4.5,
+    "priceLevel": 2,
+    "location": {
+      "address": "Ohrid Pearls Filevi, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Ohrid+Pearls+Filevi+-+Ohridski+Biseri+Filevi/@41.112391545845384,20.715306067827974,13z/data=!4m6!3m5!1s0x1350dca4e7b3ea61:0xf77f40932941cc23!8m2!3d41.112391545845384!4d20.715306067827974!16s%2Fg%2F11b6dpq7zm",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114854.77401214106!2d20.715306067827974!3d41.112391545845384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4e7b3ea61%3A0xf77f40932941cc23!2sOhrid%20Pearls%20Filevi%20-%20Ohridski%20Biseri%20Filevi!5e1!3m2!1sen!2smk!4v1760956425973!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070 200 442",
+    "workingHours": "Mon-Sat: 09:30-22:30<br>Sunday: Closed",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 132,
+    "name": "Filevi - Ohrid Pearls 2",
+    "description": "Filevi – Ohrid Pearl is a distinguished family-brand rooted in the heart of Ohrid, North Macedonia, with an unbroken legacy of fine craftsmanship dating back to 1928.\n\nThe Filevi family stands among the only two lineages in Ohrid entrusted with the closely-guarded secret technique of producing the renowned Ohrid pearl — a tradition passed down through four generations.\n\nEach piece crafted by Filevi begins with the finest mother-of-pearl, carefully shaped and then coated with a unique emulsion derived from the scales of the endemic bleak fish of Lake Ohrid.\n\nGuided by an ethos of authenticity, refined design and lasting elegance, Filevi offers handcrafted jewelry that reflects both the heritage of the region and contemporary taste. Their collections are aimed at individuals who value distinction, legacy and timeless beauty.\n\nToday, Filevi – Ohrid Pearl is more than a jewelry maker — it is an ambassador of Macedonian culture, a guardian of craft heritage, and a creator of collectible pieces that carry both story and shine.",
+    "type": "jewelry",
+    "tags": [
+      "jewelry",
+      "traditional",
+      "handmade",
+      "pearls",
+      "craftsmanship",
+      "authentic",
+      "cultural heritage",
+      "shopping",
+      "family legacy",
+      "since 1928"
+    ],
+    "imageUrl": "images_venue/biser/filevi_card.jpg",
+    "gallery": [],
+    "rating": 4.1,
+    "priceLevel": 2,
+    "location": {
+      "address": "Filevi - Original Ohrid's pearls, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Filevi+-+Original+Ohrid's+pearls/@41.11251434582821,20.715611967834487,13z/data=!4m6!3m5!1s0x1350dca4f1d78389:0x873bf35a8f22c1bd!8m2!3d41.11251434582821!4d20.715611967834487!16s%2Fg%2F11c5m7km_p",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114854.55917547038!2d20.715611967834487!3d41.11251434582821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4f1d78389%3A0x873bf35a8f22c1bd!2sFilevi%20-%20Original%20Ohrid&#39;s%20pearls!5e1!3m2!1sen!2smk!4v1760956667490!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "046 250 999",
+    "workingHours": "Mon-Sat: 09:30-21:00<br>Sunday: Closed",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 133,
+    "name": "Filevi - Ohrid Pearls St. Sophia",
+    "description": "Filevi – Ohrid Pearl is a distinguished family-brand rooted in the heart of Ohrid, North Macedonia, with an unbroken legacy of fine craftsmanship dating back to 1928.\n\nThe Filevi family stands among the only two lineages in Ohrid entrusted with the closely-guarded secret technique of producing the renowned Ohrid pearl — a tradition passed down through four generations.\n\nEach piece crafted by Filevi begins with the finest mother-of-pearl, carefully shaped and then coated with a unique emulsion derived from the scales of the endemic bleak fish of Lake Ohrid.\n\nGuided by an ethos of authenticity, refined design and lasting elegance, Filevi offers handcrafted jewelry that reflects both the heritage of the region and contemporary taste. Their collections are aimed at individuals who value distinction, legacy and timeless beauty.\n\nToday, Filevi – Ohrid Pearl is more than a jewelry maker — it is an ambassador of Macedonian culture, a guardian of craft heritage, and a creator of collectible pieces that carry both story and shine.",
+    "type": "jewelry",
+    "tags": [
+      "jewelry",
+      "traditional",
+      "handmade",
+      "pearls",
+      "craftsmanship",
+      "authentic",
+      "cultural heritage",
+      "shopping",
+      "family legacy",
+      "since 1928"
+    ],
+    "imageUrl": "images_venue/biser/filevi_card.jpg",
+    "gallery": [],
+    "rating": 4.1,
+    "priceLevel": 2,
+    "location": {
+      "address": "Original Ohrid Pearls Filevi - St. Sophia, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Original+Ohrid+Pearls+Filevi+-+St.+Sophia/@41.112504045829645,20.71172326783394,13z/data=!4m6!3m5!1s0x1350dd0037ea8919:0x8972a79df16b6871!8m2!3d41.112504045829645!4d20.71172326783394!16s%2Fg%2F11j2fxvc8r",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114854.57719517883!2d20.71172326783394!3d41.112504045829645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd0037ea8919%3A0x8972a79df16b6871!2sOriginal%20Ohrid%20Pearls%20Filevi%20-%20St.%20Sophia!5e1!3m2!1sen!2smk!4v1760957135895!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "/",
+    "workingHours": "Mon-Fri: 08:00-19:00<br>Saturday: Closed",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 134,
+    "name": "IT Cafe",
+    "description": "Located on Macedonian Educators Boulevard No. 1, IT Cafe is one of the most popular modern cafés in Ohrid, combining stylish design, a cozy atmosphere, and excellent service. Whether you're a local or a visitor exploring the city, this spot is perfect for enjoying premium coffee, refreshing drinks, or a relaxing evening with friends.\n\nIT Cafe Ohrid offers a warm and vibrant ambiance ideal for morning coffee breaks, business meetings, or casual social gatherings. The café features high-quality espresso, cocktails, and desserts — all served with a touch of urban elegance that reflects the city's modern spirit.\n\nWith its central location, free Wi-Fi, and friendly staff, IT Cafe has become a favorite destination among both locals and tourists seeking the best coffee and bar experience in Ohrid. From early mornings to late evenings, it's the perfect place to unwind, meet friends, or simply enjoy the rhythm of the city.\n\nIf you're searching for a stylish café in Ohrid where modern design meets authentic hospitality, IT Cafe should be at the top of your list.",
+    "type": ["coffee", "club"],
+    "tags": [
+      "coffee",
+      "cafe",
+      "club",
+      "bar",
+      "modern",
+      "stylish",
+      "cocktails",
+      "wifi",
+      "central location",
+      "desserts"
+    ],
+    "imageUrl": "images_venue/it_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/it/photo1.jpg",
+        "alt": "A nighttime, exterior wide shot of a modern cafe/restaurant building. The structure is primarily dark gray with a distinctive geometric black and white patterned border along the top and is surrounded by large, full-height glass windows. A circular, backlit sign on the corner displays the cafe's logo and the word \"cafe\". Small potted plants line the sidewalk in front of the windows."
+      },
+      {
+        "url": "venue_gallery/it/photo2.jpg",
+        "alt": "An interior shot of a stylish cafe seating area. The room features a long, olive-green upholstered bench seating along the walls, with small square tables. Seating consists of a mix of mustard-yellow and dark gray velvet chairs. The walls are decorated with a pattern of black and white rectangular photos of cityscapes and a modern, geometric wall design with mirrors and a decorative metal trellis. The lighting is warm from ceiling spotlights and wall lamps."
+      },
+      {
+        "url": "venue_gallery/it/photo3.jpg",
+        "alt": "A close-up shot of a large chicken burger and a wire basket of golden french fries on a table. The burger, featuring a crispy, breaded chicken fillet, lettuce, and a creamy yellow sauce, is held together by a small knife stuck through the bun. The background shows the bright, modern interior of a restaurant with a white brick wall and a potted green plant."
+      },
+      {
+        "url": "venue_gallery/it/photo4.jpg",
+        "alt": "A shallow depth-of-field close-up of a plate containing a cut-in-half wrap served with a side of potato wedges and a small cup of ketchup. The wrap is filled with breaded chicken, lettuce, tomato, and corn, showing a golden-brown crust on the tortilla. The background is blurred, showing a dark table and decorative yellow and green plants."
+      }
+    ],
+    "rating": 4.3,
+    "priceLevel": 2,
+    "location": {
+      "address": "IT Café, Macedonian Educators Boulevard No. 1, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/IT+Caf%C3%A9/@41.1147570272146,20.75927742868816,13z/data=!4m6!3m5!1s0x1350dd2e544dc297:0xc5991a4bbb1f5a3e!8m2!3d41.1147570272146!4d20.75927742868816!16s%2Fg%2F11j8wq_kw9",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57425.31777313476!2d20.75927742868816!3d41.1147570272146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd2e544dc297%3A0xc5991a4bbb1f5a3e!2zSVQgQ2Fmw6k!5e1!3m2!1sen!2smk!4v1760959402101!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070 240 056",
+    "workingHours": "08:00 - 00:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 135,
+    "name": "Chillout Shisha&Bar",
+    "description": "Chillout Shisha & Bar offers a modern and relaxed lounge atmosphere where hookah, cocktails and social vibes come together. With warm reviews highlighting its \"best hookah in town\" and an attentive, friendly staff, this venue has become a go-to choice for locals and visitors alike looking for an elevated nightlife experience in Ohrid.\n\nAt Chillout Shisha & Bar guests can expect:\n\nA wide selection of premium hookah flavours and expert preparation, making it one of the top rated shisha bars in Ohrid.\n\nStylish interior design and comfortable seating that invite you to stay, unwind and socialise — perfect for an evening with friends or a casual drink after dinner.\n\nA full bar offering cocktails, coffee and other beverages, complementing the hookah experience and catering to diverse tastes.\n\nA central location in Ohrid, making it easily accessible from major parts of the city — ideal for tourists exploring the town's nightlife or locals seeking a quality lounge.\n\nIf you're searching for a hookah lounge in Ohrid, a place to enjoy quality shisha with great service in a pleasant setting, Chillout Shisha & Bar is definitely worth a visit. Book a table, try their signature flavours, and enjoy a memorable evening in the heart of Ohrid's social scene.",
+    "type": ["coffee", "shisha"],
+    "tags": [
+      "coffee",
+      "shisha",
+      "hookah",
+      "lounge",
+      "bar",
+      "cocktails",
+      "nightlife",
+      "modern",
+      "social",
+      "central location"
+    ],
+    "imageUrl": "images_venue/shisha/chillout_card.jpg",
+    "gallery": [],
+    "rating": 4.9,
+    "priceLevel": 2,
+    "location": {
+      "address": "Chillout Shisha&Bar, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Chillout+Shisha%26Bar/@41.118656806556245,20.801197821034293,13z/data=!4m6!3m5!1s0x1350dbee9651845d:0x73ae0f7b242a50c0!8m2!3d41.118656806556245!4d20.801197821034293!16s%2Fg%2F11j8xq_2mn",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14355.476545279118!2d20.801197821034293!3d41.118656806556245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbee9651845d%3A0x73ae0f7b242a50c0!2sChillout%20Shisha%26Bar!5e1!3m2!1sen!2smk!4v1760961238536!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "078 599 041",
+    "workingHours": "Mon-Fri: 08:00-00:00<br>Sat-Sun: 08:00-01:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 136,
+    "name": "Bate Bole",
+    "description": "Nestled in the scenic village of Lešani near Ohrid, Bate Bole Restaurant & Accommodation offers guests a unique combination of traditional Macedonian cuisine and comfortable overnight lodging. This establishment is ideal for travelers seeking genuine local flavor, peaceful surroundings and a relaxed rural stay just minutes from Lake Ohrid.\n\nAt Bate Bole, guests can savour a rich menu featuring well-crafted traditional dishes alongside fresh seafood options, all prepared in a warm and inviting ethnic setting.\n\nAfter a delicious meal, visitors can continue their experience with an overnight stay in one of their cozy bungalows or private rooms, surrounded by pine and oak forest and away from the bustle of the city.\n\nWhether you're planning a romantic dinner, a family outing or a restful tourist break, Bate Bole combines exceptional dining with lodging convenience.",
+    "type": "restaurant",
+    "tags": [
+      "restaurant",
+      "traditional",
+      "macedonian cuisine",
+      "seafood",
+      "accommodation",
+      "rural",
+      "family-friendly",
+      "romantic",
+      "nature",
+      "bungalows"
+    ],
+    "imageUrl": "images_venue/bbole_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/bole/photo1.jpg",
+        "alt": "An outdoor dining scene at sunset overlooking a swimming pool. In the foreground, a bottle of \"MUSKAT TEMJANIKA\" white wine and two glasses of wine are set next to a large platter of fried fish or meat fillets garnished with lemon slices and topped with a colorful vegetable mix. The background features a bright blue swimming pool surrounded by a decorative stone patio, lounge chairs, and sun umbrellas, with a forested hillside in the distance."
+      },
+      {
+        "url": "venue_gallery/bole/photo2.jpg",
+        "alt": "A vertical photo of a rustic, covered outdoor dining area at night. The ceiling is made of exposed dark wooden beams and planks, lit by small hanging lightbulbs. The floor is made of large pavers. A table in the foreground is set with a white tablecloth and a red-and-white checkered runner. To the left, a small wood-burning stove provides warmth. The background shows an indoor service area with drinks refrigerators and a bar."
+      },
+      {
+        "url": "venue_gallery/bole/photo3.jpg",
+        "alt": "A nighttime, exterior shot of a large, modern event space or restaurant with extensive glass walls. The building's interior is brightly illuminated by hundreds of warm white fairy lights, creating a magical, festive glow that is highly visible through the floor-to-ceiling windows. The building sits on a low, yellow stone foundation, and a gravel driveway is in the foreground."
+      },
+      {
+        "url": "venue_gallery/bole/photo4.jpg",
+        "alt": "A dark, snowy night view of three illuminated A-frame cabins standing in a field covered with snow. The triangular frames of the cabins are outlined in bright white LED light strips, highlighting the tall, rustic wooden structures and the large central windows. The overall scene conveys a cozy, remote, and wintery atmosphere."
+      }
+    ],
+    "rating": 4.5,
+    "priceLevel": 1,
+    "location": {
+      "address": "Resort Bate Bole, Lešani, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Resort+Bate+Bole/@41.21278457228509,20.72047993382772,13z/data=!4m6!3m5!1s0x1351270034a9e777:0xeb8332e62c8dfa94!8m2!3d41.21278457228509!4d20.72047993382772!16s%2Fg%2F11j2_bxq3p",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114678.96195908554!2d20.72047993382772!3d41.21278457228509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1351270034a9e777%3A0xeb8332e62c8dfa94!2sResort%20Bate%20Bole!5e1!3m2!1sen!2smk!4v1760963838999!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "070 377 159",
+    "workingHours": "08:00 - 00:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 137,
+    "name": "Dedo Dimo",
+    "description": "Nestled in the scenic village of Kuratica near Ohrid, Ethno Restaurant \"Dedo Dimo\" is a distinctive destination offering traditional Macedonian cuisine and genuine rural ambiance. Opened in 2017, this venue reflects the revival of village-tourism and the local spirit of the Macedonian countryside.\n\nAt Dedo Dimo, guests are welcomed into a warm family-run setting where the décor evokes historic village life, and the menu is abundant with homemade specialties—from classic Macedonian dishes to regional lake-and-mountain inspired fare.\n\nThe restaurant's name honours \"Dedo Dimo\", a legendary village forebear whose story has been woven into the local folklore for generations.\n\nLocated just a short drive from Ohrid city centre, the restaurant sits amid verdant surroundings of Kuratica, making it not only a place to eat but a destination to experience Macedonia's rural culture. Visitors often combine their meal with nature-based excursions such as donkey rides, off-road Jeep adventures, hiking, or simply enjoying the fresh mountain air.",
+    "type": "restaurant",
+    "tags": [
+      "restaurant",
+      "traditional",
+      "ethno",
+      "macedonian cuisine",
+      "rural",
+      "family-run",
+      "homemade",
+      "village tourism",
+      "nature",
+      "cultural experience"
+    ],
+    "imageUrl": "images_venue/dimo_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/dimo/photo1.jpg",
+        "alt": "An interior view of a rustic, covered dining balcony with a panoramic view of a village and green hillsides. The space features an exposed wooden beam structure and a light wood floor. Dining tables are set with red and white checkered tablecloths and dark wooden chairs. Large windows look out onto a lush, green landscape with village houses featuring red-tiled roofs."
+      },
+      {
+        "url": "venue_gallery/dimo/photo2.jpg",
+        "alt": "A long, horizontal exterior view of the lower level facade of an \"Ethno Restaurant DEDO ДИМО\". The base of the building is constructed from rough-hewn stone, topped by a strip of framed windows. The windowsills are lined with planters overflowing with vibrant red geraniums. Red-and-white banners with the restaurant's name in Cyrillic are visible above the windows."
+      },
+      {
+        "url": "venue_gallery/dimo/photo3.jpg",
+        "alt": "A full exterior view of the Ethno Restaurant DEDO ДИМО. The lower level is built from stone and rustic brick, featuring arched wooden windows. The upper level is a large, covered terrace or balcony constructed with an exposed wooden truss structure and a light-colored canvas roof, with the name \"ДЕДО ДИМО\" prominently displayed on the railing. The restaurant is situated on a slope with outdoor stone steps visible to the left."
+      },
+      {
+        "url": "venue_gallery/dimo/photo4.jpg",
+        "alt": "A vertical interior shot showing the rustic dining decor of the restaurant. The walls are made of rough, textured stone masonry with dark grout. Two windows are framed with dark wood and covered by heavy, red velvet curtains tied back. Wooden tables are set with red and white checkered runners, and wooden bench seating is visible, with candles and small floral arrangements serving as centerpieces. The restaurant's name is carved into the backs of the benches."
+      },
+      {
+        "url": "venue_gallery/dimo/photo5.jpg",
+        "alt": "A close-up shot of a cozy wooden booth seating area inside a restaurant, with a large window opened out to a scenic view of a village nestled in a green hillside. The table is set for four, featuring a red table runner and four dark plates. The wooden benches are carved with text in a Cyrillic script."
+      }
+    ],
+    "rating": 4.7,
+    "priceLevel": 1,
+    "location": {
+      "address": "Ethno restaurant Dedo Dimo, Kuratica, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/Ethno+restaurant+Dedo+Dimo/@41.2434906,20.737132297265624,13z/data=!4m6!3m5!1s0x135127f0f4ca31dd:0x162ff4afaf99e38a!8m2!3d41.2434906!4d20.737132297265624!16s%2Fg%2F11h3j8qp2m",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114625.11806831624!2d20.737132297265624!3d41.2434906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135127f0f4ca31dd%3A0x162ff4afaf99e38a!2sEthno%20restaurant%20Dedo%20Dimo!5e1!3m2!1sen!2smk!4v1760965437624!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "0755 687 775",
+    "workingHours": "Mon-Thu: 12:00-23:00<br>Fri-Sat: 12:00-00:00<br>Sun: 12:00-23:00",
     "bookingUrl": "#",
     "events": []
   }

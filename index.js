@@ -33,7 +33,7 @@ const mainCategoryConfig = {
     },
     'Food & Drink': {
         icon: '🍔',
-        subcategories: ['restaurant', 'coffee', 'pub', 'fast-food', 'to-go'],
+        subcategories: ['restaurant', 'coffee', 'pub', 'fast-food', 'to-go', 'shisha'],
     },
     'Rural Tourism': {
         icon: '🌾',
@@ -70,6 +70,10 @@ const mainCategoryConfig = {
     'Shopping': {
         icon: '🛍️',
         subcategories: ['souvenir', 'boutique'],
+    },
+    'Jewelry': {
+        icon: '💎',
+        subcategories: ['jewelry'],
     },
     'Market': {
         icon: '🛒',
@@ -833,6 +837,7 @@ const VENUE_CATEGORY_ICONS = {
     'towing-services': '🚗',
     'beauty': '💄',
     'education': '📚',
+    'jewelry': '💎',
     'general': '📍'
 };
 
@@ -868,8 +873,148 @@ function getVenueCategoryIcon(venueType) {
     if (type.includes('rent')) return VENUE_CATEGORY_ICONS.transport;
     if (type.includes('beauty') || type.includes('spa')) return VENUE_CATEGORY_ICONS.beauty;
     if (type.includes('education') || type.includes('school')) return VENUE_CATEGORY_ICONS.education;
+    if (type.includes('jewelry') || type.includes('jewel') || type.includes('jeweler')) return VENUE_CATEGORY_ICONS.jewelry;
     
     return VENUE_CATEGORY_ICONS[type] || VENUE_CATEGORY_ICONS.general;
+}
+
+// --- OPEN/CLOSED STATUS FUNCTIONS ---
+function isVenueOpen(workingHours) {
+    if (!workingHours) return { isOpen: false, status: 'Unknown' };
+    
+    const now = new Date();
+    const currentDay = now.getDay(); // 0 = Sunday, 1 = Monday, etc.
+    const currentTime = now.getHours() * 60 + now.getMinutes(); // Current time in minutes
+    
+    // Handle 24/7 venues
+    if (workingHours.includes('24') || workingHours.includes('24/7')) {
+        return { isOpen: true, status: 'Open 24/7', closesAt: null };
+    }
+    
+    // Remove HTML tags
+    const cleanHours = workingHours.replace(/<br>/g, '|').replace(/<[^>]*>/g, '');
+    
+    // Parse different formats
+    const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const currentDayName = dayNames[currentDay];
+    
+    // Check for schedule by day (e.g., "Mon-Fri: 08:00-20:00")
+    if (cleanHours.includes('Mon') || cleanHours.includes('Tue') || cleanHours.includes('Daily')) {
+        const schedules = cleanHours.split('|');
+        
+        for (let schedule of schedules) {
+            schedule = schedule.trim();
+            
+            if (schedule.toLowerCase().includes('closed') && 
+                (schedule.includes(currentDayName) || schedule.includes('Sun') && currentDay === 0)) {
+                return { isOpen: false, status: 'Closed', closesAt: null };
+            }
+            
+            if (schedule.toLowerCase().includes('daily')) {
+                const hours = extractHours(schedule);
+                if (hours) {
+                    return checkIfOpenNow(hours, currentTime);
+                }
+            }
+            
+            // Check if current day matches this schedule
+            if (matchesDay(schedule, currentDay)) {
+                const hours = extractHours(schedule);
+                if (hours) {
+                    return checkIfOpenNow(hours, currentTime);
+                }
+            }
+        }
+    } else {
+        // Simple format (e.g., "08:00 - 22:00")
+        const hours = extractHours(cleanHours);
+        if (hours) {
+            return checkIfOpenNow(hours, currentTime);
+        }
+    }
+    
+    return { isOpen: false, status: 'Closed', closesAt: null };
+}
+
+function matchesDay(schedule, currentDay) {
+    const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const currentDayName = dayNames[currentDay];
+    
+    // Check if it's a day range (e.g., "Mon-Fri")
+    const dayRangeMatch = schedule.match(/([A-Za-z]{3})-([A-Za-z]{3})/);
+    if (dayRangeMatch) {
+        const startDay = dayNames.indexOf(dayRangeMatch[1]);
+        const endDay = dayNames.indexOf(dayRangeMatch[2]);
+        
+        if (startDay <= endDay) {
+            return currentDay >= startDay && currentDay <= endDay;
+        } else {
+            // Wraps around week (e.g., Sat-Mon)
+            return currentDay >= startDay || currentDay <= endDay;
+        }
+    }
+    
+    // Check if schedule contains current day
+    return schedule.includes(currentDayName);
+}
+
+function extractHours(text) {
+    // Match time formats: 08:00, 8:00, 08.00, etc.
+    const timePattern = /(\d{1,2})[:.](\d{2})\s*[-–]\s*(\d{1,2})[:.](\d{2})/;
+    const match = text.match(timePattern);
+    
+    if (match) {
+        const openHour = parseInt(match[1]);
+        const openMin = parseInt(match[2]);
+        const closeHour = parseInt(match[3]);
+        const closeMin = parseInt(match[4]);
+        
+        return {
+            open: openHour * 60 + openMin,
+            close: closeHour * 60 + closeMin
+        };
+    }
+    
+    return null;
+}
+
+function checkIfOpenNow(hours, currentTime) {
+    const { open, close } = hours;
+    
+    // Handle closing after midnight
+    if (close < open) {
+        // e.g., 22:00 - 02:00 (closes at 2 AM next day)
+        if (currentTime >= open || currentTime < close) {
+            const closingTime = formatTime(Math.floor(close / 60), close % 60);
+            return { 
+                isOpen: true, 
+                status: 'Open', 
+                closesAt: closingTime 
+            };
+        }
+    } else {
+        // Normal hours (e.g., 09:00 - 22:00)
+        if (currentTime >= open && currentTime < close) {
+            const closingTime = formatTime(Math.floor(close / 60), close % 60);
+            return { 
+                isOpen: true, 
+                status: 'Open', 
+                closesAt: closingTime 
+            };
+        }
+    }
+    
+    // Calculate when it opens next
+    const openingTime = formatTime(Math.floor(open / 60), open % 60);
+    return { 
+        isOpen: false, 
+        status: 'Closed', 
+        opensAt: openingTime 
+    };
+}
+
+function formatTime(hours, minutes) {
+    return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
 }
 
 // --- RENDERING FUNCTIONS ---
@@ -892,6 +1037,22 @@ function renderVenueCard(venue) {
     const categoryIcon = getVenueCategoryIcon(venueType);
     const imageUrl = venue.imageUrl || 'https://via.placeholder.com/400x220/f8fafc/94a3b8?text=No+Image';
     const isRecommended = venue.tags?.includes('Recommended');
+
+    // --- Open/Closed Status Logic ---
+    const openStatus = isVenueOpen(venue.workingHours);
+    const statusClass = openStatus.isOpen ? 'status-open' : 'status-closed';
+    const statusText = openStatus.status === 'Open 24/7' ? 'Open 24/7' : 
+                      openStatus.isOpen ? 'Open' : 'Closed';
+    
+    let statusBadge = '';
+    if (venue.workingHours && openStatus.status !== 'Unknown') {
+        const timeInfo = openStatus.isOpen && openStatus.closesAt ? 
+                        ` • Closes ${openStatus.closesAt}` : 
+                        !openStatus.isOpen && openStatus.opensAt ? 
+                        ` • Opens ${openStatus.opensAt}` : '';
+        
+        statusBadge = `<span class="venue-status-badge ${statusClass}" title="${venue.workingHours}">${statusText}</span>`;
+    }
 
     // --- Dynamic Rating Logic ---
     const ratings = venueRatings[venue.id] || [];
@@ -1013,6 +1174,7 @@ function renderVenueCard(venue) {
                          onerror="handleImageError(this)">
                     <div class="venue-image-overlay">
                         <span class="venue-type-badge">${categoryString}</span>
+                        ${statusBadge}
                         ${isRecommended ? '<span class="recommended-badge">★ Recommended</span>' : ''}
                     </div>
                 </div>
