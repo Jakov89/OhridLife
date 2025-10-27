@@ -333,6 +333,7 @@ async function initializeApp() {
     initializeHeroSlider();
     populateRecommendations();
     populateVenueFilters();
+    initializeVenueSearch();
     filterAndDisplayVenues();
     fetchWeather();
     initializeHistoricalFacts();
@@ -1768,6 +1769,205 @@ function populateVenueFilters() {
     }
 }
 
+// --- VENUE SEARCH FUNCTIONALITY ---
+function initializeVenueSearch() {
+    const searchInput = document.getElementById('venue-search-input');
+    const clearSearchBtn = document.getElementById('clear-search-btn');
+    const searchDropdown = document.getElementById('venue-search-dropdown');
+    
+    if (!searchInput) {
+        console.error('Search input not found');
+        return;
+    }
+    
+    let searchTimeout;
+    
+    // Handle search input with debouncing
+    searchInput.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.trim();
+        
+        // Show/hide clear button
+        if (searchTerm) {
+            clearSearchBtn?.classList.remove('hidden');
+        } else {
+            clearSearchBtn?.classList.add('hidden');
+            hideSearchDropdown();
+        }
+        
+        // Debounce search to avoid too many updates
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+            if (searchTerm) {
+                updateSearchDropdown(searchTerm);
+            } else {
+                hideSearchDropdown();
+            }
+            filterAndDisplayVenues();
+        }, 300);
+    });
+    
+    // Handle clear button click
+    if (clearSearchBtn) {
+        clearSearchBtn.addEventListener('click', () => {
+            searchInput.value = '';
+            clearSearchBtn.classList.add('hidden');
+            hideSearchDropdown();
+            filterAndDisplayVenues();
+            searchInput.focus();
+        });
+    }
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!searchInput.contains(e.target) && !searchDropdown?.contains(e.target)) {
+            hideSearchDropdown();
+        }
+    });
+    
+    // Prevent dropdown from closing when clicking inside search wrapper
+    searchInput.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const searchTerm = searchInput.value.trim();
+        if (searchTerm) {
+            updateSearchDropdown(searchTerm);
+        }
+    });
+    
+    console.log('Venue search initialized');
+}
+
+function getVenueSearchTerm() {
+    const searchInput = document.getElementById('venue-search-input');
+    return searchInput ? searchInput.value.trim().toLowerCase() : '';
+}
+
+function searchVenues(searchTerm) {
+    if (!searchTerm) return [];
+    
+    const term = searchTerm.toLowerCase();
+    
+    return venuesData.filter(venue => {
+        // Search in venue name
+        const venueName = (venue.name?.en || venue.name || '').toLowerCase();
+        if (venueName.includes(term)) return true;
+        
+        // Search in venue description
+        const venueDescription = (venue.description?.en || venue.description || '').toLowerCase();
+        if (venueDescription.includes(term)) return true;
+        
+        // Search in venue tags
+        if (venue.tags && Array.isArray(venue.tags)) {
+            if (venue.tags.some(tag => tag.toLowerCase().includes(term))) return true;
+        }
+        
+        // Search in venue type
+        const venueType = venue.type?.en || venue.type;
+        if (venueType) {
+            const types = Array.isArray(venueType) ? venueType : [venueType];
+            if (types.some(t => t.toLowerCase().includes(term))) return true;
+        }
+        
+        return false;
+    });
+}
+
+function highlightSearchTerm(text, searchTerm) {
+    if (!searchTerm || !text) return text;
+    
+    const regex = new RegExp(`(${searchTerm})`, 'gi');
+    return text.replace(regex, '<span class="highlight">$1</span>');
+}
+
+function updateSearchDropdown(searchTerm) {
+    const dropdown = document.getElementById('venue-search-dropdown');
+    if (!dropdown) return;
+    
+    const matchingVenues = searchVenues(searchTerm);
+    const maxResults = 8; // Limit to 8 results
+    const displayVenues = matchingVenues.slice(0, maxResults);
+    
+    if (displayVenues.length === 0) {
+        dropdown.innerHTML = `
+            <div class="search-dropdown-empty">
+                <div class="search-dropdown-empty-icon">🔍</div>
+                <div class="search-dropdown-empty-text">No venues found matching "${searchTerm}"</div>
+            </div>
+        `;
+        showSearchDropdown();
+        return;
+    }
+    
+    const headerHTML = `
+        <div class="search-dropdown-header">
+            <span>Search Results</span>
+            <span class="search-dropdown-count">${matchingVenues.length} venue${matchingVenues.length !== 1 ? 's' : ''}</span>
+        </div>
+    `;
+    
+    const itemsHTML = displayVenues.map(venue => {
+        const name = venue.name?.en || venue.name || 'Unnamed Venue';
+        const venueType = venue.type?.en || venue.type;
+        const types = Array.isArray(venueType) ? venueType : [venueType];
+        const primaryType = types[0] || 'venue';
+        const icon = getVenueCategoryIcon(types);
+        const location = venue.location?.address || 'Ohrid';
+        
+        // Highlight the search term in the name
+        const highlightedName = highlightSearchTerm(name, searchTerm);
+        
+        return `
+            <div class="search-dropdown-item" data-venue-id="${venue.id}">
+                <div class="search-item-icon">${icon}</div>
+                <div class="search-item-content">
+                    <div class="search-item-name">${highlightedName}</div>
+                    <div class="search-item-meta">
+                        <span class="search-item-type">${primaryType}</span>
+                        <span class="search-item-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            ${location}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join('');
+    
+    dropdown.innerHTML = headerHTML + itemsHTML;
+    
+    // Add click handlers to dropdown items
+    dropdown.querySelectorAll('.search-dropdown-item').forEach(item => {
+        item.addEventListener('click', (e) => {
+            const venueId = item.dataset.venueId;
+            hideSearchDropdown();
+            openVenueModal(venueId);
+        });
+    });
+    
+    showSearchDropdown();
+}
+
+function showSearchDropdown() {
+    const dropdown = document.getElementById('venue-search-dropdown');
+    if (dropdown) {
+        dropdown.classList.add('show');
+    }
+}
+
+function hideSearchDropdown() {
+    const dropdown = document.getElementById('venue-search-dropdown');
+    if (dropdown) {
+        dropdown.classList.remove('show');
+    }
+}
+
+function updateSearchResultsCount(count, searchTerm) {
+    // This function is now handled by the dropdown header
+    // Keeping it for compatibility but not displaying separately
+}
+
 function initVenueCategoryDropdown() {
     const dropdownTrigger = document.querySelector('#venue-category-trigger');
     const dropdownMenu = document.querySelector('#venue-category-dropdown');
@@ -2264,6 +2464,9 @@ function filterAndDisplayVenues() {
 
 function performVenueFiltering(activeMainCategory, activeSubCategory) {
     let filteredVenues;
+    
+    // Get search term
+    const searchTerm = getVenueSearchTerm();
 
     if (activeMainCategory === 'Popular') {
         // Special logic for 'Popular' category
@@ -2307,6 +2510,33 @@ function performVenueFiltering(activeMainCategory, activeSubCategory) {
                 return types.includes(activeSubCategory);
             });
         }
+    }
+    
+    // Apply search filter if search term exists
+    if (searchTerm) {
+        filteredVenues = filteredVenues.filter(venue => {
+            // Search in venue name
+            const venueName = (venue.name?.en || venue.name || '').toLowerCase();
+            if (venueName.includes(searchTerm)) return true;
+            
+            // Search in venue description
+            const venueDescription = (venue.description?.en || venue.description || '').toLowerCase();
+            if (venueDescription.includes(searchTerm)) return true;
+            
+            // Search in venue tags
+            if (venue.tags && Array.isArray(venue.tags)) {
+                if (venue.tags.some(tag => tag.toLowerCase().includes(searchTerm))) return true;
+            }
+            
+            // Search in venue type
+            const venueType = venue.type?.en || venue.type;
+            if (venueType) {
+                const types = Array.isArray(venueType) ? venueType : [venueType];
+                if (types.some(t => t.toLowerCase().includes(searchTerm))) return true;
+            }
+            
+            return false;
+        });
     }
     
     // Server-side shuffling is now handled in the API, so we respect the order
