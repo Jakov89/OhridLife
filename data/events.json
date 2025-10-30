@@ -304,8 +304,8 @@
   {
     "id": "22",
     "venueId": null,
-    "eventName": "The Hounds",
-    "isoDate": "2025-10-18",
+    "eventName": "Natasha Malinkova",
+    "isoDate": "2025-11-01",
     "startTime": "22:00",
     "day": "Sat.",
     "description": "",
@@ -927,13 +927,13 @@
   {
     "id": "62",
     "venueId": 5,
-    "eventName": "DJ Millo",
-    "isoDate": "2025-10-25",
+    "eventName": "DJ Jakov",
+    "isoDate": "2025-10-31",
     "startTime": "23:55",
-    "day": "Sat.",
+    "day": "Fri.",
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/omnia/25.10.png",
+    "imageUrl": "events_image/omnia/31.10.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
     "ticketPrice": "Free entry",
@@ -1445,8 +1445,8 @@
   {
     "id": "225",
     "venueId": null,
-    "eventName": "2 Be Band",
-    "isoDate": "2025-10-24",
+    "eventName": "Grupa Saraj",
+    "isoDate": "2025-10-31",
     "startTime": "22:00",
     "day": "Fri.",
     "description": "",
@@ -2068,5 +2068,20 @@
     "ticketPrice": "Free Entry",
     "locationName": "Art Cafe",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.32791410226878!2d20.79739507863001!3d41.11175249090309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca51fea07b1%3A0xe10ff4253d9071e5!2sTerrazza%20Aquarius!5e1!3m2!1sen!2smk!4v1761749556907!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "261",
+    "eventName": "Hallowen Druzhenje Za Najmalite",
+    "isoDate": "2025-10-30",
+    "startTime": "19:00",
+    "day": "Thu.",
+    "description": "",
+    "category": "Event",
+    "imageUrl": "events_image/random/30.10.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+    "locationName": "Ohrid Mall",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1508.8149696759574!2d20.81077125047218!3d41.123816588292456!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db005d48cf5f%3A0x7478a3e01fe26cbd!2sOhrid%20Mall!5e1!3m2!1sen!2smk!4v1758701478477!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   }
 ]
