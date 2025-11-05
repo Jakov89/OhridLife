@@ -7,6 +7,7 @@ let venueRatings = {}; // Holds all user-submitted ratings
 let historicalFacts = [];
 let churchesData = [];
 let currentFactIndex = 0;
+let selectedCity = 'Ohrid'; // Default city selection
 
 // Image optimization helper function
 function getOptimizedImageUrl(imageUrl, width = 400, quality = 75) {
@@ -97,6 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeLayoutControls();
     // Initialize image fitting for existing images
     setTimeout(() => initializeImageFitting(), 500);
+    // Initialize city selector
+    setTimeout(() => initializeCitySelector(), 100);
 });
 
 // --- SKELETON LOADING FUNCTIONS ---
@@ -1686,6 +1689,46 @@ function populateRecommendations() {
     document.querySelector('#recommendations-arrow-right')?.addEventListener('click', () => sliders.recommendations?.next());
 }
 
+// --- CITY SELECTOR INITIALIZATION ---
+function initializeCitySelector() {
+    const cityButtons = document.querySelectorAll('.city-select-btn');
+    
+    if (!cityButtons || cityButtons.length === 0) {
+        console.warn('City selector buttons not found');
+        return;
+    }
+
+    console.log('Initializing city selector with', cityButtons.length, 'buttons');
+
+    cityButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Update active state - remove from all buttons
+            cityButtons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Add active state to clicked button
+            button.classList.add('active');
+            
+            // Update selected city
+            selectedCity = button.dataset.city;
+            
+            console.log('✅ City selected:', selectedCity);
+            
+            // Add a subtle animation feedback
+            button.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                button.style.transform = '';
+            }, 150);
+            
+            // Re-filter venues based on new city
+            filterAndDisplayVenues();
+        });
+    });
+    
+    console.log('✅ City selector initialized. Default city:', selectedCity);
+}
+
 function populateVenueFilters() {
     const mainCategoriesContainer = document.querySelector('.main-categories');
     const dropdownMenu = document.querySelector('#venue-category-dropdown');
@@ -2468,9 +2511,16 @@ function performVenueFiltering(activeMainCategory, activeSubCategory) {
     // Get search term
     const searchTerm = getVenueSearchTerm();
 
+    // FIRST: Filter by selected city
+    let cityFilteredVenues = venuesData.filter(venue => {
+        // If venue has no city field, default to Ohrid for backward compatibility
+        const venueCity = venue.city || 'Ohrid';
+        return venueCity === selectedCity;
+    });
+
     if (activeMainCategory === 'Popular') {
         // Special logic for 'Popular' category
-        filteredVenues = venuesData.filter(v => v.tags?.includes('popular'));
+        filteredVenues = cityFilteredVenues.filter(v => v.tags?.includes('popular'));
 
         // Calculate average rating for each venue
         filteredVenues.forEach(venue => {
@@ -2485,14 +2535,14 @@ function performVenueFiltering(activeMainCategory, activeSubCategory) {
     } else {
         // Original logic for all other categories
         if (activeMainCategory === 'All') {
-            filteredVenues = venuesData;
+            filteredVenues = cityFilteredVenues;
         } else {
             let subTypes = [];
             if (mainCategoryConfig[activeMainCategory]) {
                 subTypes = mainCategoryConfig[activeMainCategory].subcategories;
             }
     
-            filteredVenues = venuesData.filter(venue => {
+            filteredVenues = cityFilteredVenues.filter(venue => {
                 const venueType = venue.type?.en || venue.type;
                 if (!venueType) return false;
                 

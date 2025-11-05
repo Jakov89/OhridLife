@@ -3,11 +3,7 @@
     "id": 121,
     "name": "Sky Corner",
     "description": "Sky Corner is an authentic Indian restaurant in Ohrid, offering a rich and flavorful dining experience inspired by the diverse culinary traditions of India. Our menu features a wide variety of traditional Indian dishes made with aromatic spices and fresh ingredients, prepared by skilled chefs. Whether you're a fan of mild curries or bold, spicy flavors, our kitchen delivers something for every taste. With a warm and inviting atmosphere, Sky Corner is the perfect place to enjoy a memorable meal with friends, family, or fellow food lovers.",
-    "type": [
-      "restaurant",
-      "coffee",
-      "club"
-    ],
+    "type": ["restaurant", "coffee", "club"],
     "tags": [
       "restaurant",
       "indian",
@@ -52,8 +48,7 @@
     "phone": "+389 71 331 607",
     "workingHours": "08:00 - 00:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 103,
@@ -82,7 +77,7 @@
         "alt": "A cozy corner inside Amfora Restaurant, framed by lush green plants in the foreground. The table is neatly arranged for guests, surrounded by plush seating under warm ambient lighting and a ceiling with decorative fixtures."
       }
     ],
-    "rating": 4,
+    "rating": 4.0,
     "priceLevel": 2,
     "location": {
       "address": "Amfora Restaurant, Ohrid",
@@ -92,8 +87,7 @@
     "phone": "070605206",
     "workingHours": "11:00 - 23:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 85,
@@ -143,15 +137,14 @@
     "phone": "075 998 000",
     "workingHours": "08:00 - 00:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 24,
     "name": "Bros Burger",
     "description": "When that burger craving hits in Ohrid, Bros Burger is your go-to for a no-fuss, seriously satisfying experience. It's not about white tablecloths it's about the pure joy of a well-made burger. Imagine biting into a juicy patty, perfectly cooked, with all the right fixings, and that unmistakable aroma of a classic burger joint. It's the kind of place where you can grab a quick, delicious meal that truly hits the spot, leaving you feeling happy and fueled up for more adventures in beautiful Ohrid.",
     "type": [
-      "fast-food"
+      "fast-food"      
     ],
     "imageUrl": "images_venue/fast_food/bros_card.jpg",
     "gallery": [
@@ -177,8 +170,7 @@
     "phone": "075661664",
     "workingHours": "12:00 - 22:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 83,
@@ -222,8 +214,7 @@
     "phone": "071 255 872",
     "workingHours": "08:00 - 00:00 (Mon - Fri)<br>08:00 - 01:00 (Sat - Sun)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 10,
@@ -260,8 +251,7 @@
     "phone": "074244159",
     "workingHours": "Mon-Sun: 09:00-00:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 84,
@@ -305,8 +295,7 @@
     "phone": "046 260 359",
     "workingHours": "09:00 - 00:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 79,
@@ -345,8 +334,7 @@
     "phone": "072543400",
     "workingHours": "09:00 - 00:00 (Sun - Fri)<br>09:00 - 01:00 (Sat)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 25,
@@ -369,8 +357,7 @@
     "phone": "078313114",
     "workingHours": "09:00 - 02:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 26,
@@ -407,8 +394,7 @@
     "phone": "071888844",
     "workingHours": "Mon-Sat: 08:00-20:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 80,
@@ -434,8 +420,7 @@
     "phone": "075 440 654",
     "workingHours": "10:00 - 00:30",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 27,
@@ -472,8 +457,7 @@
     "phone": "070328637",
     "workingHours": "Mon-Sat: 10:00-22:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 14,
@@ -509,8 +493,7 @@
     "phone": "046260406",
     "workingHours": "Mon-Sun: 08:00-00:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 78,
@@ -549,8 +532,7 @@
     "phone": "076 621 843",
     "workingHours": "10:00 - 21:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 12,
@@ -587,8 +569,7 @@
     "phone": "071 725 760",
     "workingHours": "Daily: 10:00-01:00 (Summer Hours: 10:00-02:00)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 15,
@@ -626,8 +607,7 @@
     "phone": "046 230 450",
     "workingHours": "Daily: 10:00-01:00 (Summer Hours: 10:00-02:00)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 23,
@@ -654,8 +634,7 @@
     "phone": "078 247 786",
     "workingHours": "09:00-00:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 1,
@@ -695,85 +674,80 @@
     "phone": "070 293 888",
     "workingHours": "Mon-Sun: 08:00-00:00 (Summer Hours: 08:00-02:00)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 120,
     "name": "Most Bar",
     "description": "Oh, Most Bar in Ohrid! It's that wonderful spot you dream about when you need to hit pause. Tucked away right by the water's edge, you can practically dip your toes in the lake while sipping your drink. It's truly a serene escape, a place where the only rush is the gentle lapping of the waves, inviting you to simply relax and let the peaceful beauty of Ohrid wash over you.",
-    "type": [
-      "coffee",
-      "to-go"
-    ],
+    "type": ["coffee","to-go"],
     "tags": [
       "coffee",
       "lakeside",
       "relaxing",
       "peaceful"
     ],
-    "imageUrl": "images_venue/most_card.jpg",
-    "gallery": [
-      {
-        "url": "venue_gallery/most/photo1.jpg",
-        "alt": "A sunny day at our charming lakeside spot, where you can relax outdoors and enjoy the good life by the water."
-      }
-    ],
-    "rating": 4.8,
-    "priceLevel": 2,
-    "location": {
-      "address": "Most Bar, Ohrid",
-      "googleMapsUrl": "#",
-      "mapIframe": ""
-    },
-    "phone": "",
-    "workingHours": "09:00 - 00:00",
-    "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
-  },
-  {
-    "id": 102,
-    "name": "Gibli Café",
-    "description": "<b>GIBLI CAFÉ – AN OASIS OF FLAVOR AND SERENITY AMIDST THE GREENERY</b>\n\nLocated in the very heart of the golf course, Gibli Café is more than just a coffee bar – it is a true retreat for lovers of great coffee, peaceful atmosphere and natural beauty.\n\nWith a seating capacity of 50 guests for everyday enjoyment, as well as the possibility for larger gatherings of up to 150 people, the café offers the perfect ambiance for relaxation and socializing.\n\nTogether with the clubhouse at the Ohrid golf course, Gibli Café is an excellent choice for team-building activities, corporate events, and other celebrations, providing a unique opportunity to combine sports with business or private events in a distinctive setting.\n\nWe offer a carefully selected range of drinks and cocktails, perfectly complementing the taste and atmosphere of every moment. Our signature coffee, the unique Shakerato – cold, elegant, and unforgettable – is already a recognized symbol of the place.\n\nGibli Café is the perfect blend of urban elegance and natural tranquility, surrounded by impeccably maintained green areas, with panoramic views from all sides overlooking the course.\n\nIn this eco-conscious space, far from the city noise and hustle, every cup of coffee tastes like relaxation, and every cocktail tells its own story. Perfect for morning relaxation, afternoon chats, or evening events, Gibli Café is where nature and great taste meet.\n\nFree parking is available.",
-    "type": "coffee",
-    "tags": [
-      "coffee",
-      "cocktails",
-      "events",
-      "corporate",
-      "peaceful",
-      "golf",
-      "nature"
-    ],
-    "imageUrl": "images_venue/gibli_card.png",
-    "gallery": [
-      {
-        "url": "venue_gallery/gibli/photo1.jpg",
-        "alt": "A view of a golf practice area from a covered patio. White outdoor furniture with grey cushions is arranged on the stone patio. In the green grass beyond the patio, there are three golf bags on carts positioned next to green hitting mats and nets. A flag is visible on the left side, and a large tree is on the right."
+          "imageUrl": "images_venue/most_card.jpg",
+      "gallery": [
+        {
+          "url": "venue_gallery/most/photo1.jpg",
+          "alt": "A sunny day at our charming lakeside spot, where you can relax outdoors and enjoy the good life by the water."
+        }
+      ],
+      "rating": 4.8,
+      "priceLevel": 2,
+      "location": {
+        "address": "Most Bar, Ohrid",
+        "googleMapsUrl": "#",
+        "mapIframe": ""
       },
-      {
-        "url": "venue_gallery/gibli/photo2.jpg",
-        "alt": "A close-up of a table on a covered patio overlooking a golf course. A laptop is open on the left, displaying a webpage titled 'THE RULES OF GOLF.' On the right, a glass of an orange beverage with ice and a citrus slice sits on a black napkin. The background shows more outdoor furniture and a lush green golf course."
-      },
-      {
-        "url": "venue_gallery/gibli/photo3.JPG",
-        "alt": "A hand holds a stemmed glass with a dark, frothy drink, likely an espresso martini or similar coffee-based cocktail. The setting is an outdoor patio with a view of a green golf course in the background. A white pillar adorned with a garland of pink flowers is to the right, and green leaves from a tree are visible at the top."
-      }
-    ],
-    "rating": 4.8,
-    "priceLevel": 2,
-    "location": {
-      "address": "Gibli Café - Golf Club Ohrid CZG, Ohrid",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Golf+Club+Ohrid+CZG,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125.0247910415706!2d20.810714645585144!3d41.12931091394364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbc80dfe6305%3A0xb1df663440036641!2sGolf%20Club%20Ohrid%20CZG!5e0!3m2!1sen!2smk!4v1752488628955!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "phone": "",
+      "workingHours": "09:00 - 00:00",
+      "bookingUrl": "#",
+      "events": []
     },
-    "phone": "+389 75 391 445",
-    "workingHours": "08:00 - 22:00 (Daily)",
-    "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
-  },
+    {
+      "id": 102,
+      "name": "Gibli Café",
+      "description": "<b>GIBLI CAFÉ – AN OASIS OF FLAVOR AND SERENITY AMIDST THE GREENERY</b>\n\nLocated in the very heart of the golf course, Gibli Café is more than just a coffee bar – it is a true retreat for lovers of great coffee, peaceful atmosphere and natural beauty.\n\nWith a seating capacity of 50 guests for everyday enjoyment, as well as the possibility for larger gatherings of up to 150 people, the café offers the perfect ambiance for relaxation and socializing.\n\nTogether with the clubhouse at the Ohrid golf course, Gibli Café is an excellent choice for team-building activities, corporate events, and other celebrations, providing a unique opportunity to combine sports with business or private events in a distinctive setting.\n\nWe offer a carefully selected range of drinks and cocktails, perfectly complementing the taste and atmosphere of every moment. Our signature coffee, the unique Shakerato – cold, elegant, and unforgettable – is already a recognized symbol of the place.\n\nGibli Café is the perfect blend of urban elegance and natural tranquility, surrounded by impeccably maintained green areas, with panoramic views from all sides overlooking the course.\n\nIn this eco-conscious space, far from the city noise and hustle, every cup of coffee tastes like relaxation, and every cocktail tells its own story. Perfect for morning relaxation, afternoon chats, or evening events, Gibli Café is where nature and great taste meet.\n\nFree parking is available.",
+      "type": "coffee",
+      "tags": [
+        "coffee",
+        "cocktails",
+        "events",
+        "corporate",
+        "peaceful",
+        "golf",
+        "nature"
+      ],
+      "imageUrl": "images_venue/gibli_card.png",
+      "gallery": [
+        {
+          "url": "venue_gallery/gibli/photo1.jpg",
+          "alt": "A view of a golf practice area from a covered patio. White outdoor furniture with grey cushions is arranged on the stone patio. In the green grass beyond the patio, there are three golf bags on carts positioned next to green hitting mats and nets. A flag is visible on the left side, and a large tree is on the right."
+        },
+        {
+          "url": "venue_gallery/gibli/photo2.jpg",
+          "alt": "A close-up of a table on a covered patio overlooking a golf course. A laptop is open on the left, displaying a webpage titled 'THE RULES OF GOLF.' On the right, a glass of an orange beverage with ice and a citrus slice sits on a black napkin. The background shows more outdoor furniture and a lush green golf course."
+        },
+        {
+          "url": "venue_gallery/gibli/photo3.JPG",
+          "alt": "A hand holds a stemmed glass with a dark, frothy drink, likely an espresso martini or similar coffee-based cocktail. The setting is an outdoor patio with a view of a green golf course in the background. A white pillar adorned with a garland of pink flowers is to the right, and green leaves from a tree are visible at the top."
+        }
+       
+      ],
+      "rating": 4.8,
+      "priceLevel": 2,
+      "location": {
+        "address": "Gibli Café - Golf Club Ohrid CZG, Ohrid",
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Golf+Club+Ohrid+CZG,Ohrid",
+        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125.0247910415706!2d20.810714645585144!3d41.12931091394364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbc80dfe6305%3A0xb1df663440036641!2sGolf%20Club%20Ohrid%20CZG!5e0!3m2!1sen!2smk!4v1752488628955!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      },
+      "phone": "+389 75 391 445",
+      "workingHours": "08:00 - 22:00 (Daily)",
+      "bookingUrl": "#",
+      "events": []
+    },
   {
     "id": 18,
     "name": "Octava",
@@ -809,8 +783,7 @@
     "phone": "070388888",
     "workingHours": "Mon-Sun: 08:00-00:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 22,
@@ -847,8 +820,7 @@
     "phone": "075864984",
     "workingHours": "08:00 - 00:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 17,
@@ -886,8 +858,7 @@
     "phone": "046258684",
     "workingHours": "Mon-Sun: 18:00-01:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 6,
@@ -920,8 +891,7 @@
     "phone": "072 238 888",
     "workingHours": "Working Hours: 22:00 - 04:00 (Fri-Sat)<br>Summer working hours 22:00 - 04:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 82,
@@ -966,8 +936,7 @@
     "phone": "070 416 868",
     "workingHours": "08:00 - 00:00 (Sun - Thu)<br>08:00 - 01:00 (Fri - Sat)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 13,
@@ -1004,8 +973,7 @@
     "phone": "046 200 040",
     "workingHours": "Daily: 08:00-01:00 (Summer Hours: 08:00-02:00)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 76,
@@ -1044,8 +1012,7 @@
     "phone": "071 232 808",
     "workingHours": "23:30 - 05:00 (When there is an Event)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 4,
@@ -1074,8 +1041,7 @@
     "phone": "076 625 083",
     "workingHours": "Daily: 08:00-00:00 (Summer Hours: 08:00-01:00)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 2,
@@ -1112,8 +1078,7 @@
     "phone": "078 201 491",
     "workingHours": "Daily: 10:00-01:00 (Summer Hours: 10:00-02:00)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 75,
@@ -1137,8 +1102,7 @@
     "phone": "070 262 652",
     "workingHours": "09:00 - 01:00 (Mon - Tue)<br>09:00 - 02:00 (Fri - Sat)<br>09:00 - 01:00 (Sun)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 21,
@@ -1174,8 +1138,7 @@
     "phone": "046262002",
     "workingHours": "09:00 - 00:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 3,
@@ -1214,8 +1177,7 @@
     "phone": "+389 70 878 984",
     "workingHours": "Daily: 09:00-00:00 (Summer Hours: 09:00-02:00)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 5,
@@ -1244,8 +1206,7 @@
     "phone": "078586699",
     "workingHours": "Working Hours: 22:00-05:00 (Fri-Sat)<br>Summer working hours 22:00-05:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 67,
@@ -1286,8 +1247,7 @@
     "phone": "077961611",
     "workingHours": "09:00 - 01:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 7,
@@ -1328,8 +1288,7 @@
     "phone": "078858499",
     "workingHours": "Working Hours: 00:00-05:00 (Sat)<br>Summer Hours: 00:00-05:00 (Mon-Sun)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 81,
@@ -1373,8 +1332,7 @@
     "phone": "078 262 361",
     "workingHours": "08:00 - 01:00 (Sun - Thu)<br>08:00 - 02:00 (Fri - Sat)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 16,
@@ -1411,13 +1369,7 @@
     "phone": "046 250 250",
     "workingHours": "08:00 - 00:00",
     "bookingUrl": "#",
-    "events": [
-      274,
-      275,
-      276,
-      277
-    ],
-    "city": "Ohrid"
+    "events": [274, 275, 276, 277]
   },
   {
     "id": 34,
@@ -1460,8 +1412,7 @@
     "phone": "070771193",
     "workingHours": "Mon-Sun: 09:00-20:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 30,
@@ -1498,8 +1449,7 @@
     "phone": "071359810",
     "workingHours": "Mon-Sun: 09:00-18:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 29,
@@ -1536,8 +1486,7 @@
     "phone": "077882882",
     "workingHours": "Mon-Sun: 09:00-19:30",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 28,
@@ -1574,8 +1523,7 @@
     "phone": "078278797",
     "workingHours": "Mon-Sun: 08:00-20:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 31,
@@ -1612,8 +1560,7 @@
     "phone": "075450585",
     "workingHours": "Mon-Sat: 07:30-22:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 38,
@@ -1650,8 +1597,7 @@
     "phone": "076601501",
     "workingHours": "Mon-Sat: 06:30-22:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 37,
@@ -1688,8 +1634,7 @@
     "phone": "070533497",
     "workingHours": "Mon-Sat: 09:00-22:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 36,
@@ -1726,8 +1671,7 @@
     "phone": "",
     "workingHours": "Mon-Sat: 08:00-22:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 33,
@@ -1760,8 +1704,7 @@
     "phone": "078665667",
     "workingHours": "Mon-Sat: 08:00-02:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 35,
@@ -1812,8 +1755,7 @@
     "phone": "046283011",
     "workingHours": "Open 24/7 during summer season",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 32,
@@ -1850,8 +1792,7 @@
     "phone": "078609698",
     "workingHours": "Tue-Sun: 10:00-18:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 45,
@@ -1878,8 +1819,7 @@
     "phone": "194",
     "workingHours": "00:00 - 24:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 48,
@@ -1906,8 +1846,7 @@
     "phone": "046 277 700",
     "workingHours": "00:00-24:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 61,
@@ -1934,8 +1873,7 @@
     "phone": "078232262",
     "workingHours": "Mon, Wed, Thu: 10:00-17:00<br>Tue, Fri: 13:00-20:00<br>Sat: 09:00-14:00<br>Sun: Closed",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 60,
@@ -1962,8 +1900,7 @@
     "phone": "046230079",
     "workingHours": "Mon-Fri: 08:00-20:00<br>Sat: 08:00-15:00<br>Sun: Closed",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 64,
@@ -1989,8 +1926,7 @@
     "phone": "070328483",
     "workingHours": "Mon, Wed, Fri: 09:00-17:00<br>Tue, Thu: 11:00-19:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 66,
@@ -2017,8 +1953,7 @@
     "phone": "075298358",
     "workingHours": "Mon - Fri: 08:00 - 16:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 44,
@@ -2045,8 +1980,7 @@
     "phone": "",
     "workingHours": "00:00 - 24:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 63,
@@ -2073,8 +2007,7 @@
     "phone": "075792470",
     "workingHours": "Mon, Wed, Fri: 08:00-16:00<br>Tue, Thu: 08:00-13:30, 17:30-20:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 46,
@@ -2101,8 +2034,7 @@
     "phone": "046268269",
     "workingHours": "Mon-Fri: 07:00-20:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 49,
@@ -2128,8 +2060,7 @@
     "phone": "071260060",
     "workingHours": "07:30-22:30",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 51,
@@ -2155,8 +2086,7 @@
     "phone": "046255070",
     "workingHours": "Mon-Sat: 08:00-21:00<br>Sun: Closed",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 52,
@@ -2182,8 +2112,7 @@
     "phone": "046250533",
     "workingHours": "Mon-Sat: 08:00-21:00<br>Sun: Closed",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 65,
@@ -2210,8 +2139,7 @@
     "phone": "046251700",
     "workingHours": "Mon-Fri: 08:00-20:00<br>Sat: 09:00-13:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 47,
@@ -2239,8 +2167,7 @@
     "phone": "046272700",
     "workingHours": "Mon-Fri: 08:00-15:30<br>Sat: 08:00-20:00<br>Sun: 00:00-24:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 62,
@@ -2266,8 +2193,7 @@
     "phone": "046264455",
     "workingHours": "Mon-Fri: 08:30-20:00<br>Sat: 09:00-13:00<br>Sun: Closed",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 56,
@@ -2293,8 +2219,7 @@
     "phone": "",
     "workingHours": "Mon-Sat: 08:00-22:00<br>Sun: Closed",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 59,
@@ -2320,8 +2245,7 @@
     "phone": "070358673",
     "workingHours": "08:00 - 21:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 54,
@@ -2347,8 +2271,7 @@
     "phone": "046230078",
     "workingHours": "Mon-Sat: 08:30-21:30<br>Sun: Closed",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 53,
@@ -2374,8 +2297,7 @@
     "phone": "046200366",
     "workingHours": "Mon-Fri: 07:00-22:00<br>Sat: 08:00-22:00<br>Sun: 08:00-21:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 58,
@@ -2401,8 +2323,7 @@
     "phone": "046230220",
     "workingHours": "Mon-Fri: 07:00-22:00<br>Sat-Sun: 08:00-21:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 57,
@@ -2428,8 +2349,7 @@
     "phone": "046253907",
     "workingHours": "Mon-Sat: 08:00-22:00<br>Sun: 09:00-17:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 50,
@@ -2455,8 +2375,7 @@
     "phone": "046261430",
     "workingHours": "Mon-Fri: 07:00-22:00<br>Sat: 08:00-22:00<br>Sun: 08:00-21:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 55,
@@ -2482,8 +2401,7 @@
     "phone": "046203311",
     "workingHours": "08:00 - 21:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 40,
@@ -2511,8 +2429,7 @@
     "phone": "070232915",
     "workingHours": "08:00-13:00<br>16:00 - 19:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 73,
@@ -2540,8 +2457,7 @@
     "phone": "071 285 997",
     "workingHours": "11:00 - 18:00 (Mon - Fri)<br>10:00 - 15:00 (Sat)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 39,
@@ -2572,8 +2488,7 @@
     "phone": "072609019",
     "workingHours": "00:00 - 24:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 72,
@@ -2600,8 +2515,7 @@
     "phone": "078 249 689",
     "workingHours": "09:00 - 12:00,  17:00 - 21:00 (Mon - Sat)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 42,
@@ -2627,8 +2541,7 @@
     "phone": "078 453 969",
     "workingHours": "Mon-Fri: 07:00-22:00<br>Sat: 09:00-22:00<br>Sun: 10:00-20:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 70,
@@ -2655,8 +2568,7 @@
     "phone": "076 350 215",
     "workingHours": "08:00 - 16:00 (Mon - Fri)<br>08:00 - 13:00 (Sat)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 41,
@@ -2682,8 +2594,7 @@
     "phone": "078 252 651",
     "workingHours": "08:00 - 21:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 43,
@@ -2709,8 +2620,7 @@
     "phone": "078384988",
     "workingHours": "00:00 - 24:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 71,
@@ -2738,8 +2648,7 @@
     "phone": "075 261 879",
     "workingHours": "08:30 - 13:30, 18:00 - 20:00 (Mon - Fri)<br>08:00 - 12:00 (Sat)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 74,
@@ -2766,8 +2675,7 @@
     "phone": "070720552",
     "workingHours": "Mon - Sat 08:00 - 20:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 69,
@@ -2795,8 +2703,7 @@
     "phone": "070 575 881",
     "workingHours": "08:00 - 20:00 (Mon - Thu)<br>08:00 - 19:00 (Fri,Sat)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 77,
@@ -2835,8 +2742,7 @@
     "phone": "075 420 401",
     "workingHours": "10:00 - 00:00 (Mon - Thu), 10:00 - 01:00 (Fri - Sat)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 8,
@@ -2879,8 +2785,7 @@
     "phone": "075357545",
     "workingHours": "Mon-Thu: 09:00-01:00<br>Fri-Sat: 09:00-02:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 11,
@@ -2923,8 +2828,7 @@
     "phone": "070 495 592",
     "workingHours": "Daily: 08:00-01:00 (Summer Hours: 08:00-02:00)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 9,
@@ -2966,8 +2870,7 @@
     "phone": "071348701",
     "workingHours": "Mon-Thu: 09:00-00:00<br>Fri-Sat: 09:00-01:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 20,
@@ -3008,8 +2911,7 @@
     "phone": "076 201 042",
     "workingHours": "Mon-Sun: 09:00-00:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 68,
@@ -3051,8 +2953,7 @@
     "phone": "078339377",
     "workingHours": "08:00 - 19:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 106,
@@ -3101,8 +3002,7 @@
     "phone": "070 361 002",
     "workingHours": "09:00 - 01:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 86,
@@ -3141,8 +3041,7 @@
     "phone": "072 516 620",
     "workingHours": "00:00 - 24:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 87,
@@ -3191,7 +3090,7 @@
         "alt": "A paraglider's view looking down over the vibrant turquoise waters of Lake Ohrid, with the densely packed red-roofed buildings of Ohrid town nestled along the curved coastline"
       }
     ],
-    "rating": 5,
+    "rating": 5.0,
     "priceLevel": 2,
     "location": {
       "address": "Paragliding Ohrid, Ohrid",
@@ -3201,8 +3100,7 @@
     "phone": "+38975281091",
     "workingHours": "06:00 - 22:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 88,
@@ -3243,8 +3141,7 @@
     "phone": "075 808 545",
     "workingHours": "00:00 - 24:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 89,
@@ -3295,8 +3192,7 @@
     "phone": "077 763 516",
     "workingHours": "10:00 - 22:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 90,
@@ -3345,8 +3241,7 @@
     "phone": "075 255 599, 073 308 308",
     "workingHours": "09:00 - 01:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 91,
@@ -3377,8 +3272,7 @@
     "phone": "075 641 256, 077 621 917",
     "workingHours": "10:00 - 19:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 92,
@@ -3426,8 +3320,7 @@
     "phone": "072 307 305",
     "workingHours": "08:00 - 00:00 (Sun - Thur)<br>08:00 - 01:00 (Fri - Sat)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 93,
@@ -3478,8 +3371,7 @@
     "phone": "070 304 103",
     "workingHours": "08:00 - 00:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 94,
@@ -3531,8 +3423,7 @@
     "phone": "046 273 888",
     "workingHours": "09:00 - 00:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 95,
@@ -3589,8 +3480,7 @@
     "phone": "070 776 837",
     "workingHours": "09:00 - 22:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 96,
@@ -3636,8 +3526,7 @@
     "phone": "070 249 237",
     "workingHours": "15:00 - 19:00 (Mon - Fri)<br>09:00 - 19:00 (Sat - Sun)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 97,
@@ -3685,8 +3574,7 @@
     "phone": "076 400 040",
     "workingHours": "19:00 - 00:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 118,
@@ -3733,8 +3621,7 @@
     "phone": "075 326 867",
     "workingHours": "08:00 - 23:30",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 99,
@@ -3783,8 +3670,7 @@
     "phone": "076 750 970",
     "workingHours": "08:00 - 21:00 (Mon - Sat)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 100,
@@ -3823,8 +3709,7 @@
     "phone": "075 636 222",
     "workingHours": "10:00 - 18:00 (Sun - Thu)<br>10:00 - 22:00 (Fri - Sat)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 101,
@@ -3869,8 +3754,7 @@
     "phone": "070 589 218",
     "workingHours": "10:30 - 19:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 200,
@@ -3902,8 +3786,7 @@
     "phone": "",
     "workingHours": "09:00 - 17:00 (Mon - Fri)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 104,
@@ -3957,7 +3840,7 @@
         "alt": "A close-up, low-angle shot of a bowl of french fries generously topped with a large amount of grated cheese and black pepper. The background is out of focus, showing a patterned fabric surface."
       }
     ],
-    "rating": 5,
+    "rating": 5.0,
     "priceLevel": 3,
     "location": {
       "address": "Plate Bistro, Ohrid",
@@ -3967,8 +3850,7 @@
     "phone": "074 221 889",
     "workingHours": "08:00 - 22:00 (Mon)<br>Tuesday Closed<br>08:00 - 22:00 (Wed - Fri)<br>10:00 - 23:00 (Sun - Sat)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 105,
@@ -4015,7 +3897,7 @@
         "alt": "A close-up side view of a row of gaming stations with red and black gaming chairs. The monitors display the ENTiTY logo. The desktop PCs at the first two stations are black with glowing blue fans and components. The stations have mechanical keyboards and large mousepads, and the room is lit with a combination of blue and red ambient light."
       }
     ],
-    "rating": 5,
+    "rating": 5.0,
     "priceLevel": 2,
     "location": {
       "address": "eSports ENTiTY, Ohrid",
@@ -4025,8 +3907,7 @@
     "phone": "070 328 068",
     "workingHours": "12:00 - 04:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 107,
@@ -4071,8 +3952,7 @@
     "phone": "075 248 963",
     "workingHours": "09:00 - 01:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 108,
@@ -4102,8 +3982,7 @@
     "phone": "078 381 802",
     "workingHours": "11:00 - 03:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 109,
@@ -4147,8 +4026,7 @@
     "phone": "078 472 482",
     "workingHours": "09:00 - 22:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 110,
@@ -4193,8 +4071,7 @@
     "phone": "078 472 482",
     "workingHours": "00:00 - 24:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 111,
@@ -4238,8 +4115,7 @@
     "phone": "078 278 501",
     "workingHours": "08:00 - 00:00 (Mon - Thu)<br>08:00 - 01:00 (Fri - Sat)",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 112,
@@ -4276,8 +4152,7 @@
     "phone": "078 232 770",
     "workingHours": "18:00 - 00:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 113,
@@ -4324,8 +4199,7 @@
     "phone": "078 350 955",
     "workingHours": "08:30 - 00:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 114,
@@ -4378,8 +4252,7 @@
     "phone": "071 463 322",
     "workingHours": "08:00 - 22:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 115,
@@ -4417,7 +4290,7 @@
         "alt": "A high-angle close-up of a cocktail in a textured glass filled with crushed ice and a garnish of star-shaped fruit slices, likely pineapple. A black bent straw is in the glass. The drink is on a wooden surface with a carved wooden sign that reads \"LOVE\". In the background, there is a black lantern with a decorative cutout pattern and a dark wall."
       }
     ],
-    "rating": 5,
+    "rating": 5.0,
     "priceLevel": 2,
     "location": {
       "address": "Kult Café, Ohrid",
@@ -4427,8 +4300,7 @@
     "phone": "075 285 228",
     "workingHours": "08:00 - 24:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 116,
@@ -4475,7 +4347,7 @@
         "alt": "Overview of the cultural center's multifunctional space"
       }
     ],
-    "rating": 5,
+    "rating": 5.0,
     "priceLevel": 2,
     "location": {
       "address": "Kult Café, Ohrid",
@@ -4485,8 +4357,7 @@
     "phone": "075 285 228",
     "workingHours": "08:00 - 24:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 117,
@@ -4522,7 +4393,7 @@
         "alt": "A person's hand is shown lifting a large, round, metal lid covered in sand and ash. The lid is being removed from a pan sitting on a stand over a fire, revealing a pastry that is in the process of being cooked. The background consists of a wall made of stacked wood logs."
       }
     ],
-    "rating": 5,
+    "rating": 5.0,
     "priceLevel": 2,
     "location": {
       "address": "Pirustija Nedanoski, Ramne, Ohrid",
@@ -4532,8 +4403,7 @@
     "phone": "075 741 466",
     "workingHours": "Tue-Thu: 14:00-16:00, 17:00-20:00<br>Fri: 09:00-11:00<br>Sat: 10:00-11:00, 17:00-20:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 119,
@@ -4575,8 +4445,7 @@
     "phone": "/",
     "workingHours": "Workshop schedules announced on Instagram",
     "bookingUrl": "https://www.instagram.com/paintandwineohrid/",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 122,
@@ -4603,8 +4472,7 @@
     "phone": "+389 46 267 191",
     "workingHours": "Mon-Sat: 07:30-22:00<br>Sunday: Closed",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 123,
@@ -4632,8 +4500,7 @@
     "phone": "+389 71 206 603",
     "workingHours": "Mon-Sat: 08:00-21:45<br>Sunday: 08:00-21:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 124,
@@ -4661,8 +4528,7 @@
     "phone": "078 308 429",
     "workingHours": "Mon-Sat: 07:30-22:00<br>Sunday: Closed",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 125,
@@ -4690,8 +4556,7 @@
     "phone": "+389 78 351 289",
     "workingHours": "Daily: 08:00-22:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 126,
@@ -4719,8 +4584,7 @@
     "phone": "+389 78 351 289",
     "workingHours": "Mon-Sat: 07:00-22:00<br>Sunday: Closed",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 127,
@@ -4748,8 +4612,7 @@
     "phone": "075 207 398",
     "workingHours": "Mon-Sat: 08:00-22:00<br>Sunday: Closed",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 128,
@@ -4777,8 +4640,7 @@
     "phone": "075 235 319",
     "workingHours": "Mon-Sat: 08:00-22:00<br>Sunday: Closed",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 129,
@@ -4806,8 +4668,7 @@
     "phone": "076 293 505",
     "workingHours": "Mon-Sat: 08:00-22:00<br>Sunday: 09:00-17:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 130,
@@ -4841,8 +4702,7 @@
     "phone": "070 261 216",
     "workingHours": "Mon-Fri: 10:00-22:00<br>Sat: 08:30-21:00<br>Sunday: Closed",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 131,
@@ -4878,8 +4738,7 @@
     "phone": "070 200 442",
     "workingHours": "Mon-Sat: 09:30-22:30<br>Sunday: Closed",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 132,
@@ -4910,8 +4769,7 @@
     "phone": "046 250 999",
     "workingHours": "Mon-Sat: 09:30-21:00<br>Sunday: Closed",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 133,
@@ -4942,17 +4800,13 @@
     "phone": "/",
     "workingHours": "Mon-Fri: 08:00-19:00<br>Saturday: Closed",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 134,
     "name": "IT Cafe",
     "description": "Located on Macedonian Educators Boulevard No. 1, IT Cafe is one of the most popular modern cafés in Ohrid, combining stylish design, a cozy atmosphere, and excellent service. Whether you're a local or a visitor exploring the city, this spot is perfect for enjoying premium coffee, refreshing drinks, or a relaxing evening with friends.\n\nIT Cafe Ohrid offers a warm and vibrant ambiance ideal for morning coffee breaks, business meetings, or casual social gatherings. The café features high-quality espresso, cocktails, and desserts — all served with a touch of urban elegance that reflects the city's modern spirit.\n\nWith its central location, free Wi-Fi, and friendly staff, IT Cafe has become a favorite destination among both locals and tourists seeking the best coffee and bar experience in Ohrid. From early mornings to late evenings, it's the perfect place to unwind, meet friends, or simply enjoy the rhythm of the city.\n\nIf you're searching for a stylish café in Ohrid where modern design meets authentic hospitality, IT Cafe should be at the top of your list.",
-    "type": [
-      "coffee",
-      "club"
-    ],
+    "type": ["coffee", "club"],
     "tags": [
       "coffee",
       "cafe",
@@ -4994,17 +4848,13 @@
     "phone": "070 240 056",
     "workingHours": "08:00 - 00:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 135,
     "name": "Chillout Shisha&Bar",
     "description": "Chillout Shisha & Bar offers a modern and relaxed lounge atmosphere where hookah, cocktails and social vibes come together. With warm reviews highlighting its \"best hookah in town\" and an attentive, friendly staff, this venue has become a go-to choice for locals and visitors alike looking for an elevated nightlife experience in Ohrid.\n\nAt Chillout Shisha & Bar guests can expect:\n\nA wide selection of premium hookah flavours and expert preparation, making it one of the top rated shisha bars in Ohrid.\n\nStylish interior design and comfortable seating that invite you to stay, unwind and socialise — perfect for an evening with friends or a casual drink after dinner.\n\nA full bar offering cocktails, coffee and other beverages, complementing the hookah experience and catering to diverse tastes.\n\nA central location in Ohrid, making it easily accessible from major parts of the city — ideal for tourists exploring the town's nightlife or locals seeking a quality lounge.\n\nIf you're searching for a hookah lounge in Ohrid, a place to enjoy quality shisha with great service in a pleasant setting, Chillout Shisha & Bar is definitely worth a visit. Book a table, try their signature flavours, and enjoy a memorable evening in the heart of Ohrid's social scene.",
-    "type": [
-      "coffee",
-      "shisha"
-    ],
+    "type": ["coffee", "shisha"],
     "tags": [
       "coffee",
       "shisha",
@@ -5029,8 +4879,7 @@
     "phone": "078 599 041",
     "workingHours": "Mon-Fri: 08:00-00:00<br>Sat-Sun: 08:00-01:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 136,
@@ -5078,8 +4927,7 @@
     "phone": "070 377 159",
     "workingHours": "08:00 - 00:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   },
   {
     "id": 137,
@@ -5131,7 +4979,6 @@
     "phone": "0755 687 775",
     "workingHours": "Mon-Thu: 12:00-23:00<br>Fri-Sat: 12:00-00:00<br>Sun: 12:00-23:00",
     "bookingUrl": "#",
-    "events": [],
-    "city": "Ohrid"
+    "events": []
   }
 ]

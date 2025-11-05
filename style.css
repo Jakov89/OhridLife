@@ -5478,6 +5478,225 @@ span.flatpickr-weekday {
     }
 }
 
+/* ========================================
+   CITY SELECTOR STYLES - Modern Card Design
+   ======================================== */
+
+.city-selector-wrapper {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+}
+
+.city-selector-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.city-selector-card:hover {
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+.city-selector-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.city-selector-header .location-icon {
+    color: #007bff;
+    animation: pulse-icon 2s ease-in-out infinite;
+}
+
+@keyframes pulse-icon {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.city-selector-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.city-selector-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.city-select-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: white;
+    border: 2px solid #e0e6ed;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    outline: none;
+}
+
+.city-select-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.05) 0%, rgba(0, 86, 179, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.city-select-btn:hover::before {
+    opacity: 1;
+}
+
+.city-select-btn:hover {
+    transform: translateY(-4px);
+    border-color: #007bff;
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.2);
+}
+
+.city-select-btn.active {
+    border-color: #007bff;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    box-shadow: 0 8px 30px rgba(0, 123, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+.city-select-btn.active::before {
+    opacity: 0;
+}
+
+.city-btn-icon {
+    font-size: 2.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.city-select-btn:hover .city-btn-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.city-select-btn.active .city-btn-icon {
+    transform: scale(1.15);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.city-btn-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    gap: 0.25rem;
+}
+
+.city-btn-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2c3e50;
+    transition: color 0.3s ease;
+    line-height: 1.2;
+}
+
+.city-select-btn.active .city-btn-name {
+    color: white;
+}
+
+.city-btn-subtitle {
+    font-size: 0.875rem;
+    color: #6c757d;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.city-select-btn.active .city-btn-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.city-btn-checkmark {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: white;
+    flex-shrink: 0;
+}
+
+.city-select-btn.active .city-btn-checkmark {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .city-selector-card {
+        padding: 1.5rem;
+        border-radius: 16px;
+    }
+    
+    .city-selector-title {
+        font-size: 1.2rem;
+    }
+    
+    .city-selector-buttons {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .city-select-btn {
+        padding: 1rem 1.25rem;
+    }
+    
+    .city-btn-icon {
+        font-size: 2rem;
+    }
+    
+    .city-btn-name {
+        font-size: 1.1rem;
+    }
+    
+    .city-btn-subtitle {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .city-selector-wrapper {
+        margin-bottom: 2rem;
+    }
+    
+    .city-selector-card {
+        padding: 1.25rem;
+    }
+    
+    .city-selector-header {
+        margin-bottom: 1rem;
+    }
+    
+    .city-btn-icon {
+        font-size: 1.75rem;
+    }
+}
+
 #explore-all-venues .category-btn {
     display: flex;
     align-items: center;

@@ -262,7 +262,46 @@
             <div class="container mx-auto px-4">
                 <div class="text-center mb-8">
                     <h2 id="venues-heading" class="text-3xl font-bold">Explore All Venues</h2>
-                     <p class="text-muted-foreground mt-2">From lakeside restaurants to adventure sports, explore the best venues Ohrid has to offer.</p>
+                     <p class="text-muted-foreground mt-2">From lakeside restaurants to adventure sports, explore the best venues in the region.</p>
+                </div>
+                
+                <!-- City Selector -->
+                <div class="city-selector-wrapper">
+                    <div class="city-selector-card">
+                        <div class="city-selector-header">
+                            <svg class="location-icon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <h3 class="city-selector-title">Select Your City</h3>
+                        </div>
+                        <div class="city-selector-buttons">
+                            <button class="city-select-btn active" data-city="Ohrid">
+                                <div class="city-btn-icon">🏛️</div>
+                                <div class="city-btn-content">
+                                    <span class="city-btn-name">Ohrid</span>
+                                    <span class="city-btn-subtitle">Pearl of the Balkans</span>
+                                </div>
+                                <div class="city-btn-checkmark">
+                                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                            <button class="city-select-btn" data-city="Struga">
+                                <div class="city-btn-icon">🌊</div>
+                                <div class="city-btn-content">
+                                    <span class="city-btn-name">Struga</span>
+                                    <span class="city-btn-subtitle">City of Poetry</span>
+                                </div>
+                                <div class="city-btn-checkmark">
+                                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- Venue Search Bar -->
