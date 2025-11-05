@@ -170,3 +170,5 @@ The feature is **fully functional** and ready. Just add your Struga venues and y
 Need help? Check `CITY-SELECTOR-GUIDE.md` for detailed documentation! 📚
 
 
+
+
