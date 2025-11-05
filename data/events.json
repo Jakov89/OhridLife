@@ -2146,21 +2146,6 @@
          "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114866.77621068266!2d20.73175416746468!3d41.10553064680586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1762243894167!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
          "locationName": "Atina Bojadji Sports Hall"
          },
-       {
-         "id": "266",
-         "venueId": 24,
-         "eventName": "A Private Burger Experience (Karolina & Robert)",
-         "isoDate": "2025-11-06",
-         "startTime": "21:00",
-         "day": "Wed.",
-         "description": "",
-         "category": "Entertainment",
-         "imageUrl": "events_image/random/brosburger.png",
-         "eventBookingUrl": "#",
-         "eventContact": "078 368 111",
-         "ticketPrice": "",
-         "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0136474251126!2d20.795785576447834!3d41.11239301300688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dde81f0f8353%3A0xfaabbe5670c0615a!2sBro&#39;s%20Burger%20Station!5e0!3m2!1sen!2smk!4v1750874632065!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-         "locationName": "Bros Burger"
-         }
+
      
 ]
