@@ -272,13 +272,13 @@
   {
     "id": "20",
     "venueId": 18,
-    "eventName": "MoodFellas",
-    "isoDate": "2025-11-01",
+    "eventName": "Alexandar Josifovski &  French Olives",
+    "isoDate": "2025-11-08",
     "startTime": "22:00",
     "day": "Sat.",
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/octava/01.11.png",
+    "imageUrl": "events_image/octava/08.11.png",
     "eventBookingUrl": "#",
     "eventContact": "077 633 444",
     "ticketPrice": "Free Entry",
@@ -1192,13 +1192,13 @@
   {
     "id": "209",
     "venueId": 18,
-    "eventName": "Vlado Broz & DJ Marama",
-    "isoDate": "2025-10-31",
+    "eventName": "Balkan Jam",
+    "isoDate": "2025-11-07",
     "startTime": "22:00",
     "day": "Fri.",
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/octava/31.10.png",
+    "imageUrl": "events_image/octava/07.11.png",
     "eventBookingUrl": "#",
     "eventContact": "077 633 444",
     "ticketPrice": "Free Entry",
@@ -1541,13 +1541,13 @@
   {
     "id": "230",
     "venueId": 134,
-    "eventName": "Balkanikos Band",
-    "isoDate": "2025-11-01",
+    "eventName": "Metropolis Band",
+    "isoDate": "2025-11-08",
     "startTime": "21:30",
     "day": "Fri.",
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/it/01.11.png",
+    "imageUrl": "events_image/it/08.11.png",
     "eventBookingUrl": "#",
     "eventContact": "070 240 056",
     "ticketPrice": "Free Entry",
@@ -2145,7 +2145,7 @@
          "ticketPrice": "TBA",
          "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114866.77621068266!2d20.73175416746468!3d41.10553064680586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1762243894167!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
          "locationName": "Atina Bojadji Sports Hall"
-         },
+         }
 
      
 ]
