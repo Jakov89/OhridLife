@@ -3885,6 +3885,10 @@ span.flatpickr-weekday {
     box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
 }
 
+.footer-socials a svg {
+    pointer-events: none;
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
     .footer-content {
