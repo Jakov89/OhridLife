@@ -1368,13 +1368,13 @@
   {
     "id": "220",
     "venueId": 85,
-    "eventName": "Select Band",
-    "isoDate": "2025-10-31",
+    "eventName": "Dac & Aleksandar",
+    "isoDate": "2025-11-22",
     "startTime": "21:00",
-    "day": "Fri.",
+    "day": "Sat.",
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/bravo/31.10.png",
+    "imageUrl": "events_image/bravo/22.11.png",
     "eventBookingUrl": "#",
     "eventContact": "075 995 000 | 075 998 001",
     "ticketPrice": "Free Entry",
@@ -2369,6 +2369,22 @@
     "ticketPrice": "Free Entry",
     "locationName": "Ethno Restaurant Dedo Dimo",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114625.11806831624!2d20.737132297265624!3d41.2434906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135127f0f4ca31dd%3A0x162ff4afaf99e38a!2sEthno%20restaurant%20Dedo%20Dimo!5e1!3m2!1sen!2smk!4v1760965437624!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "280",
+    "venueId": 85,
+    "eventName": "Valentino",
+    "isoDate": "2025-11-28",
+    "startTime": "21:00",
+    "day": "Fri.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "images_venue/bravo_card.jpg",
+    "eventBookingUrl": "#",
+    "eventContact": "075 995 000 | 075 998 001",
+    "ticketPrice": "Free Entry",
+    "locationName": "Restaurant Bravo",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.5609140962213!2d20.821649056696856!3d41.08818471438427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c55efe28b2e1%3A0xd13e2614c2dffaf4!2sRestaurant%20Bravo!5e0!3m2!1sen!2smk!4v1753096219824!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   }
 
     
