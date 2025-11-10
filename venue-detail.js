@@ -1,9 +1,12 @@
+let currentVenueData = null;
+
 document.addEventListener('DOMContentLoaded', () => {
     const venueId = window.location.pathname.split('/').pop();
     const venueContentContainer = document.getElementById('venue-content-container');
 
     if (venueId && venueContentContainer) {
         fetchVenueDetails(venueId, venueContentContainer);
+        setupShareFunctionality();
     } else {
         venueContentContainer.innerHTML = '<p class="error-message">Could not load venue details. Invalid ID.</p>';
     }
@@ -32,6 +35,7 @@ async function fetchVenueDetails(id, container) {
             throw new Error(`Venue not found (status: ${response.status})`);
         }
         const venue = await response.json();
+        currentVenueData = venue; // Store for sharing
         renderVenueDetails(venue, container);
     } catch (error) {
         console.error('Error fetching venue details:', error);
@@ -190,4 +194,120 @@ function renderVenueDetails(venue, container) {
     } else {
         galleryGrid.innerHTML = '<p>No gallery images available.</p>';
     }
+}
+
+// ========== SHARE FUNCTIONALITY ==========
+function setupShareFunctionality() {
+    const shareBtn = document.getElementById('venue-share-btn');
+    const shareDropdown = document.getElementById('venue-share-dropdown');
+    const shareOptions = document.querySelectorAll('#venue-share-dropdown .share-option');
+    
+    if (!shareBtn || !shareDropdown) return;
+    
+    // Toggle dropdown on button click
+    shareBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        shareDropdown.classList.toggle('show');
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.share-button-container')) {
+            shareDropdown.classList.remove('show');
+        }
+    });
+    
+    // Handle share option clicks
+    shareOptions.forEach(option => {
+        option.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const shareType = option.getAttribute('data-share');
+            handleVenueShare(shareType);
+            shareDropdown.classList.remove('show');
+        });
+    });
+}
+
+function handleVenueShare(type) {
+    const venueUrl = window.location.href;
+    const venueName = currentVenueData?.name || 'Check out this venue!';
+    const venueType = currentVenueData?.type ? (Array.isArray(currentVenueData.type) ? currentVenueData.type.join(', ') : currentVenueData.type) : '';
+    const venueLocation = currentVenueData?.city || 'Ohrid';
+    const shareText = `${venueName}${venueType ? ' - ' + venueType : ''} in ${venueLocation} | OhridHub`;
+    
+    switch(type) {
+        case 'copy':
+            navigator.clipboard.writeText(venueUrl).then(() => {
+                showVenueNotification('Link copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+                showVenueNotification('Failed to copy link');
+            });
+            break;
+            
+        case 'facebook':
+            const fbUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(venueUrl)}`;
+            window.open(fbUrl, '_blank', 'width=600,height=400');
+            break;
+            
+        case 'twitter':
+            const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(venueUrl)}&text=${encodeURIComponent(shareText)}`;
+            window.open(twitterUrl, '_blank', 'width=600,height=400');
+            break;
+            
+        case 'whatsapp':
+            const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(shareText + ' ' + venueUrl)}`;
+            window.open(whatsappUrl, '_blank');
+            break;
+            
+        case 'instagram':
+            // Instagram doesn't support direct web sharing
+            navigator.clipboard.writeText(venueUrl).then(() => {
+                showVenueNotification('Link copied! Paste it in your Instagram bio or story');
+            }).catch(err => {
+                showVenueNotification('To share on Instagram, copy this link and paste it in your bio or story');
+            });
+            break;
+            
+        default:
+            console.log('Unknown share type:', type);
+    }
+    
+    // Track share event with Google Analytics if available
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'share', {
+            method: type,
+            content_type: 'venue',
+            item_id: currentVenueData?.id
+        });
+    }
+}
+
+function showVenueNotification(message) {
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = 'share-notification';
+    notification.textContent = message;
+    notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: var(--primary, #3b82f6);
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        z-index: 10000;
+        animation: slideIn 0.3s ease-out;
+    `;
+    
+    document.body.appendChild(notification);
+    
+    // Remove after 3 seconds
+    setTimeout(() => {
+        notification.style.animation = 'slideOut 0.3s ease-out';
+        setTimeout(() => {
+            document.body.removeChild(notification);
+        }, 300);
+    }, 3000);
 } 

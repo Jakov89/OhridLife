@@ -247,11 +247,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function setupEventListeners() {
-        // Share event button
-        document.getElementById('share-event-btn').addEventListener('click', shareEvent);
-        
-        // Instagram Story button
-        document.getElementById('instagram-story-btn').addEventListener('click', openInstagramStoryModal);
+        // Share button and dropdown
+        setupShareFunctionality();
         
         // Add to planner button
         document.getElementById('add-to-planner-btn').addEventListener('click', addToPlanner);
@@ -263,32 +260,92 @@ document.addEventListener('DOMContentLoaded', () => {
                 openImageModal(eventImage.src);
             }
         });
-        
-        // Instagram Story modal listeners
-        setupInstagramStoryModalListeners();
     }
     
-    function shareEvent() {
-        const eventUrl = window.location.href;
-        const eventTitle = eventData?.eventName || 'Event';
-        const shareBtn = document.getElementById('share-event-btn');
+    function setupShareFunctionality() {
+        const shareBtn = document.getElementById('share-btn');
+        const shareDropdown = document.getElementById('share-dropdown');
+        const shareOptions = document.querySelectorAll('.share-option');
         
-        // Always copy to clipboard directly - no native share dialog
-        navigator.clipboard.writeText(eventUrl).then(() => {
-            showNotification('Event link copied to clipboard!');
-            
-            // Add visual feedback
-            if (shareBtn) {
-                shareBtn.classList.add('copied');
-                setTimeout(() => {
-                    shareBtn.classList.remove('copied');
-                }, 2000);
-            }
-        }).catch(err => {
-            console.error('Failed to copy:', err);
-            // Fallback to showing the URL
-            prompt('Copy this link to share:', eventUrl);
+        if (!shareBtn || !shareDropdown) return;
+        
+        // Toggle dropdown on button click
+        shareBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            shareDropdown.classList.toggle('show');
         });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.share-button-container')) {
+                shareDropdown.classList.remove('show');
+            }
+        });
+        
+        // Handle share option clicks
+        shareOptions.forEach(option => {
+            option.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const shareType = option.getAttribute('data-share');
+                handleShare(shareType);
+                shareDropdown.classList.remove('show');
+            });
+        });
+    }
+    
+    function handleShare(type) {
+        const eventUrl = window.location.href;
+        const eventTitle = eventData?.eventName || 'Check out this event!';
+        const eventDate = eventData?.isoDate ? new Date(eventData.isoDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) : '';
+        const eventLocation = eventData?.locationName || 'Ohrid';
+        const shareText = `${eventTitle} - ${eventDate} at ${eventLocation} | OhridHub`;
+        
+        switch(type) {
+            case 'copy':
+                navigator.clipboard.writeText(eventUrl).then(() => {
+                    showNotification('Link copied to clipboard!');
+                }).catch(err => {
+                    console.error('Failed to copy:', err);
+                    showNotification('Failed to copy link');
+                });
+                break;
+                
+            case 'facebook':
+                const fbUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(eventUrl)}`;
+                window.open(fbUrl, '_blank', 'width=600,height=400');
+                break;
+                
+            case 'twitter':
+                const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(eventUrl)}&text=${encodeURIComponent(shareText)}`;
+                window.open(twitterUrl, '_blank', 'width=600,height=400');
+                break;
+                
+            case 'whatsapp':
+                const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(shareText + ' ' + eventUrl)}`;
+                window.open(whatsappUrl, '_blank');
+                break;
+                
+            case 'instagram':
+                // Instagram doesn't support direct web sharing, so copy link and show instructions
+                navigator.clipboard.writeText(eventUrl).then(() => {
+                    showNotification('Link copied! Paste it in your Instagram bio or story');
+                }).catch(err => {
+                    showNotification('To share on Instagram, copy this link and paste it in your bio or story');
+                });
+                break;
+                
+            default:
+                console.log('Unknown share type:', type);
+        }
+        
+        // Track share event with Google Analytics if available
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'share', {
+                method: type,
+                content_type: 'event',
+                item_id: eventData?.id
+            });
+        }
     }
     
     function addToPlanner() {
