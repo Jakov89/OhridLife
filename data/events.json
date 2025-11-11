@@ -2559,6 +2559,36 @@
     "ticketPrice": "400 MKD",
     "locationName": "Culture Center Grigor Prlichev",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d377.2689914261322!2d20.80099955080516!3d41.11246355591193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca419eeff33%3A0xea449e24d982b663!2sCulture%20Center%20Grigor%20Prlichev!5e1!3m2!1sen!2smk!4v1758709713362!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "292",
+    "eventName": "Starogradska Muzika",
+    "isoDate": "2025-11-15",
+    "startTime": "13:00",
+    "day": "Sat.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "events_image/minami/starogradska.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+    "locationName": "Minami",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20321.537961216945!2d20.799068366707637!3d41.05450986270015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c5aa30f27d77%3A0x9d9ffcee089d9ff7!2sMinami!5e1!3m2!1sen!2smk!4v1762889099015!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "293",
+    "eventName": "Starogradska Muzika",
+    "isoDate": "2025-11-16",
+    "startTime": "13:00",
+    "day": "Sun.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "events_image/minami/starogradska.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+    "locationName": "Minami",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20321.537961216945!2d20.799068366707637!3d41.05450986270015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c5aa30f27d77%3A0x9d9ffcee089d9ff7!2sMinami!5e1!3m2!1sen!2smk!4v1762889099015!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   }
 
     
