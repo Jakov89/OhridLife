@@ -2544,6 +2544,21 @@
     "ticketPrice": "Free Entry",
     "locationName": "Kult Café",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.7394143019913!2d20.80005628389622!3d41.11454053940515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd2ab0d8ed21%3A0x89723c86f54776be!2sKult%20kulturen%20centar!5e0!3m2!1sen!2smk!4v1754321137292!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "291",
+    "eventName": "Helverova Nokj",
+    "isoDate": "2025-11-17",
+    "startTime": "20:00",
+    "day": "Mon.",
+    "description": "",
+    "category": "Event",
+    "imageUrl": "events_image/random/helverova.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "400 MKD",
+    "locationName": "Culture Center Grigor Prlichev",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d377.2689914261322!2d20.80099955080516!3d41.11246355591193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca419eeff33%3A0xea449e24d982b663!2sCulture%20Center%20Grigor%20Prlichev!5e1!3m2!1sen!2smk!4v1758709713362!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   }
 
     
