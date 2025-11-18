@@ -4832,5 +4832,46 @@
     "workingHours": "Mon-Thu: 12:00-23:00<br>Fri-Sat: 12:00-00:00<br>Sun: 12:00-23:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 138,
+    "name": "Kalan's Billiard Club",
+    "description": "Kalan's Billiards is a premium billiards venue designed to meet the highest international standards. Every member receives full access to a modern booking software system, allowing them to reserve playing sessions at any time. Each member is provided with a personal key, membership card, software access, and soon an official branded jersey.\n\nThe venue offers two flexible membership options:\n\nOption A – 500 MKD per month, including two sessions, with every additional session priced at 250 MKD.\n\nOption B – 3000 MKD per month, including 15 hours of play, with every extra hour priced at 200 MKD.\n\nKalan's Billiards stands out for its elite equipment and professional setup. The venue features the Rasson Acurra MR Sung table with official Matchroom specifications—the same standard used in top-tier global Nine Ball events. It is equipped with Simonis 860 cloth, professionally installed for maximum performance, and Aramith Black balls sourced directly from Matchroom Nine Ball.\n\nWith world-class equipment, advanced booking technology, and a professional training environment, Kalan's Billiards offers the ideal setting for players seeking a high-level experience, serious practice conditions, and a top-quality billiards atmosphere.",
+    "type": "billiards",
+    "tags": [
+      "billiards",
+      "entertainment",
+      "sports",
+      "premium",
+      "professional",
+      "membership",
+      "nine ball",
+      "training"
+    ],
+    "imageUrl": "images_venue/enterteiment/kalan_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/kalan/photo1.jpg",
+        "alt": "An indoor shot of a modern, professional billiard table (Rasson Acuara model) with a light gray felt and wooden frame, centered under a large, square, illuminated fixture. A few pool balls are racked on the table, and the room has dark gray curtains and black carpet."
+      },
+      {
+        "url": "venue_gallery/kalan/photo2.jpg",
+        "alt": "A close-up, focused shot of a rack of colorful billiard balls on a light gray felt table. The cue ball is not visible, and the 1-ball (yellow with a circle design) is prominently in the foreground."
+      },
+      {
+        "url": "venue_gallery/kalan/photo3.jpg",
+        "alt": "Nighttime exterior view of a building with a large window showing a billiard table inside. The window is covered with signage for \"Kalan's Billiard Club\" featuring an 8-ball logo, and another sign in Cyrillic for \"Тран Клуб Снукер Охрид\" (Tran Club Snooker Ohrid)."
+      }
+    ],
+    "rating": 5,
+    "priceLevel": 1,
+    "location": {
+      "address": "Kalan's Billiard Club, Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.3211047624759!2d20.802492164048008!3d41.11374528436534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca1456bffcf%3A0x40d11556f453efe8!2sSuteren!5e1!3m2!1sen!2smk!4v1763457865539!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "",
+    "workingHours": "00:00 - 24:00",
+    "bookingUrl": "#",
+    "events": []
   }
 ]
