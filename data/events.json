@@ -2696,5 +2696,50 @@
     "ticketPrice": "300 MKD",
     "locationName": "Culture Center Grigor Prlichev",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10151.669490500723!2d20.794216029596413!3d41.11338875576157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca419eeff33%3A0xea449e24d982b663!2sCulture%20Center%20Grigor%20Prlichev!5e1!3m2!1sen!2smk!4v1763448101123!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "301",
+    "eventName": "Instrumental Bend",
+    "isoDate": "2025-12-30",
+    "startTime": "21:00",
+    "day": "Tue.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "events_image/random/laking.png",
+    "eventBookingUrl": "#",
+    "eventContact": "046 203 333",
+    "ticketPrice": "TBA",
+    "locationName": "Hotel & Spa Laki",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20316.95502189817!2d20.790289958142232!3d41.06934351889787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c37c9dd4da75%3A0xeb369b8ad996df4f!2zSG90ZWwgJiBTcGEg4oCeTGFraeKAnA!5e1!3m2!1sen!2smk!4v1763463297236!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "302",
+    "eventName": "Instrumental Bend",
+    "isoDate": "2025-12-31",
+    "startTime": "21:00",
+    "day": "Wed.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "events_image/random/laking.png",
+    "eventBookingUrl": "#",
+    "eventContact": "046 203 333",
+    "ticketPrice": "TBA",
+    "locationName": "Hotel & Spa Laki",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20316.95502189817!2d20.790289958142232!3d41.06934351889787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c37c9dd4da75%3A0xeb369b8ad996df4f!2zSG90ZWwgJiBTcGEg4oCeTGFraeKAnA!5e1!3m2!1sen!2smk!4v1763463297236!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "303",
+    "eventName": "Instrumental Bend",
+    "isoDate": "2026-01-01",
+    "startTime": "21:00",
+    "day": "Thu.",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "events_image/random/laking.png",
+    "eventBookingUrl": "#",
+    "eventContact": "046 203 333",
+    "ticketPrice": "TBA",
+    "locationName": "Hotel & Spa Laki",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20316.95502189817!2d20.790289958142232!3d41.06934351889787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c37c9dd4da75%3A0xeb369b8ad996df4f!2zSG90ZWwgJiBTcGEg4oCeTGFraeKAnA!5e1!3m2!1sen!2smk!4v1763463297236!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   }  
 ]
