@@ -3345,6 +3345,22 @@
       "ticketPrice": "Free Entry",
       "mapIframe": "<iframe src=\\\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.4182441999236!2d20.7858603766795!3d41.05963241909995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c31671775f91%3A0x644265582f676993!2sMeana%20Lagadin!5e0!3m2!1sen!2smk!4v1718231268153!5m2!1sen!2smk\\\" width=\\\"400\\\" height=\\\"300\\\" style=\\\"border:0;\\\" allowfullscreen=\\\"\\\" loading=\\\"lazy\\\" referrerpolicy=\\\"no-referrer-when-downgrade\\\"></iframe>",
       "locationName": "Meana Lagadin"
+    },
+    {
+      "id": "339",
+      "venueId": 85,
+      "eventName": "Galija",
+      "isoDate": "2025-12-06",
+      "startTime": "21:00",
+      "day": "Sat.",
+      "description": "",
+      "category": "Music",
+      "imageUrl": "events_image/bravo/06.12.png",
+      "eventBookingUrl": "#",
+      "eventContact": "075 995 000 | 075 998 001",
+      "ticketPrice": "Free Entry",
+      "locationName": "Restaurant Bravo",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.5609140962213!2d20.821649056696856!3d41.08818471438427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c55efe28b2e1%3A0xd13e2614c2dffaf4!2sRestaurant%20Bravo!5e0!3m2!1sen!2smk!4v1753096219824!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     }
     
 ]
