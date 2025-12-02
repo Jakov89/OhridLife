@@ -1,0 +1,279 @@
+/* =============== CHRISTMAS DECORATIONS =============== */
+/* Add this file to enable Christmas vibes - remove after holidays */
+
+/* Banner removed */
+.christmas-banner {
+    display: none;
+}
+
+/* =============== SNOWFALL ANIMATION =============== */
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    top: -20px;
+    color: #fff;
+    font-size: 1em;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    animation: snowfall linear infinite;
+    opacity: 0.8;
+}
+
+.snowflake:nth-child(1) { left: 5%; animation-duration: 10s; animation-delay: 0s; font-size: 0.8em; }
+.snowflake:nth-child(2) { left: 15%; animation-duration: 12s; animation-delay: 1s; font-size: 1.2em; }
+.snowflake:nth-child(3) { left: 25%; animation-duration: 8s; animation-delay: 2s; font-size: 0.9em; }
+.snowflake:nth-child(4) { left: 35%; animation-duration: 14s; animation-delay: 0.5s; font-size: 1.1em; }
+.snowflake:nth-child(5) { left: 45%; animation-duration: 11s; animation-delay: 3s; font-size: 0.7em; }
+.snowflake:nth-child(6) { left: 55%; animation-duration: 9s; animation-delay: 1.5s; font-size: 1em; }
+.snowflake:nth-child(7) { left: 65%; animation-duration: 13s; animation-delay: 2.5s; font-size: 0.85em; }
+.snowflake:nth-child(8) { left: 75%; animation-duration: 10s; animation-delay: 0.8s; font-size: 1.15em; }
+.snowflake:nth-child(9) { left: 85%; animation-duration: 15s; animation-delay: 4s; font-size: 0.75em; }
+.snowflake:nth-child(10) { left: 95%; animation-duration: 11s; animation-delay: 2s; font-size: 0.95em; }
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(-20px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Navbar lights removed */
+
+/* Button colors - keeping original */
+
+/* =============== FESTIVE CARD DECORATIONS =============== */
+/* Target all card types used in the website */
+.redesigned-venue-card,
+.light-card,
+.keen-slider__slide {
+    position: relative;
+    overflow: visible !important;
+}
+
+/* Christmas Ornament - Top Left */
+.redesigned-venue-card::before,
+.light-card::before,
+.keen-slider__slide::before {
+    content: '🎄';
+    position: absolute;
+    top: -15px;
+    left: -10px;
+    font-size: 1.8rem;
+    z-index: 10;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    animation: ornament-swing 3s ease-in-out infinite;
+}
+
+/* Christmas Ornament - Top Right */
+.redesigned-venue-card::after,
+.light-card::after,
+.keen-slider__slide::after {
+    content: '🎁';
+    position: absolute;
+    top: -12px;
+    right: -8px;
+    font-size: 1.5rem;
+    z-index: 10;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    animation: ornament-swing 3s ease-in-out infinite reverse;
+}
+
+@keyframes ornament-swing {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+}
+
+/* Alternating decorations for variety */
+.keen-slider__slide:nth-child(2n)::before { content: '⭐'; }
+.keen-slider__slide:nth-child(2n)::after { content: '🔔'; }
+.keen-slider__slide:nth-child(3n)::before { content: '❄️'; font-size: 1.6rem; }
+.keen-slider__slide:nth-child(3n)::after { content: '🎅'; }
+.keen-slider__slide:nth-child(4n)::before { content: '🦌'; }
+.keen-slider__slide:nth-child(4n)::after { content: '🎄'; }
+.keen-slider__slide:nth-child(5n)::before { content: '☃️'; }
+.keen-slider__slide:nth-child(5n)::after { content: '🧣'; }
+
+/* Card hover - keep simple */
+
+/* Ribbon removed */
+
+/* Candy cane dividers removed */
+
+/* =============== FESTIVE HERO SECTION =============== */
+.hero-section {
+    position: relative;
+}
+
+.hero-section::after {
+    content: '🎄 Happy Holidays from OhridHub! 🎄';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, rgba(196, 30, 58, 0.9), rgba(34, 139, 34, 0.9));
+    color: white;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    z-index: 10;
+    animation: float 3s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes float {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-5px); }
+}
+
+/* =============== FESTIVE FOOTER =============== */
+footer {
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '❄️ ⭐ 🎁 ⭐ ❄️';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 30px;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+/* Santa on logo removed */
+
+/* =============== FESTIVE HEADINGS =============== */
+h1, h2, .section-title {
+    text-shadow: 0 0 10px rgba(196, 30, 58, 0.2), 0 0 20px rgba(34, 139, 34, 0.15);
+    position: relative;
+}
+
+/* Add Christmas decorations to section titles */
+.section-title::before {
+    content: '🎄';
+    margin-right: 10px;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.section-title::after {
+    content: '🎄';
+    margin-left: 10px;
+    animation: bounce 2s ease-in-out infinite 0.5s;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Festive colors removed - keeping simple decorations */
+
+/* =============== TWINKLING STARS BACKGROUND =============== */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, gold, transparent),
+        radial-gradient(2px 2px at 40px 70px, silver, transparent),
+        radial-gradient(2px 2px at 50px 160px, gold, transparent),
+        radial-gradient(2px 2px at 90px 40px, silver, transparent),
+        radial-gradient(2px 2px at 130px 80px, gold, transparent),
+        radial-gradient(2px 2px at 160px 120px, silver, transparent),
+        radial-gradient(2px 2px at 200px 50px, gold, transparent),
+        radial-gradient(2px 2px at 250px 90px, silver, transparent),
+        radial-gradient(2px 2px at 300px 150px, gold, transparent),
+        radial-gradient(2px 2px at 350px 30px, silver, transparent),
+        radial-gradient(2px 2px at 400px 100px, gold, transparent),
+        radial-gradient(2px 2px at 450px 60px, silver, transparent);
+    background-repeat: repeat;
+    background-size: 500px 200px;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.4;
+    animation: twinkle-stars 4s ease-in-out infinite alternate;
+}
+
+@keyframes twinkle-stars {
+    0% { opacity: 0.3; }
+    100% { opacity: 0.6; }
+}
+
+/* =============== RESPONSIVE ADJUSTMENTS =============== */
+@media (max-width: 768px) {
+    .snowflake {
+        font-size: 0.7em;
+    }
+    
+    /* Smaller decorations on mobile */
+    .redesigned-venue-card::before,
+    .keen-slider__slide::before,
+    .light-card::before {
+        font-size: 1.3rem;
+        top: -12px;
+        left: -6px;
+    }
+    
+    .redesigned-venue-card::after,
+    .keen-slider__slide::after,
+    .light-card::after {
+        font-size: 1.1rem;
+        top: -10px;
+        right: -5px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .redesigned-venue-card::before,
+    .keen-slider__slide::before,
+    .light-card::before,
+    .redesigned-venue-card::after,
+    .keen-slider__slide::after,
+    .light-card::after {
+        font-size: 1rem;
+    }
+}
+
+/* =============== REDUCED MOTION PREFERENCE =============== */
+@media (prefers-reduced-motion: reduce) {
+    .snowflake,
+    .redesigned-venue-card::before,
+    .keen-slider__slide::before,
+    .light-card::before,
+    body::after {
+        animation: none !important;
+    }
+    
+    .snowflakes {
+        display: none;
+    }
+}
+
