@@ -4008,6 +4008,21 @@
       "ticketPrice": "Free Entry",
       "locationName": "Mosha Bar",
       "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28718.511023099203!2d20.801781!3d41.1013756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd37075da1c9%3A0x6fea061232f9a9fc!2sMosha%20Bar!5e1!3m2!1sen!2smk!4v1764749939153!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    {
+      "id": "381",
+      "eventName": "Elixir",
+      "isoDate": "2025-12-03",
+      "startTime": "21:00",
+      "day": "Wed.",
+      "description": "",
+      "category": "Music",
+      "imageUrl": "events_image/art/03.122.png",
+      "eventBookingUrl": "#",
+      "eventContact": "078 206 396",
+      "ticketPrice": "Free Entry",
+      "locationName": "Art Cafe",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.32791410226878!2d20.79739507863001!3d41.11175249090309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca51fea07b1%3A0xe10ff4253d9071e5!2sTerrazza%20Aquarius!5e1!3m2!1sen!2smk!4v1761749556907!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     }
   
     
