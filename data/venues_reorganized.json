@@ -5175,5 +5175,47 @@
     "bookingUrl": "#",
     "events": [],
     "city": "Ohrid"
+  },
+  {
+    "id": 139,
+    "name": "Lago Restaurant",
+    "description": "Restaurant Villa Lago offers an unparalleled lakeside dining experience, perfectly nestled in the tranquil tourist settlement of Lagadin. Situated directly on the shores of Lake Ohrid, this restaurant is a premier destination for those seeking a harmonious blend of natural beauty and culinary excellence. The centerpiece of the experience is the expansive summer terrace, where guests can enjoy a front-row seat to the crystal-clear waters and the most breathtaking sunsets the region has to offer.\n\nThe culinary philosophy at Villa Lago focuses on authenticity and quality. The menu features a refined selection of traditional Macedonian specialties and Mediterranean-inspired dishes, with a particular emphasis on fresh, locally sourced lake fish. Whether you are indulging in a leisurely lunch or a sophisticated dinner, every meal is prepared with a modern twist that honors the rich gastronomic heritage of the Ohrid region.\n\nBeyond the food, the ambiance of Restaurant Villa Lago is defined by its serenity and elegance. Surrounded by the greenery of Galicica Mountain and the calming rhythm of the waves, it provides a peaceful escape from the crowded city center. It is the ideal location for romantic evenings, family gatherings, or anyone looking to experience the true spirit of Ohrid in a sophisticated yet welcoming environment.",
+    "type": "restaurant",
+    "tags": [
+      "restaurant",
+      "lakeside",
+      "traditional",
+      "mediterranean",
+      "fish",
+      "terrace",
+      "elegant",
+      "lagadin"
+    ],
+    "imageUrl": "images_venue/lago_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/lago/photo1.jpg",
+        "alt": "Gourmet charcuterie and cheese board at Villa Lago Restaurant Lagadin, featuring premium prosciutto, assorted local cheeses, fresh grapes, and walnuts."
+      },
+      {
+        "url": "venue_gallery/lago/photo2.jpg",
+        "alt": "Decadent dessert platter with pink ice cream, pistachio cake, and citrus fruits served at the elegant indoor seating area of Villa Lago Ohrid."
+      },
+      {
+        "url": "venue_gallery/lago/photo3.jpg",
+        "alt": "Traditional grilled meat patty topped with shredded cheese and served with fries on a branded wooden board at Restaurant Villa Lago, Lagadin."
+      }
+    ],
+    "rating": 4.4,
+    "priceLevel": 2,
+    "location": {
+      "address": "Lago Restaurant, Lagadin, Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20920.232978069143!2d20.79783483059748!3d41.04435461712411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c3c2359e8f39%3A0x12d7f549e3b6361e!2sLago%20Hotel%20%26%20Spa!5e1!3m2!1sen!2smk!4v1767540125086!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "076 205 205",
+    "workingHours": "08:00 - 00:00",
+    "bookingUrl": "#",
+    "events": [],
+    "city": "Ohrid"
   }
 ]
