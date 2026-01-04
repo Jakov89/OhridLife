@@ -133,5 +133,27 @@
         "experience": "14+ years",
         "hideBooking": false,
         "bio": "VIS Biljana was founded in 2009, carrying on the legacy as the fourth troubadour generation of the city of Ohrid. From the very beginning, the ensemble has been dedicated to nurturing the authentic musical spirit of our region, creating a bridge between tradition and the present. Over the years, we have released two music albums and built a tradition of three annual concerts that hold a special place in the cultural life of Ohrid.\n\nThe first is held on Petrovden, a unique celebration performed on the waters of Lake Ohrid, symbolizing the harmony between music and nature. The second concert is a humanitarian event, dedicated to our late colleague and dear friend Andrej Labroski, with all proceeds supporting associations and individuals from vulnerable groups across the country. The third is our signature annual concert, \"Охридска визита\", through which we strive to honor and preserve the spiritual and musical heritage of our beloved city.\n\nWith every performance, VIS Biljana remains devoted to keeping Ohrid's tradition alive, while sharing its timeless melodies with future generations."
+    },
+    {
+        "id": 7,
+        "name": "DJ Bagzi",
+        "category": "DJ",
+        "description": "DJ Bagzi is a breath of fresh air on the Macedonian music scene, establishing himself as a truly original hip-hop artist and a visionary producer.",
+        "imageUrl": "artist_image/dj/bagzi.jpg",
+        "profileImage": "artist_image/dj/bagzi.jpg",
+        "upcomingEvents": [],
+        "socialMedia": {
+            "instagram": "https://www.instagram.com/blagojmathers/"
+        },
+        "contact": {
+            "type": "instagram",
+            "value": "https://www.instagram.com/blagojmathers/",
+            "label": "Contact on Instagram"
+        },
+        "specialties": ["Hip Hop", "Rap", "Old School", "Modern Trends", "Live Performance"],
+        "isActive": true,
+        "experience": "5+ years",
+        "hideBooking": false,
+        "bio": "🎧 DJ Bagzi – a breath of fresh air on the Macedonian music scene, establishing himself as a truly original hip-hop artist and a visionary producer. With a focus on authentic songwriting and creative autonomy, he is currently finalizing the production of his highly anticipated debut album, marking a significant milestone in his rising career.\n\n🎵 A Fusion of Eras: Old-School Soul Meets Modern Trends\nWhat sets DJ Bagzi apart is his unique dual identity as both a powerful hip-hop lyricist and a versatile DJ. His performances are a masterclass in musical storytelling, where he meticulously nurtures the \"old-school\" rap aesthetic of the 80s, 90s, and 2000s. However, he is far from a nostalgia act; Bagzi skillfully weaves the latest modern music trends into his sessions, creating a seamless bridge between the roots of hip-hop and the sounds of tomorrow.\n\n🌍 From Cult Macedonian Venues to the Miami Club Scene\nHis journey has seen him grace the stages of the most iconic cult venues across Macedonia, performing at the country's most significant cultural and musical events. The crowning achievement of his career thus far is his successful expansion into the international arena, with a series of notable performances in Miami, USA. This international experience has refined his craft, allowing him to bring a world-class energy back to his local roots.\n\n🎤 The Complete Audiovisual Experience\nDJ Bagzi is more than just a musician; he is a \"complete product.\" To witness him live is to experience a perfect synergy of sound, style, and stage presence. Whether through his original tracks or his expertly curated DJ sets, he offers a professional and high-energy experience that is a pure pleasure to listen to, watch, and enjoy."
     }
 ]
