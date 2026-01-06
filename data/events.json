@@ -367,16 +367,16 @@
   {
     "id": "28",
     "venueId": 13,
-    "eventName": "Luger",
-    "isoDate": "2025-12-31",
-    "startTime": "21:00",
-    "day": "Wed.",
+    "eventName": "The Backdoor Band",
+    "isoDate": "2026-01-09",
+    "startTime": "22:00",
+    
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/dublin/31.12.png",
+    "imageUrl": "events_image/dublin/09.01.png",
     "eventBookingUrl": "#",
     "eventContact": "046 200 040",
-    "ticketPrice": "2 000 MKD",
+    "ticketPrice": "Free Entry",
     "locationName": "Dublin Irish Pub",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.165544003359!2d20.803172576447803!3d41.10907551321152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca7c7015f6b%3A0x13717f0588503ae!2sIrish%20Pub%20Dublin!5e0!3m2!1sen!2smk!4v1750872036349!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   },
@@ -2387,19 +2387,19 @@
   {
     "id": "283",
     "venueId": 13,
-    "eventName": "The Backdoor Band",
-    "isoDate": "2025-12-12",
+    "eventName": "No Fun",
+    "isoDate": "2026-01-10",
     "startTime": "22:00",
-    "day": "Fri.",
+    
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/dublin/12.12.png",
+    "imageUrl": "events_image/dublin/10.01.png",
     "eventBookingUrl": "#",
     "eventContact": "046 200 040",
     "ticketPrice": "Free Entry",
     "locationName": "Dublin Irish Pub",
-    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.165544003359!2d20.803172576447803!3d41.10907551321152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca7c7015f6b%3A0x13717f0588503ae!2sIrish%20Pub%20Dublin!5e0!3m2!1sen!2smk!4v1750872036349!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "artistId": 5
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.165544003359!2d20.803172576447803!3d41.10907551321152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca7c7015f6b%3A0x13717f0588503ae!2sIrish%20Pub%20Dublin!5e0!3m2!1sen!2smk!4v1750872036349!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+   
   },
   {
     "id": "284",
