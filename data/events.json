@@ -4600,23 +4600,7 @@
       "ticketPrice": "Free Entry",
       "locationName": "Liquid Cafe Bar",
       "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.96999952323426!2d20.796350681289486!3d41.11203210785903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca52629cca1%3A0xf2b6822b86dafab2!2sLiquid!5e0!3m2!1sen!2smk!4v1748537215411!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-    }, 
-    {
-      "id": "420",
-      "venueId": 3,
-      "eventName": "DJ Face",
-      "isoDate": "2026-01-09",
-      "startTime": "22:00",
-      "day": "Thu.",
-      "description": "",
-      "category": "Music",
-      "imageUrl": "images_venue/liquid_card.jpg",
-      "eventBookingUrl": "#",
-      "eventContact": "070 878 984",
-      "ticketPrice": "Free Entry",
-      "locationName": "Liquid Cafe Bar",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.96999952323426!2d20.796350681289486!3d41.11203210785903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca52629cca1%3A0xf2b6822b86dafab2!2sLiquid!5e0!3m2!1sen!2smk!4v1748537215411!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-    },
+    },    
     {
       "id": "421",
       "venueId": 3,
