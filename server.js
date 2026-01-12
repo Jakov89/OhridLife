@@ -1011,7 +1011,7 @@ app.get('/venues/:id', (req, res) => {
                 "image": imageUrl,
                 "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": venue.location.address,
+                    "streetAddress": venue.location?.address || "Ohrid",
                     "addressLocality": "Ohrid",
                     "addressCountry": "MK"
                 },
