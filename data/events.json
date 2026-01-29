@@ -2020,13 +2020,13 @@
   },
   {
     "id": "260",
-    "eventName": "La Murga Armada",
-    "isoDate": "2026-01-09",
+    "eventName": "Elixir Band",
+    "isoDate": "2026-01-31",
     "startTime": "21:00",
-    "day": "Sat.",
+    
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/art/09.01.png",
+    "imageUrl": "events_image/art/31.01.png",
     "eventBookingUrl": "#",
     "eventContact": "078 206 396",
     "ticketPrice": "Free Entry",
@@ -5368,10 +5368,10 @@
     {
       "id": "469",
       "venueId": null,
-      "eventName": "3 Promili Band",
-      "isoDate": "2026-01-23",
+      "eventName": "Nikola Zac",
+      "isoDate": "2026-01-30",
       "startTime": "22:00",
-      "day": "Tue.  ",
+      
       "description": "",
       "category": "Music",
       "imageUrl": "images_venue/su_card.jpg",
@@ -5384,10 +5384,10 @@
     {
       "id": "470",
       "venueId": null,
-      "eventName": "Darko Grozdanovski",
-      "isoDate": "2026-01-24",
+      "eventName": "Natasha Malinkova",
+      "isoDate": "2026-01-31",
       "startTime": "22:00",
-      "day": "Thu.  ",
+      
       "description": "",
       "category": "Music",
       "imageUrl": "images_venue/su_card.jpg",
