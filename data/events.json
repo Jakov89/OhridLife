@@ -1364,16 +1364,16 @@
   {
     "id": "221",
     "venueId": 2,
-    "eventName": "New Year's Eve",
-    "isoDate": "2025-12-31",
-    "startTime": "22:00",
-    "day": "Wed.",
+    "eventName": "Nikola Todoroski Stand Up Show",
+    "isoDate": "2026-02-08",
+    "startTime": "20:00",
+    
     "description": "",
-    "category": "Music",
-    "imageUrl": "events_image/jazzinn/31.12.png",
+    "category": "Comedy",
+    "imageUrl": "events_image/jazzinn/08.02.png",
     "eventBookingUrl": "#",
     "eventContact": "078 201 491",
-    "ticketPrice": "",
+    "ticketPrice": "400 MKD",
     "locationName": "Jazz Inn",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.97108961541426!2d20.79483075241209!3d41.11180561039946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbad9f657b9%3A0xe46164dac671a55b!2sJazz%20Inn!5e0!3m2!1sen!2smk!4v1748537193910!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   },
