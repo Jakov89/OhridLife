@@ -5307,13 +5307,13 @@
     {
       "id": "469",
       "venueId": null,
-      "eventName": "Vera Jankovik Show",
-      "isoDate": "2026-02-13",
+      "eventName": "Nikola Zac",
+      "isoDate": "2026-02-21",
       "startTime": "22:00",
       
       "description": "",
       "category": "Music",
-      "imageUrl": "events_image/su/13.02.png",
+      "imageUrl": "images_venue/su_card.jpg",
       "eventBookingUrl": "#",
       "eventContact": "070 990 991",
       "ticketPrice": "Free Entry",
@@ -5324,7 +5324,7 @@
       "id": "470",
       "venueId": null,
       "eventName": "Grupa Saraj",
-      "isoDate": "2026-02-06",
+      "isoDate": "2026-02-20",
       "startTime": "22:00",
       
       "description": "",
