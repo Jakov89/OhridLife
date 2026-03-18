@@ -174,13 +174,13 @@
   {
     "id": "12",
     "venueId": 1,
-    "eventName": "Kameleon",
-    "isoDate": "2026-03-14",
+    "eventName": "Darko & Daniel",
+    "isoDate": "2026-03-21",
     "startTime": "22:00",
     
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/kadmo/14.03.png",
+    "imageUrl": "events_image/kadmo/21.03.png",
     "eventBookingUrl": "#",
     "eventContact": "070 293 888",
     "ticketPrice": "Free Entry",
