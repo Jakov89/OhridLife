@@ -370,7 +370,8 @@ app.get('/api/events', (req, res) => {
             return res.status(500).json({ error: 'Failed to load event data.' });
         }
         try {
-            const events = JSON.parse(data);
+            const clean = data.charCodeAt(0) === 0xFEFF ? data.slice(1) : data;
+            const events = JSON.parse(clean);
             res.json(events);
         } catch (parseErr) {
             console.error("Error parsing events.json:", parseErr);
@@ -601,7 +602,8 @@ app.get('/events/:id', (req, res) => {
                     reject(err);
                 } else {
                     try {
-                        resolve(JSON.parse(data));
+                        const clean = data.charCodeAt(0) === 0xFEFF ? data.slice(1) : data;
+                        resolve(JSON.parse(clean));
                     } catch (parseErr) {
                         reject(parseErr);
                     }
@@ -722,7 +724,7 @@ app.get('/api/events/:id', (req, res) => {
         }
         
         try {
-            const allEvents = JSON.parse(eventsData);
+            const allEvents = JSON.parse(eventsData.charCodeAt(0) === 0xFEFF ? eventsData.slice(1) : eventsData);
             const event = allEvents.find(e => e.id === eventId);
 
             if (event) {
@@ -749,7 +751,7 @@ app.get('/api/organizations/:id/events', (req, res) => {
             console.error("Error reading events.json:", err);
             return res.status(500).json({ error: 'Failed to load event data.' });
         }
-        const allEvents = JSON.parse(data);
+        const allEvents = JSON.parse(data.charCodeAt(0) === 0xFEFF ? data.slice(1) : data);
         const orgEvents = allEvents.filter(e => e.organizationId === organizationId);
         res.json(orgEvents);
     });
