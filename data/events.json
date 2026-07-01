@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "1",
     "venueId": 116,
@@ -5608,7 +5608,7 @@
   },
   {
     "id": "492",
-    "venueId": 93,
+    "venueId": null,
     "eventName": "Grupa Vezilka",
     "isoDate": "2026-07-02",
     "startTime": "21:00",
@@ -5619,8 +5619,8 @@
     "eventBookingUrl": "#",
     "eventContact": "070 304 103",
     "ticketPrice": "Free Entry",
-    "locationName": "Restaurant Valentino",
-    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.3236601152996!2d20.809276220071965!3d41.114697714218245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db46db49402d%3A0x733acf4a0f2b3721!2sApartments%20Valentino!5e0!3m2!1sen!2smk!4v1752264648463!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    "locationName": "Restaurant Nova Riviera",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.3271332726001!2d20.80116055905819!3d41.11198100934354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db0078fa27e7%3A0xef85f187e1882579!2sRestaurant%20Nova%20Riviera!5e1!3m2!1sen!2smk!4v1759324766781!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   },
   {
     "id": "493",
