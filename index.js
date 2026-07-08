@@ -1589,6 +1589,7 @@ function getCategoryIcon(category) {
         'education': '📚'
     };
     
+    if (!category) return '📅';
     const normalizedCategory = category.toLowerCase().trim();
     return categoryMap[normalizedCategory] || '📅';
 }
