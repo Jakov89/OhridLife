@@ -3426,7 +3426,17 @@
     "phone": "072 307 305",
     "workingHours": "08:00 - 00:00 (Sun - Thur)<br>08:00 - 01:00 (Fri - Sat)",
     "bookingUrl": "#",
-    "events": ["266", "267", "268", "269", "270", "271", "272", "273", "274"],
+    "events": [
+      "266",
+      "267",
+      "268",
+      "269",
+      "270",
+      "271",
+      "272",
+      "273",
+      "274"
+    ],
     "city": "Ohrid"
   },
   {
@@ -5131,7 +5141,13 @@
     "phone": "075 687 775",
     "workingHours": "Mon-Thu: 12:00-23:00<br>Fri-Sat: 12:00-00:00<br>Sun: 12:00-23:00",
     "bookingUrl": "#",
-    "events": ["275", "276", "277", "278", "279"],
+    "events": [
+      "275",
+      "276",
+      "277",
+      "278",
+      "279"
+    ],
     "city": "Ohrid"
   },
   {
@@ -5214,6 +5230,53 @@
     },
     "phone": "076 205 205",
     "workingHours": "08:00 - 00:00",
+    "bookingUrl": "#",
+    "events": [],
+    "city": "Ohrid"
+  },
+  {
+    "id": 201,
+    "name": "CoWorkOhrid",
+    "description": "With a pinpoint center location in Ohrid within 5-10 min walking distance to all main points of the City, own free parking space, industrial designed office spaces with cozy and warm atmosphere, with conference room, meeting rooms, podcast studio, shared space and private office spaces, with 24/7 availability and complimentary free coffee, tea, H2O and snacks, we welcome you to join us and become part of our community of collaboration and networking. We host meet-ups, events, courses, workshops, team-building sessions.\n\nFlexible bookings starting from per hour/day/week/2 weeks/month and beyond.",
+    "type": [
+      "coworking"
+    ],
+    "tags": [
+      "coworking",
+      "business",
+      "workspace",
+      "meeting-room",
+      "podcast-studio",
+      "24/7"
+    ],
+    "imageUrl": "images_venue/cowork/cowork_card.png",
+    "gallery": [
+      {
+        "url": "venue_gallery/CoWork/image1.png",
+        "alt": "Modern open-plan coworking space with industrial brick walls and ergonomic office chairs"
+      },
+      {
+        "url": "venue_gallery/CoWork/image2.png",
+        "alt": "Shared office space featuring fitness sitting balls, a kitchenette, and ergonomic furniture"
+      },
+      {
+        "url": "venue_gallery/CoWork/image3.png",
+        "alt": "Contemporary meeting room with black oval table, blue chairs, a whiteboard, and TV screen"
+      },
+      {
+        "url": "venue_gallery/CoWork/image4.png",
+        "alt": "Spacious open-plan coworking office with multiple workstations, laptops, and large windows"
+      }
+    ],
+    "rating": 5,
+    "priceLevel": 1,
+    "location": {
+      "address": "CoWorkOhrid, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/CoWorkOhrid/@41.122450627360145,20.80356604588267,17z/data=!4m6!3m5!1s0x1350db67d16c1e31:0x35079c2b68946483!8m2!3d41.122450627360145!4d20.80356604588267!16s%2Fg%2F11y3p8qr9x",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.1908590691905!2d20.80356604588267!3d41.122450627360145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db67d16c1e31%3A0x35079c2b68946483!2sCoWorkOhrid!5e1!3m2!1sen!2smk!4v1783668741523!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "",
+    "workingHours": "00:00 - 24:00",
     "bookingUrl": "#",
     "events": [],
     "city": "Ohrid"

@@ -3,7 +3,11 @@
     "id": 121,
     "name": "Sky Corner",
     "description": "Sky Corner is an authentic Indian restaurant in Ohrid, offering a rich and flavorful dining experience inspired by the diverse culinary traditions of India. Our menu features a wide variety of traditional Indian dishes made with aromatic spices and fresh ingredients, prepared by skilled chefs. Whether you're a fan of mild curries or bold, spicy flavors, our kitchen delivers something for every taste. With a warm and inviting atmosphere, Sky Corner is the perfect place to enjoy a memorable meal with friends, family, or fellow food lovers.",
-    "type": ["restaurant", "coffee", "club"],
+    "type": [
+      "restaurant",
+      "coffee",
+      "club"
+    ],
     "tags": [
       "restaurant",
       "indian",
@@ -77,7 +81,7 @@
         "alt": "A cozy corner inside Amfora Restaurant, framed by lush green plants in the foreground. The table is neatly arranged for guests, surrounded by plush seating under warm ambient lighting and a ceiling with decorative fixtures."
       }
     ],
-    "rating": 4.0,
+    "rating": 4,
     "priceLevel": 2,
     "location": {
       "address": "Amfora Restaurant, Ohrid",
@@ -144,7 +148,7 @@
     "name": "Bros Burger",
     "description": "When that burger craving hits in Ohrid, Bros Burger is your go-to for a no-fuss, seriously satisfying experience. It's not about white tablecloths it's about the pure joy of a well-made burger. Imagine biting into a juicy patty, perfectly cooked, with all the right fixings, and that unmistakable aroma of a classic burger joint. It's the kind of place where you can grab a quick, delicious meal that truly hits the spot, leaving you feeling happy and fueled up for more adventures in beautiful Ohrid.",
     "type": [
-      "fast-food"      
+      "fast-food"
     ],
     "imageUrl": "images_venue/fast_food/bros_card.jpg",
     "gallery": [
@@ -613,7 +617,10 @@
     "id": 23,
     "name": "Anxiety Stop&Go",
     "description": "Step into Anxiety Stop&Go, a vibrant and welcoming bar where we believe in crafting the perfect antidote to your day. Here, we've redefined the art of the cocktail, focusing on freshly squeezed lemon and orange to create a burst of invigorating flavor in every glass. Our unique concept lets you \"build your buzz\" exactly how you like it. Whether you're looking for a gentle unwind or a lively pick-me-up, our skilled bartenders are ready to mix a drink tailored to your mood. Imagine the bright tang of fresh citrus mingling with your spirit of choice, creating a symphony of taste that's as refreshing as it is uplifting. Anxiety Stop&Go is more than just a bar; it's a sanctuary where you can pause, recharge, and leave your worries at the door. Come experience the difference that fresh ingredients and a personalized touch can make.",
-    "type": ["cocktails","to-go"],
+    "type": [
+      "cocktails",
+      "to-go"
+    ],
     "tags": [
       "cocktails",
       "to-go",
@@ -1314,7 +1321,12 @@
     "phone": "046 250 250",
     "workingHours": "08:00 - 00:00",
     "bookingUrl": "#",
-    "events": [274, 275, 276, 277]
+    "events": [
+      274,
+      275,
+      276,
+      277
+    ]
   },
   {
     "id": 34,
@@ -2987,7 +2999,7 @@
         "alt": "A paraglider's view looking down over the vibrant turquoise waters of Lake Ohrid, with the densely packed red-roofed buildings of Ohrid town nestled along the curved coastline"
       }
     ],
-    "rating": 5.0,
+    "rating": 5,
     "priceLevel": 2,
     "location": {
       "address": "Paragliding Ohrid, Ohrid",
@@ -3471,76 +3483,79 @@
     "events": []
   },
   {
-      "id": 120,
-      "name": "Most Bar",
-      "description": "Oh, Most Bar in Ohrid! It's that wonderful spot you dream about when you need to hit pause. Tucked away right by the water's edge, you can practically dip your toes in the lake while sipping your drink. It's truly a serene escape, a place where the only rush is the gentle lapping of the waves, inviting you to simply relax and let the peaceful beauty of Ohrid wash over you.",
-      "type": ["coffee","to-go"],
-      "tags": [
-        "coffee",
-        "lakeside",
-        "relaxing",
-        "peaceful"
-      ],
-      "imageUrl": "images_venue/most_card.jpg",
-      "gallery": [
-        {
-          "url": "venue_gallery/most/photo1.jpg",
-          "alt": "A sunny day at our charming lakeside spot, where you can relax outdoors and enjoy the good life by the water."
-        }
-      ],
-      "rating": 4.8,
-      "priceLevel": 2,
-      "location": {
-        "address": "Most Bar, Ohrid",
-        "googleMapsUrl": "#",
-        "mapIframe": ""
-      },
-      "phone": "",
-      "workingHours": "09:00 - 00:00",
-      "bookingUrl": "#",
-      "events": []
+    "id": 120,
+    "name": "Most Bar",
+    "description": "Oh, Most Bar in Ohrid! It's that wonderful spot you dream about when you need to hit pause. Tucked away right by the water's edge, you can practically dip your toes in the lake while sipping your drink. It's truly a serene escape, a place where the only rush is the gentle lapping of the waves, inviting you to simply relax and let the peaceful beauty of Ohrid wash over you.",
+    "type": [
+      "coffee",
+      "to-go"
+    ],
+    "tags": [
+      "coffee",
+      "lakeside",
+      "relaxing",
+      "peaceful"
+    ],
+    "imageUrl": "images_venue/most_card.jpg",
+    "gallery": [
+      {
+        "url": "venue_gallery/most/photo1.jpg",
+        "alt": "A sunny day at our charming lakeside spot, where you can relax outdoors and enjoy the good life by the water."
+      }
+    ],
+    "rating": 4.8,
+    "priceLevel": 2,
+    "location": {
+      "address": "Most Bar, Ohrid",
+      "googleMapsUrl": "#",
+      "mapIframe": ""
     },
-    {
-      "id": 102,
-      "name": "Gibli Café",
-      "description": "<b>GIBLI CAFÉ – AN OASIS OF FLAVOR AND SERENITY AMIDST THE GREENERY</b>\n\nLocated in the very heart of the golf course, Gibli Café is more than just a coffee bar – it is a true retreat for lovers of great coffee, peaceful atmosphere and natural beauty.\n\nWith a seating capacity of 50 guests for everyday enjoyment, as well as the possibility for larger gatherings of up to 150 people, the café offers the perfect ambiance for relaxation and socializing.\n\nTogether with the clubhouse at the Ohrid golf course, Gibli Café is an excellent choice for team-building activities, corporate events, and other celebrations, providing a unique opportunity to combine sports with business or private events in a distinctive setting.\n\nWe offer a carefully selected range of drinks and cocktails, perfectly complementing the taste and atmosphere of every moment. Our signature coffee, the unique Shakerato – cold, elegant, and unforgettable – is already a recognized symbol of the place.\n\nGibli Café is the perfect blend of urban elegance and natural tranquility, surrounded by impeccably maintained green areas, with panoramic views from all sides overlooking the course.\n\nIn this eco-conscious space, far from the city noise and hustle, every cup of coffee tastes like relaxation, and every cocktail tells its own story. Perfect for morning relaxation, afternoon chats, or evening events, Gibli Café is where nature and great taste meet.\n\nFree parking is available.",
-      "type": "coffee",
-      "tags": [
-        "coffee",
-        "cocktails",
-        "events",
-        "corporate",
-        "peaceful",
-        "golf",
-        "nature"
-      ],
-      "imageUrl": "images_venue/gibli_card.png",
-      "gallery": [   
-        {
-          "url": "venue_gallery/gibli/photo1.jpg",
-          "alt": "A view of a golf practice area from a covered patio. White outdoor furniture with grey cushions is arranged on the stone patio. In the green grass beyond the patio, there are three golf bags on carts positioned next to green hitting mats and nets. A flag is visible on the left side, and a large tree is on the right."
-        },
-        {
-          "url": "venue_gallery/gibli/photo2.jpg",
-          "alt": "A close-up of a table on a covered patio overlooking a golf course. A laptop is open on the left, displaying a webpage titled 'THE RULES OF GOLF.' On the right, a glass of an orange beverage with ice and a citrus slice sits on a black napkin. The background shows more outdoor furniture and a lush green golf course."
-        },
-        {
-          "url": "venue_gallery/gibli/photo3.JPG",
-          "alt": "A hand holds a stemmed glass with a dark, frothy drink, likely an espresso martini or similar coffee-based cocktail. The setting is an outdoor patio with a view of a green golf course in the background. A white pillar adorned with a garland of pink flowers is to the right, and green leaves from a tree are visible at the top."
-        }    
-      ],
-      "rating": 4.8,
-      "priceLevel": 2,
-      "location": {
-        "address": "Gibli Café - Golf Club Ohrid CZG, Ohrid",
-        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Golf+Club+Ohrid+CZG,Ohrid",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125.0247910415706!2d20.810714645585144!3d41.12931091394364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbc80dfe6305%3A0xb1df663440036641!2sGolf%20Club%20Ohrid%20CZG!5e0!3m2!1sen!2smk!4v1752488628955!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    "phone": "",
+    "workingHours": "09:00 - 00:00",
+    "bookingUrl": "#",
+    "events": []
+  },
+  {
+    "id": 102,
+    "name": "Gibli Café",
+    "description": "<b>GIBLI CAFÉ – AN OASIS OF FLAVOR AND SERENITY AMIDST THE GREENERY</b>\n\nLocated in the very heart of the golf course, Gibli Café is more than just a coffee bar – it is a true retreat for lovers of great coffee, peaceful atmosphere and natural beauty.\n\nWith a seating capacity of 50 guests for everyday enjoyment, as well as the possibility for larger gatherings of up to 150 people, the café offers the perfect ambiance for relaxation and socializing.\n\nTogether with the clubhouse at the Ohrid golf course, Gibli Café is an excellent choice for team-building activities, corporate events, and other celebrations, providing a unique opportunity to combine sports with business or private events in a distinctive setting.\n\nWe offer a carefully selected range of drinks and cocktails, perfectly complementing the taste and atmosphere of every moment. Our signature coffee, the unique Shakerato – cold, elegant, and unforgettable – is already a recognized symbol of the place.\n\nGibli Café is the perfect blend of urban elegance and natural tranquility, surrounded by impeccably maintained green areas, with panoramic views from all sides overlooking the course.\n\nIn this eco-conscious space, far from the city noise and hustle, every cup of coffee tastes like relaxation, and every cocktail tells its own story. Perfect for morning relaxation, afternoon chats, or evening events, Gibli Café is where nature and great taste meet.\n\nFree parking is available.",
+    "type": "coffee",
+    "tags": [
+      "coffee",
+      "cocktails",
+      "events",
+      "corporate",
+      "peaceful",
+      "golf",
+      "nature"
+    ],
+    "imageUrl": "images_venue/gibli_card.png",
+    "gallery": [
+      {
+        "url": "venue_gallery/gibli/photo1.jpg",
+        "alt": "A view of a golf practice area from a covered patio. White outdoor furniture with grey cushions is arranged on the stone patio. In the green grass beyond the patio, there are three golf bags on carts positioned next to green hitting mats and nets. A flag is visible on the left side, and a large tree is on the right."
       },
-      "phone": "+389 75 391 445",
-      "workingHours": "08:00 - 22:00 (Daily)",
-      "bookingUrl": "#",
-      "events": []
+      {
+        "url": "venue_gallery/gibli/photo2.jpg",
+        "alt": "A close-up of a table on a covered patio overlooking a golf course. A laptop is open on the left, displaying a webpage titled 'THE RULES OF GOLF.' On the right, a glass of an orange beverage with ice and a citrus slice sits on a black napkin. The background shows more outdoor furniture and a lush green golf course."
+      },
+      {
+        "url": "venue_gallery/gibli/photo3.JPG",
+        "alt": "A hand holds a stemmed glass with a dark, frothy drink, likely an espresso martini or similar coffee-based cocktail. The setting is an outdoor patio with a view of a green golf course in the background. A white pillar adorned with a garland of pink flowers is to the right, and green leaves from a tree are visible at the top."
+      }
+    ],
+    "rating": 4.8,
+    "priceLevel": 2,
+    "location": {
+      "address": "Gibli Café - Golf Club Ohrid CZG, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Golf+Club+Ohrid+CZG,Ohrid",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125.0247910415706!2d20.810714645585144!3d41.12931091394364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbc80dfe6305%3A0xb1df663440036641!2sGolf%20Club%20Ohrid%20CZG!5e0!3m2!1sen!2smk!4v1752488628955!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
     },
+    "phone": "+389 75 391 445",
+    "workingHours": "08:00 - 22:00 (Daily)",
+    "bookingUrl": "#",
+    "events": []
+  },
   {
     "id": 104,
     "name": "Plate Bistro",
@@ -3593,7 +3608,7 @@
         "alt": "A close-up, low-angle shot of a bowl of french fries generously topped with a large amount of grated cheese and black pepper. The background is out of focus, showing a patterned fabric surface."
       }
     ],
-    "rating": 5.0,
+    "rating": 5,
     "priceLevel": 3,
     "location": {
       "address": "Plate Bistro, Ohrid",
@@ -3650,7 +3665,7 @@
         "alt": "A close-up side view of a row of gaming stations with red and black gaming chairs. The monitors display the ENTiTY logo. The desktop PCs at the first two stations are black with glowing blue fans and components. The stations have mechanical keyboards and large mousepads, and the room is lit with a combination of blue and red ambient light."
       }
     ],
-    "rating": 5.0,
+    "rating": 5,
     "priceLevel": 2,
     "location": {
       "address": "eSports ENTiTY, Ohrid",
@@ -4095,7 +4110,7 @@
         "alt": "A high-angle close-up of a cocktail in a textured glass filled with crushed ice and a garnish of star-shaped fruit slices, likely pineapple. A black bent straw is in the glass. The drink is on a wooden surface with a carved wooden sign that reads \"LOVE\". In the background, there is a black lantern with a decorative cutout pattern and a dark wall."
       }
     ],
-    "rating": 5.0,
+    "rating": 5,
     "priceLevel": 2,
     "location": {
       "address": "Kult Café, Ohrid",
@@ -4152,7 +4167,7 @@
         "alt": "Overview of the cultural center's multifunctional space"
       }
     ],
-    "rating": 5.0,
+    "rating": 5,
     "priceLevel": 2,
     "location": {
       "address": "Kult Café, Ohrid",
@@ -4198,7 +4213,7 @@
         "alt": "A person's hand is shown lifting a large, round, metal lid covered in sand and ash. The lid is being removed from a pan sitting on a stand over a fire, revealing a pastry that is in the process of being cooked. The background consists of a wall made of stacked wood logs."
       }
     ],
-    "rating": 5.0,
+    "rating": 5,
     "priceLevel": 2,
     "location": {
       "address": "Pirustija Nedanoski, Ramne, Ohrid",
@@ -4325,7 +4340,7 @@
     "workingHours": "Mon-Sat: 07:30-22:00<br>Sunday: Closed",
     "bookingUrl": "#",
     "events": []
-  }, 
+  },
   {
     "id": 123,
     "name": "Tamaro Market 7",
@@ -4658,7 +4673,10 @@
     "id": 134,
     "name": "IT Cafe",
     "description": "Located on Macedonian Educators Boulevard No. 1, IT Cafe is one of the most popular modern cafés in Ohrid, combining stylish design, a cozy atmosphere, and excellent service. Whether you're a local or a visitor exploring the city, this spot is perfect for enjoying premium coffee, refreshing drinks, or a relaxing evening with friends.\n\nIT Cafe Ohrid offers a warm and vibrant ambiance ideal for morning coffee breaks, business meetings, or casual social gatherings. The café features high-quality espresso, cocktails, and desserts — all served with a touch of urban elegance that reflects the city's modern spirit.\n\nWith its central location, free Wi-Fi, and friendly staff, IT Cafe has become a favorite destination among both locals and tourists seeking the best coffee and bar experience in Ohrid. From early mornings to late evenings, it's the perfect place to unwind, meet friends, or simply enjoy the rhythm of the city.\n\nIf you're searching for a stylish café in Ohrid where modern design meets authentic hospitality, IT Cafe should be at the top of your list.",
-    "type": ["coffee", "club"],
+    "type": [
+      "coffee",
+      "club"
+    ],
     "tags": [
       "coffee",
       "cafe",
@@ -4706,7 +4724,10 @@
     "id": 135,
     "name": "Chillout Shisha&Bar",
     "description": "Chillout Shisha & Bar offers a modern and relaxed lounge atmosphere where hookah, cocktails and social vibes come together. With warm reviews highlighting its \"best hookah in town\" and an attentive, friendly staff, this venue has become a go-to choice for locals and visitors alike looking for an elevated nightlife experience in Ohrid.\n\nAt Chillout Shisha & Bar guests can expect:\n\nA wide selection of premium hookah flavours and expert preparation, making it one of the top rated shisha bars in Ohrid.\n\nStylish interior design and comfortable seating that invite you to stay, unwind and socialise — perfect for an evening with friends or a casual drink after dinner.\n\nA full bar offering cocktails, coffee and other beverages, complementing the hookah experience and catering to diverse tastes.\n\nA central location in Ohrid, making it easily accessible from major parts of the city — ideal for tourists exploring the town's nightlife or locals seeking a quality lounge.\n\nIf you're searching for a hookah lounge in Ohrid, a place to enjoy quality shisha with great service in a pleasant setting, Chillout Shisha & Bar is definitely worth a visit. Book a table, try their signature flavours, and enjoy a memorable evening in the heart of Ohrid's social scene.",
-    "type": ["coffee", "shisha"],
+    "type": [
+      "coffee",
+      "shisha"
+    ],
     "tags": [
       "coffee",
       "shisha",
@@ -4914,5 +4935,64 @@
     "workingHours": "08:00 - 00:00",
     "bookingUrl": "#",
     "events": []
+  },
+  {
+    "id": 140,
+    "name": {
+      "en": "CoWorkOhrid",
+      "mk": "CoWorkOhrid"
+    },
+    "description": {
+      "en": "With a pinpoint center location in Ohrid within 5-10 min walking distance to all main points of the City, own free parking space, industrial designed office spaces with cozy and warm atmosphere, with conference room, meeting rooms, podcast studio, shared space and private office spaces, with 24/7 availability and complimentary free coffee, tea, H2O and snacks, we welcome you to join us and become part of our community of collaboration and networking. We host meet-ups, events, courses, workshops, team-building sessions.\n\nFlexible bookings starting from per hour/day/week/2 weeks/month and beyond.",
+      "mk": "CoWorkOhrid е централно сместен простор во Охрид, на 5-10 минути пешачење до сите главни точки на градот. Нуди индустриски дизајнирани канцеларии, конференциска сала, состанувачки соби, подкаст студио, заеднички и приватни простори, со 24/7 достапност и бесплатно кафе, чај, вода и закуски."
+    },
+    "type": {
+      "en": [
+        "coworking"
+      ],
+      "mk": [
+        "coworking"
+      ]
+    },
+    "tags": [
+      "coworking",
+      "business",
+      "workspace",
+      "meeting-room",
+      "podcast-studio",
+      "24/7"
+    ],
+    "imageUrl": "images_venue/cowork/cowork_card.png",
+    "gallery": [
+      {
+        "url": "venue_gallery/CoWork/image1.png",
+        "alt": "Modern open-plan coworking space with industrial brick walls and ergonomic office chairs"
+      },
+      {
+        "url": "venue_gallery/CoWork/image2.png",
+        "alt": "Shared office space featuring fitness sitting balls, a kitchenette, and ergonomic furniture"
+      },
+      {
+        "url": "venue_gallery/CoWork/image3.png",
+        "alt": "Contemporary meeting room with black oval table, blue chairs, a whiteboard, and TV screen"
+      },
+      {
+        "url": "venue_gallery/CoWork/image4.png",
+        "alt": "Spacious open-plan coworking office with multiple workstations, laptops, and large windows"
+      }
+    ],
+    "rating": 5,
+    "ratingCount": 1,
+    "priceLevel": 1,
+    "location": {
+      "address": "CoWorkOhrid, Ohrid",
+      "googleMapsUrl": "https://www.google.com/maps/place/CoWorkOhrid/@41.122450627360145,20.80356604588267,17z/data=!4m6!3m5!1s0x1350db67d16c1e31:0x35079c2b68946483!8m2!3d41.122450627360145!4d20.80356604588267!16s%2Fg%2F11y3p8qr9x",
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.1908590691905!2d20.80356604588267!3d41.122450627360145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db67d16c1e31%3A0x35079c2b68946483!2sCoWorkOhrid!5e1!3m2!1sen!2smk!4v1783668741523!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+    "phone": "",
+    "workingHours": "00:00 - 24:00",
+    "bookingUrl": "#",
+    "events": [],
+    "city": "Ohrid"
   }
 ]

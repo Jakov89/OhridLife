@@ -87,7 +87,11 @@ const mainCategoryConfig = {
     'Kids & Family': {
         icon: '👨‍👩‍👧‍👦',
         subcategories: ['kindergarten', 'playhouse', 'playground', 'education'],
-    }   
+    },
+    'Work & Coworking': {
+        icon: '💻',
+        subcategories: ['coworking'],
+    }
 };
 
 

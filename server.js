@@ -218,7 +218,8 @@ const venueCategoryMap = {
     'Jewelry': ['jewelry'],
     'Market': ['market'],
     'Pet Care': ['vet', 'pet-shop', 'grooming'],
-    'Kids & Family': ['kindergarten', 'playhouse', 'playground', 'education']
+    'Kids & Family': ['kindergarten', 'playhouse', 'playground', 'education'],
+    'Work & Coworking': ['coworking']
 };
 
 // Fisher-Yates shuffle algorithm
