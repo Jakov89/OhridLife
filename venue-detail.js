@@ -52,7 +52,7 @@ function renderVenueDetails(venue, container) {
 
     const name = venue.name || 'Unnamed Venue';
     const description = venue.description || 'No description available.';
-    const imageUrl = venue.imageUrl || 'https://via.placeholder.com/1200x400?text=OhridHub';
+    const imageUrl = venue.shareImage || venue.imageUrl || 'https://via.placeholder.com/1200x400?text=OhridHub';
 
     const header = document.createElement('div');
     header.className = 'venue-detail-header';
