@@ -2913,8 +2913,9 @@ function populateVenueModal(venue, modal) {
     const name = venue.name?.en || venue.name || 'Unnamed Venue';
     const type = venue.type?.en || venue.type || 'No type specified';
     const description = venue.description?.en || venue.description || 'No description available.';
-    const imageUrl = venue.imageUrl ? 
-        (venue.imageUrl.startsWith('http') ? venue.imageUrl : (venue.imageUrl.startsWith('/') ? venue.imageUrl : `/${venue.imageUrl}`)) : 
+    const rawImageUrl = venue.shareImage || venue.imageUrl;
+    const imageUrl = rawImageUrl ? 
+        (rawImageUrl.startsWith('http') ? rawImageUrl : (rawImageUrl.startsWith('/') ? rawImageUrl : `/${rawImageUrl}`)) : 
         'https://via.placeholder.com/400x280/f8fafc/94a3b8?text=No+Image';
     
     console.log('Loading enhanced venue modal for:', name);
