@@ -4993,6 +4993,7 @@
     "workingHours": "00:00 - 24:00",
     "bookingUrl": "#",
     "events": [],
-    "city": "Ohrid"
+    "city": "Ohrid",
+    "shareImage": "images_venue/cowork/cowork_share.png"
   }
 ]

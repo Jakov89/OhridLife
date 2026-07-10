@@ -997,7 +997,7 @@ app.get('/venues/:id', (req, res) => {
             const venueDesc = typeof venue.description === 'object' ? (venue.description.en || '') : (venue.description || '');
             const title = `${venueName} - OhridHub`;
             const description = venueDesc ? venueDesc.substring(0, 160) : `Discover ${venueName} in Ohrid.`;
-            const imageUrl = `https://www.ohridhub.mk/${venue.imageUrl || 'images_ohrid/photo1.jpg'}`;
+            const imageUrl = `https://www.ohridhub.mk/${venue.shareImage || venue.imageUrl || 'images_ohrid/photo1.jpg'}`;
             const pageUrl = `https://www.ohridhub.mk/venues/${venue.id}`;
 
             const schema = {
