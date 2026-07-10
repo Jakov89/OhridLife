@@ -978,39 +978,33 @@ app.get('/api/venues/:id', (req, res) => {
 // Serve venue-detail.html for /venues/:id
 app.get('/venues/:id', (req, res) => {
     const venueId = parseInt(req.params.id, 10);
+    const venuesReorganizedPath = path.join(__dirname, 'data', 'venues_reorganized.json');
     const venuesPath = path.join(__dirname, 'data', 'venues.json');
-    
-    // First, read the venue data to get the details
-    fs.readFile(venuesPath, 'utf8', (err, data) => {
-        if (err) {
-            return res.status(500).send('Error loading venue data.');
-        }
-        
-        const venues = JSON.parse(data);
-        const venue = venues.find(v => v.id === venueId);
 
+    function serveVenuePage(venue) {
         if (!venue) {
-            return res.status(404).sendFile(path.join(__dirname, '404.html')); // Or a custom 404 page
+            return res.status(404).sendFile(path.join(__dirname, '404.html'));
         }
 
-        // Now, read the HTML template
         const templatePath = path.join(__dirname, 'venue-detail.html');
         fs.readFile(templatePath, 'utf8', (err, htmlData) => {
             if (err) {
                 return res.status(500).send('Error loading page template.');
             }
 
-            // Replace placeholders with actual venue data for SEO
-            const title = `${venue.name.en || 'Venue'} - OhridHub`;
-            const description = venue.description.en ? venue.description.en.substring(0, 160) : `Discover ${venue.name.en} in Ohrid.`;
+            // Support both flat-string format (venues_reorganized.json) and object format (venues.json)
+            const venueName = (typeof venue.name === 'object' ? venue.name.en : venue.name) || 'Venue';
+            const venueDesc = typeof venue.description === 'object' ? (venue.description.en || '') : (venue.description || '');
+            const title = `${venueName} - OhridHub`;
+            const description = venueDesc ? venueDesc.substring(0, 160) : `Discover ${venueName} in Ohrid.`;
             const imageUrl = `https://www.ohridhub.mk/${venue.imageUrl || 'images_ohrid/photo1.jpg'}`;
             const pageUrl = `https://www.ohridhub.mk/venues/${venue.id}`;
 
             const schema = {
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
-                "name": venue.name.en,
-                "description": (venue.description.en || '').substring(0, 5000),
+                "name": venueName,
+                "description": venueDesc.substring(0, 5000),
                 "image": imageUrl,
                 "address": {
                     "@type": "PostalAddress",
@@ -1072,11 +1066,34 @@ app.get('/venues/:id', (req, res) => {
                     `<meta name="twitter:url" content="${pageUrl}">`
                 );
 
-            // Inject Schema.org
             const script = `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
             finalHtml = finalHtml.replace('</head>', `${script}</head>`);
 
             res.send(finalHtml);
+        });
+    }
+
+    // Try venues_reorganized.json first, fallback to venues.json
+    fs.readFile(venuesReorganizedPath, 'utf8', (err, data) => {
+        if (err) {
+            fs.readFile(venuesPath, 'utf8', (fallbackErr, fallbackData) => {
+                if (fallbackErr) return res.status(500).send('Error loading venue data.');
+                const clean = fallbackData.charCodeAt(0) === 0xFEFF ? fallbackData.slice(1) : fallbackData;
+                const venues = JSON.parse(clean);
+                serveVenuePage(venues.find(v => v.id === venueId));
+            });
+            return;
+        }
+        const clean = data.charCodeAt(0) === 0xFEFF ? data.slice(1) : data;
+        const venues = JSON.parse(clean);
+        let venue = venues.find(v => v.id === venueId);
+        if (venue) return serveVenuePage(venue);
+        // Not found in venues_reorganized.json, try venues.json
+        fs.readFile(venuesPath, 'utf8', (fallbackErr, fallbackData) => {
+            if (fallbackErr) return serveVenuePage(null);
+            const clean2 = fallbackData.charCodeAt(0) === 0xFEFF ? fallbackData.slice(1) : fallbackData;
+            const venues2 = JSON.parse(clean2);
+            serveVenuePage(venues2.find(v => v.id === venueId));
         });
     });
 });
