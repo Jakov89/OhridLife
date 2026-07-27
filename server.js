@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
+const crypto = require('crypto');
 const { SitemapStream, streamToPromise } = require('sitemap');
 const { Readable } = require('stream');
 const compression = require('compression');
@@ -8,7 +9,41 @@ const helmet = require('helmet');
 const cors = require('cors');
 const sharp = require('sharp');
 const nodemailer = require('nodemailer');
+const rateLimit = require('express-rate-limit');
+const { Mutex } = require('async-mutex');
 require('dotenv').config();
+
+// Mutex serialises concurrent read-modify-write on venues_reorganized.json
+const venueRatingMutex = new Mutex();
+
+// Rate limiter for write endpoints (~5 req/min per IP)
+const writeLimiter = rateLimit({
+    windowMs: 60 * 1000,
+    max: 5,
+    standardHeaders: true,
+    legacyHeaders: false,
+    message: { error: 'Too many requests, please try again later.' }
+});
+
+// ---------- CSP nonce helpers ----------
+// Replaces every CSP_NONCE placeholder in an HTML string with the actual nonce.
+function injectNonce(html, nonce) {
+    return html.replace(/CSP_NONCE/g, nonce);
+}
+
+// Reads an HTML file, injects the request nonce, and sends it.
+// Sets no-store so nonce-bearing HTML is never served from a shared cache.
+function serveWithNonce(filePath, req, res) {
+    fs.readFile(filePath, 'utf8', (err, html) => {
+        if (err) {
+            console.error('Error reading HTML file:', filePath, err);
+            return res.status(500).send('Error loading page.');
+        }
+        res.setHeader('Content-Type', 'text/html; charset=UTF-8');
+        res.setHeader('Cache-Control', 'no-store');
+        res.send(injectNonce(html, res.locals.cspNonce));
+    });
+}
 
 // Cache for optimized images
 const imageCache = new Map();
@@ -87,6 +122,13 @@ app.use('/api', (req, res, next) => {
     })(req, res, next);
 });
 
+// Generate a fresh cryptographic nonce for every page request.
+// Must run before the helmet middleware that reads res.locals.cspNonce.
+app.use((req, res, next) => {
+    res.locals.cspNonce = crypto.randomBytes(16).toString('base64url');
+    next();
+});
+
 // Regular security settings for non-API routes
 app.use(helmet({
     contentSecurityPolicy: {
@@ -94,7 +136,15 @@ app.use(helmet({
             defaultSrc: ["'self'"],
             styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://cdn.jsdelivr.net"],
             fontSrc: ["'self'", "https://fonts.gstatic.com"],
-            scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", "https://cdn.jsdelivr.net", "https://connect.facebook.net", "https://www.googletagmanager.com"],
+            // unsafe-eval removed: no loaded library requires it.
+            // unsafe-inline replaced by per-request nonce.
+            scriptSrc: (req, res) => [
+                "'self'",
+                `'nonce-${res.locals.cspNonce}'`,
+                "https://cdn.jsdelivr.net",
+                "https://connect.facebook.net",
+                "https://www.googletagmanager.com"
+            ],
             scriptSrcAttr: ["'unsafe-inline'"], // Allow inline event handlers like onclick
             imgSrc: ["'self'", "data:", "https:", "http:", "blob:"],
             connectSrc: [
@@ -168,10 +218,30 @@ app.get('/optimized-image/*', async (req, res) => {
 });
 
 // Static file serving with better caching and MIME types
+// Redirect direct .html file requests to their clean-URL equivalents so the
+// nonce-injecting route handlers always serve these pages (not express.static).
+const HTML_CLEAN_URL_MAP = {
+    '/index.html':                 '/',
+    '/learn.html':                 '/learn-ohrid',
+    '/day-planner.html':           '/day-planner',
+    '/artists.html':               '/artists',
+    '/churches.html':              '/churches',
+    '/venue-cards-showcase.html':  '/venue-cards-showcase',
+    '/venue-detail.html':          '/',
+    '/event-detail.html':          '/',
+    '/organization.html':          '/',
+};
+app.use((req, res, next) => {
+    const target = HTML_CLEAN_URL_MAP[req.path];
+    if (target) return res.redirect(301, target);
+    next();
+});
+
 app.use(express.static('.', {
     maxAge: '1y', // Cache static assets for 1 year
     etag: true,
     lastModified: true,
+    index: false, // Prevent express.static from auto-serving index.html for /
     setHeaders: (res, filePath) => {
         const ext = path.extname(filePath).toLowerCase();
         
@@ -298,38 +368,21 @@ function shouldReshuffle() {
 
 // API endpoint to get venues
 app.get('/api/venues', (req, res) => {
-    // Set cache headers with shorter duration for dynamic content
     res.setHeader('Cache-Control', 'public, max-age=1800'); // 30 minutes cache
-    
-    // Try venues_reorganized.json first, fallback to venues.json
+
     const venuesReorganizedPath = path.join(__dirname, 'data', 'venues_reorganized.json');
-    const venuesPath = path.join(__dirname, 'data', 'venues.json');
-    
     fs.readFile(venuesReorganizedPath, 'utf8', (err, data) => {
         if (err) {
-            console.warn("venues_reorganized.json not found, trying venues.json:", err.message);
-            // Fallback to original venues.json
-            fs.readFile(venuesPath, 'utf8', (fallbackErr, fallbackData) => {
-                if (fallbackErr) {
-                    console.error("Error reading both venue files:", fallbackErr);
-                    return res.status(500).json({ error: 'Failed to load venue data.' });
-                }
-                try {
-                    const venues = JSON.parse(fallbackData);
-                    handleVenueResponse(venues, res);
-                } catch (parseErr) {
-                    console.error("Error parsing venues.json:", parseErr);
-                    return res.status(500).json({ error: 'Failed to parse venue data.' });
-                }
-            });
-        } else {
-            try {
-                const venues = JSON.parse(data);
-                handleVenueResponse(venues, res);
-            } catch (parseErr) {
-                console.error("Error parsing venues_reorganized.json:", parseErr);
-                return res.status(500).json({ error: 'Failed to parse venue data.' });
-            }
+            console.error("Error reading venues_reorganized.json:", err);
+            return res.status(500).json({ error: 'Failed to load venue data.' });
+        }
+        try {
+            const clean = data.charCodeAt(0) === 0xFEFF ? data.slice(1) : data;
+            const venues = JSON.parse(clean);
+            handleVenueResponse(venues, res);
+        } catch (parseErr) {
+            console.error("Error parsing venues_reorganized.json:", parseErr);
+            return res.status(500).json({ error: 'Failed to parse venue data.' });
         }
     });
 });
@@ -580,7 +633,12 @@ app.get('/sitemap.xml', async (req, res) => {
 
 // Serve learn.html for the /learn-ohrid URL
 app.get('/learn-ohrid', (req, res) => {
-    res.sendFile(path.join(__dirname, 'learn.html'));
+    serveWithNonce(path.join(__dirname, 'learn.html'), req, res);
+});
+
+// Serve churches.html for the /churches URL
+app.get('/churches', (req, res) => {
+    serveWithNonce(path.join(__dirname, 'churches.html'), req, res);
 });
 
 // Serve event-detail.html for /events/:id
@@ -698,7 +756,8 @@ app.get('/events/:id', (req, res) => {
             // Inject schema markup
             const schemaScript = `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
             finalHtml = finalHtml.replace('</head>', `${schemaScript}</head>`);
-            
+            finalHtml = injectNonce(finalHtml, res.locals.cspNonce);
+            res.setHeader('Cache-Control', 'no-store');
             res.send(finalHtml);
         });
     }).catch(err => {
@@ -818,12 +877,17 @@ app.get('/api/churches/:id', (req, res) => {
 
 // Serve day-planner.html for the /day-planner URL
 app.get('/day-planner', (req, res) => {
-    res.sendFile(path.join(__dirname, 'day-planner.html'));
+    serveWithNonce(path.join(__dirname, 'day-planner.html'), req, res);
 });
 
 // Serve artists.html for the /artists URL
 app.get('/artists', (req, res) => {
-    res.sendFile(path.join(__dirname, 'artists.html'));
+    serveWithNonce(path.join(__dirname, 'artists.html'), req, res);
+});
+
+// Serve venue-cards-showcase.html for the /venue-cards-showcase URL (dev page)
+app.get('/venue-cards-showcase', (req, res) => {
+    serveWithNonce(path.join(__dirname, 'venue-cards-showcase.html'), req, res);
 });
 
 // Serve organization.html for /organizations/:id
@@ -884,14 +948,15 @@ app.get('/organizations/:id', (req, res) => {
             
             const script = `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
             finalHtml = finalHtml.replace('</head>', `${script}</head>`);
-
+            finalHtml = injectNonce(finalHtml, res.locals.cspNonce);
+            res.setHeader('Cache-Control', 'no-store');
             res.send(finalHtml);
         });
     });
 });
 
 // API endpoint to update venue rating
-app.post('/api/venues/:id/rate', express.json(), (req, res) => {
+app.post('/api/venues/:id/rate', writeLimiter, express.json(), async (req, res) => {
     const venueId = parseInt(req.params.id, 10);
     const newRating = req.body.rating;
 
@@ -899,16 +964,16 @@ app.post('/api/venues/:id/rate', express.json(), (req, res) => {
         return res.status(400).json({ error: 'Invalid rating. Must be between 1 and 5.' });
     }
 
-    const venuesPath = path.join(__dirname, 'data', 'venues.json');
-    fs.readFile(venuesPath, 'utf8', (err, data) => {
-        if (err) {
-            console.error("Error reading venues.json:", err);
-            return res.status(500).json({ error: 'Failed to load venue data.' });
-        }
+    const venuesReorganizedPath = path.join(__dirname, 'data', 'venues_reorganized.json');
 
-        let venues = JSON.parse(data);
+    // Serialise concurrent writes with a mutex
+    const release = await venueRatingMutex.acquire();
+    try {
+        const raw = await fs.promises.readFile(venuesReorganizedPath, 'utf8');
+        const clean = raw.charCodeAt(0) === 0xFEFF ? raw.slice(1) : raw;
+        const venues = JSON.parse(clean);
+
         const venueIndex = venues.findIndex(v => v.id === venueId);
-
         if (venueIndex === -1) {
             return res.status(404).json({ error: 'Venue not found.' });
         }
@@ -921,56 +986,50 @@ app.post('/api/venues/:id/rate', express.json(), (req, res) => {
         venues[venueIndex].rating = parseFloat(newAverageRating.toFixed(2));
         venues[venueIndex].ratingCount = newRatingCount;
 
-        fs.writeFile(venuesPath, JSON.stringify(venues, null, 2), (err) => {
-            if (err) {
-                console.error("Error writing to venues.json:", err);
-                return res.status(500).json({ error: 'Failed to save new rating.' });
-            }
-            res.json(venues[venueIndex]);
-        });
-    });
+        await fs.promises.writeFile(venuesReorganizedPath, JSON.stringify(venues, null, 2), 'utf8');
+
+        // Invalidate the in-memory shuffle cache so the updated rating is served immediately
+        shuffledVenuesCache = null;
+        lastShuffleTime = 0;
+
+        res.json(venues[venueIndex]);
+    } catch (err) {
+        console.error("Error updating venue rating:", err);
+        res.status(500).json({ error: 'Failed to save new rating.' });
+    } finally {
+        release();
+    }
 });
 
 // Serve index.html for the root URL to verify
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    serveWithNonce(path.join(__dirname, 'index.html'), req, res);
 });
 
 // API endpoint to get a single venue by ID
 app.get('/api/venues/:id', (req, res) => {
-    // Set content type to JSON
     res.setHeader('Content-Type', 'application/json');
-    
+
     const venueId = parseInt(req.params.id, 10);
-    
-    // Try venues_reorganized.json first, fallback to venues.json
     const venuesReorganizedPath = path.join(__dirname, 'data', 'venues_reorganized.json');
-    const venuesPath = path.join(__dirname, 'data', 'venues.json');
-    
+
     fs.readFile(venuesReorganizedPath, 'utf8', (err, data) => {
         if (err) {
-            console.warn("venues_reorganized.json not found for individual venue, trying venues.json:", err.message);
-            // Fallback to original venues.json
-            fs.readFile(venuesPath, 'utf8', (fallbackErr, fallbackData) => {
-                if (fallbackErr) {
-                    return res.status(500).json({ error: 'Failed to load venue data.' });
-                }
-                const venues = JSON.parse(fallbackData);
-                const venue = venues.find(v => v.id === venueId);
-                if (venue) {
-                    res.json(venue);
-                } else {
-                    res.status(404).json({ error: 'Venue not found.' });
-                }
-            });
-        } else {
-            const venues = JSON.parse(data);
+            console.error("Error reading venues_reorganized.json:", err);
+            return res.status(500).json({ error: 'Failed to load venue data.' });
+        }
+        try {
+            const clean = data.charCodeAt(0) === 0xFEFF ? data.slice(1) : data;
+            const venues = JSON.parse(clean);
             const venue = venues.find(v => v.id === venueId);
             if (venue) {
                 res.json(venue);
             } else {
                 res.status(404).json({ error: 'Venue not found.' });
             }
+        } catch (parseErr) {
+            console.error("Error parsing venues_reorganized.json:", parseErr);
+            return res.status(500).json({ error: 'Failed to parse venue data.' });
         }
     });
 });
@@ -979,7 +1038,6 @@ app.get('/api/venues/:id', (req, res) => {
 app.get('/venues/:id', (req, res) => {
     const venueId = parseInt(req.params.id, 10);
     const venuesReorganizedPath = path.join(__dirname, 'data', 'venues_reorganized.json');
-    const venuesPath = path.join(__dirname, 'data', 'venues.json');
 
     function serveVenuePage(venue) {
         if (!venue) {
@@ -1068,38 +1126,31 @@ app.get('/venues/:id', (req, res) => {
 
             const script = `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
             finalHtml = finalHtml.replace('</head>', `${script}</head>`);
-
+            finalHtml = injectNonce(finalHtml, res.locals.cspNonce);
+            res.setHeader('Cache-Control', 'no-store');
             res.send(finalHtml);
         });
     }
 
-    // Try venues_reorganized.json first, fallback to venues.json
+    // Read from venues_reorganized.json (single source of truth)
     fs.readFile(venuesReorganizedPath, 'utf8', (err, data) => {
         if (err) {
-            fs.readFile(venuesPath, 'utf8', (fallbackErr, fallbackData) => {
-                if (fallbackErr) return res.status(500).send('Error loading venue data.');
-                const clean = fallbackData.charCodeAt(0) === 0xFEFF ? fallbackData.slice(1) : fallbackData;
-                const venues = JSON.parse(clean);
-                serveVenuePage(venues.find(v => v.id === venueId));
-            });
-            return;
+            console.error("Error reading venues_reorganized.json:", err);
+            return res.status(500).send('Error loading venue data.');
         }
         const clean = data.charCodeAt(0) === 0xFEFF ? data.slice(1) : data;
-        const venues = JSON.parse(clean);
-        let venue = venues.find(v => v.id === venueId);
-        if (venue) return serveVenuePage(venue);
-        // Not found in venues_reorganized.json, try venues.json
-        fs.readFile(venuesPath, 'utf8', (fallbackErr, fallbackData) => {
-            if (fallbackErr) return serveVenuePage(null);
-            const clean2 = fallbackData.charCodeAt(0) === 0xFEFF ? fallbackData.slice(1) : fallbackData;
-            const venues2 = JSON.parse(clean2);
-            serveVenuePage(venues2.find(v => v.id === venueId));
-        });
+        try {
+            const venues = JSON.parse(clean);
+            serveVenuePage(venues.find(v => v.id === venueId));
+        } catch (parseErr) {
+            console.error("Error parsing venues_reorganized.json:", parseErr);
+            return res.status(500).send('Error loading venue data.');
+        }
     });
 });
 
 // Contact Form API Endpoint
-app.post('/api/contact', async (req, res) => {
+app.post('/api/contact', writeLimiter, async (req, res) => {
     try {
         const { name, email, subject, message, to, timestamp } = req.body;
         
@@ -1233,24 +1284,103 @@ app.get('/sw.js', (req, res) => {
     res.setHeader('Content-Type', 'application/javascript');
     res.setHeader('Cache-Control', 'no-cache');
     res.send(`
-// Service worker cleanup - unregisters itself
-self.addEventListener('install', function() {
-    self.skipWaiting();
+const CACHE_VERSION = 'ohridhub-v1';
+const STATIC_CACHE = CACHE_VERSION + '-static';
+
+// Core assets to pre-cache on install
+const PRECACHE_ASSETS = [
+    '/',
+    '/style.css',
+    '/common.js',
+    '/index.js',
+    '/logo/ohridhub.png',
+    '/logo/ohridhub_logo_transparent_belo.png',
+    '/manifest.json'
+];
+
+// URL prefixes that should use cache-first strategy
+const CACHE_FIRST_PREFIXES = [
+    '/images_venue/',
+    '/images_ohrid/',
+    '/logo/',
+    '/events_image/',
+    '/artist_image/',
+    '/banners/',
+    '/venue_gallery/',
+    '/main_event/'
+];
+
+function isCacheFirst(url) {
+    const path = new URL(url).pathname;
+    if (CACHE_FIRST_PREFIXES.some(p => path.startsWith(p))) return true;
+    if (/\\.(css|js|woff2?|ttf|eot|ico|svg|png|jpg|jpeg|webp|gif)$/.test(path)) return true;
+    return false;
+}
+
+function isApiRequest(url) {
+    return new URL(url).pathname.startsWith('/api/');
+}
+
+self.addEventListener('install', event => {
+    event.waitUntil(
+        caches.open(STATIC_CACHE)
+            .then(cache => cache.addAll(PRECACHE_ASSETS))
+            .then(() => self.skipWaiting())
+    );
 });
 
-self.addEventListener('activate', function(event) {
+self.addEventListener('activate', event => {
     event.waitUntil(
-        self.registration.unregister()
-            .then(function() {
-                console.log('Service worker unregistered successfully');
-                return caches.keys().then(function(cacheNames) {
-                    return Promise.all(
-                        cacheNames.map(function(cacheName) {
-                            return caches.delete(cacheName);
-                        })
-                    );
+        caches.keys()
+            .then(keys => Promise.all(
+                keys.filter(k => k !== STATIC_CACHE).map(k => caches.delete(k))
+            ))
+            .then(() => self.clients.claim())
+    );
+});
+
+self.addEventListener('fetch', event => {
+    const { request } = event;
+
+    // Only handle GET requests
+    if (request.method !== 'GET') return;
+
+    const url = request.url;
+
+    // API requests: network-only (never cache)
+    if (isApiRequest(url)) {
+        event.respondWith(fetch(request));
+        return;
+    }
+
+    // Static assets: cache-first, fall back to network
+    if (isCacheFirst(url)) {
+        event.respondWith(
+            caches.match(request).then(cached => {
+                if (cached) return cached;
+                return fetch(request).then(response => {
+                    if (response && response.status === 200 && response.type !== 'opaque') {
+                        const toCache = response.clone();
+                        caches.open(STATIC_CACHE).then(cache => cache.put(request, toCache));
+                    }
+                    return response;
                 });
             })
+        );
+        return;
+    }
+
+    // HTML pages and everything else: network-first, fall back to cache
+    event.respondWith(
+        fetch(request)
+            .then(response => {
+                if (response && response.status === 200 && response.type !== 'opaque') {
+                    const toCache = response.clone();
+                    caches.open(STATIC_CACHE).then(cache => cache.put(request, toCache));
+                }
+                return response;
+            })
+            .catch(() => caches.match(request))
     );
 });
 `);
@@ -1262,7 +1392,7 @@ app.get('*', (req, res, next) => {
     if (req.path.startsWith('/api/')) {
         return next();
     }
-    res.sendFile(path.join(__dirname, 'index.html'));
+    serveWithNonce(path.join(__dirname, 'index.html'), req, res);
 });
 
 // Image optimization endpoint with flexible path handling

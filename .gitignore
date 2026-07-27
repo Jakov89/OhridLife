@@ -68,4 +68,7 @@ logs
 
 # Temporary folders
 tmp/
-temp/ 
+temp/
+
+# Generated backup files
+data/*.backup

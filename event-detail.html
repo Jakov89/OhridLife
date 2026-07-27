@@ -3,7 +3,7 @@
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G360HD891"></script>
-    <script>
+    <script nonce="CSP_NONCE">
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
@@ -49,6 +49,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <meta name="theme-color" content="#FFFFFF">
+    <link rel="manifest" href="/manifest.json">
     
     <!-- Event Structured Data -->
     <script type="application/ld+json" id="event-structured-data">
@@ -221,6 +222,25 @@
                             <button class="btn btn-secondary" id="add-to-planner-btn">
                                 Add to Day Planner
                             </button>
+                        </div>
+
+                        <!-- Outdoor weather forecast widget — populated by JS, hidden by default -->
+                        <div id="event-weather-widget" class="event-weather-widget hidden" aria-label="Weather forecast for event day">
+                            <div class="event-weather-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                                <span class="event-weather-title">Weather Forecast</span>
+                            </div>
+                            <div class="event-weather-stats">
+                                <div class="event-weather-stat">
+                                    <span class="event-weather-stat-label">Max Temperature</span>
+                                    <span id="event-weather-temp" class="event-weather-stat-value"></span>
+                                </div>
+                                <div class="event-weather-stat">
+                                    <span class="event-weather-stat-label">Rain Probability</span>
+                                    <span id="event-weather-rain" class="event-weather-stat-value"></span>
+                                </div>
+                            </div>
+                            <p class="event-weather-source">Forecast by <a href="https://open-meteo.com" target="_blank" rel="noopener noreferrer">Open-Meteo</a> · Ohrid coordinates</p>
                         </div>
                     </div>
                 </div>

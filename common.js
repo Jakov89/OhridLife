@@ -892,4 +892,12 @@ window.MetaTagManager = MetaTagManager;
 window.LoadingManager = LoadingManager;
 window.PerformanceMonitor = PerformanceMonitor;
 window.ImageOptimizer = ImageOptimizer;
-window.lazyLoadImages = lazyLoadImages; 
+window.lazyLoadImages = lazyLoadImages;
+
+// Register service worker for PWA installability and asset caching
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' })
+            .catch(function() {});
+    });
+}

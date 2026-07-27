@@ -13608,3 +13608,59 @@ img[data-src]:not(.loaded) {
     }
 }
 
+/* --- Venue View Toggle (Cards / Map) --- */
+.venue-view-toggle {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.view-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: 1px solid var(--border, #e2e8f0);
+    background: var(--card, #ffffff);
+    color: var(--foreground, #1e293b);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    line-height: 1;
+}
+
+.view-toggle-btn.active {
+    background: var(--primary, #f97316);
+    color: #ffffff;
+    border-color: var(--primary, #f97316);
+}
+
+.view-toggle-btn:hover:not(.active) {
+    background: var(--muted, #f1f5f9);
+    border-color: var(--muted-foreground, #94a3b8);
+}
+
+/* Map container */
+#venue-map-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10);
+}
+
+#venue-map {
+    height: 540px;
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+    #venue-map {
+        height: 380px;
+    }
+
+    .venue-view-toggle {
+        justify-content: center;
+    }
+}

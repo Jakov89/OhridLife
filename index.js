@@ -9,6 +9,12 @@ let churchesData = [];
 let currentFactIndex = 0;
 let selectedCity = 'Ohrid'; // Default city selection
 
+// --- VENUE MAP STATE ---
+let venueMapActive = false;   // true when map view is shown
+let venueMap = null;          // Leaflet map instance (lazy-init)
+let venueMapMarkerLayer = null; // Leaflet layer group for markers
+let _lastFilteredVenues = []; // most-recent filtered set (kept in sync by performVenueFiltering)
+
 // Image optimization helper function
 function getOptimizedImageUrl(imageUrl, width = 400, quality = 75) {
     // If it's already an external URL or data URL, return as is
@@ -342,6 +348,8 @@ async function initializeApp() {
     populateVenueFilters();
     initializeVenueSearch();
     filterAndDisplayVenues();
+    applySearchQueryFromUrl();
+    initVenueViewToggle();
     fetchWeather();
     initializeHistoricalFacts();
     // animateStatsOnScroll(); // Removed - statistics section deleted
@@ -967,58 +975,42 @@ function matchesDay(schedule, currentDay) {
 }
 
 function extractHours(text) {
-    // Match time formats: 08:00, 8:00, 08.00, etc.
-    const timePattern = /(\d{1,2})[:.](\d{2})\s*[-–]\s*(\d{1,2})[:.](\d{2})/;
-    const match = text.match(timePattern);
-    
-    if (match) {
-        const openHour = parseInt(match[1]);
-        const openMin = parseInt(match[2]);
-        const closeHour = parseInt(match[3]);
-        const closeMin = parseInt(match[4]);
-        
-        return {
-            open: openHour * 60 + openMin,
-            close: closeHour * 60 + closeMin
-        };
+    // Match ALL time ranges in the text to support multiple ranges per day
+    // (e.g. "08:00-12:00, 16:00-20:00" for venues with a midday break)
+    const timePattern = /(\d{1,2})[:.](\d{2})\s*[-–]\s*(\d{1,2})[:.](\d{2})/g;
+    const ranges = [];
+    let match;
+    while ((match = timePattern.exec(text)) !== null) {
+        ranges.push({
+            open:  parseInt(match[1]) * 60 + parseInt(match[2]),
+            close: parseInt(match[3]) * 60 + parseInt(match[4])
+        });
     }
-    
-    return null;
+    return ranges.length > 0 ? ranges : null;
 }
 
-function checkIfOpenNow(hours, currentTime) {
-    const { open, close } = hours;
-    
-    // Handle closing after midnight
-    if (close < open) {
-        // e.g., 22:00 - 02:00 (closes at 2 AM next day)
-        if (currentTime >= open || currentTime < close) {
-            const closingTime = formatTime(Math.floor(close / 60), close % 60);
-            return { 
-                isOpen: true, 
-                status: 'Open', 
-                closesAt: closingTime 
-            };
+function checkIfOpenNow(hoursOrRanges, currentTime) {
+    // Accept either a legacy single {open,close} object or an array of ranges
+    const ranges = Array.isArray(hoursOrRanges) ? hoursOrRanges : [hoursOrRanges];
+
+    for (const { open, close } of ranges) {
+        let openNow;
+        if (close < open) {
+            // After-midnight closing (e.g. 22:00-02:00)
+            openNow = currentTime >= open || currentTime < close;
+        } else {
+            openNow = currentTime >= open && currentTime < close;
         }
-    } else {
-        // Normal hours (e.g., 09:00 - 22:00)
-        if (currentTime >= open && currentTime < close) {
+        if (openNow) {
             const closingTime = formatTime(Math.floor(close / 60), close % 60);
-            return { 
-                isOpen: true, 
-                status: 'Open', 
-                closesAt: closingTime 
-            };
+            return { isOpen: true, status: 'Open', closesAt: closingTime };
         }
     }
-    
-    // Calculate when it opens next
-    const openingTime = formatTime(Math.floor(open / 60), open % 60);
-    return { 
-        isOpen: false, 
-        status: 'Closed', 
-        opensAt: openingTime 
-    };
+
+    // Not open in any range — report next opening based on first range (existing behaviour)
+    const first = ranges[0];
+    const openingTime = formatTime(Math.floor(first.open / 60), first.open % 60);
+    return { isOpen: false, status: 'Closed', opensAt: openingTime };
 }
 
 function formatTime(hours, minutes) {
@@ -1889,6 +1881,113 @@ function getVenueSearchTerm() {
     return searchInput ? searchInput.value.trim().toLowerCase() : '';
 }
 
+function applySearchQueryFromUrl() {
+    const q = new URLSearchParams(window.location.search).get('q');
+    if (!q || !q.trim()) return;
+
+    const searchInput = document.getElementById('venue-search-input');
+    if (!searchInput) return;
+
+    searchInput.value = q.trim();
+
+    // Show the clear button if present
+    document.getElementById('clear-search-btn')?.classList.remove('hidden');
+
+    // Re-run filtering with the pre-filled term
+    filterAndDisplayVenues();
+
+    // Scroll smoothly to the venues section so results are visible
+    document.getElementById('plan-your-visit')?.scrollIntoView({ behavior: 'smooth' });
+}
+
+// --- VENUE MAP VIEW ---
+
+function initVenueMapOnce() {
+    if (venueMap) return; // already initialised
+    if (typeof L === 'undefined') {
+        console.warn('Leaflet not loaded — map view unavailable');
+        return;
+    }
+    venueMap = L.map('venue-map', {
+        center: [41.12, 20.80],
+        zoom: 13,
+        zoomControl: true,
+        scrollWheelZoom: false  // avoid accidental scroll-zoom while the user scrolls the page
+    });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 19
+    }).addTo(venueMap);
+    venueMapMarkerLayer = L.layerGroup().addTo(venueMap);
+}
+
+function updateVenueMap(venues) {
+    if (!venueMap || !venueMapMarkerLayer) return;
+    venueMapMarkerLayer.clearLayers();
+
+    venues.forEach(venue => {
+        if (venue.location?.lat == null || venue.location?.lng == null) return;
+
+        const name = venue.name?.en || venue.name || 'Venue';
+        const rawType = venue.type?.en || venue.type;
+        const typeLabel = rawType
+            ? (Array.isArray(rawType) ? rawType : [rawType])
+                .map(s => s.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()))
+                .join(', ')
+            : '';
+
+        const marker = L.marker([venue.location.lat, venue.location.lng]);
+        marker.bindPopup(
+            `<div style="min-width:170px;font-family:inherit;">` +
+            `<strong style="font-size:0.95rem;display:block;margin-bottom:2px;">${name}</strong>` +
+            (typeLabel ? `<span style="color:#64748b;font-size:0.8rem;">${typeLabel}</span>` : '') +
+            `<a href="/venues/${venue.id}" style="display:inline-block;margin-top:8px;color:#f97316;` +
+            `font-size:0.85rem;font-weight:600;text-decoration:none;">View details →</a></div>`
+        );
+        venueMapMarkerLayer.addLayer(marker);
+    });
+}
+
+function initVenueViewToggle() {
+    const btnCard = document.getElementById('btn-card-view');
+    const btnMap  = document.getElementById('btn-map-view');
+    const sliderContainer = document.getElementById('all-venues-slider-container');
+    const mapContainer    = document.getElementById('venue-map-container');
+    if (!btnCard || !btnMap || !sliderContainer || !mapContainer) return;
+
+    btnCard.addEventListener('click', () => {
+        if (!venueMapActive) return; // already in card view
+        venueMapActive = false;
+        btnCard.classList.add('active');
+        btnCard.setAttribute('aria-pressed', 'true');
+        btnMap.classList.remove('active');
+        btnMap.setAttribute('aria-pressed', 'false');
+        sliderContainer.classList.remove('hidden');
+        mapContainer.classList.add('hidden');
+    });
+
+    btnMap.addEventListener('click', () => {
+        if (venueMapActive) return; // already in map view
+        venueMapActive = true;
+        btnMap.classList.add('active');
+        btnMap.setAttribute('aria-pressed', 'true');
+        btnCard.classList.remove('active');
+        btnCard.setAttribute('aria-pressed', 'false');
+        sliderContainer.classList.add('hidden');
+        mapContainer.classList.remove('hidden');
+
+        // Lazy-init map on first open, then repaint markers
+        initVenueMapOnce();
+        // Leaflet must recalculate its container size after becoming visible
+        setTimeout(() => {
+            if (venueMap) {
+                venueMap.invalidateSize();
+                updateVenueMap(_lastFilteredVenues);
+            }
+        }, 60);
+    });
+}
+
 function searchVenues(searchTerm) {
     if (!searchTerm) return [];
     
@@ -2603,6 +2702,10 @@ function performVenueFiltering(activeMainCategory, activeSubCategory) {
         // For all other categories, use the server-provided order (which is shuffled)
         populateAllVenuesSlider(filteredVenues);
     }
+
+    // Keep map in sync: store filtered set; if map is active, re-paint markers
+    _lastFilteredVenues = filteredVenues;
+    if (venueMapActive) updateVenueMap(filteredVenues);
     
     // Hide loading state
     hideVenueLoadingState();

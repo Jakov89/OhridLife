@@ -239,10 +239,67 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 mapSection.style.display = 'none';
             }
+
+            // Weather forecast widget for outdoor events
+            fetchEventWeather(event);
             
         } catch (error) {
             console.error('Error displaying event data:', error);
             showError('Error displaying event information. Please refresh the page.');
+        }
+    }
+
+    // --- OUTDOOR WEATHER FORECAST WIDGET ---
+    // Shows a small forecast for outdoor events when the event date is within
+    // open-meteo's 16-day forecast window. Silently does nothing otherwise.
+    async function fetchEventWeather(event) {
+        const widget = document.getElementById('event-weather-widget');
+        if (!widget) return;
+
+        // Only show for events explicitly tagged as outdoor
+        if (event.outdoor !== true) return;
+
+        // Require a valid ISO date
+        if (!event.isoDate) return;
+
+        // Compute how many calendar days away the event is (ignoring time-of-day)
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const eventDate = new Date(event.isoDate);
+        eventDate.setHours(0, 0, 0, 0);
+        const daysAway = Math.round((eventDate - today) / 86400000);
+
+        // Open-Meteo free forecast reaches 16 days ahead; past events get no widget
+        if (daysAway < 0 || daysAway > 16) return;
+
+        try {
+            const dateStr = event.isoDate.slice(0, 10); // "YYYY-MM-DD"
+            const url =
+                'https://api.open-meteo.com/v1/forecast' +
+                '?latitude=41.1231&longitude=20.8016' +
+                '&daily=temperature_2m_max,precipitation_probability_max' +
+                '&timezone=Europe%2FSkopje' +
+                `&start_date=${dateStr}&end_date=${dateStr}`;
+
+            const res = await fetch(url);
+            if (!res.ok) return;
+
+            const data = await res.json();
+            const tempMax  = data?.daily?.temperature_2m_max?.[0];
+            const rainProb = data?.daily?.precipitation_probability_max?.[0];
+
+            if (tempMax == null && rainProb == null) return;
+
+            if (tempMax != null) {
+                document.getElementById('event-weather-temp').textContent = `${Math.round(tempMax)} °C`;
+            }
+            if (rainProb != null) {
+                document.getElementById('event-weather-rain').textContent = `${rainProb} %`;
+            }
+
+            widget.classList.remove('hidden');
+        } catch {
+            // Network error or bad payload — silently suppress, widget stays hidden
         }
     }
     

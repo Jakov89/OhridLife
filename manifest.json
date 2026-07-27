@@ -1,0 +1,25 @@
+{
+  "name": "OhridHub",
+  "short_name": "OhridHub",
+  "description": "Your ultimate guide to events, venues & activities in Ohrid",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/logo/ohridhub.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo/ohridhub_logo_transparent_belo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
