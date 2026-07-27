@@ -134,14 +134,15 @@ app.use(helmet({
     contentSecurityPolicy: {
         directives: {
             defaultSrc: ["'self'"],
-            styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://cdn.jsdelivr.net"],
+            styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://cdn.jsdelivr.net", "https://unpkg.com"],
             fontSrc: ["'self'", "https://fonts.gstatic.com"],
             // unsafe-eval removed: no loaded library requires it.
             // unsafe-inline replaced by per-request nonce.
-            scriptSrc: (req, res) => [
+            scriptSrc: [
                 "'self'",
-                `'nonce-${res.locals.cspNonce}'`,
+                (req, res) => `'nonce-${res.locals.cspNonce}'`,
                 "https://cdn.jsdelivr.net",
+                "https://unpkg.com",
                 "https://connect.facebook.net",
                 "https://www.googletagmanager.com"
             ],

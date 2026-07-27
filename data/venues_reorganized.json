@@ -47,7 +47,9 @@
     "location": {
       "address": "Sky Corner Hotel and Indian Restaurant, Ohrid",
       "googleMapsUrl": "https://maps.app.goo.gl/vkYCbPwoG8bHp3cU8",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.2252573097517!2d20.801061080700567!3d41.11831175273007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddab46bcebf9%3A0x18783fa1a77b14b6!2sSky%20Corner%20Hotel%20and%20Indian%20Restaurant%20Ohrid!5e0!3m2!1sen!2smk!4v1756381670770!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.2252573097517!2d20.801061080700567!3d41.11831175273007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddab46bcebf9%3A0x18783fa1a77b14b6!2sSky%20Corner%20Hotel%20and%20Indian%20Restaurant%20Ohrid!5e0!3m2!1sen!2smk!4v1756381670770!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1183118,
+      "lng": 20.8010611
     },
     "phone": "+389 71 331 607",
     "workingHours": "08:00 - 00:00",
@@ -87,7 +89,9 @@
     "location": {
       "address": "Amfora Restaurant, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Amfora+Restaurant",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.4149272395437!2d20.803154587558076!3d41.111345514302116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb73fc2689d%3A0xac2f3deaa7f9e4ad!2sAmfora%20Restaurant!5e0!3m2!1sen!2smk!4v1754156666553!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.4149272395437!2d20.803154587558076!3d41.111345514302116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb73fc2689d%3A0xac2f3deaa7f9e4ad!2sAmfora%20Restaurant!5e0!3m2!1sen!2smk!4v1754156666553!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.111345514302116,
+      "lng": 20.803154587558076
     },
     "phone": "070605206",
     "workingHours": "11:00 - 23:00",
@@ -138,7 +142,9 @@
     "location": {
       "address": "Restaurant Bravo, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Restaurant+Bravo/@41.08818471438427,20.821649056696856",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.5609140962213!2d20.821649056696856!3d41.08818471438427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c55efe28b2e1%3A0xd13e2614c2dffaf4!2sRestaurant%20Bravo!5e0!3m2!1sen!2smk!4v1753096219824!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.5609140962213!2d20.821649056696856!3d41.08818471438427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c55efe28b2e1%3A0xd13e2614c2dffaf4!2sRestaurant%20Bravo!5e0!3m2!1sen!2smk!4v1753096219824!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.08818471438427,
+      "lng": 20.821649056696856
     },
     "phone": "075 998 000",
     "workingHours": "08:00 - 00:00",
@@ -172,7 +178,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bro's+Burger+Station,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0136474251126!2d20.795785576447834!3d41.11239301300688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dde81f0f8353%3A0xfaabbe5670c0615a!2sBro&#39;s%20Burger%20Station!5e0!3m2!1sen!2smk!4v1750874632065!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0136474251126!2d20.795785576447834!3d41.11239301300688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dde81f0f8353%3A0xfaabbe5670c0615a!2sBro&#39;s%20Burger%20Station!5e0!3m2!1sen!2smk!4v1750874632065!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11239301300688,
+      "lng": 20.795785576447834
     },
     "phone": "075661664",
     "workingHours": "12:00 - 22:00",
@@ -217,7 +225,9 @@
     "location": {
       "address": "Cosa Nostra Pizza, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Pizzeria+Cosa+Nostra/@41.11210,20.79619,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dca4dec037c1:0x6edfcf037f60ee48!8m2!3d41.11210!4d20.79619!16s%2Fg%2F11y3p8qr9x?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5067177890543!2d20.79619286963638!3d41.11210420862982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4dec037c1%3A0x6edfcf037f60ee48!2sPizzeria%20Cosa%20Nostra!5e0!3m2!1sen!2smk!4v1751460243356!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5067177890543!2d20.79619286963638!3d41.11210420862982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4dec037c1%3A0x6edfcf037f60ee48!2sPizzeria%20Cosa%20Nostra!5e0!3m2!1sen!2smk!4v1751460243356!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1121,
+      "lng": 20.79619
     },
     "phone": "071 255 872",
     "workingHours": "08:00 - 00:00 (Mon - Fri)<br>08:00 - 01:00 (Sat - Sun)",
@@ -255,7 +265,9 @@
     "location": {
       "address": "Despina Event Venue & Lounge, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/%E2%80%9CDespina%E2%80%9D+Event+Venue+%26+Lounge+-+Lake+Ohrid/@41.0983923,20.800800,17z/data=!3m1!4b1!4m6!3m5!1s0x1350c30005cd6371:0x19abdc8186c32683!8m2!3d41.0983923!4d20.803375!16s%2Fg%2F11v01_w2jy?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.3273110841012!2d20.803374571244373!3d41.09839229746663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c30005cd6371%3A0x19abdc8186c32683!2s%E2%80%9CDespina%E2%80%9D%20Event%20Venue%20%26%20Lounge%20-%20Lake%20Ohrid!5e0!3m2!1sen!2smk!4v1748344649835!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.3273110841012!2d20.803374571244373!3d41.09839229746663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c30005cd6371%3A0x19abdc8186c32683!2s%E2%80%9CDespina%E2%80%9D%20Event%20Venue%20%26%20Lounge%20-%20Lake%20Ohrid!5e0!3m2!1sen!2smk!4v1748344649835!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.0983923,
+      "lng": 20.8008
     },
     "phone": "074244159",
     "workingHours": "Mon-Sun: 09:00-00:00",
@@ -300,7 +312,9 @@
     "location": {
       "address": "Leonardo Pizza, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Leonardo+Pizza/@41.11234,20.79648,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dca4efca0fc7:0x523966718f805437!8m2!3d41.11234!4d20.79648!16s%2Fg%2F11y3p8qr9x?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5039969463246!2d20.79648347578415!3d41.11234190000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4efca0fc7%3A0x523966718f805437!2sLeonardo%20Pizza!5e0!3m2!1sen!2smk!4v1751461630810!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5039969463246!2d20.79648347578415!3d41.11234190000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4efca0fc7%3A0x523966718f805437!2sLeonardo%20Pizza!5e0!3m2!1sen!2smk!4v1751461630810!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11234,
+      "lng": 20.79648
     },
     "phone": "046 260 359",
     "workingHours": "09:00 - 00:00",
@@ -340,7 +354,9 @@
     "location": {
       "address": "Meana Lagadin, Lagadin",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Meana+Lagadin,Lagadin",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d752.2814084397162!2d20.804094269655145!3d41.044381609671966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c32361e3014d%3A0x30b15c78b42552eb!2sMeana%20Lagadin!5e0!3m2!1sen!2smk!4v1751451611210!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d752.2814084397162!2d20.804094269655145!3d41.044381609671966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c32361e3014d%3A0x30b15c78b42552eb!2sMeana%20Lagadin!5e0!3m2!1sen!2smk!4v1751451611210!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.044381609671966,
+      "lng": 20.804094269655145
     },
     "phone": "072543400",
     "workingHours": "09:00 - 00:00 (Sun - Fri)<br>09:00 - 01:00 (Sat)",
@@ -364,7 +380,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pink+Panter,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.9656382267763!2d20.79748757644797!3d41.11344151294223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca474a4ae1b%3A0x3c9cee0713042617!2sPink%20Panter!5e0!3m2!1sen!2smk!4v1750874774227!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.9656382267763!2d20.79748757644797!3d41.11344151294223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca474a4ae1b%3A0x3c9cee0713042617!2sPink%20Panter!5e0!3m2!1sen!2smk!4v1750874774227!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11344151294223,
+      "lng": 20.79748757644797
     },
     "phone": "078313114",
     "workingHours": "09:00 - 02:00",
@@ -402,7 +420,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sandwich+Shop+Pinokio,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.9546671709168!2d20.80472187644802!3d41.11368111292731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca09f38fb25%3A0xd8b8d61f26161e9e!2sSandwich%20Shop%20Pinokio!5e0!3m2!1sen!2smk!4v1750875223470!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.9546671709168!2d20.80472187644802!3d41.11368111292731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca09f38fb25%3A0xd8b8d61f26161e9e!2sSandwich%20Shop%20Pinokio!5e0!3m2!1sen!2smk!4v1750875223470!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11368111292731,
+      "lng": 20.80472187644802
     },
     "phone": "071888844",
     "workingHours": "Mon-Sat: 08:00-20:00",
@@ -429,7 +449,9 @@
     "location": {
       "address": "Pizza Via Sacra, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Pizza+Via+Sacra/@41.11246,20.79344,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dcbae02d19e3:0xd84d88b760b606c7!8m2!3d41.11246!4d20.79344!16s%2Fg%2F11y3p8qr9x?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5026140503232!2d20.793441169655285!3d41.11246270862423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbae02d19e3%3A0xd84d88b760b606c7!2sPizza%20Via%20Sacra!5e0!3m2!1sen!2smk!4v1751456287922!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5026140503232!2d20.793441169655285!3d41.11246270862423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbae02d19e3%3A0xd84d88b760b606c7!2sPizza%20Via%20Sacra!5e0!3m2!1sen!2smk!4v1751456287922!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11246,
+      "lng": 20.79344
     },
     "phone": "075 440 654",
     "workingHours": "10:00 - 00:30",
@@ -467,7 +489,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Simple+Burgers,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.008162018771!2d20.799618776447918!3d41.11251281299944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd302208a925%3A0x5445099e7bf42704!2sSimple%20Burgers!5e0!3m2!1sen!2smk!4v1750875739561!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.008162018771!2d20.799618776447918!3d41.11251281299944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd302208a925%3A0x5445099e7bf42704!2sSimple%20Burgers!5e0!3m2!1sen!2smk!4v1750875739561!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11251281299944,
+      "lng": 20.799618776447918
     },
     "phone": "070328637",
     "workingHours": "Mon-Sat: 10:00-22:00",
@@ -504,7 +528,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Stazione,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.262801690459!2d20.80260058958505!3d41.10695123944805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca802b9675f%3A0xbb6422b111078e8e!2sStazione!5e0!3m2!1sen!2smk!4v1750872425787!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.262801690459!2d20.80260058958505!3d41.10695123944805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca802b9675f%3A0xbb6422b111078e8e!2sStazione!5e0!3m2!1sen!2smk!4v1750872425787!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.10695123944805,
+      "lng": 20.80260058958505
     },
     "phone": "046260406",
     "workingHours": "Mon-Sun: 08:00-00:00",
@@ -544,7 +570,9 @@
     "location": {
       "address": "Utarna Terrace, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Utarna+Terrace,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.6634052495638!2d20.810127176445697!3d41.05448931657743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c47ebc16a373%3A0x5f2b8be3cd3f2988!2sUtarna%20Terrace!5e0!3m2!1sen!2smk!4v1751450914473!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.6634052495638!2d20.810127176445697!3d41.05448931657743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c47ebc16a373%3A0x5f2b8be3cd3f2988!2sUtarna%20Terrace!5e0!3m2!1sen!2smk!4v1751450914473!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.05448931657743,
+      "lng": 20.810127176445697
     },
     "phone": "076 621 843",
     "workingHours": "10:00 - 21:00",
@@ -582,7 +610,9 @@
     "location": {
       "address": "Kosta Abrash, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Harbour,Kosta+Abrash,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.002607916984!2d20.797629676447897!3d41.11263411299204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1750871932284!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.002607916984!2d20.797629676447897!3d41.11263411299204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1750871932284!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11263411299204,
+      "lng": 20.797629676447897
     },
     "phone": "071 725 760",
     "workingHours": "Daily: 10:00-01:00 (Summer Hours: 10:00-02:00)",
@@ -621,7 +651,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tino+Restaurant,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.167727943966!2d20.80317447644784!3d41.10902781321446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd31c22464af%3A0xf903361d023a5c1b!2sTino's%20Pub%20%26%20Bar!5e0!3m2!1sen!2smk!4v1750872851291!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.167727943966!2d20.80317447644784!3d41.10902781321446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd31c22464af%3A0xf903361d023a5c1b!2sTino's%20Pub%20%26%20Bar!5e0!3m2!1sen!2smk!4v1750872851291!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.10902781321446,
+      "lng": 20.80317447644784
     },
     "phone": "046 230 450",
     "workingHours": "Daily: 10:00-01:00 (Summer Hours: 10:00-02:00)",
@@ -649,7 +681,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Anxiety+Stop%26Go,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0118891660813!2d20.795364876447966!3d41.11243141300447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddc62a32d7e9%3A0xdba90f600357bd20!2sAnxiety%20Stop%26Go!5e0!3m2!1sen!2smk!4v1750874383678!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0118891660813!2d20.795364876447966!3d41.11243141300447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddc62a32d7e9%3A0xdba90f600357bd20!2sAnxiety%20Stop%26Go!5e0!3m2!1sen!2smk!4v1750874383678!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11243141300447,
+      "lng": 20.795364876447966
     },
     "phone": "078 247 786",
     "workingHours": "09:00-00:00",
@@ -690,7 +724,9 @@
     "location": {
       "address": "Kosta Abrash, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kadmo+Lounge+Bar,Kosta+Abrash,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.035415523309!2d20.796792600000003!3d41.1119176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca527527cbf%3A0xc117df555899d00e!2sKadmo%20Lounge%20Bar!5e0!3m2!1sen!2smk!4v1748537148170!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.035415523309!2d20.796792600000003!3d41.1119176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca527527cbf%3A0xc117df555899d00e!2sKadmo%20Lounge%20Bar!5e0!3m2!1sen!2smk!4v1748537148170!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1119176,
+      "lng": 20.796792600000003
     },
     "phone": "070 293 888",
     "workingHours": "Mon-Sun: 08:00-00:00 (Summer Hours: 08:00-02:00)",
@@ -766,7 +802,9 @@
     "location": {
       "address": "Gibli Café - Golf Club Ohrid CZG, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Golf+Club+Ohrid+CZG,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125.0247910415706!2d20.810714645585144!3d41.12931091394364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbc80dfe6305%3A0xb1df663440036641!2sGolf%20Club%20Ohrid%20CZG!5e0!3m2!1sen!2smk!4v1752488628955!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125.0247910415706!2d20.810714645585144!3d41.12931091394364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbc80dfe6305%3A0xb1df663440036641!2sGolf%20Club%20Ohrid%20CZG!5e0!3m2!1sen!2smk!4v1752488628955!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.12931091394364,
+      "lng": 20.810714645585144
     },
     "phone": "+389 75 391 445",
     "workingHours": "08:00 - 22:00 (Daily)",
@@ -804,7 +842,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Octava+Lounge+Bar,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0488077434948!2d20.799729276447934!3d41.111625113054295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd66a9968849%3A0xb827cb595d1b7e7b!2sOctava%20Lounge%20Bar!5e0!3m2!1sen!2smk!4v1750873328387!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0488077434948!2d20.799729276447934!3d41.111625113054295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd66a9968849%3A0xb827cb595d1b7e7b!2sOctava%20Lounge%20Bar!5e0!3m2!1sen!2smk!4v1750873328387!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.111625113054295,
+      "lng": 20.799729276447934
     },
     "phone": "070388888",
     "workingHours": "Mon-Sun: 08:00-00:00",
@@ -842,7 +882,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pier+82+Cafe+%26+Restaurant,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.216044235366!2d20.804090676447714!3d41.107972513279606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd516c16b1d3%3A0x594da6a576f392e3!2sPier%2082%20Cafe%20%26%20Restaurant!5e0!3m2!1sen!2smk!4v1750874142536!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.216044235366!2d20.804090676447714!3d41.107972513279606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd516c16b1d3%3A0x594da6a576f392e3!2sPier%2082%20Cafe%20%26%20Restaurant!5e0!3m2!1sen!2smk!4v1750874142536!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.107972513279606,
+      "lng": 20.804090676447714
     },
     "phone": "075864984",
     "workingHours": "08:00 - 00:00",
@@ -881,7 +923,9 @@
     "location": {
       "address": "Kosta Abrash, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Su+rooftop+restaurant,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.24108332982!2d20.804638076447734!3d41.10742561331329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca806d5d649%3A0x7940caea2e819cce!2sSu%20rooftop%20restaurant!5e0!3m2!1sen!2smk!4v1750872886213!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.24108332982!2d20.804638076447734!3d41.10742561331329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca806d5d649%3A0x7940caea2e819cce!2sSu%20rooftop%20restaurant!5e0!3m2!1sen!2smk!4v1750872886213!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.10742561331329,
+      "lng": 20.804638076447734
     },
     "phone": "046258684",
     "workingHours": "Mon-Sun: 18:00-01:00",
@@ -915,7 +959,9 @@
     "location": {
       "address": "BP Petrol, E65, Ohrid 6000",
       "googleMapsUrl": "https://www.google.com/maps/place/Alomos+Night+Club/@41.1051875,20.8130278,19z/data=!4m6!3m5!1s0x1350dba7c151e09d:0xb7ef8f995010ac8d!8m2!3d41.1051875!4d20.8136133!16s%2Fg%2F11hjg_rd5g?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d634.5585995556619!2d20.81361332453349!3d41.105187569283856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dba7c151e09d%3A0xb7ef8f995010ac8d!2z0Igu0J8uINCR0LjQu9GY0LDQvdC40L3QuCDQmNC30LLQvtGA0Lg!5e1!3m2!1sen!2smk!4v1748255004872!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d634.5585995556619!2d20.81361332453349!3d41.105187569283856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dba7c151e09d%3A0xb7ef8f995010ac8d!2z0Igu0J8uINCR0LjQu9GY0LDQvdC40L3QuCDQmNC30LLQvtGA0Lg!5e1!3m2!1sen!2smk!4v1748255004872!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1051875,
+      "lng": 20.8130278
     },
     "phone": "072 238 888",
     "workingHours": "Working Hours: 22:00 - 04:00 (Fri-Sat)<br>Summer working hours 22:00 - 04:00",
@@ -961,7 +1007,9 @@
     "location": {
       "address": "Coffee & Bar La Fabrique, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Food+%26+Bar+LaFabrique/@41.11395,20.80106,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dd095055920b:0xa061864e724d9e90!8m2!3d41.11395!4d20.80106!16s%2Fg%2F11y3p8qr9x?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.9424819488027!2d20.801061147615343!3d41.113947228086246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd095055920b%3A0xa061864e724d9e90!2sFood%20%26%20Bar%20LaFabrique!5e0!3m2!1sen!2smk!4v1751458452302!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.9424819488027!2d20.801061147615343!3d41.113947228086246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd095055920b%3A0xa061864e724d9e90!2sFood%20%26%20Bar%20LaFabrique!5e0!3m2!1sen!2smk!4v1751458452302!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11395,
+      "lng": 20.80106
     },
     "phone": "070 416 868",
     "workingHours": "08:00 - 00:00 (Sun - Thu)<br>08:00 - 01:00 (Fri - Sat)",
@@ -999,7 +1047,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dublin+Irish+Pub,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.165544003359!2d20.803172576447803!3d41.10907551321152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca7c7015f6b%3A0x13717f0588503ae!2sIrish%20Pub%20Dublin!5e0!3m2!1sen!2smk!4v1750872036349!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.165544003359!2d20.803172576447803!3d41.10907551321152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca7c7015f6b%3A0x13717f0588503ae!2sIrish%20Pub%20Dublin!5e0!3m2!1sen!2smk!4v1750872036349!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.10907551321152,
+      "lng": 20.803172576447803
     },
     "phone": "046 200 040",
     "workingHours": "Daily: 08:00-01:00 (Summer Hours: 08:00-02:00)",
@@ -1039,7 +1089,9 @@
     "location": {
       "address": "INclusive, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=INclusive,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2251.491368773509!2d20.807618663394248!3d41.12622131914956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db21c01f6a8b%3A0xd07d14cd731e512d!2sINclusive!5e0!3m2!1sen!2smk!4v1751447318600!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2251.491368773509!2d20.807618663394248!3d41.12622131914956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db21c01f6a8b%3A0xd07d14cd731e512d!2sINclusive!5e0!3m2!1sen!2smk!4v1751447318600!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.12622131914956,
+      "lng": 20.807618663394248
     },
     "phone": "071 232 808",
     "workingHours": "23:30 - 05:00 (When there is an Event)",
@@ -1069,7 +1121,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=41.11487931285327,20.79814417644796",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.4802732442341!2d20.799777163693015!3d41.11441434209235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddc6712cf77b%3A0xd287b2c00c2e9c58!2sIrish%20Pub%20Five!5e0!3m2!1sen!2smk!4v1748537237423!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.4802732442341!2d20.799777163693015!3d41.11441434209235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddc6712cf77b%3A0xd287b2c00c2e9c58!2sIrish%20Pub%20Five!5e0!3m2!1sen!2smk!4v1748537237423!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11441434209235,
+      "lng": 20.799777163693015
     },
     "phone": "076 625 083",
     "workingHours": "Daily: 08:00-00:00 (Summer Hours: 08:00-01:00)",
@@ -1107,7 +1161,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=41.11202390863104,20.794302869655294",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.97108961541426!2d20.79483075241209!3d41.11180561039946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbad9f657b9%3A0xe46164dac671a55b!2sJazz%20Inn!5e0!3m2!1sen!2smk!4v1748537193910!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.97108961541426!2d20.79483075241209!3d41.11180561039946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbad9f657b9%3A0xe46164dac671a55b!2sJazz%20Inn!5e0!3m2!1sen!2smk!4v1748537193910!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11180561039946,
+      "lng": 20.79483075241209
     },
     "phone": "078 201 491",
     "workingHours": "Daily: 10:00-01:00 (Summer Hours: 10:00-02:00)",
@@ -1132,7 +1188,9 @@
     "location": {
       "address": "Le Petit Bistro Lihnidos, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le+Petit+Bistro+Lihnidos,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.0042165136758!2d20.797858478682038!3d41.11250689424211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca458b1aa21%3A0xd3267f5310ee9315!2sLe%20Petit%20Bistro%20Lihnidos!5e0!3m2!1sen!2smk!4v1751305628056!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.0042165136758!2d20.797858478682038!3d41.11250689424211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca458b1aa21%3A0xd3267f5310ee9315!2sLe%20Petit%20Bistro%20Lihnidos!5e0!3m2!1sen!2smk!4v1751305628056!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11250689424211,
+      "lng": 20.797858478682038
     },
     "phone": "070 262 652",
     "workingHours": "09:00 - 01:00 (Mon - Tue)<br>09:00 - 02:00 (Fri - Sat)<br>09:00 - 01:00 (Sun)",
@@ -1169,7 +1227,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Lion+Ohrid,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.21260008603!2d20.801784289585317!3d41.10804773938014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddc725d6a22f%3A0x8f8ed244ccd3c171!2sThe%20Lion%20Ohrid!5e0!3m2!1sen!2smk!4v1750873923016!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.21260008603!2d20.801784289585317!3d41.10804773938014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddc725d6a22f%3A0x8f8ed244ccd3c171!2sThe%20Lion%20Ohrid!5e0!3m2!1sen!2smk!4v1750873923016!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.10804773938014,
+      "lng": 20.801784289585317
     },
     "phone": "046262002",
     "workingHours": "09:00 - 00:00",
@@ -1209,7 +1269,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=41.11179766030246,20.795047212859384",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.96999952323426!2d20.796350681289486!3d41.11203210785903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca52629cca1%3A0xf2b6822b86dafab2!2sLiquid!5e0!3m2!1sen!2smk!4v1748537215411!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.96999952323426!2d20.796350681289486!3d41.11203210785903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca52629cca1%3A0xf2b6822b86dafab2!2sLiquid!5e0!3m2!1sen!2smk!4v1748537215411!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11203210785903,
+      "lng": 20.796350681289486
     },
     "phone": "+389 70 878 984",
     "workingHours": "Daily: 09:00-00:00 (Summer Hours: 09:00-02:00)",
@@ -1239,7 +1301,9 @@
     "location": {
       "address": "Partizanska 2, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Omnia+Night+Club/@41.1131001,20.7998957,19z/data=!3m1!4b1!4m6!3m5!1s0x1350dd7a9302f453:0xd39672b71f9f0769!8m2!3d41.1131001!4d20.8005394!16s%2Fg%2F11c6p35rgy?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1131001,
+      "lng": 20.7998957
     },
     "phone": "078586699",
     "workingHours": "Working Hours: 22:00-05:00 (Fri-Sat)<br>Summer working hours 22:00-05:00",
@@ -1281,7 +1345,9 @@
     "location": {
       "address": "Pub & Pivnica Sokak, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pub+%26+Pivnica+Sokak,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.981833716928!2d20.79628917644787!3d41.11308781296401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd9002867889%3A0x5a9516769f99ed09!2sPub%20%26%20Pivnica%20Sokak!5e0!3m2!1sen!2smk!4v1750873529343!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.981833716928!2d20.79628917644787!3d41.11308781296401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd9002867889%3A0x5a9516769f99ed09!2sPub%20%26%20Pivnica%20Sokak!5e0!3m2!1sen!2smk!4v1750873529343!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11308781296401,
+      "lng": 20.79628917644787
     },
     "phone": "077961611",
     "workingHours": "09:00 - 01:00",
@@ -1323,7 +1389,9 @@
     "location": {
       "address": "Партизанска бб, Ohrid 6000",
       "googleMapsUrl": "https://www.google.com/maps/place/Rebel+Ohrid/@41.1053125,20.8117375,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dbb5377ef5c3:0xf12be018ed556603!8m2!3d41.1053125!4d20.8143125!16s%2Fg%2F11r_xpjf9h?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.5986812961733!2d20.8143125!3d41.1053125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbb5377ef5c3%3A0xf12be018ed556603!2sRebel%20Ohrid!5e1!3m2!1sen!2smk!4v1748257098398!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.5986812961733!2d20.8143125!3d41.1053125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbb5377ef5c3%3A0xf12be018ed556603!2sRebel%20Ohrid!5e1!3m2!1sen!2smk!4v1748257098398!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1053125,
+      "lng": 20.8117375
     },
     "phone": "078858499",
     "workingHours": "Working Hours: 00:00-05:00 (Sat)<br>Summer Hours: 00:00-05:00 (Mon-Sun)",
@@ -1368,7 +1436,9 @@
     "location": {
       "address": "Shilla Coffee & Bar, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Shilla+Coffee+%26+Bar/@41.11497,20.79861,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dca47138be81:0x5a0dcea842324f72!8m2!3d41.11497!4d20.79861!16s%2Fg%2F11y3p8qr9x?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.6469772364585!2d20.79860866207191!3d41.11496737518343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca47138be81%3A0x5a0dcea842324f72!2sShilla%20Coffee%20%26%20Bar!5e0!3m2!1sen!2smk!4v1751457329536!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.6469772364585!2d20.79860866207191!3d41.11496737518343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca47138be81%3A0x5a0dcea842324f72!2sShilla%20Coffee%20%26%20Bar!5e0!3m2!1sen!2smk!4v1751457329536!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11497,
+      "lng": 20.79861
     },
     "phone": "078 262 361",
     "workingHours": "08:00 - 01:00 (Sun - Thu)<br>08:00 - 02:00 (Fri - Sat)",
@@ -1406,7 +1476,9 @@
     "location": {
       "address": "Kosta Abrash, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tino+Pub,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.167727943966!2d20.80317447644784!3d41.10902781321446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd31c22464af%3A0xf903361d023a5c1b!2sTino's%20Pub%20%26%20Bar!5e0!3m2!1sen!2smk!4v1750872851291!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.167727943966!2d20.80317447644784!3d41.10902781321446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd31c22464af%3A0xf903361d023a5c1b!2sTino's%20Pub%20%26%20Bar!5e0!3m2!1sen!2smk!4v1750872851291!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.10902781321446,
+      "lng": 20.80317447644784
     },
     "phone": "046 250 250",
     "workingHours": "08:00 - 00:00",
@@ -1455,7 +1527,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Adventure+Ohrid,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.5723048320306!2d20.804455876444095!3d41.01273351914984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c11298c19119%3A0xc289a9ec3bff9b46!2sAdventure%20Ohrid!5e0!3m2!1sen!2smk!4v1750877413312!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.5723048320306!2d20.804455876444095!3d41.01273351914984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c11298c19119%3A0xc289a9ec3bff9b46!2sAdventure%20Ohrid!5e0!3m2!1sen!2smk!4v1750877413312!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.01273351914984,
+      "lng": 20.804455876444095
     },
     "phone": "070771193",
     "workingHours": "Mon-Sun: 09:00-20:00",
@@ -1493,7 +1567,9 @@
     "location": {
       "address": "Museum on Water Gradiste",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Amfora+Diving+Center+Pestani",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47959.20817024765!2d20.7845328!3d41.0267072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db014792b0d7%3A0x4a4f48b0b5e2d6b3!2sAmfora%20Diving%20Center!5e0!3m2!1sen!2smk!4v1748350033181!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47959.20817024765!2d20.7845328!3d41.0267072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db014792b0d7%3A0x4a4f48b0b5e2d6b3!2sAmfora%20Diving%20Center!5e0!3m2!1sen!2smk!4v1748350033181!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.0267072,
+      "lng": 20.7845328
     },
     "phone": "071359810",
     "workingHours": "Mon-Sun: 09:00-18:00",
@@ -1531,7 +1607,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ATV+Adrenaline,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.761943609313!2d20.809686976445544!3d41.05233471671032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c576702c42a7%3A0x96325c4070454af!2sATV%20Adrenaline!5e0!3m2!1sen!2smk!4v1750876021389!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.761943609313!2d20.809686976445544!3d41.05233471671032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c576702c42a7%3A0x96325c4070454af!2sATV%20Adrenaline!5e0!3m2!1sen!2smk!4v1750876021389!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.05233471671032,
+      "lng": 20.809686976445544
     },
     "phone": "077882882",
     "workingHours": "Mon-Sun: 09:00-19:30",
@@ -1569,7 +1647,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ATV+Adventure+Ohrid,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.309391187105!2d20.811604376447665!3d41.105933613405455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db2b892b07ff%3A0x8f0ffe6a090a0fd!2sATV%20Adventure%20Ohrid!5e0!3m2!1sen!2smk!4v1750875868138!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.309391187105!2d20.811604376447665!3d41.105933613405455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db2b892b07ff%3A0x8f0ffe6a090a0fd!2sATV%20Adventure%20Ohrid!5e0!3m2!1sen!2smk!4v1750875868138!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.105933613405455,
+      "lng": 20.811604376447665
     },
     "phone": "078278797",
     "workingHours": "Mon-Sun: 08:00-20:00",
@@ -1607,7 +1687,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Exodus+Gym,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.403688651352!2d20.812360076448485!3d41.12571261218493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db24d4070f01%3A0x36a490eb44a431e3!2sExodus%20Gym!5e0!3m2!1sen!2smk!4v1750876759877!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.403688651352!2d20.812360076448485!3d41.12571261218493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db24d4070f01%3A0x36a490eb44a431e3!2sExodus%20Gym!5e0!3m2!1sen!2smk!4v1750876759877!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.12571261218493,
+      "lng": 20.812360076448485
     },
     "phone": "075450585",
     "workingHours": "Mon-Sat: 07:30-22:00",
@@ -1645,7 +1727,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=FitBox+Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.47916031868!2d20.802575789589792!3d41.12406473838604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd00139d8a5f%3A0x3452d6c08c1989ec!2sFit%20Box!5e0!3m2!1sen!2smk!4v1750926818625!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.47916031868!2d20.802575789589792!3d41.12406473838604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd00139d8a5f%3A0x3452d6c08c1989ec!2sFit%20Box!5e0!3m2!1sen!2smk!4v1750926818625!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.12406473838604,
+      "lng": 20.802575789589792
     },
     "phone": "076601501",
     "workingHours": "Mon-Sat: 06:30-22:00",
@@ -1683,7 +1767,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=FitForm+Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.1694193180701!2d20.81181845156832!3d41.10529040000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b44c62f7%3A0x9faa829ebe2850bb!2sFit%20Form!5e0!3m2!1sen!2smk!4v1750878270759!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.1694193180701!2d20.81181845156832!3d41.10529040000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b44c62f7%3A0x9faa829ebe2850bb!2sFit%20Form!5e0!3m2!1sen!2smk!4v1750878270759!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.10529040000001,
+      "lng": 20.81181845156832
     },
     "phone": "070533497",
     "workingHours": "Mon-Sat: 09:00-22:00",
@@ -1721,7 +1807,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Info+Biro+Fitnes",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1263.6043922144163!2d20.8167992881574!3d41.126346254450624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db006529a37b%3A0xd9c654acdca7c2bc!2sInfo%20Biro%20Fitnes!5e0!3m2!1sen!2smk!4v1750878054518!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1263.6043922144163!2d20.8167992881574!3d41.126346254450624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db006529a37b%3A0xd9c654acdca7c2bc!2sInfo%20Biro%20Fitnes!5e0!3m2!1sen!2smk!4v1750878054518!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.126346254450624,
+      "lng": 20.8167992881574
     },
     "phone": "",
     "workingHours": "Mon-Sat: 08:00-22:00",
@@ -1755,7 +1843,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kliment+Koleski+Sports+Complex,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.936337697784!2d20.80381397644804!3d41.11408141290265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca0938b04d1%3A0x729c8b0ae68fb148!2sKliment%20Koleski%20Sports%20Complex!5e0!3m2!1sen!2smk!4v1750877189418!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.936337697784!2d20.80381397644804!3d41.11408141290265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca0938b04d1%3A0x729c8b0ae68fb148!2sKliment%20Koleski%20Sports%20Complex!5e0!3m2!1sen!2smk!4v1750877189418!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11408141290265,
+      "lng": 20.80381397644804
     },
     "phone": "078665667",
     "workingHours": "Mon-Sat: 08:00-02:00",
@@ -1807,7 +1897,9 @@
     "location": {
       "address": "Ljubanishta, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Car+Camp+Ljubanishta,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.5888078684347!2d20.771507076440823!3d40.92476092456278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350bf118dae57bb%3A0x16cd69106ec5a888!2sCar%20Camp%20Ljubanishta!5e0!3m2!1sen!2smk!4v1750877591498!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.5888078684347!2d20.771507076440823!3d40.92476092456278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350bf118dae57bb%3A0x16cd69106ec5a888!2sCar%20Camp%20Ljubanishta!5e0!3m2!1sen!2smk!4v1750877591498!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 40.92476092456278,
+      "lng": 20.771507076440823
     },
     "phone": "046283011",
     "workingHours": "Open 24/7 during summer season",
@@ -1845,7 +1937,9 @@
     "location": {
       "address": "Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=SUP+Club+Ohrid,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0777405396916!2d20.787355676447856!3d41.11099321309334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd67d7844179%3A0x235561da99ac6b43!2sSUP%20Club%20Ohrid!5e0!3m2!1sen!2smk!4v1750876990258!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0777405396916!2d20.787355676447856!3d41.11099321309334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd67d7844179%3A0x235561da99ac6b43!2sSUP%20Club%20Ohrid!5e0!3m2!1sen!2smk!4v1750876990258!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11099321309334,
+      "lng": 20.787355676447856
     },
     "phone": "078609698",
     "workingHours": "Tue-Sun: 10:00-18:00",
@@ -1873,7 +1967,9 @@
     "location": {
       "address": "Ambulance Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ambulance+Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.0279363400675!2d20.804980688948373!3d41.1114708136967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca0ae3fffff%3A0x574eebf15322871d!2sAmbulance!5e0!3m2!1sen!2smk!4v1750929307304!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.0279363400675!2d20.804980688948373!3d41.1114708136967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca0ae3fffff%3A0x574eebf15322871d!2sAmbulance!5e0!3m2!1sen!2smk!4v1750929307304!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1114708136967,
+      "lng": 20.804980688948373
     },
     "phone": "194",
     "workingHours": "00:00 - 24:00",
@@ -1901,7 +1997,9 @@
     "location": {
       "address": "Cardiology center St. Stephen, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cardiology+center+Saint+Stephen",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.78642440687!2d20.80072560269898!3d41.07366092818815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c363ecbdf9a5%3A0xfdc7bb0bf9dae396!2sCardiology%20center%20%E2%80%9ESaint%20Stephen%E2%80%9C!5e0!3m2!1sen!2smk!4v1749894977858!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.78642440687!2d20.80072560269898!3d41.07366092818815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c363ecbdf9a5%3A0xfdc7bb0bf9dae396!2sCardiology%20center%20%E2%80%9ESaint%20Stephen%E2%80%9C!5e0!3m2!1sen!2smk!4v1749894977858!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.07366092818815,
+      "lng": 20.80072560269898
     },
     "phone": "046 277 700",
     "workingHours": "00:00-24:00",
@@ -1929,7 +2027,9 @@
     "location": {
       "address": "Dentoria Dental Office, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dentoria+Dental+Office",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.6394838622004!2d20.79063539678956!3d41.120564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dc97f49484ff%3A0xbf71c7ecd7b47fd1!2sDentoria%20Dental%20Office!5e0!3m2!1sen!2smk!4v1749926266970!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.6394838622004!2d20.79063539678956!3d41.120564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dc97f49484ff%3A0xbf71c7ecd7b47fd1!2sDentoria%20Dental%20Office!5e0!3m2!1sen!2smk!4v1749926266970!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.120564,
+      "lng": 20.79063539678956
     },
     "phone": "078232262",
     "workingHours": "Mon, Wed, Thu: 10:00-17:00<br>Tue, Fri: 13:00-20:00<br>Sat: 09:00-14:00<br>Sun: Closed",
@@ -1957,7 +2057,9 @@
     "location": {
       "address": "Dental Center D-r Batkoski, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dental+Center+D-r+Batkoski",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.6383664526443!2d20.808657096789556!3d41.12058839999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db61536534b1%3A0x24e0fb4c09ebe6cb!2sDental%20Center%20D-r%20Batkoski!5e0!3m2!1sen!2smk!4v1749925957425!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.6383664526443!2d20.808657096789556!3d41.12058839999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db61536534b1%3A0x24e0fb4c09ebe6cb!2sDental%20Center%20D-r%20Batkoski!5e0!3m2!1sen!2smk!4v1749925957425!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.12058839999999,
+      "lng": 20.808657096789556
     },
     "phone": "046230079",
     "workingHours": "Mon-Fri: 08:00-20:00<br>Sat: 08:00-15:00<br>Sun: Closed",
@@ -1984,7 +2086,9 @@
     "location": {
       "address": "Dr. Elena Dental Clinic, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dr.+Elena+Dental+Clinic",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.7573262943497!2d20.79681749678955!3d41.117990699999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd0b746d7a3b%3A0xe1d479a214f4d7eb!2sDr.%20Elena%20Dental%20Clinic!5e0!3m2!1sen!2smk!4v1749927773358!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.7573262943497!2d20.79681749678955!3d41.117990699999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd0b746d7a3b%3A0xe1d479a214f4d7eb!2sDr.%20Elena%20Dental%20Clinic!5e0!3m2!1sen!2smk!4v1749927773358!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.117990699999986,
+      "lng": 20.79681749678955
     },
     "phone": "070328483",
     "workingHours": "Mon, Wed, Fri: 09:00-17:00<br>Tue, Thu: 11:00-19:00",
@@ -2012,7 +2116,9 @@
     "location": {
       "address": "D-r Mojsoska Dental & Aesthetic center, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=D-r+Mojsoska+Dental+%26+Aesthetic+center",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.962708325289!2d20.798834096789545!3d41.11350550000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb664f8b909%3A0x2cc4402b09d80737!2sD-r%20Mojsoska%20Dental%20%26%20Aesthetic%20center!5e0!3m2!1sen!2smk!4v1749928444579!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.962708325289!2d20.798834096789545!3d41.11350550000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb664f8b909%3A0x2cc4402b09d80737!2sD-r%20Mojsoska%20Dental%20%26%20Aesthetic%20center!5e0!3m2!1sen!2smk!4v1749928444579!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11350550000002,
+      "lng": 20.798834096789545
     },
     "phone": "075298358",
     "workingHours": "Mon - Fri: 08:00 - 16:00",
@@ -2040,7 +2146,9 @@
     "location": {
       "address": "Sirma Vojvoda 1, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=General+Hospital+of+Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.9066604002937!2d20.81637903891061!3d41.11676791353352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db67be84e5e3%3A0x8c83d2aabf35886d!2sGeneral%20Hospital%20of%20Ohrid!5e0!3m2!1sen!2smk!4v1749890936722!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.9066604002937!2d20.81637903891061!3d41.11676791353352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db67be84e5e3%3A0x8c83d2aabf35886d!2sGeneral%20Hospital%20of%20Ohrid!5e0!3m2!1sen!2smk!4v1749890936722!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11676791353352,
+      "lng": 20.81637903891061
     },
     "phone": "",
     "workingHours": "00:00 - 24:00",
@@ -2068,7 +2176,9 @@
     "location": {
       "address": "Lasovski Dental Office, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lasovski+Dental+Office",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.7573262943497!2d20.79681749678955!3d41.117990699999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd11beb20a3b%3A0x2b31356385293a96!2sLasovski%20Dental%20Office!5e0!3m2!1sen!2smk!4v1749927341198!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.7573262943497!2d20.79681749678955!3d41.117990699999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd11beb20a3b%3A0x2b31356385293a96!2sLasovski%20Dental%20Office!5e0!3m2!1sen!2smk!4v1749927341198!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.117990699999986,
+      "lng": 20.79681749678955
     },
     "phone": "075792470",
     "workingHours": "Mon, Wed, Fri: 08:00-16:00<br>Tue, Thu: 08:00-13:30, 17:30-20:00",
@@ -2096,7 +2206,9 @@
     "location": {
       "address": "Malaricna, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Malaricna+Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5011577333072!2d20.80663179517375!3d41.11258993093062!2m3!1f0!2f0!3f0!3m2!i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca0ad94ebfb%3A0x193e27fedd1a5672!2z0JzQsNC70LDRgNC40YfQvdCw!5e0!3m2!1sen!2smk!4v1749893502215!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5011577333072!2d20.80663179517375!3d41.11258993093062!2m3!1f0!2f0!3f0!3m2!i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca0ad94ebfb%3A0x193e27fedd1a5672!2z0JzQsNC70LDRgNC40YfQvdCw!5e0!3m2!1sen!2smk!4v1749893502215!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11258993093062,
+      "lng": 20.80663179517375
     },
     "phone": "046268269",
     "workingHours": "Mon-Fri: 07:00-20:00",
@@ -2123,7 +2235,9 @@
     "location": {
       "address": "Apteka Merifarm, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Apteka+Merifarm",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.884706660162!2d20.792959893101024!3d41.1139500370049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddeb25faa0fb%3A0x30cd8f8a2804b626!2sApteka%20Merifarm!5e0!3m2!1sen!2smk!4v1749918478641!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.884706660162!2d20.792959893101024!3d41.1139500370049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddeb25faa0fb%3A0x30cd8f8a2804b626!2sApteka%20Merifarm!5e0!3m2!1sen!2smk!4v1749918478641!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1139500370049,
+      "lng": 20.792959893101024
     },
     "phone": "071260060",
     "workingHours": "07:30-22:30",
@@ -2150,7 +2264,9 @@
     "location": {
       "address": "Pasholi Pharmacy, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pasholi+Pharmacy",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.884706660162!2d20.792959893101024!3d41.1139500370049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca2fb13f7fb%3A0x7209538accf14d64!2sPasholi%20Pharmacy!5e0!3m2!1sen!2smk!4v1749919145285!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.884706660162!2d20.792959893101024!3d41.1139500370049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca2fb13f7fb%3A0x7209538accf14d64!2sPasholi%20Pharmacy!5e0!3m2!1sen!2smk!4v1749919145285!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1139500370049,
+      "lng": 20.792959893101024
     },
     "phone": "046255070",
     "workingHours": "Mon-Sat: 08:00-21:00<br>Sun: Closed",
@@ -2177,7 +2293,9 @@
     "location": {
       "address": "Pharmacy Planta, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pharmacy+Planta",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.884706660162!2d20.792959893101024!3d41.1139500370049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dde6be4fac81%3A0x56267ed5897aabca!2sPharmacy%20Planta!5e0!3m2!1sen!2smk!4v1749919618433!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.884706660162!2d20.792959893101024!3d41.1139500370049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dde6be4fac81%3A0x56267ed5897aabca!2sPharmacy%20Planta!5e0!3m2!1sen!2smk!4v1749919618433!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1139500370049,
+      "lng": 20.792959893101024
     },
     "phone": "046250533",
     "workingHours": "Mon-Sat: 08:00-21:00<br>Sun: Closed",
@@ -2205,7 +2323,9 @@
     "location": {
       "address": "PZO D-r Jolevski, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=PZO+D-r+Jolevski",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.9899709333336!2d20.80049969678955!3d41.112910099999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dda0ff0e2d95%3A0x6f8b5e7c7a7231b9!2sPZO%20D-r%20Jolevski!5e0!3m2!1sen!2smk!4v1749928065095!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.9899709333336!2d20.80049969678955!3d41.112910099999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dda0ff0e2d95%3A0x6f8b5e7c7a7231b9!2sPZO%20D-r%20Jolevski!5e0!3m2!1sen!2smk!4v1749928065095!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.112910099999986,
+      "lng": 20.80049969678955
     },
     "phone": "046251700",
     "workingHours": "Mon-Fri: 08:00-20:00<br>Sat: 09:00-13:00",
@@ -2234,7 +2354,9 @@
     "location": {
       "address": "St. Erasmus Hospital, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=St.+Erasmus+Hospital",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.851756206181!2d20.759751081597962!3d41.135615559356296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dce2ce86c2b7%3A0xd813779730d4ff6!2sSt.%20Erasmus%20Hospital!5e0!3m2!1sen!2smk!4v1749894034416!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.851756206181!2d20.759751081597962!3d41.135615559356296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dce2ce86c2b7%3A0xd813779730d4ff6!2sSt.%20Erasmus%20Hospital!5e0!3m2!1sen!2smk!4v1749894034416!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.135615559356296,
+      "lng": 20.759751081597962
     },
     "phone": "046272700",
     "workingHours": "Mon-Fri: 08:00-15:30<br>Sat: 08:00-20:00<br>Sun: 00:00-24:00",
@@ -2261,7 +2383,9 @@
     "location": {
       "address": "Tilevi Dental, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tilevi+Dental",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.996431675131!2d20.79364709678954!3d41.112769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4f45f2dab%3A0xf956dd4e5f36e420!2sTilevi%20Dental!5e0!3m2!1sen!2smk!4v1749926931987!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.996431675131!2d20.79364709678954!3d41.112769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4f45f2dab%3A0xf956dd4e5f36e420!2sTilevi%20Dental!5e0!3m2!1sen!2smk!4v1749926931987!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.112769,
+      "lng": 20.79364709678954
     },
     "phone": "046264455",
     "workingHours": "Mon-Fri: 08:30-20:00<br>Sat: 09:00-13:00<br>Sun: Closed",
@@ -2288,7 +2412,9 @@
     "location": {
       "address": "Apteka Via Farm, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Apteka+Via+Farm",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.311051913046!2d20.786390993579104!3d41.1202137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd4a24e8d73d%3A0xd52af82aec4da18f!2sApteka%20Via%20Farm!5e0!3m2!1sen!2smk!4v1749921164096!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.311051913046!2d20.786390993579104!3d41.1202137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd4a24e8d73d%3A0xd52af82aec4da18f!2sApteka%20Via%20Farm!5e0!3m2!1sen!2smk!4v1749921164096!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1202137,
+      "lng": 20.786390993579104
     },
     "phone": "",
     "workingHours": "Mon-Sat: 08:00-22:00<br>Sun: Closed",
@@ -2315,7 +2441,9 @@
     "location": {
       "address": "Via Farm 13, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Via+Farm+13",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.464965638707!2d20.811915827864603!3d41.10950753129881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db8a190807a1%3A0x56badba8ecbda44a!2sVia%20Farm%2013!5e0!3m2!1sen!2smk!4v1749922360774!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.464965638707!2d20.811915827864603!3d41.10950753129881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db8a190807a1%3A0x56badba8ecbda44a!2sVia%20Farm%2013!5e0!3m2!1sen!2smk!4v1749922360774!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.10950753129881,
+      "lng": 20.811915827864603
     },
     "phone": "070358673",
     "workingHours": "08:00 - 21:00",
@@ -2342,7 +2470,9 @@
     "location": {
       "address": "Pharmacy \"Via Farm\" - 2, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pharmacy+Via+Farm+-+2",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.698325055785!2d20.799944193579105!3d41.11598519999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db6152f920fb%3A0x8cbc3799607eddf8!2zUGhhcm1hY3kg4oCeVmlhIEZhcm3igJwgLSAy!5e0!3m2!1sen!2smk!4v1749920255089!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.698325055785!2d20.799944193579105!3d41.11598519999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db6152f920fb%3A0x8cbc3799607eddf8!2zUGhhcm1hY3kg4oCeVmlhIEZhcm3igJwgLSAy!5e0!3m2!1sen!2smk!4v1749920255089!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11598519999998,
+      "lng": 20.799944193579105
     },
     "phone": "046230078",
     "workingHours": "Mon-Sat: 08:30-21:30<br>Sun: Closed",
@@ -2369,7 +2499,9 @@
     "location": {
       "address": "Zegin Apteka Ohrid 2, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Zegin+Apteka+Ohrid+2",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.97622798845!2d20.799998089586783!3d41.11321023905961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca0d422d209%3A0xfe1981c5dc830d3c!2sZegin%20Apteka%20Ohrid%202!5e0!3m2!1sen!2smk!4v1750932039714!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.97622798845!2d20.799998089586783!3d41.11321023905961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca0d422d209%3A0xfe1981c5dc830d3c!2sZegin%20Apteka%20Ohrid%202!5e0!3m2!1sen!2smk!4v1750932039714!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11321023905961,
+      "lng": 20.799998089586783
     },
     "phone": "046200366",
     "workingHours": "Mon-Fri: 07:00-22:00<br>Sat: 08:00-22:00<br>Sun: 08:00-21:00",
@@ -2396,7 +2528,9 @@
     "location": {
       "address": "Zegin Apteka Ohrid 3, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Zegin+Apteka+Ohrid+3",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.405498839785!2d20.804218193579107!3d41.1191825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db80dd9a59a1%3A0xd6b1a2d25228bf44!2sZegin%20Apteka%20Ohrid%203!5e0!3m2!1sen!2smk!4v1749922238111!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.405498839785!2d20.804218193579107!3d41.1191825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db80dd9a59a1%3A0xd6b1a2d25228bf44!2sZegin%20Apteka%20Ohrid%203!5e0!3m2!1sen!2smk!4v1749922238111!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1191825,
+      "lng": 20.804218193579107
     },
     "phone": "046230220",
     "workingHours": "Mon-Fri: 07:00-22:00<br>Sat-Sun: 08:00-21:00",
@@ -2423,7 +2557,9 @@
     "location": {
       "address": "Zegin Apteka Ohrid 5, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Zegin+Apteka+Ohrid+5",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6012.054677172034!2d20.8005374935791!3d41.112094!2m3!1f0!2f0!3f0!3m2!i1024!2i768!4f13.1!3m3!1m2!1s0x1350db4419f44709%3A0xb93fc653259a8fdd!2sZegin%20Apteka%20Ohrid%205!5e0!3m2!1sen!2smk!4v1749922069774!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6012.054677172034!2d20.8005374935791!3d41.112094!2m3!1f0!2f0!3f0!3m2!i1024!2i768!4f13.1!3m3!1m2!1s0x1350db4419f44709%3A0xb93fc653259a8fdd!2sZegin%20Apteka%20Ohrid%205!5e0!3m2!1sen!2smk!4v1749922069774!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.112094,
+      "lng": 20.8005374935791
     },
     "phone": "046253907",
     "workingHours": "Mon-Sat: 08:00-22:00<br>Sun: 09:00-17:00",
@@ -2450,7 +2586,9 @@
     "location": {
       "address": "Zegin Apteka Ohrid 1, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Zegin+Apteka+Ohrid+1",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.884706660162!2d20.792959893101024!3d41.1139500370049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca2689e2cdf%3A0xbd2d8ddf132f24d4!2sZegin%20Apteka%20Ohrid%201!5e0!3m2!1sen!2smk!4v1749918905863!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.884706660162!2d20.792959893101024!3d41.1139500370049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca2689e2cdf%3A0xbd2d8ddf132f24d4!2sZegin%20Apteka%20Ohrid%201!5e0!3m2!1sen!2smk!4v1749918905863!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1139500370049,
+      "lng": 20.792959893101024
     },
     "phone": "046261430",
     "workingHours": "Mon-Fri: 07:00-22:00<br>Sat: 08:00-22:00<br>Sun: 08:00-21:00",
@@ -2477,7 +2615,9 @@
     "location": {
       "address": "Zegin Apteka Ohrid 4, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Zegin+Apteka+Ohrid+4",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.292275866452!2d20.80386759357911!3d41.1204187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbb730beea79%3A0xf34f34c35539e9ed!2sZegin%20Apteka%20Ohrid%204!5e0!3m2!1sen!2smk!4v1749920974926!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.292275866452!2d20.80386759357911!3d41.1204187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbb730beea79%3A0xf34f34c35539e9ed!2sZegin%20Apteka%20Ohrid%204!5e0!3m2!1sen!2smk!4v1749920974926!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1204187,
+      "lng": 20.80386759357911
     },
     "phone": "046203311",
     "workingHours": "08:00 - 21:00",
@@ -2506,7 +2646,9 @@
     "location": {
       "address": "Ohrid Rent A Car & Scooters-Escape, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ohrid+Rent+A+Car+%26+Scooters-Escape",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0098521939094!2d20.800171705984837!3d41.11247590000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca6bb771b9b%3A0xdcecb9e3d20458f7!2sOhrid%20Rent%20A%20Car%20%26%20Scooters-Escape!5e0!3m2!1sen!2smk!4v1749888720612!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.0098521939094!2d20.800171705984837!3d41.11247590000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca6bb771b9b%3A0xdcecb9e3d20458f7!2sOhrid%20Rent%20A%20Car%20%26%20Scooters-Escape!5e0!3m2!1sen!2smk!4v1749888720612!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11247590000001,
+      "lng": 20.800171705984837
     },
     "phone": "070232915",
     "workingHours": "08:00-13:00<br>16:00 - 19:00",
@@ -2535,7 +2677,9 @@
     "location": {
       "address": "Pet Shop Fauna Centar Ohrid, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pet+Shop+Fauna+Centar+Ohrid,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.3947364130258!2d20.80915726965534!3d41.12188590847914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbdceac08201%3A0xbc2dff9bb0890db5!2sPet%20Shop%20Fauna%20Centar%20Ohrid!5e0!3m2!1sen!2smk!4v1750420436968!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.3947364130258!2d20.80915726965534!3d41.12188590847914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbdceac08201%3A0xbc2dff9bb0890db5!2sPet%20Shop%20Fauna%20Centar%20Ohrid!5e0!3m2!1sen!2smk!4v1750420436968!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.12188590847914,
+      "lng": 20.80915726965534
     },
     "phone": "071 285 997",
     "workingHours": "11:00 - 18:00 (Mon - Fri)<br>10:00 - 15:00 (Sat)",
@@ -2567,7 +2711,9 @@
     "location": {
       "address": "Rent a Car GoGo Ohrid, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rent+a+Car+GoGo+Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.4238131268492!2d20.797395069655327!3d41.11934620851825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd4c58cbd15b%3A0x34c5c369dd12e278!2sRent%20a%20Car%20GoGo%20Ohrid!5e0!3m2!1sen!2smk!4v1749887830392!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.4238131268492!2d20.797395069655327!3d41.11934620851825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd4c58cbd15b%3A0x34c5c369dd12e278!2sRent%20a%20Car%20GoGo%20Ohrid!5e0!3m2!1sen!2smk!4v1749887830392!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11934620851825,
+      "lng": 20.797395069655327
     },
     "phone": "072609019",
     "workingHours": "00:00 - 24:00",
@@ -2595,7 +2741,9 @@
     "location": {
       "address": "GoodFellas GroomingSalon, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=GoodFellas+GroomingSalon,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.75230042869634!2d20.8090879533283!3d41.11228914274869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db47f276da37%3A0x1c8a9b186cbab62a!2sGoodFellas%20GroomingSalon!5e0!3m2!1sen!2smk!4v1750420135044!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.75230042869634!2d20.8090879533283!3d41.11228914274869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db47f276da37%3A0x1c8a9b186cbab62a!2sGoodFellas%20GroomingSalon!5e0!3m2!1sen!2smk!4v1750420135044!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11228914274869,
+      "lng": 20.8090879533283
     },
     "phone": "078 249 689",
     "workingHours": "09:00 - 12:00,  17:00 - 21:00 (Mon - Sat)",
@@ -2622,7 +2770,9 @@
     "location": {
       "address": "Rent a Car Ohrid - iGo Transport and Rental agency, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rent+a+Car+Ohrid+-+iGo+Transport+and+Rental+agency",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.9390142704697!2d20.8003488389484!3d41.11535481357702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dde1aa344401%3A0x2ff89cd07da8937e!2sRent%20a%20Car%20Ohrid%20-%20iGo%20Transport%20and%20Rental%20agency!5e0!3m2!1sen!2smk!4v1749889941186!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.9390142704697!2d20.8003488389484!3d41.11535481357702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dde1aa344401%3A0x2ff89cd07da8937e!2sRent%20a%20Car%20Ohrid%20-%20iGo%20Transport%20and%20Rental%20agency!5e0!3m2!1sen!2smk!4v1749889941186!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11535481357702,
+      "lng": 20.8003488389484
     },
     "phone": "078 453 969",
     "workingHours": "Mon-Fri: 07:00-22:00<br>Sat: 09:00-22:00<br>Sun: 10:00-20:00",
@@ -2650,7 +2800,9 @@
     "location": {
       "address": "K9 Grooming Salon, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=K9+Grooming+Salon,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.9614164988967!2d20.802343677154685!3d41.1138154379072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd6868fa84ef%3A0xb2b9a382dad1733c!2sK9%20Grooming%20Salon!5e0!3m2!1sen!2smk!4v1750418996731!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.9614164988967!2d20.802343677154685!3d41.1138154379072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd6868fa84ef%3A0xb2b9a382dad1733c!2sK9%20Grooming%20Salon!5e0!3m2!1sen!2smk!4v1750418996731!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1138154379072,
+      "lng": 20.802343677154685
     },
     "phone": "076 350 215",
     "workingHours": "08:00 - 16:00 (Mon - Fri)<br>08:00 - 13:00 (Sat)",
@@ -2677,7 +2829,9 @@
     "location": {
       "address": "Pegasus Rent A Car Ohrid, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pegasus+Rent+A+Car+Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1227.8770945796266!2d20.801720673149536!3d41.11324588016163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd0ddb9e76e1%3A0xdd583e86a60d3ba3!2sPegasus%20Rent%20A%20Car%20Ohrid!5e0!3m2!1sen!2smk!4v1750927752116!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1227.8770945796266!2d20.801720673149536!3d41.11324588016163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd0ddb9e76e1%3A0xdd583e86a60d3ba3!2sPegasus%20Rent%20A%20Car%20Ohrid!5e0!3m2!1sen!2smk!4v1750927752116!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11324588016163,
+      "lng": 20.801720673149536
     },
     "phone": "078 252 651",
     "workingHours": "08:00 - 21:00",
@@ -2704,7 +2858,9 @@
     "location": {
       "address": "Rent a Car Kiko Ohrid, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rent+a+Car+Kiko+Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12025.277661259339!2d20.797834771026267!3d41.10571465977158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c5ef7f1ba4b3%3A0x7149a7a1b7b7e5a9!2sRent%20a%20Car%20Kiko%20Ohrid!5e0!3m2!1sen!2smk!4v1749890072788!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12025.277661259339!2d20.797834771026267!3d41.10571465977158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c5ef7f1ba4b3%3A0x7149a7a1b7b7e5a9!2sRent%20a%20Car%20Kiko%20Ohrid!5e0!3m2!1sen!2smk!4v1749890072788!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.10571465977158,
+      "lng": 20.797834771026267
     },
     "phone": "078384988",
     "workingHours": "00:00 - 24:00",
@@ -2733,7 +2889,9 @@
     "location": {
       "address": "Vet Spirit, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Vet+Spirit,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5281998374514!2d20.806219969655313!3d41.110227508658674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca776cb35c5%3A0x1b4113ac0a758a37!2sVet%20Spirit!5e0!3m2!1sen!2smk!4v1750419420841!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.5281998374514!2d20.806219969655313!3d41.110227508658674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca776cb35c5%3A0x1b4113ac0a758a37!2sVet%20Spirit!5e0!3m2!1sen!2smk!4v1750419420841!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.110227508658674,
+      "lng": 20.806219969655313
     },
     "phone": "075 261 879",
     "workingHours": "08:30 - 13:30, 18:00 - 20:00 (Mon - Fri)<br>08:00 - 12:00 (Sat)",
@@ -2761,7 +2919,9 @@
     "location": {
       "address": "Veterinarna Ambulanta Vet-Medika, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Veterinarna+Ambulanta+Vet-Medika,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12022.311620219205!2d20.799501270992486!3d41.12190863058979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd58d3c8919d%3A0x3657404670027cb7!2sVeterinarna%20Ambulanta%20Vet-Medika!5e0!3m2!1sen!2smk!4v1750932779559!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12022.311620219205!2d20.799501270992486!3d41.12190863058979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd58d3c8919d%3A0x3657404670027cb7!2sVeterinarna%20Ambulanta%20Vet-Medika!5e0!3m2!1sen!2smk!4v1750932779559!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.12190863058979,
+      "lng": 20.799501270992486
     },
     "phone": "070720552",
     "workingHours": "Mon - Sat 08:00 - 20:00",
@@ -2790,7 +2950,9 @@
     "location": {
       "address": "Veterinarian Ambulance Dr. Toni, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Veterinarian+Ambulance+Dr.+Toni,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.4206075136013!2d20.801600069655336!3d41.119626208513964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dc9f37134c5d%3A0xbb6f0d886213ae11!2sVeterinarian%20Ambulance%20Dr.%20Toni!5e0!3m2!1sen!2smk!4v1750418714524!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.4206075136013!2d20.801600069655336!3d41.119626208513964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dc9f37134c5d%3A0xbb6f0d886213ae11!2sVeterinarian%20Ambulance%20Dr.%20Toni!5e0!3m2!1sen!2smk!4v1750418714524!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.119626208513964,
+      "lng": 20.801600069655336
     },
     "phone": "070 575 881",
     "workingHours": "08:00 - 20:00 (Mon - Thu)<br>08:00 - 19:00 (Fri,Sat)",
@@ -2830,7 +2992,9 @@
     "location": {
       "address": "Boat Armada, Lake Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Boat+Armada,Lake+Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1339.0412493242752!2d20.798014114330574!3d41.11168760784191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddbd98ad2e25%3A0x892364b7e73a16f0!2sBoat%20Armada!5e0!3m2!1sen!2smk!4v1751450027204!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1339.0412493242752!2d20.798014114330574!3d41.11168760784191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddbd98ad2e25%3A0x892364b7e73a16f0!2sBoat%20Armada!5e0!3m2!1sen!2smk!4v1751450027204!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11168760784191,
+      "lng": 20.798014114330574
     },
     "phone": "075 420 401",
     "workingHours": "10:00 - 00:00 (Mon - Thu), 10:00 - 01:00 (Fri - Sat)",
@@ -2874,7 +3038,9 @@
     "location": {
       "address": "Cuba Libre Beach & Bar, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Cuba+Libre+Beach+%26+Bar/@41.1009742,20.8026467,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dcaa42cfea41:0x3769611e40472486!8m2!3d41.1009742!4d20.8052217!16s%2Fg%2F11c5s1bvf0?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.634108049442!2d20.805221669664988!3d41.100974198208625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcaa42cfea41%3A0x3769611e40472486!2sCuba%20Libre%20Beach%20%26%20Bar!5e0!3m2!1sen!2smk!4v1748343855467!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.634108049442!2d20.805221669664988!3d41.100974198208625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcaa42cfea41%3A0x3769611e40472486!2sCuba%20Libre%20Beach%20%26%20Bar!5e0!3m2!1sen!2smk!4v1748343855467!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1009742,
+      "lng": 20.8026467
     },
     "phone": "075357545",
     "workingHours": "Mon-Thu: 09:00-01:00<br>Fri-Sat: 09:00-02:00",
@@ -2918,7 +3084,9 @@
     "location": {
       "address": "Naum Ohridski, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Egoist+Beach+Bar+%26+Restaurant,Naum+Ohridski,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.031841687123!2d20.796537776447035!3d41.0901509143788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c3b276941b7d%3A0x3d68010177ac4eff!2sEgoist%20Beach%20Bar%20%26%20Restaurant!5e0!3m2!1sen!2smk!4v1750871816386!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.031841687123!2d20.796537776447035!3d41.0901509143788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c3b276941b7d%3A0x3d68010177ac4eff!2sEgoist%20Beach%20Bar%20%26%20Restaurant!5e0!3m2!1sen!2smk!4v1750871816386!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.0901509143788,
+      "lng": 20.796537776447035
     },
     "phone": "070 495 592",
     "workingHours": "Daily: 08:00-01:00 (Summer Hours: 08:00-02:00)",
@@ -2961,7 +3129,9 @@
     "location": {
       "address": "Kadmo Beach Restaurant, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Kadmo+Beach+Restaurant/@41.0999426,20.8017792,17z/data=!3m1!4b1!4m6!3m5!1s0x1350ddbb20778c5f:0xa0d1083080e0acfa!8m2!3d41.0999426!4d20.8043542!16s%2Fg%2F11h2r6_ffy?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.6459139510407!2d20.80435416966498!3d41.099942598208614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddbb20778c5f%3A0xa0d1083080e0acfa!2sKadmo%20Beach%20Restaurant!5e0!3m2!1sen!2smk!4v1748344350409!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.6459139510407!2d20.80435416966498!3d41.099942598208614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddbb20778c5f%3A0xa0d1083080e0acfa!2sKadmo%20Beach%20Restaurant!5e0!3m2!1sen!2smk!4v1748344350409!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.0999426,
+      "lng": 20.8017792
     },
     "phone": "071348701",
     "workingHours": "Mon-Thu: 09:00-00:00<br>Fri-Sat: 09:00-01:00",
@@ -3003,7 +3173,9 @@
     "location": {
       "address": "Kaneo, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kaneo+Beach+Bar,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d187.87944487023455!2d20.78947716749206!3d41.11113785349086!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcb9fee39833%3A0x5c92145749aebd9e!2sKaneo!5e0!3m2!1sen!2smk!4v1750698672269!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d187.87944487023455!2d20.78947716749206!3d41.11113785349086!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcb9fee39833%3A0x5c92145749aebd9e!2sKaneo!5e0!3m2!1sen!2smk!4v1750698672269!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11113785349086,
+      "lng": 20.78947716749206
     },
     "phone": "076 201 042",
     "workingHours": "Mon-Sun: 09:00-00:00",
@@ -3046,7 +3218,9 @@
     "location": {
       "address": "Ohrid Lake Cruises (Mato Catamarans Excursions), Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ohrid+Lake+Cruises+(Mato+Catamarans+Excursions),Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.0208873889258!2d20.79853603891054!3d41.11177871368723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dddb7dcd0b39%3A0x411daf89c1db77de!2sOhrid%20Lake%20Cruises%20(Mato%20Catamarans%20Excursions)!5e0!3m2!1sen!2smk!4v1750414863080!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.0208873889258!2d20.79853603891054!3d41.11177871368723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dddb7dcd0b39%3A0x411daf89c1db77de!2sOhrid%20Lake%20Cruises%20(Mato%20Catamarans%20Excursions)!5e0!3m2!1sen!2smk!4v1750414863080!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11177871368723,
+      "lng": 20.79853603891054
     },
     "phone": "078339377",
     "workingHours": "08:00 - 19:00",
@@ -3096,7 +3270,9 @@
     "location": {
       "address": "Taboo - Billiards & Bar, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Taboo+-+Billiards+%26+Bar/@41.11534689194039,20.800175381482767,17z/data=!3m1!4b1!4m6!3m5!1s0x1350db7e2b2c4a81:0xe1ff5903190a4a8c!8m2!3d41.11534689194039!4d20.800175381482767!16s%2Fg%2F11c5s1bvf0?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d531.3692484737195!2d20.800175381482767!3d41.11534689194039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db7e2b2c4a81%3A0xe1ff5903190a4a8c!2sTaboo%20-%20Billiards%20%26%20Bar!5e0!3m2!1sen!2smk!4v1751809282854!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d531.3692484737195!2d20.800175381482767!3d41.11534689194039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db7e2b2c4a81%3A0xe1ff5903190a4a8c!2sTaboo%20-%20Billiards%20%26%20Bar!5e0!3m2!1sen!2smk!4v1751809282854!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11534689194039,
+      "lng": 20.800175381482767
     },
     "phone": "070 361 002",
     "workingHours": "09:00 - 01:00",
@@ -3196,7 +3372,9 @@
     "location": {
       "address": "Paragliding Ohrid, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Paragliding+Ohrid/@41.1027398,20.8059143,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dcaa4278ec37:0xf85fd941317e66f1!8m2!3d41.1027398!4d20.8059143!16s%2Fg%2F11y3p8qr9x?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6012.911211783943!2d20.8059143!3d41.1027398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcaa4278ec37%3A0xf85fd941317e66f1!2sParagliding%20Ohrid!5e0!3m2!1sen!2smk!4v1752242724894!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6012.911211783943!2d20.8059143!3d41.1027398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcaa4278ec37%3A0xf85fd941317e66f1!2sParagliding%20Ohrid!5e0!3m2!1sen!2smk!4v1752242724894!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1027398,
+      "lng": 20.8059143
     },
     "phone": "+38975281091",
     "workingHours": "06:00 - 22:00",
@@ -3290,7 +3468,9 @@
     "location": {
       "address": "Orevche Beach, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Beach+%22Orevche%22/@41.0017126,20.802501,17z/data=!3m1!4b1!4m6!3m5!1s0x1350c13591200d0f%3A0x6007f5112572b1c5!8m2!3d41.0017126!4d20.802501!16s%2Fg%2F11y3p8qr9x?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1505.5379350197938!2d20.802501035702093!3d41.00171256139019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c13591200d0f%3A0x6007f5112572b1c5!2zQmVhY2gg4oCeT3JldsSNZeKAnA!5e0!3m2!1sen!2smk!4v1752253966136!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1505.5379350197938!2d20.802501035702093!3d41.00171256139019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c13591200d0f%3A0x6007f5112572b1c5!2zQmVhY2gg4oCeT3JldsSNZeKAnA!5e0!3m2!1sen!2smk!4v1752253966136!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.0017126,
+      "lng": 20.802501
     },
     "phone": "077 763 516",
     "workingHours": "10:00 - 22:00",
@@ -3340,7 +3520,9 @@
     "location": {
       "address": "Park Golden Beach, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Golden+Beach/@41.0899427,20.7988477,17z/data=!3m1!4b1!4m6!3m5!1s0x1350c3507e60c8ed%3A0x97b1fb096f26e52!8m2!3d41.0899427!4d20.7988477!16s%2Fg%2F11y3p8qr9x?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.99937404797475!2d20.79884772427415!3d41.089942723622265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c3507e60c8ed%3A0x97b1fb096f26e52!2sGolden%20Beach!5e0!3m2!1sen!2smk!4v1752254797299!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.99937404797475!2d20.79884772427415!3d41.089942723622265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c3507e60c8ed%3A0x97b1fb096f26e52!2sGolden%20Beach!5e0!3m2!1sen!2smk!4v1752254797299!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.0899427,
+      "lng": 20.7988477
     },
     "phone": "075 255 599, 073 308 308",
     "workingHours": "09:00 - 01:00",
@@ -3372,7 +3554,9 @@
     "location": {
       "address": "Gradishte Beach 2, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Gradishte+Beach+2/@40.9999214,20.8014588,17z/data=!3m1!4b1!4m6!3m5!1s0x1350c12870113d15%3A0x127009e249e4d43a!8m2!3d40.9999214!4d20.8014588!16s%2Fg%2F11y3p8qr9x?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1505.578849638565!2d20.80145882768266!3d40.99992142780968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c12870113d15%3A0x127009e249e4d43a!2sGradishte%20Beach%202!5e0!3m2!1sen!2smk!4v1752256288164!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1505.578849638565!2d20.80145882768266!3d40.99992142780968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c12870113d15%3A0x127009e249e4d43a!2sGradishte%20Beach%202!5e0!3m2!1sen!2smk!4v1752256288164!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 40.9999214,
+      "lng": 20.8014588
     },
     "phone": "075 641 256, 077 621 917",
     "workingHours": "10:00 - 19:00",
@@ -3421,7 +3605,9 @@
     "location": {
       "address": "Restaurant Ana Marija, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Restaurant+Ana+Marija,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.6618083812535!2d20.813623669655257!3d41.09855370883846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db0e942e5f17%3A0xda09bcceca243dd6!2sRestaurant%20Ana%20Marija!5e0!3m2!1sen!2smk!4v1752265560987!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.6618083812535!2d20.813623669655257!3d41.09855370883846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db0e942e5f17%3A0xda09bcceca243dd6!2sRestaurant%20Ana%20Marija!5e0!3m2!1sen!2smk!4v1752265560987!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.09855370883846,
+      "lng": 20.813623669655257
     },
     "phone": "072 307 305",
     "workingHours": "08:00 - 00:00 (Sun - Thur)<br>08:00 - 01:00 (Fri - Sat)",
@@ -3483,7 +3669,9 @@
     "location": {
       "address": "Restaurant Valentino, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Restaurant+Valentino,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.3236601152996!2d20.809276220071965!3d41.114697714218245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db46db49402d%3A0x733acf4a0f2b3721!2sApartments%20Valentino!5e0!3m2!1sen!2smk!4v1752264648463!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.3236601152996!2d20.809276220071965!3d41.114697714218245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db46db49402d%3A0x733acf4a0f2b3721!2sApartments%20Valentino!5e0!3m2!1sen!2smk!4v1752264648463!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.114697714218245,
+      "lng": 20.809276220071965
     },
     "phone": "070 304 103",
     "workingHours": "08:00 - 00:00",
@@ -3536,7 +3724,9 @@
     "location": {
       "address": "Restaurant \"Kaj Mestono\", Peshtani",
       "googleMapsUrl": "https://www.google.com/maps/place/Restaurant+%22Kaj+Mestono%22/@41.0158135,20.8090438,17z/data=!3m1!4b1!4m6!3m5!1s0x1350c6ab6455d367%3A0xca79a9f097d9f2f3!8m2!3d41.0158135!4d20.8090438!16s%2Fg%2F11y3p8qr9x?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d752.6078887994283!2d20.80904376965506!3d41.01581351011118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c6ab6455d367%3A0xca79a9f097d9f2f3!2zUmVzdGF1cmFudCDigJ5LYWogTWVzdG9ub-KAnA!5e0!3m2!1sen!2smk!4v1752260195657!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d752.6078887994283!2d20.80904376965506!3d41.01581351011118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c6ab6455d367%3A0xca79a9f097d9f2f3!2zUmVzdGF1cmFudCDigJ5LYWogTWVzdG9ub-KAnA!5e0!3m2!1sen!2smk!4v1752260195657!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.0158135,
+      "lng": 20.8090438
     },
     "phone": "046 273 888",
     "workingHours": "09:00 - 00:00",
@@ -3594,7 +3784,9 @@
     "location": {
       "address": "Kaneo Restaurant & Letna Bavcha, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Kaneo+Restaurant+%26+Letna+Bavcha/@41.1110359,20.7891204,17z/data=!3m1!4b1!4m6!3m5!1s0x1350dcba06d5fc33%3A0x56f715fef32e4b51!8m2!3d41.1110359!4d20.7891204!16s%2Fg%2F11y3p8qr9x?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.0378908647608!2d20.789120378682092!3d41.111035994280236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcba06d5fc33%3A0x56f715fef32e4b51!2sKaneo%20Restaurant%20%26%20Letna%20Bavcha!5e0!3m2!1sen!2smk!4v1752262151372!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.0378908647608!2d20.789120378682092!3d41.111035994280236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcba06d5fc33%3A0x56f715fef32e4b51!2sKaneo%20Restaurant%20%26%20Letna%20Bavcha!5e0!3m2!1sen!2smk!4v1752262151372!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1110359,
+      "lng": 20.7891204
     },
     "phone": "070 776 837",
     "workingHours": "09:00 - 22:00",
@@ -3641,7 +3833,9 @@
     "location": {
       "address": "Golf Club Ohrid CZG, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Golf+Club+Ohrid+CZG,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125.0247910415706!2d20.810714645585144!3d41.12931091394364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbc80dfe6305%3A0xb1df663440036641!2sGolf%20Club%20Ohrid%20CZG!5e0!3m2!1sen!2smk!4v1752488628955!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125.0247910415706!2d20.810714645585144!3d41.12931091394364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbc80dfe6305%3A0xb1df663440036641!2sGolf%20Club%20Ohrid%20CZG!5e0!3m2!1sen!2smk!4v1752488628955!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.12931091394364,
+      "lng": 20.810714645585144
     },
     "phone": "070 249 237",
     "workingHours": "15:00 - 19:00 (Mon - Fri)<br>09:00 - 19:00 (Sat - Sun)",
@@ -3690,7 +3884,9 @@
     "location": {
       "address": "Queen Sunset Bar, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Queen+Sunset+Bar/@41.085493387012676,20.79613323135766,17z/data=!3m1!4b1!4m6!3m5!1s0x1350c58917cecb51:0xdd18e3b8be12bf94!8m2!3d41.085493387012676!4d20.79613323135766!16s%2Fg%2F11y3p8qr9x?entry=ttu",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2126.4433291142163!2d20.79613323135766!3d41.085493387012676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c58917cecb51%3A0xdd18e3b8be12bf94!2sQueen%20Sunset%20Bar!5e0!3m2!1sen!2smk!4v1752488598722!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2126.4433291142163!2d20.79613323135766!3d41.085493387012676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c58917cecb51%3A0xdd18e3b8be12bf94!2sQueen%20Sunset%20Bar!5e0!3m2!1sen!2smk!4v1752488598722!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.085493387012676,
+      "lng": 20.79613323135766
     },
     "phone": "076 400 040",
     "workingHours": "19:00 - 00:00",
@@ -3738,7 +3934,9 @@
     "location": {
       "address": "Lychnidia Food Zone, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lychnidia+Food+Zone,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.9180423166234!2d20.8010274696552!3d41.07615810918314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c3bd308865ff%3A0x3621fd4b48f22cf6!2sLYCHNIDIA-FOOD%20ZONE-OHRID!5e0!3m2!1sen!2smk!4v1752569317236!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.9180423166234!2d20.8010274696552!3d41.07615810918314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c3bd308865ff%3A0x3621fd4b48f22cf6!2sLYCHNIDIA-FOOD%20ZONE-OHRID!5e0!3m2!1sen!2smk!4v1752569317236!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.07615810918314,
+      "lng": 20.8010274696552
     },
     "phone": "075 326 867",
     "workingHours": "08:00 - 23:30",
@@ -3788,7 +3986,9 @@
     "location": {
       "address": "Drop - Coffee & Snacks, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Drop+-+Coffee+%26+Snacks,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d579.4811929843678!2d20.80451492599393!3d41.11320366614306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd5b67bc796f%3A0x84af321b13f8fac9!2sDrop!5e0!3m2!1sen!2smk!4v1752825066416!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d579.4811929843678!2d20.80451492599393!3d41.11320366614306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd5b67bc796f%3A0x84af321b13f8fac9!2sDrop!5e0!3m2!1sen!2smk!4v1752825066416!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11320366614306,
+      "lng": 20.80451492599393
     },
     "phone": "076 750 970",
     "workingHours": "08:00 - 21:00 (Mon - Sat)",
@@ -3828,7 +4028,9 @@
     "location": {
       "address": "Beach Gradishte 3 (Jungle beach), Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Beach+Gradishte+3+Jungle+beach,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1064.588627318584!2d20.80279083845281!3d41.000935955509796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c135c6e24139%3A0x9d5a29c17f7d6d97!2sBeach%20Gradishte%203%20(Jungle%20beach)!5e0!3m2!1sen!2smk!4v1752827687682!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1064.588627318584!2d20.80279083845281!3d41.000935955509796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c135c6e24139%3A0x9d5a29c17f7d6d97!2sBeach%20Gradishte%203%20(Jungle%20beach)!5e0!3m2!1sen!2smk!4v1752827687682!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.000935955509796,
+      "lng": 20.80279083845281
     },
     "phone": "075 636 222",
     "workingHours": "10:00 - 18:00 (Sun - Thu)<br>10:00 - 22:00 (Fri - Sat)",
@@ -3874,7 +4076,9 @@
     "location": {
       "address": "Kayak & SUP Ohrid (Jovanovic), Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kayak+%26+SUP+Ohrid+Jovanovic,Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223.4233765029473!2d20.794229304121988!3d41.11237085132945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd2ee667cfdb%3A0x7ba7933f84901eb8!2sKayak%20%26%20SUP%20Ohrid%20(Jovanovic)!5e0!3m2!1sen!2smk!4v1752827894069!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223.4233765029473!2d20.794229304121988!3d41.11237085132945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd2ee667cfdb%3A0x7ba7933f84901eb8!2sKayak%20%26%20SUP%20Ohrid%20(Jovanovic)!5e0!3m2!1sen!2smk!4v1752827894069!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11237085132945,
+      "lng": 20.794229304121988
     },
     "phone": "070 589 218",
     "workingHours": "10:30 - 19:00",
@@ -3907,7 +4111,9 @@
     "location": {
       "address": "Youth Center Ohrid (YCO), Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Youth+center+Ohrid+(YCO)/@41.129200408359004,20.809696728549735",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.3109853509307!2d20.809696728549735!3d41.129200408359004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbcdb1fa6ad7%3A0xeb96484349cc5d1d!2sYouth%20center%20Ohrid%20(YCO)!5e0!3m2!1sen!2smk!4v1753977790408!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.3109853509307!2d20.809696728549735!3d41.129200408359004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbcdb1fa6ad7%3A0xeb96484349cc5d1d!2sYouth%20center%20Ohrid%20(YCO)!5e0!3m2!1sen!2smk!4v1753977790408!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.129200408359004,
+      "lng": 20.809696728549735
     },
     "phone": "",
     "workingHours": "09:00 - 17:00 (Mon - Fri)",
@@ -3972,7 +4178,9 @@
     "location": {
       "address": "Plate Bistro, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Plate+Bistro/@41.11394903102612,20.80218717455864",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.7427999241574!2d20.80218717455864!3d41.11394903102612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd87b9aebc9d%3A0xa8005c310976c076!2sPlate%20Bistro!5e0!3m2!1sen!2smk!4v1754215762222!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.7427999241574!2d20.80218717455864!3d41.11394903102612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd87b9aebc9d%3A0xa8005c310976c076!2sPlate%20Bistro!5e0!3m2!1sen!2smk!4v1754215762222!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11394903102612,
+      "lng": 20.80218717455864
     },
     "phone": "074 221 889",
     "workingHours": "08:00 - 22:00 (Mon)<br>Tuesday Closed<br>08:00 - 22:00 (Wed - Fri)<br>10:00 - 23:00 (Sun - Sat)",
@@ -4030,7 +4238,9 @@
     "location": {
       "address": "eSports ENTiTY, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/eSports+ENTiTY/@41.115839436402986,20.79974916772834",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125.4610457663084!2d20.79974916772834!3d41.115839436402986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd4744188455%3A0x753cc639e8f43b97!2seSports%20ENTiTY!5e0!3m2!1sen!2smk!4v1754217850714!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125.4610457663084!2d20.79974916772834!3d41.115839436402986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd4744188455%3A0x753cc639e8f43b97!2seSports%20ENTiTY!5e0!3m2!1sen!2smk!4v1754217850714!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.115839436402986,
+      "lng": 20.79974916772834
     },
     "phone": "070 328 068",
     "workingHours": "12:00 - 04:00",
@@ -4076,7 +4286,9 @@
     "location": {
       "address": "Hotel Mr. I, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Hotel+Mr.+I/@41.10997594578873,20.80460882421455",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12023.468319290754!2d20.79432733021765!3d41.11559391657759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca653025c71%3A0xad22d75edd8ef400!2sHotel%20Mr.%20I!5e0!3m2!1sen!2smk!4v1754249849213!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12023.468319290754!2d20.79432733021765!3d41.11559391657759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca653025c71%3A0xad22d75edd8ef400!2sHotel%20Mr.%20I!5e0!3m2!1sen!2smk!4v1754249849213!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.10997594578873,
+      "lng": 20.80460882421455
     },
     "phone": "075 248 963",
     "workingHours": "09:00 - 01:00",
@@ -4107,7 +4319,9 @@
     "location": {
       "address": "Hype, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Hype/@41.111674202801495,20.80765283032175",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d265.6994883973052!2d20.80765283032175!3d41.111674202801495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dba8cbaffb45%3A0x58ec80a92ef03b29!2sHype!5e0!3m2!1sen!2smk!4v1754250568331!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d265.6994883973052!2d20.80765283032175!3d41.111674202801495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dba8cbaffb45%3A0x58ec80a92ef03b29!2sHype!5e0!3m2!1sen!2smk!4v1754250568331!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.111674202801495,
+      "lng": 20.80765283032175
     },
     "phone": "078 381 802",
     "workingHours": "11:00 - 03:00",
@@ -4152,7 +4366,9 @@
     "location": {
       "address": "Restaurant K'j Divono, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Restaurant+K'j+Divono/@41.09106493486494,20.799815452226216",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.7475021926772!2d20.799815452226216!3d41.09106493486494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c350e996fb19%3A0x3c0e460ffa3d014!2zUmVzdGF1cmFudCDigJ5LJ2ogRGl2b25v4oCc!5e0!3m2!1sen!2smk!4v1754253360324!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.7475021926772!2d20.799815452226216!3d41.09106493486494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c350e996fb19%3A0x3c0e460ffa3d014!2zUmVzdGF1cmFudCDigJ5LJ2ogRGl2b25v4oCc!5e0!3m2!1sen!2smk!4v1754253360324!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.09106493486494,
+      "lng": 20.799815452226216
     },
     "phone": "078 472 482",
     "workingHours": "09:00 - 22:00",
@@ -4198,7 +4414,9 @@
     "location": {
       "address": "Camper Stop Divono, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Camper+Stop+Divono/@41.09113038576699,20.79990891026699",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d632.1411500249187!2d20.79990891026699!3d41.09113038576699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c34eb7bb1e91%3A0xbe7a6f98373caced!2sCamper%20Stop%20Divono%22!5e0!3m2!1sen!2smk!4v1754254026061!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d632.1411500249187!2d20.79990891026699!3d41.09113038576699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c34eb7bb1e91%3A0xbe7a6f98373caced!2sCamper%20Stop%20Divono%22!5e0!3m2!1sen!2smk!4v1754254026061!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.09113038576699,
+      "lng": 20.79990891026699
     },
     "phone": "078 472 482",
     "workingHours": "00:00 - 24:00",
@@ -4243,7 +4461,9 @@
     "location": {
       "address": "Biljana's Springs Restaurant, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Biljana's+Springs+Restaurant/@41.1029842,20.8145509",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.6111043606429!2d20.8145509!3d41.1029842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db51394c5f7f%3A0x5aad7cbe9f5f70de!2sBiljana's%20Springs%20Restaurant!5e0!3m2!1sen!2smk!4v1754255684211!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.6111043606429!2d20.8145509!3d41.1029842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db51394c5f7f%3A0x5aad7cbe9f5f70de!2sBiljana's%20Springs%20Restaurant!5e0!3m2!1sen!2smk!4v1754255684211!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1029842,
+      "lng": 20.8145509
     },
     "phone": "078 278 501",
     "workingHours": "08:00 - 00:00 (Mon - Thu)<br>08:00 - 01:00 (Fri - Sat)",
@@ -4281,7 +4501,9 @@
     "location": {
       "address": "Karting Rimo, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Karting+Rimo/@41.10209578810158,20.812396880947293",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4251.811986541195!2d20.812396880947293!3d41.10209578810158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db56f6e15a43%3A0xf1d04ca50210645e!2zS2FydGluZyDigJ5SaW1v4oCc!5e0!3m2!1sen!2smk!4v1754257291866!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4251.811986541195!2d20.812396880947293!3d41.10209578810158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db56f6e15a43%3A0xf1d04ca50210645e!2zS2FydGluZyDigJ5SaW1v4oCc!5e0!3m2!1sen!2smk!4v1754257291866!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.10209578810158,
+      "lng": 20.812396880947293
     },
     "phone": "078 232 770",
     "workingHours": "18:00 - 00:00",
@@ -4329,7 +4551,9 @@
     "location": {
       "address": "Gostilnica Kaj Meche, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Gostilnica+Kaj+Meče/@41.06163511207798,20.80203269415517",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d447.191906574417!2d20.80203269415517!3d41.06163511207798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c37f48644c11%3A0x44052259699db03d!2sGostilnica%20Kaj%20Me%C4%8De!5e0!3m2!1sen!2smk!4v1754258666402!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d447.191906574417!2d20.80203269415517!3d41.06163511207798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c37f48644c11%3A0x44052259699db03d!2sGostilnica%20Kaj%20Me%C4%8De!5e0!3m2!1sen!2smk!4v1754258666402!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.06163511207798,
+      "lng": 20.80203269415517
     },
     "phone": "078 350 955",
     "workingHours": "08:30 - 00:00",
@@ -4383,7 +4607,9 @@
     "location": {
       "address": "Gostilnica Grne, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Gostilnica+Grne/@41.06052300140558,20.802781053416254",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d447.19946830046945!2d20.802781053416254!3d41.06052300140558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c37f60a3049f%3A0x6e5cf6fc41be86bc!2sGostilnica%20Grne!5e0!3m2!1sen!2smk!4v1754258975540!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d447.19946830046945!2d20.802781053416254!3d41.06052300140558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c37f60a3049f%3A0x6e5cf6fc41be86bc!2sGostilnica%20Grne!5e0!3m2!1sen!2smk!4v1754258975540!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.06052300140558,
+      "lng": 20.802781053416254
     },
     "phone": "071 463 322",
     "workingHours": "08:00 - 22:00",
@@ -4432,7 +4658,9 @@
     "location": {
       "address": "Kult Café, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Kult+kulturen+centar",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.7394143019913!2d20.80005628389622!3d41.11454053940515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd2ab0d8ed21%3A0x89723c86f54776be!2sKult%20kulturen%20centar!5e0!3m2!1sen!2smk!4v1754321137292!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.7394143019913!2d20.80005628389622!3d41.11454053940515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd2ab0d8ed21%3A0x89723c86f54776be!2sKult%20kulturen%20centar!5e0!3m2!1sen!2smk!4v1754321137292!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11454053940515,
+      "lng": 20.80005628389622
     },
     "phone": "075 285 228",
     "workingHours": "08:00 - 24:00",
@@ -4490,7 +4718,9 @@
     "location": {
       "address": "Kult Café, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Kult+kulturen+centar",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.7394143019913!2d20.80005628389622!3d41.11454053940515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd2ab0d8ed21%3A0x89723c86f54776be!2sKult%20kulturen%20centar!5e0!3m2!1sen!2smk!4v1754321137292!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.7394143019913!2d20.80005628389622!3d41.11454053940515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd2ab0d8ed21%3A0x89723c86f54776be!2sKult%20kulturen%20centar!5e0!3m2!1sen!2smk!4v1754321137292!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11454053940515,
+      "lng": 20.80005628389622
     },
     "phone": "075 285 228",
     "workingHours": "08:00 - 24:00",
@@ -4537,7 +4767,9 @@
     "location": {
       "address": "Pirustija Nedanoski, Ramne, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Pirustija+Nedanoski",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.148997266157!2d20.834614176447868!3d41.1094369131894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db6934c152c1%3A0xda2931c5a73ccf82!2sPirustija%20Nedanoski!5e0!3m2!1sen!2smk!4v1754413233252!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.148997266157!2d20.834614176447868!3d41.1094369131894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db6934c152c1%3A0xda2931c5a73ccf82!2sPirustija%20Nedanoski!5e0!3m2!1sen!2smk!4v1754413233252!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1094369131894,
+      "lng": 20.834614176447868
     },
     "phone": "075 741 466",
     "workingHours": "Tue-Thu: 14:00-16:00, 17:00-20:00<br>Fri: 09:00-11:00<br>Sat: 10:00-11:00, 17:00-20:00",
@@ -4608,7 +4840,9 @@
     "location": {
       "address": "Tamaro 1, Lazo Trposki Street, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamaro+1+Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.32258218314527!2d20.81199919117566!3d41.11331291523652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db5e7c0e5e45%3A0x76446a110e2d1ef9!2sTamaro%201!5e1!3m2!1sen!2smk!4v1760350459481!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.32258218314527!2d20.81199919117566!3d41.11331291523652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db5e7c0e5e45%3A0x76446a110e2d1ef9!2sTamaro%201!5e1!3m2!1sen!2smk!4v1760350459481!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11331291523652,
+      "lng": 20.81199919117566
     },
     "phone": "+389 46 267 191",
     "workingHours": "Mon-Sat: 07:30-22:00<br>Sunday: Closed",
@@ -4637,7 +4871,9 @@
     "location": {
       "address": "Tamaro 7, ASNOM Street, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamaro+7+Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3424131682159!2d20.814944469655295!3d41.109502108669865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db5c819b7185%3A0x83ec7acb4adc7da1!2sTamaro%207!5e1!3m2!1sen!2smk!4v1760351284955!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3424131682159!2d20.814944469655295!3d41.109502108669865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db5c819b7185%3A0x83ec7acb4adc7da1!2sTamaro%207!5e1!3m2!1sen!2smk!4v1760351284955!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.109502108669865,
+      "lng": 20.814944469655295
     },
     "phone": "+389 71 206 603",
     "workingHours": "Mon-Sat: 08:00-21:45<br>Sunday: 08:00-21:00",
@@ -4666,7 +4902,9 @@
     "location": {
       "address": "Tamaro 6, 7-mi Noemvri, Abas Emin, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamaro+6+Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.1768114381164!2d20.80761326965532!3d41.12161750848328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db61f89c062d%3A0xc19abd84fecaee19!2sTamaro%206!5e1!3m2!1sen!2smk!4v1760352035492!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.1768114381164!2d20.80761326965532!3d41.12161750848328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db61f89c062d%3A0xc19abd84fecaee19!2sTamaro%206!5e1!3m2!1sen!2smk!4v1760352035492!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.12161750848328,
+      "lng": 20.80761326965532
     },
     "phone": "078 308 429",
     "workingHours": "Mon-Sat: 07:30-22:00<br>Sunday: Closed",
@@ -4695,7 +4933,9 @@
     "location": {
       "address": "Tamaro 10, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamaro+10+Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2198880960294!2d20.803435569655306!3d41.11846630853182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dda6517e0507%3A0x6665209446352a74!2sTamaro%2010!5e1!3m2!1sen!2smk!4v1760352486515!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2198880960294!2d20.803435569655306!3d41.11846630853182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dda6517e0507%3A0x6665209446352a74!2sTamaro%2010!5e1!3m2!1sen!2smk!4v1760352486515!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11846630853182,
+      "lng": 20.803435569655306
     },
     "phone": "+389 78 351 289",
     "workingHours": "Daily: 08:00-22:00",
@@ -4724,7 +4964,9 @@
     "location": {
       "address": "Tamaro 12, Stiv Naumov 26, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamaro+12+Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.19593737851!2d20.794956808265777!3d41.12021840721202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dda0c0d086c3%3A0x8553f1b6180bfad1!2sTamaro%2012!5e1!3m2!1sen!2smk!4v1760353147335!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.19593737851!2d20.794956808265777!3d41.12021840721202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dda0c0d086c3%3A0x8553f1b6180bfad1!2sTamaro%2012!5e1!3m2!1sen!2smk!4v1760353147335!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.12021840721202,
+      "lng": 20.794956808265777
     },
     "phone": "+389 78 351 289",
     "workingHours": "Mon-Sat: 07:00-22:00<br>Sunday: Closed",
@@ -4753,7 +4995,9 @@
     "location": {
       "address": "Top Market, Ohrid City Center",
       "googleMapsUrl": "https://maps.app.goo.gl/TopMarketOhrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1794.6674854741452!2d20.803170165556637!3d41.110136509044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb960c02af7%3A0xd55bdb3740761b22!2sTop%20Market!5e1!3m2!1sen!2smk!4v1760623445496!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1794.6674854741452!2d20.803170165556637!3d41.110136509044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb960c02af7%3A0xd55bdb3740761b22!2sTop%20Market!5e1!3m2!1sen!2smk!4v1760623445496!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.110136509044,
+      "lng": 20.803170165556637
     },
     "phone": "075 207 398",
     "workingHours": "Mon-Sat: 08:00-22:00<br>Sunday: Closed",
@@ -4782,7 +5026,9 @@
     "location": {
       "address": "Top Market - Partizanska, Ohrid",
       "googleMapsUrl": "https://maps.app.goo.gl/TopMarket2Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d68295.02879672329!2d20.759452221416336!3d41.11049621934443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbaf95393181%3A0xad5db3f09a3b8eb5!2sTop%20Market!5e1!3m2!1sen!2smk!4v1760624093804!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d68295.02879672329!2d20.759452221416336!3d41.11049621934443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbaf95393181%3A0xad5db3f09a3b8eb5!2sTop%20Market!5e1!3m2!1sen!2smk!4v1760624093804!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11049621934443,
+      "lng": 20.759452221416336
     },
     "phone": "075 235 319",
     "workingHours": "Mon-Sat: 08:00-22:00<br>Sunday: Closed",
@@ -4811,7 +5057,9 @@
     "location": {
       "address": "Top Market -3, Ohrid",
       "googleMapsUrl": "https://maps.app.goo.gl/TopMarket3Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114835.41980013777!2d20.70748966841384!3d41.12345314430039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd9956387d13%3A0xc6a933d25fd7f323!2sTop%20Market!5e1!3m2!1sen!2smk!4v1760624388780!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114835.41980013777!2d20.70748966841384!3d41.12345314430039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd9956387d13%3A0xc6a933d25fd7f323!2sTop%20Market!5e1!3m2!1sen!2smk!4v1760624388780!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.12345314430039,
+      "lng": 20.70748966841384
     },
     "phone": "076 293 505",
     "workingHours": "Mon-Sat: 08:00-22:00<br>Sunday: 09:00-17:00",
@@ -4846,7 +5094,9 @@
     "location": {
       "address": "Talevi - Ohrid Pearls, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Talevi+-+Ohrid+Pearls/@41.11404494561418,20.717397467915543,13z/data=!4m6!3m5!1s0x1350dca38b8cb497:0x742d9bceb2d3e15c!8m2!3d41.11404494561418!4d20.717397467915543!16s%2Fg%2F11b6dqj8xt",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114851.88137054771!2d20.717397467915543!3d41.11404494561418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca38b8cb497%3A0x742d9bceb2d3e15c!2sTalevi%20-%20Ohrid%20Pearls!5e1!3m2!1sen!2smk!4v1760955427973!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114851.88137054771!2d20.717397467915543!3d41.11404494561418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca38b8cb497%3A0x742d9bceb2d3e15c!2sTalevi%20-%20Ohrid%20Pearls!5e1!3m2!1sen!2smk!4v1760955427973!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11404494561418,
+      "lng": 20.717397467915543
     },
     "phone": "070 261 216",
     "workingHours": "Mon-Fri: 10:00-22:00<br>Sat: 08:30-21:00<br>Sunday: Closed",
@@ -4883,7 +5133,9 @@
     "location": {
       "address": "Ohrid Pearls Filevi, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Ohrid+Pearls+Filevi+-+Ohridski+Biseri+Filevi/@41.112391545845384,20.715306067827974,13z/data=!4m6!3m5!1s0x1350dca4e7b3ea61:0xf77f40932941cc23!8m2!3d41.112391545845384!4d20.715306067827974!16s%2Fg%2F11b6dpq7zm",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114854.77401214106!2d20.715306067827974!3d41.112391545845384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4e7b3ea61%3A0xf77f40932941cc23!2sOhrid%20Pearls%20Filevi%20-%20Ohridski%20Biseri%20Filevi!5e1!3m2!1sen!2smk!4v1760956425973!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114854.77401214106!2d20.715306067827974!3d41.112391545845384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4e7b3ea61%3A0xf77f40932941cc23!2sOhrid%20Pearls%20Filevi%20-%20Ohridski%20Biseri%20Filevi!5e1!3m2!1sen!2smk!4v1760956425973!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.112391545845384,
+      "lng": 20.715306067827974
     },
     "phone": "070 200 442",
     "workingHours": "Mon-Sat: 09:30-22:30<br>Sunday: Closed",
@@ -4915,7 +5167,9 @@
     "location": {
       "address": "Filevi - Original Ohrid's pearls, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Filevi+-+Original+Ohrid's+pearls/@41.11251434582821,20.715611967834487,13z/data=!4m6!3m5!1s0x1350dca4f1d78389:0x873bf35a8f22c1bd!8m2!3d41.11251434582821!4d20.715611967834487!16s%2Fg%2F11c5m7km_p",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114854.55917547038!2d20.715611967834487!3d41.11251434582821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4f1d78389%3A0x873bf35a8f22c1bd!2sFilevi%20-%20Original%20Ohrid&#39;s%20pearls!5e1!3m2!1sen!2smk!4v1760956667490!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114854.55917547038!2d20.715611967834487!3d41.11251434582821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4f1d78389%3A0x873bf35a8f22c1bd!2sFilevi%20-%20Original%20Ohrid&#39;s%20pearls!5e1!3m2!1sen!2smk!4v1760956667490!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11251434582821,
+      "lng": 20.715611967834487
     },
     "phone": "046 250 999",
     "workingHours": "Mon-Sat: 09:30-21:00<br>Sunday: Closed",
@@ -4947,7 +5201,9 @@
     "location": {
       "address": "Original Ohrid Pearls Filevi - St. Sophia, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Original+Ohrid+Pearls+Filevi+-+St.+Sophia/@41.112504045829645,20.71172326783394,13z/data=!4m6!3m5!1s0x1350dd0037ea8919:0x8972a79df16b6871!8m2!3d41.112504045829645!4d20.71172326783394!16s%2Fg%2F11j2fxvc8r",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114854.57719517883!2d20.71172326783394!3d41.112504045829645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd0037ea8919%3A0x8972a79df16b6871!2sOriginal%20Ohrid%20Pearls%20Filevi%20-%20St.%20Sophia!5e1!3m2!1sen!2smk!4v1760957135895!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114854.57719517883!2d20.71172326783394!3d41.112504045829645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd0037ea8919%3A0x8972a79df16b6871!2sOriginal%20Ohrid%20Pearls%20Filevi%20-%20St.%20Sophia!5e1!3m2!1sen!2smk!4v1760957135895!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.112504045829645,
+      "lng": 20.71172326783394
     },
     "phone": "/",
     "workingHours": "Mon-Fri: 08:00-19:00<br>Saturday: Closed",
@@ -4999,7 +5255,9 @@
     "location": {
       "address": "IT Café, Macedonian Educators Boulevard No. 1, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/IT+Caf%C3%A9/@41.1147570272146,20.75927742868816,13z/data=!4m6!3m5!1s0x1350dd2e544dc297:0xc5991a4bbb1f5a3e!8m2!3d41.1147570272146!4d20.75927742868816!16s%2Fg%2F11j8wq_kw9",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57425.31777313476!2d20.75927742868816!3d41.1147570272146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd2e544dc297%3A0xc5991a4bbb1f5a3e!2zSVQgQ2Fmw6k!5e1!3m2!1sen!2smk!4v1760959402101!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57425.31777313476!2d20.75927742868816!3d41.1147570272146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd2e544dc297%3A0xc5991a4bbb1f5a3e!2zSVQgQ2Fmw6k!5e1!3m2!1sen!2smk!4v1760959402101!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.1147570272146,
+      "lng": 20.75927742868816
     },
     "phone": "070 240 056",
     "workingHours": "08:00 - 00:00",
@@ -5034,7 +5292,9 @@
     "location": {
       "address": "Chillout Shisha&Bar, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Chillout+Shisha%26Bar/@41.118656806556245,20.801197821034293,13z/data=!4m6!3m5!1s0x1350dbee9651845d:0x73ae0f7b242a50c0!8m2!3d41.118656806556245!4d20.801197821034293!16s%2Fg%2F11j8xq_2mn",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14355.476545279118!2d20.801197821034293!3d41.118656806556245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbee9651845d%3A0x73ae0f7b242a50c0!2sChillout%20Shisha%26Bar!5e1!3m2!1sen!2smk!4v1760961238536!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14355.476545279118!2d20.801197821034293!3d41.118656806556245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbee9651845d%3A0x73ae0f7b242a50c0!2sChillout%20Shisha%26Bar!5e1!3m2!1sen!2smk!4v1760961238536!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.118656806556245,
+      "lng": 20.801197821034293
     },
     "phone": "078 599 041",
     "workingHours": "Mon-Fri: 08:00-00:00<br>Sat-Sun: 08:00-01:00",
@@ -5083,7 +5343,9 @@
     "location": {
       "address": "Resort Bate Bole, Lešani, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Resort+Bate+Bole/@41.21278457228509,20.72047993382772,13z/data=!4m6!3m5!1s0x1351270034a9e777:0xeb8332e62c8dfa94!8m2!3d41.21278457228509!4d20.72047993382772!16s%2Fg%2F11j2_bxq3p",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114678.96195908554!2d20.72047993382772!3d41.21278457228509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1351270034a9e777%3A0xeb8332e62c8dfa94!2sResort%20Bate%20Bole!5e1!3m2!1sen!2smk!4v1760963838999!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114678.96195908554!2d20.72047993382772!3d41.21278457228509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1351270034a9e777%3A0xeb8332e62c8dfa94!2sResort%20Bate%20Bole!5e1!3m2!1sen!2smk!4v1760963838999!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.21278457228509,
+      "lng": 20.72047993382772
     },
     "phone": "070 377 159",
     "workingHours": "08:00 - 00:00",
@@ -5136,7 +5398,9 @@
     "location": {
       "address": "Ethno restaurant Dedo Dimo, Kuratica, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Ethno+restaurant+Dedo+Dimo/@41.2434906,20.737132297265624,13z/data=!4m6!3m5!1s0x135127f0f4ca31dd:0x162ff4afaf99e38a!8m2!3d41.2434906!4d20.737132297265624!16s%2Fg%2F11h3j8qp2m",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114625.11806831624!2d20.737132297265624!3d41.2434906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135127f0f4ca31dd%3A0x162ff4afaf99e38a!2sEthno%20restaurant%20Dedo%20Dimo!5e1!3m2!1sen!2smk!4v1760965437624!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114625.11806831624!2d20.737132297265624!3d41.2434906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135127f0f4ca31dd%3A0x162ff4afaf99e38a!2sEthno%20restaurant%20Dedo%20Dimo!5e1!3m2!1sen!2smk!4v1760965437624!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.2434906,
+      "lng": 20.737132297265624
     },
     "phone": "075 687 775",
     "workingHours": "Mon-Thu: 12:00-23:00<br>Fri-Sat: 12:00-00:00<br>Sun: 12:00-23:00",
@@ -5184,7 +5448,9 @@
     "priceLevel": 1,
     "location": {
       "address": "Kalan's Billiard Club, Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.3211047624759!2d20.802492164048008!3d41.11374528436534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca1456bffcf%3A0x40d11556f453efe8!2sSuteren!5e1!3m2!1sen!2smk!4v1763457865539!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.3211047624759!2d20.802492164048008!3d41.11374528436534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca1456bffcf%3A0x40d11556f453efe8!2sSuteren!5e1!3m2!1sen!2smk!4v1763457865539!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.11374528436534,
+      "lng": 20.802492164048008
     },
     "phone": "",
     "workingHours": "00:00 - 24:00",
@@ -5226,7 +5492,9 @@
     "priceLevel": 2,
     "location": {
       "address": "Lago Restaurant, Lagadin, Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20920.232978069143!2d20.79783483059748!3d41.04435461712411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c3c2359e8f39%3A0x12d7f549e3b6361e!2sLago%20Hotel%20%26%20Spa!5e1!3m2!1sen!2smk!4v1767540125086!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20920.232978069143!2d20.79783483059748!3d41.04435461712411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c3c2359e8f39%3A0x12d7f549e3b6361e!2sLago%20Hotel%20%26%20Spa!5e1!3m2!1sen!2smk!4v1767540125086!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.04435461712411,
+      "lng": 20.79783483059748
     },
     "phone": "076 205 205",
     "workingHours": "08:00 - 00:00",
@@ -5273,7 +5541,9 @@
     "location": {
       "address": "CoWorkOhrid, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/CoWorkOhrid/@41.122450627360145,20.80356604588267,17z/data=!4m6!3m5!1s0x1350db67d16c1e31:0x35079c2b68946483!8m2!3d41.122450627360145!4d20.80356604588267!16s%2Fg%2F11y3p8qr9x",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.1908590691905!2d20.80356604588267!3d41.122450627360145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db67d16c1e31%3A0x35079c2b68946483!2sCoWorkOhrid!5e1!3m2!1sen!2smk!4v1783668741523!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.1908590691905!2d20.80356604588267!3d41.122450627360145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db67d16c1e31%3A0x35079c2b68946483!2sCoWorkOhrid!5e1!3m2!1sen!2smk!4v1783668741523!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "lat": 41.122450627360145,
+      "lng": 20.80356604588267
     },
     "phone": "",
     "workingHours": "00:00 - 24:00",

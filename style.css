@@ -13664,3 +13664,72 @@ img[data-src]:not(.loaded) {
         justify-content: center;
     }
 }
+
+/* --- Event Outdoor Weather Forecast Widget --- */
+.event-weather-widget {
+    margin-top: 24px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+    border: 1px solid #bae6fd;
+}
+
+.event-weather-widget.hidden {
+    display: none;
+}
+
+.event-weather-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+    color: #0369a1;
+}
+
+.event-weather-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #0369a1;
+}
+
+.event-weather-stats {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.event-weather-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.event-weather-stat-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.event-weather-stat-value {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0c4a6e;
+    line-height: 1;
+}
+
+.event-weather-source {
+    margin-top: 12px;
+    font-size: 0.72rem;
+    color: #94a3b8;
+}
+
+.event-weather-source a {
+    color: #0369a1;
+    text-decoration: none;
+}
+
+.event-weather-source a:hover {
+    text-decoration: underline;
+}
