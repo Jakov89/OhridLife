@@ -269,6 +269,17 @@ app.use(express.static('.', {
 }));
 
 // Venue shuffling cache
+// In development (NODE_ENV !== 'production') the cache is bypassed on every
+// request so edits to venues_reorganized.json are visible without restart.
+const IS_PROD = process.env.NODE_ENV === 'production';
+
+// Returns the right Cache-Control value for /api/* responses:
+//   production  → public, max-age=<n>  (CDN/browser caching enabled)
+//   development → no-store             (always reflect current file contents)
+function apiCacheControl(maxAgeSeconds) {
+    return IS_PROD ? `public, max-age=${maxAgeSeconds}` : 'no-store';
+}
+
 let shuffledVenuesCache = null;
 let lastShuffleTime = 0;
 const SHUFFLE_INTERVAL = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
@@ -369,7 +380,7 @@ function shouldReshuffle() {
 
 // API endpoint to get venues
 app.get('/api/venues', (req, res) => {
-    res.setHeader('Cache-Control', 'public, max-age=1800'); // 30 minutes cache
+    res.setHeader('Cache-Control', apiCacheControl(1800)); // 30 minutes in production
 
     const venuesReorganizedPath = path.join(__dirname, 'data', 'venues_reorganized.json');
     fs.readFile(venuesReorganizedPath, 'utf8', (err, data) => {
@@ -390,7 +401,7 @@ app.get('/api/venues', (req, res) => {
 
 // Handle venue response with shuffling logic
 function handleVenueResponse(venues, res) {
-    if (shouldReshuffle()) {
+    if (!IS_PROD || shouldReshuffle()) {
         console.log('Reshuffling venues within categories...');
         shuffledVenuesCache = shuffleVenuesByCategory(venues);
         lastShuffleTime = Date.now();
@@ -417,7 +428,7 @@ app.post('/api/venues/reshuffle', (req, res) => {
 
 // API endpoint to get events
 app.get('/api/events', (req, res) => {
-    res.setHeader('Cache-Control', 'public, max-age=3600'); // Cache API responses for 1 hour
+    res.setHeader('Cache-Control', apiCacheControl(3600)); // 1 hour in production
     const eventsPath = path.join(__dirname, 'data', 'events.json');
     fs.readFile(eventsPath, 'utf8', (err, data) => {
         if (err) {
@@ -437,7 +448,7 @@ app.get('/api/events', (req, res) => {
 
 // API endpoint to get artists
 app.get('/api/artists', (req, res) => {
-    res.setHeader('Cache-Control', 'public, max-age=3600'); // Cache API responses for 1 hour
+    res.setHeader('Cache-Control', apiCacheControl(3600)); // 1 hour in production
     const artistsPath = path.join(__dirname, 'data', 'artists.json');
     fs.readFile(artistsPath, 'utf8', (err, data) => {
         if (err) {
@@ -468,7 +479,7 @@ app.get('/api/featured-events', (req, res) => {
 
 // API endpoint to get organizations
 app.get('/api/organizations', (req, res) => {
-    res.setHeader('Cache-Control', 'public, max-age=3600');
+    res.setHeader('Cache-Control', apiCacheControl(3600));
     const orgsPath = path.join(__dirname, 'data', 'organizations.json');
     fs.readFile(orgsPath, 'utf8', (err, data) => {
         if (err) {
@@ -481,7 +492,7 @@ app.get('/api/organizations', (req, res) => {
 
 // API endpoint to get learn ohrid texts
 app.get('/api/learn-ohrid-texts', (req, res) => {
-    res.setHeader('Cache-Control', 'public, max-age=7200'); // Cache for 2 hours (text changes less frequently)
+    res.setHeader('Cache-Control', apiCacheControl(7200)); // 2 hours in production (text changes less frequently)
     const learnOhridPath = path.join(__dirname, 'data', 'learn_ohrid_text.json');
     fs.readFile(learnOhridPath, 'utf8', (err, data) => {
         if (err) {
@@ -494,7 +505,7 @@ app.get('/api/learn-ohrid-texts', (req, res) => {
 
 // API endpoint to get churches
 app.get('/api/churches', (req, res) => {
-    res.setHeader('Cache-Control', 'public, max-age=7200'); // Cache for 2 hours (churches data changes rarely)
+    res.setHeader('Cache-Control', apiCacheControl(7200)); // 2 hours in production (churches data changes rarely)
     const churchesPath = path.join(__dirname, 'data', 'churches.json');
     fs.readFile(churchesPath, 'utf8', (err, data) => {
         if (err) {
@@ -513,7 +524,7 @@ app.get('/api/churches', (req, res) => {
 
 // API endpoint for historical day facts
 app.get('/api/historical-day', (req, res) => {
-    res.setHeader('Cache-Control', 'public, max-age=3600'); // Cache for 1 hour
+    res.setHeader('Cache-Control', apiCacheControl(3600)); // 1 hour in production
     res.setHeader('Content-Type', 'application/json');
     
     const historicalFactsPath = path.join(__dirname, 'data', 'historical_facts.json');
@@ -790,7 +801,7 @@ app.get('/api/events/:id', (req, res) => {
 
             if (event) {
                 // Set cache headers for individual events
-                res.setHeader('Cache-Control', 'public, max-age=1800'); // 30 minutes
+                res.setHeader('Cache-Control', apiCacheControl(1800)); // 30 minutes in production
                 return res.json(event);
             } else {
                 return res.status(404).json({ error: 'Event not found.' });
@@ -864,7 +875,7 @@ app.get('/api/churches/:id', (req, res) => {
 
             if (church) {
                 // Set cache headers for individual churches
-                res.setHeader('Cache-Control', 'public, max-age=3600'); // 1 hour cache
+                res.setHeader('Cache-Control', apiCacheControl(3600)); // 1 hour in production
                 res.json(church);
             } else {
                 res.status(404).json({ error: 'Church not found.' });

@@ -4995,9 +4995,9 @@
     "location": {
       "address": "Top Market, Ohrid City Center",
       "googleMapsUrl": "https://maps.app.goo.gl/TopMarketOhrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1794.6674854741452!2d20.803170165556637!3d41.110136509044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb960c02af7%3A0xd55bdb3740761b22!2sTop%20Market!5e1!3m2!1sen!2smk!4v1760623445496!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-      "lat": 41.110136509044,
-      "lng": 20.803170165556637
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.8763006487993!2d20.802825852315483!3d41.110142289823635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb960c02af7%3A0xd55bdb3740761b22!2sTop%20Market!5e1!3m2!1sen!2smk!4v1785181907635!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
+      "lat": 41.110142289823635,
+      "lng": 20.802825852315483
     },
     "phone": "075 207 398",
     "workingHours": "Mon-Sat: 08:00-22:00<br>Sunday: Closed",
@@ -5026,9 +5026,9 @@
     "location": {
       "address": "Top Market - Partizanska, Ohrid",
       "googleMapsUrl": "https://maps.app.goo.gl/TopMarket2Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d68295.02879672329!2d20.759452221416336!3d41.11049621934443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbaf95393181%3A0xad5db3f09a3b8eb5!2sTop%20Market!5e1!3m2!1sen!2smk!4v1760624093804!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-      "lat": 41.11049621934443,
-      "lng": 20.759452221416336
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.957145723296!2d20.806008312223625!3d41.108690371217214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbaf95393181%3A0xad5db3f09a3b8eb5!2sTop%20Market!5e1!3m2!1sen!2smk!4v1785181926489!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
+      "lat": 41.108690371217214,
+      "lng": 20.806008312223625
     },
     "phone": "075 235 319",
     "workingHours": "Mon-Sat: 08:00-22:00<br>Sunday: Closed",
@@ -5057,9 +5057,9 @@
     "location": {
       "address": "Top Market -3, Ohrid",
       "googleMapsUrl": "https://maps.app.goo.gl/TopMarket3Ohrid",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114835.41980013777!2d20.70748966841384!3d41.12345314430039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd9956387d13%3A0xc6a933d25fd7f323!2sTop%20Market!5e1!3m2!1sen!2smk!4v1760624388780!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-      "lat": 41.12345314430039,
-      "lng": 20.70748966841384
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.5455344148595!2d20.798024012223813!3d41.11608217121597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd00724f9533%3A0x69f7b51d2e274597!2sTop%20Market!5e1!3m2!1sen!2smk!4v1785181944681!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
+      "lat": 41.11608217121597,
+      "lng": 20.798024012223813
     },
     "phone": "076 293 505",
     "workingHours": "Mon-Sat: 08:00-22:00<br>Sunday: 09:00-17:00",
@@ -5094,9 +5094,9 @@
     "location": {
       "address": "Talevi - Ohrid Pearls, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Talevi+-+Ohrid+Pearls/@41.11404494561418,20.717397467915543,13z/data=!4m6!3m5!1s0x1350dca38b8cb497:0x742d9bceb2d3e15c!8m2!3d41.11404494561418!4d20.717397467915543!16s%2Fg%2F11b6dqj8xt",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114851.88137054771!2d20.717397467915543!3d41.11404494561418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca38b8cb497%3A0x742d9bceb2d3e15c!2sTalevi%20-%20Ohrid%20Pearls!5e1!3m2!1sen!2smk!4v1760955427973!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-      "lat": 41.11404494561418,
-      "lng": 20.717397467915543
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d646.2346830666625!2d20.79934637257819!3d41.114109054688036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca38b8cb497%3A0x742d9bceb2d3e15c!2sTalevi%20-%20Ohrid%20Pearls!5e1!3m2!1sen!2smk!4v1785183606047!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
+      "lat": 41.114109054688036,
+      "lng": 20.79934637257819
     },
     "phone": "070 261 216",
     "workingHours": "Mon-Fri: 10:00-22:00<br>Sat: 08:30-21:00<br>Sunday: Closed",
@@ -5133,9 +5133,9 @@
     "location": {
       "address": "Ohrid Pearls Filevi, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Ohrid+Pearls+Filevi+-+Ohridski+Biseri+Filevi/@41.112391545845384,20.715306067827974,13z/data=!4m6!3m5!1s0x1350dca4e7b3ea61:0xf77f40932941cc23!8m2!3d41.112391545845384!4d20.715306067827974!16s%2Fg%2F11b6dpq7zm",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114854.77401214106!2d20.715306067827974!3d41.112391545845384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4e7b3ea61%3A0xf77f40932941cc23!2sOhrid%20Pearls%20Filevi%20-%20Ohridski%20Biseri%20Filevi!5e1!3m2!1sen!2smk!4v1760956425973!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-      "lat": 41.112391545845384,
-      "lng": 20.715306067827974
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.9421387708488!2d20.79784336178605!3d41.11207725610213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4e7b3ea61%3A0xf77f40932941cc23!2sOhrid%20Pearls%20Filevi%20-%20Ohridski%20Biseri%20Filevi!5e1!3m2!1sen!2smk!4v1785184159943!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
+      "lat": 41.11207725610213,
+      "lng": 20.79784336178605
     },
     "phone": "070 200 442",
     "workingHours": "Mon-Sat: 09:30-22:30<br>Sunday: Closed",
@@ -5167,9 +5167,9 @@
     "location": {
       "address": "Filevi - Original Ohrid's pearls, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Filevi+-+Original+Ohrid's+pearls/@41.11251434582821,20.715611967834487,13z/data=!4m6!3m5!1s0x1350dca4f1d78389:0x873bf35a8f22c1bd!8m2!3d41.11251434582821!4d20.715611967834487!16s%2Fg%2F11c5m7km_p",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114854.55917547038!2d20.715611967834487!3d41.11251434582821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4f1d78389%3A0x873bf35a8f22c1bd!2sFilevi%20-%20Original%20Ohrid&#39;s%20pearls!5e1!3m2!1sen!2smk!4v1760956667490!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-      "lat": 41.11251434582821,
-      "lng": 20.715611967834487
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.742581262098!2d20.7980128!3d41.112543699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dca4f1d78389%3A0x873bf35a8f22c1bd!2sFilevi%20-%20Original%20Ohrid's%20pearls!5e1!3m2!1sen!2smk!4v1785184211141!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
+      "lat": 41.112543699999996,
+      "lng": 20.7980128
     },
     "phone": "046 250 999",
     "workingHours": "Mon-Sat: 09:30-21:00<br>Sunday: Closed",
@@ -5201,9 +5201,9 @@
     "location": {
       "address": "Original Ohrid Pearls Filevi - St. Sophia, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/Original+Ohrid+Pearls+Filevi+-+St.+Sophia/@41.112504045829645,20.71172326783394,13z/data=!4m6!3m5!1s0x1350dd0037ea8919:0x8972a79df16b6871!8m2!3d41.112504045829645!4d20.71172326783394!16s%2Fg%2F11j2fxvc8r",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114854.57719517883!2d20.71172326783394!3d41.112504045829645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd0037ea8919%3A0x8972a79df16b6871!2sOriginal%20Ohrid%20Pearls%20Filevi%20-%20St.%20Sophia!5e1!3m2!1sen!2smk!4v1760957135895!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-      "lat": 41.112504045829645,
-      "lng": 20.71172326783394
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.7431548178483!2d20.789360496789556!3d41.1125334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd0037ea8919%3A0x8972a79df16b6871!2sOriginal%20Ohrid%20Pearls%20Filevi%20-%20St.%20Sophia!5e1!3m2!1sen!2smk!4v1785183704766!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
+      "lat": 41.1125334,
+      "lng": 20.789360496789556
     },
     "phone": "/",
     "workingHours": "Mon-Fri: 08:00-19:00<br>Saturday: Closed",
@@ -5255,9 +5255,9 @@
     "location": {
       "address": "IT Café, Macedonian Educators Boulevard No. 1, Ohrid",
       "googleMapsUrl": "https://www.google.com/maps/place/IT+Caf%C3%A9/@41.1147570272146,20.75927742868816,13z/data=!4m6!3m5!1s0x1350dd2e544dc297:0xc5991a4bbb1f5a3e!8m2!3d41.1147570272146!4d20.75927742868816!16s%2Fg%2F11j8wq_kw9",
-      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57425.31777313476!2d20.75927742868816!3d41.1147570272146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd2e544dc297%3A0xc5991a4bbb1f5a3e!2zSVQgQ2Fmw6k!5e1!3m2!1sen!2smk!4v1760959402101!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-      "lat": 41.1147570272146,
-      "lng": 20.75927742868816
+      "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d456.9537833595252!2d20.800884309637834!3d41.11456061766886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd2e544dc297%3A0xc5991a4bbb1f5a3e!2zSVQgQ2Fmw6k!5e1!3m2!1sen!2smk!4v1785183570641!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
+      "lat": 41.11456061766886,
+      "lng": 20.800884309637834
     },
     "phone": "070 240 056",
     "workingHours": "08:00 - 00:00",
