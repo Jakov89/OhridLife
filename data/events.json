@@ -172,8 +172,8 @@
   {
     "id": "12",
     "venueId": 1,
-    "eventName": "Overtone",
-    "isoDate": "2026-08-11",
+    "eventName": "Gjoko Taneski VS No Fun",
+    "isoDate": "2026-08-18",
     "startTime": "22:00",
     
     "category": "Music",
@@ -187,8 +187,8 @@
   {
     "id": "13",
     "venueId": 1,
-    "eventName": "Gjoko Taneski",
-    "isoDate": "2026-08-12",
+    "eventName": "Broz",
+    "isoDate": "2026-08-19",
     "startTime": "22:00",
     "day": "Sat.",
     "description": "",
@@ -781,13 +781,13 @@
   {
     "id": "56",
     "venueId": 120,
-    "eventName": "Koki Sax & DJ DJ Fic",
-    "isoDate": "2026-08-13",
+    "eventName": "DJ DJ Fic",
+    "isoDate": "2026-08-22",
     "startTime": "21:30",
     
     
     "category": "Music",
-    "imageUrl": "events_image/most/13.08.png",
+    "imageUrl": "events_image/random/fic.png",
     "eventBookingUrl": "#",
     "eventContact": "077 833 622",
     "ticketPrice": "Free Entry",
@@ -1307,12 +1307,12 @@
   {
     "id": "220",
     "venueId": 85,
-    "eventName": "Valentino",
-    "isoDate": "2026-07-31",
+    "eventName": "Dac & Aleksandar + Marijana & Rosana",
+    "isoDate": "2026-08-21",
     "startTime": "21:00",
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/bravo/31.07.png",
+    "imageUrl": "events_image/bravo/21.08.png",
     "eventBookingUrl": "#",
     "eventContact": "075 995 000 | 075 998 001",
     "ticketPrice": "Free Entry",
@@ -1336,16 +1336,16 @@
   },
   {
     "id": "222",
-    "eventName": "Koncert na klasichna muzika (Stefani Dudikj & Damjan Mileski)",
-    "isoDate": "2025-09-24",
-    "startTime": "19:00",
-    "day": "Wed.",
-    "description": "Experience an evening of sublime classical music within the ancient walls of Hagia Sophia. Stefani Dudikj and Damjan Mileski will perform timeless classical pieces, their melodies resonating through the historic stone arches and creating an intimate atmosphere where Byzantine heritage meets musical artistry. The church's exceptional acoustics will enhance every note, making this a truly memorable musical journey.",
+    "eventName": "Vecher na mladi muzichari - Ohrid Jazz Festival",
+    "isoDate": "2026-08-27",
+    "startTime": "20:30",
+    
+    
     "category": "Music",
-    "imageUrl": "events_image/random/24.09.png",
+    "imageUrl": "events_image/kultura/jazz.png",
     "eventBookingUrl": "#",
     "eventContact": "No Info",
-    "ticketPrice": "No Info",
+    "ticketPrice": "Free Entry",
     "locationName": "Church of Hagia Sophia",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.65364336050146!2d20.793441849598697!3d41.11207220000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbae7584491%3A0xf973c9aa671fb02d!2sChurch%20of%20Hagia%20Sophia!5e1!3m2!1sen!2smk!4v1758617798131!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   },
@@ -1748,7 +1748,7 @@
     "id": "248",
     "venueId": 1,
     "eventName": "Urban Planet",
-    "isoDate": "2026-08-14",
+    "isoDate": "2026-08-20",
     "startTime": "22:00",
     "description": "",
     "category": "Music",
@@ -1915,13 +1915,13 @@
   {
     "id": "257",
     "venueId": 116,
-    "eventName": "Solidarnost!",
-    "isoDate": "2026-04-19",
-    "startTime": "19:00",
-    "day": "Fri.",
-    "description": "",
-    "category": "Culture",
-    "imageUrl": "events_image/kultkulturen/19.04.png",
+    "eventName": "Life Eternal (Gothic Night)",
+    "isoDate": "2026-08-21",
+    "startTime": "20:00",
+    
+    
+    "category": "Music",
+    "imageUrl": "events_image/kultkulturen/21.08.png",
     "eventBookingUrl": "#",
     "eventContact": "075 285 228",
     "ticketPrice": "Free Entry",
@@ -1931,13 +1931,13 @@
   {
     "id": "258",
     "venueId": 116,
-    "eventName": "Rotten Apples",
-    "isoDate": "2026-04-18",
-    "startTime": "21:00",
-    "day": "Sat.",
-    "description": "",
-    "category": "Music",
-    "imageUrl": "events_image/kultkulturen/18.04.png",
+    "eventName": "Triger",
+    "isoDate": "2026-08-20",
+    "startTime": "20:00",
+    
+    
+    "category": "Culture",
+    "imageUrl": "events_image/kultkulturen/20.08.png",
     "eventBookingUrl": "#",
     "eventContact": "075 285 228",
     "ticketPrice": "Free Entry",
@@ -3212,7 +3212,7 @@
     "id": "340",
     "venueId": 1,
     "eventName": "No Fun",
-    "isoDate": "2026-08-15",
+    "isoDate": "2026-08-21",
     "startTime": "22:00",
     
     
@@ -3258,8 +3258,8 @@
   {
     "id": "344",
     "venueId": 1,
-    "eventName": "Balkanikos Band ",
-    "isoDate": "2026-08-16",
+    "eventName": "Overtone",
+    "isoDate": "2026-08-22",
     "startTime": "22:00",
     
     
@@ -3336,8 +3336,8 @@
   {
     "id": "349",
     "venueId": 1,
-    "eventName": "Filip Jordanovski",
-    "isoDate": "2026-07-30",
+    "eventName": "Balkanikos Band ",
+    "isoDate": "2026-08-23",
     "startTime": "22:00",
     "day": "Sat.",
     "description": "",
@@ -3856,12 +3856,12 @@
     "id": "384",
     "venueId": 5,
     "eventName": "DJ MiiLo",
-    "isoDate": "2026-08-10",
+    "isoDate": "2026-08-24",
     "startTime": "23:55",
     
     
     "category": "Music",
-    "imageUrl": "events_image/omnia/251.07.png",
+    "imageUrl": "events_image/omnia/24.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
     "ticketPrice": "Free entry",
@@ -3980,13 +3980,11 @@
   {
     "id": "392",
     "venueId": 5,
-    "eventName": "DJ Gec & DJ Jaybeats",
-    "isoDate": "2026-01-03",
+    "eventName": "DJ Gec",
+    "isoDate": "2026-08-23",
     "startTime": "23:55",
-    "day": "Sat.",
-    "description": "",
     "category": "Music",
-    "imageUrl": "images_venue/omnia_card.jpg",
+    "imageUrl": "events_image/omnia/23.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
     "ticketPrice": "Free entry",
@@ -3996,13 +3994,13 @@
   {
     "id": "393",
     "venueId": 5,
-    "eventName": "DJ Gec",
-    "isoDate": "2026-01-04",
+    "eventName": "DJ Kicho",
+    "isoDate": "2026-08-22",
     "startTime": "23:55",
     "day": "Sun.",
     "description": "",
     "category": "Music",
-    "imageUrl": "images_venue/omnia_card.jpg",
+    "imageUrl": "events_image/omnia/22.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
     "ticketPrice": "Free entry",
@@ -4012,13 +4010,13 @@
   {
     "id": "394",
     "venueId": 5,
-    "eventName": "DJ Jaybeats",
-    "isoDate": "2026-07-22",
+    "eventName": "DJ Nasty",
+    "isoDate": "2026-08-21",
     "startTime": "23:55",
-    "day": "Mon.",
-    "description": "",
+    
+    
     "category": "Music",
-    "imageUrl": "events_image/omnia/22.07.png",
+    "imageUrl": "events_image/omnia/21.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
     "ticketPrice": "Free entry",
@@ -4970,12 +4968,12 @@
   {
     "id": "455",
     "venueId": 5,
-    "eventName": "Dj Bagzi",
-    "isoDate": "2026-08-07",
+    "eventName": "DJ Gec ",
+    "isoDate": "2026-08-20",
     "startTime": "23:55",
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/omnia/07.08.png",
+    "imageUrl": "events_image/omnia/20.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
     "ticketPrice": "Free entry",
@@ -5388,8 +5386,8 @@
     "id": "481",
     "venueId": 16,
     "eventName": "DJ DJ Fic",
-    "isoDate": "2026-08-09",
-    "startTime": "22:00",
+    "isoDate": "2026-08-23",
+    "startTime": "21:30",
     "description": "",
     "category": "Music",
     "imageUrl": "images_venue/tino_pub_card.jpg",
@@ -6249,13 +6247,13 @@
   {
     "id": "535",
     "venueId": 7,
-    "eventName": "Nikifor",
-    "isoDate": "2026-08-01",
+    "eventName": "Kled Mone",
+    "isoDate": "2026-08-21",
     "startTime": "23:55",
     
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/rebel/01.08.png",
+    "imageUrl": "events_image/rebel/21.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 858 499",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.5986812961733!2d20.8143125!3d41.1053125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dbb5377ef5c3%3A0xf12be018ed556603!2sRebel%20Ohrid!5e1!3m2!1sen!2smk!4v1748257098398!5m2!1sen!2smk\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
@@ -10246,5 +10244,321 @@
     "ticketPrice": "TBA",
     "locationName": "The Harbour",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.002607916984!2d20.797629676447897!3d41.11263411299204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1750871932284!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "994",
+    "eventName": "Etno Jazz Vecher - Ohrid Jazz Festival",
+    "isoDate": "2026-08-28",
+    "startTime": "20:30",
+    
+    
+    "category": "Music",
+    "imageUrl": "events_image/kultura/jazz.png",
+    "eventBookingUrl": "#",
+    "eventContact": "No Info",
+    "ticketPrice": "Free Entry",
+    "locationName": "Church of Hagia Sophia",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.65364336050146!2d20.793441849598697!3d41.11207220000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbae7584491%3A0xf973c9aa671fb02d!2sChurch%20of%20Hagia%20Sophia!5e1!3m2!1sen!2smk!4v1758617798131!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "995",
+    "eventName": "Klasichen Jazz- Ohrid Jazz Festival",
+    "isoDate": "2026-08-29",
+    "startTime": "20:30",
+    
+    
+    "category": "Music",
+    "imageUrl": "events_image/kultura/jazz.png",
+    "eventBookingUrl": "#",
+    "eventContact": "No Info",
+    "ticketPrice": "Free Entry",
+    "locationName": "Church of Hagia Sophia",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.65364336050146!2d20.793441849598697!3d41.11207220000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbae7584491%3A0xf973c9aa671fb02d!2sChurch%20of%20Hagia%20Sophia!5e1!3m2!1sen!2smk!4v1758617798131!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "996",
+    "eventName": "Megjunarodna Jazz Vecher - Ohrid Jazz Festival",
+    "isoDate": "2026-08-30",
+    "startTime": "20:30",
+    
+    
+    "category": "Music",
+    "imageUrl": "events_image/kultura/jazz.png",
+    "eventBookingUrl": "#",
+    "eventContact": "No Info",
+    "ticketPrice": "Free Entry",
+    "locationName": "Church of Hagia Sophia",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.65364336050146!2d20.793441849598697!3d41.11207220000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbae7584491%3A0xf973c9aa671fb02d!2sChurch%20of%20Hagia%20Sophia!5e1!3m2!1sen!2smk!4v1758617798131!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "997",
+    "venueId": 109,
+    "eventName": "DJ Fic",
+    "isoDate": "2026-08-22",
+    "startTime": "14:30",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "events_image/random/fic.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+    "locationName": "Beach & Bar K'j Divono",
+    "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.7475021926772!2d20.799815452226216!3d41.09106493486494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c350e996fb19%3A0x3c0e460ffa3d014!2zUmVzdGF1cmFudCDigJ5LJ2cgRGl2b25v4oCc!5e0!3m2!1sen!2smk!4v1754253360324!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "998",
+    "venueId": 109,
+    "eventName": "DJ Fic",
+    "isoDate": "2026-08-23",
+    "startTime": "14:30",
+    "description": "",
+    "category": "Music",
+    "imageUrl": "events_image/random/fic.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+    "locationName": "Beach & Bar K'j Divono",
+    "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.7475021926772!2d20.799815452226216!3d41.09106493486494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c350e996fb19%3A0x3c0e460ffa3d014!2zUmVzdGF1cmFudCDigJ5LJ2cgRGl2b25v4oCc!5e0!3m2!1sen!2smk!4v1754253360324!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "999",
+    "venueId": null,
+    "eventName": "Vardar 1961 - Olympiacos",
+    "isoDate": "2026-08-18",
+    "startTime": "16:30",
+    
+    
+    "category": "Sports",
+    "imageUrl": "events_image/rakometturnir/logo.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Atina Bojadji Sports Hall"
+  },
+  {
+    "id": "1000",
+    "venueId": null,
+    "eventName": "HC Ohrid - Egypt U20",
+    "isoDate": "2026-08-18",
+    "startTime": "18:45",
+    
+    "category": "Sports",
+    "imageUrl": "events_image/rakometturnir/logo.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Atina Bojadji Sports Hall"
+  },
+  {
+    "id": "1001",
+    "venueId": null,
+    "eventName": "Vojvodina - Zagreb",
+    "isoDate": "2026-08-18",
+    "startTime": "21:00",
+    
+    "category": "Sports",
+    "imageUrl": "events_image/rakometturnir/logo.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Atina Bojadji Sports Hall"
+  },
+  {
+    "id": "1002",
+    "venueId": null,
+    "eventName": "Zagreb - Egypt U20",
+    "isoDate": "2026-08-19",
+    "startTime": "16:30",
+    
+    "category": "Sports",
+    "imageUrl": "events_image/rakometturnir/logo.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Atina Bojadji Sports Hall"
+  },
+  {
+    "id": "1003",
+    "venueId": null,
+    "eventName": "HC Ohrid - Vojvodina",
+    "isoDate": "2026-08-19",
+    "startTime": "18:45",
+    
+    "category": "Sports",
+    "imageUrl": "events_image/rakometturnir/logo.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Atina Bojadji Sports Hall"
+  },
+  {
+    "id": "1004",
+    "venueId": null,
+    "eventName": "Nexe - Trimo Trebnje",
+    "isoDate": "2026-08-19",
+    "startTime": "21:00",
+    
+    "category": "Sports",
+    "imageUrl": "events_image/rakometturnir/logo.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Atina Bojadji Sports Hall"
+  },
+  {
+    "id": "1005",
+    "venueId": null,
+    "eventName": "Vojvodina - Egypt U20",
+    "isoDate": "2026-08-20",
+    "startTime": "16:30",
+    
+    "category": "Sports",
+    "imageUrl": "events_image/rakometturnir/logo.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Atina Bojadji Sports Hall"
+  },
+  {
+    "id": "1006",
+    "venueId": null,
+    "eventName": "Olypiacos - Trimo Trebnje",
+    "isoDate": "2026-08-20",
+    "startTime": "18:45",
+    
+    "category": "Sports",
+    "imageUrl": "events_image/rakometturnir/logo.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Atina Bojadji Sports Hall"
+  },
+  {
+    "id": "1007",
+    "venueId": null,
+    "eventName": "Vardar 1961 - Nexe",
+    "isoDate": "2026-08-20",
+    "startTime": "21:00",
+    
+    "category": "Sports",
+    "imageUrl": "events_image/rakometturnir/logo.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Atina Bojadji Sports Hall"
+  },
+  {
+    "id": "1008",
+    "venueId": null,
+    "eventName": "Nexe - Olympiacos",
+    "isoDate": "2026-08-21",
+    "startTime": "16:30",
+    
+    "category": "Sports",
+    "imageUrl": "events_image/rakometturnir/logo.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Atina Bojadji Sports Hall"
+  }
+  {
+    "id": "1009",
+    "venueId": null,
+    "eventName": "Vardar 1961 - Trimo Trebnje",
+    "isoDate": "2026-08-21",
+    "startTime": "18:45",
+    
+    "category": "Sports",
+    "imageUrl": "events_image/rakometturnir/logo.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Atina Bojadji Sports Hall"
+  },
+  {
+    "id": "1010",
+    "venueId": null,
+    "eventName": "HC Ohrid - Zagreb",
+    "isoDate": "2026-08-21",
+    "startTime": "21:00",
+    
+    "category": "Sports",
+    "imageUrl": "events_image/rakometturnir/logo.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Atina Bojadji Sports Hall"
+  },
+  {
+    "id": "1011",
+    "venueId": null,
+    "eventName": "Game for 7th place",
+    "isoDate": "2026-08-22",
+    "startTime": "10:30",
+    
+    "category": "Sports",
+    "imageUrl": "events_image/rakometturnir/logo.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Atina Bojadji Sports Hall"
+  },
+  {
+    "id": "1012",
+    "venueId": null,
+    "eventName": "Game for 5th place",
+    "isoDate": "2026-08-22",
+    "startTime": "12:30",
+    
+    "category": "Sports",
+    "imageUrl": "events_image/rakometturnir/logo.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Atina Bojadji Sports Hall"
+  },
+  {
+    "id": "1013",
+    "venueId": null,
+    "eventName": "Game for 3rd place",
+    "isoDate": "2026-08-22",
+    "startTime": "17:45",
+    
+    "category": "Sports",
+    "imageUrl": "events_image/rakometturnir/logo.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Atina Bojadji Sports Hall"
+  },
+  {
+    "id": "1014",
+    "venueId": null,
+    "eventName": "Final",
+    "isoDate": "2026-08-22",
+    "startTime": "20:00",
+    
+    "category": "Sports",
+    "imageUrl": "events_image/rakometturnir/logo.png",
+    "eventBookingUrl": "#",
+    "eventContact": "",
+    "ticketPrice": "Free Entry",
+        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "locationName": "Atina Bojadji Sports Hall"
   }
 ]
