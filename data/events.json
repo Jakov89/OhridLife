@@ -111,7 +111,6 @@
     "eventName": "T&T",
     "isoDate": "2026-08-13",
     "startTime": "22:30",
-    
     "description": "",
     "category": "Music",
     "imageUrl": "images_venue/tino_pub_card.jpg",
@@ -127,7 +126,6 @@
     "eventName": "Balkanikos Band",
     "isoDate": "2026-08-14",
     "startTime": "23:00",
-    
     "description": "",
     "category": "Music",
     "imageUrl": "images_venue/tino_pub_card.jpg",
@@ -143,7 +141,6 @@
     "eventName": "Kolektiv Bend",
     "isoDate": "2026-08-15",
     "startTime": "23:30",
-    
     "description": "",
     "category": "Music",
     "imageUrl": "images_venue/tino_pub_card.jpg",
@@ -159,7 +156,6 @@
     "eventName": "DJ DJ Fic",
     "isoDate": "2026-08-16",
     "startTime": "23:00",
-    
     "description": "",
     "category": "Music",
     "imageUrl": "images_venue/tino_pub_card.jpg",
@@ -175,7 +171,6 @@
     "eventName": "Gjoko Taneski VS No Fun",
     "isoDate": "2026-08-18",
     "startTime": "22:00",
-    
     "category": "Music",
     "imageUrl": "images_venue/kadmo_card.jpg",
     "eventBookingUrl": "#",
@@ -212,7 +207,7 @@
     "imageUrl": "events_image/omnia/16.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
-    "ticketPrice": "Free entry",
+    "ticketPrice": "TBA",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Omnia Night Club"
   },
@@ -298,7 +293,6 @@
     "eventName": "Natasha Malinkova",
     "isoDate": "2026-08-14",
     "startTime": "22:00",
-    
     "category": "Music",
     "imageUrl": "events_image/SU/1415.png",
     "eventBookingUrl": "#",
@@ -313,7 +307,6 @@
     "eventName": "The R'N'B Affair",
     "isoDate": "2026-07-28",
     "startTime": "22:00",
-    
     "description": "",
     "category": "Music",
     "imageUrl": "images_venue/liquid_card.jpg",
@@ -341,12 +334,12 @@
   {
     "id": "28",
     "venueId": 13,
-    "eventName": "Invictus",
-    "isoDate": "2026-07-31",
+    "eventName": "The Backdoor Band",
+    "isoDate": "2026-08-21",
     "startTime": "22:00",
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/dublin/31.07.png",
+    "imageUrl": "events_image/dublin/21.08.png",
     "eventBookingUrl": "#",
     "eventContact": "046 200 040",
     "ticketPrice": "Free Entry",
@@ -375,7 +368,6 @@
     "eventName": "DJ Guardian",
     "isoDate": "2026-07-28",
     "startTime": "21:30",
-    
     "description": "",
     "category": "Music",
     "imageUrl": "events_image/cuba/weekend2.png",
@@ -391,7 +383,6 @@
     "eventName": "DJ Gec ",
     "isoDate": "2026-07-29",
     "startTime": "21:30",
-    
     "description": "",
     "category": "Music",
     "imageUrl": "events_image/cuba/weekend2.png",
@@ -407,7 +398,6 @@
     "eventName": "DJ Bagzi",
     "isoDate": "2026-07-31",
     "startTime": "13:00",
-    
     "description": "",
     "category": "Music",
     "imageUrl": "events_image/cuba/weekend2.png",
@@ -422,7 +412,7 @@
     "venueId": 8,
     "eventName": "DJ MM",
     "isoDate": "2026-07-31",
-    "startTime": "21:30",       
+    "startTime": "21:30",
     "category": "Music",
     "imageUrl": "events_image/cuba/weekend2.png",
     "eventBookingUrl": "#",
@@ -436,8 +426,8 @@
     "venueId": 8,
     "eventName": "DJ Bagzi",
     "isoDate": "2026-08-01",
-    "startTime": "13:00", 
-        "category": "Music",
+    "startTime": "13:00",
+    "category": "Music",
     "imageUrl": "events_image/cuba/weekend2.png",
     "eventBookingUrl": "#",
     "eventContact": "075357545",
@@ -451,8 +441,6 @@
     "eventName": "DJ Jaybeats",
     "isoDate": "2026-08-01",
     "startTime": "21:30",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/cuba/weekend2.png",
     "eventBookingUrl": "#",
@@ -467,8 +455,6 @@
     "eventName": "DJ Bagzi",
     "isoDate": "2026-08-02",
     "startTime": "13:00",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/cuba/weekend2.png",
     "eventBookingUrl": "#",
@@ -483,8 +469,6 @@
     "eventName": "DJ MM",
     "isoDate": "2026-08-02",
     "startTime": "21:30",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/cuba/weekend2.png",
     "eventBookingUrl": "#",
@@ -499,8 +483,6 @@
     "eventName": "DJ Guardian",
     "isoDate": "2026-08-11",
     "startTime": "21:30",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/cuba/week4.png",
     "eventBookingUrl": "#",
@@ -515,8 +497,6 @@
     "eventName": "DJ Danko",
     "isoDate": "2026-08-12",
     "startTime": "21:30",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/cuba/week4.png",
     "eventBookingUrl": "#",
@@ -531,8 +511,6 @@
     "eventName": "DJ Janaslayy",
     "isoDate": "2025-08-13",
     "startTime": "21:30",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/cuba/week4.png",
     "eventBookingUrl": "#",
@@ -547,8 +525,6 @@
     "eventName": "DJ Bagzi",
     "isoDate": "2026-08-14",
     "startTime": "13:00",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/cuba/week4.png",
     "eventBookingUrl": "#",
@@ -563,8 +539,6 @@
     "eventName": "DJ MM",
     "isoDate": "2026-08-14",
     "startTime": "21:30",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/cuba/week4.png",
     "eventBookingUrl": "#",
@@ -579,8 +553,6 @@
     "eventName": "DJ Bagzi",
     "isoDate": "2026-08-15",
     "startTime": "13:00",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/cuba/week4.png",
     "eventBookingUrl": "#",
@@ -595,8 +567,6 @@
     "eventName": "DJ Jaybeats",
     "isoDate": "2026-08-15",
     "startTime": "21:00",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/cuba/week4.png",
     "eventBookingUrl": "#",
@@ -611,8 +581,6 @@
     "eventName": "DJ Bagzi",
     "isoDate": "2026-08-16",
     "startTime": "13:00",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/cuba/week4.png",
     "eventBookingUrl": "#",
@@ -627,8 +595,6 @@
     "eventName": "DJ Gec ",
     "isoDate": "2026-08-16",
     "startTime": "21:30",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/cuba/week4.png",
     "eventBookingUrl": "#",
@@ -643,8 +609,6 @@
     "eventName": "Pasta & Pizza Days",
     "isoDate": "2026-08-16",
     "startTime": "18:00",
-    
-    
     "category": "Event",
     "imageUrl": "events_image/cuba/pastapiza.png",
     "eventBookingUrl": "#",
@@ -658,8 +622,7 @@
     "venueId": 8,
     "eventName": "Pasta & Pizza Days",
     "isoDate": "2026-08-13",
-    "startTime": "18:00",   
-    
+    "startTime": "18:00",
     "category": "Event",
     "imageUrl": "events_image/cuba/pastapiza.png",
     "eventBookingUrl": "#",
@@ -673,7 +636,7 @@
     "venueId": 8,
     "eventName": "Pasta & Pizza Days",
     "isoDate": "2026-08-14",
-    "startTime": "18:00",    
+    "startTime": "18:00",
     "category": "Event",
     "imageUrl": "events_image/cuba/pastapiza.png",
     "eventBookingUrl": "#",
@@ -685,13 +648,11 @@
   {
     "id": "50",
     "venueId": 8,
-    "eventName": "DJ MM",
-    "isoDate": "2026-08-09",
+    "eventName": "DJ Gec",
+    "isoDate": "2026-08-23",
     "startTime": "21:00",
-    
-    
     "category": "Music",
-    "imageUrl": "events_image/cuba/week3.png",
+    "imageUrl": "events_image/cuba/week5.png",
     "eventBookingUrl": "#",
     "eventContact": "075357545",
     "ticketPrice": "Free Entry",
@@ -702,12 +663,10 @@
     "id": "51",
     "venueId": 8,
     "eventName": "DJ Bagzi",
-    "isoDate": "2026-08-09",
+    "isoDate": "2026-08-23",
     "startTime": "13:00",
-    
-    
     "category": "Music",
-    "imageUrl": "events_image/cuba/week3.png",
+    "imageUrl": "events_image/cuba/week5.png",
     "eventBookingUrl": "#",
     "eventContact": "075357545",
     "ticketPrice": "Free Entry",
@@ -717,13 +676,11 @@
   {
     "id": "52",
     "venueId": 8,
-    "eventName": "DJ Gec ",
-    "isoDate": "2026-08-08",
+    "eventName": "DJ Danko",
+    "isoDate": "2026-08-22",
     "startTime": "21:00",
-    
-    
     "category": "Music",
-    "imageUrl": "events_image/cuba/week3.png",
+    "imageUrl": "events_image/cuba/week5.png",
     "eventBookingUrl": "#",
     "eventContact": "075357545",
     "ticketPrice": "Free Entry",
@@ -734,12 +691,10 @@
     "id": "53",
     "venueId": 8,
     "eventName": "DJ Bagzi",
-    "isoDate": "2026-08-08",
+    "isoDate": "2026-08-22",
     "startTime": "13:00",
-    
-    
     "category": "Music",
-    "imageUrl": "events_image/cuba/week3.png",
+    "imageUrl": "events_image/cuba/week5.png",
     "eventBookingUrl": "#",
     "eventContact": "075357545",
     "ticketPrice": "Free Entry",
@@ -749,13 +704,11 @@
   {
     "id": "54",
     "venueId": 8,
-    "eventName": "DJ MM",
-    "isoDate": "2026-08-07",
+    "eventName": "DJ Janaslayy",
+    "isoDate": "2026-08-21",
     "startTime": "21:00",
-    
-    
     "category": "Music",
-    "imageUrl": "events_image/cuba/week3.png",
+    "imageUrl": "events_image/cuba/week5.png",
     "eventBookingUrl": "#",
     "eventContact": "075357545",
     "ticketPrice": "Free Entry",
@@ -766,12 +719,10 @@
     "id": "55",
     "venueId": 8,
     "eventName": "DJ Bagzi",
-    "isoDate": "2026-08-07",
+    "isoDate": "2026-08-21",
     "startTime": "13:00",
-    
-    
     "category": "Music",
-    "imageUrl": "events_image/cuba/week3.png",
+    "imageUrl": "events_image/cuba/week5.png",
     "eventBookingUrl": "#",
     "eventContact": "075357545",
     "ticketPrice": "Free Entry",
@@ -784,8 +735,6 @@
     "eventName": "DJ DJ Fic",
     "isoDate": "2026-08-22",
     "startTime": "21:30",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/random/fic.png",
     "eventBookingUrl": "#",
@@ -848,7 +797,6 @@
     "eventName": "The R'N'B Affair",
     "isoDate": "2026-08-11",
     "startTime": "22:00",
-    
     "description": "",
     "category": "Music",
     "imageUrl": "images_venue/liquid_card.jpg",
@@ -885,7 +833,7 @@
     "imageUrl": "events_image/omnia/06.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
-    "ticketPrice": "Free Entry",
+    "ticketPrice": "TBA",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Omnia Night Club"
   },
@@ -895,13 +843,11 @@
     "eventName": "DJ Jaybeats",
     "isoDate": "2026-08-05",
     "startTime": "23:55",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/omnia/05.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
-    "ticketPrice": "Free entry",
+    "ticketPrice": "TBA",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Omnia Night Club"
   },
@@ -927,8 +873,6 @@
     "eventName": "Bobi Pavlovski",
     "isoDate": "2026-08-28",
     "startTime": "23:00",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/riben/28.08.png",
     "eventBookingUrl": "#",
@@ -943,7 +887,6 @@
     "eventName": "Joce Panov",
     "isoDate": "2026-08-19",
     "startTime": "22:00",
-    
     "category": "Music",
     "imageUrl": "events_image/riben/29.08.png",
     "eventBookingUrl": "#",
@@ -1339,8 +1282,6 @@
     "eventName": "Vecher na mladi muzichari - Ohrid Jazz Festival",
     "isoDate": "2026-08-27",
     "startTime": "20:30",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/kultura/jazz.png",
     "eventBookingUrl": "#",
@@ -1385,8 +1326,6 @@
     "eventName": "Darko Grozdanovski",
     "isoDate": "2026-08-15",
     "startTime": "22:00",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/SU/1415.png",
     "eventBookingUrl": "#",
@@ -1765,7 +1704,6 @@
     "eventName": "Suzana Gavazova",
     "isoDate": "2026-08-08",
     "startTime": "21:00",
-    
     "description": "",
     "category": "Music",
     "imageUrl": "events_image/kadmoplazha/08.08.png",
@@ -1918,8 +1856,6 @@
     "eventName": "Life Eternal (Gothic Night)",
     "isoDate": "2026-08-21",
     "startTime": "20:00",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/kultkulturen/21.08.png",
     "eventBookingUrl": "#",
@@ -1934,8 +1870,6 @@
     "eventName": "Triger",
     "isoDate": "2026-08-20",
     "startTime": "20:00",
-    
-    
     "category": "Culture",
     "imageUrl": "events_image/kultkulturen/20.08.png",
     "eventBookingUrl": "#",
@@ -1949,7 +1883,6 @@
     "eventName": "DJ MM",
     "isoDate": "2026-08-21",
     "startTime": "22:00",
-    
     "category": "Music",
     "imageUrl": "events_image/art/21.08.png",
     "eventBookingUrl": "#",
@@ -2101,8 +2034,6 @@
     "eventName": "Ohridski Calgii - Live Traditional Music",
     "isoDate": "2026-08-22",
     "startTime": "20:00",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/anamarija/chalgija.jpg",
     "eventBookingUrl": "#",
@@ -2131,8 +2062,6 @@
     "eventName": "Ohridski Calgii - Live Traditional Music",
     "isoDate": "2026-08-29",
     "startTime": "20:00",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/anamarija/chalgija.jpg",
     "eventBookingUrl": "#",
@@ -2288,8 +2217,6 @@
     "eventName": "Ohrid Vinyl Fair",
     "isoDate": "2026-08-16",
     "startTime": "11:00",
-    
-    
     "category": "Event",
     "imageUrl": "events_image/shila/16.08.png",
     "eventBookingUrl": "#",
@@ -2301,12 +2228,12 @@
   {
     "id": "283",
     "venueId": 13,
-    "eventName": "No Fun",
-    "isoDate": "2026-08-14",
+    "eventName": "Invictus",
+    "isoDate": "2026-08-22",
     "startTime": "22:00",
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/dublin/14.08.png",
+    "imageUrl": "events_image/dublin/22.08.png",
     "eventBookingUrl": "#",
     "eventContact": "046 200 040",
     "ticketPrice": "Free Entry",
@@ -2316,12 +2243,12 @@
   {
     "id": "284",
     "venueId": 18,
-    "eventName": "Ivo & Tose",
-    "isoDate": "2026-07-26",
+    "eventName": "Overtone",
+    "isoDate": "2026-08-21",
     "startTime": "22:00",
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/octava/26.07.png",
+    "imageUrl": "events_image/octava/21.08.png",
     "eventBookingUrl": "#",
     "eventContact": "077 633 444",
     "ticketPrice": "Free Entry",
@@ -2470,8 +2397,6 @@
     "eventName": "Overtone",
     "isoDate": "2026-08-15",
     "startTime": "22:00",
-
-
     "category": "Music",
     "imageUrl": "events_image/dublin/15.08.png",
     "eventBookingUrl": "#",
@@ -2483,16 +2408,15 @@
   {
     "id": "296",
     "venueId": 12,
-    "eventName": "DJ Gec ",
-    "isoDate": "2026-08-14",
+    "eventName": "DJ Danko",
+    "isoDate": "2026-08-21",
     "startTime": "22:00",
-
     "category": "Music",
-    "imageUrl": "events_image/harbor/week1.png",
+    "imageUrl": "events_image/harbor/week2.png",
     "eventBookingUrl": "#",
     "eventContact": "071 725 760",
     "ticketPrice": "TBA",
-    "locationName": "The Harbour",
+    "locationName": "The Harbour 1st Floor",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.002607916984!2d20.797629676447897!3d41.11263411299204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1750871932284!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   },
   {
@@ -2992,13 +2916,13 @@
   {
     "id": "329",
     "venueId": 17,
-    "eventName": "Darko Grozdanovski",
-    "isoDate": "2026-07-04",
+    "eventName": "Nikola Zac",
+    "isoDate": "2026-08-21",
     "startTime": "22:00",
-    "day": "Fri.",
+    
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/SU/0304.07.png",
+    "imageUrl": "events_image/SU/2122.08.png",
     "eventBookingUrl": "#",
     "eventContact": "046258684",
     "ticketPrice": "Free Entry",
@@ -3008,13 +2932,13 @@
   {
     "id": "328",
     "venueId": 17,
-    "eventName": "Grupa Saraj",
-    "isoDate": "2025-12-25",
-    "startTime": "20:00",
-    "day": "Fri.",
-    "description": "",
+    "eventName": "Toni Andreev",
+    "isoDate": "2026-08-22",
+    "startTime": "22:00",
+    
+    
     "category": "Music",
-    "imageUrl": "events_image/random/saraj.png",
+    "imageUrl": "events_image/SU/2122.08.png",
     "eventBookingUrl": "#",
     "eventContact": "046258684",
     "ticketPrice": "Free Entry",
@@ -3214,8 +3138,6 @@
     "eventName": "No Fun",
     "isoDate": "2026-08-21",
     "startTime": "22:00",
-    
-    
     "category": "Music",
     "imageUrl": "images_venue/kadmo_card.jpg",
     "eventBookingUrl": "#",
@@ -3227,12 +3149,11 @@
   {
     "id": "341",
     "venueId": 18,
-    "eventName": "Vlado Broz & DJ Marama",
-    "isoDate": "2026-08-16",
+    "eventName": "Balkanikos Band ",
+    "isoDate": "2026-08-22",
     "startTime": "22:00",
-
     "category": "Music",
-    "imageUrl": "events_image/octava/16.08.png",
+    "imageUrl": "events_image/octava/22.08.png",
     "eventBookingUrl": "#",
     "eventContact": "077 633 444",
     "ticketPrice": "Free Entry",
@@ -3261,8 +3182,6 @@
     "eventName": "Overtone",
     "isoDate": "2026-08-22",
     "startTime": "22:00",
-    
-    
     "category": "Music",
     "imageUrl": "images_venue/kadmo_card.jpg",
     "eventBookingUrl": "#",
@@ -3513,8 +3432,6 @@
     "eventName": "Balkan Jam",
     "isoDate": "2026-08-15",
     "startTime": "22:00",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/octava/15.08.png",
     "eventBookingUrl": "#",
@@ -3529,7 +3446,6 @@
     "eventName": "Overtone",
     "isoDate": "2026-08-14",
     "startTime": "22:00",
-    
     "category": "Music",
     "imageUrl": "events_image/octava/14.08.png",
     "eventBookingUrl": "#",
@@ -3559,7 +3475,6 @@
     "eventName": "Bouzouki Band | Broz & Tomevski",
     "isoDate": "2026-07-31",
     "startTime": "21:30",
-    
     "category": "Music",
     "imageUrl": "events_image/kadmoplazha/31.07.png",
     "eventBookingUrl": "#",
@@ -3741,7 +3656,6 @@
     "eventName": "ConTruDJ",
     "isoDate": "2026-08-20",
     "startTime": "22:00",
-    
     "imageUrl": "events_image/art/20.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 206 396",
@@ -3811,12 +3725,12 @@
   },
   {
     "id": "381",
-    "eventName": "DJ Floyo",
-    "isoDate": "2026-08-15",
+    "eventName": "Kandar",
+    "isoDate": "2026-08-22",
     "startTime": "22:00",
     "description": "",
     "category": "Music",
-    "imageUrl": "events_image/art/15.08.png",
+    "imageUrl": "events_image/art/22.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 206 396",
     "ticketPrice": "Free Entry",
@@ -3848,7 +3762,7 @@
     "imageUrl": "events_image/omnia/17.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
-    "ticketPrice": "Free entry",
+    "ticketPrice": "TBA",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Omnia Night Club"
   },
@@ -3858,13 +3772,11 @@
     "eventName": "DJ MiiLo",
     "isoDate": "2026-08-24",
     "startTime": "23:55",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/omnia/24.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
-    "ticketPrice": "Free entry",
+    "ticketPrice": "TBA",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Omnia Night Club"
   },
@@ -3880,7 +3792,7 @@
     "imageUrl": "events_image/omnia/18.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
-    "ticketPrice": "Free entry",
+    "ticketPrice": "TBA",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Omnia Night Club"
   },
@@ -3891,12 +3803,11 @@
     "isoDate": "2026-08-19",
     "startTime": "23:55",
     "day": "Sun.",
-    
     "category": "Music",
     "imageUrl": "events_image/omnia/19.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
-    "ticketPrice": "Free entry",
+    "ticketPrice": "TBA",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Omnia Night Club"
   },
@@ -3910,7 +3821,7 @@
     "imageUrl": "events_image/omnia/08.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
-    "ticketPrice": "Free entry",
+    "ticketPrice": "TBA",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Omnia Night Club"
   },
@@ -3926,7 +3837,7 @@
     "imageUrl": "events_image/omnia/13.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
-    "ticketPrice": "Free entry",
+    "ticketPrice": "TBA",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Omnia Night Club"
   },
@@ -3935,13 +3846,12 @@
     "venueId": 5,
     "eventName": "DJ Bagzi",
     "isoDate": "2026-08-14",
-    "startTime": "23:55",  
-    
+    "startTime": "23:55",
     "category": "Music",
     "imageUrl": "events_image/omnia/14.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
-    "ticketPrice": "Free entry",
+    "ticketPrice": "TBA",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Omnia Night Club"
   },
@@ -3951,13 +3861,11 @@
     "eventName": "DJ Ilic",
     "isoDate": "2026-08-15",
     "startTime": "23:55",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/omnia/15.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
-    "ticketPrice": "Free entry",
+    "ticketPrice": "TBA",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Omnia Night Club"
   },
@@ -3967,13 +3875,12 @@
     "eventName": "DJ Bagzi",
     "isoDate": "2026-08-01",
     "startTime": "23:55",
-    
     "description": "",
     "category": "Music",
     "imageUrl": "events_image/omnia/01.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
-    "ticketPrice": "Free entry",
+    "ticketPrice": "TBA",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Omnia Night Club"
   },
@@ -3987,7 +3894,7 @@
     "imageUrl": "events_image/omnia/23.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
-    "ticketPrice": "Free entry",
+    "ticketPrice": "TBA",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Omnia Night Club"
   },
@@ -4003,7 +3910,7 @@
     "imageUrl": "events_image/omnia/22.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
-    "ticketPrice": "Free entry",
+    "ticketPrice": "TBA",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Omnia Night Club"
   },
@@ -4013,13 +3920,11 @@
     "eventName": "DJ Nasty",
     "isoDate": "2026-08-21",
     "startTime": "23:55",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/omnia/21.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
-    "ticketPrice": "Free entry",
+    "ticketPrice": "TBA",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Omnia Night Club"
   },
@@ -4150,7 +4055,6 @@
     "eventName": "Balter",
     "isoDate": "2026-08-05",
     "startTime": "22:00",
-    
     "category": "Music",
     "imageUrl": "images_venue/kadmo_card.jpg",
     "eventBookingUrl": "#",
@@ -4165,7 +4069,6 @@
     "eventName": "Broz",
     "isoDate": "2026-08-06",
     "startTime": "22:00",
-    
     "description": "",
     "category": "Music",
     "imageUrl": "images_venue/kadmo_card.jpg",
@@ -4181,7 +4084,6 @@
     "eventName": "No Fun",
     "isoDate": "2026-08-07",
     "startTime": "22:00",
-    
     "description": "",
     "category": "Music",
     "imageUrl": "images_venue/kadmo_card.jpg",
@@ -4323,8 +4225,6 @@
     "eventName": "Filip Jordanovski",
     "isoDate": "2026-08-13",
     "startTime": "22:00",
-    
-    
     "category": "Music",
     "imageUrl": "images_venue/kadmo_card.jpg",
     "eventBookingUrl": "#",
@@ -4369,7 +4269,6 @@
     "eventName": "R&B Dancehall HIP-HOP Shatta Style",
     "isoDate": "2026-08-04",
     "startTime": "22:00",
-    
     "description": "",
     "category": "Music",
     "imageUrl": "images_venue/liquid_card.jpg",
@@ -4401,7 +4300,6 @@
     "eventName": "Club Ritual",
     "isoDate": "2026-08-15",
     "startTime": "22:00",
-    
     "description": "",
     "category": "Music",
     "imageUrl": "images_venue/liquid_card.jpg",
@@ -4746,7 +4644,7 @@
     "venueId": null,
     "eventName": "Grupa Frosina",
     "isoDate": "2026-08-13",
-    "startTime": "21:00",   
+    "startTime": "21:00",
     "category": "Music",
     "imageUrl": "events_image/random/frosina.png",
     "eventBookingUrl": "#",
@@ -4976,7 +4874,7 @@
     "imageUrl": "events_image/omnia/20.08.png",
     "eventBookingUrl": "#",
     "eventContact": "078 586 699",
-    "ticketPrice": "Free entry",
+    "ticketPrice": "TBA",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.2932373849599!2d20.80048061965533!3d41.113100108614475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dd7a9302f453%3A0xd39672b71f9f0769!2sOmnia%20Night%20Club!5e1!3m2!1sen!2smk!4v1748254231222!5m2!1sen!2smk\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Omnia Night Club"
   },
@@ -5018,7 +4916,6 @@
     "eventName": "Cyrax & Backdoor Band",
     "isoDate": "2026-08-25",
     "startTime": "21:00",
-    
     "description": "",
     "imageUrl": "events_image/kultkulturen/25.08.png",
     "eventBookingUrl": "#",
@@ -5033,7 +4930,6 @@
     "eventName": "Promocija na tkazhalki od ALeksandra Jurukovska",
     "isoDate": "2026-07-29",
     "startTime": "20:00",
-    
     "description": "",
     "category": "Culture",
     "imageUrl": "events_image/kultkulturen/29.07.png",
@@ -5075,13 +4971,11 @@
   {
     "id": "462",
     "venueId": 76,
-    "eventName": "Jana Slayy",
-    "isoDate": "2026-07-31",
+    "eventName": "DJ Toshevv",
+    "isoDate": "2026-08-22",
     "startTime": "23:46",
-    
-    
     "category": "Music",
-    "imageUrl": "events_image/inclusive/31.07.png",
+    "imageUrl": "events_image/inclusive/22.08.png",
     "eventBookingUrl": "#",
     "eventContact": "071 232 808",
     "ticketPrice": "Free Entry",
@@ -5092,16 +4986,16 @@
     "id": "463",
     "venueId": 12,
     "eventName": "DJ Janaslayy",
-    "isoDate": "2026-08-14",
+    "isoDate": "2026-08-21",
     "startTime": "21:30",
-    "day": "Wed.",
-    "description": "",
+    
+    
     "category": "Music",
-    "imageUrl": "events_image/harbor/week1.png",
+    "imageUrl": "events_image/harbor/week2.png",
     "eventBookingUrl": "#",
     "eventContact": "071 725 760",
     "ticketPrice": "TBA",
-    "locationName": "The Harbour",
+    "locationName": "The Harbour 2nd Floor",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.002607916984!2d20.797629676447897!3d41.11263411299204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1750871932284!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   },
   {
@@ -5185,7 +5079,6 @@
     "eventName": "Vasil Angelov",
     "isoDate": "2026-08-02",
     "startTime": "22:00",
-    
     "category": "Music",
     "imageUrl": "events_image/SU/310102.png",
     "eventBookingUrl": "#",
@@ -6250,7 +6143,6 @@
     "eventName": "Kled Mone",
     "isoDate": "2026-08-21",
     "startTime": "23:55",
-    
     "description": "",
     "category": "Music",
     "imageUrl": "events_image/rebel/21.08.png",
@@ -6295,8 +6187,6 @@
     "eventName": "DJ MiiLo",
     "isoDate": "2026-08-04",
     "startTime": "23:55",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/rebel/04.08.png",
     "eventBookingUrl": "#",
@@ -6520,8 +6410,6 @@
     "eventName": "Irie Scratch",
     "isoDate": "2026-08-08",
     "startTime": "23:46",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/inclusive/08.08.png",
     "eventBookingUrl": "#",
@@ -7740,7 +7628,6 @@
     "eventName": "Broz | Urban Planet | DJ Leo",
     "isoDate": "2026-08-12",
     "startTime": "22:00",
-    
     "category": "Music",
     "imageUrl": "events_image/paulaner/1114.png",
     "eventBookingUrl": "#",
@@ -7753,7 +7640,7 @@
     "id": "825",
     "eventName": "Balkanikos",
     "isoDate": "2026-08-13",
-    "startTime": "22:00",    
+    "startTime": "22:00",
     "category": "Music",
     "imageUrl": "events_image/paulaner/1114.png",
     "eventBookingUrl": "#",
@@ -10103,7 +9990,6 @@
     "eventName": "DJ Gec & DJ Jaybeats",
     "isoDate": "2026-08-22",
     "startTime": "13:00",
-    
     "category": "Music",
     "imageUrl": "events_image/ljubanishta/22.08.png",
     "eventBookingUrl": "#",
@@ -10147,7 +10033,7 @@
     "venueId": null,
     "eventName": "Grupa Frosina",
     "isoDate": "2026-08-11",
-    "startTime": "21:00",   
+    "startTime": "21:00",
     "category": "Music",
     "imageUrl": "events_image/random/frosina.png",
     "eventBookingUrl": "#",
@@ -10161,7 +10047,7 @@
     "venueId": null,
     "eventName": "Grupa Frosina",
     "isoDate": "2026-08-15",
-    "startTime": "21:00",   
+    "startTime": "21:00",
     "category": "Music",
     "imageUrl": "events_image/random/frosina.png",
     "eventBookingUrl": "#",
@@ -10186,72 +10072,66 @@
     "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d187.87944487023455!2d20.78947716749206!3d41.11113785349086!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcb9fee39833%3A0x5c92145749aebd9e!2sKaneo!5e0!3m2!1sen!2smk!4v1750698672269!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   },
   {
-    "id": "993",
-    "venueId": 12,
-    "eventName": "DJ MM",
-    "isoDate": "2026-08-15",
-    "startTime": "21:30",   
-    
-    "category": "Music",
-    "imageUrl": "events_image/harbor/week1.png",
-    "eventBookingUrl": "#",
-    "eventContact": "071 725 760",
-    "ticketPrice": "TBA",
-    "locationName": "The Harbour",
-    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.002607916984!2d20.797629676447897!3d41.11263411299204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1750871932284!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-  },
-  {
-    "id": "994",
-    "venueId": 12,
-    "eventName": "DJ Danko",
-    "isoDate": "2026-08-15",
-    "startTime": "21:30",   
-    
-    "category": "Music",
-    "imageUrl": "events_image/harbor/week1.png",
-    "eventBookingUrl": "#",
-    "eventContact": "071 725 760",
-    "ticketPrice": "TBA",
-    "locationName": "The Harbour",
-    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.002607916984!2d20.797629676447897!3d41.11263411299204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1750871932284!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-  },
-  {
-    "id": "995",
-    "venueId": 12,
-    "eventName": "DJ MM",
-    "isoDate": "2026-08-16",
-    "startTime": "21:30",   
-    
-    "category": "Music",
-    "imageUrl": "events_image/harbor/week1.png",
-    "eventBookingUrl": "#",
-    "eventContact": "071 725 760",
-    "ticketPrice": "TBA",
-    "locationName": "The Harbour",
-    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.002607916984!2d20.797629676447897!3d41.11263411299204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1750871932284!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-  },
-  {
-    "id": "993",
+    "id": "1028",
     "venueId": 12,
     "eventName": "DJ Jaybeats",
-    "isoDate": "2026-08-16",
-    "startTime": "21:30",   
-    
+    "isoDate": "2026-08-22",
+    "startTime": "22:00",
     "category": "Music",
-    "imageUrl": "events_image/harbor/week1.png",
+    "imageUrl": "events_image/harbor/week2.png",
     "eventBookingUrl": "#",
     "eventContact": "071 725 760",
     "ticketPrice": "TBA",
-    "locationName": "The Harbour",
+    "locationName": "The Harbour 1st Floor",
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.002607916984!2d20.797629676447897!3d41.11263411299204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1750871932284!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   },
   {
-    "id": "994",
+    "id": "1027",
+    "venueId": 12,
+    "eventName": "DJ MM",
+    "isoDate": "2026-08-22",
+    "startTime": "22:00",
+    "category": "Music",
+    "imageUrl": "events_image/harbor/week2.png",
+    "eventBookingUrl": "#",
+    "eventContact": "071 725 760",
+    "ticketPrice": "TBA",
+    "locationName": "The Harbour 2nd Floor",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.002607916984!2d20.797629676447897!3d41.11263411299204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1750871932284!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "1026",
+    "venueId": 12,
+    "eventName": "DJ Janaslayy",
+    "isoDate": "2026-08-23",
+    "startTime": "22:00",
+    "category": "Music",
+    "imageUrl": "events_image/harbor/week2.png",
+    "eventBookingUrl": "#",
+    "eventContact": "071 725 760",
+    "ticketPrice": "TBA",
+    "locationName": "The Harbour 1st Floor",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.002607916984!2d20.797629676447897!3d41.11263411299204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1750871932284!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "1025",
+    "venueId": 12,
+    "eventName": "DJ Danko",
+    "isoDate": "2026-08-23",
+    "startTime": "22:00",
+    "category": "Music",
+    "imageUrl": "events_image/harbor/week2.png",
+    "eventBookingUrl": "#",
+    "eventContact": "071 725 760",
+    "ticketPrice": "TBA",
+    "locationName": "The Harbour 2nd Floor",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.002607916984!2d20.797629676447897!3d41.11263411299204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1750871932284!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "1024",
     "eventName": "Etno Jazz Vecher - Ohrid Jazz Festival",
     "isoDate": "2026-08-28",
     "startTime": "20:30",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/kultura/jazz.png",
     "eventBookingUrl": "#",
@@ -10261,12 +10141,10 @@
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.65364336050146!2d20.793441849598697!3d41.11207220000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbae7584491%3A0xf973c9aa671fb02d!2sChurch%20of%20Hagia%20Sophia!5e1!3m2!1sen!2smk!4v1758617798131!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   },
   {
-    "id": "995",
+    "id": "1023",
     "eventName": "Klasichen Jazz- Ohrid Jazz Festival",
     "isoDate": "2026-08-29",
     "startTime": "20:30",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/kultura/jazz.png",
     "eventBookingUrl": "#",
@@ -10276,12 +10154,10 @@
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.65364336050146!2d20.793441849598697!3d41.11207220000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbae7584491%3A0xf973c9aa671fb02d!2sChurch%20of%20Hagia%20Sophia!5e1!3m2!1sen!2smk!4v1758617798131!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   },
   {
-    "id": "996",
+    "id": "1021",
     "eventName": "Megjunarodna Jazz Vecher - Ohrid Jazz Festival",
     "isoDate": "2026-08-30",
     "startTime": "20:30",
-    
-    
     "category": "Music",
     "imageUrl": "events_image/kultura/jazz.png",
     "eventBookingUrl": "#",
@@ -10291,7 +10167,7 @@
     "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.65364336050146!2d20.793441849598697!3d41.11207220000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350dcbae7584491%3A0xf973c9aa671fb02d!2sChurch%20of%20Hagia%20Sophia!5e1!3m2!1sen!2smk!4v1758617798131!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   },
   {
-    "id": "997",
+    "id": "1020",
     "venueId": 109,
     "eventName": "DJ Fic",
     "isoDate": "2026-08-22",
@@ -10326,8 +10202,6 @@
     "eventName": "Vardar 1961 - Olympiacos",
     "isoDate": "2026-08-18",
     "startTime": "16:30",
-    
-    
     "category": "Sports",
     "imageUrl": "events_image/rakometturnir/logo.png",
     "eventBookingUrl": "#",
@@ -10342,7 +10216,6 @@
     "eventName": "HC Ohrid - Egypt U20",
     "isoDate": "2026-08-18",
     "startTime": "18:45",
-    
     "category": "Sports",
     "imageUrl": "events_image/rakometturnir/logo.png",
     "eventBookingUrl": "#",
@@ -10357,7 +10230,6 @@
     "eventName": "Vojvodina - Zagreb",
     "isoDate": "2026-08-18",
     "startTime": "21:00",
-    
     "category": "Sports",
     "imageUrl": "events_image/rakometturnir/logo.png",
     "eventBookingUrl": "#",
@@ -10372,7 +10244,6 @@
     "eventName": "Zagreb - Egypt U20",
     "isoDate": "2026-08-19",
     "startTime": "16:30",
-    
     "category": "Sports",
     "imageUrl": "events_image/rakometturnir/logo.png",
     "eventBookingUrl": "#",
@@ -10387,7 +10258,6 @@
     "eventName": "HC Ohrid - Vojvodina",
     "isoDate": "2026-08-19",
     "startTime": "18:45",
-    
     "category": "Sports",
     "imageUrl": "events_image/rakometturnir/logo.png",
     "eventBookingUrl": "#",
@@ -10402,7 +10272,6 @@
     "eventName": "Nexe - Trimo Trebnje",
     "isoDate": "2026-08-19",
     "startTime": "21:00",
-    
     "category": "Sports",
     "imageUrl": "events_image/rakometturnir/logo.png",
     "eventBookingUrl": "#",
@@ -10417,7 +10286,6 @@
     "eventName": "Vojvodina - Egypt U20",
     "isoDate": "2026-08-20",
     "startTime": "16:30",
-    
     "category": "Sports",
     "imageUrl": "events_image/rakometturnir/logo.png",
     "eventBookingUrl": "#",
@@ -10432,13 +10300,12 @@
     "eventName": "Olypiacos - Trimo Trebnje",
     "isoDate": "2026-08-20",
     "startTime": "18:45",
-    
     "category": "Sports",
     "imageUrl": "events_image/rakometturnir/logo.png",
     "eventBookingUrl": "#",
     "eventContact": "",
     "ticketPrice": "Free Entry",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Atina Bojadji Sports Hall"
   },
   {
@@ -10447,13 +10314,12 @@
     "eventName": "Vardar 1961 - Nexe",
     "isoDate": "2026-08-20",
     "startTime": "21:00",
-    
     "category": "Sports",
     "imageUrl": "events_image/rakometturnir/logo.png",
     "eventBookingUrl": "#",
     "eventContact": "",
     "ticketPrice": "Free Entry",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Atina Bojadji Sports Hall"
   },
   {
@@ -10462,13 +10328,12 @@
     "eventName": "Nexe - Olympiacos",
     "isoDate": "2026-08-21",
     "startTime": "16:30",
-    
     "category": "Sports",
     "imageUrl": "events_image/rakometturnir/logo.png",
     "eventBookingUrl": "#",
     "eventContact": "",
     "ticketPrice": "Free Entry",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Atina Bojadji Sports Hall"
   },
   {
@@ -10477,13 +10342,12 @@
     "eventName": "Vardar 1961 - Trimo Trebnje",
     "isoDate": "2026-08-21",
     "startTime": "18:45",
-    
     "category": "Sports",
     "imageUrl": "events_image/rakometturnir/logo.png",
     "eventBookingUrl": "#",
     "eventContact": "",
     "ticketPrice": "Free Entry",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Atina Bojadji Sports Hall"
   },
   {
@@ -10492,13 +10356,12 @@
     "eventName": "HC Ohrid - Zagreb",
     "isoDate": "2026-08-21",
     "startTime": "21:00",
-    
     "category": "Sports",
     "imageUrl": "events_image/rakometturnir/logo.png",
     "eventBookingUrl": "#",
     "eventContact": "",
     "ticketPrice": "Free Entry",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Atina Bojadji Sports Hall"
   },
   {
@@ -10507,13 +10370,12 @@
     "eventName": "Game for 7th place",
     "isoDate": "2026-08-22",
     "startTime": "10:30",
-    
     "category": "Sports",
     "imageUrl": "events_image/rakometturnir/logo.png",
     "eventBookingUrl": "#",
     "eventContact": "",
     "ticketPrice": "Free Entry",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Atina Bojadji Sports Hall"
   },
   {
@@ -10522,13 +10384,12 @@
     "eventName": "Game for 5th place",
     "isoDate": "2026-08-22",
     "startTime": "12:30",
-    
     "category": "Sports",
     "imageUrl": "events_image/rakometturnir/logo.png",
     "eventBookingUrl": "#",
     "eventContact": "",
     "ticketPrice": "Free Entry",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Atina Bojadji Sports Hall"
   },
   {
@@ -10537,13 +10398,12 @@
     "eventName": "Game for 3rd place",
     "isoDate": "2026-08-22",
     "startTime": "17:45",
-    
     "category": "Sports",
     "imageUrl": "events_image/rakometturnir/logo.png",
     "eventBookingUrl": "#",
     "eventContact": "",
     "ticketPrice": "Free Entry",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Atina Bojadji Sports Hall"
   },
   {
@@ -10552,13 +10412,12 @@
     "eventName": "Final",
     "isoDate": "2026-08-22",
     "startTime": "20:00",
-    
     "category": "Sports",
     "imageUrl": "events_image/rakometturnir/logo.png",
     "eventBookingUrl": "#",
     "eventContact": "",
     "ticketPrice": "Free Entry",
-        "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.3962742211141!2d20.81351126965528!3d41.10556100873054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350db50b11462ef%3A0x8ed81c8f835a484b!2sAtina%20Bojadji%20Sports%20Hall!5e1!3m2!1sen!2smk!4v1757580504873!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "locationName": "Atina Bojadji Sports Hall"
   },
   {
@@ -10602,5 +10461,61 @@
     "ticketPrice": "Free Entry",
     "locationName": "Velestovo",
     "locationIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2174.6315045646134!2d20.828184428384954!3d41.08493274862255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350c4b783d82e61%3A0x7dbf417a3c22996e!2sVelestovo!5e1!3m2!1sen!2smk!4v1787057727040!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>"
+  },
+  {
+    "id": "1029",
+    "venueId": 12,
+    "eventName": "DJ Gec",
+    "isoDate": "2026-08-24",
+    "startTime": "22:00",
+    "category": "Music",
+    "imageUrl": "events_image/harbor/week2.png",
+    "eventBookingUrl": "#",
+    "eventContact": "071 725 760",
+    "ticketPrice": "TBA",
+    "locationName": "The Harbour 1st Floor",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.002607916984!2d20.797629676447897!3d41.11263411299204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1750871932284!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "1030",
+    "venueId": 12,
+    "eventName": "DJ Jaybeats",
+    "isoDate": "2026-08-24",
+    "startTime": "22:00",
+    "category": "Music",
+    "imageUrl": "events_image/harbor/week2.png",
+    "eventBookingUrl": "#",
+    "eventContact": "071 725 760",
+    "ticketPrice": "TBA",
+    "locationName": "The Harbour 2nd Floor",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.002607916984!2d20.797629676447897!3d41.11263411299204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1750871932284!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "1031",
+    "venueId": 12,
+    "eventName": "DJ MM",
+    "isoDate": "2026-08-25",
+    "startTime": "22:00",
+    "category": "Music",
+    "imageUrl": "events_image/harbor/week2.png",
+    "eventBookingUrl": "#",
+    "eventContact": "071 725 760",
+    "ticketPrice": "TBA",
+    "locationName": "The Harbour 1st Floor",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.002607916984!2d20.797629676447897!3d41.11263411299204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1750871932284!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  },
+  {
+    "id": "1032",
+    "venueId": 12,
+    "eventName": "DJ Danko",
+    "isoDate": "2026-08-25",
+    "startTime": "22:00",
+    "category": "Music",
+    "imageUrl": "events_image/harbor/week2.png",
+    "eventBookingUrl": "#",
+    "eventContact": "071 725 760",
+    "ticketPrice": "TBA",
+    "locationName": "The Harbour 2nd Floor",
+    "mapIframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.002607916984!2d20.797629676447897!3d41.11263411299204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350ddb4a185b5df%3A0xf49ec62cb6aed35c!2sThe%20HarbouR%20Club!5e0!3m2!1sen!2smk!4v1750871932284!5m2!1sen!2smk\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
   }
 ]
